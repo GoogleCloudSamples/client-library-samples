@@ -1,0 +1,14 @@
+{
+  "name": "example",
+  "private": true,
+  "description": "Google Cloud Platform Code Samples 🎒",
+  "dependencies": {
+    "@google-cloud/storage-control": "^0.5.0",
+    "@grpc/grpc-js": "^1.13.4",
+    "google-gax": "^5.0.3",
+    "google-protobuf": "^4.0.0"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}
