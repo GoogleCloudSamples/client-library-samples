@@ -29,7 +29,6 @@ def list_folders_sample(
     namespaces enabled.
 
     Args:
-        project_id: The ID of the Google Cloud project.
         bucket_name: The name of the bucket to list folders from.
     """
     client = storage_control_v2.StorageControlClient()
