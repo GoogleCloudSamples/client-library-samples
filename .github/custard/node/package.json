@@ -1,0 +1,12 @@
+{
+  "name": "custard-node-env-deps",
+  "private": true,
+  "description": "Dependencies needed to run Custard Node commands.",
+  "scripts": {
+    "lint": "gts lint",
+    "lint-fix": "gts fix"
+  },
+  "devDependencies": {
+    "gts": "^6.0.2"
+  }
+}

@@ -1,0 +1,5 @@
+# Dependencies needed to run Custard Node commands.
+black
+autoflake
+isort
+pip-tools

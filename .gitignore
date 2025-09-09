@@ -1,0 +1,7 @@
+# Python
+env/
+
+# Node
+node_modules/
+.eslintrc
+!.github/custard/node/.eslintrc

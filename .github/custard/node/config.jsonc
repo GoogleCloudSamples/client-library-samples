@@ -1,0 +1,22 @@
+// TODO: add README here, like: https://github.com/GoogleCloudPlatform/nodejs-docs-samples/blob/main/.github/config/README.md
+{
+  "package-file": [ "package.json" ],
+  "ci-setup-filename": "ci-setup.json",
+
+  // If these change, please update the .github/custard/README.md too!
+  "ci-setup-defaults": {
+    "env": { },
+    "secrets": { },
+    "timeout-minutes": 10
+  },
+
+  "ignore": [
+    ".github/CODEOWNERS",
+    ".github/CODE_OF_CONDUCT.md",
+    ".github/custard/",
+    ".gitignore",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "README.md"
+  ]
+}
