@@ -1,4 +1,5 @@
 # Dependencies needed to run Custard Python commands.
-black
 autoflake
+black
+flake8
 isort

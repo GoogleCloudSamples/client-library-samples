@@ -1,4 +1,4 @@
-# usage: bash scripts/node-setup.sh
+# usage: bash .github/custard/node/setup.sh
 
 set -e # Exit on error
 set -u # Error when expanding unset variables
