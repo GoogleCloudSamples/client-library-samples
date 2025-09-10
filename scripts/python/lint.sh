@@ -1,7 +1,7 @@
-# usage: bash scripts/python-lint.sh path/to/package
+# usage: bash scripts/python/lint.sh path/to/package
 #
 # Prerequisites:
-# - bash scripts/python-setup.sh
+# - bash scripts/python/setup.sh
 
 set -e # Exit on error
 set -u # Error when expanding unset variables
