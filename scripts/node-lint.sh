@@ -8,6 +8,6 @@ set -u # Error when expanding unset variables
 set -x # Command tracing
 
 PACKAGE="$1"
-NODE_ENV=".github/custard/node"
+CUSTARD_NODE=".github/custard/node"
 
-npm run --prefix "$NODE_ENV" lint "$(pwd)/$PACKAGE"
+npm run --prefix "$CUSTARD_NODE" lint "$(pwd)/$PACKAGE"

@@ -4,11 +4,6 @@ set -e # Exit on error
 set -u # Error when expanding unset variables
 set -x # Command tracing
 
-NODE_ENV=".github/custard/node"
-
-npm ci --prefix "$NODE_ENV"
-npm audit --prefix "$NODE_ENV"
-
 # Eslint and gts are very specific about how and where they want the eslintrc
 # file and the node_modules/ to live.
 # They will first try to find it in the target package we're trying to lint,
@@ -23,9 +18,9 @@ npm audit --prefix "$NODE_ENV"
 #   1) Have the eslintrc at the root directory
 #       Pros: Simplest option to setup
 #       Cons: Not isolated
-#   2) Copy the eslintrc along with node_modules to the root directory
+#   2) Install node_modules in root, and copy eslintrc to root
 #       Pros: Simple, isolated (copied files are gitignore'd)
-#       Cons: Takes 1-2 seconds to copy the node_modules
+#       Cons: Uncommitted files live in the root directory
 #   3) Copy the target package into the .github/custard/node
 #       Pros: No need to copy the node_modules (faster)
 #       Cons: We must clean up very carefully for the next package (error-prone)
@@ -34,9 +29,22 @@ npm audit --prefix "$NODE_ENV"
 #       Cons: Slow, running "lint fix" will not actually fix your files
 
 # This is option 2.
-#   - Simple to set up (although it takes 1-2 seconds, but only once)
+#   - Simple and fast to set up
 #   - All language-specific files are isolated in .github/custard
-#   - Copying files does not "break" the repo, and .gitignore'd
+#   - Copying the eslintrc does not "break" the repo, and is .gitignore'd
 #   - If you "lint fix", it changes the files you expect
-cp "$NODE_ENV/.eslintrc" .
-cp -r "$NODE_ENV/node_modules" .
+#   - Other languages like Python also create the venv in the root
+CUSTARD_NODE=".github/custard/node"
+
+cp "$CUSTARD_NODE/.eslintrc" .
+
+# Installing with a prefix like this will create the node_modules in
+# the root directory, but it has the side effect of npm creating a
+# package.json and package-lock.json in root too.
+npm ci --prefix "$(pwd)" "$CUSTARD_NODE"
+
+# They're not needed, so we'll just remove them here to make sure
+# nothing ever depends on them and avoid any future issues,
+# since npm can be very specific about how packages are structured.
+rm package.json
+rm package-lock.json

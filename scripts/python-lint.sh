@@ -5,20 +5,17 @@
 
 set -e # Exit on error
 set -u # Error when expanding unset variables
-
-# Screen clutter, activate venv before `set +x`
-source env/bin/activate
 set -x # Command tracing
 
 PACKAGE="$1"
+PYTHON="venv/bin/python"
 
 FAILED=0
-
-autoflake --check --recursive "$PACKAGE" || FAILED=1
-isort --check "$PACKAGE" || FAILED=1
-black --check "$PACKAGE" || FAILED=1
+$PYTHON -m autoflake --check --recursive "$PACKAGE" || FAILED=1
+$PYTHON -m isort --check "$PACKAGE" || FAILED=1
+$PYTHON -m black --check "$PACKAGE" || FAILED=1
 
 if [[ "$FAILED" -ne 0 ]]; then
-  echo "One or more check failed." > /dev/null
+  echo "One or more checks failed." > /dev/null
   exit 1
 fi
