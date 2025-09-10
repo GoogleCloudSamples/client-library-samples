@@ -1,7 +1,7 @@
 # usage: bash scripts/node-lint.sh path/to/package
 #
 # Prerequisites:
-# - scripts/node-setup.sh
+# - bash scripts/node-setup.sh
 
 set -e # Exit on error
 set -u # Error when expanding unset variables
