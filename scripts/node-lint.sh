@@ -10,4 +10,5 @@ set -x # Command tracing
 PACKAGE="$1"
 CUSTARD_NODE=".github/custard/node"
 
+# Script defined in .github/custard/node/package.json.
 npm run --prefix "$CUSTARD_NODE" lint "$(pwd)/$PACKAGE"

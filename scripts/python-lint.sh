@@ -8,9 +8,9 @@ set -u # Error when expanding unset variables
 set -x # Command tracing
 
 PACKAGE="$1"
-PYTHON="venv/bin/python"
 
 FAILED=0
+PYTHON="venv/bin/python"
 $PYTHON -m autoflake --check --recursive "$PACKAGE" || FAILED=1
 $PYTHON -m isort --check "$PACKAGE" || FAILED=1
 $PYTHON -m black --check "$PACKAGE" || FAILED=1

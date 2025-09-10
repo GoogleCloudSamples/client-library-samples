@@ -14,37 +14,25 @@ set -x # Command tracing
 # and it looks for it relative to the target package's directory, not relative
 # to the locaiton of the eslintrc.
 # This means that if we want to keep the language-specific configurations
-# isolated (in .github/custard/<language>), we have limited options:
-#   1) Have the eslintrc at the root directory
-#       Pros: Simplest option to setup
-#       Cons: Not isolated
-#   2) Install node_modules in root, and copy eslintrc to root
-#       Pros: Simple, isolated (copied files are gitignore'd)
-#       Cons: Uncommitted files live in the root directory
-#   3) Copy the target package into the .github/custard/node
-#       Pros: No need to copy the node_modules (faster)
-#       Cons: We must clean up very carefully for the next package (error-prone)
-#   4) Copy everything (the target package, eslintrc and node_modules) to a temp directory
-#       Pros: Most isolated option, easy to clean up
-#       Cons: Slow, running "lint fix" will not actually fix your files
+# isolated (in .github/custard/<language>), we have limited options.
+#
+# The simplest option is having the node_modules and eslintrc in the root
+# directory, similar to how Python creates a virtual environment in the
+# root directory.
 
-# This is option 2.
-#   - Simple and fast to set up
-#   - All language-specific files are isolated in .github/custard
-#   - Copying the eslintrc does not "break" the repo, and is .gitignore'd
-#   - If you "lint fix", it changes the files you expect
-#   - Other languages like Python also create the venv in the root
 CUSTARD_NODE=".github/custard/node"
 
+# Copy the eslintrc into the root directory, this is in the .gitignore.
 cp "$CUSTARD_NODE/.eslintrc" .
 
-# Installing with a prefix like this will create the node_modules in
-# the root directory, but it has the side effect of npm creating a
-# package.json and package-lock.json in root too.
-npm ci --prefix "$(pwd)" "$CUSTARD_NODE"
+# Install the node_modules in the root directory, in the gitignore.
+# Using `npm ci`` would require the package.json and lock in the
+# root directory, so we just use `npm install`.
+npm install --prefix "$(pwd)" "$CUSTARD_NODE"
 
+# This has the side effect of npm creating a package.json and
+# package-lock.json in root too.
 # They're not needed, so we'll just remove them here to make sure
 # nothing ever depends on them and avoid any future issues,
 # since npm can be very specific about how packages are structured.
-rm package.json
-rm package-lock.json
+rm package.json package-lock.json
