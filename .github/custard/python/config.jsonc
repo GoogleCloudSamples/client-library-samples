@@ -11,8 +11,7 @@
   },
 
   "ignore": [
-    ".github/CODEOWNERS",
-    ".github/CODE_OF_CONDUCT.md",
+    ".github/",
     ".gitignore",
     "CONTRIBUTING.md",
     "LICENSE",
