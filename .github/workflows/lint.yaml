@@ -53,6 +53,7 @@ jobs:
         run: bash .github/custard/setup.sh
       - name: Run lint
         id: lint
+        continue-on-error: ${{ inputs.continue-on-error }}
         # Do not use env.PATHS since it will expand the JSON contents into
         # the terminal and the quotes will be messed up.
         run: bash .github/custard/map.sh ".github/custard/run.sh lint" "$PATHS"
