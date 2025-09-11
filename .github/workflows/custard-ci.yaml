@@ -13,6 +13,8 @@ on:
 jobs:
   affected:
     uses: GoogleCloudPlatform/cloud-samples-tools/.github/workflows/affected.yaml@9ee708234e240605d96e78f652c333ed6aa95a23 # v0.4.0
+    permissions:
+      statuses: write
     with:
       head-sha: ${{ github.event.pull_request.head.sha || github.sha }}
       config-file: .github/custard/config.jsonc
