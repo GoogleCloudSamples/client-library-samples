@@ -23,6 +23,8 @@ jobs:
           ".github/custard/test/python/lint-pass"
         ]
 
+  # Failures should be tested one by one, since as long as there is one,
+  # the whole job will fail.
   lint-fail-node:
     uses: ./.github/workflows/lint.yaml
     with:

@@ -57,5 +57,5 @@ jobs:
         # Both steps.lint.conclusion and steps.lint.result will be 'success'
         # if continue-on-error is true. Only steps.lint.outcome will be 'failure'.
         # https://www.kenmuse.com/blog/how-to-handle-step-and-job-errors-in-github-actions
-        if: ${{ inputs.expect-failure }} && ${{ steps.lint.outcome != 'failure' }}
+        if: ${{ inputs.expect-failure && steps.lint.outcome != 'failure' }}
         run: echo "This was expected to fail." && exit 1
