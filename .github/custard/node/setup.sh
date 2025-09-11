@@ -1,9 +1,5 @@
 # usage: bash .github/custard/node/setup.sh
 
-set -e # Exit on error
-set -u # Error when expanding unset variables
-set -x # Command tracing
-
 # Eslint and gts are very specific about how and where they want the eslintrc
 # file and the node_modules/ to live.
 # They will first try to find it in the target package we're trying to lint,
@@ -20,7 +16,12 @@ set -x # Command tracing
 # root directory, similar to how Python creates a virtual environment
 # in the root directory.
 
+set -e # Exit on error
+set -u # Error when expanding unset variables
+
 CUSTARD_NODE=".github/custard/node"
+
+set -x # Command tracing
 
 # Copy the Node package files to the root directory.
 cp "$CUSTARD_NODE/.eslintrc" .
