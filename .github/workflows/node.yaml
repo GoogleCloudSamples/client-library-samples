@@ -1,4 +1,4 @@
-name: Node
+name: node
 
 on:
   push:
@@ -36,7 +36,7 @@ jobs:
       - name: Setup tooling
         run: bash .github/custard/node/setup.sh
       - name: Run lint
-        run: bash .github/custard/map.sh ${{ env.SCRIPT }} ${{ env.PATHS }}
+        run: bash .github/custard/map.sh ${{ env.SCRIPT }} "${{ env.PATHS }}"
         env:
           SCRIPT: .github/custard/node/lint.sh
           PATHS: ${{ needs.affected.outputs.paths }}
