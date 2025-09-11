@@ -52,7 +52,7 @@ jobs:
         # the terminal and the quotes will be messed up.
         run: bash .github/custard/map.sh ".github/custard/run.sh lint" "$PATHS"
         env:
-          PATHS: ${{ inputs.paths }}
+          PATHS: ${{ inputs.paths-json }}
       - name: Expect failure
         # Both steps.lint.conclusion and steps.lint.result will be 'success'
         # if continue-on-error is true. Only steps.lint.outcome will be 'failure'.
