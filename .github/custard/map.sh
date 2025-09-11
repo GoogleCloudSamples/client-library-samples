@@ -8,7 +8,7 @@ SUCCEEDED=""
 FAILED=""
 for path in $(echo "$JSON_LIST" | jq -r '.[]'); do
   echo "----- $path -----"
-  if bash "$SCRIPT" "$path"; then
+  if bash $SCRIPT "$path"; then
     SUCCEEDED="$SUCCEEDED\n - $path"
   else
     FAILED="$FAILED\n - $path"

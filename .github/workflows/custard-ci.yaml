@@ -1,16 +1,14 @@
-name: node
+name: custard-ci
 
 on:
   push:
     branches:
       - main
-    paths:
-      - .github/custard/**
-      - .github/workflows/**
+    paths-ignore:
+      - .github/custard/test/**
   pull_request:
-    paths:
-      - .github/custard/**
-      - .github/workflows/**
+    paths-ignore:
+      - .github/custard/test/**
 
 jobs:
   affected:
@@ -19,7 +17,7 @@ jobs:
       statuses: write
     with:
       head-sha: ${{ github.event.pull_request.head.sha || github.sha }}
-      config-file: .github/custard/node/config.jsonc
+      config-file: .github/custard/config.jsonc
       custard-version: v0.4.0
       # No need to create checks since this is a pull_request workflow.
       create-check-if: false

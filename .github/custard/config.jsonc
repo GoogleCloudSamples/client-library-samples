@@ -1,6 +1,9 @@
 // TODO: add README here, like: https://github.com/GoogleCloudPlatform/nodejs-docs-samples/blob/main/.github/config/README.md
 {
-  "package-file": [ "package.json" ],
+  "package-file": [
+    "package.json", // Node
+    "requirements.txt" // Python
+  ],
   "ci-setup-filename": "ci-setup.json",
 
   // If these change, please update the .github/custard/README.md too!
@@ -11,8 +14,7 @@
   },
 
   "ignore": [
-    // ".github/", // TODO: ignore this, commented to test out
-    ".github/custard/node",
+    ".github/",
     ".gitignore",
     "CONTRIBUTING.md",
     "LICENSE",

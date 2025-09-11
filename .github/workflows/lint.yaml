@@ -1,0 +1,51 @@
+on:
+  workflow_call:
+    inputs:
+      head-sha:
+        description: The SHA of the head commit.
+        required: true
+        type: string
+      paths:
+        description: A JSON list of package paths.
+        required: true
+        type: string
+      node-version:
+        description: The version of Node to use.
+        default: "24"
+        type: string
+      python-version:
+        description: The version of Python to use.
+        default: "3.13"
+        type: string
+      timeout-minutes:
+        description: The maximum number of minutes to run the job.
+        default: 5
+        type: number
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    permissions:
+      statuses: write
+    timeout-minutes: ${{ inputs.timeout-minutes }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        with:
+          ref: ${{ inputs.head-sha }}
+      - name: Setup Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: ${{ inputs.node-version }}
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: ${{ inputs.python-version }}
+      - name: Setup tooling
+        run: bash .github/custard/setup.sh
+      - name: Run lint
+        # Do not use env.PATHS since it will expand the JSON contents into
+        # the terminal and the quotes will be messed up.
+        run: bash .github/custard/map.sh ".github/custard/run.sh lint" "$PATHS"
+        env:
+          PATHS: ${{ inputs.paths }}
