@@ -4,7 +4,13 @@ on:
   push:
     branches:
       - main
+    paths:
+      - .github/custard/**
+      - .github/workflows/**
   pull_request:
+    paths:
+      - .github/custard/**
+      - .github/workflows/**
 
 jobs:
   affected:
@@ -20,25 +26,7 @@ jobs:
 
   lint:
     needs: affected
-    runs-on: ubuntu-latest
-    permissions:
-      statuses: write
-    timeout-minutes: 5
-    steps:
-      - name: Checkout
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
-        with:
-          ref: ${{ github.event.pull_request.head.sha || github.sha }}
-      - name: Setup Node
-        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
-        with:
-          node-version: 24
-      - name: Setup tooling
-        run: bash .github/custard/node/setup.sh
-      - name: Run lint
-        # Do not use env.PATHS since it will expand the JSON contents into
-        # the terminal and the quotes will be messed up.
-        run: bash .github/custard/map.sh ${{ env.SCRIPT }} "$PATHS"
-        env:
-          SCRIPT: .github/custard/node/lint.sh
-          PATHS: ${{ needs.affected.outputs.paths }}
+    uses: ./.github/workflows/node-lint.yaml
+    with:
+      head-sha: ${{ github.event.pull_request.head.sha || github.sha }}
+      paths: ${{ needs.affected.outputs.paths }}
