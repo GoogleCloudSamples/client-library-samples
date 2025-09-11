@@ -4,3 +4,6 @@ venv/
 # Node
 node_modules/
 /.eslintrc
+
+# Custard
+/custard.ts
