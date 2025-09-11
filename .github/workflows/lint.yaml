@@ -35,6 +35,9 @@ jobs:
     timeout-minutes: ${{ inputs.timeout-minutes }}
     continue-on-error: ${{ inputs.continue-on-error }}
     outputs:
+      # Both steps.lint.conclusion and steps.lint.result will be 'success'
+      # if continue-on-error is true. Only steps.lint.outcome will be 'failure'.
+      # https://www.kenmuse.com/blog/how-to-handle-step-and-job-errors-in-github-actions
       status: ${{ steps.lint.outcome }}
     steps:
       - name: Checkout

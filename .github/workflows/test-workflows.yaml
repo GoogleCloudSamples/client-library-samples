@@ -27,7 +27,7 @@ jobs:
     uses: ./.github/workflows/lint.yaml
     with:
       head-sha: ${{ github.event.pull_request.head.sha || github.sha }}
-      paths: '[".github/custard/test/node/lint-fail"]'
+      paths: '[".github/custard/test/node/lint-pass"]'
       continue-on-error: true
 
   check-expected-fails:
