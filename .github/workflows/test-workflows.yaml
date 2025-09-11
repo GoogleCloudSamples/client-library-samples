@@ -34,6 +34,6 @@ jobs:
     needs: lint-fail-node
     runs-on: ubuntu-latest
     steps:
-      - name: Check lint-fail-node (status=${{ needs.lint-fail-node.result }})
-        if: ${{ needs.lint-fail-node.result == 'failure' }}
+      - name: Check lint-fail-node (status=${{ needs.lint-fail-node.outputs.status }})
+        if: ${{ needs.lint-fail-node.outputs.status == 'failure' }}
         run: exit 1

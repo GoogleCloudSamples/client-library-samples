@@ -25,12 +25,17 @@ on:
         description: Whether to continue if it fails.
         default: false
         type: boolean
+    outputs:
+      status:
+        value: ${{ jobs.lint.outputs.status }}
 
 jobs:
   lint:
     runs-on: ubuntu-latest
     timeout-minutes: ${{ inputs.timeout-minutes }}
     continue-on-error: ${{ inputs.continue-on-error }}
+    outputs:
+      status: ${{ steps.lint.conclusion }}
     steps:
       - name: Checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
@@ -47,6 +52,7 @@ jobs:
       - name: Setup tooling
         run: bash .github/custard/setup.sh
       - name: Run lint
+        id: lint
         # Do not use env.PATHS since it will expand the JSON contents into
         # the terminal and the quotes will be messed up.
         run: bash .github/custard/map.sh ".github/custard/run.sh lint" "$PATHS"
