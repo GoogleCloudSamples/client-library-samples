@@ -16,23 +16,16 @@ set -x # Command tracing
 # This means that if we want to keep the language-specific configurations
 # isolated (in .github/custard/<language>), we have limited options.
 #
-# The simplest option is having the node_modules and eslintrc in the root
-# directory, similar to how Python creates a virtual environment in the
-# root directory.
+# The simplest option is copying the package files and installing into the
+# root directory, similar to how Python creates a virtual environment
+# in the root directory.
 
 CUSTARD_NODE=".github/custard/node"
 
-# Copy the eslintrc into the root directory, this is in the .gitignore.
+# Copy the Node package files to the root directory.
 cp "$CUSTARD_NODE/.eslintrc" .
+cp "$CUSTARD_NODE/package.json" .
+cp "$CUSTARD_NODE/package-lock.json" .
 
-# Install the node_modules in the root directory, in the gitignore.
-# Using `npm ci`` would require the package.json and lock in the
-# root directory, so we just use `npm install`.
-npm install --prefix "$(pwd)" "$CUSTARD_NODE"
-
-# This has the side effect of npm creating a package.json and
-# package-lock.json in root too.
-# They're not needed, so we'll just remove them here to make sure
-# nothing ever depends on them and avoid any future issues,
-# since npm can be very specific about how packages are structured.
-rm package.json package-lock.json
+# Install in root to make it available to all subpackages.
+npm ci

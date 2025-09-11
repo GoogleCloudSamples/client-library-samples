@@ -10,17 +10,6 @@
     "timeout-minutes": 10
   },
 
-  "commands": {
-    "lint": {
-      "pre": [
-        "cp .github/custard/node/.eslintrc .",
-        "npm install --prefix=. .github/custard/node",
-        "rm package.json package-lock.json"
-      ],
-      "run": "npm run lint"
-    }
-  },
-
   "ignore": [
     // ".github/", // TODO: ignore this, commented to test out
     ".github/custard/node",
