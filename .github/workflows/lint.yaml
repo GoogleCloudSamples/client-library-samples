@@ -21,11 +21,16 @@ on:
         description: The maximum number of minutes to run the job.
         default: 5
         type: number
+      continue-on-error:
+        description: Whether to continue if it fails.
+        default: false
+        type: boolean
 
 jobs:
   lint:
     runs-on: ubuntu-latest
     timeout-minutes: ${{ inputs.timeout-minutes }}
+    continue-on-error: ${{ inputs.continue-on-error }}
     steps:
       - name: Checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4

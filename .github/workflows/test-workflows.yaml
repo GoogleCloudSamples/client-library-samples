@@ -28,3 +28,12 @@ jobs:
     with:
       head-sha: ${{ github.event.pull_request.head.sha || github.sha }}
       paths: '[".github/custard/test/node/lint-fail"]'
+      continue-on-error: true
+
+  check-expected-fails:
+    needs: lint-fail-node
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check lint-fail-node (status=${{ needs.lint-fail-node.result }})
+        if: ${{ needs.lint-fail-node.result == 'failure' }}
+        run: exit 1
