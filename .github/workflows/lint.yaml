@@ -5,7 +5,7 @@ on:
         description: The SHA of the head commit.
         required: true
         type: string
-      paths:
+      paths-json:
         description: A JSON list of package paths.
         required: true
         type: string

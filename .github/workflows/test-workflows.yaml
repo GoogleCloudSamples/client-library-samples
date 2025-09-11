@@ -17,7 +17,7 @@ jobs:
     uses: ./.github/workflows/lint.yaml
     with:
       head-sha: ${{ github.event.pull_request.head.sha || github.sha }}
-      paths: |
+      paths-json: |
         [
           ".github/custard/test/node/lint-pass",
           ".github/custard/test/python/lint-pass"
@@ -29,12 +29,12 @@ jobs:
     uses: ./.github/workflows/lint.yaml
     with:
       head-sha: ${{ github.event.pull_request.head.sha || github.sha }}
-      paths: '[".github/custard/test/node/lint-fail"]'
+      paths-json: '[".github/custard/test/node/lint-fail"]'
       expect-failure: true
 
   lint-fail-python:
     uses: ./.github/workflows/lint.yaml
     with:
       head-sha: ${{ github.event.pull_request.head.sha || github.sha }}
-      paths: '[".github/custard/test/python/lint-fail"]'
+      paths-json: '[".github/custard/test/python/lint-fail"]'
       expect-failure: true
