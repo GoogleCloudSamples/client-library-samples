@@ -21,24 +21,15 @@ on:
         description: The maximum number of minutes to run the job.
         default: 5
         type: number
-      continue-on-error:
-        description: Whether to continue if it fails.
+      expect-failure:
+        description: Whether to expect this to fail.
         default: false
         type: boolean
-    outputs:
-      status:
-        value: ${{ jobs.lint.outputs.status }}
 
 jobs:
   lint:
     runs-on: ubuntu-latest
     timeout-minutes: ${{ inputs.timeout-minutes }}
-    continue-on-error: ${{ inputs.continue-on-error }}
-    outputs:
-      # Both steps.lint.conclusion and steps.lint.result will be 'success'
-      # if continue-on-error is true. Only steps.lint.outcome will be 'failure'.
-      # https://www.kenmuse.com/blog/how-to-handle-step-and-job-errors-in-github-actions
-      status: ${{ steps.lint.outcome }}
     steps:
       - name: Checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
@@ -56,9 +47,15 @@ jobs:
         run: bash .github/custard/setup.sh
       - name: Run lint
         id: lint
-        continue-on-error: ${{ inputs.continue-on-error }}
+        continue-on-error: ${{ inputs.expect-failure }}
         # Do not use env.PATHS since it will expand the JSON contents into
         # the terminal and the quotes will be messed up.
         run: bash .github/custard/map.sh ".github/custard/run.sh lint" "$PATHS"
         env:
           PATHS: ${{ inputs.paths }}
+      - name: Expect failure
+        # Both steps.lint.conclusion and steps.lint.result will be 'success'
+        # if continue-on-error is true. Only steps.lint.outcome will be 'failure'.
+        # https://www.kenmuse.com/blog/how-to-handle-step-and-job-errors-in-github-actions
+        if: ${{ inputs.expect-failure }} && ${{ steps.lint.outcome != 'failure' }}
+        run: echo "This was expected to fail." && exit 1
