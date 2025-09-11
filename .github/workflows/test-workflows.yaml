@@ -30,12 +30,22 @@ jobs:
       paths: '[".github/custard/test/node/lint-pass"]'
       continue-on-error: true
 
+  lint-fail-python:
+    uses: ./.github/workflows/lint.yaml
+    with:
+      head-sha: ${{ github.event.pull_request.head.sha || github.sha }}
+      paths: '[".github/custard/test/python/lint-pass"]'
+      continue-on-error: true
+
   check-expected-fails:
-    needs: lint-fail-node
+    needs:
+      - lint-fail-node
+      - lint-fail-python
     runs-on: ubuntu-latest
     steps:
       - name: Check lint-fail-node (status=${{ needs.lint-fail-node.outputs.status }})
         if: ${{ needs.lint-fail-node.outputs.status != 'failure' }}
-        run: |
-          echo "Expected this job fail."
-          exit 1
+        run: echo "Expected this job fail." && exit 1
+      - name: Check lint-fail-python (status=${{ needs.lint-fail-python.outputs.status }})
+        if: ${{ needs.lint-fail-python.outputs.status != 'failure' }}
+        run: echo "Expected this job fail." && exit 1
