@@ -6,7 +6,7 @@ JSON_LIST="$2"
 
 FAILED=""
 for path in $(echo "$JSON_LIST" | jq -r '.[]'); do
-  echo "----- $SCRIPT $path -----"
+  echo "----- $path -----"
   bash "$SCRIPT" "$path" || FAILED="$FAILED\n - $path"
   echo ""
 done

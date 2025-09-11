@@ -18,6 +18,6 @@ $PYTHON -m flake8 "$PACKAGE" || FAILED="$FAILED\n - flake8"
 
 set +x # Disable command tracing
 if [[ -n "$FAILED" ]]; then
-  echo "\nChecks failed: $FAILED"
+  echo -e "\nChecks failed: $FAILED"
   exit 1
 fi

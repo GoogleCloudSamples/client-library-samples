@@ -23,6 +23,7 @@
 
   "ignore": [
     // ".github/", // TODO: ignore this, commented to test out
+    ".github/custard/node",
     ".gitignore",
     "CONTRIBUTING.md",
     "LICENSE",
