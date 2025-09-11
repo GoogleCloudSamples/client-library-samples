@@ -36,7 +36,9 @@ jobs:
       - name: Setup tooling
         run: bash .github/custard/node/setup.sh
       - name: Run lint
-        run: bash .github/custard/map.sh ${{ env.SCRIPT }} "${{ env.PATHS }}"
+        # Do not use env.PATHS since it will expand the JSON contents into
+        # the terminal and the quotes will be messed up.
+        run: bash .github/custard/map.sh ${{ env.SCRIPT }} "$PATHS"
         env:
           SCRIPT: .github/custard/node/lint.sh
           PATHS: ${{ needs.affected.outputs.paths }}
