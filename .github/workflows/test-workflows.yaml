@@ -27,7 +27,7 @@ jobs:
     uses: ./.github/workflows/lint.yaml
     with:
       head-sha: ${{ github.event.pull_request.head.sha || github.sha }}
-      paths: '[".github/custard/test/node/lint-fail"]'
+      paths: '[".github/custard/test/node/lint-pass"]'
       continue-on-error: true
 
   check-expected-fails:
@@ -35,5 +35,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check lint-fail-node (status=${{ needs.lint-fail-node.outputs.status }})
-        if: ${{ needs.lint-fail-node.outputs.status == 'failure' }}
+        if: ${{ needs.lint-fail-node.outputs.status != 'failure' }}
         run: exit 1
