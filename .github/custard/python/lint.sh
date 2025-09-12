@@ -15,6 +15,7 @@ $PYTHON -m autoflake --check --recursive "$PACKAGE" || FAILED="$FAILED\n - autof
 $PYTHON -m flake8 "$PACKAGE" || FAILED="$FAILED\n - flake8"
 $PYTHON -m black --check "$PACKAGE" || FAILED="$FAILED\n - black"
 $PYTHON -m isort --check "$PACKAGE" || FAILED="$FAILED\n - isort"
+# TODO: mypy type checking
 set +x # Disable command tracing
 
 if [[ -n "$FAILED" ]]; then
