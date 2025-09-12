@@ -18,10 +18,10 @@ done
 
 echo "===================="
 if [[ -n "$SUCCEEDED" ]]; then
-  echo "✅ Succeeded: $SUCCEEDED\n"
+  echo -e "✅ Succeeded: $SUCCEEDED\n"
 fi
 
 if [[ -n "$FAILED" ]]; then
-  echo "❌ Failed: $FAILED\n"
+  echo -e "❌ Failed: $FAILED\n"
   exit 1
 fi
