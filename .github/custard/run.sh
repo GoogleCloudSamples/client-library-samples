@@ -19,5 +19,6 @@ else
   echo "No package file found, make sure that path contains one of:"
   echo " - package.json (for Node.js)"
   echo " - requirements.txt (for Python)"
+  echo " - go.mod (for Go)"
   exit 1
 fi
