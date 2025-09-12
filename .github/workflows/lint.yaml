@@ -51,10 +51,10 @@ jobs:
         uses: actions/setup-go@v6
         with:
           go-version: ${{ inputs.go-version }}
-      - name: Install lint dependencies
-        run: |
-          bash .github/custard/node/lint-install.sh
-          bash .github/custard/python/lint-install.sh
+      - name: Install Node lint
+        run: bash .github/custard/node/lint-install.sh
+      - name: Install Python lint
+        run: bash .github/custard/python/lint-install.sh
       - name: Run lint
         id: lint
         continue-on-error: ${{ inputs.expect-failure }}
