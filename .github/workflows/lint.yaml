@@ -11,7 +11,7 @@ on:
         type: string
       node-version:
         description: The version of Node to use.
-        default: "23"
+        default: "22"
         type: string
       python-version:
         description: The version of Python to use.
