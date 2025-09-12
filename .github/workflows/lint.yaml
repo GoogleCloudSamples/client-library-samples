@@ -11,7 +11,7 @@ on:
         type: string
       node-version:
         description: The version of Node to use.
-        default: "24"
+        default: "23"
         type: string
       python-version:
         description: The version of Python to use.
@@ -19,7 +19,7 @@ on:
         type: string
       go-version:
         description: The version of Go to use.
-        default: "^1.25"
+        default: "^1.24"
         type: string
       timeout-minutes:
         description: The maximum number of minutes to run the job.
