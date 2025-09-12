@@ -8,4 +8,4 @@ set -x # Command tracing
 cd "$PACKAGE"
 go mod verify
 gofmt -l .
-go build
+go vet

@@ -75,9 +75,9 @@ jobs:
       paths-json: '[".github/custard/test/go/lint-fail-gofmt"]'
       expect-failure: true
 
-  go-lint-fail-build:
+  go-lint-fail-vet:
     uses: ./.github/workflows/lint.yaml
     with:
       head-sha: ${{ github.event.pull_request.head.sha || github.sha }}
-      paths-json: '[".github/custard/test/go/lint-fail-build"]'
+      paths-json: '[".github/custard/test/go/lint-fail-vet"]'
       expect-failure: true

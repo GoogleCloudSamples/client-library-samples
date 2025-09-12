@@ -1,5 +1,6 @@
 package main
 
 func main() {
-	x := y
+	// undefined: x
+	return x
 }
