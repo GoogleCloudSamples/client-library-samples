@@ -11,4 +11,4 @@ PACKAGE="$1"
 set -x # Command tracing
 
 # Script defined in .github/custard/node/package.json.
-time npm run lint "$PACKAGE"
+npm run lint "$PACKAGE"

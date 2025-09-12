@@ -6,13 +6,13 @@ PACKAGE="$2"
 
 if [ -f "$PACKAGE/package.json" ]; then
   echo "Language: node"
-  bash .github/custard/node/$COMMAND.sh "$PACKAGE"
+  time bash .github/custard/node/$COMMAND.sh "$PACKAGE"
 elif [ -f "$PACKAGE/requirements.txt" ]; then
   echo "Language: python"
-  bash .github/custard/python/$COMMAND.sh "$PACKAGE"
+  time bash .github/custard/python/$COMMAND.sh "$PACKAGE"
 elif [ -f "$PACKAGE/go.mod" ]; then
   echo "Language: go"
-  bash .github/custard/go/$COMMAND.sh "$PACKAGE"
+  time bash .github/custard/go/$COMMAND.sh "$PACKAGE"
 else
   echo "❌ .github/custard/run.sh: package language not supported."
   echo "Could not infer language for '$PACKAGE'"

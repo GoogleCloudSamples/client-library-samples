@@ -6,6 +6,6 @@ PACKAGE="$1"
 set -x # Command tracing
 
 cd "$PACKAGE"
-time go mod verify
-time gofmt -l .
-time go build
+go mod verify
+gofmt -l .
+go build
