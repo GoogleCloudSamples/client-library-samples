@@ -17,6 +17,10 @@ on:
         description: The version of Python to use.
         default: "3.13"
         type: string
+      go-version:
+        description: The version of Go to use.
+        default: "^1.25"
+        type: string
       timeout-minutes:
         description: The maximum number of minutes to run the job.
         default: 5
@@ -32,19 +36,25 @@ jobs:
     timeout-minutes: ${{ inputs.timeout-minutes }}
     steps:
       - name: Checkout
-        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        uses: actions/checkout@v4
         with:
           ref: ${{ inputs.head-sha }}
       - name: Setup Node
-        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ inputs.node-version }}
       - name: Setup Python
         uses: actions/setup-python@v6
         with:
           python-version: ${{ inputs.python-version }}
+      - name: Setup Go
+        uses: actions/setup-go@v6
+        with:
+          go-version: ${{ inputs.go-version }}
       - name: Install lint dependencies
-        run: bash .github/custard/lint-install.sh
+        run: |
+          bash .github/custard/node/lint-install.sh
+          bash .github/custard/python/lint-install.sh
       - name: Run lint
         id: lint
         continue-on-error: ${{ inputs.expect-failure }}
