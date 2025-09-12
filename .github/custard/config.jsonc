@@ -2,7 +2,8 @@
 {
   "package-file": [
     "package.json", // Node
-    "requirements.txt" // Python
+    "requirements.txt", // Python
+    "go.mod" // Go
   ],
   "ci-setup-filename": "ci-setup.json",
 

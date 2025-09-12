@@ -43,8 +43,8 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: ${{ inputs.python-version }}
-      - name: Install tooling dependencies
-        run: bash .github/custard/setup.sh
+      - name: Install lint dependencies
+        run: bash .github/custard/lint-install.sh
       - name: Run lint
         id: lint
         continue-on-error: ${{ inputs.expect-failure }}

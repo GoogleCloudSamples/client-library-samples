@@ -1,4 +1,4 @@
-# usage: bash .github/custard/node/setup.sh
+# usage: bash .github/custard/node/lint-install.sh
 
 # Eslint and gts are very specific about how and where they want the eslintrc
 # file and the node_modules/ to live.

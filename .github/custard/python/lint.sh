@@ -1,7 +1,7 @@
 # usage: bash .github/custard/python/lint.sh path/to/package
 #
 # Prerequisites:
-# - bash .github/custard/python/setup.sh
+# - bash .github/custard/python/lint-install.sh
 
 set -e # Exit on error
 set -u # Error when expanding unset variables
@@ -12,9 +12,9 @@ FAILED=""
 
 set -x # Command tracing
 $PYTHON -m autoflake --check --recursive "$PACKAGE" || FAILED="$FAILED\n - autoflake"
+$PYTHON -m flake8 "$PACKAGE" || FAILED="$FAILED\n - flake8"
 $PYTHON -m black --check "$PACKAGE" || FAILED="$FAILED\n - black"
 $PYTHON -m isort --check "$PACKAGE" || FAILED="$FAILED\n - isort"
-$PYTHON -m flake8 "$PACKAGE" || FAILED="$FAILED\n - flake8"
 set +x # Disable command tracing
 
 if [[ -n "$FAILED" ]]; then

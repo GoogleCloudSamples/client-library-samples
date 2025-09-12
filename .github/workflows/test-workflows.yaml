@@ -20,21 +20,64 @@ jobs:
       paths-json: |
         [
           ".github/custard/test/node/lint-pass",
-          ".github/custard/test/python/lint-pass"
+          ".github/custard/test/python/lint-pass",
+          ".github/custard/test/go/lint-pass"
         ]
 
-  # Failures should be tested one by one, since as long as there is one,
-  # the whole job will fail.
-  lint-fail-node:
+  # Any failure will cause the whole job to fail, so we should test each
+  # failure case individually.
+  node-lint-fail:
     uses: ./.github/workflows/lint.yaml
     with:
       head-sha: ${{ github.event.pull_request.head.sha || github.sha }}
       paths-json: '[".github/custard/test/node/lint-fail"]'
       expect-failure: true
 
-  lint-fail-python:
+  python-lint-fail-autoflake:
     uses: ./.github/workflows/lint.yaml
     with:
       head-sha: ${{ github.event.pull_request.head.sha || github.sha }}
-      paths-json: '[".github/custard/test/python/lint-fail"]'
+      paths-json: '[".github/custard/test/python/lint-fail-autoflake"]'
+      expect-failure: true
+
+  python-lint-fail-flake8:
+    uses: ./.github/workflows/lint.yaml
+    with:
+      head-sha: ${{ github.event.pull_request.head.sha || github.sha }}
+      paths-json: '[".github/custard/test/python/lint-fail-flake8"]'
+      expect-failure: true
+
+  python-lint-fail-black:
+    uses: ./.github/workflows/lint.yaml
+    with:
+      head-sha: ${{ github.event.pull_request.head.sha || github.sha }}
+      paths-json: '[".github/custard/test/python/lint-fail-black"]'
+      expect-failure: true
+
+  python-lint-fail-isort:
+    uses: ./.github/workflows/lint.yaml
+    with:
+      head-sha: ${{ github.event.pull_request.head.sha || github.sha }}
+      paths-json: '[".github/custard/test/python/lint-fail-isort"]'
+      expect-failure: true
+
+  go-lint-fail-mod:
+    uses: ./.github/workflows/lint.yaml
+    with:
+      head-sha: ${{ github.event.pull_request.head.sha || github.sha }}
+      paths-json: '[".github/custard/test/go/lint-fail-mod"]'
+      expect-failure: true
+
+  go-lint-fail-gofmt:
+    uses: ./.github/workflows/lint.yaml
+    with:
+      head-sha: ${{ github.event.pull_request.head.sha || github.sha }}
+      paths-json: '[".github/custard/test/go/lint-fail-gofmt"]'
+      expect-failure: true
+
+  go-lint-fail-build:
+    uses: ./.github/workflows/lint.yaml
+    with:
+      head-sha: ${{ github.event.pull_request.head.sha || github.sha }}
+      paths-json: '[".github/custard/test/go/lint-fail-build"]'
       expect-failure: true

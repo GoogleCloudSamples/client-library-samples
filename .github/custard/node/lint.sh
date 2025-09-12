@@ -1,7 +1,7 @@
 # usage: bash .github/custard/node/lint.sh path/to/package
 #
 # Prerequisites:
-# - bash .github/custard/node/setup.sh
+# - bash .github/custard/node/lint-install.sh
 
 set -e # Exit on error
 set -u # Error when expanding unset variables
