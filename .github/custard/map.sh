@@ -8,7 +8,7 @@ SUCCEEDED=""
 FAILED=""
 for path in $(echo "$JSON_LIST" | jq -r '.[]'); do
   echo "----- $path -----"
-  if bash time $SCRIPT "$path"; then
+  if time bash $SCRIPT "$path"; then
     SUCCEEDED="$SUCCEEDED\n - $path"
   else
     FAILED="$FAILED\n - $path"
@@ -18,10 +18,10 @@ done
 
 echo "===================="
 if [[ -n "$SUCCEEDED" ]]; then
-  echo -e "✅ Succeeded: $SUCCEEDED\n"
+  echo "✅ Succeeded: $SUCCEEDED\n"
 fi
 
 if [[ -n "$FAILED" ]]; then
-  echo -e "❌ Failed: $FAILED\n"
+  echo "❌ Failed: $FAILED\n"
   exit 1
 fi
