@@ -11,10 +11,10 @@ PYTHON="venv/bin/python"
 FAILED=""
 
 set -x # Command tracing
-$PYTHON -m autoflake --check --recursive "$PACKAGE" || FAILED="$FAILED\n - autoflake"
-$PYTHON -m flake8 "$PACKAGE" || FAILED="$FAILED\n - flake8"
-$PYTHON -m black --check "$PACKAGE" || FAILED="$FAILED\n - black"
-$PYTHON -m isort --check "$PACKAGE" || FAILED="$FAILED\n - isort"
+time $PYTHON -m autoflake --check --recursive "$PACKAGE" || FAILED="$FAILED\n - autoflake"
+time $PYTHON -m flake8 "$PACKAGE" || FAILED="$FAILED\n - flake8"
+time $PYTHON -m black --check "$PACKAGE" || FAILED="$FAILED\n - black"
+time $PYTHON -m isort --check "$PACKAGE" || FAILED="$FAILED\n - isort"
 # TODO: mypy type checking
 set +x # Disable command tracing
 
