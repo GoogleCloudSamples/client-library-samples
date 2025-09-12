@@ -25,6 +25,7 @@ jobs:
   lint:
     needs: affected
     uses: ./.github/workflows/lint.yaml
+    if: needs.affected.outputs.paths != '[]'
     with:
       head-sha: ${{ github.event.pull_request.head.sha || github.sha }}
       paths-json: ${{ needs.affected.outputs.paths }}
