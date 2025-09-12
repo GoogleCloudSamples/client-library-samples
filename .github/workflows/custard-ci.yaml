@@ -18,7 +18,7 @@ jobs:
     with:
       head-sha: ${{ github.event.pull_request.head.sha || github.sha }}
       config-file: .github/custard/config.jsonc
-      custard-version: v0.4.0
+      custard-version: v0.4.0 # TODO: this should be auto-updated in the reusable workflow in cloud-samples-tools
       # No need to create checks since this is a pull_request workflow.
       create-check-if: false
 
