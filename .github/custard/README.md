@@ -111,7 +111,7 @@ Make sure the language-specific scripts follow the calling convention.
 * If needed, update the `.github/custard/<language>/setup.sh` scripts to do any new setup needed for the new script.
 * Update this README with any relevant new information.
 * If needed, add a new `.github/workflows/<new-workflow-name>.yaml` to run in GitHub Actions.
-* If needed, add tests on [`.github/workflows/test-workflows.yaml`](../workflows/test-workflows.yaml).
+* If needed, add tests on [`.github/workflows/test-workflows.yaml`](../workflows/test-workflows.yaml), the test files should live under `.github/custard/test/<language>/`.
 
 ## Supporting a new language
 
