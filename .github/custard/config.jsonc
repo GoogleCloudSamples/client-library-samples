@@ -1,18 +1,18 @@
-// TODO: add README here, like: https://github.com/GoogleCloudPlatform/nodejs-docs-samples/blob/main/.github/config/README.md
 {
   "package-file": [
     "package.json", // Node
     "requirements.txt", // Python
     "go.mod" // Go
   ],
-  "ci-setup-filename": "ci-setup.json",
 
-  // If these change, please update the .github/custard/README.md too!
-  "ci-setup-defaults": {
-    "env": { },
-    "secrets": { },
-    "timeout-minutes": 10
-  },
+  // // TODO: Currently not used, uncomment when supporting tests.
+  // // If these change, please update:
+  // //   .github/custard/docs/ci-setup-file.md
+  // "ci-setup-filename": "ci-setup.json",
+  // "ci-setup-defaults": {
+  //   "env": { },
+  //   "secrets": { }
+  // },
 
   "ignore": [
     ".github/",
