@@ -121,7 +121,7 @@ Just remember to add them to the `.gitignore` file.
 
 * Create a new `.github/custard/<language>` directory.
 * Create all the language specific scripts (e.g. `lint.sh`).
-* If needed, create a `setup.sh` script and add it the development environment setup section in this README.
+* If needed, create a `setup.sh` script and add it to the development environment setup section in this README.
 * Update the [`.github/custard/config.jsonc`](config.jsonc) to include the new language's package file and ignore patterns.
 * Update the [`.github/custard/run.sh`](run.sh) script to support the new language.
 * Update the [`.gitignore`](/.gitignore) with anything that shouldn't be committed to GitHub.
