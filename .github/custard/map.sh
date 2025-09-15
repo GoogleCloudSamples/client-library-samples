@@ -1,14 +1,14 @@
 set -e # Exit on error
 set -u # Error when expanding unset variables
 
-SCRIPT="$1"
+COMMAND="$1"
 JSON_LIST="$2"
 
 SUCCEEDED=""
 FAILED=""
 for path in $(echo "$JSON_LIST" | jq -r '.[]'); do
   echo "----- $path -----"
-  if bash $SCRIPT "$path"; then
+  if bash .github/custard/run.sh "$COMMAND" "$path"; then
     SUCCEEDED="$SUCCEEDED\n - $path"
   else
     FAILED="$FAILED\n - $path"
