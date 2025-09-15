@@ -7,10 +7,10 @@ Here's an overview of the main files and directories.
   ├─ go/                # Go-specific scripts
   |  └─ lint.sh             # Go lint script
   ├─ node/              # Node-specific scripts and configuration
-  |  ├─ lint-install.sh     # Installs Node.js linting dependencies
+  |  ├─ setup.sh            # Sets up Node.js tooling
   |  └─ lint.sh             # Python lint script
   ├─ python/            # Python-specific scripts and configuration
-  |  ├─ lint-install.sh     # Installs Python linting dependencies
+  |  ├─ setup.sh            # Sets up Python tooling
   |  └─ lint.sh             # Python lint script
   ├─ docs/              # More in-depth documentation
   ├─ test/              # Tests for GHA workflows
@@ -30,14 +30,14 @@ Then run the following setup scripts from the repository root directory.
 
 ```sh
 # You only need to run this once.
-bash .github/custard/node/lint-install.sh
-bash .github/custard/python/lint-install.sh
+bash .github/custard/node/setup.sh
+bash .github/custard/python/setup.sh
 ```
 
 ## Language-specific scripts
 
 Each language directory contains all the language-specific scripts and configurations.
-There's a `lint-install.sh` script for each language which sets up the environment and installs any dependencies or tooling needed.
+There's a `setup.sh` script for each language which sets up the environment and installs any dependencies or tooling needed.
 Go already has all the linting tools built-in so there's nothing else to set up or install.
 
 Language-specific scripts **must** follow this calling convention:
@@ -86,6 +86,32 @@ bash .github/custard/map.sh lint \
   .github/custard/test/python/lint-pass \
   .github/custard/test/go/lint-pass
 ```
+
+## Adding a new script
+
+Make sure the language-specific scripts follow the calling convention.
+
+* Add a `.github/custard/<language>/<script-name>.sh` script on **all languages**.
+* If needed, update the `.github/custard/<language>/setup.sh` scripts to do any new setup needed for the new script.
+* Update this README with any relevant new information.
+* If needed, add a new `.github/workflows/<new-workflow-name>.yaml` to run in GitHub Actions.
+* If needed, add tests on [`.github/workflows/test-workflows.yaml`](../workflows/test-workflows.yaml).
+
+## Supporting a new language
+
+Make sure all language-specific files, scripts, and configurations live in the respective `.github/custard/<language>` directory.
+If needed, it's okay to copy files or install things into the repository root directory during the language setup.
+Just remember to add them to the `.gitignore` file.
+
+* Create a new `.github/custard/<language>` directory.
+* Create all the language specific scripts (e.g. `lint.sh`).
+* If needed, create a `setup.sh` script and add it the development environment setup section in this README.
+* Update the [`.github/custard/config.jsonc`](config.jsonc) to include the new language's package file and ignore patterns.
+* Update the [`.github/custard/run.sh`](run.sh) script to support the new language.
+* Update the [`.gitignore`](/.gitignore) with anything that shouldn't be committed to GitHub.
+* Update this README with any relevant new information.
+* If needed, update the [`.github/workflows/lint.yaml`](/.github/workflows/lint.yaml) workflow to call the new language's `setup.sh` script.
+* Add new tests on [`.github/workflows/test-workflows.yaml`](/.github/workflows/test-workflows.yaml), the test files should live under `.github/custard/test/<language>/`.
 
 ## config.jsonc
 

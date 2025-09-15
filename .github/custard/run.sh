@@ -16,6 +16,8 @@ elif [ -f "$PACKAGE/go.mod" ]; then
   echo "Language: go"
   time bash .github/custard/go/$SCRIPT.sh "$PACKAGE"
 else
+  # When adding new languages, remember to update this error message
+  # to include the new language's package file.
   echo "❌ .github/custard/run.sh: package language not supported."
   echo "Could not infer language for '$PACKAGE'"
   echo "No package file found, make sure that path contains one of:"
