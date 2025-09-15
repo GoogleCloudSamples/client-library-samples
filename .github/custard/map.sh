@@ -1,19 +1,19 @@
-# usage: bash .github/custard/map.sh <command> [paths...]
+# usage: bash .github/custard/map.sh <script-name> [paths...]
 
 set -e # Exit on error
 set -u # Error when expanding unset variables
 
-COMMAND="$1"
-PATHS="${@:2}"
+SCRIPT="$1"
+PACKAGES="${@:2}"
 
 SUCCEEDED=""
 FAILED=""
-for path in $PATHS; do
-  echo "----- $path -----"
-  if bash .github/custard/run.sh "$COMMAND" "$path"; then
-    SUCCEEDED="$SUCCEEDED\n - $path"
+for package in $PACKAGES; do
+  echo "----- $package -----"
+  if bash .github/custard/run.sh "$SCRIPT" "$package"; then
+    SUCCEEDED="$SUCCEEDED\n - $package"
   else
-    FAILED="$FAILED\n - $path"
+    FAILED="$FAILED\n - $package"
   fi
   echo ""
 done
