@@ -18,15 +18,12 @@
 
 set -e # Exit on error
 set -u # Error when expanding unset variables
-
-CUSTARD_NODE=".github/custard/node"
-
 set -x # Command tracing
 
 # Copy the Node package files to the root directory.
-cp "$CUSTARD_NODE/.eslintrc" .
-cp "$CUSTARD_NODE/package.json" .
-cp "$CUSTARD_NODE/package-lock.json" .
+cp .github/custard/node/.eslintrc .
+cp .github/custard/node/package.json .
+cp .github/custard/node/package-lock.json .
 
 # Install in root to make it available to all subpackages.
 npm ci
