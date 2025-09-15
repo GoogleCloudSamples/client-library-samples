@@ -61,7 +61,8 @@ jobs:
         continue-on-error: ${{ inputs.expect-failure }}
         # Do not use env.PATHS since it will expand the JSON contents into
         # the terminal and the quotes will be messed up.
-        run: bash .github/custard/map.sh lint "$PATHS"
+        # Use jq to convert the JSON paths to positional arguments.
+        run: bash .github/custard/map.sh lint $(echo "$PATHS" | jq -r '.[]')
         env:
           PATHS: ${{ inputs.paths-json }}
       - name: Expect failure

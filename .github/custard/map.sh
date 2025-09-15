@@ -6,7 +6,7 @@ JSON_LIST="$2"
 
 SUCCEEDED=""
 FAILED=""
-for path in $(echo "$JSON_LIST" | jq -r '.[]'); do
+for path in "${@:1}"; do
   echo "----- $path -----"
   if bash .github/custard/run.sh "$COMMAND" "$path"; then
     SUCCEEDED="$SUCCEEDED\n - $path"
