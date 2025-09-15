@@ -1,0 +1,26 @@
+{
+	"id": "speech_v2_speech_config_get",
+	"title": "get config",
+	"description": "Speech-to-Text sample showing how to get_config",
+	"collection": "speech_api_samples",
+	"products": [
+		"speech"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "speech.googleapis.com",
+		"method": "get_config"
+	},
+	"regionTags": [
+		{
+			"name": "speech_v2_speech_config_get"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-12",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

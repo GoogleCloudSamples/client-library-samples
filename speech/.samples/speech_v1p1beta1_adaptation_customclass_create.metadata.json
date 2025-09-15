@@ -1,0 +1,26 @@
+{
+	"id": "speech_v1p1beta1_adaptation_customclass_create",
+	"title": "create custom_class",
+	"description": "Speech-to-Text sample showing how to create_custom_class",
+	"collection": "speech_api_samples",
+	"products": [
+		"speech"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "speech.googleapis.com",
+		"method": "create_custom_class"
+	},
+	"regionTags": [
+		{
+			"name": "speech_v1p1beta1_adaptation_customclass_create"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-12",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"id": "speech_v2_speech_customclass_delete",
+	"title": "delete custom_class",
+	"description": "Speech-to-Text sample showing how to delete_custom_class",
+	"collection": "speech_api_samples",
+	"products": [
+		"speech"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "speech.googleapis.com",
+		"method": "delete_custom_class"
+	},
+	"regionTags": [
+		{
+			"name": "speech_v2_speech_customclass_delete"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-12",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
