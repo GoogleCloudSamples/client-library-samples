@@ -34,6 +34,22 @@ bash .github/custard/node/setup.sh
 bash .github/custard/python/setup.sh
 ```
 
+## config.jsonc
+
+The [`config.jsonc`](config.jsonc) is the main configuration file for Custard.
+Here's how we define how to detect affected packages.
+
+The `package-file` entry defines which files are used to determine where a package is located.
+For example, if there was a diff in `path/to/sample/src/example/file.js`, and there's a `path/to/sample/package.json`, then `path/to/sample` is considered the affected package.
+
+The `ignore` entry is where we define files or directories that shouldn't trigger any runs.
+For example, only editing `path/to/sample/README.md` shouldn't trigger lint or tests to run for `path/to/sample`, even if it's a valid package.
+
+For information on CI setup files, see [`docs/ci-setup-file.md`](docs/ci-setup-file.md).`
+
+For guidelines and best practices on testing, see the
+[testing guidelines](https://github.com/GoogleCloudPlatform/cloud-samples-tools/blob/main/docs/testing-guidelines.md)
+
 ## Language-specific scripts
 
 Each language directory contains all the language-specific scripts and configurations.
@@ -112,19 +128,3 @@ Just remember to add them to the `.gitignore` file.
 * Update this README with any relevant new information.
 * If needed, update the [`.github/workflows/lint.yaml`](/.github/workflows/lint.yaml) workflow to call the new language's `setup.sh` script.
 * Add new tests on [`.github/workflows/test-workflows.yaml`](/.github/workflows/test-workflows.yaml), the test files should live under `.github/custard/test/<language>/`.
-
-## config.jsonc
-
-The [`config.jsonc`](config.jsonc) is the main configuration file for Custard.
-Here's how we define how to detect affected packages.
-
-The `package-file` entry defines which files are used to determine where a package is located.
-For example, if there was a diff in `path/to/sample/src/example/file.js`, and there's a `path/to/sample/package.json`, then `path/to/sample` is considered the affected package.
-
-The `ignore` entry is where we define files or directories that shouldn't trigger any runs.
-For example, only editing `path/to/sample/README.md` shouldn't trigger lint or tests to run for `path/to/sample`, even if it's a valid package.
-
-For information on CI setup files, see [`docs/ci-setup-file.md`](docs/ci-setup-file.md).`
-
-For guidelines and best practices on testing, see the
-[testing guidelines](https://github.com/GoogleCloudPlatform/cloud-samples-tools/blob/main/docs/testing-guidelines.md)
