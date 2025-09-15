@@ -19,6 +19,21 @@ Here's an overview of the main files and directories.
   └─ run.sh             # Language-agnostic wrapper to run a script
 ```
 
+## Development environment setup
+
+To set up your local environment, make sure you have:
+* [Install Node](https://cloud.google.com/nodejs/docs/setup)
+* [Install Python](https://cloud.google.com/python/docs/setup)
+* [Install Go](https://cloud.google.com/go/docs/setup)
+
+Then run the following setup scripts from the repository root directory.
+
+```sh
+# You only need to run this once.
+bash .github/custard/node/lint-install.sh
+bash .github/custard/python/lint-install.sh
+```
+
 ## Language-specific scripts
 
 Each language directory contains all the language-specific scripts and configurations.
