@@ -1,12 +1,14 @@
+# usage: bash .github/custard/map.sh <command> [paths...]
+
 set -e # Exit on error
 set -u # Error when expanding unset variables
 
 COMMAND="$1"
-JSON_LIST="$2"
+PATHS="${@:2}"
 
 SUCCEEDED=""
 FAILED=""
-for path in "${@:1}"; do
+for path in $PATHS; do
   echo "----- $path -----"
   if bash .github/custard/run.sh "$COMMAND" "$path"; then
     SUCCEEDED="$SUCCEEDED\n - $path"
