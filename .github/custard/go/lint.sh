@@ -1,3 +1,5 @@
+# usage: bash .github/custard/go/lint.sh [path]
+
 set -e # Exit on error
 set -u # Error when expanding unset variables
 
