@@ -1,0 +1,26 @@
+{
+	"id": "translate_v3_translationservice_glossaryentries_list_async",
+	"title": "list GlossaryEntries",
+	"description": "Cloud Translation sample showing how to listGlossaryEntries",
+	"collection": "translate_api_samples",
+	"products": [
+		"translate"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "translate.googleapis.com",
+		"method": "listGlossaryEntries"
+	},
+	"regionTags": [
+		{
+			"name": "translate_v3_translationservice_glossaryentries_list_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
