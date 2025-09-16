@@ -1,0 +1,26 @@
+{
+	"id": "storage_v2_storagecontrol_storagelayout_get",
+	"title": "get storage_layout",
+	"description": "Cloud Storage sample showing how to get_storage_layout",
+	"collection": "storage_api_samples",
+	"products": [
+		"storage"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "storage.googleapis.com",
+		"method": "get_storage_layout"
+	},
+	"regionTags": [
+		{
+			"name": "storage_v2_storagecontrol_storagelayout_get"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-04",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

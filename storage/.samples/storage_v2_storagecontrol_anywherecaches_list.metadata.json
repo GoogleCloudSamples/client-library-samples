@@ -1,0 +1,26 @@
+{
+	"id": "storage_v2_storagecontrol_anywherecaches_list",
+	"title": "list anywhere_caches",
+	"description": "Cloud Storage sample showing how to list_anywhere_caches",
+	"collection": "storage_api_samples",
+	"products": [
+		"storage"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "storage.googleapis.com",
+		"method": "list_anywhere_caches"
+	},
+	"regionTags": [
+		{
+			"name": "storage_v2_storagecontrol_anywherecaches_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-04",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
