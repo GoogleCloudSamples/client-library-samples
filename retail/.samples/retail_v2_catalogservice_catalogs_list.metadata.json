@@ -1,0 +1,26 @@
+{
+	"id": "retail_v2_catalogservice_catalogs_list",
+	"title": "list catalogs",
+	"description": "Retail API sample showing how to list_catalogs",
+	"collection": "retail_api_samples",
+	"products": [
+		"retail"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "retail.googleapis.com",
+		"method": "list_catalogs"
+	},
+	"regionTags": [
+		{
+			"name": "retail_v2_catalogservice_catalogs_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-10",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

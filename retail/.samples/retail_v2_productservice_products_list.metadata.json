@@ -1,0 +1,26 @@
+{
+	"id": "retail_v2_productservice_products_list",
+	"title": "list products",
+	"description": "Retail API sample showing how to list_products",
+	"collection": "retail_api_samples",
+	"products": [
+		"retail"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "retail.googleapis.com",
+		"method": "list_products"
+	},
+	"regionTags": [
+		{
+			"name": "retail_v2_productservice_products_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-10",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

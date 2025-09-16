@@ -1,0 +1,26 @@
+{
+	"id": "retail_v2beta_controlservice_controls_list",
+	"title": "list controls",
+	"description": "Retail API sample showing how to list_controls",
+	"collection": "retail_api_samples",
+	"products": [
+		"retail"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "retail.googleapis.com",
+		"method": "list_controls"
+	},
+	"regionTags": [
+		{
+			"name": "retail_v2beta_controlservice_controls_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-10",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"id": "retail_v2alpha_projectservice_loggingconfig_get",
+	"title": "get logging_config",
+	"description": "Retail API sample showing how to get_logging_config",
+	"collection": "retail_api_samples",
+	"products": [
+		"retail"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "retail.googleapis.com",
+		"method": "get_logging_config"
+	},
+	"regionTags": [
+		{
+			"name": "retail_v2alpha_projectservice_loggingconfig_get"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-10",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

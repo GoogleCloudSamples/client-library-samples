@@ -1,0 +1,26 @@
+{
+	"id": "retail_v2alpha_catalogservice_defaultbranch_get",
+	"title": "get default_branch",
+	"description": "Retail API sample showing how to get_default_branch",
+	"collection": "retail_api_samples",
+	"products": [
+		"retail"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "retail.googleapis.com",
+		"method": "get_default_branch"
+	},
+	"regionTags": [
+		{
+			"name": "retail_v2alpha_catalogservice_defaultbranch_get"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-10",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

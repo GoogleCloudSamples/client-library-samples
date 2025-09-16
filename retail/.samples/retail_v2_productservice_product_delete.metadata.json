@@ -1,0 +1,26 @@
+{
+	"id": "retail_v2_productservice_product_delete",
+	"title": "delete product",
+	"description": "Retail API sample showing how to delete_product",
+	"collection": "retail_api_samples",
+	"products": [
+		"retail"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "retail.googleapis.com",
+		"method": "delete_product"
+	},
+	"regionTags": [
+		{
+			"name": "retail_v2_productservice_product_delete"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-10",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
