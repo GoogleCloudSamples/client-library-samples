@@ -13,7 +13,7 @@ Here's an overview of the main files and directories.
   |  ├─ setup.sh            # Sets up Python tooling
   |  └─ lint.sh             # Python lint script
   ├─ docs/              # More in-depth documentation
-  ├─ test/              # Tests for GHA workflows
+  ├─ tests/             # Tests for GHA workflows
   ├─ config.jsonc       # Main configuration file for Custard
   ├─ map.sh             # Runs a script for each item in a JSON list
   └─ run.sh             # Language-agnostic wrapper to run a script
@@ -85,7 +85,7 @@ This means that every language directory **must** contain that language-specific
 ```sh
 # For example, to call the lint script on a single directory.
 # usage: bash .github/custard/run.sh <script-name> [path]
-bash .github/custard/run.sh lint .github/custard/test/node/lint-pass
+bash .github/custard/run.sh lint .github/custard/tests/node/lint-pass
 ```
 
 The [`map.sh`](map.sh) script runs a script on multiple package directories.
@@ -98,9 +98,9 @@ The script runs sequentially on all directories in order to avoid potential conf
 # For example, to call the lint script on multiple directories.
 # usage: bash .github/custard/map.sh <script-name> [paths...]
 bash .github/custard/map.sh lint \
-  .github/custard/test/node/lint-pass \
-  .github/custard/test/python/lint-pass \
-  .github/custard/test/go/lint-pass
+  .github/custard/tests/node/lint-pass \
+  .github/custard/tests/python/lint-pass \
+  .github/custard/tests/go/lint-pass
 ```
 
 ## Adding a new script
@@ -111,7 +111,7 @@ Make sure the language-specific scripts follow the calling convention.
 * If needed, update the `.github/custard/<language>/setup.sh` scripts to do any new setup needed for the new script.
 * Update this README with any relevant new information.
 * If needed, add a new `.github/workflows/<new-workflow-name>.yaml` to run in GitHub Actions.
-* If needed, add tests on [`.github/workflows/test-workflows.yaml`](../workflows/test-workflows.yaml), the test files should live under `.github/custard/test/<language>/`.
+* If needed, add tests on [`.github/workflows/test-workflows.yaml`](../workflows/test-workflows.yaml), the test files should live under `.github/custard/tests/<language>/`.
 
 ## Supporting a new language
 
@@ -127,4 +127,4 @@ Just remember to add them to the `.gitignore` file.
 * Update the [`.gitignore`](/.gitignore) with anything that shouldn't be committed to GitHub.
 * Update this README with any relevant new information.
 * If needed, update the [`.github/workflows/lint.yaml`](/.github/workflows/lint.yaml) workflow to call the new language's `setup.sh` script.
-* Add new tests on [`.github/workflows/test-workflows.yaml`](/.github/workflows/test-workflows.yaml), the test files should live under `.github/custard/test/<language>/`.
+* Add new tests on [`.github/workflows/test-workflows.yaml`](/.github/workflows/test-workflows.yaml), the test files should live under `.github/custard/tests/<language>/`.

@@ -10,6 +10,7 @@ FAILED=""
 set -x # Command tracing
 $PYTHON -m autoflake --check --recursive "$PACKAGE" || FAILED="$FAILED\n - autoflake"
 $PYTHON -m flake8 "$PACKAGE" || FAILED="$FAILED\n - flake8"
+# NOTE: black ignores files defined in the .gitignore
 $PYTHON -m black --check "$PACKAGE" || FAILED="$FAILED\n - black"
 $PYTHON -m isort --check "$PACKAGE" || FAILED="$FAILED\n - isort"
 # TODO: mypy type checking
