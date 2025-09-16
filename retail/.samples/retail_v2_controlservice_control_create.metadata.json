@@ -1,0 +1,26 @@
+{
+	"id": "retail_v2_controlservice_control_create",
+	"title": "create control",
+	"description": "Retail API sample showing how to create_control",
+	"collection": "retail_api_samples",
+	"products": [
+		"retail"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "retail.googleapis.com",
+		"method": "create_control"
+	},
+	"regionTags": [
+		{
+			"name": "retail_v2_controlservice_control_create"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-10",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
