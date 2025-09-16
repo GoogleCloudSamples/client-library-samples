@@ -1,0 +1,26 @@
+{
+	"id": "securitycenter_v1beta_modelarmor_template_create",
+	"title": "create template",
+	"description": "Security Command Center sample showing how to create_template",
+	"collection": "securitycenter_api_samples",
+	"products": [
+		"securitycenter"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "securitycenter.googleapis.com",
+		"method": "create_template"
+	},
+	"regionTags": [
+		{
+			"name": "securitycenter_v1beta_modelarmor_template_create"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-10",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

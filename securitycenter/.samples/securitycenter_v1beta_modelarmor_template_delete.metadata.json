@@ -1,0 +1,26 @@
+{
+	"id": "securitycenter_v1beta_modelarmor_template_delete",
+	"title": "delete template",
+	"description": "Security Command Center sample showing how to delete_template",
+	"collection": "securitycenter_api_samples",
+	"products": [
+		"securitycenter"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "securitycenter.googleapis.com",
+		"method": "delete_template"
+	},
+	"regionTags": [
+		{
+			"name": "securitycenter_v1beta_modelarmor_template_delete"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-10",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"id": "securitycenter_v1beta_modelarmor_templates_list",
+	"title": "list templates",
+	"description": "Security Command Center sample showing how to list_templates",
+	"collection": "securitycenter_api_samples",
+	"products": [
+		"securitycenter"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "securitycenter.googleapis.com",
+		"method": "list_templates"
+	},
+	"regionTags": [
+		{
+			"name": "securitycenter_v1beta_modelarmor_templates_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-10",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"id": "securitycenter_v1_modelarmor_template_update",
+	"title": "update template",
+	"description": "Security Command Center sample showing how to update_template",
+	"collection": "securitycenter_api_samples",
+	"products": [
+		"securitycenter"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "securitycenter.googleapis.com",
+		"method": "update_template"
+	},
+	"regionTags": [
+		{
+			"name": "securitycenter_v1_modelarmor_template_update"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-10",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
