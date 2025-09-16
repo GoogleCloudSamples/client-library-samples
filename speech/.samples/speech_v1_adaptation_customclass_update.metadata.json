@@ -1,0 +1,26 @@
+{
+	"id": "speech_v1_adaptation_customclass_update",
+	"title": "update custom_class",
+	"description": "Speech-to-Text sample showing how to update_custom_class",
+	"collection": "speech_api_samples",
+	"products": [
+		"speech"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "speech.googleapis.com",
+		"method": "update_custom_class"
+	},
+	"regionTags": [
+		{
+			"name": "speech_v1_adaptation_customclass_update"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-12",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
