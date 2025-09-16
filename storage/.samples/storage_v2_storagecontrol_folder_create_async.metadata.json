@@ -1,0 +1,26 @@
+{
+	"id": "storage_v2_storagecontrol_folder_create_async",
+	"title": "create Folder",
+	"description": "Cloud Storage sample showing how to createFolder",
+	"collection": "storage_api_samples",
+	"products": [
+		"storage"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "storage.googleapis.com",
+		"method": "createFolder"
+	},
+	"regionTags": [
+		{
+			"name": "storage_v2_storagecontrol_folder_create_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-03",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
