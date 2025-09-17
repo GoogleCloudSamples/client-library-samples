@@ -1,0 +1,26 @@
+{
+	"id": "eventarc_v1_eventarc_messagebus_delete",
+	"title": "delete message_bus",
+	"description": "Eventarc sample showing how to delete_message_bus",
+	"collection": "eventarc_api_samples",
+	"products": [
+		"eventarc"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "eventarc.googleapis.com",
+		"method": "delete_message_bus"
+	},
+	"regionTags": [
+		{
+			"name": "eventarc_v1_eventarc_messagebus_delete"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-16",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

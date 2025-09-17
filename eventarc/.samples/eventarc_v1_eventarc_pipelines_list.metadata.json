@@ -1,0 +1,26 @@
+{
+	"id": "eventarc_v1_eventarc_pipelines_list",
+	"title": "list pipelines",
+	"description": "Eventarc sample showing how to list_pipelines",
+	"collection": "eventarc_api_samples",
+	"products": [
+		"eventarc"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "eventarc.googleapis.com",
+		"method": "list_pipelines"
+	},
+	"regionTags": [
+		{
+			"name": "eventarc_v1_eventarc_pipelines_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-16",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
