@@ -1,0 +1,26 @@
+{
+	"id": "documentai_v1beta3_documentprocessorservice_processortype_get",
+	"title": "get processor_type",
+	"description": "Document AI sample showing how to get_processor_type",
+	"collection": "documentai_api_samples",
+	"products": [
+		"documentai"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "documentai.googleapis.com",
+		"method": "get_processor_type"
+	},
+	"regionTags": [
+		{
+			"name": "documentai_v1beta3_documentprocessorservice_processortype_get"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-10",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

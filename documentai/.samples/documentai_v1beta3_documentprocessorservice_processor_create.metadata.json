@@ -1,0 +1,26 @@
+{
+	"id": "documentai_v1beta3_documentprocessorservice_processor_create",
+	"title": "create processor",
+	"description": "Document AI sample showing how to create_processor",
+	"collection": "documentai_api_samples",
+	"products": [
+		"documentai"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "documentai.googleapis.com",
+		"method": "create_processor"
+	},
+	"regionTags": [
+		{
+			"name": "documentai_v1beta3_documentprocessorservice_processor_create"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-10",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

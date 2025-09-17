@@ -1,0 +1,26 @@
+{
+	"id": "documentai_v1beta3_documentservice_documents_list",
+	"title": "list documents",
+	"description": "Document AI sample showing how to list_documents",
+	"collection": "documentai_api_samples",
+	"products": [
+		"documentai"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "documentai.googleapis.com",
+		"method": "list_documents"
+	},
+	"regionTags": [
+		{
+			"name": "documentai_v1beta3_documentservice_documents_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-10",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
