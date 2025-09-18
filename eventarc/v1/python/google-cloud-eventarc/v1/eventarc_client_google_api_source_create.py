@@ -35,8 +35,7 @@ def create_google_api_source(
                   (e.g., "us-central1").
         google_api_source_id: The user-provided ID for the GoogleApiSource.
         message_bus_id: The ID of the MessageBus that this GoogleApiSource will
-                        deliver events to. The MessageBus must already exist in
-                        the same project and location.
+                        deliver events to.
     """
     client = eventarc_v1.EventarcClient()
 
