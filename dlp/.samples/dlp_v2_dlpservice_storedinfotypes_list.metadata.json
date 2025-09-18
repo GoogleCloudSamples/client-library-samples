@@ -1,0 +1,26 @@
+{
+	"id": "dlp_v2_dlpservice_storedinfotypes_list",
+	"title": "list stored_info_types",
+	"description": "Sensitive Data Protection sample showing how to list_stored_info_types",
+	"collection": "dlp_api_samples",
+	"products": [
+		"dlp"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dlp.googleapis.com",
+		"method": "list_stored_info_types"
+	},
+	"regionTags": [
+		{
+			"name": "dlp_v2_dlpservice_storedinfotypes_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

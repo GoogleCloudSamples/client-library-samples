@@ -1,0 +1,26 @@
+{
+	"id": "dlp_v2_dlpservice_inspecttemplate_get",
+	"title": "get inspect_template",
+	"description": "Sensitive Data Protection sample showing how to get_inspect_template",
+	"collection": "dlp_api_samples",
+	"products": [
+		"dlp"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dlp.googleapis.com",
+		"method": "get_inspect_template"
+	},
+	"regionTags": [
+		{
+			"name": "dlp_v2_dlpservice_inspecttemplate_get"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
