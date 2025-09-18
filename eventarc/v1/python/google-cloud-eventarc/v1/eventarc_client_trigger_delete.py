@@ -43,7 +43,7 @@ def delete_trigger(
     except exceptions.NotFound:
         print(
             f"Trigger '{trigger_name}' not found. "
-            "It may have already been deleted or the name is incorrect."
+            "It might have already been deleted or the name is incorrect."
         )
     except exceptions.GoogleAPICallError as e:
         print(f"Error deleting trigger '{trigger_name}': {e}")

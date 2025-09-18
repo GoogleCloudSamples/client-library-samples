@@ -44,7 +44,7 @@ def delete_channel(
         response = operation.result()
         print(f"Channel deleted successfully: {response.name}")
     except exceptions.NotFound:
-        print(f"Channel {channel_name} not found. It may have already been deleted.")
+        print(f"Channel {channel_name} not found. It might have already been deleted.")
     except exceptions.GoogleAPICallError as e:
         print(f"An API error occurred while deleting channel {channel_name}: {e}")
     except Exception as e:

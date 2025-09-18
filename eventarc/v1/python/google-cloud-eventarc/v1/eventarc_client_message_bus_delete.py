@@ -42,7 +42,7 @@ def delete_message_bus(
         print(f"MessageBus {name} deleted successfully.")
     except google.api_core.exceptions.NotFound:
         print(
-            f"MessageBus {name} not found. It may have already been deleted or never existed."
+            f"MessageBus {name} not found. It might have already been deleted or never existed."
         )
         print("Ensure the MessageBus ID and location are correct.")
     except google.api_core.exceptions.Conflict:

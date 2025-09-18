@@ -47,7 +47,7 @@ def delete_google_api_source(
         print(f"GoogleApiSource {response.name} deleted successfully.")
 
     except exceptions.NotFound:
-        print(f"GoogleApiSource {name} not found. It may have already been deleted.")
+        print(f"GoogleApiSource {name} not found. It might have already been deleted.")
     except Exception as e:
         print(f"Error deleting GoogleApiSource {name}: {e}")
 
