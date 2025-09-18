@@ -46,7 +46,7 @@ def delete_pipeline(project_id: str, location: str, pipeline_id: str) -> None:
     except core_exceptions.NotFound:
         print(
             f"Error: Pipeline {pipeline_name} not found. "
-            "Please ensure the pipeline ID and location are correct."
+            "Ensure the pipeline ID and location are correct."
         )
     except core_exceptions.GoogleAPICallError as e:
         print(f"An API error occurred: {e}")

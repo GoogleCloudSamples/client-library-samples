@@ -55,7 +55,7 @@ def list_enrollments(project_id: str, location: str) -> None:
     except exceptions.NotFound as e:
         print(
             f"Error: The specified project or location was not found: {e}. "
-            "Please ensure the project ID and location are correct and that "
+            "Ensure the project ID and location are correct and that "
             "the Eventarc API is enabled for the project."
         )
     except exceptions.GoogleAPICallError as e:

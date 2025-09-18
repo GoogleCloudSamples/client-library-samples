@@ -60,7 +60,7 @@ def list_triggers(
         print(f"Error listing triggers: {e}")
         if e.code == 404:
             print(
-                f"Please ensure that the parent location '{location}' exists and is correctly specified."
+                f"Ensure that the parent location '{location}' exists and is correctly specified."
             )
         elif e.code == 403:
             print(

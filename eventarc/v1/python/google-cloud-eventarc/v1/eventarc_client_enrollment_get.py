@@ -49,7 +49,7 @@ def get_enrollment(
     except exceptions.NotFound:
         print(f"Error: Enrollment '{name}' not found.")
         print(
-            "Action: Please ensure the project ID, location, and enrollment ID are correct and the enrollment exists."
+            "Action: Ensure the project ID, location, and enrollment ID are correct and the enrollment exists."
         )
     except exceptions.GoogleAPICallError as e:
         print(f"An API error occurred: {e}")

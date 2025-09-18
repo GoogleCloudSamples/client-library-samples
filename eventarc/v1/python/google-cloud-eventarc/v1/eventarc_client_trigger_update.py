@@ -74,7 +74,7 @@ def update_eventarc_trigger(
 
     except exceptions.NotFound:
         print(
-            f"Error: Trigger '{trigger_name}' not found. Please ensure the trigger_id and location are correct."
+            f"Error: Trigger '{trigger_name}' not found. Ensure the trigger_id and location are correct."
         )
     except Exception as e:
         print(f"An unexpected error occurred: {e}")

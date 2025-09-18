@@ -50,7 +50,7 @@ def get_eventarc_provider(
 
     except exceptions.NotFound:
         print(f"Error: Provider '{provider_name}' not found.")
-        print("Please ensure the provider ID and location are correct.")
+        print("Ensure the provider ID and location are correct.")
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
         print(

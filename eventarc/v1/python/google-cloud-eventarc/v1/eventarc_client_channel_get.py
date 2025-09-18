@@ -45,7 +45,7 @@ def get_channel(
         print(f"Pub/Sub Topic: {channel.pubsub_topic}")
     except core_exceptions.NotFound:
         print(f"Channel '{channel_name}' not found.")
-        print("Please ensure the channel ID and location are correct.")
+        print("Ensure the channel ID and location are correct.")
     except Exception as e:
         print(f"An error occurred: {e}")
 

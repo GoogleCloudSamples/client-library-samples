@@ -55,7 +55,7 @@ def list_pipelines(
             f"'{location}' was not found."
         )
         print(
-            "Please ensure the project ID and location are correct and "
+            "Ensure the project ID and location are correct and "
             "that Eventarc is enabled in this location."
         )
     except exceptions.GoogleAPICallError as e:

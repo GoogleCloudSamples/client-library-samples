@@ -48,7 +48,7 @@ def list_channel_connections(
     except GoogleAPICallError as e:
         print(f"Error listing ChannelConnections: {e}")
         print(
-            "Please ensure that the project ID and location are correct "
+            "Ensure that the project ID and location are correct "
             "and that the authenticated account has the necessary permissions "
             "(e.g., eventarc.channelConnections.list)."
         )

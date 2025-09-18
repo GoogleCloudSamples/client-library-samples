@@ -49,7 +49,7 @@ def list_message_bus_enrollments(
     except exceptions.NotFound as e:
         print(
             f"Error: The specified message bus '{parent}' was not found. "
-            f"Please ensure the message bus exists and the project/location are correct. Details: {e}"
+            f"Ensure the message bus exists and the project/location are correct. Details: {e}"
         )
     except exceptions.InvalidArgument as e:
         print(

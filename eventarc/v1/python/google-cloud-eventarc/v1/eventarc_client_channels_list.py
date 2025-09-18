@@ -57,7 +57,7 @@ def list_eventarc_channels(project_id: str, location: str) -> None:
     except exceptions.NotFound:
         print(f"Error: Project '{project_id}' or location '{location}' not found.")
         print(
-            "Please ensure the project ID and location are correct and Eventarc API is enabled."
+            "Ensure the project ID and location are correct and Eventarc API is enabled."
         )
     except Exception as e:
         print(f"An unexpected error occurred: {e}")

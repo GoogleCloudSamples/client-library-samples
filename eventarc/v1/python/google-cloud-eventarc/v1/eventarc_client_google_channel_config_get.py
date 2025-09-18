@@ -52,7 +52,7 @@ def get_google_channel_config(
 
     except core_exceptions.NotFound:
         print(f"GoogleChannelConfig for {name} not found.")
-        print("Please ensure that Eventarc is enabled in this project and location.")
+        print("Ensure that Eventarc is enabled in this project and location.")
     except Exception as e:
         print(f"Error getting GoogleChannelConfig: {e}")
 

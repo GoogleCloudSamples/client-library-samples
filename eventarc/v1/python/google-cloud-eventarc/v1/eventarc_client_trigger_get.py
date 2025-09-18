@@ -53,7 +53,7 @@ def get_eventarc_trigger(
 
     except exceptions.NotFound:
         print(f"Error: Trigger '{trigger_name}' not found.")
-        print("Please ensure the project ID, location, and trigger ID are correct.")
+        print("Ensure the project ID, location, and trigger ID are correct.")
     except exceptions.GoogleAPICallError as e:
         print(f"An API error occurred: {e}")
         print("Please check your project permissions and network connectivity.")

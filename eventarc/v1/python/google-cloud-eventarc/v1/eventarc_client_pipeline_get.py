@@ -49,7 +49,7 @@ def get_pipeline(
 
     except exceptions.NotFound:
         print(f"Error: Pipeline '{pipeline_name}' not found.")
-        print("Please ensure the project ID, location, and pipeline ID are correct.")
+        print("Ensure the project ID, location, and pipeline ID are correct.")
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
 

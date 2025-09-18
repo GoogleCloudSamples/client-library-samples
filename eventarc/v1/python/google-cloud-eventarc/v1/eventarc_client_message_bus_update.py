@@ -64,7 +64,7 @@ def update_message_bus(
     except exceptions.NotFound:
         print(
             f"Error: MessageBus '{message_bus_name}' not found. "
-            "Please ensure the message bus exists before attempting to update it."
+            "Ensure the message bus exists before attempting to update it."
         )
     except exceptions.GoogleAPICallError as e:
         print(f"An API error occurred: {e}")

@@ -59,7 +59,7 @@ def list_google_api_sources(
     except exceptions.GoogleAPICallError as e:
         print(f"Error listing GoogleApiSources: {e}")
         print(
-            "Please ensure the project ID and location are correct and that you have the necessary permissions."
+            "Ensure the project ID and location are correct and that you have the necessary permissions."
         )
     except Exception as e:
         print(f"An unexpected error occurred: {e}")

@@ -44,7 +44,7 @@ def delete_enrollment(
         print(f"Enrollment {enrollment_name} deleted successfully.")
     except exceptions.NotFound:
         print(f"Error: Enrollment {enrollment_name} not found.")
-        print("Please ensure the enrollment ID and location are correct.")
+        print("Ensure the enrollment ID and location are correct.")
     except exceptions.GoogleAPICallError as e:
         print(f"Error deleting enrollment {enrollment_name}: {e}")
         print("Please check your project ID, permissions, and network connection.")

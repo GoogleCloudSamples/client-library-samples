@@ -44,13 +44,13 @@ def delete_message_bus(
         print(
             f"MessageBus {name} not found. It may have already been deleted or never existed."
         )
-        print("Please ensure the MessageBus ID and location are correct.")
+        print("Ensure the MessageBus ID and location are correct.")
     except google.api_core.exceptions.Conflict:
         print(
             f"MessageBus {name} can't be deleted due to a conflict. It might be in use."
         )
         print(
-            "Please ensure no other resources depend on this MessageBus before attempting to delete it."
+            "Ensure no other resources depend on this MessageBus before attempting to delete it."
         )
     except Exception as e:
         print(f"An unexpected error occurred while deleting MessageBus {name}: {e}")

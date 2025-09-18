@@ -72,7 +72,7 @@ def update_google_api_source(
     except exceptions.NotFound:
         print(
             f"Error: GoogleApiSource '{google_api_source_name}' not found. "
-            "Please ensure the GoogleApiSource ID and location are correct."
+            "Ensure the GoogleApiSource ID and location are correct."
         )
     except exceptions.GoogleAPICallError as e:
         print(f"An API error occurred: {e}")
