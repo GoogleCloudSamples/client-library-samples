@@ -53,6 +53,7 @@ def update_eventarc_trigger(
     )
 
     # Create a field mask to specify that only the 'service_account' field should be updated.
+    # This is crucial to avoid unintentionally resetting other fields when making partial updates.
     update_mask = field_mask_pb2.FieldMask(paths=["service_account"])
 
     try:

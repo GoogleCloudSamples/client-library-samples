@@ -42,7 +42,7 @@ def get_channel(
         print(f"Channel: {channel.name}")
         print(f"Provider: {channel.provider}")
         print(f"State: {channel.state.name}")
-        print(f"Pub/Sub Topic: {channel.pubsub_topic}")
+        print(f"Pub/Sub topic: {channel.pubsub_topic}")
     except core_exceptions.NotFound:
         print(f"Channel '{channel_name}' not found.")
         print("Ensure the channel ID and location are correct.")

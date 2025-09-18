@@ -53,9 +53,7 @@ def update_google_api_source(
     )
 
     # Create a FieldMask to specify that only the 'display_name' field should be updated.
-    # This is crucial for partial updates to avoid unintentionally resetting other fields.
-    update_mask = field_mask_pb2.FieldMask(paths=["display_name"])
-
+    # This is crucial to avoid unintentionally resetting other fields when making partial updates.    update_mask = field_mask_pb2.FieldMask(paths=["display_name"])
     try:
         operation = client.update_google_api_source(
             google_api_source=google_api_source, update_mask=update_mask

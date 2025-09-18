@@ -23,7 +23,7 @@ def create_channel(project_id: str, location: str, channel_id: str) -> None:
     """
     Creates a new Eventarc channel.
 
-    A channel is a resource on which event providers publish their events.
+    A channel is a resource through which event providers publish their events.
     The published events are delivered through the transport associated with the channel.
     Note that a channel is associated with exactly one event provider.
 
@@ -53,7 +53,7 @@ def create_channel(project_id: str, location: str, channel_id: str) -> None:
         print(f"Channel created: {response.name}")
         print(f"Provider: {response.provider}")
         print(f"State: {response.state.name}")
-        print(f"Pub/Sub Topic: {response.pubsub_topic}")
+        print(f"Pub/Sub topic: {response.pubsub_topic}")
 
     except exceptions.AlreadyExists as e:
         print(

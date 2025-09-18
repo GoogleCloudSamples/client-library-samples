@@ -128,7 +128,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--bucket_name",
-        help="The bucket to get events for (used with default storage-related event)",
+        help="The bucket to get events for (used with default storage-related event).",
         required=True,
     )
 

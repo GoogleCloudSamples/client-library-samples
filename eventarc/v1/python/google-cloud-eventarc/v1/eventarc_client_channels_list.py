@@ -44,7 +44,7 @@ def list_eventarc_channels(project_id: str, location: str) -> None:
             found_channels = True
             print(f"- Channel name: {channel.name}")
             print(f"  Provider: {channel.provider}")
-            print(f"  Pub/Sub Topic: {channel.pubsub_topic}")
+            print(f"  Pub/Sub topic: {channel.pubsub_topic}")
             print(f"  State: {eventarc_v1.Channel.State(channel.state).name}")
             print(f"  Creation time: {channel.create_time.isoformat()}")
             if channel.update_time:
