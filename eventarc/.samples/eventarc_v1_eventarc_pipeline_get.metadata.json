@@ -1,0 +1,26 @@
+{
+	"id": "eventarc_v1_eventarc_pipeline_get",
+	"title": "get pipeline",
+	"description": "Eventarc sample showing how to get_pipeline",
+	"collection": "eventarc_api_samples",
+	"products": [
+		"eventarc"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "eventarc.googleapis.com",
+		"method": "get_pipeline"
+	},
+	"regionTags": [
+		{
+			"name": "eventarc_v1_eventarc_pipeline_get"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-16",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

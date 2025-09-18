@@ -1,0 +1,26 @@
+{
+	"id": "eventarc_v1_eventarc_channel_get",
+	"title": "get channel",
+	"description": "Eventarc sample showing how to get_channel",
+	"collection": "eventarc_api_samples",
+	"products": [
+		"eventarc"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "eventarc.googleapis.com",
+		"method": "get_channel"
+	},
+	"regionTags": [
+		{
+			"name": "eventarc_v1_eventarc_channel_get"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-16",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
