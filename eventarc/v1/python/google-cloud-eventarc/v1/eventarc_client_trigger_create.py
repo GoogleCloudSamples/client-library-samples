@@ -41,7 +41,7 @@ def create_trigger(
         destination_service: The name of the Cloud Run service to which events will be sent.
         destination_region: The region where the Cloud Run service is deployed.
         event_type: The CloudEvents type to filter for (e.g., "google.cloud.storage.object.v1.finalized").
-        bucket_name: The name of the bucket to use for events
+        bucket_name: The name of the bucket to use for events.
     """
     client = eventarc_v1.EventarcClient()
 
