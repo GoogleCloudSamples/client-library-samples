@@ -38,7 +38,7 @@ def create_pipeline(
             For a list of supported locations, see https://cloud.google.com/eventarc/docs/locations.
         pipeline_id: The user-provided ID to be assigned to the pipeline.
             Must be a lowercase alphanumeric string, up to 63 characters long, and must
-            start with a letter. It cannot end with a hyphen.
+            start with a letter. It can't end with a hyphen.
         http_endpoint_uri: The URI of the HTTP endpoint for the pipeline's destination.
             This should be a valid HTTPS URI.
     """
@@ -102,7 +102,7 @@ if __name__ == "__main__":
         help=(
             "The user-provided ID to be assigned to the pipeline. "
             "Must be a lowercase alphanumeric string, up to 63 characters long, and must "
-            "start with a letter. It cannot end with a hyphen."
+            "start with a letter. It can't end with a hyphen."
         ),
         required=True,
     )
