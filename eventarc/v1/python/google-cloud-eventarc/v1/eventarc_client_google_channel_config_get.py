@@ -26,14 +26,14 @@ def get_google_channel_config(
     """
     Retrieves the GoogleChannelConfig for a given project and location.
 
-    The GoogleChannelConfig stores custom settings respected by Eventarc first-party
-    triggers in the matching region. Once configured, first-party event data will
-    be protected using the specified custom managed encryption key instead of
-    Google-managed encryption keys.
+    A GoogleChannelConfig resource can be used to customize security settings
+    for Eventarc first-party triggers in a specific region. Once configured,
+    first-party event data is protected using the specified customer-managed
+    encryption key instead of Google-managed encryption keys.
 
     Args:
-        project_id: The Google Cloud project ID.
-        location: The location of the GoogleChannelConfig (e.g., "us-central1").
+        project_id: The Google Cloud project ID. location: The location of the
+        GoogleChannelConfig (e.g., "us-central1").
     """
     client = eventarc_v1.EventarcClient()
 

@@ -25,18 +25,18 @@ def create_google_api_source(
     """
     Creates a new GoogleApiSource in a specified project and location.
 
-    A GoogleApiSource represents a subscription of 1P events from a MessageBus.
-    It configures Eventarc to deliver events from a specific Google API
-    service to a designated MessageBus.
+    A GoogleApiSource resource represents a subscription to Google API events
+    for a MessageBus. It lets you configure the delivery of events from Google
+    sources to a designated bus.
 
     Args:
-        project_id: The Google Cloud project ID.
-        location: The Google Cloud region where the GoogleApiSource will be created
+        project_id: The Google Cloud project ID. location: The Google Cloud
+        region where the GoogleApiSource will be created
                   (e.g., "us-central1").
         google_api_source_id: The user-provided ID for the GoogleApiSource.
         message_bus_id: The ID of the MessageBus that this GoogleApiSource will
-                        deliver events to. The MessageBus must already exist
-                        in the same project and location.
+                        deliver events to. The MessageBus must already exist in
+                        the same project and location.
     """
     client = eventarc_v1.EventarcClient()
 
