@@ -80,7 +80,7 @@ def create_enrollment(
         print("Please choose a different enrollment ID or delete the existing one.")
         print(f"Details: {e}")
     except core_exceptions.NotFound as e:
-        print(f"Error:The specified resource was not found.")
+        print(f"Error: The specified resource was not found.")
         print(
             f"Ensure the project_id, location, message_bus_id, and destination_pipeline_id are correct and the resources exist."
         )

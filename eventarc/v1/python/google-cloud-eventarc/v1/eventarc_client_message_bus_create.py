@@ -72,7 +72,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--message_bus_id",
         required=True,
-        help="The ID to be assigned to the MessageBus. ",
+        help="The ID to be assigned to the MessageBus.",
     )
     args = parser.parse_args()
 

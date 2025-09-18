@@ -28,7 +28,7 @@ def list_channel_connections(
 
     Args:
         project_id: The Google Cloud project ID.
-        location: The region for the channel connections (e.g., "us-central1").
+        location: The region for the ChannelConnection resources (e.g., 'us-central1').
     """
     client = eventarc_v1.EventarcClient()
     parent = f"projects/{project_id}/locations/{location}"
@@ -72,7 +72,7 @@ if __name__ == "__main__":
         "--location",
         type=str,
         required=True,
-        help="The region for the channel connections (e.g., 'us-central1').",
+        help="The region for the ChannelConnection resources (e.g., 'us-central1').",
     )
 
     args = parser.parse_args()
