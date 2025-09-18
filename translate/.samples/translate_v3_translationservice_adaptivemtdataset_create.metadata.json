@@ -1,0 +1,26 @@
+{
+	"id": "translate_v3_translationservice_adaptivemtdataset_create",
+	"title": "create adaptive_mt_dataset",
+	"description": "Cloud Translation sample showing how to create_adaptive_mt_dataset",
+	"collection": "translate_api_samples",
+	"products": [
+		"translate"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "translate.googleapis.com",
+		"method": "create_adaptive_mt_dataset"
+	},
+	"regionTags": [
+		{
+			"name": "translate_v3_translationservice_adaptivemtdataset_create"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

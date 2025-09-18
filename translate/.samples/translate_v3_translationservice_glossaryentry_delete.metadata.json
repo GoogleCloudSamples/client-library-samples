@@ -1,0 +1,26 @@
+{
+	"id": "translate_v3_translationservice_glossaryentry_delete",
+	"title": "delete glossary_entry",
+	"description": "Cloud Translation sample showing how to delete_glossary_entry",
+	"collection": "translate_api_samples",
+	"products": [
+		"translate"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "translate.googleapis.com",
+		"method": "delete_glossary_entry"
+	},
+	"regionTags": [
+		{
+			"name": "translate_v3_translationservice_glossaryentry_delete"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

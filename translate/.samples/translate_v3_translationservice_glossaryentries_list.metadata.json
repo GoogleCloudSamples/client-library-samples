@@ -1,0 +1,26 @@
+{
+	"id": "translate_v3_translationservice_glossaryentries_list",
+	"title": "list glossary_entries",
+	"description": "Cloud Translation sample showing how to list_glossary_entries",
+	"collection": "translate_api_samples",
+	"products": [
+		"translate"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "translate.googleapis.com",
+		"method": "list_glossary_entries"
+	},
+	"regionTags": [
+		{
+			"name": "translate_v3_translationservice_glossaryentries_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
