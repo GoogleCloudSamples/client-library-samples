@@ -1,0 +1,26 @@
+{
+	"id": "dataproc_v1_workflowtemplateservice_workflowtemplate_get",
+	"title": "get workflow_template",
+	"description": "Dataproc sample showing how to get_workflow_template",
+	"collection": "dataproc_api_samples",
+	"products": [
+		"dataproc"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataproc.googleapis.com",
+		"method": "get_workflow_template"
+	},
+	"regionTags": [
+		{
+			"name": "dataproc_v1_workflowtemplateservice_workflowtemplate_get"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

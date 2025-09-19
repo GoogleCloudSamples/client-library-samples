@@ -1,0 +1,26 @@
+{
+	"id": "dataproc_v1_jobcontroller_jobs_list",
+	"title": "list jobs",
+	"description": "Dataproc sample showing how to list_jobs",
+	"collection": "dataproc_api_samples",
+	"products": [
+		"dataproc"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataproc.googleapis.com",
+		"method": "list_jobs"
+	},
+	"regionTags": [
+		{
+			"name": "dataproc_v1_jobcontroller_jobs_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

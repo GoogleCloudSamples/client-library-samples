@@ -1,0 +1,26 @@
+{
+	"id": "dataproc_v1_workflowtemplateservice_workflowtemplate_delete",
+	"title": "delete workflow_template",
+	"description": "Dataproc sample showing how to delete_workflow_template",
+	"collection": "dataproc_api_samples",
+	"products": [
+		"dataproc"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataproc.googleapis.com",
+		"method": "delete_workflow_template"
+	},
+	"regionTags": [
+		{
+			"name": "dataproc_v1_workflowtemplateservice_workflowtemplate_delete"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

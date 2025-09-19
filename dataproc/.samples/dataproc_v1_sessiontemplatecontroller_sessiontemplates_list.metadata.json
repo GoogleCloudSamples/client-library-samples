@@ -1,0 +1,26 @@
+{
+	"id": "dataproc_v1_sessiontemplatecontroller_sessiontemplates_list",
+	"title": "list session_templates",
+	"description": "Dataproc sample showing how to list_session_templates",
+	"collection": "dataproc_api_samples",
+	"products": [
+		"dataproc"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataproc.googleapis.com",
+		"method": "list_session_templates"
+	},
+	"regionTags": [
+		{
+			"name": "dataproc_v1_sessiontemplatecontroller_sessiontemplates_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

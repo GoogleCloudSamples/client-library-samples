@@ -1,0 +1,26 @@
+{
+	"id": "dataproc_v1_autoscalingpolicyservice_autoscalingpolicies_list",
+	"title": "list autoscaling_policies",
+	"description": "Dataproc sample showing how to list_autoscaling_policies",
+	"collection": "dataproc_api_samples",
+	"products": [
+		"dataproc"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataproc.googleapis.com",
+		"method": "list_autoscaling_policies"
+	},
+	"regionTags": [
+		{
+			"name": "dataproc_v1_autoscalingpolicyservice_autoscalingpolicies_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

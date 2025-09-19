@@ -1,0 +1,26 @@
+{
+	"id": "dataproc_v1_batchcontroller_batch_create",
+	"title": "create batch",
+	"description": "Dataproc sample showing how to create_batch",
+	"collection": "dataproc_api_samples",
+	"products": [
+		"dataproc"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataproc.googleapis.com",
+		"method": "create_batch"
+	},
+	"regionTags": [
+		{
+			"name": "dataproc_v1_batchcontroller_batch_create"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"id": "dataproc_v1_clustercontroller_cluster_get",
+	"title": "get cluster",
+	"description": "Dataproc sample showing how to get_cluster",
+	"collection": "dataproc_api_samples",
+	"products": [
+		"dataproc"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataproc.googleapis.com",
+		"method": "get_cluster"
+	},
+	"regionTags": [
+		{
+			"name": "dataproc_v1_clustercontroller_cluster_get"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

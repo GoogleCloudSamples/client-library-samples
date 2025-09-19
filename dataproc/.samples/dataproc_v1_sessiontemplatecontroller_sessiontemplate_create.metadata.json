@@ -1,0 +1,26 @@
+{
+	"id": "dataproc_v1_sessiontemplatecontroller_sessiontemplate_create",
+	"title": "create session_template",
+	"description": "Dataproc sample showing how to create_session_template",
+	"collection": "dataproc_api_samples",
+	"products": [
+		"dataproc"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataproc.googleapis.com",
+		"method": "create_session_template"
+	},
+	"regionTags": [
+		{
+			"name": "dataproc_v1_sessiontemplatecontroller_sessiontemplate_create"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"id": "dataproc_v1_autoscalingpolicyservice_autoscalingpolicy_update",
+	"title": "update autoscaling_policy",
+	"description": "Dataproc sample showing how to update_autoscaling_policy",
+	"collection": "dataproc_api_samples",
+	"products": [
+		"dataproc"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataproc.googleapis.com",
+		"method": "update_autoscaling_policy"
+	},
+	"regionTags": [
+		{
+			"name": "dataproc_v1_autoscalingpolicyservice_autoscalingpolicy_update"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
