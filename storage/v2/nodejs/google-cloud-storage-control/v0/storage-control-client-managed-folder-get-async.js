@@ -84,7 +84,7 @@ if (require.main === module) {
 
 Usage:
 
- node getManagedFolder.js <bucketName> <managedFolderName>
+ node storage-control-client-managed-folder-get-async.js <bucketName> <managedFolderName>
 `);
     process.exitCode = 1;
   });
