@@ -18,7 +18,7 @@ const process = require('process');
 const {status} = require('@grpc/grpc-js');
 
 // [START storage_v2_storagecontrol_anywherecache_get_async]
-const {StorageControlClient} = require('@google-cloud/storage-control');
+const {StorageControlClient} = require('@google-cloud/storage-control').v2;
 
 const client = new StorageControlClient();
 
