@@ -1,0 +1,26 @@
+{
+	"id": "storage_v2_storagecontrol_managedfolder_delete_async",
+	"title": "delete ManagedFolder",
+	"description": "Cloud Storage sample showing how to deleteManagedFolder",
+	"collection": "storage_api_samples",
+	"products": [
+		"storage"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "storage.googleapis.com",
+		"method": "deleteManagedFolder"
+	},
+	"regionTags": [
+		{
+			"name": "storage_v2_storagecontrol_managedfolder_delete_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-03",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
