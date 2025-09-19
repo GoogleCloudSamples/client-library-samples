@@ -15,7 +15,7 @@
 'use strict';
 
 // [START storage_v2_storagecontrol_anywherecaches_list_async]
-const { StorageControlClient } = require('@google-cloud/storage-control');
+const { StorageControlClient } = require('@google-cloud/storage-control').v2;
 const { status } = require('@grpc/grpc-js');
 
 const client = new StorageControlClient();
