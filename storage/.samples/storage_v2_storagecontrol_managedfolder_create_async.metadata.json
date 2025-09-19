@@ -1,0 +1,26 @@
+{
+	"id": "storage_v2_storagecontrol_managedfolder_create_async",
+	"title": "create ManagedFolder",
+	"description": "Cloud Storage sample showing how to createManagedFolder",
+	"collection": "storage_api_samples",
+	"products": [
+		"storage"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "storage.googleapis.com",
+		"method": "createManagedFolder"
+	},
+	"regionTags": [
+		{
+			"name": "storage_v2_storagecontrol_managedfolder_create_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-03",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
