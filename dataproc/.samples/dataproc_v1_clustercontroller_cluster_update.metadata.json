@@ -1,0 +1,26 @@
+{
+	"id": "dataproc_v1_clustercontroller_cluster_update",
+	"title": "update cluster",
+	"description": "Dataproc sample showing how to update_cluster",
+	"collection": "dataproc_api_samples",
+	"products": [
+		"dataproc"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataproc.googleapis.com",
+		"method": "update_cluster"
+	},
+	"regionTags": [
+		{
+			"name": "dataproc_v1_clustercontroller_cluster_update"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
