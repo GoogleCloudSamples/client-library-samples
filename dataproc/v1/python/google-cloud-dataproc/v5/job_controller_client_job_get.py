@@ -52,7 +52,7 @@ def get_dataproc_job(
 
         print(f"Successfully retrieved job: {job.reference.job_id}")
         print(f"  Project ID: {job.reference.project_id}")
-        print(f"  Region: {job.placement.cluster_name}")
+        print(f"  Cluster Name: {job.placement.cluster_name}")
         print(f"  Status: {job.status.state.name}")
         if job.status.details:
             print(f"  Status Details: {job.status.details}")
