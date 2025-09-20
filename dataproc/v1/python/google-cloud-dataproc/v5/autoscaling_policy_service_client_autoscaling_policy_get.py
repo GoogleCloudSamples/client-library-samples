@@ -34,7 +34,7 @@ def get_autoscaling_policy(
     """
     client = dataproc_v1.AutoscalingPolicyServiceClient()
 
-    name = f"projects/{project_id}/locations/{location}/autoscalingPolicies/{policy_id}"
+    name = client.autoscaling_policy_path(project_id, location, policy_id)
 
     request = dataproc_v1.GetAutoscalingPolicyRequest(name=name)
 
