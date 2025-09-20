@@ -59,9 +59,7 @@ def list_dataproc_clusters(
             print(f"Status: {cluster.status.state.name}")
             if cluster.status.detail:
                 print(f"Status Detail: {cluster.status.detail}")
-            print(
-                f"Creation Time: {cluster.status.state_start_time.strftime('%Y-%m-%d %H:%M:%S %Z')}"
-            )
+            print(f"Creation Time: {cluster.status.state_start_time.isoformat()}")
             if cluster.config and cluster.config.gce_cluster_config:
                 print(f"Zone URI: {cluster.config.gce_cluster_config.zone_uri}")
             print("--------------------------------------------------")
