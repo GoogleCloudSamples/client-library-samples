@@ -72,7 +72,7 @@ def list_autoscaling_policies_sample(
         print("Please ensure the project ID and region are correct and that you have the necessary permissions.")
     except exceptions.InvalidArgument as e:
         print(f"Error: Invalid argument provided in the request.\nDetails: {e}")
-        print("This might happen if the parent format is incorrect. Ensure it's 'projects/{project_id}/regions/{region}'.")
+        print("This might happen if the parent format is incorrect. Ensure it's 'projects/{project_id}/regions/{location}'.")
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
 
