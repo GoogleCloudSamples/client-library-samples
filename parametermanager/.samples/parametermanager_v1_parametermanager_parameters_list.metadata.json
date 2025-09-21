@@ -1,0 +1,26 @@
+{
+	"id": "parametermanager_v1_parametermanager_parameters_list",
+	"title": "list parameters",
+	"description": "Parameter Manager sample showing how to list_parameters",
+	"collection": "parametermanager_api_samples",
+	"products": [
+		"null"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "null.googleapis.com",
+		"method": "list_parameters"
+	},
+	"regionTags": [
+		{
+			"name": "parametermanager_v1_parametermanager_parameters_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-12",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
