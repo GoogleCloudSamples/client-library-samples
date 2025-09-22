@@ -1,0 +1,26 @@
+{
+	"id": "dlp_v2_dlpservice_infotypes_list_async",
+	"title": "list InfoTypes",
+	"description": "Sensitive Data Protection sample showing how to listInfoTypes",
+	"collection": "dlp_api_samples",
+	"products": [
+		"dlp"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dlp.googleapis.com",
+		"method": "listInfoTypes"
+	},
+	"regionTags": [
+		{
+			"name": "dlp_v2_dlpservice_infotypes_list_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
