@@ -1,0 +1,26 @@
+{
+	"id": "dlp_v2_dlpservice_storedinfotype_delete_async",
+	"title": "delete StoredInfoType",
+	"description": "Sensitive Data Protection sample showing how to deleteStoredInfoType",
+	"collection": "dlp_api_samples",
+	"products": [
+		"dlp"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dlp.googleapis.com",
+		"method": "deleteStoredInfoType"
+	},
+	"regionTags": [
+		{
+			"name": "dlp_v2_dlpservice_storedinfotype_delete_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
