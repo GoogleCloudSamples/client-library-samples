@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_servicemonitoringservice_services_list",
+	"title": "list services",
+	"description": "Cloud Monitoring sample showing how to list_services",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "list_services"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_servicemonitoringservice_services_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

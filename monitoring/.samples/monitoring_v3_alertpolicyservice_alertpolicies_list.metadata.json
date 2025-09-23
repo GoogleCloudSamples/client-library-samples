@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_alertpolicyservice_alertpolicies_list",
+	"title": "list alert_policies",
+	"description": "Cloud Monitoring sample showing how to list_alert_policies",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "list_alert_policies"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_alertpolicyservice_alertpolicies_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_metricservice_metricdescriptors_list",
+	"title": "list metric_descriptors",
+	"description": "Cloud Monitoring sample showing how to list_metric_descriptors",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "list_metric_descriptors"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_metricservice_metricdescriptors_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
