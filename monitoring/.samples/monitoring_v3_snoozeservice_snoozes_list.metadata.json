@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_snoozeservice_snoozes_list",
+	"title": "list snoozes",
+	"description": "Cloud Monitoring sample showing how to list_snoozes",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "list_snoozes"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_snoozeservice_snoozes_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

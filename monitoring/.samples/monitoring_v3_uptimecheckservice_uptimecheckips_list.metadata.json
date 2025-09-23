@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_uptimecheckservice_uptimecheckips_list",
+	"title": "list uptime_check_ips",
+	"description": "Cloud Monitoring sample showing how to list_uptime_check_ips",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "list_uptime_check_ips"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_uptimecheckservice_uptimecheckips_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_uptimecheckservice_uptimecheckconfig_get",
+	"title": "get uptime_check_config",
+	"description": "Cloud Monitoring sample showing how to get_uptime_check_config",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "get_uptime_check_config"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_uptimecheckservice_uptimecheckconfig_get"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

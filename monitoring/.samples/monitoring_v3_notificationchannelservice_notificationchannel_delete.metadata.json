@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_notificationchannelservice_notificationchannel_delete",
+	"title": "delete notification_channel",
+	"description": "Cloud Monitoring sample showing how to delete_notification_channel",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "delete_notification_channel"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_notificationchannelservice_notificationchannel_delete"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

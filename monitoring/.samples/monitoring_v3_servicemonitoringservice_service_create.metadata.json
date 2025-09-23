@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_servicemonitoringservice_service_create",
+	"title": "create service",
+	"description": "Cloud Monitoring sample showing how to create_service",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "create_service"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_servicemonitoringservice_service_create"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_groupservice_groupmembers_list",
+	"title": "list group_members",
+	"description": "Cloud Monitoring sample showing how to list_group_members",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "list_group_members"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_groupservice_groupmembers_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_uptimecheckservice_uptimecheckconfig_update",
+	"title": "update uptime_check_config",
+	"description": "Cloud Monitoring sample showing how to update_uptime_check_config",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "update_uptime_check_config"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_uptimecheckservice_uptimecheckconfig_update"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

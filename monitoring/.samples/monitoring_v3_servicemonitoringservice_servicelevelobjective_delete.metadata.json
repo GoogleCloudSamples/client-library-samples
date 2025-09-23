@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_servicemonitoringservice_servicelevelobjective_delete",
+	"title": "delete service_level_objective",
+	"description": "Cloud Monitoring sample showing how to delete_service_level_objective",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "delete_service_level_objective"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_servicemonitoringservice_servicelevelobjective_delete"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

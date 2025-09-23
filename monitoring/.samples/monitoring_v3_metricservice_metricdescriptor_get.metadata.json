@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_metricservice_metricdescriptor_get",
+	"title": "get metric_descriptor",
+	"description": "Cloud Monitoring sample showing how to get_metric_descriptor",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "get_metric_descriptor"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_metricservice_metricdescriptor_get"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_notificationchannelservice_notificationchannel_create",
+	"title": "create notification_channel",
+	"description": "Cloud Monitoring sample showing how to create_notification_channel",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "create_notification_channel"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_notificationchannelservice_notificationchannel_create"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
