@@ -1,0 +1,26 @@
+{
+	"id": "dataplex_v1_dataplexservice_lake_get",
+	"title": "get lake",
+	"description": "Dataplex sample showing how to get_lake",
+	"collection": "dataplex_api_samples",
+	"products": [
+		"dataplex"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataplex.googleapis.com",
+		"method": "get_lake"
+	},
+	"regionTags": [
+		{
+			"name": "dataplex_v1_dataplexservice_lake_get"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

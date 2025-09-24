@@ -1,0 +1,26 @@
+{
+	"id": "dataplex_v1_dataplexservice_lake_delete",
+	"title": "delete lake",
+	"description": "Dataplex sample showing how to delete_lake",
+	"collection": "dataplex_api_samples",
+	"products": [
+		"dataplex"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataplex.googleapis.com",
+		"method": "delete_lake"
+	},
+	"regionTags": [
+		{
+			"name": "dataplex_v1_dataplexservice_lake_delete"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

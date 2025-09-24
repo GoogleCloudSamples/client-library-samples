@@ -1,0 +1,26 @@
+{
+	"id": "dataplex_v1_metadataservice_entity_delete",
+	"title": "delete entity",
+	"description": "Dataplex sample showing how to delete_entity",
+	"collection": "dataplex_api_samples",
+	"products": [
+		"dataplex"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataplex.googleapis.com",
+		"method": "delete_entity"
+	},
+	"regionTags": [
+		{
+			"name": "dataplex_v1_metadataservice_entity_delete"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

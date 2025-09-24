@@ -1,0 +1,26 @@
+{
+	"id": "dataplex_v1_dataplexservice_assets_list",
+	"title": "list assets",
+	"description": "Dataplex sample showing how to list_assets",
+	"collection": "dataplex_api_samples",
+	"products": [
+		"dataplex"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataplex.googleapis.com",
+		"method": "list_assets"
+	},
+	"regionTags": [
+		{
+			"name": "dataplex_v1_dataplexservice_assets_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

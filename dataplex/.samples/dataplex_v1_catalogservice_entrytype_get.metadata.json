@@ -1,0 +1,26 @@
+{
+	"id": "dataplex_v1_catalogservice_entrytype_get",
+	"title": "get entry_type",
+	"description": "Dataplex sample showing how to get_entry_type",
+	"collection": "dataplex_api_samples",
+	"products": [
+		"dataplex"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataplex.googleapis.com",
+		"method": "get_entry_type"
+	},
+	"regionTags": [
+		{
+			"name": "dataplex_v1_catalogservice_entrytype_get"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
