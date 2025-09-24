@@ -1,0 +1,26 @@
+{
+	"id": "parametermanager_v1_parametermanager_parameterversion_get_async",
+	"title": "get ParameterVersion",
+	"description": "Parameter Manager sample showing how to getParameterVersion",
+	"collection": "parametermanager_api_samples",
+	"products": [
+		"null"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "null.googleapis.com",
+		"method": "getParameterVersion"
+	},
+	"regionTags": [
+		{
+			"name": "parametermanager_v1_parametermanager_parameterversion_get_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-19",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

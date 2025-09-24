@@ -1,0 +1,26 @@
+{
+	"id": "parametermanager_v1_parametermanager_parameterversion_update_async",
+	"title": "update ParameterVersion",
+	"description": "Parameter Manager sample showing how to updateParameterVersion",
+	"collection": "parametermanager_api_samples",
+	"products": [
+		"null"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "null.googleapis.com",
+		"method": "updateParameterVersion"
+	},
+	"regionTags": [
+		{
+			"name": "parametermanager_v1_parametermanager_parameterversion_update_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-19",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

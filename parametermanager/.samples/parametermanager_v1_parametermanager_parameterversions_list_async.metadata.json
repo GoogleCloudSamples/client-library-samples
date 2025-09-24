@@ -1,0 +1,26 @@
+{
+	"id": "parametermanager_v1_parametermanager_parameterversions_list_async",
+	"title": "list ParameterVersions",
+	"description": "Parameter Manager sample showing how to listParameterVersions",
+	"collection": "parametermanager_api_samples",
+	"products": [
+		"null"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "null.googleapis.com",
+		"method": "listParameterVersions"
+	},
+	"regionTags": [
+		{
+			"name": "parametermanager_v1_parametermanager_parameterversions_list_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-19",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

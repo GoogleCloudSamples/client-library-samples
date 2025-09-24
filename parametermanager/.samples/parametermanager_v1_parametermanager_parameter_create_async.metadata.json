@@ -1,0 +1,26 @@
+{
+	"id": "parametermanager_v1_parametermanager_parameter_create_async",
+	"title": "create Parameter",
+	"description": "Parameter Manager sample showing how to createParameter",
+	"collection": "parametermanager_api_samples",
+	"products": [
+		"null"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "null.googleapis.com",
+		"method": "createParameter"
+	},
+	"regionTags": [
+		{
+			"name": "parametermanager_v1_parametermanager_parameter_create_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-19",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
