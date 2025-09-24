@@ -1,0 +1,26 @@
+{
+	"id": "dataplex_v1_dataplexservice_lake_update",
+	"title": "update lake",
+	"description": "Dataplex sample showing how to update_lake",
+	"collection": "dataplex_api_samples",
+	"products": [
+		"dataplex"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataplex.googleapis.com",
+		"method": "update_lake"
+	},
+	"regionTags": [
+		{
+			"name": "dataplex_v1_dataplexservice_lake_update"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"id": "dataplex_v1_catalogservice_aspecttype_create",
+	"title": "create aspect_type",
+	"description": "Dataplex sample showing how to create_aspect_type",
+	"collection": "dataplex_api_samples",
+	"products": [
+		"dataplex"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataplex.googleapis.com",
+		"method": "create_aspect_type"
+	},
+	"regionTags": [
+		{
+			"name": "dataplex_v1_catalogservice_aspecttype_create"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
