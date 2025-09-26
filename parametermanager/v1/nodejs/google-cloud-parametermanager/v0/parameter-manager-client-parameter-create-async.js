@@ -49,15 +49,12 @@ async function createParameter(
   try {
     const [response] = await client.createParameter(createParameterRequest);
     console.log(`Created parameter: ${response.name}`);
-    if (parameter.createTime) {
+    if (response.createTime) {
       const createTime = new Date(
-        parameter.createTime.seconds * 1000 +
-          parameter.createTime.nanos / 1000000,
+        response.createTime.seconds * 1000 +
+          response.createTime.nanos / 1000000,
       );
       console.log(`	Create Time: ${createTime}`);
-    }
-    if (parameter.format) {
-      console.log(`	Format: ${parameter.format}`);
     }
   } catch (err) {
     if (err.code === status.ALREADY_EXISTS) {
