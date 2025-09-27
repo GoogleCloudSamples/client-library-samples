@@ -1,0 +1,26 @@
+{
+	"id": "parametermanager_v1_parametermanager_parameterversion_delete_async",
+	"title": "delete ParameterVersion",
+	"description": "Parameter Manager sample showing how to deleteParameterVersion",
+	"collection": "parametermanager_api_samples",
+	"products": [
+		"null"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "null.googleapis.com",
+		"method": "deleteParameterVersion"
+	},
+	"regionTags": [
+		{
+			"name": "parametermanager_v1_parametermanager_parameterversion_delete_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-19",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
