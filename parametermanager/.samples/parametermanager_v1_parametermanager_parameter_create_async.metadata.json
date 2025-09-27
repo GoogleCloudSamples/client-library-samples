@@ -7,8 +7,8 @@
 		"parametermanager"
 	],
 	"type": "rpc",
-	"rpcMetadata": {
-		"api": "null.googleapis.com",
+"rpcMetadata": {
+		"api": "parametermanager.googleapis.com",
 		"method": "createParameter"
 	},
 	"regionTags": [
