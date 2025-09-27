@@ -3,8 +3,8 @@
 	"title": "create Parameter",
 	"description": "Parameter Manager sample showing how to createParameter",
 	"collection": "parametermanager_api_samples",
-	"products": [
-		"null"
+"products": [
+		"parametermanager"
 	],
 	"type": "rpc",
 	"rpcMetadata": {
