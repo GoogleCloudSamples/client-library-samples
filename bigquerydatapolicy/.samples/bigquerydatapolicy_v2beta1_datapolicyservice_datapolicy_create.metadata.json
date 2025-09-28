@@ -1,0 +1,26 @@
+{
+	"id": "bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_create",
+	"title": "create data_policy",
+	"description": "BigQuery DataPolicy API sample showing how to create_data_policy",
+	"collection": "bigquerydatapolicy_api_samples",
+	"products": [
+		"bigquerydatapolicy"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "bigquerydatapolicy.googleapis.com",
+		"method": "create_data_policy"
+	},
+	"regionTags": [
+		{
+			"name": "bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_create"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
