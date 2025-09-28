@@ -1,0 +1,26 @@
+{
+	"id": "dataplex_v1_dataplexservice_tasks_list",
+	"title": "list tasks",
+	"description": "Dataplex sample showing how to list_tasks",
+	"collection": "dataplex_api_samples",
+	"products": [
+		"dataplex"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataplex.googleapis.com",
+		"method": "list_tasks"
+	},
+	"regionTags": [
+		{
+			"name": "dataplex_v1_dataplexservice_tasks_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
