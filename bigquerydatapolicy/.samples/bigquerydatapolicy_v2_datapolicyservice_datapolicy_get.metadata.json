@@ -1,0 +1,26 @@
+{
+	"id": "bigquerydatapolicy_v2_datapolicyservice_datapolicy_get",
+	"title": "get data_policy",
+	"description": "BigQuery DataPolicy API sample showing how to get_data_policy",
+	"collection": "bigquerydatapolicy_api_samples",
+	"products": [
+		"bigquerydatapolicy"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "bigquerydatapolicy.googleapis.com",
+		"method": "get_data_policy"
+	},
+	"regionTags": [
+		{
+			"name": "bigquerydatapolicy_v2_datapolicyservice_datapolicy_get"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"id": "bigquerydatapolicy_v2_datapolicyservice_datapolicies_list",
+	"title": "list data_policies",
+	"description": "BigQuery DataPolicy API sample showing how to list_data_policies",
+	"collection": "bigquerydatapolicy_api_samples",
+	"products": [
+		"bigquerydatapolicy"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "bigquerydatapolicy.googleapis.com",
+		"method": "list_data_policies"
+	},
+	"regionTags": [
+		{
+			"name": "bigquerydatapolicy_v2_datapolicyservice_datapolicies_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
