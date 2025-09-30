@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_groupservice_group_delete_async",
+	"title": "delete Group",
+	"description": "Cloud Monitoring sample showing how to deleteGroup",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "deleteGroup"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_groupservice_group_delete_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-25",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
