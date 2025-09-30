@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_alertpolicyservice_alertpolicy_delete_async",
+	"title": "delete AlertPolicy",
+	"description": "Cloud Monitoring sample showing how to deleteAlertPolicy",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "deleteAlertPolicy"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_alertpolicyservice_alertpolicy_delete_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-25",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

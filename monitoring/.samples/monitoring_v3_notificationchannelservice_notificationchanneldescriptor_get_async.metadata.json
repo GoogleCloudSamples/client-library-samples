@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_notificationchannelservice_notificationchanneldescriptor_get_async",
+	"title": "get NotificationChannelDescriptor",
+	"description": "Cloud Monitoring sample showing how to getNotificationChannelDescriptor",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "getNotificationChannelDescriptor"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_notificationchannelservice_notificationchanneldescriptor_get_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-25",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

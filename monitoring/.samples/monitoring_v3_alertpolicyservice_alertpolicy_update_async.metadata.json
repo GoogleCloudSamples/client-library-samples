@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_alertpolicyservice_alertpolicy_update_async",
+	"title": "update AlertPolicy",
+	"description": "Cloud Monitoring sample showing how to updateAlertPolicy",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "updateAlertPolicy"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_alertpolicyservice_alertpolicy_update_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-25",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

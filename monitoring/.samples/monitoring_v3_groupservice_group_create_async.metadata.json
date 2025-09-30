@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_groupservice_group_create_async",
+	"title": "create Group",
+	"description": "Cloud Monitoring sample showing how to createGroup",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "createGroup"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_groupservice_group_create_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-25",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

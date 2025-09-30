@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_groupservice_group_update_async",
+	"title": "update Group",
+	"description": "Cloud Monitoring sample showing how to updateGroup",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "updateGroup"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_groupservice_group_update_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-25",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
