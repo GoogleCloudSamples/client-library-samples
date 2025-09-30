@@ -1,0 +1,26 @@
+{
+	"id": "bigquerystorage_v1_bigqueryread_readsession_create_async",
+	"title": "create ReadSession",
+	"description": "BigQuery Storage sample showing how to createReadSession",
+	"collection": "bigquerystorage_api_samples",
+	"products": [
+		"bigquerystorage"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "bigquerystorage.googleapis.com",
+		"method": "createReadSession"
+	},
+	"regionTags": [
+		{
+			"name": "bigquerystorage_v1_bigqueryread_readsession_create_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
