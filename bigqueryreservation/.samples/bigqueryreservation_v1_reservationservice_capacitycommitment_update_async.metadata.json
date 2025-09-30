@@ -1,0 +1,26 @@
+{
+	"id": "bigqueryreservation_v1_reservationservice_capacitycommitment_update_async",
+	"title": "update CapacityCommitment",
+	"description": "BigQuery Reservation API sample showing how to updateCapacityCommitment",
+	"collection": "bigqueryreservation_api_samples",
+	"products": [
+		"bigqueryreservation"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "bigqueryreservation.googleapis.com",
+		"method": "updateCapacityCommitment"
+	},
+	"regionTags": [
+		{
+			"name": "bigqueryreservation_v1_reservationservice_capacitycommitment_update_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-30",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
