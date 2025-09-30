@@ -1,0 +1,26 @@
+{
+	"id": "bigqueryreservation_v1_reservationservice_reservations_list",
+	"title": "list reservations",
+	"description": "BigQuery Reservation API sample showing how to list_reservations",
+	"collection": "bigqueryreservation_api_samples",
+	"products": [
+		"bigqueryreservation"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "bigqueryreservation.googleapis.com",
+		"method": "list_reservations"
+	},
+	"regionTags": [
+		{
+			"name": "bigqueryreservation_v1_reservationservice_reservations_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
