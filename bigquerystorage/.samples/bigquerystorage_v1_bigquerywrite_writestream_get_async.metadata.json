@@ -1,7 +1,7 @@
 {
-	"id": "bigquerystorage_v1_bigquerywrite_writestream_get",
-	"title": "get write_stream",
-	"description": "BigQuery Storage sample showing how to get_write_stream",
+	"id": "bigquerystorage_v1_bigquerywrite_writestream_get_async",
+	"title": "get WriteStream",
+	"description": "BigQuery Storage sample showing how to getWriteStream",
 	"collection": "bigquerystorage_api_samples",
 	"products": [
 		"bigquerystorage"
@@ -9,16 +9,16 @@
 	"type": "rpc",
 	"rpcMetadata": {
 		"api": "bigquerystorage.googleapis.com",
-		"method": "get_write_stream"
+		"method": "getWriteStream"
 	},
 	"regionTags": [
 		{
-			"name": "bigquerystorage_v1_bigquerywrite_writestream_get"
+			"name": "bigquerystorage_v1_bigquerywrite_writestream_get_async"
 		}
 	],
 	"variant": [
 		{
-			"name": "python",
+			"name": "nodejs",
 			"created": "2025-09-22",
 			"generatedBy": "sample-assistance v0.0.0"
 		}

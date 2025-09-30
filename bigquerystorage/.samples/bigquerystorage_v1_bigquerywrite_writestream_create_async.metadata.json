@@ -1,0 +1,26 @@
+{
+	"id": "bigquerystorage_v1_bigquerywrite_writestream_create_async",
+	"title": "create WriteStream",
+	"description": "BigQuery Storage sample showing how to createWriteStream",
+	"collection": "bigquerystorage_api_samples",
+	"products": [
+		"bigquerystorage"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "bigquerystorage.googleapis.com",
+		"method": "createWriteStream"
+	},
+	"regionTags": [
+		{
+			"name": "bigquerystorage_v1_bigquerywrite_writestream_create_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
