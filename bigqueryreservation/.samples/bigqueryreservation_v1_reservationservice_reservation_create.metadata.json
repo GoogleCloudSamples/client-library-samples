@@ -1,0 +1,26 @@
+{
+	"id": "bigqueryreservation_v1_reservationservice_reservation_create",
+	"title": "create reservation",
+	"description": "BigQuery Reservation API sample showing how to create_reservation",
+	"collection": "bigqueryreservation_api_samples",
+	"products": [
+		"bigqueryreservation"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "bigqueryreservation.googleapis.com",
+		"method": "create_reservation"
+	},
+	"regionTags": [
+		{
+			"name": "bigqueryreservation_v1_reservationservice_reservation_create"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

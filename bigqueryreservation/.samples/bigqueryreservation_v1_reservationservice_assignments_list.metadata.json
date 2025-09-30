@@ -1,0 +1,26 @@
+{
+	"id": "bigqueryreservation_v1_reservationservice_assignments_list",
+	"title": "list assignments",
+	"description": "BigQuery Reservation API sample showing how to list_assignments",
+	"collection": "bigqueryreservation_api_samples",
+	"products": [
+		"bigqueryreservation"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "bigqueryreservation.googleapis.com",
+		"method": "list_assignments"
+	},
+	"regionTags": [
+		{
+			"name": "bigqueryreservation_v1_reservationservice_assignments_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
