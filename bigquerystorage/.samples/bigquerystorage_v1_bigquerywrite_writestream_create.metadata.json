@@ -1,0 +1,26 @@
+{
+	"id": "bigquerystorage_v1_bigquerywrite_writestream_create",
+	"title": "create write_stream",
+	"description": "BigQuery Storage sample showing how to create_write_stream",
+	"collection": "bigquerystorage_api_samples",
+	"products": [
+		"bigquerystorage"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "bigquerystorage.googleapis.com",
+		"method": "create_write_stream"
+	},
+	"regionTags": [
+		{
+			"name": "bigquerystorage_v1_bigquerywrite_writestream_create"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

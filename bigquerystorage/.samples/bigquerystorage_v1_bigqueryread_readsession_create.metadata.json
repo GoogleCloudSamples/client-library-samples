@@ -1,0 +1,26 @@
+{
+	"id": "bigquerystorage_v1_bigqueryread_readsession_create",
+	"title": "create read_session",
+	"description": "BigQuery Storage sample showing how to create_read_session",
+	"collection": "bigquerystorage_api_samples",
+	"products": [
+		"bigquerystorage"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "bigquerystorage.googleapis.com",
+		"method": "create_read_session"
+	},
+	"regionTags": [
+		{
+			"name": "bigquerystorage_v1_bigqueryread_readsession_create"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
