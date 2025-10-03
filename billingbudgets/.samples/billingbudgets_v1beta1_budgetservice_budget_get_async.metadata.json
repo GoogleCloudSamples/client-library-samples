@@ -1,0 +1,26 @@
+{
+	"id": "billingbudgets_v1beta1_budgetservice_budget_get_async",
+	"title": "get Budget",
+	"description": "Cloud Billing Budget API sample showing how to getBudget",
+	"collection": "billingbudgets_api_samples",
+	"products": [
+		"billingbudgets"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "billingbudgets.googleapis.com",
+		"method": "getBudget"
+	},
+	"regionTags": [
+		{
+			"name": "billingbudgets_v1beta1_budgetservice_budget_get_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-19",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
