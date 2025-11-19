@@ -1,0 +1,26 @@
+{
+	"id": "bigquerydatapolicy_v1_datapolicyservice_datapolicy_delete_async",
+	"title": "delete DataPolicy",
+	"description": "BigQuery DataPolicy API sample showing how to deleteDataPolicy",
+	"collection": "bigquerydatapolicy_api_samples",
+	"products": [
+		"bigquerydatapolicy"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "bigquerydatapolicy.googleapis.com",
+		"method": "deleteDataPolicy"
+	},
+	"regionTags": [
+		{
+			"name": "bigquerydatapolicy_v1_datapolicyservice_datapolicy_delete_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-25",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
