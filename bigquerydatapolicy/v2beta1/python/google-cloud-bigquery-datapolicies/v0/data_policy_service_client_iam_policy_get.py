@@ -87,7 +87,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--project_id",
         type=str,
-        default="your-project-id", # Placeholder for user's project ID
+        required=True,
         help="The ID of the Google Cloud project.",
     )
     parser.add_argument(
@@ -99,7 +99,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--data_policy_id",
         type=str,
-        default="your-data-policy-id", # Placeholder for user's data policy ID
+        required=True,
         help="The ID of the data policy.",
     )
     args = parser.parse_args()
