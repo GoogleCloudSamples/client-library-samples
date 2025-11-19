@@ -58,7 +58,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--project_id",
         type=str,
-        default="YOUR_PROJECT_ID",
+        required=True,
         help="The Google Cloud project ID.",
     )
     parser.add_argument(
@@ -70,7 +70,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--data_policy_id",
         type=str,
-        default="your-data-policy-to-delete",
+        required=True,
         help="The ID of the data policy to delete.",
     )
 
