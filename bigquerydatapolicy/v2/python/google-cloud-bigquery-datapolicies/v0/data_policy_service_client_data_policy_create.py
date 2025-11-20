@@ -25,7 +25,7 @@ def create_data_policy(project_id: str, location: str, data_policy_id: str) -> N
 
     Args:
         project_id (str): The Google Cloud project ID.
-        location (str): The geographic location of the data policy (For example, "us-central1").
+        location (str): The geographic location of the data policy (for example, "us-central1").
         data_policy_id (str): The ID for the new data policy.
     """
 

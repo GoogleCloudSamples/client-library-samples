@@ -24,7 +24,7 @@ def delete_data_policy(project_id: str, location: str, data_policy_id: str) -> N
 
     Args:
         project_id: The ID of the Google Cloud project.
-        location: The location of the data policy (For example, "us").
+        location: The location of the data policy (for example, "us").
         data_policy_id: The ID of the data policy to delete.
     """
 

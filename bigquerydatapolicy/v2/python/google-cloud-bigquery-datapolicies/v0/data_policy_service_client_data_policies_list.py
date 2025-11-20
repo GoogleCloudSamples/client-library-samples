@@ -24,7 +24,7 @@ def list_data_policies(project_id: str, location: str) -> None:
 
     Args:
         project_id: The ID of the Google Cloud project.
-        location: The geographic location of the data policies (For example, "us", "us-central1").
+        location: The geographic location of the data policies (for example, "us", "us-central1").
     """
 
     parent = f"projects/{project_id}/locations/{location}"
