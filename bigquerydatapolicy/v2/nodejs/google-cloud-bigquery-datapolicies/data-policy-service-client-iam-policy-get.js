@@ -14,7 +14,7 @@
 
 'use strict';
 
-// [START bigquerydatapolicy_v2_datapolicyservice_iampolicy_get_async]
+// [START bigquerydatapolicy_v2_datapolicyservice_iampolicy_get]
 const {DataPolicyServiceClient} =
   require('@google-cloud/bigquery-datapolicies').v2;
 const {status} = require('@grpc/grpc-js');
@@ -60,29 +60,8 @@ async function getIamPolicy(projectId, location, dataPolicyId) {
     }
   }
 }
-// [END bigquerydatapolicy_v2_datapolicyservice_iampolicy_get_async]
 
-async function main(args) {
-  if (args.length !== 3) {
-    throw new Error(`Expected 3 arguments, got ${args.length}.`);
-  }
-  await getIamPolicy(args[0], args[1], args[2]);
-}
-
-if (require.main === module) {
-  process.on('uncaughtException', err => {
-    console.error(`Error running sample: ${err.message}`);
-    console.error(`To run this sample from the command-line, specify three arguments:
- - Google Cloud Project ID like 'my-project-id'
- - Google Cloud Location like 'us-central1'
- - Data Policy ID like 'my-data-policy-id'
-Usage:
- node data-policy-service-client-iam-policy-get-async.js my-project-id us-central1 my-data-policy-id
-`);
-
-  });
-  main(process.argv.slice(2));
-}
+// [END bigquerydatapolicy_v2_datapolicyservice_iampolicy_get]
 
 module.exports = {
   getIamPolicy,

@@ -16,7 +16,7 @@
 
 const process = require('process');
 
-// [START bigquerydatapolicy_v2_datapolicyservice_datapolicy_create_async]
+// [START bigquerydatapolicy_v2_datapolicyservice_datapolicy_create]
 const datapolicy = require('@google-cloud/bigquery-datapolicies');
 const {DataPolicyServiceClient} = datapolicy.v2;
 const protos = datapolicy.protos.google.cloud.bigquery.datapolicies.v2;
@@ -72,30 +72,10 @@ async function createDataPolicy(projectId, location, dataPolicyId) {
     }
   }
 }
-// [END bigquerydatapolicy_v2_datapolicyservice_datapolicy_create_async]
 
-async function main(args) {
-  if (args.length !== 3) {
-    throw new Error(`Expected 3 arguments, got ${args.length}.`);
-  }
-  await createDataPolicy(args[0], args[1], args[2]);
-}
-
-if (require.main === module) {
-  process.on('uncaughtException', err => {
-    console.error(`Error running sample: ${err.message}`);
-    console.error(`To run this sample from the command-line, specify three arguments:
- - Google Cloud Project like 'my-project-id'
- - Google Cloud Location like 'us'
- - Data Policy ID like 'my-masking-policy-123'
-Usage:
- node data-policy-service-client-data-policy-create-async.js my-project-id us my-masking-policy-123
-`);
-
-  });
-  main(process.argv.slice(2));
-}
+// [END bigquerydatapolicy_v2_datapolicyservice_datapolicy_create]
 
 module.exports = {
   createDataPolicy,
 };
+

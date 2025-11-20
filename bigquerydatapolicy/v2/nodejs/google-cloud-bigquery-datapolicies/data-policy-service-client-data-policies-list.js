@@ -14,10 +14,9 @@
 
 'use strict';
 
-// Imports for the command-line runner must be before the region tag start.
 const process = require('process');
 
-// [START bigquerydatapolicy_v2_datapolicyservice_datapolicies_list_async]
+// [START bigquerydatapolicy_v2_datapolicyservice_datapolicies_list]
 const {DataPolicyServiceClient} =
   require('@google-cloud/bigquery-datapolicies').v2;
 const {status} = require('@grpc/grpc-js');
@@ -44,8 +43,9 @@ async function listDataPolicies(projectId, location) {
     console.log(
       `Listing data policies for project: ${projectId} in location: ${location}`,
     );
+    const [dataPolicies] = await client.listDataPolicies(request);
     let policyCount = 0;
-    for (const dataPolicy of client.listDataPolicies(request)) {
+    for (const dataPolicy of dataPolicies) {
       console.log(`Data Policy Name: ${dataPolicy.name}`);
       console.log(`  ID: ${dataPolicy.dataPolicyId}`);
       console.log(`  Type: ${dataPolicy.dataPolicyType}`);
@@ -92,29 +92,10 @@ async function listDataPolicies(projectId, location) {
     }
   }
 }
-// [END bigquerydatapolicy_v2_datapolicyservice_datapolicies_list_async]
 
-async function main(args) {
-  if (args.length !== 2) {
-    throw new Error(`Expected 2 arguments, got ${args.length}.`);
-  }
-  await listDataPolicies(args[0], args[1]);
-}
-
-if (require.main === module) {
-  process.on('uncaughtException', err => {
-    console.error(`Error running sample: ${err.message}`);
-    console.error(`To run this sample from the command-line, specify two arguments:
- - Google Cloud Project like 'example-project-id'
- - Google Cloud Location like 'us'
-Usage:
- node data-policy-service-client-data-policies-list-async.js example-project-id us
-`);
-
-  });
-  main(process.argv.slice(2));
-}
+// [END bigquerydatapolicy_v2_datapolicyservice_datapolicies_list]
 
 module.exports = {
   listDataPolicies,
 };
+
