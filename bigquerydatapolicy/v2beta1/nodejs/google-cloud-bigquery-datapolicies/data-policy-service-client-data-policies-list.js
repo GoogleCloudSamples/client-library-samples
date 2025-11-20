@@ -27,7 +27,7 @@ const client = new DataPolicyServiceClient();
  * associated with a specific Google Cloud project and location.
  *
  * @param {string} projectId The Google Cloud project ID.
- * @param {string} location The Google Cloud location (e.g., 'us', 'europe-west2').
+ * @param {string} location The Google Cloud location (for example, 'us', 'europe-west2').
  */
 async function listDataPolicies(projectId, location) {
   const parent = `projects/${projectId}/locations/${location}`;
@@ -78,12 +78,12 @@ async function listDataPolicies(projectId, location) {
     if (err.code === status.NOT_FOUND) {
       console.error(
         `Error: The project or location '${location}' for project '${projectId}' was not found. ` +
-          'Ensure the project ID and location are correct and that the BigQuery Data Policy API is enabled.',
+          'Make sure the project ID and location are correct and that the BigQuery Data Policy API is enabled.',
       );
     } else if (err.code === status.PERMISSION_DENIED) {
       console.error(
         `Error: Permission denied when listing data policies for project '${projectId}' in location '${location}'. ` +
-          'Ensure the authenticated account has the necessary permissions (e.g., bigquery.datapolicies.list).',
+          'Make sure the authenticated account has the necessary permissions (for example, bigquery.datapolicies.list).',
       );
     } else {
       console.error(`Error listing data policies: ${err.message}`);

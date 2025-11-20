@@ -25,7 +25,7 @@ const client = new DataPolicyServiceClient();
  * Updates an existing data policy.
  *
  * @param {string} projectId The Google Cloud project ID.
- * @param {string} locationId The ID of the location where the data policy exists (e.g., "us").
+ * @param {string} locationId The ID of the location where the data policy exists (for example, "us").
  * @param {string} dataPolicyId The ID of the data policy to update.
  */
 async function updateDataPolicy(projectId, locationId, dataPolicyId) {
@@ -76,7 +76,7 @@ async function updateDataPolicy(projectId, locationId, dataPolicyId) {
   } catch (err) {
     if (err.code === status.NOT_FOUND) {
       console.error(
-        `Error: Data policy '${dataPolicyName}' not found. Ensure the data policy ID and location are correct.`,
+        `Error: Data policy '${dataPolicyName}' not found. Make sure the data policy ID and location are correct.`,
       );
     } else {
       console.error('Error updating data policy:', err.message, err);

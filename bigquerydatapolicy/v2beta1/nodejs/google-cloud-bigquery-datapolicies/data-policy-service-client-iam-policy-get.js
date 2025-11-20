@@ -66,12 +66,12 @@ async function getIamPolicyForDataPolicy(
     if (err.code === status.NOT_FOUND) {
       console.error(
         `Data Policy '${dataPolicyId}' not found in location '${location}' for project '${projectId}'. ` +
-          'Ensure the data policy exists and the resource name is correct.',
+          'Make sure the data policy exists and the resource name is correct.',
       );
     } else if (err.code === status.PERMISSION_DENIED) {
       console.error(
         `Permission denied to get IAM policy for Data Policy '${dataPolicyId}'. ` +
-          'Ensure the authenticated account has the necessary permissions (e.g., bigquery.datapolicies.getIamPolicy).',
+          'Make sure the authenticated account has the necessary permissions (for example, bigquery.datapolicies.getIamPolicy).',
       );
     } else {
       console.error('Error getting IAM policy:', err.message);

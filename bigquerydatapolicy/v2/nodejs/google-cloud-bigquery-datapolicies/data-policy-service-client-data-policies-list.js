@@ -27,8 +27,8 @@ const client = new DataPolicyServiceClient();
  * Data policies define rules for data masking, row-level security, or column-level security.
  * This sample demonstrates how to retrieve a paginated list of these policies.
  *
- * @param {string} projectId The Google Cloud project ID. (e.g., 'my-project-123')
- * @param {string} location The Google Cloud location of the data policies. (e.g., 'us')
+ * @param {string} projectId The Google Cloud project ID. (for example, 'example-project-123')
+ * @param {string} location The Google Cloud location of the data policies. (for example, 'us')
  */
 async function listDataPolicies(projectId, location) {
   const parent = `projects/${projectId}/locations/${location}`;
@@ -79,12 +79,12 @@ async function listDataPolicies(projectId, location) {
     if (err.code === status.NOT_FOUND) {
       console.error(
         `Error: The project or location '${location}' for project '${projectId}' was not found. ` +
-          'Ensure the project ID and location are correct and that the BigQuery Data Policy API is enabled.',
+          'Make sure the project ID and location are correct and that the BigQuery Data Policy API is enabled.',
       );
     } else if (err.code === status.PERMISSION_DENIED) {
       console.error(
         `Error: Permission denied when listing data policies for project '${projectId}' in location '${location}'. ` +
-          'Ensure the authenticated account has the necessary permissions (e.g., bigquery.datapolicies.list).',
+          'Make sure the authenticated account has the necessary permissions (for example, bigquery.datapolicies.list).',
       );
     } else {
       console.error(`Error listing data policies: ${err.message}`);
