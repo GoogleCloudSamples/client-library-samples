@@ -12,8 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import argparse
-
 # [START bigquerydatapolicy_v2_datapolicyservice_datapolicy_delete]
 from google.api_core import exceptions as core_exceptions
 from google.cloud import bigquery_datapolicies_v2
@@ -43,29 +41,3 @@ def delete_data_policy(project_id: str, location: str, data_policy_id: str) -> N
 
 
 # [END bigquerydatapolicy_v2_datapolicyservice_datapolicy_delete]
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="Deletes a BigQuery data policy by its resource name."
-    )
-    parser.add_argument(
-        "--project_id",
-        type=str,
-        required=True,
-        help="The ID of the Google Cloud project.",
-    )
-    parser.add_argument(
-        "--location",
-        type=str,
-        required=True,
-        help="The location of the data policy (e.g., 'us').",
-    )
-    parser.add_argument(
-        "--data_policy_id",
-        type=str,
-        required=True,
-        help="The ID of the data policy to delete.",
-    )
-    args = parser.parse_args()
-
-    delete_data_policy(args.project_id, args.location, args.data_policy_id)

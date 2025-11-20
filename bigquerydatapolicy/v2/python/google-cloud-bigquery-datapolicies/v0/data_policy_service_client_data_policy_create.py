@@ -12,8 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import argparse
-
 # [START bigquery_datapolicies_v2_datapolicyservice_create_data_policy]
 from google.api_core import exceptions
 from google.cloud import bigquery_datapolicies_v2
@@ -78,29 +76,3 @@ def create_data_policy(project_id: str, location: str, data_policy_id: str) -> N
 
 
 # [END bigquery_datapolicies_v2_datapolicyservice_create_data_policy]
-
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="Creates a new BigQuery data policy with a SHA-256 data masking rule."
-    )
-    parser.add_argument(
-        "--project_id",
-        type=str,
-        help="The Google Cloud project ID.",
-        required=True,
-    )
-    parser.add_argument(
-        "--location",
-        type=str,
-        help="The geographic location of the data policy (e.g., 'us-central1').",
-        required=True,
-    )
-    parser.add_argument(
-        "--data_policy_id",
-        type=str,
-        required=True,
-        help="The ID for the new data policy.",
-    )
-    args = parser.parse_args()
-    create_data_policy(args.project_id, args.location, args.data_policy_id)

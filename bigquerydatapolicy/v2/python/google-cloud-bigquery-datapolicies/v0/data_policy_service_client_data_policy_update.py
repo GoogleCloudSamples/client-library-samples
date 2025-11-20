@@ -12,8 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import argparse
-
 from google.api_core import exceptions
 
 # [START bigquerydatapolicy_v2_datapolicyservice_update_data_policy]
@@ -84,58 +82,3 @@ def update_data_policy(
 
 
 # [END bigquerydatapolicy_v2_datapolicyservice_update_data_policy]
-
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="Update an existing BigQuery Data Policy."
-    )
-    parser.add_argument(
-        "--project_id",
-        type=str,
-        required=True,
-        help="Your Google Cloud project ID.",
-    )
-    parser.add_argument(
-        "--location",
-        type=str,
-        required=True,
-        help="The location of the data policy (e.g., 'us').",
-    )
-    parser.add_argument(
-        "--data_policy_id",
-        type=str,
-        required=True,
-        help="The ID of the data policy to update.",
-    )
-    parser.add_argument(
-        "--new_predefined_expression",
-        type=str,
-        required=True,
-        choices=[
-            "SHA256",
-            "ALWAYS_NULL",
-            "DEFAULT_MASKING_VALUE",
-            "LAST_FOUR_CHARACTERS",
-            "FIRST_FOUR_CHARACTERS",
-            "EMAIL_MASK",
-            "DATE_YEAR_MASK",
-            "RANDOM_HASH",
-        ],
-        help="The new predefined masking expression (e.g., 'SHA256').",
-    )
-
-    args = parser.parse_args()
-
-    # Convert string to enum value
-    expression_enum = getattr(
-        bigquery_datapolicies_v2.DataMaskingPolicy.PredefinedExpression,
-        args.new_predefined_expression,
-    )
-
-    update_data_policy(
-        args.project_id,
-        args.location,
-        args.data_policy_id,
-        expression_enum,
-    )

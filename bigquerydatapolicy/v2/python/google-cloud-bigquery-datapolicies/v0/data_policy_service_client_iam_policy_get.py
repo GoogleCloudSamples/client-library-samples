@@ -12,8 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import argparse
-
 # [START bigquerydatapolicy_v2_datapolicyservice_iampolicy_get]
 from google.api_core import exceptions
 from google.cloud import bigquery_datapolicies_v2
@@ -68,30 +66,3 @@ def get_data_policy_iam_policy(
 
 
 # [END bigquerydatapolicy_v2_datapolicyservice_iampolicy_get]
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="Get the IAM policy for a BigQuery Data Policy."
-    )
-    parser.add_argument(
-        "--project_id",
-        type=str,
-        required=True,
-        help="Your Google Cloud project ID.",
-    )
-    parser.add_argument(
-        "--location",
-        type=str,
-        required=True,
-        help="The location of the data policy (e.g., 'us', 'europe-west2').",
-    )
-    parser.add_argument(
-        "--data_policy_id",
-        type=str,
-        required=True,
-        help="The ID of the data policy.",
-    )
-
-    args = parser.parse_args()
-
-    get_data_policy_iam_policy(args.project_id, args.location, args.data_policy_id)

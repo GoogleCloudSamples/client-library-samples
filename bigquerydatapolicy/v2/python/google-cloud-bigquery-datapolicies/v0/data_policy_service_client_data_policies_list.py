@@ -12,8 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import argparse
-
 # [START bigquerydatapolicy_v2_datapolicyservice_list_data_policies]
 import google.api_core.exceptions
 from google.cloud import bigquery_datapolicies_v2
@@ -64,22 +62,3 @@ def list_data_policies(project_id: str, location: str) -> None:
 
 
 # [END bigquerydatapolicy_v2_datapolicyservice_list_data_policies]
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="Lists all data policies in a specified project and location."
-    )
-    parser.add_argument(
-        "--project_id",
-        help="The ID of the Google Cloud project.",
-        type=str,
-        required=True,
-    )
-    parser.add_argument(
-        "--location",
-        type=str,
-        required=True,
-        help="The geographic location of the data policies (e.g., 'us', 'us-central1').",
-    )
-    args = parser.parse_args()
-    list_data_policies(args.project_id, args.location)

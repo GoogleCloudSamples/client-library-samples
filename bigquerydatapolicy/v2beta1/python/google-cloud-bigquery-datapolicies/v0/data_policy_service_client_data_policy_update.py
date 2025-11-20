@@ -12,8 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import argparse
-
 # [START bigquerydatapolicy_v2beta1_datapolicyservice_update_data_policy]
 from google.api_core.exceptions import NotFound
 from google.cloud import bigquery_datapolicies_v2beta1
@@ -78,33 +76,3 @@ def update_data_policy(project_id: str, location: str, data_policy_id: str) -> N
 
 
 # [END bigquerydatapolicy_v2beta1_datapolicyservice_update_data_policy]
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="Updates an existing BigQuery Data Policy."
-    )
-    parser.add_argument(
-        "--project_id",
-        required=True,
-        type=str,
-        help="The Google Cloud project ID.",
-    )
-    parser.add_argument(
-        "--location",
-        required=True,
-        type=str,
-        help="The geographic location of the data policy (e.g., 'us').",
-    )
-    parser.add_argument(
-        "--data_policy_id",
-        required=True,
-        type=str,
-        help="The ID of the data policy to update.",
-    )
-    args = parser.parse_args()
-
-    update_data_policy(
-        project_id=args.project_id,
-        location=args.location,
-        data_policy_id=args.data_policy_id,
-    )
