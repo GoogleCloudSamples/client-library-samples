@@ -14,7 +14,9 @@
 
 'use strict';
 
-// [START bigquerydatapolicy_v2_datapolicyservice_datapolicies_list_async]
+const process = require('process');
+
+// [START bigquerydatapolicy_v2_datapolicyservice_datapolicies_list]
 const {DataPolicyServiceClient} =
   require('@google-cloud/bigquery-datapolicies').v2;
 const {status} = require('@grpc/grpc-js');
@@ -91,7 +93,7 @@ async function listDataPolicies(projectId, location) {
     }
   }
 }
-// [END bigquerydatapolicy_v2_datapolicyservice_datapolicies_list_async]
+// [END bigquerydatapolicy_v2_datapolicyservice_datapolicies_list]
 
 module.exports = {
   listDataPolicies,

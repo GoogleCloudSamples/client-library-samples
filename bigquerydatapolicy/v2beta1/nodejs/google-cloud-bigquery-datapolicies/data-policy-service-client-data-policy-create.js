@@ -16,7 +16,7 @@
 
 const process = require('process');
 
-// [START bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_create_async]
+// [START bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_create]
 const {DataPolicyServiceClient} =
   require('@google-cloud/bigquery-datapolicies').v2beta1;
 const {status} = require('@grpc/grpc-js');
@@ -69,7 +69,7 @@ async function createDataPolicy(projectId, location = 'us', dataPolicyId) {
     }
   }
 }
-// [END bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_create_async]
+// [END bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_create]
 
 module.exports = {
   createDataPolicy,

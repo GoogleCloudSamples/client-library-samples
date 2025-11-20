@@ -16,7 +16,7 @@
 
 const process = require('process');
 
-// [START bigquerydatapolicy_v2_datapolicyservice_datapolicy_update_async]
+// [START bigquerydatapolicy_v2_datapolicyservice_datapolicy_update]
 const datapolicy = require('@google-cloud/bigquery-datapolicies');
 const {DataPolicyServiceClient} = datapolicy.v2;
 const {status} = require('@grpc/grpc-js');
@@ -79,7 +79,7 @@ async function updateDataPolicy(projectId, location, dataPolicyId) {
     }
   }
 }
-// [END bigquerydatapolicy_v2_datapolicyservice_datapolicy_update_async]
+// [END bigquerydatapolicy_v2_datapolicyservice_datapolicy_update]
 
 module.exports = {
   updateDataPolicy,
