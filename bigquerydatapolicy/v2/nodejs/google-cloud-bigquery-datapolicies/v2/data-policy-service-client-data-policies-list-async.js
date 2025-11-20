@@ -14,8 +14,6 @@
 
 'use strict';
 
-const process = require('process');
-
 // [START bigquerydatapolicy_v2_datapolicyservice_datapolicies_list_async]
 const {DataPolicyServiceClient} =
   require('@google-cloud/bigquery-datapolicies').v2;
@@ -41,45 +39,47 @@ async function listDataPolicies(projectId, location) {
 
   try {
     console.log(
-      `Listing data policies for project: ${projectId} in location: ${location}`,
+      `Listing data policies for project: ${projectId} in location: ${location}`
     );
-    let policyCount = 0;
-    for (const dataPolicy of client.listDataPolicies(request)) {
-      console.log(`Data Policy Name: ${dataPolicy.name}`);
-      console.log(`  ID: ${dataPolicy.dataPolicyId}`);
-      console.log(`  Type: ${dataPolicy.dataPolicyType}`);
+    const [dataPolicies] = await client.listDataPolicies(request);
+
+    if (dataPolicies.length === 0) {
+      console.log(
+        `No data policies found in location ${location} for project ${projectId}.`
+      );
+      return;
+    }
+    
+    console.log('Data Policies:');
+    for (const dataPolicy of dataPolicies) {
+      console.log(`  Data Policy Name: ${dataPolicy.name}`);
+      console.log(`    ID: ${dataPolicy.dataPolicyId}`);
+      console.log(`    Type: ${dataPolicy.dataPolicyType}`);
       if (dataPolicy.policyTag) {
-        console.log(`  Policy Tag: ${dataPolicy.policyTag}`);
+        console.log(`    Policy Tag: ${dataPolicy.policyTag}`);
       }
       if (dataPolicy.grantees && dataPolicy.grantees.length > 0) {
-        console.log(`  Grantees: ${dataPolicy.grantees.join(', ')}`);
+        console.log(`    Grantees: ${dataPolicy.grantees.join(', ')}`);
       }
       if (dataPolicy.dataMaskingPolicy) {
         if (dataPolicy.dataMaskingPolicy.predefinedExpression) {
           console.log(
-            `  Data Masking Predefined Expression: ${dataPolicy.dataMaskingPolicy.predefinedExpression}`,
+            `    Data Masking Predefined Expression: ${dataPolicy.dataMaskingPolicy.predefinedExpression}`
           );
         } else if (dataPolicy.dataMaskingPolicy.routine) {
           console.log(
-            `  Data Masking Routine: ${dataPolicy.dataMaskingPolicy.routine}`,
+            `    Data Masking Routine: ${dataPolicy.dataMaskingPolicy.routine}`
           );
         }
       }
-      policyCount++;
     }
 
-    if (policyCount === 0) {
-      console.log(
-        `No data policies found in location ${location} for project ${projectId}.`,
-      );
-    } else {
-      console.log(`Successfully listed ${policyCount} data policies.`);
-    }
+    console.log(`Successfully listed ${dataPolicies.length} data policies.`);
   } catch (err) {
     if (err.code === status.NOT_FOUND) {
       console.error(
         `Error: The project or location '${location}' for project '${projectId}' was not found. ` +
-          'Ensure the project ID and location are correct and that the BigQuery Data Policy API is enabled.',
+          'Ensure the project ID and location are correct and that the BigQuery Data Policy API is enabled.'
       );
     } else if (err.code === status.PERMISSION_DENIED) {
       console.error(
