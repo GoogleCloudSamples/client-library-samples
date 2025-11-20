@@ -30,7 +30,7 @@ def get_data_policy_iam_policy(
 
     Args:
         project_id: The ID of the Google Cloud project.
-        location: The BigQuery location (e.g., "us-central1").
+        location: The BigQuery location (For example, "us-central1").
         data_policy_id: The ID of the data policy.
     """
 

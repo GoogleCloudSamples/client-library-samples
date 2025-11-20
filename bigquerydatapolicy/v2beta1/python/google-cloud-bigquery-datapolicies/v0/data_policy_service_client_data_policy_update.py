@@ -26,7 +26,7 @@ def update_data_policy(project_id: str, location: str, data_policy_id: str) -> N
 
     Args:
         project_id: The Google Cloud project ID.
-        location: The geographic location of the data policy (e.g., "us").
+        location: The geographic location of the data policy (For example, "us").
         data_policy_id: The ID of the data policy to update.
     """
 

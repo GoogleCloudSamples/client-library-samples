@@ -26,8 +26,8 @@ const client = new DataPolicyServiceClient();
  * This sample demonstrates how to delete an existing data policy.
  *
  * @param {string} projectId The Google Cloud project ID.
- * @param {string} location The Google Cloud location (e.g., 'us').
- * @param {string} dataPolicyId The ID of the data policy to delete (e.g., 'my-data-policy').
+ * @param {string} location The Google Cloud location (For example, 'us').
+ * @param {string} dataPolicyId The ID of the data policy to delete (For example, 'example-data-policy').
  */
 async function deleteDataPolicy(projectId, location, dataPolicyId) {
   const name = client.dataPolicyPath(projectId, location, dataPolicyId);
@@ -42,7 +42,7 @@ async function deleteDataPolicy(projectId, location, dataPolicyId) {
   } catch (err) {
     if (err.code === status.NOT_FOUND) {
       console.error(
-        `Data policy ${name} not found. Ensure the data policy ID and location are correct.`,
+        `Data policy ${name} not found. Make sure the data policy ID and location are correct.`,
       );
     } else {
       console.error(`Error deleting data policy ${name}:`, err.message);

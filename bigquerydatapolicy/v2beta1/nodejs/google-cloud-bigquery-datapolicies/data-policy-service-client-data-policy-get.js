@@ -35,7 +35,7 @@ const client = new DataPolicyServiceClient();
 async function getDataPolicy(
   projectId,
   location = 'us',
-  dataPolicyId = 'my-data-policy',
+  dataPolicyId = 'example-data-policy',
 ) {
   const name = client.dataPolicyPath(projectId, location, dataPolicyId);
 
@@ -65,7 +65,7 @@ async function getDataPolicy(
         `Error: Data Policy '${dataPolicyId}' not found in location '${location}' for project '${projectId}'.`,
       );
       console.error(
-        'Ensure the data policy exists and the project/location are correct.',
+        'Make sure the data policy exists and the project/location are correct.',
       );
     } else {
       console.error('Error getting data policy:', err.message);

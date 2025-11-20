@@ -24,9 +24,9 @@ const client = new DataPolicyServiceClient();
 /**
  * Updates an existing data policy, specifically its data masking policy's predefined expression.
  *
- * @param {string} projectId The Google Cloud project ID (e.g., 'my-project-id').
- * @param {string} location The location of the data policy (e.g., 'us').
- * @param {string} dataPolicyId The ID of the data policy to update (e.g., 'my-data-policy-id').
+ * @param {string} projectId The Google Cloud project ID (For example, 'example-project-id').
+ * @param {string} location The location of the data policy (For example, 'us').
+ * @param {string} dataPolicyId The ID of the data policy to update (For example, 'example-data-policy-id').
  */
 async function updateDataPolicy(projectId, location, dataPolicyId) {
   const resourceName = client.dataPolicyPath(projectId, location, dataPolicyId);
@@ -70,7 +70,7 @@ async function updateDataPolicy(projectId, location, dataPolicyId) {
     if (err.code === status.NOT_FOUND) {
       console.error(
         `Error: Data policy '${resourceName}' not found. ` +
-          'Ensure the data policy exists and the project, location, and data policy ID are correct.',
+          'Make sure the data policy exists and the project, location, and data policy ID are correct.',
       );
     } else {
       console.error('Error updating data policy:', err.message, err);

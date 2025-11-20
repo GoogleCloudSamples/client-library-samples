@@ -28,7 +28,7 @@ def list_data_policies(
 
     Args:
         project_id: The ID of the Google Cloud project.
-        location: The geographic location of the data policies (e.g., "us").
+        location: The geographic location of the data policies (For example, "us").
     """
 
     parent_path = f"projects/{project_id}/locations/{location}"

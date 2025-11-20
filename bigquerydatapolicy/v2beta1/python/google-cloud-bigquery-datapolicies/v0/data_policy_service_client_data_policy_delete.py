@@ -28,7 +28,7 @@ def delete_data_policy(
 
     Args:
         project_id: The Google Cloud project ID.
-        location: The geographic location of the data policy (e.g., "us").
+        location: The geographic location of the data policy (For example, "us").
         data_policy_id: The ID of the data policy to delete.
     """
 
