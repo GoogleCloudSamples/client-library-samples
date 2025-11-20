@@ -70,28 +70,3 @@ async function listDataPolicies(projectId, location) {
   }
 }
 // [END bigquerydatapolicy_v2beta1_datapolicyservice_datapolicies_list_async]
-
-async function main(args) {
-  if (args.length !== 2) {
-    throw new Error(`Expected 2 arguments, got ${args.length}.`);
-  }
-  await listDataPolicies(args[0], args[1]);
-}
-
-if (require.main === module) {
-  process.on('uncaughtException', err => {
-    console.error(`Error running sample: ${err.message}`);
-    console.error(`To run this sample from the command-line, specify two arguments:
- - Google Cloud Project like 'example-project-id'
- - Google Cloud Location like 'us-central1'
-Usage:
- node data-policy-service-client-data-policies-list-async.js example-project-id us-central1
-`);
-
-  });
-  main(process.argv.slice(2));
-}
-
-module.exports = {
-  listDataPolicies,
-};

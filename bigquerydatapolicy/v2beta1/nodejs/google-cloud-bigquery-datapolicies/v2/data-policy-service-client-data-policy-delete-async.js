@@ -57,29 +57,3 @@ async function deleteDataPolicy(
   }
 }
 // [END bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_delete_async]
-
-async function main(args) {
-  if (args.length !== 3) {
-    throw new Error(`Expected 3 arguments, got ${args.length}.`);
-  }
-  await deleteDataPolicy(args[0], args[1], args[2]);
-}
-
-if (require.main === module) {
-  process.on('uncaughtException', err => {
-    console.error(`Error running sample: ${err.message}`);
-    console.error(`To run this sample from the command-line, specify three arguments:
- - Google Cloud Project like 'example-project-id'
- - Google Cloud Location like 'us'
- - Data Policy ID like 'example-data-policy-id'
-Usage:
- node data-policy-service-client-data-policy-delete-async.js example-project-id us example-data-policy-id
-`);
-
-  });
-  main(process.argv.slice(2));
-}
-
-module.exports = {
-  deleteDataPolicy,
-};
