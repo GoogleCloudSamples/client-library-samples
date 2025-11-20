@@ -14,7 +14,6 @@
 
 'use strict';
 
-
 // [START bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_update]
 const {DataPolicyServiceClient} =
   require('@google-cloud/bigquery-datapolicies').v2beta1;
@@ -57,7 +56,7 @@ async function updateDataPolicy(projectId, locationId, dataPolicyId) {
     };
 
     const request = {
-      dataPolicy: dataPolicy,
+      dataPolicy,
       updateMask: {
         paths: ['data_policy_type', 'data_masking_policy'],
       },
@@ -89,4 +88,3 @@ async function updateDataPolicy(projectId, locationId, dataPolicyId) {
 module.exports = {
   updateDataPolicy,
 };
-

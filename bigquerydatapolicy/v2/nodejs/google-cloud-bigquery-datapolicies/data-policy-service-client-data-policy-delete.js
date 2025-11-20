@@ -14,7 +14,6 @@
 
 'use strict';
 
-
 // [START bigquerydatapolicy_v2_datapolicyservice_datapolicy_delete]
 const {DataPolicyServiceClient} =
   require('@google-cloud/bigquery-datapolicies').v2;
@@ -34,7 +33,7 @@ async function deleteDataPolicy(projectId, location, dataPolicyId) {
   const name = client.dataPolicyPath(projectId, location, dataPolicyId);
 
   const request = {
-    name: name,
+    name,
   };
 
   try {

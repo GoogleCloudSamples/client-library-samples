@@ -14,7 +14,6 @@
 
 'use strict';
 
-
 // [START bigquerydatapolicy_v2_datapolicyservice_datapolicy_create]
 const datapolicy = require('@google-cloud/bigquery-datapolicies');
 const {DataPolicyServiceClient} = datapolicy.v2;
@@ -27,9 +26,9 @@ const dataPolicyServiceClient = new DataPolicyServiceClient();
  * Creates a new data policy under a project with the given data_policy_id
  * and data policy type. This sample creates a data masking policy.
  *
- * @param {string} projectId Your Google Cloud project ID.
- * @param {string} location The Google Cloud location (e.g., 'us').
- * @param {string} dataPolicyId The user-assigned ID of the data policy.
+ * @param {string} projectId Your Google Cloud project ID. Example: 'example-project-id'
+ * @param {string} location The Google Cloud location. Example: 'us'
+ * @param {string} dataPolicyId The user-assigned ID of the data policy. Example: 'example-data-policy-id'
  */
 async function createDataPolicy(projectId, location, dataPolicyId) {
   const parent = `projects/${projectId}/locations/${location}`;
@@ -43,9 +42,9 @@ async function createDataPolicy(projectId, location, dataPolicyId) {
   };
 
   const request = {
-    parent: parent,
-    dataPolicyId: dataPolicyId,
-    dataPolicy: dataPolicy,
+    parent,
+    dataPolicyId,
+    dataPolicy,
   };
 
   try {

@@ -14,7 +14,6 @@
 
 'use strict';
 
-
 // [START bigquerydatapolicy_v2_datapolicyservice_datapolicy_update]
 const datapolicy = require('@google-cloud/bigquery-datapolicies');
 const {DataPolicyServiceClient} = datapolicy.v2;
@@ -58,8 +57,8 @@ async function updateDataPolicy(projectId, location, dataPolicyId) {
     };
 
     const request = {
-      dataPolicy: dataPolicy,
-      updateMask: updateMask,
+      dataPolicy,
+      updateMask,
     };
 
     const [response] = await client.updateDataPolicy(request);

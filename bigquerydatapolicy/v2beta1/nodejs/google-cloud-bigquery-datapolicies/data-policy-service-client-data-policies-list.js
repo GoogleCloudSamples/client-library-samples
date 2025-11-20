@@ -14,7 +14,6 @@
 
 'use strict';
 
-
 // [START bigquerydatapolicy_v2beta1_datapolicyservice_datapolicies_list]
 const {DataPolicyServiceClient} =
   require('@google-cloud/bigquery-datapolicies').v2beta1;
@@ -34,22 +33,22 @@ async function listDataPolicies(projectId, location) {
   const parent = `projects/${projectId}/locations/${location}`;
 
   const request = {
-    parent: parent,
+    parent,
   };
 
   try {
     console.log(
-      `Listing data policies for project: ${projectId} in location: ${location}`
+      `Listing data policies for project: ${projectId} in location: ${location}`,
     );
     const [dataPolicies] = await client.listDataPolicies(request);
 
     if (dataPolicies.length === 0) {
       console.log(
-        `No data policies found in location ${location} for project ${projectId}.`
+        `No data policies found in location ${location} for project ${projectId}.`,
       );
       return;
     }
-    
+
     console.log('Data Policies:');
     for (const dataPolicy of dataPolicies) {
       console.log(`  Data Policy Name: ${dataPolicy.name}`);
@@ -64,11 +63,11 @@ async function listDataPolicies(projectId, location) {
       if (dataPolicy.dataMaskingPolicy) {
         if (dataPolicy.dataMaskingPolicy.predefinedExpression) {
           console.log(
-            `    Data Masking Predefined Expression: ${dataPolicy.dataMaskingPolicy.predefinedExpression}`
+            `    Data Masking Predefined Expression: ${dataPolicy.dataMaskingPolicy.predefinedExpression}`,
           );
         } else if (dataPolicy.dataMaskingPolicy.routine) {
           console.log(
-            `    Data Masking Routine: ${dataPolicy.dataMaskingPolicy.routine}`
+            `    Data Masking Routine: ${dataPolicy.dataMaskingPolicy.routine}`,
           );
         }
       }
@@ -79,7 +78,7 @@ async function listDataPolicies(projectId, location) {
     if (err.code === status.NOT_FOUND) {
       console.error(
         `Error: The project or location '${location}' for project '${projectId}' was not found. ` +
-          'Ensure the project ID and location are correct and that the BigQuery Data Policy API is enabled.'
+          'Ensure the project ID and location are correct and that the BigQuery Data Policy API is enabled.',
       );
     } else if (err.code === status.PERMISSION_DENIED) {
       console.error(
@@ -96,4 +95,3 @@ async function listDataPolicies(projectId, location) {
 module.exports = {
   listDataPolicies,
 };
-

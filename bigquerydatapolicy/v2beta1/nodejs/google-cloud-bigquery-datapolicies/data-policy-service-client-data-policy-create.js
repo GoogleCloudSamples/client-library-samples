@@ -14,7 +14,6 @@
 
 'use strict';
 
-
 // [START bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_create]
 const {DataPolicyServiceClient} =
   require('@google-cloud/bigquery-datapolicies').v2beta1;
@@ -28,11 +27,11 @@ const dataPolicyServiceClient = new DataPolicyServiceClient();
  * A Data Policy defines how sensitive data in BigQuery tables should be handled,
  * such as through data masking or fine-grained access control.
  *
- * @param {string} projectId The Google Cloud project ID. Example: 'my-project-id'
- * @param {string} location The Google Cloud location of the data policy (e.g., 'us'). Example: 'us'
- * @param {string} dataPolicyId A unique ID for the data policy within the project and location. Example: 'my-data-policy-id'
+ * @param {string} projectId The Google Cloud project ID. Example: 'example-project-id'
+ * @param {string} location The Google Cloud location of the data policy. Example: 'us'
+ * @param {string} dataPolicyId A unique ID for the data policy within the project and location. Example: 'example-data-policy-id'
  */
-async function createDataPolicy(projectId, location = 'us', dataPolicyId) {
+async function createDataPolicy(projectId, location, dataPolicyId) {
   const parent = `projects/${projectId}/locations/${location}`;
 
   const dataPolicy = {
@@ -43,9 +42,9 @@ async function createDataPolicy(projectId, location = 'us', dataPolicyId) {
   };
 
   const request = {
-    parent: parent,
-    dataPolicyId: dataPolicyId,
-    dataPolicy: dataPolicy,
+    parent,
+    dataPolicyId,
+    dataPolicy,
   };
 
   try {
@@ -73,4 +72,3 @@ async function createDataPolicy(projectId, location = 'us', dataPolicyId) {
 module.exports = {
   createDataPolicy,
 };
-
