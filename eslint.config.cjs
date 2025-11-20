@@ -107,6 +107,8 @@ module.exports = defineConfig([
       'n/no-unpublished-import': 'off',
       'n/no-missing-require': 'off',
       'n/no-missing-import': 'off',
+      // This rule applies to sample code, it is not applicable to other JS code.
+      // If run against the eslint-sample-style implementation, that rule will become a eslint cyclical conflict
       'sample-style/no-tabs-in-strings': 'off',
     },
   },
