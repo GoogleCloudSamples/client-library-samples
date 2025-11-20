@@ -84,3 +84,8 @@ async function getIamPolicyForDataPolicy(
   }
 }
 // [END bigquerydatapolicy_v2beta1_datapolicyservice_iampolicy_get_async]
+
+module.exports = {
+  getIamPolicyForDataPolicy,
+};
+

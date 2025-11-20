@@ -70,3 +70,8 @@ async function createDataPolicy(projectId, location = 'us', dataPolicyId) {
   }
 }
 // [END bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_create_async]
+
+module.exports = {
+  createDataPolicy,
+};
+

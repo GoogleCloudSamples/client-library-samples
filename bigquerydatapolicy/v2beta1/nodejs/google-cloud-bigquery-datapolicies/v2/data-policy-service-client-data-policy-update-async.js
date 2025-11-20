@@ -86,3 +86,8 @@ async function updateDataPolicy(projectId, locationId, dataPolicyId) {
   }
 }
 // [END bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_update_async]
+
+module.exports = {
+  updateDataPolicy,
+};
+

@@ -57,3 +57,8 @@ async function deleteDataPolicy(
   }
 }
 // [END bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_delete_async]
+
+module.exports = {
+  deleteDataPolicy,
+};
+
