@@ -1,0 +1,1 @@
+google-cloud-bigquery-datapolicies==0.7.0
