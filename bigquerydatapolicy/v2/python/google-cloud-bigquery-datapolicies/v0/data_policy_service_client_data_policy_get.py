@@ -33,7 +33,7 @@ def get_data_policy(
 
     Args:
         project_id: The Google Cloud project ID.
-        location: The geographic location of the data policy (e.g., "us", "eu").
+        location: The geographic location of the data policy (for example, "us", "eu").
         data_policy_id: The user-assigned ID of the data policy.
     """
     client = bigquery_datapolicies_v2.DataPolicyServiceClient()
