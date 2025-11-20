@@ -26,7 +26,6 @@ def list_data_policies(
     """
     Lists all data policies in a specified project and location.
 
-
     Args:
         project_id: The ID of the Google Cloud project.
         location: The geographic location of the data policies (e.g., "us").

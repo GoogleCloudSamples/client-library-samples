@@ -29,7 +29,6 @@ def update_data_policy(
     """
     Updates the metadata for an existing data policy.
 
-
     Args:
         project_id: The Google Cloud project ID.
         location: The geographic location (e.g., "us") of the data policy.
