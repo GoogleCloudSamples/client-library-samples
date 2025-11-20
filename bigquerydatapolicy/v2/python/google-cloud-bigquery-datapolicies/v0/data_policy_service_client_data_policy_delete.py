@@ -16,6 +16,7 @@
 from google.api_core import exceptions as core_exceptions
 from google.cloud import bigquery_datapolicies_v2
 
+client = bigquery_datapolicies_v2.DataPolicyServiceClient()
 
 def delete_data_policy(project_id: str, location: str, data_policy_id: str) -> None:
     """Deletes a data policy by its resource name.
@@ -25,7 +26,6 @@ def delete_data_policy(project_id: str, location: str, data_policy_id: str) -> N
         location: The location of the data policy (e.g., "us").
         data_policy_id: The ID of the data policy to delete.
     """
-    client = bigquery_datapolicies_v2.DataPolicyServiceClient()
 
     name = client.data_policy_path(
         project=project_id, location=location, data_policy=data_policy_id

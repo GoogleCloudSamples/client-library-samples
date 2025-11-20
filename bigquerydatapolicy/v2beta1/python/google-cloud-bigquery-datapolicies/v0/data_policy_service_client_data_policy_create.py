@@ -17,6 +17,7 @@ from google.api_core import exceptions
 from google.cloud import bigquery_datapolicies_v2beta1
 from google.cloud.bigquery_datapolicies_v2beta1.types import datapolicy
 
+client = bigquery_datapolicies_v2beta1.DataPolicyServiceClient()
 
 def create_data_policy(
     project_id: str,
@@ -31,7 +32,6 @@ def create_data_policy(
         location: The geographic location of the data policy (e.g., "us").
         data_policy_id: The ID of the data policy to create.
     """
-    client = bigquery_datapolicies_v2beta1.DataPolicyServiceClient()
 
     parent = f"projects/{project_id}/locations/{location}"
 

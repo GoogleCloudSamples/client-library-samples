@@ -16,6 +16,7 @@
 import google.api_core.exceptions
 from google.cloud import bigquery_datapolicies_v2
 
+client = bigquery_datapolicies_v2.DataPolicyServiceClient()
 
 def list_data_policies(project_id: str, location: str) -> None:
     """Lists all data policies in a specified project and location.
@@ -24,7 +25,6 @@ def list_data_policies(project_id: str, location: str) -> None:
         project_id: The ID of the Google Cloud project.
         location: The geographic location of the data policies (e.g., "us", "us-central1").
     """
-    client = bigquery_datapolicies_v2.DataPolicyServiceClient()
 
     parent = f"projects/{project_id}/locations/{location}"
 

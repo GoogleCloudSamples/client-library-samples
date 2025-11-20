@@ -17,6 +17,7 @@ from google.api_core.exceptions import NotFound
 from google.cloud import bigquery_datapolicies_v2beta1
 from google.protobuf import field_mask_pb2
 
+client = bigquery_datapolicies_v2beta1.DataPolicyServiceClient()
 
 def update_data_policy(project_id: str, location: str, data_policy_id: str) -> None:
     """
@@ -27,7 +28,6 @@ def update_data_policy(project_id: str, location: str, data_policy_id: str) -> N
         location: The geographic location of the data policy (e.g., "us").
         data_policy_id: The ID of the data policy to update.
     """
-    client = bigquery_datapolicies_v2beta1.DataPolicyServiceClient()
 
     data_policy_name = client.data_policy_path(
         project=project_id, location=location, data_policy=data_policy_id

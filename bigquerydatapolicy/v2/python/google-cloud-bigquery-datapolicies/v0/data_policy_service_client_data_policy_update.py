@@ -12,12 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from google.api_core import exceptions
-
 # [START bigquerydatapolicy_v2_datapolicyservice_update_data_policy]
+from google.api_core import exceptions
 from google.cloud import bigquery_datapolicies_v2
 from google.protobuf import field_mask_pb2
 
+client = bigquery_datapolicies_v2.DataPolicyServiceClient()
 
 def update_data_policy(
     project_id: str,
@@ -36,7 +36,6 @@ def update_data_policy(
         new_predefined_expression: The new predefined masking expression to set.
                                    Must be one of the DataMaskingPolicy.PredefinedExpression enum values.
     """
-    client = bigquery_datapolicies_v2.DataPolicyServiceClient()
 
     data_policy_name = client.data_policy_path(
         project=project_id,

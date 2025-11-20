@@ -17,6 +17,7 @@ from google.api_core import exceptions
 from google.cloud import bigquery_datapolicies_v2
 from google.iam.v1 import iam_policy_pb2
 
+client = bigquery_datapolicies_v2.DataPolicyServiceClient()
 
 def get_data_policy_iam_policy(
     project_id: str,
@@ -31,7 +32,6 @@ def get_data_policy_iam_policy(
         location: The geographic location of the data policy (e.g., "us").
         data_policy_id: The ID of the data policy.
     """
-    client = bigquery_datapolicies_v2.DataPolicyServiceClient()
 
     resource_name = client.data_policy_path(
         project=project_id,
