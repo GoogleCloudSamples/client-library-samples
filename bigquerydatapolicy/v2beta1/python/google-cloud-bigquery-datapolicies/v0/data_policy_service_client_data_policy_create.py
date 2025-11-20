@@ -14,13 +14,13 @@
 
 import argparse
 
-from google.api_core import exceptions
-
 # [START bigquerydatapolicy_v2beta1_datapolicyservice_create_data_policy]
+from google.api_core import exceptions
 from google.cloud import bigquery_datapolicies_v2beta1
 from google.cloud.bigquery_datapolicies_v2beta1.types import datapolicy
 
-def create_data_policy_sample(
+
+def create_data_policy(
     project_id: str,
     location: str,
     data_policy_id: str,
@@ -28,19 +28,13 @@ def create_data_policy_sample(
     """
     Creates a new data policy under a project with the given ID and data policy type.
 
-    This sample demonstrates how to create a data masking policy that applies
-    a default masking value to data.
-
     Args:
         project_id: The Google Cloud project ID.
         location: The geographic location of the data policy (e.g., "us").
-        data_policy_id: The user-assigned ID of the data policy to create.
-                        This ID must be unique within the project and location.
+        data_policy_id: The ID of the data policy to create.
     """
     client = bigquery_datapolicies_v2beta1.DataPolicyServiceClient()
 
-    # The parent resource name for the data policy.
-    # Format: projects/{project_number}/locations/{location_id}
     parent = f"projects/{project_id}/locations/{location}"
 
     # Define the data masking policy to apply.
@@ -56,7 +50,6 @@ def create_data_policy_sample(
         data_masking_policy=data_masking_policy,
     )
 
-    # Construct the request to create the data policy.
     request = datapolicy.CreateDataPolicyRequest(
         parent=parent,
         data_policy_id=data_policy_id,
@@ -64,7 +57,6 @@ def create_data_policy_sample(
     )
 
     try:
-        # Make the API call to create the data policy.
         response = client.create_data_policy(request=request)
 
         print(f"Successfully created data policy: {response.name}")
@@ -85,13 +77,12 @@ def create_data_policy_sample(
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
 
+
 # [END bigquerydatapolicy_v2beta1_datapolicyservice_create_data_policy]
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="Creates a new BigQuery data policy."
-    )
+    parser = argparse.ArgumentParser(description="Creates a new BigQuery data policy.")
     parser.add_argument(
         "--project_id",
         type=str,
@@ -108,9 +99,9 @@ if __name__ == "__main__":
         "--data_policy_id",
         type=str,
         required=True,
-        help="The user-assigned ID of the data policy to create.",
+        help="The ID of the data policy to create.",
     )
 
     args = parser.parse_args()
 
-    create_data_policy_sample(args.project_id, args.location, args.data_policy_id)
+    create_data_policy(args.project_id, args.location, args.data_policy_id)

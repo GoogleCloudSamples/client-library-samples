@@ -18,16 +18,14 @@ import argparse
 from google.api_core import exceptions
 from google.cloud import bigquery_datapolicies_v2beta1
 
-def delete_data_policy_sample(
+
+def delete_data_policy(
     project_id: str,
     location: str,
     data_policy_id: str,
 ) -> None:
     """
     Deletes a data policy.
-
-    This function demonstrates how to delete an existing data policy using its
-    resource name. It handles cases where the data policy might not exist.
 
     Args:
         project_id: The Google Cloud project ID.
@@ -36,8 +34,6 @@ def delete_data_policy_sample(
     """
     client = bigquery_datapolicies_v2beta1.DataPolicyServiceClient()
 
-    # Construct the full resource name for the data policy.
-    # Example: projects/my-project/locations/us/dataPolicies/my-data-policy
     name = client.data_policy_path(project_id, location, data_policy_id)
 
     try:
@@ -48,13 +44,12 @@ def delete_data_policy_sample(
     except Exception as e:
         print(f"Error deleting data policy {name}: {e}")
 
+
 # [END bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_delete]
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="Deletes a BigQuery Data Policy."
-    )
+    parser = argparse.ArgumentParser(description="Deletes a BigQuery Data Policy.")
     parser.add_argument(
         "--project_id",
         type=str,
@@ -64,7 +59,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--location",
         type=str,
-        default="us",
+        required=True,
         help="The geographic location of the data policy (e.g., 'us').",
     )
     parser.add_argument(
@@ -76,9 +71,7 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    # To make the sample copy-paste-callable, provide example values for all arguments.
-    # In a real application, these should be dynamic or user-provided.
-    delete_data_policy_sample(
+    delete_data_policy(
         project_id=args.project_id,
         location=args.location,
         data_policy_id=args.data_policy_id,

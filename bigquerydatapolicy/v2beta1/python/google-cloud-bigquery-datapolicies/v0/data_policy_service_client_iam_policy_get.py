@@ -15,9 +15,10 @@
 import argparse
 
 # [START bigquerydatapolicy_v2beta1_datapolicyservice_iampolicy_get]
-from google.cloud import bigquery_datapolicies_v2beta1
 from google.api_core import exceptions
-from google.iam.v1 import iam_policy_pb2  # type: ignore
+from google.cloud import bigquery_datapolicies_v2beta1
+from google.iam.v1 import iam_policy_pb2
+
 
 def get_data_policy_iam_policy(
     project_id: str,
@@ -27,24 +28,13 @@ def get_data_policy_iam_policy(
     """
     Gets the IAM policy for a specific data policy.
 
-    This sample demonstrates how to retrieve the Identity and Access Management (IAM)
-    policy associated with a BigQuery data policy. The IAM policy defines who has
-    what permissions on the data policy resource, allowing you to control access
-    to sensitive data governed by the policy.
-
     Args:
         project_id: The ID of the Google Cloud project.
         location: The BigQuery location (e.g., "us-central1").
         data_policy_id: The ID of the data policy.
     """
-    # Create a client
-    # The client is created within the function, ensuring it's scoped to the
-    # function's execution. For applications making many API calls, it's more
-    # efficient to create the client once and reuse it across multiple calls,
-    # or use a context manager (`with client:`) to ensure proper resource cleanup.
     client = bigquery_datapolicies_v2beta1.DataPolicyServiceClient()
 
-    # Construct the full resource name for the data policy
     resource_name = client.data_policy_path(
         project=project_id,
         location=location,
@@ -52,15 +42,12 @@ def get_data_policy_iam_policy(
     )
 
     try:
-        # Arrange: Prepare the request object
         request = iam_policy_pb2.GetIamPolicyRequest(
             resource=resource_name,
         )
 
-        # Act: Make the API call
         policy = client.get_iam_policy(request=request)
 
-        # Assert: Print the retrieved policy
         print(f"Successfully retrieved IAM policy for data policy: {resource_name}")
         print("IAM Policy:")
         if not policy.bindings:
@@ -75,8 +62,8 @@ def get_data_policy_iam_policy(
         print(f"Error: Data policy '{resource_name}' not found.")
         print("Please ensure the project ID, location, and data policy ID are correct.")
     except Exception as e:
-        # Catch any other unexpected errors and provide an informative message.
         print(f"An unexpected error occurred while getting the IAM policy: {e}")
+
 
 # [END bigquerydatapolicy_v2beta1_datapolicyservice_iampolicy_get]
 
@@ -93,7 +80,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--location",
         type=str,
-        default="us-central1",
+        required=True,
         help="The BigQuery location (e.g., 'us-central1').",
     )
     parser.add_argument(

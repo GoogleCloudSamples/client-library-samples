@@ -17,7 +17,8 @@ import argparse
 # [START bigquerydatapolicy_v2_datapolicyservice_iampolicy_get]
 from google.api_core import exceptions
 from google.cloud import bigquery_datapolicies_v2
-from google.iam.v1 import iam_policy_pb2  # type: ignore
+from google.iam.v1 import iam_policy_pb2
+
 
 def get_data_policy_iam_policy(
     project_id: str,
@@ -27,10 +28,6 @@ def get_data_policy_iam_policy(
     """
     Retrieves the IAM policy for a specific BigQuery Data Policy.
 
-    This function demonstrates how to fetch the Identity and Access Management
-    (IAM) policy associated with a given data policy resource. The IAM policy
-    defines who has what permissions on the data policy.
-
     Args:
         project_id: The Google Cloud project ID.
         location: The geographic location of the data policy (e.g., "us").
@@ -38,23 +35,18 @@ def get_data_policy_iam_policy(
     """
     client = bigquery_datapolicies_v2.DataPolicyServiceClient()
 
-    # Construct the full resource name for the data policy.
-    # The resource name format is projects/{project_number}/locations/{location_id}/dataPolicies/{data_policy_id}
     resource_name = client.data_policy_path(
         project=project_id,
         location=location,
         data_policy=data_policy_id,
     )
 
-    # Create a GetIamPolicyRequest object.
     request = iam_policy_pb2.GetIamPolicyRequest(resource=resource_name)
 
     try:
-        # Make the request to get the IAM policy.
         policy = client.get_iam_policy(request=request)
 
         print(f"Successfully retrieved IAM policy for data policy: {resource_name}")
-        print("Policy Etag:", policy.etag)
         print("Policy Version:", policy.version)
         if policy.bindings:
             print("Policy Bindings:")
@@ -74,6 +66,7 @@ def get_data_policy_iam_policy(
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
 
+
 # [END bigquerydatapolicy_v2_datapolicyservice_iampolicy_get]
 
 if __name__ == "__main__":
@@ -89,7 +82,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--location",
         type=str,
-        default="us", # Replace with the location of your data policy
+        required=True,
         help="The location of the data policy (e.g., 'us', 'europe-west2').",
     )
     parser.add_argument(

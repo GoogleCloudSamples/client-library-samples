@@ -13,15 +13,13 @@
 # limitations under the License.
 
 import argparse
-from google.api_core import exceptions as core_exceptions
 
 # [START bigquerydatapolicy_v2_datapolicyservice_datapolicy_delete]
+from google.api_core import exceptions as core_exceptions
 from google.cloud import bigquery_datapolicies_v2
 
 
-def delete_data_policy_sample(
-    project_id: str, location: str, data_policy_id: str
-) -> None:
+def delete_data_policy(project_id: str, location: str, data_policy_id: str) -> None:
     """Deletes a data policy by its resource name.
 
     Args:
@@ -59,7 +57,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--location",
         type=str,
-        default="us",  # Replace with the location of your data policy
+        required=True,
         help="The location of the data policy (e.g., 'us').",
     )
     parser.add_argument(
@@ -70,4 +68,4 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
 
-    delete_data_policy_sample(args.project_id, args.location, args.data_policy_id)
+    delete_data_policy(args.project_id, args.location, args.data_policy_id)

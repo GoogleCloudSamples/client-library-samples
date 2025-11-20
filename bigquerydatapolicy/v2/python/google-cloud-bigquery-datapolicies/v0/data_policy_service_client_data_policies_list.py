@@ -13,13 +13,13 @@
 # limitations under the License.
 
 import argparse
-import google.api_core.exceptions
 
 # [START bigquerydatapolicy_v2_datapolicyservice_list_data_policies]
+import google.api_core.exceptions
 from google.cloud import bigquery_datapolicies_v2
 
 
-def list_data_policies_sample(project_id: str, location: str) -> None:
+def list_data_policies(project_id: str, location: str) -> None:
     """Lists all data policies in a specified project and location.
 
     Args:
@@ -28,16 +28,14 @@ def list_data_policies_sample(project_id: str, location: str) -> None:
     """
     client = bigquery_datapolicies_v2.DataPolicyServiceClient()
 
-    # The parent resource name for which to list data policies.
-    # Format: projects/{project_number}/locations/{location_id}
     parent = f"projects/{project_id}/locations/{location}"
 
     try:
-        # Construct the request.
         request = bigquery_datapolicies_v2.ListDataPoliciesRequest(parent=parent)
 
-        # Make the API call and iterate through the response.
-        print(f"Listing data policies for project '{project_id}' in location '{location}':")
+        print(
+            f"Listing data policies for project '{project_id}' in location '{location}':"
+        )
         page_result = client.list_data_policies(request=request)
 
         found_policies = False
@@ -58,7 +56,9 @@ def list_data_policies_sample(project_id: str, location: str) -> None:
     except google.api_core.exceptions.NotFound as e:
         print(f"Error: The specified project or location was not found or accessible.")
         print(f"Details: {e}")
-        print("Please ensure the project ID and location are correct and you have the necessary permissions.")
+        print(
+            "Please ensure the project ID and location are correct and you have the necessary permissions."
+        )
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
 
@@ -70,12 +70,16 @@ if __name__ == "__main__":
         description="Lists all data policies in a specified project and location."
     )
     parser.add_argument(
-        "project_id",
+        "--project_id",
         help="The ID of the Google Cloud project.",
+        type=str,
+        required=True,
     )
     parser.add_argument(
-        "location",
+        "--location",
+        type=str,
+        required=True,
         help="The geographic location of the data policies (e.g., 'us', 'us-central1').",
     )
     args = parser.parse_args()
-    list_data_policies_sample(args.project_id, args.location)
+    list_data_policies(args.project_id, args.location)

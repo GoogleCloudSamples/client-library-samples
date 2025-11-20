@@ -15,19 +15,17 @@
 import argparse
 
 # [START bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_get]
-from google.cloud import bigquery_datapolicies_v2beta1
 from google.api_core import exceptions
+from google.cloud import bigquery_datapolicies_v2beta1
 
-def get_data_policy_sample(
+
+def get_data_policy(
     project_id: str,
     location: str,
     data_policy_id: str,
 ) -> None:
     """
     Retrieves a data policy by its resource name.
-
-    This function demonstrates how to fetch the details of an existing data policy
-    in BigQuery Data Policies using its project ID, location, and data policy ID.
 
     Args:
         project_id: The Google Cloud project ID.
@@ -36,8 +34,6 @@ def get_data_policy_sample(
     """
     client = bigquery_datapolicies_v2beta1.DataPolicyServiceClient()
 
-    # The full resource name of the data policy.
-    # Format: projects/{project_number}/locations/{location_id}/dataPolicies/{data_policy_id}
     name = client.data_policy_path(project_id, location, data_policy_id)
 
     try:
@@ -46,15 +42,20 @@ def get_data_policy_sample(
         print(f"  Data Policy ID: {response.data_policy_id}")
         print(f"  Data Policy Type: {response.data_policy_type.name}")
         if response.data_masking_policy:
-            print(f"  Data Masking Policy: {response.data_masking_policy.predefined_expression.name}")
+            print(
+                f"  Data Masking Policy: {response.data_masking_policy.predefined_expression.name}"
+            )
         if response.grantees:
             print(f"  Grantees: {', '.join(response.grantees)}")
 
     except exceptions.NotFound:
         print(f"Error: Data policy '{name}' not found.")
-        print("Please ensure the project ID, location, and data policy ID are correct and the policy exists.")
+        print(
+            "Please ensure the project ID, location, and data policy ID are correct and the policy exists."
+        )
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
+
 
 # [END bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_get]
 
@@ -71,7 +72,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--location",
         type=str,
-        default="us", # Replace with the location of your data policy, e.g., 'us', 'eu'
+        required=True,
         help="The geographic location of the data policy.",
     )
     parser.add_argument(
@@ -83,4 +84,4 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    get_data_policy_sample(args.project_id, args.location, args.data_policy_id)
+    get_data_policy(args.project_id, args.location, args.data_policy_id)

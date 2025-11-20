@@ -15,19 +15,17 @@
 import argparse
 
 # [START bigquerydatapolicy_v2beta1_datapolicyservice_datapolicies_list]
-from google.cloud import bigquery_datapolicies_v2beta1
 from google.api_core import exceptions
+from google.cloud import bigquery_datapolicies_v2beta1
 
-def list_data_policies_sample(
+
+def list_data_policies(
     project_id: str,
     location: str,
 ) -> None:
     """
     Lists all data policies in a specified project and location.
 
-    This sample demonstrates how to retrieve a paginated list of data policies
-    associated with a given Google Cloud project and location using the
-    BigQuery Data Policies API.
 
     Args:
         project_id: The ID of the Google Cloud project.
@@ -35,14 +33,12 @@ def list_data_policies_sample(
     """
     client = bigquery_datapolicies_v2beta1.DataPolicyServiceClient()
 
-    # Construct the parent resource name.
-    # Format: projects/{project_number}/locations/{location_id}
     parent_path = f"projects/{project_id}/locations/{location}"
 
     try:
-        # Make the request to list data policies.
-        # The response is a paginated iterable.
-        print(f"Listing data policies for project '{project_id}' in location '{location}':")
+        print(
+            f"Listing data policies for project '{project_id}' in location '{location}':"
+        )
         page_result = client.list_data_policies(parent=parent_path)
 
         found_policies = False
@@ -51,13 +47,17 @@ def list_data_policies_sample(
             print(f"  Data Policy Name: {data_policy.name}")
             print(f"  Data Policy Type: {data_policy.data_policy_type.name}")
             if data_policy.data_masking_policy:
-                print(f"  Data Masking Policy: {data_policy.data_masking_policy.predefined_expression.name}")
+                print(
+                    f"  Data Masking Policy: {data_policy.data_masking_policy.predefined_expression.name}"
+                )
             if data_policy.grantees:
                 print(f"  Grantees: {', '.join(data_policy.grantees)}")
             print("---")
 
         if not found_policies:
-            print(f"No data policies found for project '{project_id}' in location '{location}'.")
+            print(
+                f"No data policies found for project '{project_id}' in location '{location}'."
+            )
 
     except exceptions.NotFound:
         print(
@@ -69,6 +69,7 @@ def list_data_policies_sample(
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
 
+
 # [END bigquerydatapolicy_v2beta1_datapolicyservice_datapolicies_list]
 
 if __name__ == "__main__":
@@ -76,16 +77,20 @@ if __name__ == "__main__":
         description="Lists all data policies in a specified project and location."
     )
     parser.add_argument(
-        "project_id",
-        help="The ID of the Google Cloud project."
+        "--project_id",
+        required=True,
+        type=str,
+        help="The ID of the Google Cloud project.",
     )
     parser.add_argument(
-        "location",
-        help="The geographic location of the data policies (e.g., 'us')."
+        "--location",
+        required=True,
+        type=str,
+        help="The geographic location of the data policies (e.g., 'us').",
     )
     args = parser.parse_args()
 
-    list_data_policies_sample(
+    list_data_policies(
         args.project_id,
         args.location,
     )

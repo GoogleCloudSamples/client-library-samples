@@ -15,13 +15,13 @@
 import argparse
 
 from google.api_core import exceptions
-from google.protobuf import field_mask_pb2
 
 # [START bigquerydatapolicy_v2_datapolicyservice_update_data_policy]
 from google.cloud import bigquery_datapolicies_v2
+from google.protobuf import field_mask_pb2
 
 
-def update_data_policy_sample(
+def update_data_policy(
     project_id: str,
     location: str,
     data_policy_id: str,
@@ -30,8 +30,6 @@ def update_data_policy_sample(
     """
     Updates the metadata for an existing data policy.
 
-    The target data policy can be specified by its resource name.
-    This sample updates the predefined masking expression of an existing data masking policy.
 
     Args:
         project_id: The Google Cloud project ID.
@@ -42,12 +40,13 @@ def update_data_policy_sample(
     """
     client = bigquery_datapolicies_v2.DataPolicyServiceClient()
 
-    # Construct the full resource name for the data policy.
     data_policy_name = client.data_policy_path(
         project=project_id,
         location=location,
         data_policy=data_policy_id,
     )
+
+    existing_policy = client.get_data_policy(name=data_policy_name)
 
     # Create a DataPolicy object with the updated fields.
     # Only fields specified in the update_mask will be applied.
@@ -56,13 +55,14 @@ def update_data_policy_sample(
         data_masking_policy=bigquery_datapolicies_v2.DataMaskingPolicy(
             predefined_expression=new_predefined_expression
         ),
+        etag=existing_policy.etag,
     )
 
     # Create a FieldMask to specify which fields to update.
     # For this example, we are updating the 'predefined_expression' within 'data_masking_policy'.
-    update_mask = field_mask_pb2.FieldMask(paths=["data_masking_policy.predefined_expression"])
-
-    # Create the UpdateDataPolicyRequest.
+    update_mask = field_mask_pb2.FieldMask(
+        paths=["data_masking_policy.predefined_expression"]
+    )
     request = bigquery_datapolicies_v2.UpdateDataPolicyRequest(
         data_policy=updated_data_policy,
         update_mask=update_mask,
@@ -73,12 +73,15 @@ def update_data_policy_sample(
         print(f"Successfully updated data policy: {response.name}")
         print(f"New data policy type: {response.data_policy_type.name}")
         if response.data_masking_policy:
-            print(f"New masking expression: {response.data_masking_policy.predefined_expression.name}")
+            print(
+                f"New masking expression: {response.data_masking_policy.predefined_expression.name}"
+            )
     except exceptions.NotFound:
         print(f"Error: Data policy '{data_policy_name}' not found.")
         print("Please ensure the data policy ID and location are correct.")
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
+
 
 # [END bigquerydatapolicy_v2_datapolicyservice_update_data_policy]
 
@@ -130,7 +133,7 @@ if __name__ == "__main__":
         args.new_predefined_expression,
     )
 
-    update_data_policy_sample(
+    update_data_policy(
         args.project_id,
         args.location,
         args.data_policy_id,
