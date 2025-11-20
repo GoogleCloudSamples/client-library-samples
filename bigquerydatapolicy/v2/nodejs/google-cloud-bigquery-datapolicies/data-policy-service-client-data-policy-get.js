@@ -28,14 +28,14 @@ const client = new DataPolicyServiceClient();
  * Data policies are used to define rules for data masking or row-level security
  * on BigQuery tables.
  *
- * @param {string} projectId Your Google Cloud project ID (e.g., 'my-project-123')
- * @param {string} [location='us'] The Google Cloud location of the data policy (e.g., 'us', 'europe-west2').
- * @param {string} [dataPolicyId='my-data-policy'] The ID of the data policy to retrieve.
+ * @param {string} projectId Your Google Cloud project ID (For example, 'example-project-123')
+ * @param {string} [location='us'] The Google Cloud location of the data policy (For example, 'us', 'europe-west2').
+ * @param {string} [dataPolicyId='example-data-policy'] The ID of the data policy to retrieve.
  */
 async function getDataPolicy(
   projectId,
   location = 'us',
-  dataPolicyId = 'my-data-policy',
+  dataPolicyId = 'example-data-policy',
 ) {
   const name = client.dataPolicyPath(projectId, location, dataPolicyId);
 
@@ -62,7 +62,7 @@ async function getDataPolicy(
         `Error: Data policy '${dataPolicyId}' not found in location '${location}' for project '${projectId}'.`,
       );
       console.error(
-        'Ensure the data policy ID, project ID, and location are correct.',
+        'Make sure the data policy ID, project ID, and location are correct.',
       );
     } else {
       console.error('Error retrieving data policy:', err.message);

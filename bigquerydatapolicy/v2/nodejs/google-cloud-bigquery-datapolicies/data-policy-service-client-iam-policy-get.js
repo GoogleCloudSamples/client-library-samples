@@ -28,9 +28,9 @@ const client = new DataPolicyServiceClient();
  * policy associated with a specific BigQuery Data Policy. The IAM policy defines
  * who has what permissions on the data policy resource.
  *
- * @param {string} projectId Google Cloud Project ID (e.g., 'my-project-id')
- * @param {string} location Google Cloud Location (e.g., 'us-central1')
- * @param {string} dataPolicyId The ID of the data policy (e.g., 'my-data-policy-id')
+ * @param {string} projectId Google Cloud Project ID (For example, 'example-project-id')
+ * @param {string} location Google Cloud Location (For example, 'us-central1')
+ * @param {string} dataPolicyId The ID of the data policy (For example, 'example-data-policy-id')
  */
 async function getIamPolicy(projectId, location, dataPolicyId) {
   const resourceName = client.dataPolicyPath(projectId, location, dataPolicyId);
@@ -50,7 +50,7 @@ async function getIamPolicy(projectId, location, dataPolicyId) {
     if (err.code === status.NOT_FOUND) {
       console.error(
         `Error: Data Policy '${dataPolicyId}' not found in location '${location}' of project '${projectId}'. ` +
-          'Ensure the data policy exists and the resource name is correct.',
+          'Make sure the data policy exists and the resource name is correct.',
       );
     } else {
       console.error(
