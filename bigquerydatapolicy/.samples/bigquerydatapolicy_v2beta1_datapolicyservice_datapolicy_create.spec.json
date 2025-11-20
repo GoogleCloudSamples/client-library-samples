@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_create",
+  "title": "Create a data policy",
+  "description": "Creates a data policy in the BigQuery Data Policy API that applies a predefined data masking rule to a specified data column.",
+  "dateCreated": "2025-11-20T03:03:00.800Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Developers need to protect sensitive data (such as PII) in a BigQuery table without completely restricting access. This sample demonstrates how to programmatically create a data policy to apply a mask (for example, hashing or nullifying the value) to a specific column. This ensures that users can query the table, but they will only see the masked data for the protected column, maintaining data governance and privacy.",
+    "products": [
+      "bigquerydatapolicy"
+    ]
+  },
+  "extended": {
+    "api": "bigquerydatapolicy.googleapis.com",
+    "method": "CreateDataPolicy",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_create",
+      "title": "Create a data policy",
+      "description": "Creates a data policy in the BigQuery Data Policy API that applies a predefined data masking rule to a specified data column."
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-bigquery-datapolicies",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

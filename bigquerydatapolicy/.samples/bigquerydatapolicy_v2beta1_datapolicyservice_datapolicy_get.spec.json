@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_get",
+  "title": "Get a data policy",
+  "description": "Gets a specific data policy from the BigQuery Data Policy API by its resource name. This is useful for checking the configuration of a policy.",
+  "dateCreated": "2025-11-20T03:03:57.965Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample solves the developer problem of needing to inspect a specific data policy. A common use case is programmatically verifying that a data masking rule is correctly applied to a BigQuery table before running a sensitive analytics job.",
+    "products": [
+      "bigquerydatapolicy"
+    ]
+  },
+  "extended": {
+    "api": "bigquerydatapolicy.googleapis.com",
+    "method": "GetDataPolicy",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_get",
+      "title": "Get a data policy",
+      "description": "Gets a specific data policy from the BigQuery Data Policy API by its resource name. This is useful for checking the configuration of a policy."
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-bigquery-datapolicies",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

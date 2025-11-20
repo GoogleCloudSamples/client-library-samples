@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_delete",
+  "title": "Delete a data policy",
+  "description": "Deletes a data policy by its resource name using the BigQuery Data Policy API.",
+  "dateCreated": "2025-11-20T03:03:30.724Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample addresses the lifecycle management of data policies. When a governance rule is no longer needed, or a test policy needs to be cleaned up, the corresponding data policy must be removed to avoid unintended data masking.",
+    "products": [
+      "bigquerydatapolicy"
+    ]
+  },
+  "extended": {
+    "api": "bigquerydatapolicy.googleapis.com",
+    "method": "DeleteDataPolicy",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_delete",
+      "title": "Delete a data policy",
+      "description": "Deletes a data policy by its resource name using the BigQuery Data Policy API."
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-bigquery-datapolicies",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}
