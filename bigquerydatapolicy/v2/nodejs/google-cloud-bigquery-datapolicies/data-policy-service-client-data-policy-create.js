@@ -14,7 +14,6 @@
 
 'use strict';
 
-const process = require('process');
 
 // [START bigquerydatapolicy_v2_datapolicyservice_datapolicy_create]
 const datapolicy = require('@google-cloud/bigquery-datapolicies');

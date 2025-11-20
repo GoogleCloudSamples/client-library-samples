@@ -14,7 +14,6 @@
 
 'use strict';
 
-const process = require('process');
 
 // [START bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_delete]
 const {DataPolicyServiceClient} =

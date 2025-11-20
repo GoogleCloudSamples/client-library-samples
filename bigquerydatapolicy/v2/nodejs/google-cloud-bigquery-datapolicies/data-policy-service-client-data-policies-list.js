@@ -14,7 +14,6 @@
 
 'use strict';
 
-const process = require('process');
 
 // [START bigquerydatapolicy_v2_datapolicyservice_datapolicies_list]
 const {DataPolicyServiceClient} =
