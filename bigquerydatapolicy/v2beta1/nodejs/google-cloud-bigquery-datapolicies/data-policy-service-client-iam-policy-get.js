@@ -14,7 +14,6 @@
 
 'use strict';
 
-
 // [START bigquerydatapolicy_v2beta1_datapolicyservice_iampolicy_get]
 const {DataPolicyServiceClient} =
   require('@google-cloud/bigquery-datapolicies').v2beta1;
@@ -87,4 +86,3 @@ async function getIamPolicyForDataPolicy(
 module.exports = {
   getIamPolicyForDataPolicy,
 };
-

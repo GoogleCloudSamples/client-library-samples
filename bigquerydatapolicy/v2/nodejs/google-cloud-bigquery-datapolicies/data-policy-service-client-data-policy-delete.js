@@ -14,7 +14,6 @@
 
 'use strict';
 
-
 // [START bigquerydatapolicy_v2_datapolicyservice_datapolicy_delete]
 const {DataPolicyServiceClient} =
   require('@google-cloud/bigquery-datapolicies').v2;
