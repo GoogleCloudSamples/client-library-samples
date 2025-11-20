@@ -59,7 +59,7 @@ def get_data_policy_iam_policy(
 
     except exceptions.NotFound:
         print(f"Error: Data policy '{resource_name}' not found.")
-        print("Please ensure the project ID, location, and data policy ID are correct.")
+        print("Make sure the project ID, location, and data policy ID are correct.")
     except Exception as e:
         print(f"An unexpected error occurred while getting the IAM policy: {e}")
 

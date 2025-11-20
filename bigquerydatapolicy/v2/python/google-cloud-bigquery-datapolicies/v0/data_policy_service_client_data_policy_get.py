@@ -65,7 +65,7 @@ def get_data_policy(
 
     except exceptions.NotFound:
         print(f"Error: Data policy '{data_policy_name}' not found.")
-        print("Please ensure the data policy ID, project ID, and location are correct.")
+        print("Make sure the data policy ID, project ID, and location are correct.")
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
 

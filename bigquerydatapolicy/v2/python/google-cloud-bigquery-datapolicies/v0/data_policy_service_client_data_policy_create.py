@@ -62,14 +62,14 @@ def create_data_policy(project_id: str, location: str, data_policy_id: str) -> N
     except exceptions.AlreadyExists as e:
         print(
             f"Error: Data policy '{data_policy_id}' already exists in project"
-            f" '{project_id}' in location '{location}'. Please use a unique ID or"
+            f" '{project_id}' in location '{location}'. Use a unique ID or"
             " update the existing policy if needed."
         )
 
     except exceptions.NotFound as e:
         print(
             f"Error: The specified project '{project_id}' or location '{location}'"
-            " was not found or is inaccessible. Please ensure the project ID and"
+            " was not found or is inaccessible. Make sure the project ID and"
             " location are correct and you have the necessary permissions."
         )
     except Exception as e:

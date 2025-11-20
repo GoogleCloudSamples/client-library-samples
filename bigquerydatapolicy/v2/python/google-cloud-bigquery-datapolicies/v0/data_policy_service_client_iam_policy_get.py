@@ -59,7 +59,7 @@ def get_data_policy_iam_policy(
 
     except exceptions.NotFound:
         print(f"Error: Data policy '{resource_name}' not found.")
-        print("Please ensure the project ID, location, and data policy ID are correct.")
+        print("Make sure the project ID, location, and data policy ID are correct.")
     except exceptions.GoogleAPIError as e:
         print(f"An API error occurred: {e}")
     except Exception as e:

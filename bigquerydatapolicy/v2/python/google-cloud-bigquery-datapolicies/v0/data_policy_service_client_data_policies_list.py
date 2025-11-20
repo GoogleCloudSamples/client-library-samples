@@ -56,7 +56,7 @@ def list_data_policies(project_id: str, location: str) -> None:
         print(f"Error: The specified project or location was not found or accessible.")
         print(f"Details: {e}")
         print(
-            "Please ensure the project ID and location are correct and you have the necessary permissions."
+            "Make sure the project ID and location are correct and you have the necessary permissions."
         )
     except Exception as e:
         print(f"An unexpected error occurred: {e}")

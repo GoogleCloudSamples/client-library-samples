@@ -70,7 +70,7 @@ def update_data_policy(project_id: str, location: str, data_policy_id: str) -> N
     except NotFound:
         print(
             f"Error: Data policy '{data_policy_name}' not found. "
-            "Please ensure the data policy ID and location are correct and the policy exists."
+            "Make sure the data policy ID and location are correct and the policy exists."
         )
     except Exception as e:
         print(f"An unexpected error occurred: {e}")

@@ -60,7 +60,7 @@ def list_data_policies(
     except exceptions.NotFound:
         print(
             f"Error: The specified project '{project_id}' or location '{location}' "
-            "was not found or does not exist. Please ensure the project ID and location are correct."
+            "was not found or does not exist. Make sure the project ID and location are correct."
         )
     except exceptions.GoogleAPIError as e:
         print(f"An API error occurred: {e}")
