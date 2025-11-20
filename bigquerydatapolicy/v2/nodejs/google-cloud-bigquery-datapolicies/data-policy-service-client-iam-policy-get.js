@@ -14,7 +14,7 @@
 
 'use strict';
 
-// [START bigquerydatapolicy_v2_datapolicyservice_iampolicy_get_async]
+// [START bigquerydatapolicy_v2_datapolicyservice_iampolicy_get]
 const {DataPolicyServiceClient} =
   require('@google-cloud/bigquery-datapolicies').v2;
 const {status} = require('@grpc/grpc-js');
@@ -60,7 +60,7 @@ async function getIamPolicy(projectId, location, dataPolicyId) {
     }
   }
 }
-// [END bigquerydatapolicy_v2_datapolicyservice_iampolicy_get_async]
+// [END bigquerydatapolicy_v2_datapolicyservice_iampolicy_get]
 
 module.exports = {
   getIamPolicy,

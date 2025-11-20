@@ -14,21 +14,21 @@
 
 'use strict';
 
-// [START bigquerydatapolicy_v2_datapolicyservice_datapolicies_list_async]
+
+// [START bigquerydatapolicy_v2beta1_datapolicyservice_datapolicies_list]
 const {DataPolicyServiceClient} =
-  require('@google-cloud/bigquery-datapolicies').v2;
+  require('@google-cloud/bigquery-datapolicies').v2beta1;
 const {status} = require('@grpc/grpc-js');
 
 const client = new DataPolicyServiceClient();
 
 /**
- * Lists all data policies in a given Google Cloud project and location.
+ * Lists all data policies in a given project and location.
+ * This function demonstrates how to retrieve a paginated list of data policies
+ * associated with a specific Google Cloud project and location.
  *
- * Data policies define rules for data masking, row-level security, or column-level security.
- * This sample demonstrates how to retrieve a paginated list of these policies.
- *
- * @param {string} projectId The Google Cloud project ID. (e.g., 'my-project-123')
- * @param {string} location The Google Cloud location of the data policies. (e.g., 'us')
+ * @param {string} projectId The Google Cloud project ID.
+ * @param {string} location The Google Cloud location (e.g., 'us', 'europe-west2').
  */
 async function listDataPolicies(projectId, location) {
   const parent = `projects/${projectId}/locations/${location}`;
@@ -91,8 +91,9 @@ async function listDataPolicies(projectId, location) {
     }
   }
 }
-// [END bigquerydatapolicy_v2_datapolicyservice_datapolicies_list_async]
+// [END bigquerydatapolicy_v2beta1_datapolicyservice_datapolicies_list]
 
 module.exports = {
   listDataPolicies,
 };
+

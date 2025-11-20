@@ -14,25 +14,29 @@
 
 'use strict';
 
-const process = require('process');
 
-// [START bigquerydatapolicy_v2_datapolicyservice_datapolicy_delete_async]
+// [START bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_delete]
 const {DataPolicyServiceClient} =
-  require('@google-cloud/bigquery-datapolicies').v2;
+  require('@google-cloud/bigquery-datapolicies').v2beta1;
 const {status} = require('@grpc/grpc-js');
-
 const client = new DataPolicyServiceClient();
 
 /**
- * Deletes a data policy by its resource name.
- * This sample demonstrates how to delete an existing data policy.
+ * Deletes a BigQuery data policy.
  *
- * @param {string} projectId The Google Cloud project ID.
- * @param {string} location The Google Cloud location (e.g., 'us').
+ * This sample demonstrates how to delete an existing data policy by its resource name.
+ * If the data policy does not exist, it handles the NOT_FOUND error gracefully.
+ *
+ * @param {string} projectId Your Google Cloud Project ID (e.g., 'my-project-id').
+ * @param {string} locationId The ID of the location where the data policy resides (e.g., 'us').
  * @param {string} dataPolicyId The ID of the data policy to delete (e.g., 'my-data-policy').
  */
-async function deleteDataPolicy(projectId, location, dataPolicyId) {
-  const name = client.dataPolicyPath(projectId, location, dataPolicyId);
+async function deleteDataPolicy(
+  projectId,
+  locationId = 'us',
+  dataPolicyId = 'my-data-policy',
+) {
+  const name = client.dataPolicyPath(projectId, locationId, dataPolicyId);
 
   const request = {
     name: name,
@@ -43,16 +47,17 @@ async function deleteDataPolicy(projectId, location, dataPolicyId) {
     console.log(`Successfully deleted data policy: ${name}`);
   } catch (err) {
     if (err.code === status.NOT_FOUND) {
-      console.error(
-        `Data policy ${name} not found. Ensure the data policy ID and location are correct.`,
+      console.log(
+        `Data policy '${name}' not found. It may have already been deleted or never existed.`,
       );
     } else {
-      console.error(`Error deleting data policy ${name}:`, err.message);
+      console.log(`Error deleting data policy '${name}': ${err.message}`);
     }
   }
 }
-// [END bigquerydatapolicy_v2_datapolicyservice_datapolicy_delete_async]
+// [END bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_delete]
 
 module.exports = {
   deleteDataPolicy,
 };
+

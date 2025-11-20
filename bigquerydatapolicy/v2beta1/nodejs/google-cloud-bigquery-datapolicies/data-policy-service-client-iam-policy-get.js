@@ -14,9 +14,8 @@
 
 'use strict';
 
-const process = require('process');
 
-// [START bigquerydatapolicy_v2beta1_datapolicyservice_iampolicy_get_async]
+// [START bigquerydatapolicy_v2beta1_datapolicyservice_iampolicy_get]
 const {DataPolicyServiceClient} =
   require('@google-cloud/bigquery-datapolicies').v2beta1;
 const {status} = require('@grpc/grpc-js');
@@ -83,7 +82,7 @@ async function getIamPolicyForDataPolicy(
     }
   }
 }
-// [END bigquerydatapolicy_v2beta1_datapolicyservice_iampolicy_get_async]
+// [END bigquerydatapolicy_v2beta1_datapolicyservice_iampolicy_get]
 
 module.exports = {
   getIamPolicyForDataPolicy,
