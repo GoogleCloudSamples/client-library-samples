@@ -28,9 +28,9 @@ const client = new DataPolicyServiceClient();
  * It's useful for verifying the configuration of a data policy or for
  * programmatic access to its properties.
  *
- * @param {string} projectId Your Google Cloud Project ID (e.g., 'my-project-123')
- * @param {string} location The Google Cloud location of the data policy (e.g., 'us')
- * @param {string} dataPolicyId The ID of the data policy to retrieve (e.g., 'my-data-policy')
+ * @param {string} projectId Your Google Cloud Project ID. Example: 'example-project-id'
+ * @param {string} location The Google Cloud location of the data policy. Example: 'us'
+ * @param {string} dataPolicyId The ID of the data policy to retrieve. Example: 'example-data-policy-id'
  */
 async function getDataPolicy(
   projectId,

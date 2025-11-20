@@ -26,7 +26,7 @@ module.exports = {
     return {
       Literal(node) {
         // Detect semantic tab character in the string value
-        if (typeof node.value === 'string' && node.value.includes('  ')) {
+        if (typeof node.value === 'string' && node.value.includes('\t')) {
           context.report({
             node,
             messageId: 'noTabs',
@@ -42,7 +42,7 @@ module.exports = {
       },
       TemplateElement(node) {
         // Detect semantic tab character in the cooked value
-        if (node.value.cooked && node.value.cooked.includes('  ')) {
+        if (node.value.cooked && node.value.cooked.includes('\t')) {
           context.report({
             node,
             messageId: 'noTabs',

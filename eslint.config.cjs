@@ -19,19 +19,9 @@ const {defineConfig, globalIgnores} = require('eslint/config');
 const n = require('eslint-plugin-n');
 const prettier = require('eslint-plugin-prettier/recommended');
 const js = require('@eslint/js');
-const sampleStyle = require('./eslint-sample-style');
+const sampleStyle = require('./sampletools/eslint-sample-style');
 
 module.exports = defineConfig([
-  // Configuration for eslint.config.cjs itself to avoid 'unpublished' errors
-  {
-    files: ['eslint.config.cjs'],
-    rules: {
-      'n/no-unpublished-require': 'off',
-      'n/no-unpublished-import': 'off',
-      'n/no-missing-require': 'off',
-      'n/no-missing-import': 'off',
-    },
-  },
   js.configs.recommended,
   n.configs['flat/recommended-script'],
   prettier,
@@ -109,10 +99,15 @@ module.exports = defineConfig([
     },
   },
   {
-    files: ['**/*.test.js'],
+    files: ['**/*.test.js', 'eslint.config.cjs', 'sampletools/**/*.js'],
     rules: {
       // Allow require statements in unit tests to support dependency mocking.
       'n/global-require': 'off',
+      'n/no-unpublished-require': 'off',
+      'n/no-unpublished-import': 'off',
+      'n/no-missing-require': 'off',
+      'n/no-missing-import': 'off',
+      'sample-style/no-tabs-in-strings': 'off',
     },
   },
 ]);

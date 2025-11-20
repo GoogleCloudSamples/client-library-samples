@@ -29,17 +29,14 @@ const client = new DataPolicyServiceClient();
  * who has what permissions for the data policy, controlling access to the
  * masked data or raw data governed by it.
  *
- * @param {string} projectId Your Google Cloud project ID.
- *     (e.g., 'my-project-123')
- * @param {string} location The Google Cloud location of the data policy.
- *     (e.g., 'us-central1')
- * @param {string} dataPolicyId The ID of the data policy.
- *     (e.g., 'my-data-policy-id')
+ * @param {string} projectId Your Google Cloud project ID. Example: 'example-project-id'
+ * @param {string} location The Google Cloud location of the data policy. Example: 'us-central1'
+ * @param {string} dataPolicyId The ID of the data policy. Example: 'example-data-policy-id'
  */
 async function getIamPolicyForDataPolicy(
   projectId,
   location = 'us-central1',
-  dataPolicyId,
+  dataPolicyId = 'example-data-policy-id',
 ) {
   const resourceName = client.dataPolicyPath(projectId, location, dataPolicyId);
 
