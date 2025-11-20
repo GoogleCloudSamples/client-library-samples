@@ -23,8 +23,7 @@ client = bigquery_datapolicies_v2.DataPolicyServiceClient()
 def update_data_policy(
     project_id: str,
     location: str,
-    data_policy_id: str,
-    new_predefined_expression: bigquery_datapolicies_v2.DataMaskingPolicy.PredefinedExpression,
+    data_policy_id: str
 ) -> None:
     """
     Updates the metadata for an existing data policy.
@@ -33,8 +32,6 @@ def update_data_policy(
         project_id: The Google Cloud project ID.
         location: The geographic location (e.g., "us") of the data policy.
         data_policy_id: The ID of the data policy to update.
-        new_predefined_expression: The new predefined masking expression to set.
-                                   Must be one of the DataMaskingPolicy.PredefinedExpression enum values.
     """
 
     data_policy_name = client.data_policy_path(
@@ -50,7 +47,7 @@ def update_data_policy(
     updated_data_policy = bigquery_datapolicies_v2.DataPolicy(
         name=data_policy_name,
         data_masking_policy=bigquery_datapolicies_v2.DataMaskingPolicy(
-            predefined_expression=new_predefined_expression
+            predefined_expression=bigquery_datapolicies_v2.DataMaskingPolicy.PredefinedExpression.SHA256 # Example update value
         ),
         etag=existing_policy.etag,
     )
