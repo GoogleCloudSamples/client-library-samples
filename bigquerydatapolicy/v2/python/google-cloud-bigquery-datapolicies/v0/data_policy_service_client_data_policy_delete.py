@@ -18,6 +18,7 @@ from google.cloud import bigquery_datapolicies_v2
 
 client = bigquery_datapolicies_v2.DataPolicyServiceClient()
 
+
 def delete_data_policy(project_id: str, location: str, data_policy_id: str) -> None:
     """Deletes a data policy by its resource name.
 

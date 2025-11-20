@@ -19,6 +19,7 @@ from google.iam.v1 import iam_policy_pb2
 
 client = bigquery_datapolicies_v2beta1.DataPolicyServiceClient()
 
+
 def get_data_policy_iam_policy(
     project_id: str,
     location: str,

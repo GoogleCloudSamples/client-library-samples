@@ -19,6 +19,7 @@ from google.protobuf import field_mask_pb2
 
 client = bigquery_datapolicies_v2beta1.DataPolicyServiceClient()
 
+
 def update_data_policy(project_id: str, location: str, data_policy_id: str) -> None:
     """
     Updates an existing BigQuery Data Policy.

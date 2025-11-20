@@ -18,6 +18,7 @@ from google.cloud import bigquery_datapolicies_v2
 
 client = bigquery_datapolicies_v2.DataPolicyServiceClient()
 
+
 def create_data_policy(project_id: str, location: str, data_policy_id: str) -> None:
     """
     Creates a new data policy with a SHA-256 data masking rule.

@@ -19,6 +19,7 @@ from google.cloud.bigquery_datapolicies_v2beta1.types import datapolicy
 
 client = bigquery_datapolicies_v2beta1.DataPolicyServiceClient()
 
+
 def create_data_policy(
     project_id: str,
     location: str,

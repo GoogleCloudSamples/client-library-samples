@@ -18,6 +18,7 @@ from google.cloud import bigquery_datapolicies_v2beta1
 
 client = bigquery_datapolicies_v2beta1.DataPolicyServiceClient()
 
+
 def list_data_policies(
     project_id: str,
     location: str,
