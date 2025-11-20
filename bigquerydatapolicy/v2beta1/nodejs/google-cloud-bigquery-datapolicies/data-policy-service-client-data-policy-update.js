@@ -56,7 +56,7 @@ async function updateDataPolicy(projectId, locationId, dataPolicyId) {
     };
 
     const request = {
-      dataPolicy: dataPolicy,
+      dataPolicy,
       updateMask: {
         paths: ['data_policy_type', 'data_masking_policy'],
       },

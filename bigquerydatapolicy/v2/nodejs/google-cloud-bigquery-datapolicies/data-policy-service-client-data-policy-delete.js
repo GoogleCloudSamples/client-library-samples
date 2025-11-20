@@ -33,7 +33,7 @@ async function deleteDataPolicy(projectId, location, dataPolicyId) {
   const name = client.dataPolicyPath(projectId, location, dataPolicyId);
 
   const request = {
-    name: name,
+    name,
   };
 
   try {

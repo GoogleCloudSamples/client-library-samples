@@ -33,7 +33,7 @@ async function listDataPolicies(projectId, location) {
   const parent = `projects/${projectId}/locations/${location}`;
 
   const request = {
-    parent: parent,
+    parent,
   };
 
   try {

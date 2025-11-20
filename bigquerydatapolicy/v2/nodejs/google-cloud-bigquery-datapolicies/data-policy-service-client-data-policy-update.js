@@ -57,8 +57,8 @@ async function updateDataPolicy(projectId, location, dataPolicyId) {
     };
 
     const request = {
-      dataPolicy: dataPolicy,
-      updateMask: updateMask,
+      dataPolicy,
+      updateMask,
     };
 
     const [response] = await client.updateDataPolicy(request);

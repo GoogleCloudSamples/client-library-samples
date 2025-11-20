@@ -40,7 +40,7 @@ async function getDataPolicy(
   const name = client.dataPolicyPath(projectId, location, dataPolicyId);
 
   const request = {
-    name: name,
+    name,
   };
 
   try {

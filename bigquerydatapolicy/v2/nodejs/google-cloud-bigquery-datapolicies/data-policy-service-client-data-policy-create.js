@@ -42,9 +42,9 @@ async function createDataPolicy(projectId, location, dataPolicyId) {
   };
 
   const request = {
-    parent: parent,
-    dataPolicyId: dataPolicyId,
-    dataPolicy: dataPolicy,
+    parent,
+    dataPolicyId,
+    dataPolicy,
   };
 
   try {
