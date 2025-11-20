@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigquerydatapolicy_v2beta1_datapolicyservice_iampolicy_get",
+  "title": "Get the IAM policy for a data policy",
+  "description": "Gets the IAM policy for a specified data policy. The policy defines the roles and members that have access to that data policy resource.",
+  "dateCreated": "2025-11-20T03:04:26.341Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample is for developers building auditing or access management automation. For example, a script can use this method to fetch the IAM policy for each data policy and verify that it complies with organizational access rules.",
+    "products": [
+      "bigquerydatapolicy"
+    ]
+  },
+  "extended": {
+    "api": "bigquerydatapolicy.googleapis.com",
+    "method": "GetIamPolicy",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigquerydatapolicy_v2beta1_datapolicyservice_iampolicy_get",
+      "title": "Get the IAM policy for a data policy",
+      "description": "Gets the IAM policy for a specified data policy. The policy defines the roles and members that have access to that data policy resource."
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-bigquery-datapolicies",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

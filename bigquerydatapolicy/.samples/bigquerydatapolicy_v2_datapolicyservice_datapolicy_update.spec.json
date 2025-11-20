@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigquerydatapolicy_v2_datapolicyservice_datapolicy_update",
+  "title": "Update a data policy",
+  "description": "Updates an existing data policy in the BigQuery Data Policy API. A field mask specifies which fields of the data policy to update. This example updates the `data_policy_id`.",
+  "dateCreated": "2025-11-20T03:02:31.851Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Developers need to update data policies to adapt to changing data governance requirements, such as altering a data masking rule or renaming the policy for better organization.",
+    "products": [
+      "bigquerydatapolicy"
+    ]
+  },
+  "extended": {
+    "api": "bigquerydatapolicy.googleapis.com",
+    "method": "UpdateDataPolicy",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigquerydatapolicy_v2_datapolicyservice_datapolicy_update",
+      "title": "Update a data policy",
+      "description": "Updates an existing data policy in the BigQuery Data Policy API. A field mask specifies which fields of the data policy to update. This example updates the `data_policy_id`."
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-bigquery-datapolicies",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "NODEJS-@google-cloud/bigquery-datapolicies",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

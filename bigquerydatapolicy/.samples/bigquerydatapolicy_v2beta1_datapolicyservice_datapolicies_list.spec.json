@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigquerydatapolicy_v2beta1_datapolicyservice_datapolicies_list",
+  "title": "List data policies",
+  "description": "Lists all data policies in a specified project and location. Use this to audit or manage existing data policies programmatically.",
+  "dateCreated": "2025-11-20T03:04:50.120Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "A data administrator needs to programmatically retrieve a list of all data policies within a specific Google Cloud project and location for auditing, reporting, or bulk management tasks.",
+    "products": [
+      "bigquerydatapolicy"
+    ]
+  },
+  "extended": {
+    "api": "bigquerydatapolicy.googleapis.com",
+    "method": "ListDataPolicies",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigquerydatapolicy_v2beta1_datapolicyservice_datapolicies_list",
+      "title": "List data policies",
+      "description": "Lists all data policies in a specified project and location. Use this to audit or manage existing data policies programmatically."
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-bigquery-datapolicies",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}
