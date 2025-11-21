@@ -77,4 +77,5 @@ def create_data_policy(project_id: str, location: str, data_policy_id: str) -> N
         print(f"An unexpected error occurred: {e}")
 
 
+# [END bigquerydatapolicy_datapolicyservice_datapolicy_create]
 # [END bigquerydatapolicy_v2_datapolicyservice_datapolicy_create]

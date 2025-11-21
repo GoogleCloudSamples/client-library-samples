@@ -91,6 +91,7 @@ async function listDataPolicies(projectId, location) {
     }
   }
 }
+// [END bigquerydatapolicy_datapolicyservice_datapolicies_list]
 // [END bigquerydatapolicy_v2_datapolicyservice_datapolicies_list]
 
 module.exports = {

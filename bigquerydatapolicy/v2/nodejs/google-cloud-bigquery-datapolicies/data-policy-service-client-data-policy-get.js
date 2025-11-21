@@ -70,6 +70,7 @@ async function getDataPolicy(
     }
   }
 }
+// [END bigquerydatapolicy_datapolicyservice_datapolicy_get]
 // [END bigquerydatapolicy_v2_datapolicyservice_datapolicy_get]
 
 module.exports = {

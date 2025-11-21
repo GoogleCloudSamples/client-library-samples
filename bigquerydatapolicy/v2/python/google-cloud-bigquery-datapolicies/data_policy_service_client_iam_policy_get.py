@@ -67,4 +67,5 @@ def get_data_policy_iam_policy(
         print(f"An unexpected error occurred: {e}")
 
 
+# [END bigquerydatapolicy_datapolicyservice_iampolicy_get]
 # [END bigquerydatapolicy_v2_datapolicyservice_iampolicy_get]

@@ -80,4 +80,5 @@ def update_data_policy(
         print(f"An unexpected error occurred: {e}")
 
 
+# [END bigquerydatapolicy_datapolicyservice_datapolicy_update]
 # [END bigquerydatapolicy_v2_datapolicyservice_datapolicy_update]

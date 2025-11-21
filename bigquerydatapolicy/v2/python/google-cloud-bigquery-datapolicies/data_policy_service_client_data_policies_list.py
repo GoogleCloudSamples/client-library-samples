@@ -63,4 +63,5 @@ def list_data_policies(project_id: str, location: str) -> None:
         print(f"An unexpected error occurred: {e}")
 
 
+# [END bigquerydatapolicy_datapolicyservice_datapolicies_list]
 # [END bigquerydatapolicy_v2_datapolicyservice_datapolicies_list]

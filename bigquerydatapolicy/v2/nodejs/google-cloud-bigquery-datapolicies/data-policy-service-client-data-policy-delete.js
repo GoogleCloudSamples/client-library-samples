@@ -49,6 +49,7 @@ async function deleteDataPolicy(projectId, location, dataPolicyId) {
     }
   }
 }
+// [END bigquerydatapolicy_datapolicyservice_datapolicy_delete]
 // [END bigquerydatapolicy_v2_datapolicyservice_datapolicy_delete]
 
 module.exports = {

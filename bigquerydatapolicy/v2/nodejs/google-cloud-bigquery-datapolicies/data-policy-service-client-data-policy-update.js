@@ -81,6 +81,7 @@ async function updateDataPolicy(projectId, location, dataPolicyId) {
     }
   }
 }
+// [END bigquerydatapolicy_datapolicyservice_datapolicy_update]
 // [END bigquerydatapolicy_v2_datapolicyservice_datapolicy_update]
 
 module.exports = {
