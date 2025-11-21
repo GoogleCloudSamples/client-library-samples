@@ -25,13 +25,13 @@ const client = new DataPolicyServiceClient();
  * Updates an existing data policy.
  *
  * @param {string} projectId The Google Cloud project ID.
- * @param {string} locationId The ID of the location where the data policy exists (For example, "us").
+ * @param {string} location The ID of the location where the data policy exists (For example, "us").
  * @param {string} dataPolicyId The ID of the data policy to update.
  */
-async function updateDataPolicy(projectId, locationId, dataPolicyId) {
+async function updateDataPolicy(projectId, location, dataPolicyId) {
   const dataPolicyName = client.dataPolicyPath(
     projectId,
-    locationId,
+    location,
     dataPolicyId,
   );
 

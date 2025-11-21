@@ -27,15 +27,15 @@ const client = new DataPolicyServiceClient();
  * If the data policy does not exist, it handles the NOT_FOUND error gracefully.
  *
  * @param {string} projectId Your Google Cloud Project ID (For example, 'example-project-id').
- * @param {string} locationId The ID of the location where the data policy resides (For example, 'us').
+ * @param {string} location The ID of the location where the data policy resides (For example, 'us').
  * @param {string} dataPolicyId The ID of the data policy to delete (For example, 'example-data-policy').
  */
 async function deleteDataPolicy(
   projectId,
-  locationId = 'us',
+  location = 'us',
   dataPolicyId = 'example-data-policy',
 ) {
-  const name = client.dataPolicyPath(projectId, locationId, dataPolicyId);
+  const name = client.dataPolicyPath(projectId, location, dataPolicyId);
 
   const request = {
     name,
