@@ -1,0 +1,26 @@
+{
+	"id": "documentai_v1beta3_documentprocessorservice_processorversions_list",
+	"title": "list processor_versions",
+	"description": "Document AI sample showing how to list_processor_versions",
+	"collection": "documentai_api_samples",
+	"products": [
+		"documentai"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "documentai.googleapis.com",
+		"method": "list_processor_versions"
+	},
+	"regionTags": [
+		{
+			"name": "documentai_v1beta3_documentprocessorservice_processorversions_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-10",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
