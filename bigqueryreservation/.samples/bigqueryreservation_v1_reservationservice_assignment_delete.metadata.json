@@ -1,0 +1,26 @@
+{
+	"id": "bigqueryreservation_v1_reservationservice_assignment_delete",
+	"title": "delete assignment",
+	"description": "BigQuery Reservation API sample showing how to delete_assignment",
+	"collection": "bigqueryreservation_api_samples",
+	"products": [
+		"bigqueryreservation"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "bigqueryreservation.googleapis.com",
+		"method": "delete_assignment"
+	},
+	"regionTags": [
+		{
+			"name": "bigqueryreservation_v1_reservationservice_assignment_delete"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
