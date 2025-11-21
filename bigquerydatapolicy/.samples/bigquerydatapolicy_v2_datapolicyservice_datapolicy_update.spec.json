@@ -20,7 +20,7 @@
     {
       "name": "bigquerydatapolicy_v2_datapolicyservice_datapolicy_update",
       "title": "Update a data policy",
-      "description": "Updates the data masking configuration of an existing data policy.. This example demonstrates how to use a FieldMask to selectively update the `data_masking_policy` (for example, changing the masking expression from ALWAYS_NULL to SHA256) without affecting other fields or recreating the policy."
+      "description": "Updates the data masking configuration of an existing data policy. This example demonstrates how to use a FieldMask to selectively update the `data_masking_policy` (for example, changing the masking expression from ALWAYS_NULL to SHA256) without affecting other fields or recreating the policy."
     }
   ],
   "instances": [
