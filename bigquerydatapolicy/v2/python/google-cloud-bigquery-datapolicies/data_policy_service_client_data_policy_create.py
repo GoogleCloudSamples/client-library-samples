@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# [START bigquery_datapolicies_v2_datapolicyservice_create_data_policy]
+# [START bigquerydatapolicy_v2_datapolicyservice_datapolicy_create]
 from google.api_core import exceptions
 from google.cloud import bigquery_datapolicies_v2
 
@@ -76,4 +76,4 @@ def create_data_policy(project_id: str, location: str, data_policy_id: str) -> N
         print(f"An unexpected error occurred: {e}")
 
 
-# [END bigquery_datapolicies_v2_datapolicyservice_create_data_policy]
+# [END bigquerydatapolicy_v2_datapolicyservice_datapolicy_create]

@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# [START bigquerydatapolicy_v2beta1_datapolicyservice_update_data_policy]
+# [START bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_update]
 from google.api_core.exceptions import NotFound
 from google.cloud import bigquery_datapolicies_v2beta1
 from google.protobuf import field_mask_pb2
@@ -76,4 +76,4 @@ def update_data_policy(project_id: str, location: str, data_policy_id: str) -> N
         print(f"An unexpected error occurred: {e}")
 
 
-# [END bigquerydatapolicy_v2beta1_datapolicyservice_update_data_policy]
+# [END bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_update]
