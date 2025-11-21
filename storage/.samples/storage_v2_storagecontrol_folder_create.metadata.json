@@ -1,0 +1,26 @@
+{
+	"id": "storage_v2_storagecontrol_folder_create",
+	"title": "create folder",
+	"description": "Cloud Storage sample showing how to create_folder",
+	"collection": "storage_api_samples",
+	"products": [
+		"storage"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "storage.googleapis.com",
+		"method": "create_folder"
+	},
+	"regionTags": [
+		{
+			"name": "storage_v2_storagecontrol_folder_create"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-04",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
