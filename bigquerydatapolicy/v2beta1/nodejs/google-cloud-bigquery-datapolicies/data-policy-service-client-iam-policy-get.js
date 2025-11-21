@@ -33,7 +33,7 @@ const client = new DataPolicyServiceClient();
  * @param {string} location The Google Cloud location of the data policy. Example: 'us-central1'
  * @param {string} dataPolicyId The ID of the data policy. Example: 'example-data-policy-id'
  */
-async function getIamPolicyForDataPolicy(
+async function getIamPolicy(
   projectId,
   location = 'us-central1',
   dataPolicyId = 'example-data-policy-id',
