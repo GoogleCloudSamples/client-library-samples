@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_metricservice_timeseries_create",
+	"title": "create time_series",
+	"description": "Cloud Monitoring sample showing how to create_time_series",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "create_time_series"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_metricservice_timeseries_create"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

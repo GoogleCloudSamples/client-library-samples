@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_alertpolicyservice_alertpolicy_create",
+	"title": "create alert_policy",
+	"description": "Cloud Monitoring sample showing how to create_alert_policy",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "create_alert_policy"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_alertpolicyservice_alertpolicy_create"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
