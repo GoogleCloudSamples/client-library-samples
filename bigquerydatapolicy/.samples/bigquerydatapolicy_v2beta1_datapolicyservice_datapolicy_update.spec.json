@@ -20,7 +20,8 @@
     {
       "name": "bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_update",
       "title": "Update a data policy",
-      "description": "Updates the data masking configuration of an existing data policy.",
+      "description": "Updates the data masking configuration of an existing data policy."
+    }
   ],
   "instances": [
     {
