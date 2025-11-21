@@ -1,0 +1,26 @@
+{
+	"id": "dataplex_v1_dataplexservice_job_get",
+	"title": "get job",
+	"description": "Dataplex sample showing how to get_job",
+	"collection": "dataplex_api_samples",
+	"products": [
+		"dataplex"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataplex.googleapis.com",
+		"method": "get_job"
+	},
+	"regionTags": [
+		{
+			"name": "dataplex_v1_dataplexservice_job_get"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
