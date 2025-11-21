@@ -1,0 +1,26 @@
+{
+	"id": "billingbudgets_v1beta1_budgetservice_budget_delete_async",
+	"title": "delete Budget",
+	"description": "Cloud Billing Budget API sample showing how to deleteBudget",
+	"collection": "billingbudgets_api_samples",
+	"products": [
+		"billingbudgets"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "billingbudgets.googleapis.com",
+		"method": "deleteBudget"
+	},
+	"regionTags": [
+		{
+			"name": "billingbudgets_v1beta1_budgetservice_budget_delete_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-19",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
