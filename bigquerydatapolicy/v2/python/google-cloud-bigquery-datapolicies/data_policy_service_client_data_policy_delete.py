@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START bigquerydatapolicy_v2_datapolicyservice_datapolicy_delete]
+# [START bigquerydatapolicy_datapolicyservice_datapolicy_delete]
 from google.api_core import exceptions as core_exceptions
 from google.cloud import bigquery_datapolicies_v2
 
@@ -41,4 +42,5 @@ def delete_data_policy(project_id: str, location: str, data_policy_id: str) -> N
         print(f"Error deleting data policy '{name}': {e}")
 
 
+# [END bigquerydatapolicy_datapolicyservice_datapolicy_delete]
 # [END bigquerydatapolicy_v2_datapolicyservice_datapolicy_delete]

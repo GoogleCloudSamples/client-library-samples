@@ -15,6 +15,7 @@
 'use strict';
 
 // [START bigquerydatapolicy_v2_datapolicyservice_datapolicy_create]
+// [START bigquerydatapolicy_datapolicyservice_datapolicy_create]
 const datapolicy = require('@google-cloud/bigquery-datapolicies');
 const {DataPolicyServiceClient} = datapolicy.v2;
 const protos = datapolicy.protos.google.cloud.bigquery.datapolicies.v2;
@@ -70,6 +71,7 @@ async function createDataPolicy(projectId, location, dataPolicyId) {
     }
   }
 }
+// [END bigquerydatapolicy_datapolicyservice_datapolicy_create]
 // [END bigquerydatapolicy_v2_datapolicyservice_datapolicy_create]
 
 module.exports = {

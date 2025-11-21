@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START bigquerydatapolicy_v2_datapolicyservice_iampolicy_get]
+# [START bigquerydatapolicy_datapolicyservice_iampolicy_get]
 from google.api_core import exceptions
 from google.cloud import bigquery_datapolicies_v2
 from google.iam.v1 import iam_policy_pb2
@@ -66,4 +67,5 @@ def get_data_policy_iam_policy(
         print(f"An unexpected error occurred: {e}")
 
 
+# [END bigquerydatapolicy_datapolicyservice_iampolicy_get]
 # [END bigquerydatapolicy_v2_datapolicyservice_iampolicy_get]
