@@ -22,7 +22,7 @@ const {status} = require('@grpc/grpc-js');
 const client = new DataPolicyServiceClient();
 
 /**
- * Lists all data policies in a specified project.
+ * Lists all data policies in a given project and location.
  *
  * Data policies define rules for data masking, row-level security, or column-level security.
  *
