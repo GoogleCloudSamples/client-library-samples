@@ -1,0 +1,26 @@
+{
+	"id": "translate_v3_translationservice_dataset_delete_async",
+	"title": "delete Dataset",
+	"description": "Cloud Translation sample showing how to deleteDataset",
+	"collection": "translate_api_samples",
+	"products": [
+		"translate"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "translate.googleapis.com",
+		"method": "deleteDataset"
+	},
+	"regionTags": [
+		{
+			"name": "translate_v3_translationservice_dataset_delete_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
