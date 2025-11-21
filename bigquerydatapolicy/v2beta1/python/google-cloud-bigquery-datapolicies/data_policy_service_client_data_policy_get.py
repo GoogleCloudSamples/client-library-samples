@@ -24,8 +24,7 @@ def get_data_policy(
     location: str,
     data_policy_id: str,
 ) -> None:
-    """
-    Retrieves a data policy by its resource name.
+    """Gets a specific data policy from the BigQuery Data Policy API by its resource name.
 
     Args:
         project_id: The Google Cloud project ID.

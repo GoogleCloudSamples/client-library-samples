@@ -2,11 +2,11 @@
   "version": "1.0.0",
   "sampleId": "bigquerydatapolicy_v2_datapolicyservice_datapolicy_update",
   "title": "Update a data policy",
-  "description": "Updates an existing data policy in the BigQuery Data Policy API. A field mask specifies which fields of the data policy to update. This example updates the `data_policy_id`.",
+  "description": "Updates the data masking configuration of an existing data policy. This example demonstrates how to use a FieldMask to selectively update the `data_masking_policy` (for example, changing the masking expression from ALWAYS_NULL to SHA256) without affecting other fields or recreating the policy.",
   "dateCreated": "2025-11-20T03:02:31.851Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Developers need to update data policies to adapt to changing data governance requirements, such as altering a data masking rule or renaming the policy for better organization.",
+    "narrative": "As data compliance needs evolve, you often need to adjust column-level security without disrupting ongoing analytics. This sample demonstrates how to safely transition a Data Policy's masking rule—for example, upgrading a column from a strict ALWAYS_NULL lockdown to a utility-focused SHA256 hash.To ensure production reliability, this code implements Optimistic Concurrency Control. By verifying the policy's ETag before writing, it prevents race conditions where multiple processes might attempt to modify the policy simultaneously. It also uses a FieldMask to perform a precise partial update, ensuring that only the masking configuration is changed while leaving all other resource metadata intact.",
     "products": [
       "bigquerydatapolicy"
     ]
@@ -20,7 +20,7 @@
     {
       "name": "bigquerydatapolicy_v2_datapolicyservice_datapolicy_update",
       "title": "Update a data policy",
-      "description": "Updates an existing data policy in the BigQuery Data Policy API. A field mask specifies which fields of the data policy to update. This example updates the `data_policy_id`."
+      "description": "Updates the data masking configuration of an existing data policy.. This example demonstrates how to use a FieldMask to selectively update the `data_masking_policy` (for example, changing the masking expression from ALWAYS_NULL to SHA256) without affecting other fields or recreating the policy."
     }
   ],
   "instances": [

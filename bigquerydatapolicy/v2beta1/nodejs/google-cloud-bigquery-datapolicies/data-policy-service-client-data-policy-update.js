@@ -22,7 +22,7 @@ const {status} = require('@grpc/grpc-js');
 const client = new DataPolicyServiceClient();
 
 /**
- * Updates an existing data policy.
+ * Updates the data masking configuration of an existing data policy.
  *
  * @param {string} projectId The Google Cloud project ID.
  * @param {string} locationId The ID of the location where the data policy exists (For example, "us").

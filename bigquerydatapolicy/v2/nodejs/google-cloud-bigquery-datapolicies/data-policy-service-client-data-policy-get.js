@@ -22,7 +22,7 @@ const {status} = require('@grpc/grpc-js');
 const client = new DataPolicyServiceClient();
 
 /**
- * Retrieves a specific data policy by its resource name.
+ * Gets a specific data policy from the BigQuery Data Policy API by its name.
  *
  * This sample demonstrates how to fetch the details of an existing data policy.
  * Data policies are used to define rules for data masking or row-level security

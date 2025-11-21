@@ -20,8 +20,8 @@ client = bigquery_datapolicies_v2.DataPolicyServiceClient()
 
 
 def create_data_policy(project_id: str, location: str, data_policy_id: str) -> None:
-    """
-    Creates a new data policy with a SHA-256 data masking rule.
+    """Creates a data policy to apply a data masking rule to a specific BigQuery table column. 
+    This is a primary mechanism for implementing column-level security in BigQuery.
 
     Args:
         project_id (str): The Google Cloud project ID.

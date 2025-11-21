@@ -22,9 +22,8 @@ const {status} = require('@grpc/grpc-js');
 const client = new DataPolicyServiceClient();
 
 /**
- * Lists all data policies in a given project and location.
- * This function demonstrates how to retrieve a paginated list of data policies
- * associated with a specific Google Cloud project and location.
+ * Lists all data policies in a specified project and location.
+ * Use this to audit or manage existing data policies programmatically.
  *
  * @param {string} projectId The Google Cloud project ID.
  * @param {string} location The Google Cloud location (For example, 'us', 'europe-west2').

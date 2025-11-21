@@ -25,8 +25,8 @@ def get_data_policy_iam_policy(
     location: str,
     data_policy_id: str,
 ) -> None:
-    """
-    Gets the IAM policy for a specific data policy.
+    """Gets the IAM policy for a specified data policy.
+    The policy defines the roles and members that have access to that data policy resource.
 
     Args:
         project_id: The ID of the Google Cloud project.

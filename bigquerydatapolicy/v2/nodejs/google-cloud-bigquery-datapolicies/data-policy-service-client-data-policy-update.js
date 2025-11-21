@@ -17,12 +17,16 @@
 // [START bigquerydatapolicy_v2_datapolicyservice_datapolicy_update]
 const datapolicy = require('@google-cloud/bigquery-datapolicies');
 const {DataPolicyServiceClient} = datapolicy.v2;
+const protos = datapolicy.protos.google.cloud.bigquery.datapolicies.v2;
 const {status} = require('@grpc/grpc-js');
 
 const client = new DataPolicyServiceClient();
 
 /**
- * Updates an existing data policy, specifically its data masking policy's predefined expression.
+ * Updates the data masking configuration of an existing data policy.
+ * This example demonstrates how to use a FieldMask to selectively update the
+ * `data_masking_policy` (for example, changing the masking expression from
+ * ALWAYS_NULL to SHA256) without affecting other fields or recreating the policy.
  *
  * @param {string} projectId The Google Cloud project ID (For example, 'example-project-id').
  * @param {string} location The location of the data policy (For example, 'us').
@@ -36,24 +40,23 @@ async function updateDataPolicy(projectId, location, dataPolicyId) {
   };
 
   try {
-    // Gather the existing policy, and use the policy type and etag in the update
+    // To prevent race conditions, use the policy's etag in the update.
     const [currentDataPolicy] = await client.getDataPolicy(getRequest);
-    const currentDataPolicyType = currentDataPolicy.dataPolicyType;
     const currentETag = currentDataPolicy.etag;
 
+    // This example transitions a masking rule from ALWAYS_NULL to SHA256.
     const dataPolicy = {
       name: resourceName,
-      dataPolicyType: currentDataPolicyType,
       etag: currentETag,
       dataMaskingPolicy: {
-        predefinedExpression: 'SHA256', // Example updated value
+        predefinedExpression:
+          protos.DataMaskingPolicy.PredefinedExpression.SHA256,
       },
     };
 
-    // Define the update mask to specify which fields are being updated.
-    // This is crucial for partial updates to avoid overwriting other fields.
+    // Use a field mask to selectively update only the data masking policy.
     const updateMask = {
-      paths: ['data_masking_policy.predefined_expression'],
+      paths: ['data_masking_policy'],
     };
 
     const request = {
@@ -64,13 +67,13 @@ async function updateDataPolicy(projectId, location, dataPolicyId) {
     const [response] = await client.updateDataPolicy(request);
     console.log(`Successfully updated data policy: ${response.name}`);
     console.log(
-      `New masking expression: ${response.dataMaskingPolicy.predefinedExpression}`,
+      `New masking expression: ${response.dataMaskingPolicy.predefinedExpression}`
     );
   } catch (err) {
     if (err.code === status.NOT_FOUND) {
       console.error(
         `Error: Data policy '${resourceName}' not found. ` +
-          'Make sure the data policy exists and the project, location, and data policy ID are correct.',
+          'Make sure the data policy exists and the project, location, and data policy ID are correct.'
       );
     } else {
       console.error('Error updating data policy:', err.message, err);
