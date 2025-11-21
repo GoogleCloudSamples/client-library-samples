@@ -25,8 +25,7 @@ def create_data_policy(
     location: str,
     data_policy_id: str,
 ) -> None:
-    """
-    Creates a new data policy under a project with the given ID and data policy type.
+    """Creates a data policy in the BigQuery Data Policy API that applies a predefined data masking rule to a specified data column.
 
     Args:
         project_id: The Google Cloud project ID.

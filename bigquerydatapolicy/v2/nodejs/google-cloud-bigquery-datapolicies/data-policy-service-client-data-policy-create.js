@@ -23,8 +23,8 @@ const {status} = require('@grpc/grpc-js');
 const dataPolicyServiceClient = new DataPolicyServiceClient();
 
 /**
- * Creates a new data policy under a project with the given data_policy_id
- * and data policy type. This sample creates a data masking policy.
+ * Creates a data policy to apply a data masking rule to a specific BigQuery table column. 
+ * This is a primary mechanism for implementing column-level security in BigQuery.
  *
  * @param {string} projectId Your Google Cloud project ID. Example: 'example-project-id'
  * @param {string} location The Google Cloud location. Example: 'us'

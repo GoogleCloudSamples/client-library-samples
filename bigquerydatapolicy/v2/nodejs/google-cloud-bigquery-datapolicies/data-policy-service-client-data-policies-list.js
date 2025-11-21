@@ -22,10 +22,9 @@ const {status} = require('@grpc/grpc-js');
 const client = new DataPolicyServiceClient();
 
 /**
- * Lists all data policies in a given Google Cloud project and location.
+ * Lists all data policies in a given project and location.
  *
  * Data policies define rules for data masking, row-level security, or column-level security.
- * This sample demonstrates how to retrieve a paginated list of these policies.
  *
  * @param {string} projectId The Google Cloud project ID. (For example, 'example-project-123')
  * @param {string} location The Google Cloud location of the data policies. (For example, 'us')

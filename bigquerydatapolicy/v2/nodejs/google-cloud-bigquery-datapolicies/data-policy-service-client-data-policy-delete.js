@@ -22,8 +22,7 @@ const {status} = require('@grpc/grpc-js');
 const client = new DataPolicyServiceClient();
 
 /**
- * Deletes a data policy by its resource name.
- * This sample demonstrates how to delete an existing data policy.
+ * Deletes a data policy from the BigQuery Data Policy API, which is identified by its project ID, location, and data policy ID.
  *
  * @param {string} projectId The Google Cloud project ID.
  * @param {string} location The Google Cloud location (For example, 'us').

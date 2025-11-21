@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "sampleId": "bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_update",
   "title": "Update a data policy",
-  "description": "Updates an existing data policy in the BigQuery Data Policy API, for example by changing the policy's predefined data masking expression.",
+  "description": "Updates the data masking configuration of an existing data policy.",
   "dateCreated": "2025-11-20T03:05:21.392Z",
   "sampleType": "rpc",
   "objective": {
@@ -20,7 +20,7 @@
     {
       "name": "bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_update",
       "title": "Update a data policy",
-      "description": "Updates an existing data policy in the BigQuery Data Policy API, for example by changing the policy's predefined data masking expression."
+      "description": "Updates the data masking configuration of an existing data policy."
     }
   ],
   "instances": [

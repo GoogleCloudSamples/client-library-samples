@@ -22,11 +22,9 @@ const {status} = require('@grpc/grpc-js');
 const client = new DataPolicyServiceClient();
 
 /**
- * Gets the IAM policy for a data policy.
+ * Get the IAM policy for a specified data policy resource from the BigQuery Data Policy API.
+ * This is useful for auditing which members have which roles on the policy.
  *
- * This sample demonstrates how to retrieve the Identity and Access Management (IAM)
- * policy associated with a specific BigQuery Data Policy. The IAM policy defines
- * who has what permissions on the data policy resource.
  *
  * @param {string} projectId Google Cloud Project ID (For example, 'example-project-id')
  * @param {string} location Google Cloud Location (For example, 'us-central1')

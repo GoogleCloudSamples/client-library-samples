@@ -21,8 +21,7 @@ client = bigquery_datapolicies_v2beta1.DataPolicyServiceClient()
 
 
 def update_data_policy(project_id: str, location: str, data_policy_id: str) -> None:
-    """
-    Updates an existing BigQuery Data Policy.
+    """Updates the data masking configuration of an existing data policy.
 
     Args:
         project_id: The Google Cloud project ID.

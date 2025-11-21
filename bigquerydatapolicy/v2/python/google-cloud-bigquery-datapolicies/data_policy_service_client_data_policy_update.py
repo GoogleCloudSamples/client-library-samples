@@ -25,8 +25,11 @@ def update_data_policy(
     location: str,
     data_policy_id: str
 ) -> None:
-    """
-    Updates the metadata for an existing data policy.
+    """Updates the data masking configuration of an existing data policy.
+
+    This example demonstrates how to use a FieldMask to selectively update the
+    `data_masking_policy` (for example, changing the masking expression from
+    ALWAYS_NULL to SHA256) without affecting other fields or recreating the policy.
 
     Args:
         project_id: The Google Cloud project ID.
@@ -40,22 +43,21 @@ def update_data_policy(
         data_policy=data_policy_id,
     )
 
+    # To prevent race conditions, use the policy's etag in the update.
     existing_policy = client.get_data_policy(name=data_policy_name)
 
-    # Create a DataPolicy object with the updated fields.
-    # Only fields specified in the update_mask will be applied.
+    # This example transitions a masking rule from ALWAYS_NULL to SHA256.
     updated_data_policy = bigquery_datapolicies_v2.DataPolicy(
         name=data_policy_name,
         data_masking_policy=bigquery_datapolicies_v2.DataMaskingPolicy(
-            predefined_expression=bigquery_datapolicies_v2.DataMaskingPolicy.PredefinedExpression.SHA256 # Example update value
+            predefined_expression=bigquery_datapolicies_v2.DataMaskingPolicy.PredefinedExpression.SHA256
         ),
         etag=existing_policy.etag,
     )
 
-    # Create a FieldMask to specify which fields to update.
-    # For this example, we are updating the 'predefined_expression' within 'data_masking_policy'.
+    # Use a field mask to selectively update only the data masking policy.
     update_mask = field_mask_pb2.FieldMask(
-        paths=["data_masking_policy.predefined_expression"]
+        paths=["data_masking_policy"]
     )
     request = bigquery_datapolicies_v2.UpdateDataPolicyRequest(
         data_policy=updated_data_policy,

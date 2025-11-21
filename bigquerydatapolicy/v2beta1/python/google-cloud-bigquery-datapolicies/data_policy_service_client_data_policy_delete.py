@@ -23,8 +23,7 @@ def delete_data_policy(
     location: str,
     data_policy_id: str,
 ) -> None:
-    """
-    Deletes a data policy.
+    """Deletes a data policy by its resource name using the BigQuery Data Policy API.
 
     Args:
         project_id: The Google Cloud project ID.

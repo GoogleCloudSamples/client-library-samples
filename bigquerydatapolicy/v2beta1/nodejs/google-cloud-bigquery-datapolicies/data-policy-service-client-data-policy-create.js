@@ -21,8 +21,7 @@ const {status} = require('@grpc/grpc-js');
 
 const dataPolicyServiceClient = new DataPolicyServiceClient();
 /**
- * Creates a new BigQuery Data Policy. This sample demonstrates creating a
- * data masking policy with a SHA256 masking expression and assigning a grantee.
+ * Creates a data policy in the BigQuery Data Policy API that applies a predefined data masking rule to a specified data column.
  *
  * A Data Policy defines how sensitive data in BigQuery tables should be handled,
  * such as through data masking or fine-grained access control.
