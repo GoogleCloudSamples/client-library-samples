@@ -1,0 +1,26 @@
+{
+	"id": "retail_v2_catalogservice_completionconfig_get",
+	"title": "get completion_config",
+	"description": "Retail API sample showing how to get_completion_config",
+	"collection": "retail_api_samples",
+	"products": [
+		"retail"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "retail.googleapis.com",
+		"method": "get_completion_config"
+	},
+	"regionTags": [
+		{
+			"name": "retail_v2_catalogservice_completionconfig_get"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-10",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
