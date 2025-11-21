@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START bigquerydatapolicy_v2_datapolicyservice_datapolicy_update]
+# [START bigquerydatapolicy_datapolicyservice_datapolicy_update]
 from google.api_core import exceptions
 from google.cloud import bigquery_datapolicies_v2
 from google.protobuf import field_mask_pb2

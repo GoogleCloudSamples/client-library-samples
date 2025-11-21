@@ -19,6 +19,7 @@ const {DataPolicyServiceClient} =
 const {status} = require('@grpc/grpc-js');
 
 // [START bigquerydatapolicy_v2_datapolicyservice_datapolicy_get]
+// [START bigquerydatapolicy_datapolicyservice_datapolicy_get]
 const client = new DataPolicyServiceClient();
 
 /**

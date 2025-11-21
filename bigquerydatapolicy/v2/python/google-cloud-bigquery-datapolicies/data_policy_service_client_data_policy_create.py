@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START bigquerydatapolicy_v2_datapolicyservice_datapolicy_create]
+# [START bigquerydatapolicy_datapolicyservice_datapolicy_create]
 from google.api_core import exceptions
 from google.cloud import bigquery_datapolicies_v2
 

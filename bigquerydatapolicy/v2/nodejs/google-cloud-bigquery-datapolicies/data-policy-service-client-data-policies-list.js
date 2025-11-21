@@ -15,6 +15,7 @@
 'use strict';
 
 // [START bigquerydatapolicy_v2_datapolicyservice_datapolicies_list]
+// [START bigquerydatapolicy_datapolicyservice_datapolicies_list]
 const {DataPolicyServiceClient} =
   require('@google-cloud/bigquery-datapolicies').v2;
 const {status} = require('@grpc/grpc-js');
