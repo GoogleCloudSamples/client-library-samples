@@ -1,0 +1,26 @@
+{
+	"id": "dataplex_v1_catalogservice_entrygroup_create",
+	"title": "create entry_group",
+	"description": "Dataplex sample showing how to create_entry_group",
+	"collection": "dataplex_api_samples",
+	"products": [
+		"dataplex"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataplex.googleapis.com",
+		"method": "create_entry_group"
+	},
+	"regionTags": [
+		{
+			"name": "dataplex_v1_catalogservice_entrygroup_create"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
