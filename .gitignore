@@ -51,7 +51,9 @@ crash.*.log
 
 # Local Node.js directories
 node_modules/
+/.eslintrc
+/package-lock.json
+/package.json
 
 # Skip Sample Tests
 **/test
-
