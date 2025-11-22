@@ -1,0 +1,26 @@
+{
+	"id": "dlp_v2_dlpservice_dlpjob_delete",
+	"title": "delete dlp_job",
+	"description": "Sensitive Data Protection sample showing how to delete_dlp_job",
+	"collection": "dlp_api_samples",
+	"products": [
+		"dlp"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dlp.googleapis.com",
+		"method": "delete_dlp_job"
+	},
+	"regionTags": [
+		{
+			"name": "dlp_v2_dlpservice_dlpjob_delete"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
