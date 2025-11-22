@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_snoozeservice_snooze_get_async",
+	"title": "get Snooze",
+	"description": "Cloud Monitoring sample showing how to getSnooze",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "getSnooze"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_snoozeservice_snooze_get_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-25",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_alertpolicyservice_alertpolicy_get_async",
+	"title": "get AlertPolicy",
+	"description": "Cloud Monitoring sample showing how to getAlertPolicy",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "getAlertPolicy"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_alertpolicyservice_alertpolicy_get_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-25",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
