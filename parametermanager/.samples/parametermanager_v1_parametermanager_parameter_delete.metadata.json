@@ -1,0 +1,26 @@
+{
+	"id": "parametermanager_v1_parametermanager_parameter_delete",
+	"title": "delete parameter",
+	"description": "Parameter Manager sample showing how to delete_parameter",
+	"collection": "parametermanager_api_samples",
+	"products": [
+		"null"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "null.googleapis.com",
+		"method": "delete_parameter"
+	},
+	"regionTags": [
+		{
+			"name": "parametermanager_v1_parametermanager_parameter_delete"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-12",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
