@@ -1,0 +1,26 @@
+{
+	"id": "retail_v2alpha_projectservice_project_get",
+	"title": "get project",
+	"description": "Retail API sample showing how to get_project",
+	"collection": "retail_api_samples",
+	"products": [
+		"retail"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "retail.googleapis.com",
+		"method": "get_project"
+	},
+	"regionTags": [
+		{
+			"name": "retail_v2alpha_projectservice_project_get"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-10",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

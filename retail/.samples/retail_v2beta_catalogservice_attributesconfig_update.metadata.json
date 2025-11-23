@@ -1,0 +1,26 @@
+{
+	"id": "retail_v2beta_catalogservice_attributesconfig_update",
+	"title": "update attributes_config",
+	"description": "Retail API sample showing how to update_attributes_config",
+	"collection": "retail_api_samples",
+	"products": [
+		"retail"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "retail.googleapis.com",
+		"method": "update_attributes_config"
+	},
+	"regionTags": [
+		{
+			"name": "retail_v2beta_catalogservice_attributesconfig_update"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-10",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
