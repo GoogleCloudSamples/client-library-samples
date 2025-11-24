@@ -1,0 +1,26 @@
+{
+	"id": "billingbudgets_v1beta1_budgetservice_budget_update",
+	"title": "update budget",
+	"description": "Cloud Billing Budget API sample showing how to update_budget",
+	"collection": "billingbudgets_api_samples",
+	"products": [
+		"billingbudgets"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "billingbudgets.googleapis.com",
+		"method": "update_budget"
+	},
+	"regionTags": [
+		{
+			"name": "billingbudgets_v1beta1_budgetservice_budget_update"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
