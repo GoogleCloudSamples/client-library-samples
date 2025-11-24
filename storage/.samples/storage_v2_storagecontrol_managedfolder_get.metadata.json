@@ -1,0 +1,26 @@
+{
+	"id": "storage_v2_storagecontrol_managedfolder_get",
+	"title": "get managed_folder",
+	"description": "Cloud Storage sample showing how to get_managed_folder",
+	"collection": "storage_api_samples",
+	"products": [
+		"storage"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "storage.googleapis.com",
+		"method": "get_managed_folder"
+	},
+	"regionTags": [
+		{
+			"name": "storage_v2_storagecontrol_managedfolder_get"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-04",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
