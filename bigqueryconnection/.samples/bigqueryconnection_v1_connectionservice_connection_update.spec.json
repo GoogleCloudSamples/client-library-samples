@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigqueryconnection_v1_connectionservice_connection_update",
+  "title": "Update a BigQuery connection",
+  "description": "Updates the friendly name or description for an existing BigQuery connection. This method uses a field mask to specify which fields to change.",
+  "dateCreated": "2025-11-21T23:41:39.722Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "A developer needs to programmatically update metadata for a BigQuery connection, such as changing its friendly name to match a new project naming convention or updating its description with new contact information. Using a field mask ensures that only the specified fields are changed, which prevents accidental modification of other important settings.",
+    "products": [
+      "bigqueryconnection"
+    ]
+  },
+  "extended": {
+    "api": "bigqueryconnection.googleapis.com",
+    "method": "UpdateConnection",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigqueryconnection_v1_connectionservice_connection_update",
+      "title": "Update a BigQuery connection",
+      "description": "Updates the friendly name or description for an existing BigQuery connection. This method uses a field mask to specify which fields to change."
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-connection",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-connection",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}
