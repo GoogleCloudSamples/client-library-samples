@@ -27,7 +27,7 @@ const client = new ConnectionServiceClient();
  * A Cloud Resource connection creates a service account that can be granted access
  * to other Google Cloud resources.
  *
- * @param {string} projectId The project ID of the project to create the connection in. E.g. 'my-project-id'
+ * @param {string} projectId The Google Cloud project ID. E.g. 'example-project-id'
  * @param {string} location The location of the project to create the connection in. E.g. 'us-central1'
  * @param {string} connectionId The ID of the connection to create. E.g. 'my-connection-id'
  */

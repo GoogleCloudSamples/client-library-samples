@@ -29,7 +29,7 @@ const client = new DataPolicyServiceClient();
  * Data policies are used to define rules for data masking or row-level security
  * on BigQuery tables.
  *
- * @param {string} projectId Your Google Cloud project ID (For example, 'example-project-123')
+ * @param {string} projectId Google Cloud project ID (For example, 'example-project-id')
  * @param {string} [location='us'] The Google Cloud location of the data policy (For example, 'us', 'europe-west2').
  * @param {string} [dataPolicyId='example-data-policy'] The ID of the data policy to retrieve.
  */
