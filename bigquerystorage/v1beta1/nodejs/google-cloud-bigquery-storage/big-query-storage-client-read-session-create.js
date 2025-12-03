@@ -58,7 +58,7 @@ async function createReadSession(projectId, datasetId, tableId) {
   } catch (err) {
     if (err.code === status.NOT_FOUND) {
       console.log(
-        `Could not find table ${tableProjectId}.${datasetId}.${tableId}`,
+        `Could not find table ${projectId}.${datasetId}.${tableId}`,
       );
     } else {
       console.error('Error creating read session:', err);
