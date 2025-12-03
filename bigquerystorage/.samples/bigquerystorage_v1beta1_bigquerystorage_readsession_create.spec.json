@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigquerystorage_v1beta1_bigquerystorage_readsession_create",
+  "title": "Create a read session",
+  "description": "Creates a read session to read data from a BigQuery table using the BigQuery Storage API. A read session is required before you can start reading data streams.",
+  "dateCreated": "2025-11-21T21:56:34.071Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "The `create_read_session` method is the entry point for the BigQuery Storage Read API. Developers need to create a session before they can parallelize reads across multiple streams. This sample demonstrates the initial setup required for a high-throughput data read operation from BigQuery.",
+    "products": [
+      "bigquerystorage"
+    ]
+  },
+  "extended": {
+    "api": "bigquerystorage.googleapis.com",
+    "method": "CreateReadSession",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigquerystorage_v1beta1_bigquerystorage_readsession_create",
+      "title": "Create a read session",
+      "description": "Creates a read session to read data from a BigQuery table using the BigQuery Storage API. A read session is required before you can start reading data streams."
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-storage",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

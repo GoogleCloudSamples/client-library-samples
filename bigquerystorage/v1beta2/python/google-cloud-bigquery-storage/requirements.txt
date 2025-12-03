@@ -1,0 +1,1 @@
+google-cloud-bigquery-storage==2.34.0
