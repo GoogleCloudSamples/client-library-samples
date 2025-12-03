@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigquerystorage_v1_bigquerywrite_writestream_create",
+  "title": "Create a write stream",
+  "description": "Creates a write stream to append data rows to a BigQuery table. The stream is created in a PENDING state and can be used to write data. The stream must be finalized and committed before the data is visible in the table.",
+  "dateCreated": "2025-11-21T21:55:36.732Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample addresses the first step for streaming data into BigQuery using the Storage Write API. Developers must create a write stream to establish a connection before they can append data rows. This is the entry point for enabling high-throughput ingestion use cases, such as real-time analytics, log processing, and IoT event data.",
+    "products": [
+      "bigquerystorage"
+    ]
+  },
+  "extended": {
+    "api": "bigquerystorage.googleapis.com",
+    "method": "CreateWriteStream",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigquerystorage_v1_bigquerywrite_writestream_create",
+      "title": "Create a write stream",
+      "description": "Creates a write stream to append data rows to a BigQuery table. The stream is created in a PENDING state and can be used to write data. The stream must be finalized and committed before the data is visible in the table."
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-storage",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-storage",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

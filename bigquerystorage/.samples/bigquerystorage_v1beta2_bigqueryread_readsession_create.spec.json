@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigquerystorage_v1beta2_bigqueryread_readsession_create",
+  "title": "Create a BigQuery read session",
+  "description": "Creates a read session for a BigQuery table. The session contains one or more streams that you can use to read data from the table in parallel.",
+  "dateCreated": "2025-11-21T21:58:38.942Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "The BigQuery Storage Read API offers a high-performance way to get row data out of BigQuery. The process involves two main steps: creating a session and then reading from the streams within that session. This sample covers the first step, `create_read_session`, which is fundamental to using the API. It sets up the context for subsequent parallel reads.",
+    "products": [
+      "bigquerystorage"
+    ]
+  },
+  "extended": {
+    "api": "bigquerystorage.googleapis.com",
+    "method": "CreateReadSession",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigquerystorage_v1beta2_bigqueryread_readsession_create",
+      "title": "Create a BigQuery read session",
+      "description": "Creates a read session for a BigQuery table. The session contains one or more streams that you can use to read data from the table in parallel."
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-bigquery-storage",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

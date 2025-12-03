@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigquerystorage_v1_bigquerywrite_writestream_get",
+  "title": "Get write stream details",
+  "description": "Retrieves information about an existing BigQuery write stream. Use this to check the state and schema of a stream before appending data.",
+  "dateCreated": "2025-11-21T21:56:04.194Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Developers need to confirm a write stream's properties, such as its schema and commit state, before sending data. This check helps to prevent schema mismatch errors or attempts to write to a finalized stream.",
+    "products": [
+      "bigquerystorage"
+    ]
+  },
+  "extended": {
+    "api": "bigquerystorage.googleapis.com",
+    "method": "GetWriteStream",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigquerystorage_v1_bigquerywrite_writestream_get",
+      "title": "Get write stream details",
+      "description": "Retrieves information about an existing BigQuery write stream. Use this to check the state and schema of a stream before appending data."
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-storage",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-storage",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

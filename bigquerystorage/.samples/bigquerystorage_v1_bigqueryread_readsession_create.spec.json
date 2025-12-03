@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigquerystorage_v1_bigqueryread_readsession_create",
+  "title": "Create a BigQuery read session",
+  "description": "Create a new read session to specify the BigQuery table to read from, the columns to project, and an optional row filter.",
+  "dateCreated": "2025-11-21T21:54:58.404Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "The BigQuery Storage Read API provides a faster way to read table data compared to standard API calls such as `tabledata.list`. This sample shows the first step: creating the read session. This session defines the scope of the read (table, columns, filter) and provides the necessary streams for clients to begin pulling data in parallel. This approach is ideal for data science, machine learning, and ETL pipelines that need to process large volumes of data from BigQuery.",
+    "products": [
+      "bigquerystorage"
+    ]
+  },
+  "extended": {
+    "api": "bigquerystorage.googleapis.com",
+    "method": "CreateReadSession",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigquerystorage_v1_bigqueryread_readsession_create",
+      "title": "Create a BigQuery read session",
+      "description": "Create a new read session to specify the BigQuery table to read from, the columns to project, and an optional row filter. The returned session contains one or more streams that you can read from in parallel."
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-storage",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-storage",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}
