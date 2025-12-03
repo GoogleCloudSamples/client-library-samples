@@ -37,14 +37,14 @@ def create_write_stream(project_id: str, dataset_id: str, table_id: str) -> None
     )
 
     try:
-        response = client.create_write_stream(
-            parent=parent, write_stream=write_stream
-        )
+        response = client.create_write_stream(parent=parent, write_stream=write_stream)
 
         print(f"Created write stream: {response.name}")
 
     except exceptions.NotFound:
-        print(f"Table '{parent}' not found. Please create the table before running this sample.")
+        print(
+            f"Table '{parent}' not found. Please create the table before running this sample."
+        )
 
 
 # [END bigquerystorage_v1beta2_bigquerywrite_writestream_create]

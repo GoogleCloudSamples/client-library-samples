@@ -37,8 +37,7 @@ def create_read_session(
     parent = f"projects/{project_id}"
 
     read_options = ReadSession.TableReadOptions(
-        selected_fields=["field_01", "field_02"],
-        row_restriction="field_03 > 100"
+        selected_fields=["field_01", "field_02"], row_restriction="field_03 > 100"
     )
 
     read_session = ReadSession(
