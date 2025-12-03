@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigqueryreservation_v1_reservationservice_assignments_list",
+  "title": "List all assignments for a reservation",
+  "description": "Retrieves a list of all assignments for a specified BigQuery reservation. An assignment connects a project, folder, or organization to a reservation.",
+  "dateCreated": "2025-11-21T22:29:19.128Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample helps developers programmatically check how a reservation's capacity is allocated. For example, an administrator can use this to verify that only intended projects are assigned to a high-cost reservation before performing a cost analysis.",
+    "products": [
+      "bigqueryreservation"
+    ]
+  },
+  "extended": {
+    "api": "bigqueryreservation.googleapis.com",
+    "method": "ListAssignments",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigqueryreservation_v1_reservationservice_assignments_list",
+      "title": "List all assignments for a reservation",
+      "description": "Retrieves a list of all assignments for a specified BigQuery reservation. An assignment connects a project, folder, or organization to a reservation."
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-reservation",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-reservation",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

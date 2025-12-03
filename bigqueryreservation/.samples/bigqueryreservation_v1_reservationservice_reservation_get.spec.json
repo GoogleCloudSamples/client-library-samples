@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigqueryreservation_v1_reservationservice_reservation_get",
+  "title": "Get a reservation",
+  "description": "Retrieves a specified BigQuery reservation. Use this to check a reservation's details, such as its slot capacity and whether it ignores idle slots.",
+  "dateCreated": "2025-11-21T22:20:24.568Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample addresses the developer need to programmatically inspect the configuration of a specific BigQuery reservation. This action is common for auditing purposes or to verify capacity and settings before assigning a project to the reservation.",
+    "products": [
+      "bigqueryreservation"
+    ]
+  },
+  "extended": {
+    "api": "bigqueryreservation.googleapis.com",
+    "method": "GetReservation",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigqueryreservation_v1_reservationservice_reservation_get",
+      "title": "Get a reservation",
+      "description": "Retrieves a specified BigQuery reservation. Use this to check a reservation's details, such as its slot capacity and whether it ignores idle slots."
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-reservation",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-reservation",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigqueryreservation_v1_reservationservice_bireservation_update",
+  "title": "Update a BI reservation",
+  "description": "Update the size of an existing BI reservation. The BigQuery BI Engine uses BI reservations to run fast, in-memory analysis.",
+  "dateCreated": "2025-11-21T22:26:08.718Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Programmatically adjust the size of a BigQuery BI Engine reservation to automate scaling operations. This optimizes for cost and performance based on fluctuating analytical workloads.",
+    "products": [
+      "bigqueryreservation"
+    ]
+  },
+  "extended": {
+    "api": "bigqueryreservation.googleapis.com",
+    "method": "UpdateBiReservation",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigqueryreservation_v1_reservationservice_bireservation_update",
+      "title": "Update a BI reservation",
+      "description": "Update the size of an existing BI reservation. The BigQuery BI Engine uses BI reservations to run fast, in-memory analysis."
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-reservation",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-reservation",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

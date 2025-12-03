@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigqueryreservation_v1_reservationservice_iampolicy_get",
+  "title": "Get the IAM policy for a reservation",
+  "description": "Retrieves the Identity and Access Management (IAM) policy for a BigQuery reservation. The policy defines which principals have which roles, and is used to view the access control settings for the resource.",
+  "dateCreated": "2025-11-21T22:26:42.237Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample is for developers building automation around BigQuery reservations. For example, a developer might need to fetch the existing policy, add a new user binding, and then set the modified policy. This `getIamPolicy` call is the first step in that common read-modify-write pattern for managing access control programmatically.",
+    "products": [
+      "bigqueryreservation"
+    ]
+  },
+  "extended": {
+    "api": "bigqueryreservation.googleapis.com",
+    "method": "GetIamPolicy",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigqueryreservation_v1_reservationservice_iampolicy_get",
+      "title": "Get the IAM policy for a reservation",
+      "description": "Retrieves the Identity and Access Management (IAM) policy for a BigQuery reservation. The policy defines which principals have which roles, and is used to view the access control settings for the resource."
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-reservation",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-reservation",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

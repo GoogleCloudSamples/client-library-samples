@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigqueryreservation_v1_reservationservice_reservation_create",
+  "title": "Create a BigQuery reservation",
+  "description": "Creates a reservation in a specified project and location. A reservation represents a block of dedicated BigQuery query processing capacity that can be allocated for your organization's workloads.",
+  "dateCreated": "2025-11-21T22:19:58.268Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample demonstrates how to programmatically create a BigQuery reservation. Automating the provisioning of dedicated query capacity is a common need for customers who want to manage BigQuery costs and ensure predictable performance for critical workloads, especially as part of an infrastructure-as-code setup.",
+    "products": [
+      "bigqueryreservation"
+    ]
+  },
+  "extended": {
+    "api": "bigqueryreservation.googleapis.com",
+    "method": "CreateReservation",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigqueryreservation_v1_reservationservice_reservation_create",
+      "title": "Create a BigQuery reservation",
+      "description": "Creates a reservation in a specified project and location. A reservation represents a block of dedicated BigQuery query processing capacity that can be allocated for your organization's workloads."
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-reservation",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-reservation",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

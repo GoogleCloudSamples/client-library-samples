@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigqueryreservation_v1_reservationservice_bireservation_get",
+  "title": "Get a BI reservation",
+  "description": "Gets the details of a specified BI reservation from the BigQuery Reservation API.",
+  "dateCreated": "2025-11-21T22:25:44.036Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample shows a developer how to retrieve an existing BI reservation. This is often done to check the current state of a reservation, such as its allocated slot capacity or location, before deciding to update or delete it.",
+    "products": [
+      "bigqueryreservation"
+    ]
+  },
+  "extended": {
+    "api": "bigqueryreservation.googleapis.com",
+    "method": "GetBiReservation",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigqueryreservation_v1_reservationservice_bireservation_get",
+      "title": "Get a BI reservation",
+      "description": "Gets the details of a specified BI reservation from the BigQuery Reservation API."
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-reservation",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-reservation",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}
