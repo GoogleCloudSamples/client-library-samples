@@ -30,14 +30,14 @@ def update_connection(project_id: str, location: str, connection_id: str):
 
     Args:
         project_id: The Google Cloud project ID.
-        location: The geographic location of the connection, e.g., "us-central1".
+        location: The geographic location of the connection (for example, "us-central1").
         connection_id: The ID of the connection to update.
     """
 
     connection_name = client.connection_path(project_id, location, connection_id)
 
     connection = bigquery_connection_v1.Connection(
-        friendly_name="My Updated BigQuery Connection",
+        friendly_name="Example Updated BigQuery Connection",
         description="This is an updated description for the connection.",
     )
 

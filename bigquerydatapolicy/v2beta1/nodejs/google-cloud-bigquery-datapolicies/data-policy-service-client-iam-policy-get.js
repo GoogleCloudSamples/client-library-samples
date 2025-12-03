@@ -26,7 +26,7 @@ const client = new DataPolicyServiceClient();
  * The policy defines the roles and members that have access to that data policy resource.
  *
  *
- * @param {string} projectId Your Google Cloud project ID. Example: 'example-project-id'
+ * @param {string} projectId The Google Cloud project ID (for example, 'example-project-id')
  * @param {string} location The Google Cloud location of the data policy. Example: 'us-central1'
  * @param {string} dataPolicyId The ID of the data policy. Example: 'example-data-policy-id'
  */

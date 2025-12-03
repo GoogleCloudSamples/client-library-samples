@@ -27,7 +27,7 @@ def list_data_policies(
     Use this to audit or manage existing data policies programmatically.
 
     Args:
-        project_id: The ID of the Google Cloud project.
+        project_id: The Google Cloud project ID.
         location: The geographic location of the data policies (for example, "us").
     """
 

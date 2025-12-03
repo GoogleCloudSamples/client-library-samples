@@ -27,7 +27,7 @@ const dataPolicyServiceClient = new DataPolicyServiceClient();
  * Creates a data policy to apply a data masking rule to a specific BigQuery table column. 
  * This is a primary mechanism for implementing column-level security in BigQuery.
  *
- * @param {string} projectId Your Google Cloud project ID. Example: 'example-project-id'
+ * @param {string} projectId The Google Cloud project ID (for example, 'example-project-id')
  * @param {string} location The Google Cloud location. Example: 'us'
  * @param {string} dataPolicyId The user-assigned ID of the data policy. Example: 'example-data-policy-id'
  */

@@ -27,7 +27,7 @@ const client = new DataPolicyServiceClient();
  *
  * Data policies define rules for data masking, row-level security, or column-level security.
  *
- * @param {string} projectId The Google Cloud project ID. (For example, 'example-project-123')
+ * @param {string} projectId The Google Cloud project ID. (for example, 'example-project-id')
  * @param {string} location The Google Cloud location of the data policies. (For example, 'us')
  */
 async function listDataPolicies(projectId, location) {

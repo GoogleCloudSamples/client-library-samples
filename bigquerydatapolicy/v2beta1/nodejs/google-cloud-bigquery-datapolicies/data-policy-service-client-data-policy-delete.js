@@ -26,7 +26,7 @@ const client = new DataPolicyServiceClient();
  * This sample demonstrates how to delete an existing data policy by its resource name.
  * If the data policy does not exist, it handles the NOT_FOUND error gracefully.
  *
- * @param {string} projectId Your Google Cloud Project ID (For example, 'example-project-id').
+ * @param {string} projectId The Google Cloud project ID (for example, 'example-project-id').
  * @param {string} location The ID of the location where the data policy resides (For example, 'us').
  * @param {string} dataPolicyId The ID of the data policy to delete (For example, 'example-data-policy').
  */
