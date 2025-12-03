@@ -173,7 +173,7 @@ def validate(repo_root):
                 "but are missing from the .spec.json 'regionTags' array (see versionless-region-tags sample standards)."
             )
             for w in warnings[:10]:
-                print(f"  * {w}")  #
+                print(f"  * {w}")
             if len(warnings) > 10:
                 print(f"  * ... and {len(warnings)-10} more.")
 
