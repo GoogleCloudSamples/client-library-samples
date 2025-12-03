@@ -16,6 +16,9 @@
 from google.api_core import exceptions
 from google.cloud import bigquery_storage_v1beta2
 
+client = bigquery_storage_v1beta2.BigQueryWriteClient()
+
+
 def create_write_stream(project_id: str, dataset_id: str, table_id: str) -> None:
     """Creates a new write stream for a BigQuery table.
 
@@ -28,7 +31,6 @@ def create_write_stream(project_id: str, dataset_id: str, table_id: str) -> None
         dataset_id: The BigQuery dataset ID.
         table_id: The BigQuery table ID.
     """
-    client = bigquery_storage_v1beta2.BigQueryWriteClient()
     parent = client.table_path(project_id, dataset_id, table_id)
     write_stream = bigquery_storage_v1beta2.types.WriteStream(
         type_=bigquery_storage_v1beta2.types.WriteStream.Type.COMMITTED
@@ -43,4 +45,6 @@ def create_write_stream(project_id: str, dataset_id: str, table_id: str) -> None
 
     except exceptions.NotFound:
         print(f"Table '{parent}' not found. Please create the table before running this sample.")
+
+
 # [END bigquerystorage_v1beta2_bigquerywrite_writestream_create]

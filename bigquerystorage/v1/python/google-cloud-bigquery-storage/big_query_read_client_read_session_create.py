@@ -17,6 +17,8 @@ from google.api_core.exceptions import NotFound
 from google.cloud.bigquery_storage_v1 import BigQueryReadClient
 from google.cloud.bigquery_storage_v1.types import DataFormat, ReadSession
 
+client = BigQueryReadClient()
+
 
 def create_read_session(
     project_id: str,
@@ -30,8 +32,6 @@ def create_read_session(
         dataset_id: The dataset ID of the table to read from.
         table_id: The table ID of the table to read from.
     """
-
-    client = BigQueryReadClient()
 
     parent = f"projects/{project_id}"
     table = client.table_path(project_id, dataset_id, table_id)

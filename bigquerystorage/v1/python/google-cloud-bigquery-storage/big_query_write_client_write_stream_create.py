@@ -18,6 +18,8 @@ from google.api_core.exceptions import NotFound
 from google.cloud.bigquery_storage_v1 import BigQueryWriteClient
 from google.cloud.bigquery_storage_v1.types import WriteStream
 
+client = BigQueryWriteClient()
+
 
 def create_write_stream(project_id: str, dataset_id: str, table_id: str) -> None:
     """Creates a write stream to a BigQuery table.
@@ -31,7 +33,6 @@ def create_write_stream(project_id: str, dataset_id: str, table_id: str) -> None
         dataset_id: The BigQuery dataset ID.
         table_id: The BigQuery table ID.
     """
-    client = BigQueryWriteClient()
     parent = client.table_path(project_id, dataset_id, table_id)
     write_stream = WriteStream()
 

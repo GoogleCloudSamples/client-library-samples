@@ -16,6 +16,7 @@
 import google.api_core.exceptions
 from google.cloud import bigquery_storage_v1
 
+
 def get_write_stream(
     project_id: str, dataset_id: str, table_id: str, stream_id: str
 ) -> None:

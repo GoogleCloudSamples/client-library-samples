@@ -16,6 +16,9 @@
 from google.api_core import exceptions
 from google.cloud import bigquery_storage_v1beta2
 
+client = bigquery_storage_v1beta2.BigQueryWriteClient()
+
+
 def get_write_stream(project_id: str, dataset_id: str, table_id: str) -> None:
     """Gets a write stream in a BigQuery table.
 
@@ -29,7 +32,6 @@ def get_write_stream(project_id: str, dataset_id: str, table_id: str) -> None:
         table_id: The BigQuery table ID.
     """
     try:
-        client = bigquery_storage_v1beta2.BigQueryWriteClient()
         parent = client.table_path(project_id, dataset_id, table_id)
 
         write_stream = bigquery_storage_v1beta2.types.WriteStream()
