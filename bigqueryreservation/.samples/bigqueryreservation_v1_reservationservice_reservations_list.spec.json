@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigqueryreservation_v1_reservationservice_reservations_list",
+  "title": "List reservations",
+  "description": "Lists all BigQuery reservations within a specified project and location.",
+  "dateCreated": "2025-11-21T22:28:19.231Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample helps an administrator or capacity planner see all active BigQuery reservations in a specific project and location. This is a common first step before performing management tasks like updating capacity, moving projects between reservations, or auditing slot usage.",
+    "products": [
+      "bigqueryreservation"
+    ]
+  },
+  "extended": {
+    "api": "bigqueryreservation.googleapis.com",
+    "method": "ListReservations",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigqueryreservation_v1_reservationservice_reservations_list",
+      "title": "List reservations",
+      "description": "Lists all BigQuery reservations within a specified project and location."
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-reservation",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-reservation",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigqueryreservation_v1_reservationservice_reservation_delete",
+  "title": "Delete a BigQuery reservation",
+  "description": "Deletes a reservation from the BigQuery Reservation API. The reservation must not have any assignments.",
+  "dateCreated": "2025-11-21T22:20:54.351Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Developers need a way to programmatically manage their BigQuery resources. This sample provides a demonstration of how to remove a reservation that is no longer needed. This helps with cost management by releasing committed slots that are not being used, or it can be part of an automated cleanup script for temporary projects.",
+    "products": [
+      "bigqueryreservation"
+    ]
+  },
+  "extended": {
+    "api": "bigqueryreservation.googleapis.com",
+    "method": "DeleteReservation",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigqueryreservation_v1_reservationservice_reservation_delete",
+      "title": "Delete a BigQuery reservation",
+      "description": "Deletes a reservation from the BigQuery Reservation API. The reservation must not have any assignments."
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-reservation",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-reservation",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

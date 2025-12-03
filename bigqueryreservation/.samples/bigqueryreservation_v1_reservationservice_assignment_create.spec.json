@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigqueryreservation_v1_reservationservice_assignment_create",
+  "title": "Create a reservation assignment",
+  "description": "Create an assignment to map a project, folder, or organization to a BigQuery reservation.",
+  "dateCreated": "2025-11-21T22:24:13.505Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "To manage costs and isolate performance, a developer can programmatically allocate BigQuery slots to a specific project. This is accomplished by creating an assignment that links the project to a reservation, which ensures all jobs originating from that project use the capacity of the associated reservation.",
+    "products": [
+      "bigqueryreservation"
+    ]
+  },
+  "extended": {
+    "api": "bigqueryreservation.googleapis.com",
+    "method": "CreateAssignment",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigqueryreservation_v1_reservationservice_assignment_create",
+      "title": "Create a reservation assignment",
+      "description": "Create an assignment to map a project, folder, or organization to a BigQuery reservation."
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-reservation",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-reservation",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}
