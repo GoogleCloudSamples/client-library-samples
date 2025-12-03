@@ -29,7 +29,7 @@ def get_data_policy_iam_policy(
     The policy defines the roles and members that have access to that data policy resource.
 
     Args:
-        project_id: The ID of the Google Cloud project.
+        project_id: The Google Cloud project ID.
         location: The BigQuery location (for example, "us-central1").
         data_policy_id: The ID of the data policy.
     """

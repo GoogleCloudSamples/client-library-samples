@@ -24,9 +24,9 @@ const client = new ConnectionServiceClient();
 /**
  * Updates a BigQuery connection, demonstrating how to update the friendly name and description.
  *
- * @param {string} projectId The Google Cloud project ID. E.g. 'example-project-id'
- * @param {string} location The location of the connection. e.g. 'us-central1'
- * @param {string} connectionId The ID of the connection to update. e.g. 'my-connection-id'
+ * @param {string} projectId The Google Cloud project ID. for example, 'example-project-id'
+ * @param {string} location The location of the connection. for example, 'us-central1'
+ * @param {string} connectionId The ID of the connection to update. for example, 'example-connection-id'
  */
 async function updateConnection(projectId, location, connectionId) {
   const name = connectionClient.connectionPath(
@@ -36,8 +36,8 @@ async function updateConnection(projectId, location, connectionId) {
   );
 
   const connection = {
-    friendlyName: 'My Updated Connection',
-    description: 'A new description for my connection',
+    friendlyName: 'Example Updated Connection',
+    description: 'A new description for the connection',
   };
 
   const updateMask = {

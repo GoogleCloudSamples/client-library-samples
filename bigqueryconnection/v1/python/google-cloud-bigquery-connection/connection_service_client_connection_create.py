@@ -30,15 +30,15 @@ def create_connection(
     granted access to other Google Cloud resources for federated queries.
 
     Args:
-        project_id: Your Google Cloud project ID.
-        location: The location of the connection, e.g., "us-central1".
+        project_id: The Google Cloud project ID.
+        location: The location of the connection (for example, "us-central1").
         connection_id: The ID of the connection to create.
     """
 
     parent = client.common_location_path(project_id, location)
 
     connection = bigquery_connection_v1.Connection(
-        friendly_name="My new connection",
+        friendly_name="Example Connection",
         description="A sample connection for a Cloud Resource.",
         cloud_resource=bigquery_connection_v1.CloudResourceProperties(),
     )

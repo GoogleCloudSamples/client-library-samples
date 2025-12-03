@@ -24,7 +24,7 @@ def get_connection(project_id: str, location: str, connection_id: str):
 
     Args:
         project_id: The Google Cloud project ID.
-        location: The geographic location of the connection, e.g. "us-central1".
+        location: The geographic location of the connection (for example, "us-central1").
         connection_id: The ID of the connection to retrieve.
     """
 

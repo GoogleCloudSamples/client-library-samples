@@ -26,9 +26,9 @@ const client = new ConnectionServiceClient();
  *
  * A connection stores metadata about an external data source and credentials to access it.
  *
- * @param {string} projectId - Google Cloud project ID. E.g. 'example-project-id'
- * @param {string} location - The location of the connection. e.g. 'us-central1'
- * @param {string} connectionId - The ID of the connection to retrieve. e.g. 'my_connection'
+ * @param {string} projectId - Google Cloud project ID. for example, 'example-project-id'
+ * @param {string} location - The location of the connection. for example, 'us-central1'
+ * @param {string} connectionId - The ID of the connection to retrieve. for example, 'example_connection'
  */
 async function getConnection(projectId, location, connectionId) {
   const name = client.connectionPath(projectId, location, connectionId);

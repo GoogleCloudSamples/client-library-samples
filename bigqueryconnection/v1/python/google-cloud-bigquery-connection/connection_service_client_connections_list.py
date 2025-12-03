@@ -22,7 +22,7 @@ def list_connections(project_id: str, location: str):
 
     Args:
         project_id: The Google Cloud project ID.
-        location: The geographic location of the connections, e.g. "us", "us-central1".
+        location: The geographic location of the connections (for example, "us", "us-central1").
     """
     client = bigquery_connection_v1.ConnectionServiceClient()
 

@@ -28,8 +28,8 @@ def get_connection_iam_policy(
     """Gets the IAM policy of a connection.
 
     Args:
-        project_id: Your Google Cloud project ID.
-        location: The geographic location of the connection, e.g., "us".
+        project_id: The Google Cloud project ID.
+        location: The geographic location of the connection (for example, "us").
         connection_id: The ID of the connection.
     """
 

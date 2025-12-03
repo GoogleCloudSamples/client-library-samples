@@ -23,8 +23,8 @@ const client = new ConnectionServiceClient();
 /**
  * Lists BigQuery connections in a given project and location.
  *
- * @param {string} projectId The Google Cloud project ID. E.g. 'example-project-id'
- * @param {string} location The location to list connections for. E.g. 'us-central1'
+ * @param {string} projectId The Google Cloud project ID. for example, 'example-project-id'
+ * @param {string} location The location to list connections for. for example, 'us-central1'
  */
 async function listConnections(projectId, location) {
   const parent = client.locationPath(projectId, location);

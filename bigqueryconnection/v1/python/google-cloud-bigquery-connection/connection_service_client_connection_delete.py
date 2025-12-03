@@ -23,8 +23,8 @@ def delete_connection(project_id: str, location: str, connection_id: str):
     """Deletes a BigQuery connection.
 
     Args:
-        project_id: ID of the project that contains the connection.
-        location: Location of the connection, e.g. "us-central1".
+        project_id: The Google Cloud project ID.
+        location: Location of the connection (for example, "us-central1").
         connection_id: ID of the connection to delete.
     """
     name = client.connection_path(project_id, location, connection_id)

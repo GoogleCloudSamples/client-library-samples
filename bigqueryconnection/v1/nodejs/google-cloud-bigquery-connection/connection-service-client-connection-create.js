@@ -27,15 +27,15 @@ const client = new ConnectionServiceClient();
  * A Cloud Resource connection creates a service account that can be granted access
  * to other Google Cloud resources.
  *
- * @param {string} projectId The Google Cloud project ID. E.g. 'example-project-id'
- * @param {string} location The location of the project to create the connection in. E.g. 'us-central1'
- * @param {string} connectionId The ID of the connection to create. E.g. 'my-connection-id'
+ * @param {string} projectId The Google Cloud project ID. for example, 'example-project-id'
+ * @param {string} location The location of the project to create the connection in. for example, 'us-central1'
+ * @param {string} connectionId The ID of the connection to create. for example, 'example-connection-id'
  */
 async function createConnection(projectId, location, connectionId) {
   const parent = client.locationPath(projectId, location);
 
   const connection = {
-    friendlyName: 'My new connection',
+    friendlyName: 'Example Connection',
     description: 'A sample connection for a Cloud Resource',
     // The service account for this cloudResource will be created by the API.
     // Its ID will be available in the response.

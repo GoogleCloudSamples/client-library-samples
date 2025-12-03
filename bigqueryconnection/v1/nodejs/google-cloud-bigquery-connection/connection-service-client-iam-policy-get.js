@@ -23,9 +23,9 @@ const client = new ConnectionServiceClient();
 
 /**
  * Gets the IAM policy for a BigQuery connection.
- * @param {string} projectId Google Cloud project ID (e.g., 'example-project-id').
- * @param {string} location The location of the connection (e.g., 'us').
- * @param {string} connectionId Your connection ID (e.g., 'my-connection').
+ * @param {string} projectId Google Cloud project ID (for example, 'example-project-id').
+ * @param {string} location The location of the connection (for example, 'us').
+ * @param {string} connectionId The connection ID (for example, 'example-connection').
  */
 async function getIamPolicy(projectId, location, connectionId) {
 

@@ -6,7 +6,7 @@
   "dateCreated": "2025-11-21T23:40:46.592Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "This sample demonstrates creating a connection to an external data source. This is a prerequisite for running federated queries from BigQuery, which lets users analyze data in place without needing to move it into BigQuery storage.",
+    "narrative": "This sample demonstrates creating a connection to an external data source. This is a prerequisite for running federated queries from BigQuery, which enables users to analyze data in place without needing to move it into BigQuery storage.",
     "products": [
       "bigqueryconnection"
     ]
