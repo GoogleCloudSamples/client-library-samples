@@ -170,7 +170,7 @@ def validate(repo_root):
             print(f"\n[COMPLIANCE WARNINGS] ({len(warnings)}):")
             print("These versionless tags were found in code and matched to specs,")
             print(
-                "but are missing from the .spec.json 'regionTags' array (see go/cloud-samples-assistances:versionless-region-tags)."
+                "but are missing from the .spec.json 'regionTags' array (see versionless-region-tags sample standards)."
             )
             for w in warnings[:10]:
                 print(f"  * {w}")  #
