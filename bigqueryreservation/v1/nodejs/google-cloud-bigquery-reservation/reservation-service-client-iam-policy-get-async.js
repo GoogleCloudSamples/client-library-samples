@@ -17,7 +17,7 @@
 // [START bigqueryreservation_v1_reservationservice_iampolicy_get]
 const {
   ReservationServiceClient,
-} = require('@google-cloud/bigquery-reservation');
+} = require('@google-cloud/bigquery-reservation').v1;
 const {status} = require('@grpc/grpc-js');
 
 const client = new ReservationServiceClient();
