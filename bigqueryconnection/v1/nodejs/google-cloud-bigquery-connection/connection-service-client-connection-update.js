@@ -24,7 +24,7 @@ const client = new ConnectionServiceClient();
 /**
  * Updates a BigQuery connection, demonstrating how to update the friendly name and description.
  *
- * @param {string} projectId The Google Cloud project ID. e.g. 'my-project-id'
+ * @param {string} projectId The Google Cloud project ID. E.g. 'example-project-id'
  * @param {string} location The location of the connection. e.g. 'us-central1'
  * @param {string} connectionId The ID of the connection to update. e.g. 'my-connection-id'
  */

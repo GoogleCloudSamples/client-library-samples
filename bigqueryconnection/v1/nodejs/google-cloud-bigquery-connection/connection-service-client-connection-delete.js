@@ -24,7 +24,7 @@ const client = new ConnectionServiceClient();
 /**
  * Deletes a connection and its associated credentials.
  *
- * @param {string} projectId Google Cloud Project ID (e.g., 'your-project-id').
+ * @param {string} projectId Google Cloud project ID (e.g., 'example-project-id').
  * @param {string} location The location where the connection resides (e.g., 'us-central1').
  * @param {string} connectionId The ID of the connection to delete (e.g., 'my-connection').
  */
