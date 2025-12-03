@@ -13,19 +13,17 @@
 # limitations under the License.
 
 # [START bigqueryconnection_v1_connectionservice_connection_create]
-from google.api_core.exceptions import AlreadyExists
-from google.cloud.bigquery_connection_v1 import (
-    CloudResourceProperties,
-    Connection,
-    ConnectionServiceClient,
-)
+import google.api_core.exceptions
+from google.cloud import bigquery_connection_v1
+
+client = bigquery_connection_v1.ConnectionServiceClient()
 
 
 def create_connection(
     project_id: str,
     location: str,
     connection_id: str,
-) -> None:
+):
     """Creates a BigQuery connection to a Cloud Resource.
 
     Cloud Resource connection creates a service account which can then be
@@ -36,14 +34,13 @@ def create_connection(
         location: The location of the connection, e.g., "us-central1".
         connection_id: The ID of the connection to create.
     """
-    client = ConnectionServiceClient()
 
     parent = client.common_location_path(project_id, location)
 
-    connection = Connection(
+    connection = bigquery_connection_v1.Connection(
         friendly_name="My new connection",
         description="A sample connection for a Cloud Resource.",
-        cloud_resource=CloudResourceProperties(),
+        cloud_resource=bigquery_connection_v1.CloudResourceProperties(),
     )
 
     try:
@@ -56,10 +53,11 @@ def create_connection(
             f"Service Account: {created_connection.cloud_resource.service_account_id}"
         )
 
-    except AlreadyExists:
+    except google.api_core.exceptions.AlreadyExists:
         print(f"Connection with ID '{connection_id}' already exists.")
         print("Please use a different connection ID.")
     except Exception as e:
         print(f"An unexpected error occurred while creating the connection: {e}")
+
 
 # [END bigqueryconnection_v1_connectionservice_connection_create]

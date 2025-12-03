@@ -13,25 +13,22 @@
 # limitations under the License.
 
 # [START bigqueryconnection_v1_connectionservice_connections_list]
-from google.api_core.exceptions import InvalidArgument
-from google.cloud.bigquery_connection_v1 import (
-    ConnectionServiceClient,
-    ListConnectionsRequest,
-)
+import google.api_core.exceptions
+from google.cloud import bigquery_connection_v1
 
 
-def list_connections(project_id: str, location: str) -> None:
+def list_connections(project_id: str, location: str):
     """Prints all connections in a given project and location.
 
     Args:
         project_id: The Google Cloud project ID.
         location: The geographic location of the connections, e.g. "us", "us-central1".
     """
-    client = ConnectionServiceClient()
+    client = bigquery_connection_v1.ConnectionServiceClient()
 
     parent = client.common_location_path(project_id, location)
 
-    request = ListConnectionsRequest(
+    request = bigquery_connection_v1.ListConnectionsRequest(
         parent=parent,
         page_size=100,
     )
@@ -47,11 +44,11 @@ def list_connections(project_id: str, location: str) -> None:
 
         print("Finished listing connections.")
 
-    except InvalidArgument as e:
+    except google.api_core.exceptions.InvalidArgument as e:
         print(
             f"Could not list connections. Please check that the project ID '{project_id}' "
             f"and location '{location}' are correct. Details: {e}"
         )
 
-# [END bigqueryconnection_v1_connectionservice_connections_list]
 
+# [END bigqueryconnection_v1_connectionservice_connections_list]

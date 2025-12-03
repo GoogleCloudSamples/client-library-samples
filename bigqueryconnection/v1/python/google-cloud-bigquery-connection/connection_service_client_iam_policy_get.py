@@ -17,6 +17,8 @@
 import google.api_core.exceptions
 from google.cloud import bigquery_connection_v1
 
+client = bigquery_connection_v1.ConnectionServiceClient()
+
 
 def get_connection_iam_policy(
     project_id: str,
@@ -30,7 +32,6 @@ def get_connection_iam_policy(
         location: The geographic location of the connection, e.g., "us".
         connection_id: The ID of the connection.
     """
-    client = bigquery_connection_v1.ConnectionServiceClient()
 
     resource = client.connection_path(project_id, location, connection_id)
 
@@ -47,8 +48,8 @@ def get_connection_iam_policy(
             for member in binding.members:
                 print(f"    - {member}")
 
-
     except google.api_core.exceptions.NotFound:
         print(f"Connection not found: {resource}")
+
 
 # [END bigqueryconnection_v1_connectionservice_iampolicy_get]

@@ -13,13 +13,13 @@
 # limitations under the License.
 
 # [START bigqueryconnection_v1_connectionservice_connection_get]
-from google.api_core.exceptions import NotFound
-from google.cloud.bigquery_connection_v1 import Connection, ConnectionServiceClient
+import google.api_core.exceptions
+from google.cloud import bigquery_connection_v1
+
+client = bigquery_connection_v1.ConnectionServiceClient()
 
 
-def get_connection(
-    project_id: str, location: str, connection_id: str
-) -> Connection:
+def get_connection(project_id: str, location: str, connection_id: str):
     """Gets a BigQuery connection.
 
     Args:
@@ -27,7 +27,6 @@ def get_connection(
         location: The geographic location of the connection, e.g. "us-central1".
         connection_id: The ID of the connection to retrieve.
     """
-    client = ConnectionServiceClient()
 
     name = client.connection_path(project_id, location, connection_id)
 
@@ -39,8 +38,8 @@ def get_connection(
         print(f"Description: {connection.description}")
         if connection.cloud_sql:
             print(f"Cloud SQL instance ID: {connection.cloud_sql.instance_id}")
-        return connection
-    except NotFound:
+    except google.api_core.exceptions.NotFound:
         print(f"Connection '{name}' not found.")
+
 
 # [END bigqueryconnection_v1_connectionservice_connection_get]

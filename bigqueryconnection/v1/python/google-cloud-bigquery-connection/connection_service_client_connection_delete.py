@@ -13,8 +13,10 @@
 # limitations under the License.
 
 # [START bigqueryconnection_v1_connectionservice_connection_delete]
-from google.api_core.exceptions import NotFound
-from google.cloud.bigquery_connection_v1 import ConnectionServiceClient
+import google.api_core.exceptions
+from google.cloud import bigquery_connection_v1
+
+client = bigquery_connection_v1.ConnectionServiceClient()
 
 
 def delete_connection(project_id: str, location: str, connection_id: str):
@@ -25,15 +27,13 @@ def delete_connection(project_id: str, location: str, connection_id: str):
         location: Location of the connection, e.g. "us-central1".
         connection_id: ID of the connection to delete.
     """
-    client = ConnectionServiceClient()
-
     name = client.connection_path(project_id, location, connection_id)
 
     try:
         client.delete_connection(name=name)
         print(f"Connection '{connection_id}' was deleted.")
-    except NotFound:
+    except google.api_core.exceptions.NotFound:
         print(f"Connection '{connection_id}' not found.")
 
-# [END bigqueryconnection_v1_connectionservice_connection_delete]
 
+# [END bigqueryconnection_v1_connectionservice_connection_delete]
