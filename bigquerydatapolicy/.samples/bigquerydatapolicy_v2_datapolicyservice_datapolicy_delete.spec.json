@@ -1,42 +1,46 @@
 {
-  "version": "1.0.0",
-  "sampleId": "bigquerydatapolicy_v2_datapolicyservice_datapolicy_delete",
-  "title": "Delete a data policy",
-  "description": "Deletes a data policy from the BigQuery Data Policy API, which is identified by its project ID, location, and data policy ID.",
-  "dateCreated": "2025-11-20T03:00:40.940Z",
-  "sampleType": "rpc",
-  "objective": {
-    "narrative": "A data governance administrator needs to retire a data policy, such as a column-level masking rule, because the underlying data sensitivity has changed or the policy is being superseded by a new one. This sample provides the code to programmatically delete the policy.",
-    "products": [
-      "bigquerydatapolicy"
-    ]
-  },
-  "extended": {
-    "api": "bigquerydatapolicy.googleapis.com",
-    "method": "DeleteDataPolicy",
-    "standard": true
-  },
-  "regionTags": [
-    {
-      "name": "bigquerydatapolicy_v2_datapolicyservice_datapolicy_delete",
-      "title": "Delete a data policy",
-      "description": "Deletes a data policy from the BigQuery Data Policy API, which is identified by its project ID, location, and data policy ID."
-    }
-  ],
-  "instances": [
-    {
-      "name": "PYTHON-google-cloud-bigquery-datapolicies",
-      "categories": {
-        "language": "PYTHON"
-      },
-      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    "version": "1.0.0",
+    "sampleId": "bigquerydatapolicy_v2_datapolicyservice_datapolicy_delete",
+    "title": "Delete a data policy",
+    "description": "Deletes a data policy from the BigQuery Data Policy API, which is identified by its project ID, location, and data policy ID.",
+    "dateCreated": "2025-11-20T03:00:40.940Z",
+    "sampleType": "rpc",
+    "objective": {
+        "narrative": "A data governance administrator needs to retire a data policy, such as a column-level masking rule, because the underlying data sensitivity has changed or the policy is being superseded by a new one. This sample provides the code to programmatically delete the policy.",
+        "products": [
+            "bigquerydatapolicy"
+        ]
     },
-    {
-      "name": "NODEJS-@google-cloud/bigquery-datapolicies",
-      "categories": {
-        "language": "NODEJS"
-      },
-      "initialCommitAuthorType": "ai_assisted_human_reviewed"
-    }
-  ]
+    "extended": {
+        "api": "bigquerydatapolicy.googleapis.com",
+        "method": "DeleteDataPolicy",
+        "standard": true
+    },
+    "regionTags": [
+        {
+            "name": "bigquerydatapolicy_v2_datapolicyservice_datapolicy_delete",
+            "title": "Delete a data policy",
+            "description": "Deletes a data policy from the BigQuery Data Policy API, which is identified by its project ID, location, and data policy ID."
+        },
+        {
+            "name": "bigquerydatapolicy_datapolicyservice_datapolicy_delete",
+            "autoDocsPublish": true
+        }
+    ],
+    "instances": [
+        {
+            "name": "PYTHON-google-cloud-bigquery-datapolicies",
+            "categories": {
+                "language": "PYTHON"
+            },
+            "initialCommitAuthorType": "ai_assisted_human_reviewed"
+        },
+        {
+            "name": "NODEJS-@google-cloud/bigquery-datapolicies",
+            "categories": {
+                "language": "NODEJS"
+            },
+            "initialCommitAuthorType": "ai_assisted_human_reviewed"
+        }
+    ]
 }

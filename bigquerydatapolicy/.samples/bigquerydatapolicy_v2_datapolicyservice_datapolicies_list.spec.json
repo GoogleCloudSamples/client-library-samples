@@ -1,42 +1,46 @@
 {
-  "version": "1.0.0",
-  "sampleId": "bigquerydatapolicy_v2_datapolicyservice_datapolicies_list",
-  "title": "List data policies",
-  "description": "Lists all data policies in a specified project.",
-  "dateCreated": "2025-11-20T03:02:04.432Z",
-  "sampleType": "rpc",
-  "objective": {
-    "narrative": "Developers often need to programmatically review all the data governance rules applied to their BigQuery data. This sample provides the code to fetch a complete list of data policies, which can then be used for automated reporting, compliance checks, or bulk management tasks.",
-    "products": [
-      "bigquerydatapolicy"
-    ]
-  },
-  "extended": {
-    "api": "bigquerydatapolicy.googleapis.com",
-    "method": "ListDataPolicies",
-    "standard": true
-  },
-  "regionTags": [
-    {
-      "name": "bigquerydatapolicy_v2_datapolicyservice_datapolicies_list",
-      "title": "List data policies",
-      "description": "Lists all data policies in a specified project."
-    }
-  ],
-  "instances": [
-    {
-      "name": "PYTHON-google-cloud-bigquery-datapolicies",
-      "categories": {
-        "language": "PYTHON"
-      },
-      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    "version": "1.0.0",
+    "sampleId": "bigquerydatapolicy_v2_datapolicyservice_datapolicies_list",
+    "title": "List data policies",
+    "description": "Lists all data policies in a specified project.",
+    "dateCreated": "2025-11-20T03:02:04.432Z",
+    "sampleType": "rpc",
+    "objective": {
+        "narrative": "Developers often need to programmatically review all the data governance rules applied to their BigQuery data. This sample provides the code to fetch a complete list of data policies, which can then be used for automated reporting, compliance checks, or bulk management tasks.",
+        "products": [
+            "bigquerydatapolicy"
+        ]
     },
-    {
-      "name": "NODEJS-@google-cloud/bigquery-datapolicies",
-      "categories": {
-        "language": "NODEJS"
-      },
-      "initialCommitAuthorType": "ai_assisted_human_reviewed"
-    }
-  ]
+    "extended": {
+        "api": "bigquerydatapolicy.googleapis.com",
+        "method": "ListDataPolicies",
+        "standard": true
+    },
+    "regionTags": [
+        {
+            "name": "bigquerydatapolicy_v2_datapolicyservice_datapolicies_list",
+            "title": "List data policies",
+            "description": "Lists all data policies in a specified project."
+        },
+        {
+            "name": "bigquerydatapolicy_datapolicyservice_datapolicies_list",
+            "autoDocsPublish": true
+        }
+    ],
+    "instances": [
+        {
+            "name": "PYTHON-google-cloud-bigquery-datapolicies",
+            "categories": {
+                "language": "PYTHON"
+            },
+            "initialCommitAuthorType": "ai_assisted_human_reviewed"
+        },
+        {
+            "name": "NODEJS-@google-cloud/bigquery-datapolicies",
+            "categories": {
+                "language": "NODEJS"
+            },
+            "initialCommitAuthorType": "ai_assisted_human_reviewed"
+        }
+    ]
 }

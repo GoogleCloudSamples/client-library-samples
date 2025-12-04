@@ -1,42 +1,46 @@
 {
-  "version": "1.0.0",
-  "sampleId": "bigquerydatapolicy_v2_datapolicyservice_datapolicy_create",
-  "title": "Create a data masking policy",
-  "description": "Creates a data policy to apply a data masking rule to a specific BigQuery table column. This is a primary mechanism for implementing column-level security in BigQuery.",
-  "dateCreated": "2025-11-20T03:00:12.168Z",
-  "sampleType": "rpc",
-  "objective": {
-    "narrative": "A developer needs to programmatically enforce data masking on sensitive columns in BigQuery tables. This sample provides the code to create a new data policy, specifying the masking rule and the target column, which automates the setup of column-level security controls.",
-    "products": [
-      "bigquerydatapolicy"
-    ]
-  },
-  "extended": {
-    "api": "bigquerydatapolicy.googleapis.com",
-    "method": "CreateDataPolicy",
-    "standard": true
-  },
-  "regionTags": [
-    {
-      "name": "bigquerydatapolicy_v2_datapolicyservice_datapolicy_create",
-      "title": "Create a data masking policy",
-      "description": "Creates a data policy to apply a data masking rule to a specific BigQuery table column. This is a primary mechanism for implementing column-level security in BigQuery."
-    }
-  ],
-  "instances": [
-    {
-      "name": "PYTHON-google-cloud-bigquery-datapolicies",
-      "categories": {
-        "language": "PYTHON"
-      },
-      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    "version": "1.0.0",
+    "sampleId": "bigquerydatapolicy_v2_datapolicyservice_datapolicy_create",
+    "title": "Create a data masking policy",
+    "description": "Creates a data policy to apply a data masking rule to a specific BigQuery table column. This is a primary mechanism for implementing column-level security in BigQuery.",
+    "dateCreated": "2025-11-20T03:00:12.168Z",
+    "sampleType": "rpc",
+    "objective": {
+        "narrative": "A developer needs to programmatically enforce data masking on sensitive columns in BigQuery tables. This sample provides the code to create a new data policy, specifying the masking rule and the target column, which automates the setup of column-level security controls.",
+        "products": [
+            "bigquerydatapolicy"
+        ]
     },
-    {
-      "name": "NODEJS-@google-cloud/bigquery-datapolicies",
-      "categories": {
-        "language": "NODEJS"
-      },
-      "initialCommitAuthorType": "ai_assisted_human_reviewed"
-    }
-  ]
+    "extended": {
+        "api": "bigquerydatapolicy.googleapis.com",
+        "method": "CreateDataPolicy",
+        "standard": true
+    },
+    "regionTags": [
+        {
+            "name": "bigquerydatapolicy_v2_datapolicyservice_datapolicy_create",
+            "title": "Create a data masking policy",
+            "description": "Creates a data policy to apply a data masking rule to a specific BigQuery table column. This is a primary mechanism for implementing column-level security in BigQuery."
+        },
+        {
+            "name": "bigquerydatapolicy_datapolicyservice_datapolicy_create",
+            "autoDocsPublish": true
+        }
+    ],
+    "instances": [
+        {
+            "name": "PYTHON-google-cloud-bigquery-datapolicies",
+            "categories": {
+                "language": "PYTHON"
+            },
+            "initialCommitAuthorType": "ai_assisted_human_reviewed"
+        },
+        {
+            "name": "NODEJS-@google-cloud/bigquery-datapolicies",
+            "categories": {
+                "language": "NODEJS"
+            },
+            "initialCommitAuthorType": "ai_assisted_human_reviewed"
+        }
+    ]
 }

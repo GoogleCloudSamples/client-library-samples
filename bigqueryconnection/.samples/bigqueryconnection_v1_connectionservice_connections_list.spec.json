@@ -1,42 +1,46 @@
 {
-  "version": "1.0.0",
-  "sampleId": "bigqueryconnection_v1_connectionservice_connections_list",
-  "title": "List connections",
-  "description": "Lists all BigQuery connections defined in a specific Google Cloud project and location.",
-  "dateCreated": "2025-11-21T23:43:04.548Z",
-  "sampleType": "rpc",
-  "objective": {
-    "narrative": "This sample helps developers programmatically enumerate all available BigQuery connections within a specific project and location. This is useful for auditing, management, or dynamically selecting a connection for a query or to populate a user interface.",
-    "products": [
-      "bigqueryconnection"
-    ]
-  },
-  "extended": {
-    "api": "bigqueryconnection.googleapis.com",
-    "method": "ListConnections",
-    "standard": true
-  },
-  "regionTags": [
-    {
-      "name": "bigqueryconnection_v1_connectionservice_connections_list",
-      "title": "List connections",
-      "description": "Lists all BigQuery connections defined in a specific Google Cloud project and location."
-    }
-  ],
-  "instances": [
-    {
-      "name": "NODEJS-@google-cloud/bigquery-connection",
-      "categories": {
-        "language": "NODEJS"
-      },
-      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    "version": "1.0.0",
+    "sampleId": "bigqueryconnection_v1_connectionservice_connections_list",
+    "title": "List connections",
+    "description": "Lists all BigQuery connections defined in a specific Google Cloud project and location.",
+    "dateCreated": "2025-11-21T23:43:04.548Z",
+    "sampleType": "rpc",
+    "objective": {
+        "narrative": "This sample helps developers programmatically enumerate all available BigQuery connections within a specific project and location. This is useful for auditing, management, or dynamically selecting a connection for a query or to populate a user interface.",
+        "products": [
+            "bigqueryconnection"
+        ]
     },
-    {
-      "name": "PYTHON-google-cloud-bigquery-connection",
-      "categories": {
-        "language": "PYTHON"
-      },
-      "initialCommitAuthorType": "ai_assisted_human_reviewed"
-    }
-  ]
+    "extended": {
+        "api": "bigqueryconnection.googleapis.com",
+        "method": "ListConnections",
+        "standard": true
+    },
+    "regionTags": [
+        {
+            "name": "bigqueryconnection_v1_connectionservice_connections_list",
+            "title": "List connections",
+            "description": "Lists all BigQuery connections defined in a specific Google Cloud project and location."
+        },
+        {
+            "name": "bigqueryconnection_connectionservice_connections_list",
+            "autoDocsPublish": true
+        }
+    ],
+    "instances": [
+        {
+            "name": "NODEJS-@google-cloud/bigquery-connection",
+            "categories": {
+                "language": "NODEJS"
+            },
+            "initialCommitAuthorType": "ai_assisted_human_reviewed"
+        },
+        {
+            "name": "PYTHON-google-cloud-bigquery-connection",
+            "categories": {
+                "language": "PYTHON"
+            },
+            "initialCommitAuthorType": "ai_assisted_human_reviewed"
+        }
+    ]
 }

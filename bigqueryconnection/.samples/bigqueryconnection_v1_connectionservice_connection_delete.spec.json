@@ -1,42 +1,46 @@
 {
-  "version": "1.0.0",
-  "sampleId": "bigqueryconnection_v1_connectionservice_connection_delete",
-  "title": "Delete a BigQuery connection",
-  "description": "Deletes a specified BigQuery connection.",
-  "dateCreated": "2025-11-21T23:42:06.494Z",
-  "sampleType": "rpc",
-  "objective": {
-    "narrative": "This sample addresses the use case of resource lifecycle management. When a BigQuery connection is no longer needed, it should be deleted to remove unnecessary access to data sources and reduce resource clutter.",
-    "products": [
-      "bigqueryconnection"
-    ]
-  },
-  "extended": {
-    "api": "bigqueryconnection.googleapis.com",
-    "method": "DeleteConnection",
-    "standard": true
-  },
-  "regionTags": [
-    {
-      "name": "bigqueryconnection_v1_connectionservice_connection_delete",
-      "title": "Delete a BigQuery connection",
-      "description": "Deletes a specified BigQuery connection."
-    }
-  ],
-  "instances": [
-    {
-      "name": "NODEJS-@google-cloud/bigquery-connection",
-      "categories": {
-        "language": "NODEJS"
-      },
-      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    "version": "1.0.0",
+    "sampleId": "bigqueryconnection_v1_connectionservice_connection_delete",
+    "title": "Delete a BigQuery connection",
+    "description": "Deletes a specified BigQuery connection.",
+    "dateCreated": "2025-11-21T23:42:06.494Z",
+    "sampleType": "rpc",
+    "objective": {
+        "narrative": "This sample addresses the use case of resource lifecycle management. When a BigQuery connection is no longer needed, it should be deleted to remove unnecessary access to data sources and reduce resource clutter.",
+        "products": [
+            "bigqueryconnection"
+        ]
     },
-    {
-      "name": "PYTHON-google-cloud-bigquery-connection",
-      "categories": {
-        "language": "PYTHON"
-      },
-      "initialCommitAuthorType": "ai_assisted_human_reviewed"
-    }
-  ]
+    "extended": {
+        "api": "bigqueryconnection.googleapis.com",
+        "method": "DeleteConnection",
+        "standard": true
+    },
+    "regionTags": [
+        {
+            "name": "bigqueryconnection_v1_connectionservice_connection_delete",
+            "title": "Delete a BigQuery connection",
+            "description": "Deletes a specified BigQuery connection."
+        },
+        {
+            "name": "bigqueryconnection_connectionservice_connection_delete",
+            "autoDocsPublish": true
+        }
+    ],
+    "instances": [
+        {
+            "name": "NODEJS-@google-cloud/bigquery-connection",
+            "categories": {
+                "language": "NODEJS"
+            },
+            "initialCommitAuthorType": "ai_assisted_human_reviewed"
+        },
+        {
+            "name": "PYTHON-google-cloud-bigquery-connection",
+            "categories": {
+                "language": "PYTHON"
+            },
+            "initialCommitAuthorType": "ai_assisted_human_reviewed"
+        }
+    ]
 }

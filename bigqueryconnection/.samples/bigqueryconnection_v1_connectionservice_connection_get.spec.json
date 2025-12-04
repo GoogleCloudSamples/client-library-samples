@@ -1,42 +1,46 @@
 {
-  "version": "1.0.0",
-  "sampleId": "bigqueryconnection_v1_connectionservice_connection_get",
-  "title": "Get a connection",
-  "description": "Retrieves information about a specified BigQuery connection.",
-  "dateCreated": "2025-11-21T23:41:12.928Z",
-  "sampleType": "rpc",
-  "objective": {
-    "narrative": "Developers often need to inspect the configuration of a connection before using it to query an external data source. This sample provides the code to fetch a connection's properties, which is useful for debugging or for programmatic verification of connection settings.",
-    "products": [
-      "bigqueryconnection"
-    ]
-  },
-  "extended": {
-    "api": "bigqueryconnection.googleapis.com",
-    "method": "GetConnection",
-    "standard": true
-  },
-  "regionTags": [
-    {
-      "name": "bigqueryconnection_v1_connectionservice_connection_get",
-      "title": "Get a connection",
-      "description": "Retrieves information about a specified BigQuery connection."
-    }
-  ],
-  "instances": [
-    {
-      "name": "NODEJS-@google-cloud/bigquery-connection",
-      "categories": {
-        "language": "NODEJS"
-      },
-      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    "version": "1.0.0",
+    "sampleId": "bigqueryconnection_v1_connectionservice_connection_get",
+    "title": "Get a connection",
+    "description": "Retrieves information about a specified BigQuery connection.",
+    "dateCreated": "2025-11-21T23:41:12.928Z",
+    "sampleType": "rpc",
+    "objective": {
+        "narrative": "Developers often need to inspect the configuration of a connection before using it to query an external data source. This sample provides the code to fetch a connection's properties, which is useful for debugging or for programmatic verification of connection settings.",
+        "products": [
+            "bigqueryconnection"
+        ]
     },
-    {
-      "name": "PYTHON-google-cloud-bigquery-connection",
-      "categories": {
-        "language": "PYTHON"
-      },
-      "initialCommitAuthorType": "ai_assisted_human_reviewed"
-    }
-  ]
+    "extended": {
+        "api": "bigqueryconnection.googleapis.com",
+        "method": "GetConnection",
+        "standard": true
+    },
+    "regionTags": [
+        {
+            "name": "bigqueryconnection_v1_connectionservice_connection_get",
+            "title": "Get a connection",
+            "description": "Retrieves information about a specified BigQuery connection."
+        },
+        {
+            "name": "bigqueryconnection_connectionservice_connection_get",
+            "autoDocsPublish": true
+        }
+    ],
+    "instances": [
+        {
+            "name": "NODEJS-@google-cloud/bigquery-connection",
+            "categories": {
+                "language": "NODEJS"
+            },
+            "initialCommitAuthorType": "ai_assisted_human_reviewed"
+        },
+        {
+            "name": "PYTHON-google-cloud-bigquery-connection",
+            "categories": {
+                "language": "PYTHON"
+            },
+            "initialCommitAuthorType": "ai_assisted_human_reviewed"
+        }
+    ]
 }
