@@ -24,7 +24,7 @@
         },
         {
             "name": "bigqueryconnection_connectionservice_connections_list",
-            "isVersionless": "true"
+            "isVersionless": true
         }
     ],
     "instances": [
