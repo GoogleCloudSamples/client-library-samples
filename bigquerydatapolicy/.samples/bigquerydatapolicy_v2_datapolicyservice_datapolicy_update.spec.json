@@ -6,7 +6,7 @@
     "dateCreated": "2025-11-20T03:02:31.851Z",
     "sampleType": "rpc",
     "objective": {
-        "narrative": "As data compliance needs evolve, you often need to adjust column-level security without disrupting ongoing analytics. This sample demonstrates how to safely transition a Data Policy's masking rule\u2014for example, upgrading a column from a strict ALWAYS_NULL lockdown to a utility-focused SHA256 hash.To ensure production reliability, this code implements Optimistic Concurrency Control. By verifying the policy's ETag before writing, it prevents race conditions where multiple processes might attempt to modify the policy simultaneously. It also uses a FieldMask to perform a precise partial update, ensuring that only the masking configuration is changed while leaving all other resource metadata intact.",
+        "narrative": "As data compliance needs evolve, you often need to adjust column-level security without disrupting ongoing analytics. This sample demonstrates how to safely transition a Data Policy's masking rule. For example, upgrading a column from a strict ALWAYS_NULL lockdown to a utility-focused SHA256 hash.To ensure production reliability, this code implements Optimistic Concurrency Control. By verifying the policy's ETag before writing, it prevents race conditions where multiple processes might attempt to modify the policy simultaneously. It also uses a FieldMask to perform a precise partial update, ensuring that only the masking configuration is changed while leaving all other resource metadata intact.",
         "products": [
             "bigquerydatapolicy"
         ]
