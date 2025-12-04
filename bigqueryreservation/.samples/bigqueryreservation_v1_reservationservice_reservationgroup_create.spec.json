@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigqueryreservation_v1_reservationservice_reservationgroup_create",
+  "title": "Create a reservation group",
+  "description": "Create a reservation group in a specific project and location. A reservation group is a container for BigQuery reservations.",
+  "dateCreated": "2025-11-21T22:27:06.436Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample solves the problem of programmatically creating containers for BigQuery reservations. A developer might need to do this as part of an automated onboarding process for a new team or project, ensuring they have a dedicated structure for their BigQuery resource allocations.",
+    "products": [
+      "bigqueryreservation"
+    ]
+  },
+  "extended": {
+    "api": "bigqueryreservation.googleapis.com",
+    "method": "CreateReservationGroup",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigqueryreservation_v1_reservationservice_reservationgroup_create",
+      "title": "Create a reservation group",
+      "description": "Create a reservation group in a specific project and location. A reservation group is a container for BigQuery reservations."
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-reservation",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-reservation",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

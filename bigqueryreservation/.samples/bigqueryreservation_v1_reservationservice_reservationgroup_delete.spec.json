@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigqueryreservation_v1_reservationservice_reservationgroup_delete",
+  "title": "Delete a reservation group",
+  "description": "Deletes a reservation group from the BigQuery Reservation API. A reservation group can only be deleted if it does not contain any child reservations.",
+  "dateCreated": "2025-11-21T22:27:57.155Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample demonstrates how to programmatically remove a reservation group that is no longer needed. This might be part of a cleanup script or an automated resource management process where reservation structures are dynamically created and removed based on workload demands.",
+    "products": [
+      "bigqueryreservation"
+    ]
+  },
+  "extended": {
+    "api": "bigqueryreservation.googleapis.com",
+    "method": "DeleteReservationGroup",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigqueryreservation_v1_reservationservice_reservationgroup_delete",
+      "title": "Delete a reservation group",
+      "description": "Deletes a reservation group from the BigQuery Reservation API. A reservation group can only be deleted if it does not contain any child reservations."
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-reservation",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-reservation",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}
