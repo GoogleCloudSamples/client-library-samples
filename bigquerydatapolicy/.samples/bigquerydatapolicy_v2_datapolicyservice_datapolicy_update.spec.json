@@ -24,7 +24,7 @@
         },
         {
             "name": "bigquerydatapolicy_datapolicyservice_datapolicy_update",
-            "isVersionless": "true"
+            "isVersionless": true
         }
     ],
     "instances": [
