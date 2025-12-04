@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START bigqueryconnection_v1_connectionservice_connection_update]
+# [START bigqueryconnection_connectionservice_connection_update]
 import google.api_core.exceptions
 from google.cloud import bigquery_connection_v1
 from google.protobuf import field_mask_pb2
@@ -58,4 +59,5 @@ def update_connection(project_id: str, location: str, connection_id: str):
         print(f"Connection '{connection_name}' not found. Please create it first.")
 
 
+# [END bigqueryconnection_connectionservice_connection_update]
 # [END bigqueryconnection_v1_connectionservice_connection_update]

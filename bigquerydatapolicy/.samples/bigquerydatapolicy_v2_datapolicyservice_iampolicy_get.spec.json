@@ -1,42 +1,46 @@
 {
-  "version": "1.0.0",
-  "sampleId": "bigquerydatapolicy_v2_datapolicyservice_iampolicy_get",
-  "title": "Get the IAM policy for a data policy",
-  "description": "Get the IAM policy for a specified data policy resource from the BigQuery Data Policy API. This is useful for auditing which members have which roles on the policy.",
-  "dateCreated": "2025-11-20T03:01:43.319Z",
-  "sampleType": "rpc",
-  "objective": {
-    "narrative": "This sample solves the developer problem of programmatically auditing access controls for a BigQuery data policy. A developer can use this sample to build an application that fetches the IAM policy to verify that it complies with security standards—for example, to confirm that only authorized data stewards can manage data masking policies.",
-    "products": [
-      "bigquerydatapolicy"
-    ]
-  },
-  "extended": {
-    "api": "bigquerydatapolicy.googleapis.com",
-    "method": "GetIamPolicy",
-    "standard": true
-  },
-  "regionTags": [
-    {
-      "name": "bigquerydatapolicy_v2_datapolicyservice_iampolicy_get",
-      "title": "Get the IAM policy for a data policy",
-      "description": "Get the IAM policy for a specified data policy resource from the BigQuery Data Policy API. This is useful for auditing which members have which roles on the policy."
-    }
-  ],
-  "instances": [
-    {
-      "name": "PYTHON-google-cloud-bigquery-datapolicies",
-      "categories": {
-        "language": "PYTHON"
-      },
-      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    "version": "1.0.0",
+    "sampleId": "bigquerydatapolicy_v2_datapolicyservice_iampolicy_get",
+    "title": "Get the IAM policy for a data policy",
+    "description": "Get the IAM policy for a specified data policy resource from the BigQuery Data Policy API. This is useful for auditing which members have which roles on the policy.",
+    "dateCreated": "2025-11-20T03:01:43.319Z",
+    "sampleType": "rpc",
+    "objective": {
+        "narrative": "This sample solves the developer problem of programmatically auditing access controls for a BigQuery data policy. A developer can use this sample to build an application that fetches the IAM policy to verify that it complies with security standards\u2014for example, to confirm that only authorized data stewards can manage data masking policies.",
+        "products": [
+            "bigquerydatapolicy"
+        ]
     },
-    {
-      "name": "NODEJS-@google-cloud/bigquery-datapolicies",
-      "categories": {
-        "language": "NODEJS"
-      },
-      "initialCommitAuthorType": "ai_assisted_human_reviewed"
-    }
-  ]
+    "extended": {
+        "api": "bigquerydatapolicy.googleapis.com",
+        "method": "GetIamPolicy",
+        "standard": true
+    },
+    "regionTags": [
+        {
+            "name": "bigquerydatapolicy_v2_datapolicyservice_iampolicy_get",
+            "title": "Get the IAM policy for a data policy",
+            "description": "Get the IAM policy for a specified data policy resource from the BigQuery Data Policy API. This is useful for auditing which members have which roles on the policy."
+        },
+        {
+            "name": "bigquerydatapolicy_datapolicyservice_iampolicy_get",
+            "isVersionless": "true"
+        }
+    ],
+    "instances": [
+        {
+            "name": "PYTHON-google-cloud-bigquery-datapolicies",
+            "categories": {
+                "language": "PYTHON"
+            },
+            "initialCommitAuthorType": "ai_assisted_human_reviewed"
+        },
+        {
+            "name": "NODEJS-@google-cloud/bigquery-datapolicies",
+            "categories": {
+                "language": "NODEJS"
+            },
+            "initialCommitAuthorType": "ai_assisted_human_reviewed"
+        }
+    ]
 }

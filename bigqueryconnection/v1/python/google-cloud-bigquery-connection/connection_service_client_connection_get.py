@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START bigqueryconnection_v1_connectionservice_connection_get]
+# [START bigqueryconnection_connectionservice_connection_get]
 import google.api_core.exceptions
 from google.cloud import bigquery_connection_v1
 
@@ -42,4 +43,5 @@ def get_connection(project_id: str, location: str, connection_id: str):
         print(f"Connection '{name}' not found.")
 
 
+# [END bigqueryconnection_connectionservice_connection_get]
 # [END bigqueryconnection_v1_connectionservice_connection_get]

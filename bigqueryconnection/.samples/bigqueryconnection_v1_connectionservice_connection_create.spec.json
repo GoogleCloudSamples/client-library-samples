@@ -1,42 +1,46 @@
 {
-  "version": "1.0.0",
-  "sampleId": "bigqueryconnection_v1_connectionservice_connection_create",
-  "title": "Create a connection",
-  "description": "Creates a new connection resource. Connections are used by BigQuery to run federated queries against external data sources.",
-  "dateCreated": "2025-11-21T23:40:46.592Z",
-  "sampleType": "rpc",
-  "objective": {
-    "narrative": "This sample demonstrates creating a connection to an external data source. This is a prerequisite for running federated queries from BigQuery, which enables users to analyze data in place without needing to move it into BigQuery storage.",
-    "products": [
-      "bigqueryconnection"
-    ]
-  },
-  "extended": {
-    "api": "bigqueryconnection.googleapis.com",
-    "method": "CreateConnection",
-    "standard": true
-  },
-  "regionTags": [
-    {
-      "name": "bigqueryconnection_v1_connectionservice_connection_create",
-      "title": "Create a connection",
-      "description": "Creates a new connection resource. Connections are used by BigQuery to run federated queries against external data sources."
-    }
-  ],
-  "instances": [
-    {
-      "name": "NODEJS-@google-cloud/bigquery-connection",
-      "categories": {
-        "language": "NODEJS"
-      },
-      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    "version": "1.0.0",
+    "sampleId": "bigqueryconnection_v1_connectionservice_connection_create",
+    "title": "Create a connection",
+    "description": "Creates a new connection resource. Connections are used by BigQuery to run federated queries against external data sources.",
+    "dateCreated": "2025-11-21T23:40:46.592Z",
+    "sampleType": "rpc",
+    "objective": {
+        "narrative": "This sample demonstrates creating a connection to an external data source. This is a prerequisite for running federated queries from BigQuery, which lets users analyze data in place without needing to move it into BigQuery storage.",
+        "products": [
+            "bigqueryconnection"
+        ]
     },
-    {
-      "name": "PYTHON-google-cloud-bigquery-connection",
-      "categories": {
-        "language": "PYTHON"
-      },
-      "initialCommitAuthorType": "ai_assisted_human_reviewed"
-    }
-  ]
+    "extended": {
+        "api": "bigqueryconnection.googleapis.com",
+        "method": "CreateConnection",
+        "standard": true
+    },
+    "regionTags": [
+        {
+            "name": "bigqueryconnection_v1_connectionservice_connection_create",
+            "title": "Create a connection",
+            "description": "Creates a new connection resource. Connections are used by BigQuery to run federated queries against external data sources."
+        },
+        {
+            "name": "bigqueryconnection_connectionservice_connection_create",
+            "isVersionless": "true"
+        }
+    ],
+    "instances": [
+        {
+            "name": "NODEJS-@google-cloud/bigquery-connection",
+            "categories": {
+                "language": "NODEJS"
+            },
+            "initialCommitAuthorType": "ai_assisted_human_reviewed"
+        },
+        {
+            "name": "PYTHON-google-cloud-bigquery-connection",
+            "categories": {
+                "language": "PYTHON"
+            },
+            "initialCommitAuthorType": "ai_assisted_human_reviewed"
+        }
+    ]
 }
