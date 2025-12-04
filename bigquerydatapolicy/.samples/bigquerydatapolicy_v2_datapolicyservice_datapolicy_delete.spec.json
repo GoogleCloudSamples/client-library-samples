@@ -24,7 +24,7 @@
         },
         {
             "name": "bigquerydatapolicy_datapolicyservice_datapolicy_delete",
-            "autoDocsPublish ": true
+            "autoDocsPublish": true
         }
     ],
     "instances": [

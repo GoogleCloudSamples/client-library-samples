@@ -24,7 +24,7 @@
         },
         {
             "name": "bigquerydatapolicy_datapolicyservice_datapolicies_list",
-            "autoDocsPublish ": true
+            "autoDocsPublish": true
         }
     ],
     "instances": [

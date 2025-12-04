@@ -24,7 +24,7 @@
         },
         {
             "name": "bigqueryconnection_connectionservice_iampolicy_get",
-            "autoDocsPublish ": true
+            "autoDocsPublish": true
         }
     ],
     "instances": [
