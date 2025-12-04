@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START bigqueryconnection_v1_connectionservice_connection_delete]
+# [START bigqueryconnection_connectionservice_connection_delete]
 import google.api_core.exceptions
 from google.cloud import bigquery_connection_v1
 
@@ -36,4 +37,5 @@ def delete_connection(project_id: str, location: str, connection_id: str):
         print(f"Connection '{connection_id}' not found.")
 
 
+# [END bigqueryconnection_connectionservice_connection_delete]
 # [END bigqueryconnection_v1_connectionservice_connection_delete]

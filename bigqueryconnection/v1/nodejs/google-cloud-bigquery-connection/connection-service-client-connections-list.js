@@ -15,6 +15,7 @@
 'use strict';
 
 // [START bigqueryconnection_v1_connectionservice_connections_list]
+// [START bigqueryconnection_connectionservice_connections_list]
 const {ConnectionServiceClient} = require('@google-cloud/bigquery-connection');
 const {status} = require('@grpc/grpc-js');
 
@@ -61,6 +62,7 @@ async function listConnections(projectId, location) {
     }
   }
 }
+// [END bigqueryconnection_connectionservice_connections_list]
 // [END bigqueryconnection_v1_connectionservice_connections_list]
 
 module.exports = { listConnections };

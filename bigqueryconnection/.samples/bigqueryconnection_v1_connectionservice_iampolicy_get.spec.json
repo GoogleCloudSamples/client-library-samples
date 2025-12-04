@@ -1,42 +1,46 @@
 {
-  "version": "1.0.0",
-  "sampleId": "bigqueryconnection_v1_connectionservice_iampolicy_get",
-  "title": "Get a connection's IAM policy",
-  "description": "Get the current Identity and Access Management (IAM) policy for a BigQuery connection. The policy defines which principals have what permissions on the connection resource.",
-  "dateCreated": "2025-11-21T23:42:37.915Z",
-  "sampleType": "rpc",
-  "objective": {
-    "narrative": "This sample shows the first step in the \"read-modify-write\" pattern for updating an IAM policy. Developers must first get the current policy and its etag, modify the policy in-memory, and then use the etag to set the new policy. This prevents race conditions where two clients try to update the policy simultaneously.",
-    "products": [
-      "bigqueryconnection"
-    ]
-  },
-  "extended": {
-    "api": "bigqueryconnection.googleapis.com",
-    "method": "GetIamPolicy",
-    "standard": true
-  },
-  "regionTags": [
-    {
-      "name": "bigqueryconnection_v1_connectionservice_iampolicy_get",
-      "title": "Get a connection's IAM policy",
-      "description": "Get the current Identity and Access Management (IAM) policy for a BigQuery connection. The policy defines which principals have what permissions on the connection resource."
-    }
-  ],
-  "instances": [
-    {
-      "name": "NODEJS-@google-cloud/bigquery-connection",
-      "categories": {
-        "language": "NODEJS"
-      },
-      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    "version": "1.0.0",
+    "sampleId": "bigqueryconnection_v1_connectionservice_iampolicy_get",
+    "title": "Get a connection's IAM policy",
+    "description": "Get the current Identity and Access Management (IAM) policy for a BigQuery connection. The policy defines which principals have what permissions on the connection resource.",
+    "dateCreated": "2025-11-21T23:42:37.915Z",
+    "sampleType": "rpc",
+    "objective": {
+        "narrative": "This sample shows the first step in the \"read-modify-write\" pattern for updating an IAM policy. Developers must first get the current policy and its etag, modify the policy in-memory, and then use the etag to set the new policy. This prevents race conditions where two clients try to update the policy simultaneously.",
+        "products": [
+            "bigqueryconnection"
+        ]
     },
-    {
-      "name": "PYTHON-google-cloud-bigquery-connection",
-      "categories": {
-        "language": "PYTHON"
-      },
-      "initialCommitAuthorType": "ai_assisted_human_reviewed"
-    }
-  ]
+    "extended": {
+        "api": "bigqueryconnection.googleapis.com",
+        "method": "GetIamPolicy",
+        "standard": true
+    },
+    "regionTags": [
+        {
+            "name": "bigqueryconnection_v1_connectionservice_iampolicy_get",
+            "title": "Get a connection's IAM policy",
+            "description": "Get the current Identity and Access Management (IAM) policy for a BigQuery connection. The policy defines which principals have what permissions on the connection resource."
+        },
+        {
+            "name": "bigqueryconnection_connectionservice_iampolicy_get",
+            "isVersionless": "true"
+        }
+    ],
+    "instances": [
+        {
+            "name": "NODEJS-@google-cloud/bigquery-connection",
+            "categories": {
+                "language": "NODEJS"
+            },
+            "initialCommitAuthorType": "ai_assisted_human_reviewed"
+        },
+        {
+            "name": "PYTHON-google-cloud-bigquery-connection",
+            "categories": {
+                "language": "PYTHON"
+            },
+            "initialCommitAuthorType": "ai_assisted_human_reviewed"
+        }
+    ]
 }

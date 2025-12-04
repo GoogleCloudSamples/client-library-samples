@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START bigqueryconnection_v1_connectionservice_iampolicy_get]
+# [START bigqueryconnection_connectionservice_iampolicy_get]
 
 import google.api_core.exceptions
 from google.cloud import bigquery_connection_v1
@@ -52,4 +53,5 @@ def get_connection_iam_policy(
         print(f"Connection not found: {resource}")
 
 
+# [END bigqueryconnection_connectionservice_iampolicy_get]
 # [END bigqueryconnection_v1_connectionservice_iampolicy_get]

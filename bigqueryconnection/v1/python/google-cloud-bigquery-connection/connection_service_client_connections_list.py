@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START bigqueryconnection_v1_connectionservice_connections_list]
+# [START bigqueryconnection_connectionservice_connections_list]
 import google.api_core.exceptions
 from google.cloud import bigquery_connection_v1
 
@@ -51,4 +52,5 @@ def list_connections(project_id: str, location: str):
         )
 
 
+# [END bigqueryconnection_connectionservice_connections_list]
 # [END bigqueryconnection_v1_connectionservice_connections_list]

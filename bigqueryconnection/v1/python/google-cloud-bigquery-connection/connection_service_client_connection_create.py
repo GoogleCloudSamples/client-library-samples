@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START bigqueryconnection_v1_connectionservice_connection_create]
+# [START bigqueryconnection_connectionservice_connection_create]
 import google.api_core.exceptions
 from google.cloud import bigquery_connection_v1
 
@@ -60,4 +61,5 @@ def create_connection(
         print(f"An unexpected error occurred while creating the connection: {e}")
 
 
+# [END bigqueryconnection_connectionservice_connection_create]
 # [END bigqueryconnection_v1_connectionservice_connection_create]

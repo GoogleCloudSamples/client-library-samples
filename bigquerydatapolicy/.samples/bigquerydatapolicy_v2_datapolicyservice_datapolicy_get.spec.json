@@ -1,42 +1,46 @@
 {
-  "version": "1.0.0",
-  "sampleId": "bigquerydatapolicy_v2_datapolicyservice_datapolicy_get",
-  "title": "Get a data policy",
-  "description": "Gets a specific data policy from the BigQuery Data Policy API by its name.",
-  "dateCreated": "2025-11-20T03:01:06.584Z",
-  "sampleType": "rpc",
-  "objective": {
-    "narrative": "Retrieves the details of a specific data policy. A developer might do this to check the configuration of a policy, such as its masking rules, before updating it or for auditing purposes.",
-    "products": [
-      "bigquerydatapolicy"
-    ]
-  },
-  "extended": {
-    "api": "bigquerydatapolicy.googleapis.com",
-    "method": "GetDataPolicy",
-    "standard": true
-  },
-  "regionTags": [
-    {
-      "name": "bigquerydatapolicy_v2_datapolicyservice_datapolicy_get",
-      "title": "Get a data policy",
-      "description": "Gets a specific data policy from the BigQuery Data Policy API by its name."
-    }
-  ],
-  "instances": [
-    {
-      "name": "PYTHON-google-cloud-bigquery-datapolicies",
-      "categories": {
-        "language": "PYTHON"
-      },
-      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    "version": "1.0.0",
+    "sampleId": "bigquerydatapolicy_v2_datapolicyservice_datapolicy_get",
+    "title": "Get a data policy",
+    "description": "Gets a specific data policy from the BigQuery Data Policy API by its name.",
+    "dateCreated": "2025-11-20T03:01:06.584Z",
+    "sampleType": "rpc",
+    "objective": {
+        "narrative": "Retrieves the details of a specific data policy. A developer might do this to check the configuration of a policy, such as its masking rules, before updating it or for auditing purposes.",
+        "products": [
+            "bigquerydatapolicy"
+        ]
     },
-    {
-      "name": "NODEJS-@google-cloud/bigquery-datapolicies",
-      "categories": {
-        "language": "NODEJS"
-      },
-      "initialCommitAuthorType": "ai_assisted_human_reviewed"
-    }
-  ]
+    "extended": {
+        "api": "bigquerydatapolicy.googleapis.com",
+        "method": "GetDataPolicy",
+        "standard": true
+    },
+    "regionTags": [
+        {
+            "name": "bigquerydatapolicy_v2_datapolicyservice_datapolicy_get",
+            "title": "Get a data policy",
+            "description": "Gets a specific data policy from the BigQuery Data Policy API by its name."
+        },
+        {
+            "name": "bigquerydatapolicy_datapolicyservice_datapolicy_get",
+            "isVersionless": "true"
+        }
+    ],
+    "instances": [
+        {
+            "name": "PYTHON-google-cloud-bigquery-datapolicies",
+            "categories": {
+                "language": "PYTHON"
+            },
+            "initialCommitAuthorType": "ai_assisted_human_reviewed"
+        },
+        {
+            "name": "NODEJS-@google-cloud/bigquery-datapolicies",
+            "categories": {
+                "language": "NODEJS"
+            },
+            "initialCommitAuthorType": "ai_assisted_human_reviewed"
+        }
+    ]
 }

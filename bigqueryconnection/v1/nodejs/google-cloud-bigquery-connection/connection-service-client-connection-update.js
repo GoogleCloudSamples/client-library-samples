@@ -15,6 +15,7 @@
 'use strict';
 
 // [START bigqueryconnection_v1_connectionservice_connection_update]
+// [START bigqueryconnection_connectionservice_connection_update]
 const {ConnectionServiceClient} =
   require('@google-cloud/bigquery-connection').v1;
 const {status} = require('@grpc/grpc-js');
@@ -64,6 +65,7 @@ async function updateConnection(projectId, location, connectionId) {
     }
   }
 }
+// [END bigqueryconnection_connectionservice_connection_update]
 // [END bigqueryconnection_v1_connectionservice_connection_update]
 
 module.exports = { updateConnection };
