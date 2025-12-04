@@ -6,7 +6,7 @@
     "dateCreated": "2025-11-20T03:01:43.319Z",
     "sampleType": "rpc",
     "objective": {
-        "narrative": "This sample solves the developer problem of programmatically auditing access controls for a BigQuery data policy. A developer can use this sample to build an application that fetches the IAM policy to verify that it complies with security standards\u2014for example, to confirm that only authorized data stewards can manage data masking policies.",
+        "narrative": "This sample solves the developer problem of programmatically auditing access controls for a BigQuery data policy. A developer can use this sample to build an application that fetches the IAM policy to verify that it complies with security standards. For example, to confirm that only authorized data stewards can manage data masking policies.",
         "products": [
             "bigquerydatapolicy"
         ]
