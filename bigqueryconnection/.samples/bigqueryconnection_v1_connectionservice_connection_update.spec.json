@@ -24,7 +24,7 @@
         },
         {
             "name": "bigqueryconnection_connectionservice_connection_update",
-            "isVersionless": true
+            "autoDocsPublish ": true
         }
     ],
     "instances": [
