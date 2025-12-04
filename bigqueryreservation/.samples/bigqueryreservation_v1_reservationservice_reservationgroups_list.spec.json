@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigqueryreservation_v1_reservationservice_reservationgroups_list",
+  "title": "List reservation groups",
+  "description": "Lists all BigQuery reservation groups within a specified project and location.",
+  "dateCreated": "2025-11-21T22:29:39.867Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample solves the problem of needing to programmatically inventory all existing BigQuery reservation groups. A developer might use this to build a dashboard showing reservation usage or to automate the process of assigning projects to reservations by first getting a list of available groups.",
+    "products": [
+      "bigqueryreservation"
+    ]
+  },
+  "extended": {
+    "api": "bigqueryreservation.googleapis.com",
+    "method": "ListReservationGroups",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigqueryreservation_v1_reservationservice_reservationgroups_list",
+      "title": "List reservation groups",
+      "description": "Lists all BigQuery reservation groups within a specified project and location."
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-reservation",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-reservation",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

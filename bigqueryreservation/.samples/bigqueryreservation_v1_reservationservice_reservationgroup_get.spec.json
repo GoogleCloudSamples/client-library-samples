@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigqueryreservation_v1_reservationservice_reservationgroup_get",
+  "title": "Get a reservation group",
+  "description": "Retrieves a specific reservation group resource from the BigQuery Reservation API by its name.",
+  "dateCreated": "2025-11-21T22:27:29.442Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "A developer can programmatically inspect the properties of a reservation group, such as its assigned capacity or project associations. This is useful for monitoring or for making decisions before updating a reservation group or creating a new reservation within it.",
+    "products": [
+      "bigqueryreservation"
+    ]
+  },
+  "extended": {
+    "api": "bigqueryreservation.googleapis.com",
+    "method": "GetReservationGroup",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigqueryreservation_v1_reservationservice_reservationgroup_get",
+      "title": "Get a reservation group",
+      "description": "Retrieves a specific reservation group resource from the BigQuery Reservation API by its name."
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-reservation",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-reservation",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}
