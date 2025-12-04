@@ -26,7 +26,7 @@ def find_specs(root_dir):
 
 def derive_versionless_tag(tag_name):
     """
-    Removes the version component (e.g., _v1_, _v2beta1_) from the tag.
+    Removes the service version component (e.g., _v1_, _v2beta1_) from the tag.
     Example: 'api_v1_method' -> 'api_method'
     """
 
