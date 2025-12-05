@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+
+# [START bigqueryreservation_v1_reservationservice_reservation_delete]
+# [START bigqueryreservation_reservationservice_reservation_delete]
 from google.api_core.exceptions import NotFound
 from google.cloud import bigquery_reservation_v1
 
@@ -28,7 +31,6 @@ def delete_reservation(project_id: str, location: str, reservation_id: str):
         location: The geographic location of the reservation, for example, "us-central1".
         reservation_id: The ID of the reservation to delete.
     """
-    # [START bigqueryreservation_v1_reservationservice_reservation_delete]
     name = client.reservation_path(project_id, location, reservation_id)
 
     try:
@@ -36,4 +38,7 @@ def delete_reservation(project_id: str, location: str, reservation_id: str):
         print(f"Deleted reservation: {name}")
     except NotFound:
         print(f"Reservation '{name}' not found.")
-    # [END bigqueryreservation_v1_reservationservice_reservation_delete]
+
+
+# [END bigqueryreservation_reservationservice_reservation_delete]
+# [END bigqueryreservation_v1_reservationservice_reservation_delete]

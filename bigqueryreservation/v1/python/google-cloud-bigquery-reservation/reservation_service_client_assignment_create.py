@@ -14,6 +14,7 @@
 
 
 # [START bigqueryreservation_v1_reservationservice_assignment_create]
+# [START bigqueryreservation_reservationservice_assignment_create]
 from google.api_core import exceptions
 from google.cloud import bigquery_reservation_v1
 
@@ -48,4 +49,5 @@ def create_assignment(project_id: str, location: str, reservation_id: str):
         print(f"Assignment for project {project_id} and job type QUERY already exists.")
 
 
+# [END bigqueryreservation_reservationservice_assignment_create]
 # [END bigqueryreservation_v1_reservationservice_assignment_create]

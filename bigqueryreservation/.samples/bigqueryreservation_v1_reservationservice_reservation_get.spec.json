@@ -21,6 +21,10 @@
       "name": "bigqueryreservation_v1_reservationservice_reservation_get",
       "title": "Get a reservation",
       "description": "Retrieves a specified BigQuery reservation. Use this to check a reservation's details, such as its slot capacity and whether it ignores idle slots."
+    },
+    {
+      "name": "bigqueryreservation_reservationservice_reservation_get",
+      "autoDocsPublish": true
     }
   ],
   "instances": [

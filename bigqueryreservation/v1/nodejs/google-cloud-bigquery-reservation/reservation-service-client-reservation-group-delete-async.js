@@ -15,6 +15,7 @@
 'use strict';
 
 // [START bigqueryreservation_v1_reservationservice_reservationgroup_delete]
+// [START bigqueryreservation_reservationservice_reservationgroup_delete]
 const {ReservationServiceClient} =
   require('@google-cloud/bigquery-reservation').v1;
 const {status} = require('@grpc/grpc-js');
@@ -53,6 +54,7 @@ async function deleteReservationGroup(
     }
   }
 }
+// [END bigqueryreservation_reservationservice_reservationgroup_delete]
 // [END bigqueryreservation_v1_reservationservice_reservationgroup_delete]
 
 module.exports = {

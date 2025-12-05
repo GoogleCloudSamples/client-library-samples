@@ -14,6 +14,7 @@
 
 
 # [START bigqueryreservation_v1_reservationservice_reservationgroup_create]
+# [START bigqueryreservation_reservationservice_reservationgroup_create]
 from google.api_core import exceptions
 from google.cloud import bigquery_reservation_v1
 
@@ -53,4 +54,5 @@ def create_reservation_group(project_id: str, location: str, reservation_group_i
         print(f"Reservation group '{full_reservation_group_name}' already exists.")
 
 
+# [END bigqueryreservation_reservationservice_reservationgroup_create]
 # [END bigqueryreservation_v1_reservationservice_reservationgroup_create]

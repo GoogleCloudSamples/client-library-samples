@@ -12,7 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+
 # [START bigqueryreservation_v1_reservationservice_reservation_create]
+# [START bigqueryreservation_reservationservice_reservation_create]
 from google.api_core.exceptions import AlreadyExists
 from google.cloud import bigquery_reservation_v1
 
@@ -52,4 +54,5 @@ def create_reservation(project_id: str, location: str, reservation_id: str):
         )
 
 
+# [END bigqueryreservation_reservationservice_reservation_create]
 # [END bigqueryreservation_v1_reservationservice_reservation_create]

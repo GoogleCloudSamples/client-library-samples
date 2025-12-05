@@ -21,6 +21,10 @@
       "name": "bigqueryreservation_v1_reservationservice_reservationgroup_get",
       "title": "Get a reservation group",
       "description": "Retrieves a specific reservation group resource from the BigQuery Reservation API by its name."
+    },
+    {
+      "name": "bigqueryreservation_reservationservice_reservationgroup_get",
+      "autoDocsPublish": true
     }
   ],
   "instances": [

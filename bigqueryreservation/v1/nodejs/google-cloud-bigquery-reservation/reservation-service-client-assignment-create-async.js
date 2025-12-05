@@ -15,6 +15,7 @@
 'use strict';
 
 // [START bigqueryreservation_v1_reservationservice_assignment_create]
+// [START bigqueryreservation_reservationservice_assignment_create]
 const {
   ReservationServiceClient,
 } = require('@google-cloud/bigquery-reservation').v1;
@@ -60,6 +61,7 @@ async function createAssignment(
     }
   }
 }
+// [END bigqueryreservation_reservationservice_assignment_create]
 // [END bigqueryreservation_v1_reservationservice_assignment_create]
 
 module.exports = {

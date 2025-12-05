@@ -21,6 +21,10 @@
       "name": "bigqueryreservation_v1_reservationservice_reservationgroups_list",
       "title": "List reservation groups",
       "description": "Lists all BigQuery reservation groups within a specified project and location."
+    },
+    {
+      "name": "bigqueryreservation_reservationservice_reservationgroups_list",
+      "autoDocsPublish": true
     }
   ],
   "instances": [

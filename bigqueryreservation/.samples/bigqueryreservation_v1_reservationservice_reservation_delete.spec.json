@@ -21,6 +21,10 @@
       "name": "bigqueryreservation_v1_reservationservice_reservation_delete",
       "title": "Delete a BigQuery reservation",
       "description": "Deletes a reservation from the BigQuery Reservation API. The reservation must not have any assignments."
+    },
+    {
+      "name": "bigqueryreservation_reservationservice_reservation_delete",
+      "autoDocsPublish": true
     }
   ],
   "instances": [

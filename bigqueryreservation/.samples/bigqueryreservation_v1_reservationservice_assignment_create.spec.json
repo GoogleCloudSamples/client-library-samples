@@ -21,6 +21,10 @@
       "name": "bigqueryreservation_v1_reservationservice_assignment_create",
       "title": "Create a reservation assignment",
       "description": "Create an assignment to map a project, folder, or organization to a BigQuery reservation."
+    },
+    {
+      "name": "bigqueryreservation_reservationservice_assignment_create",
+      "autoDocsPublish": true
     }
   ],
   "instances": [

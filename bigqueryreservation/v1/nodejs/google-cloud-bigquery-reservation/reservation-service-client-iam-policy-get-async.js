@@ -15,6 +15,7 @@
 'use strict';
 
 // [START bigqueryreservation_v1_reservationservice_iampolicy_get]
+// [START bigqueryreservation_reservationservice_iampolicy_get]
 const {
   ReservationServiceClient,
 } = require('@google-cloud/bigquery-reservation').v1;
@@ -60,6 +61,7 @@ async function getReservationIamPolicy(
     }
   }
 }
+// [END bigqueryreservation_reservationservice_iampolicy_get]
 // [END bigqueryreservation_v1_reservationservice_iampolicy_get]
 
 module.exports = {

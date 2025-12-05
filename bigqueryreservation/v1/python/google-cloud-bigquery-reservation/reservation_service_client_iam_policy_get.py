@@ -12,7 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+
 # [START bigqueryreservation_v1_reservationservice_iampolicy_get]
+# [START bigqueryreservation_reservationservice_iampolicy_get]
 from google.api_core.exceptions import NotFound
 from google.cloud import bigquery_reservation_v1
 
@@ -44,4 +46,5 @@ def get_reservation_iam_policy(project_id: str, location: str, reservation_id: s
         print(f"Reservation not found: {resource}")
 
 
+# [END bigqueryreservation_reservationservice_iampolicy_get]
 # [END bigqueryreservation_v1_reservationservice_iampolicy_get]

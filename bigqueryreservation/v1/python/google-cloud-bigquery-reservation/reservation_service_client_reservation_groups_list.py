@@ -14,6 +14,7 @@
 
 
 # [START bigqueryreservation_v1_reservationservice_reservationgroups_list]
+# [START bigqueryreservation_reservationservice_reservationgroups_list]
 import google.api_core.exceptions
 from google.cloud import bigquery_reservation_v1
 
@@ -43,4 +44,7 @@ def list_reservation_groups(project_id: str, location: str):
         print(
             f"Could not list reservation groups. Please check your permissions. Error: {e}"
         )
-    # [END bigqueryreservation_v1_reservationservice_reservationgroups_list]
+
+
+# [END bigqueryreservation_reservationservice_reservationgroups_list]
+# [END bigqueryreservation_v1_reservationservice_reservationgroups_list]

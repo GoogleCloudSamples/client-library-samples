@@ -14,6 +14,7 @@
 
 
 # [START bigqueryreservation_v1_reservationservice_reservationgroup_get]
+# [START bigqueryreservation_reservationservice_reservationgroup_get]
 from google.api_core import exceptions
 from google.cloud import bigquery_reservation_v1
 
@@ -40,4 +41,5 @@ def get_reservation_group(project_id: str, location: str, reservation_group_id: 
         print(f"Reservation group '{name}' not found.")
 
 
+# [END bigqueryreservation_reservationservice_reservationgroup_get]
 # [END bigqueryreservation_v1_reservationservice_reservationgroup_get]

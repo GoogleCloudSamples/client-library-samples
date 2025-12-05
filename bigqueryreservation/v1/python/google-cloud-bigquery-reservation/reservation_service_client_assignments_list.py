@@ -14,6 +14,7 @@
 
 
 # [START bigqueryreservation_v1_reservationservice_assignments_list]
+# [START bigqueryreservation_reservationservice_assignments_list]
 from google.api_core import exceptions
 from google.cloud import bigquery_reservation_v1
 
@@ -54,4 +55,5 @@ def list_assignments(
         print(f"Parent resource '{parent}' not found.")
 
 
+# [START bigqueryreservation_v1_reservationservice_assignments_list]
 # [END bigqueryreservation_v1_reservationservice_assignments_list]

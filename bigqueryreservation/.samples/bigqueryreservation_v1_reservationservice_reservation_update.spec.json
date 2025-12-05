@@ -21,6 +21,10 @@
       "name": "bigqueryreservation_v1_reservationservice_reservation_update",
       "title": "Update a reservation",
       "description": "Update an existing BigQuery reservation to change its properties, such as its slot capacity."
+    },
+    {
+      "name": "bigqueryreservation_reservationservice_reservation_update",
+      "autoDocsPublish": true
     }
   ],
   "instances": [
