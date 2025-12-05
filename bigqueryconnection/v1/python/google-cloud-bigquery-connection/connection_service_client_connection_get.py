@@ -21,7 +21,9 @@ client = bigquery_connection_v1.ConnectionServiceClient()
 
 
 def get_connection(project_id: str, location: str, connection_id: str):
-    """Gets a BigQuery connection.
+    """Retrieves connection metadata about a specified BigQuery connection.
+
+    A connection stores metadata about an external data source and credentials to access it.
 
     Args:
         project_id: The Google Cloud project ID.
