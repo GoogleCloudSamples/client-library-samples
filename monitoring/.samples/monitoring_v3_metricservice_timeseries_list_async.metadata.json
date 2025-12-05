@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_metricservice_timeseries_list_async",
+	"title": "list TimeSeries",
+	"description": "Cloud Monitoring sample showing how to listTimeSeries",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "listTimeSeries"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_metricservice_timeseries_list_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-25",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

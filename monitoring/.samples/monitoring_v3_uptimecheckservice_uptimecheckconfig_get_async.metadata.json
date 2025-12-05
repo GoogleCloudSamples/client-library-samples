@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_uptimecheckservice_uptimecheckconfig_get_async",
+	"title": "get UptimeCheckConfig",
+	"description": "Cloud Monitoring sample showing how to getUptimeCheckConfig",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "getUptimeCheckConfig"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_uptimecheckservice_uptimecheckconfig_get_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-25",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_snoozeservice_snooze_create_async",
+	"title": "create Snooze",
+	"description": "Cloud Monitoring sample showing how to createSnooze",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "createSnooze"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_snoozeservice_snooze_create_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-25",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_notificationchannelservice_notificationchannels_list_async",
+	"title": "list NotificationChannels",
+	"description": "Cloud Monitoring sample showing how to listNotificationChannels",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "listNotificationChannels"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_notificationchannelservice_notificationchannels_list_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-25",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
