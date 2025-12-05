@@ -1,8 +1,8 @@
 {
     "version": "1.0.0",
     "sampleId": "bigqueryconnection_v1_connectionservice_connection_get",
-    "title": "Get a connection",
-    "description": "Retrieves information about a specified BigQuery connection.",
+    "title": "Get connection metadata",
+    "description": "Retrieves connection metadata about a specified BigQuery connection. Credential secrets are not returned.",
     "dateCreated": "2025-11-21T23:41:12.928Z",
     "sampleType": "rpc",
     "objective": {
@@ -19,8 +19,8 @@
     "regionTags": [
         {
             "name": "bigqueryconnection_v1_connectionservice_connection_get",
-            "title": "Get a connection",
-            "description": "Retrieves information about a specified BigQuery connection."
+            "title": "Get connection metadata",
+            "description": "Retrieves connection metadata about a specified BigQuery connection. Credential secrets are not returned."
         },
         {
             "name": "bigqueryconnection_connectionservice_connection_get",
