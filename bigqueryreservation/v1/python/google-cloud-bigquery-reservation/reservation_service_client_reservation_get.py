@@ -14,6 +14,7 @@
 
 
 # [START bigqueryreservation_v1_reservationservice_reservation_get]
+# [START bigqueryreservation_reservationservice_reservation_get]
 from google.api_core import exceptions
 from google.cloud import bigquery_reservation_v1
 
@@ -42,4 +43,5 @@ def get_reservation(project_id: str, location: str, reservation_id: str):
         print(f"Reservation '{reservation_id}' not found.")
 
 
+# [END bigqueryreservation_reservationservice_reservation_get]
 # [END bigqueryreservation_v1_reservationservice_reservation_get]

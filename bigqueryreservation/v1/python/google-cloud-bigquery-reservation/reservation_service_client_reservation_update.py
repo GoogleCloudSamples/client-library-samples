@@ -14,6 +14,7 @@
 
 
 # [START bigqueryreservation_v1_reservationservice_reservation_update]
+# [START bigqueryreservation_reservationservice_reservation_update]
 from google.api_core import exceptions
 from google.cloud import bigquery_reservation_v1
 from google.protobuf import field_mask_pb2
@@ -46,4 +47,5 @@ def update_reservation(project_id: str, location: str, reservation_id: str):
         print(f"Reservation '{reservation_id}' was not found in location '{location}'.")
 
 
+# [END bigqueryreservation_reservationservice_reservation_update]
 # [END bigqueryreservation_v1_reservationservice_reservation_update]

@@ -21,6 +21,10 @@
       "name": "bigqueryreservation_v1_reservationservice_assignments_list",
       "title": "List all assignments for a reservation",
       "description": "Retrieves a list of all assignments for a specified BigQuery reservation. An assignment connects a project, folder, or organization to a reservation."
+    },
+    {
+      "name": "bigqueryreservation_reservationservice_assignments_list",
+      "autoDocsPublish": true
     }
   ],
   "instances": [

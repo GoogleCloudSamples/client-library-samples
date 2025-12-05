@@ -15,6 +15,7 @@
 'use strict';
 
 // [START bigqueryreservation_v1_reservationservice_reservations_list]
+// [START bigqueryreservation_reservationservice_reservations_list]
 const {ReservationServiceClient} =
   require('@google-cloud/bigquery-reservation').v1;
 const {status} = require('@grpc/grpc-js');
@@ -61,6 +62,7 @@ async function listReservations(projectId, location = 'us-central1') {
     }
   }
 }
+// [END bigqueryreservation_reservationservice_reservations_list]
 // [END bigqueryreservation_v1_reservationservice_reservations_list]
 
 module.exports = {

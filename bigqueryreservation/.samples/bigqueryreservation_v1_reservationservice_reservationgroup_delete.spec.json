@@ -21,6 +21,10 @@
       "name": "bigqueryreservation_v1_reservationservice_reservationgroup_delete",
       "title": "Delete a reservation group",
       "description": "Deletes a reservation group from the BigQuery Reservation API. A reservation group can only be deleted if it does not contain any child reservations."
+    },
+    {
+      "name": "bigqueryreservation_reservationservice_reservationgroup_delete",
+      "autoDocsPublish": true
     }
   ],
   "instances": [

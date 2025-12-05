@@ -21,6 +21,10 @@
       "name": "bigqueryreservation_v1_reservationservice_reservationgroup_create",
       "title": "Create a reservation group",
       "description": "Create a reservation group in a specific project and location. A reservation group is a container for BigQuery reservations."
+    },
+    {
+      "name": "bigqueryreservation_reservationservice_reservationgroup_create",
+      "autoDocsPublish": true
     }
   ],
   "instances": [

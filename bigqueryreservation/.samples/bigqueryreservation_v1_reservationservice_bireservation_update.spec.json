@@ -21,6 +21,10 @@
       "name": "bigqueryreservation_v1_reservationservice_bireservation_update",
       "title": "Update a BI reservation",
       "description": "Update the size of an existing BI reservation. The BigQuery BI Engine uses BI reservations to run fast, in-memory analysis."
+    },
+    {
+      "name": "bigqueryreservation_reservationservice_bireservation_update",
+      "autoDocsPublish": true
     }
   ],
   "instances": [

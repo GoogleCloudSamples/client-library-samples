@@ -12,7 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+
 # [START bigqueryreservation_v1_reservationservice_reservations_list]
+# [START bigqueryreservation_reservationservice_reservations_list]
 from google.api_core import exceptions
 from google.cloud import bigquery_reservation_v1
 
@@ -46,4 +48,5 @@ def list_reservations(project_id: str, location: str):
         )
 
 
+# [END bigqueryreservation_reservationservice_reservations_list]
 # [END bigqueryreservation_v1_reservationservice_reservations_list]

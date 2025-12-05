@@ -21,6 +21,10 @@
       "name": "bigqueryreservation_v1_reservationservice_reservation_create",
       "title": "Create a BigQuery reservation",
       "description": "Creates a reservation in a specified project and location. A reservation represents a block of dedicated BigQuery query processing capacity that can be allocated for your organization's workloads."
+    },
+    {
+      "name": "bigqueryreservation_reservationservice_reservation_create",
+      "autoDocsPublish": true
     }
   ],
   "instances": [

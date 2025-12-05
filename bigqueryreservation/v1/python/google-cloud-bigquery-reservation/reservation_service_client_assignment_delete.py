@@ -12,7 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+
 # [START bigqueryreservation_v1_reservationservice_assignment_delete]
+# [START bigqueryreservation_reservationservice_assignment_delete]
 from google.api_core.exceptions import NotFound
 from google.cloud import bigquery_reservation_v1
 
@@ -45,4 +47,5 @@ def delete_assignment(
         print(f"Assignment '{name}' not found.")
 
 
+# [END bigqueryreservation_reservationservice_assignment_delete]
 # [END bigqueryreservation_v1_reservationservice_assignment_delete]

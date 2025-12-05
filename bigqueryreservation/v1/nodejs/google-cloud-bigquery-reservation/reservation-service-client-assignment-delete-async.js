@@ -15,6 +15,7 @@
 'use strict';
 
 // [START bigqueryreservation_v1_reservationservice_assignment_delete]
+// [START bigqueryreservation_reservationservice_assignment_delete]
 const {ReservationServiceClient} =
   require('@google-cloud/bigquery-reservation').v1;
 const {status} = require('@grpc/grpc-js');
@@ -59,6 +60,7 @@ async function deleteAssignment(
     }
   }
 }
+// [END bigqueryreservation_reservationservice_assignment_delete]
 // [END bigqueryreservation_v1_reservationservice_assignment_delete]
 
 module.exports = {deleteAssignment};

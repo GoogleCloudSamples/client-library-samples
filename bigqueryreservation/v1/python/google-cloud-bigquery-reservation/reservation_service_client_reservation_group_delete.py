@@ -12,7 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+
 # [START bigqueryreservation_v1_reservationservice_reservationgroup_delete]
+# [START bigqueryreservation_reservationservice_reservationgroup_delete]
 from google.api_core.exceptions import NotFound
 from google.cloud import bigquery_reservation_v1
 
@@ -40,4 +42,5 @@ def delete_reservation_group(project_id: str, location: str, reservation_group_i
         print(f"Reservation group '{name}' not found.")
 
 
+# [END bigqueryreservation_reservationservice_reservationgroup_delete]
 # [END bigqueryreservation_v1_reservationservice_reservationgroup_delete]

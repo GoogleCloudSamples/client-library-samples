@@ -12,7 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+
 # [START bigqueryreservation_v1_reservationservice_bireservation_update]
+# [START bigqueryreservation_reservationservice_bireservation_update]
 from google.api_core import exceptions
 from google.cloud import bigquery_reservation_v1
 from google.protobuf import field_mask_pb2
@@ -52,4 +54,5 @@ def update_bi_reservation(project_id: str, location: str):
         )
 
 
+# [END bigqueryreservation_reservationservice_bireservation_update]
 # [END bigqueryreservation_v1_reservationservice_bireservation_update]

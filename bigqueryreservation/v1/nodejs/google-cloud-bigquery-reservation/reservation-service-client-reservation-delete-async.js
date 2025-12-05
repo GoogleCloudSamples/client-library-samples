@@ -14,7 +14,8 @@
 
 'use strict';
 
-// [START bigqueryreservation_v1_generated_ReservationService_DeleteReservation_async]
+// [START bigqueryreservation_v1_reservationservice_reservation_delete]
+// [START bigqueryreservation_reservationservice_reservation_delete]
 const {ReservationServiceClient} =
   require('@google-cloud/bigquery-reservation').v1;
 const {status} = require('google-gax');
@@ -53,7 +54,8 @@ async function deleteReservation(
     }
   }
 }
-// [END bigqueryreservation_v1_generated_ReservationService_DeleteReservation_async]
+// [END bigqueryreservation_reservationservice_reservation_delete]
+// [END bigqueryreservation_v1_reservationservice_reservation_delete]
 
 module.exports = {
   deleteReservation,

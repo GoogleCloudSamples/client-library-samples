@@ -21,6 +21,10 @@
       "name": "bigqueryreservation_v1_reservationservice_iampolicy_get",
       "title": "Get the IAM policy for a reservation",
       "description": "Retrieves the Identity and Access Management (IAM) policy for a BigQuery reservation. The policy defines which principals have which roles, and is used to view the access control settings for the resource."
+    },
+    {
+      "name": "bigqueryreservation_reservationservice_iampolicy_get",
+      "autoDocsPublish": true
     }
   ],
   "instances": [
