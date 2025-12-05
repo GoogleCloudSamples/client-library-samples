@@ -20,7 +20,7 @@ const {ConnectionServiceClient} =
   require('@google-cloud/bigquery-connection').v1;
 const {status} = require('@grpc/grpc-js');
 
-const client = new ConnectionServiceClient();
+const connectionClient = new ConnectionServiceClient();
 
 /**
  * Updates a BigQuery connection, demonstrating how to update the friendly name and description.
