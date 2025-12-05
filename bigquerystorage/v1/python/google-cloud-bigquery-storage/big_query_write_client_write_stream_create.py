@@ -14,6 +14,7 @@
 
 
 # [START bigquerystorage_v1_bigquerywrite_writestream_create]
+# [START bigquerystorage_bigquerywrite_writestream_create]
 from google.api_core.exceptions import NotFound
 from google.cloud.bigquery_storage_v1 import BigQueryWriteClient
 from google.cloud.bigquery_storage_v1.types import WriteStream
@@ -51,4 +52,5 @@ def create_write_stream(project_id: str, dataset_id: str, table_id: str) -> None
         )
 
 
+# [END bigquerystorage_bigquerywrite_writestream_create]
 # [END bigquerystorage_v1_bigquerywrite_writestream_create]

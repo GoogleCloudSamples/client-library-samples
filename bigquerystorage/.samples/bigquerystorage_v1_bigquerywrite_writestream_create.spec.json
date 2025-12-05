@@ -21,6 +21,10 @@
       "name": "bigquerystorage_v1_bigquerywrite_writestream_create",
       "title": "Create a write stream",
       "description": "Creates a write stream to append data rows to a BigQuery table. The stream is created in a PENDING state and can be used to write data. The stream must be finalized and committed before the data is visible in the table."
+    },
+    {
+      "name": "bigquerystorage_bigquerywrite_writestream_create",
+      "autoDocsPublish": true
     }
   ],
   "instances": [

@@ -12,7 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+
 # [START bigquerystorage_v1_bigquerywrite_writestream_get]
+# [START bigquerystorage_bigquerywrite_writestream_get]
 import google.api_core.exceptions
 from google.cloud import bigquery_storage_v1
 
@@ -44,4 +46,5 @@ def get_write_stream(
         print(f"Write stream not found: {stream_name}")
 
 
+# [END bigquerystorage_bigquerywrite_writestream_get]
 # [END bigquerystorage_v1_bigquerywrite_writestream_get]

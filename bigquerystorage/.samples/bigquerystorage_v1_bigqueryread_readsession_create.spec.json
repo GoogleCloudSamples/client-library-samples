@@ -21,6 +21,10 @@
       "name": "bigquerystorage_v1_bigqueryread_readsession_create",
       "title": "Create a BigQuery read session",
       "description": "Create a new read session to specify the BigQuery table to read from, the columns to project, and an optional row filter. The returned session contains one or more streams that you can read from in parallel."
+    },
+    {
+      "name": "bigquerystorage_bigqueryread_readsession_create",
+      "autoDocsPublish": true
     }
   ],
   "instances": [
