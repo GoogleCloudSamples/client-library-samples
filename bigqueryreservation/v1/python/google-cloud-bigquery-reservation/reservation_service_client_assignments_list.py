@@ -55,5 +55,5 @@ def list_assignments(
         print(f"Parent resource '{parent}' not found.")
 
 
-# [START bigqueryreservation_v1_reservationservice_assignments_list]
+# [END bigqueryreservation_reservationservice_assignments_list]
 # [END bigqueryreservation_v1_reservationservice_assignments_list]
