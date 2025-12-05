@@ -15,6 +15,7 @@
 'use strict';
 
 // [START bigquerystorage_v1_bigquerywrite_writestream_get]
+// [START bigquerystorage_bigquerywrite_writestream_get]
 const {BigQueryWriteClient} = require('@google-cloud/bigquery-storage');
 const {status} = require('@grpc/grpc-js');
 
@@ -50,6 +51,7 @@ async function getWriteStream(projectId, datasetId, tableId) {
     }
   }
 }
+// [END bigquerystorage_bigquerywrite_writestream_get]
 // [END bigquerystorage_v1_bigquerywrite_writestream_get]
 
 module.exports = {getWriteStream}

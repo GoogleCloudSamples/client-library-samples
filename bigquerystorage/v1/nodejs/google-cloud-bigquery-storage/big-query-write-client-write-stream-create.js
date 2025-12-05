@@ -15,6 +15,7 @@
 'use strict';
 
 // [START bigquerystorage_v1_bigquerywrite_writestream_create]
+// [START bigquerystorage_bigquerywrite_writestream_create]
 const {
   BigQueryWriteClient,
   managedwriter,
@@ -61,6 +62,7 @@ async function createWriteStream(projectId, datasetId, tableId) {
     }
   }
 }
+// [END bigquerystorage_bigquerywrite_writestream_create]
 // [END bigquerystorage_v1_bigquerywrite_writestream_create]
 
 module.exports = {createWriteStream}

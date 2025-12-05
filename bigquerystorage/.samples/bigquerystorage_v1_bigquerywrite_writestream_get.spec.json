@@ -21,6 +21,10 @@
       "name": "bigquerystorage_v1_bigquerywrite_writestream_get",
       "title": "Get write stream details",
       "description": "Retrieves information about an existing BigQuery write stream. Use this to check the state and schema of a stream before appending data."
+    },
+    {
+      "name": "bigquerystorage_bigquerywrite_writestream_get",
+      "autoDocsPublish": true
     }
   ],
   "instances": [

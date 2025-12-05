@@ -15,6 +15,7 @@
 'use strict';
 
 // [START bigquerystorage_v1_bigqueryread_readsession_create]
+// [START bigquerystorage_bigqueryread_readsession_create]
 const {BigQueryReadClient} = require('@google-cloud/bigquery-storage');
 const {status} = require('@grpc/grpc-js');
 
@@ -78,6 +79,7 @@ async function createReadSession(
     }
   }
 }
+// [END bigquerystorage_bigqueryread_readsession_create]
 // [END bigquerystorage_v1_bigqueryread_readsession_create]
 
 module.exports = {createReadSession};

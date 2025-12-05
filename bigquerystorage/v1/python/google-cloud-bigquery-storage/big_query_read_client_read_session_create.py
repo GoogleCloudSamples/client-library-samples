@@ -12,7 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+
 # [START bigquerystorage_v1_bigqueryread_readsession_create]
+# [START bigquerystorage_bigqueryread_readsession_create]
 from google.api_core.exceptions import NotFound
 from google.cloud.bigquery_storage_v1 import BigQueryReadClient
 from google.cloud.bigquery_storage_v1.types import DataFormat, ReadSession
@@ -66,4 +68,5 @@ def create_read_session(
         )
 
 
+# [END bigquerystorage_bigqueryread_readsession_create]
 # [END bigquerystorage_v1_bigqueryread_readsession_create]
