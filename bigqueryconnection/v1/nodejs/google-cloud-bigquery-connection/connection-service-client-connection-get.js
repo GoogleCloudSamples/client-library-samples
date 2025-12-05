@@ -23,7 +23,7 @@ const {status} = require('@grpc/grpc-js');
 const client = new ConnectionServiceClient();
 
 /**
- * Gets a specified BigQuery connection.
+ * Retrieves connection metadata about a specified BigQuery connection. 
  *
  * A connection stores metadata about an external data source and credentials to access it.
  *
