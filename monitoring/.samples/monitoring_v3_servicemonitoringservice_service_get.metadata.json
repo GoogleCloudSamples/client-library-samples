@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_servicemonitoringservice_service_get",
+	"title": "get service",
+	"description": "Cloud Monitoring sample showing how to get_service",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "get_service"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_servicemonitoringservice_service_get"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
