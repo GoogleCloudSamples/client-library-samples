@@ -1,0 +1,26 @@
+{
+	"id": "storage_v2_storagecontrol_projectintelligenceconfig_get",
+	"title": "get project_intelligence_config",
+	"description": "Cloud Storage sample showing how to get_project_intelligence_config",
+	"collection": "storage_api_samples",
+	"products": [
+		"storage"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "storage.googleapis.com",
+		"method": "get_project_intelligence_config"
+	},
+	"regionTags": [
+		{
+			"name": "storage_v2_storagecontrol_projectintelligenceconfig_get"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-04",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"id": "storage_v2_storagecontrol_managedfolders_list",
+	"title": "list managed_folders",
+	"description": "Cloud Storage sample showing how to list_managed_folders",
+	"collection": "storage_api_samples",
+	"products": [
+		"storage"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "storage.googleapis.com",
+		"method": "list_managed_folders"
+	},
+	"regionTags": [
+		{
+			"name": "storage_v2_storagecontrol_managedfolders_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-04",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
