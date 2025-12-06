@@ -1,0 +1,26 @@
+{
+	"id": "dlp_v2_dlpservice_storedinfotype_get_async",
+	"title": "get StoredInfoType",
+	"description": "Sensitive Data Protection sample showing how to getStoredInfoType",
+	"collection": "dlp_api_samples",
+	"products": [
+		"dlp"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dlp.googleapis.com",
+		"method": "getStoredInfoType"
+	},
+	"regionTags": [
+		{
+			"name": "dlp_v2_dlpservice_storedinfotype_get_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
