@@ -1,0 +1,26 @@
+{
+	"id": "speech_v1p1beta1_adaptation_phraseset_delete",
+	"title": "delete phrase_set",
+	"description": "Speech-to-Text sample showing how to delete_phrase_set",
+	"collection": "speech_api_samples",
+	"products": [
+		"speech"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "speech.googleapis.com",
+		"method": "delete_phrase_set"
+	},
+	"regionTags": [
+		{
+			"name": "speech_v1p1beta1_adaptation_phraseset_delete"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-12",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
