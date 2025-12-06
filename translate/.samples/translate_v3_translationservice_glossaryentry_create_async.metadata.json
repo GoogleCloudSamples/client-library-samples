@@ -1,0 +1,26 @@
+{
+	"id": "translate_v3_translationservice_glossaryentry_create_async",
+	"title": "create GlossaryEntry",
+	"description": "Cloud Translation sample showing how to createGlossaryEntry",
+	"collection": "translate_api_samples",
+	"products": [
+		"translate"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "translate.googleapis.com",
+		"method": "createGlossaryEntry"
+	},
+	"regionTags": [
+		{
+			"name": "translate_v3_translationservice_glossaryentry_create_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
