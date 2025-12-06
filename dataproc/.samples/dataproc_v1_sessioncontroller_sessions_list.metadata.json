@@ -1,0 +1,26 @@
+{
+	"id": "dataproc_v1_sessioncontroller_sessions_list",
+	"title": "list sessions",
+	"description": "Dataproc sample showing how to list_sessions",
+	"collection": "dataproc_api_samples",
+	"products": [
+		"dataproc"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataproc.googleapis.com",
+		"method": "list_sessions"
+	},
+	"regionTags": [
+		{
+			"name": "dataproc_v1_sessioncontroller_sessions_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
