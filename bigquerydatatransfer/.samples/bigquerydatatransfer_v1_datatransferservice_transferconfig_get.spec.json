@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigquerydatatransfer_v1_datatransferservice_transferconfig_get",
+  "title": "Get a transfer configuration",
+  "description": "Retrieves the details for a transfer configuration from the BigQuery Data Transfer Service, such as its schedule and destination.",
+  "dateCreated": "2025-12-09T04:55:54.176Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Developers need to programmatically inspect existing data transfers. This sample provides the code to retrieve all metadata for a specific transfer configuration, which is necessary for monitoring, auditing, or building automation that modifies existing transfers.",
+    "products": [
+      "bigquerydatatransfer"
+    ]
+  },
+  "extended": {
+    "api": "bigquerydatatransfer.googleapis.com",
+    "method": "GetTransferConfig",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigquerydatatransfer_v1_datatransferservice_transferconfig_get",
+      "title": "Get a transfer configuration",
+      "description": "Retrieves the details for a transfer configuration from the BigQuery Data Transfer Service, such as its schedule and destination."
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-data-transfer",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-datatransfer",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

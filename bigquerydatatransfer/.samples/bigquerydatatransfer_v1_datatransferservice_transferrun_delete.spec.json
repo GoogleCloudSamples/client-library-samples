@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigquerydatatransfer_v1_datatransferservice_transferrun_delete",
+  "title": "Delete a transfer run",
+  "description": "Deletes a transfer run in the BigQuery Data Transfer Service.",
+  "dateCreated": "2025-12-09T04:57:00.236Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample solves the developer problem of needing to programmatically remove individual transfer run records. This is a common maintenance task for cleaning up the execution history of a transfer, such as removing failed, incomplete, or test runs.",
+    "products": [
+      "bigquerydatatransfer"
+    ]
+  },
+  "extended": {
+    "api": "bigquerydatatransfer.googleapis.com",
+    "method": "DeleteTransferRun",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigquerydatatransfer_v1_datatransferservice_transferrun_delete",
+      "title": "Delete a transfer run",
+      "description": "Deletes a transfer run in the BigQuery Data Transfer Service."
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-data-transfer",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-datatransfer",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

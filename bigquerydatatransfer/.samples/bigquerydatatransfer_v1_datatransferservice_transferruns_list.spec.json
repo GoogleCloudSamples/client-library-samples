@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigquerydatatransfer_v1_datatransferservice_transferruns_list",
+  "title": "List transfer runs",
+  "description": "Lists all runs for a BigQuery Data Transfer Service transfer configuration.",
+  "dateCreated": "2025-12-09T04:58:22.146Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "To monitor the status of data transfers, developers can list all the individual runs for a given transfer configuration. This is useful for auditing, debugging failed runs, or tracking data freshness.",
+    "products": [
+      "bigquerydatatransfer"
+    ]
+  },
+  "extended": {
+    "api": "bigquerydatatransfer.googleapis.com",
+    "method": "ListTransferRuns",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigquerydatatransfer_v1_datatransferservice_transferruns_list",
+      "title": "List transfer runs",
+      "description": "Lists all runs for a BigQuery Data Transfer Service transfer configuration."
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-data-transfer",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-datatransfer",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

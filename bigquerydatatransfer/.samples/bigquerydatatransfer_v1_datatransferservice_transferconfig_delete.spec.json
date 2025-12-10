@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigquerydatatransfer_v1_datatransferservice_transferconfig_delete",
+  "title": "Delete a data transfer configuration",
+  "description": "Deletes a data transfer configuration in the BigQuery Data Transfer Service. Deleting a configuration stops future transfer runs but does not remove data that has already been transferred to BigQuery.",
+  "dateCreated": "2025-12-09T04:55:26.387Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample covers the use case of programmatically removing an existing data transfer configuration. A developer might do this to clean up obsolete transfers, for example, when a data source is retired or a project's data ingestion requirements change. This helps manage resources and prevent unwanted data transfers.",
+    "products": [
+      "bigquerydatatransfer"
+    ]
+  },
+  "extended": {
+    "api": "bigquerydatatransfer.googleapis.com",
+    "method": "DeleteTransferConfig",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigquerydatatransfer_v1_datatransferservice_transferconfig_delete",
+      "title": "Delete a data transfer configuration",
+      "description": "Deletes a data transfer configuration in the BigQuery Data Transfer Service. Deleting a configuration stops future transfer runs but does not remove data that has already been transferred to BigQuery."
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-data-transfer",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-datatransfer",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}
