@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START bigquerydatatransfer_v1_datatransferservice_datasources_list]
+# [START bigquerydatatransfer_datatransferservice_datasources_list]
 import google.api_core.exceptions
 from google.cloud import bigquery_datatransfer_v1
 
@@ -46,4 +47,7 @@ def list_data_sources(project_id: str) -> None:
         print(f"Error: Project '{project_id}' not found.")
     except google.api_core.exceptions.GoogleAPICallError as e:
         print(f"Error: An error occurred: {e}")
-    # [END bigquerydatatransfer_v1_datatransferservice_datasources_list]
+
+
+# [END bigquerydatatransfer_datatransferservice_datasources_list]
+# [END bigquerydatatransfer_v1_datatransferservice_datasources_list]

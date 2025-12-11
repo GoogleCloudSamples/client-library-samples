@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START bigquerydatatransfer_v1_datatransferservice_transferruns_delete]
+# [START bigquerydatatransfer_datatransferservice_transferruns_delete]
 import google.api_core.exceptions
 from google.cloud import bigquery_datatransfer_v1
 
@@ -50,4 +51,5 @@ def delete_transfer_run(
         print(f"Error: Transfer run '{run_name}' not found.")
 
 
+# [END bigquerydatatransfer_datatransferservice_transferruns_delete]
 # [END bigquerydatatransfer_v1_datatransferservice_transferruns_delete]
