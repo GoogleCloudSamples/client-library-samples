@@ -1,0 +1,4 @@
+DATABASE ExampleDatabase;
+SELECT * FROM teratable1;
+SELECT invalidcolumn, fname FROM teratable2;
+INSERT INTO teratable3 (foo, bar, baz) VALUES (1,2,3);

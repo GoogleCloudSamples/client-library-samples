@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigquerymigration_v2_migrationservice_migrationworkflow_create",
+  "title": "Create a migration workflow",
+  "description": "Creates a migration workflow in the BigQuery Migration API. A migration workflow contains a list of subtasks that are executed to migrate a data warehouse to BigQuery.",
+  "dateCreated": "2025-12-09T02:30:22.035Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Developers create a migration workflow to orchestrate the subtasks involved in a database migration, such as translation and execution. This workflow acts as the container for the entire migration process.",
+    "products": [
+      "bigquerymigration"
+    ]
+  },
+  "extended": {
+    "api": "bigquerymigration.googleapis.com",
+    "method": "CreateMigrationWorkflow",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigquerymigration_v2_migrationservice_migrationworkflow_create",
+      "title": "Create a migration workflow",
+      "description": "Creates a migration workflow in the BigQuery Migration API. A migration workflow contains a list of subtasks that are executed to migrate a data warehouse to BigQuery."
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-migration",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-migration",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}
