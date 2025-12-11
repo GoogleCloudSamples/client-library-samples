@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigquerymigration_v2alpha_migrationservice_migrationsubtask_get",
+  "title": "Get a migration subtask",
+  "description": "Get the details of a specific migration subtask from the BigQuery Migration API.",
+  "dateCreated": "2025-12-09T04:28:50.329Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "When managing a database migration with the BigQuery Migration API, a developer might need to check the state of an individual step. This sample retrieves a single migration subtask resource so the developer can examine its properties, such as task type, state, and any error messages.",
+    "products": [
+      "bigquerymigration"
+    ]
+  },
+  "extended": {
+    "api": "bigquerymigration.googleapis.com",
+    "method": "GetMigrationSubtask",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigquerymigration_v2alpha_migrationservice_migrationsubtask_get",
+      "title": "Get a migration subtask",
+      "description": "Get the details of a specific migration subtask from the BigQuery Migration API."
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-bigquery-migration",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "NODEJS-@google-cloud/bigquery-migration",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}
