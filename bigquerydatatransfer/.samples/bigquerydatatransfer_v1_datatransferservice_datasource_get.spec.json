@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigquerydatatransfer_v1_datatransferservice_datasource_get",
+  "title": "Get a data source",
+  "description": "Retrieves information for a specific data source, such as Google Ads or YouTube, supported by the BigQuery Data Transfer Service.",
+  "dateCreated": "2025-12-09T04:54:00.708Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "To automate the creation of data transfers, a developer first needs to know the specific parameters and requirements of the intended data source. Fetching this metadata from the API is a necessary prerequisite for building dynamic transfer configuration logic.",
+    "products": [
+      "bigquerydatatransfer"
+    ]
+  },
+  "extended": {
+    "api": "bigquerydatatransfer.googleapis.com",
+    "method": "GetDataSource",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigquerydatatransfer_v1_datatransferservice_datasource_get",
+      "title": "Get a data source",
+      "description": "Retrieves information for a specific data source, such as Google Ads or YouTube, supported by the BigQuery Data Transfer Service."
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-data-transfer",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-datatransfer",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

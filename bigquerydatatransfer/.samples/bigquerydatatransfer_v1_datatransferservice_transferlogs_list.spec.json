@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigquerydatatransfer_v1_datatransferservice_transferlogs_list",
+  "title": "Get log messages for a transfer run",
+  "description": "Retrieves all log messages produced during a specific BigQuery Data Transfer Service transfer run.",
+  "dateCreated": "2025-12-09T04:58:55.959Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "A developer can programmatically fetch troubleshooting information for a data transfer. This is useful for building an automated alerting system that scans log messages for specific error patterns or for archiving transfer run history for audit purposes.",
+    "products": [
+      "bigquerydatatransfer"
+    ]
+  },
+  "extended": {
+    "api": "bigquerydatatransfer.googleapis.com",
+    "method": "ListTransferLogs",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigquerydatatransfer_v1_datatransferservice_transferlogs_list",
+      "title": "Get log messages for a transfer run",
+      "description": "Retrieves all log messages produced during a specific BigQuery Data Transfer Service transfer run."
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-data-transfer",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-datatransfer",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}
