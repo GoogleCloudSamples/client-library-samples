@@ -18,7 +18,7 @@
 // [START bigquerydatatransfer_datatransferservice_datasource_get]
 const {
   DataTransferServiceClient,
-} = require('@google-cloud/bigquery-data-transfer');
+} = require('@google-cloud/bigquery-data-transfer').v1;
 const {status} = require('@grpc/grpc-js');
 
 const client = new DataTransferServiceClient();
