@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START bigquerydatatransfer_v1_datatransferservice_transferconfigs_list]
+# [START bigquerydatatransfer_datatransferservice_transferconfigs_list]
 import google.api_core.exceptions
 from google.cloud import bigquery_datatransfer_v1
 
@@ -54,4 +55,5 @@ def list_transfer_configs(project_id: str, location: str) -> None:
         )
 
 
+# [END bigquerydatatransfer_datatransferservice_transferconfigs_list]
 # [END bigquerydatatransfer_v1_datatransferservice_transferconfigs_list]

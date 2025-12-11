@@ -14,6 +14,7 @@
 
 
 # [START bigquerydatatransfer_v1_datatransferservice_transferconfig_update]
+# [START bigquerydatatransfer_datatransferservice_transferconfig_update]
 import google.api_core.exceptions
 from google.cloud import bigquery_datatransfer_v1
 from google.protobuf import field_mask_pb2
@@ -38,9 +39,9 @@ def update_transfer_config(
         transfer_config_id: The transfer configuration ID
     """
     transfer_config_name = client.transfer_config_path(
-            project=f"{project_id}/locations/{location}",
-            transfer_config=transfer_config_id,
-        )
+        project=f"{project_id}/locations/{location}",
+        transfer_config=transfer_config_id,
+    )
 
     transfer_config = bigquery_datatransfer_v1.types.TransferConfig(
         name=transfer_config_name,
@@ -60,4 +61,5 @@ def update_transfer_config(
         print(f"Error: Transfer config '{transfer_config_name}' not found.")
 
 
+# [END bigquerydatatransfer_datatransferservice_transferconfig_update]
 # [END bigquerydatatransfer_v1_datatransferservice_transferconfig_update]

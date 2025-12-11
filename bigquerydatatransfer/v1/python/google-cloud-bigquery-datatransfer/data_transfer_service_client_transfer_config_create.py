@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START bigquerydatatransfer_v1_datatransferservice_transferconfig_create]
+# [START bigquerydatatransfer_datatransferservice_transferconfig_create]
 import google.api_core.exceptions
 from google.cloud import bigquery_datatransfer_v1
 from google.protobuf import struct_pb2
@@ -79,4 +80,5 @@ def create_transfer_config(
         print(f"Error: Could not create transfer config: {e}")
 
 
+# [END bigquerydatatransfer_datatransferservice_transferconfig_create]
 # [END bigquerydatatransfer_v1_datatransferservice_transferconfig_create]

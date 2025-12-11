@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START bigquerydatatransfer_v1_datatransferservice_transferconfig_delete]
+# [START bigquerydatatransfer_datatransferservice_transferconfig_delete]
 import google.api_core.exceptions
 from google.cloud import bigquery_datatransfer_v1
 
@@ -43,4 +44,5 @@ def delete_transfer_config(
         print(f"Error: Transfer config '{name}' not found.")
 
 
+# [END bigquerydatatransfer_datatransferservice_transferconfig_delete]
 # [END bigquerydatatransfer_v1_datatransferservice_transferconfig_delete]
