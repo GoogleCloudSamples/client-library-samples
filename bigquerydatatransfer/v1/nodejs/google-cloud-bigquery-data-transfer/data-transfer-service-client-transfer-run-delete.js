@@ -53,7 +53,7 @@ async function deleteTransferRun(
     console.log(`Deleted transfer run ${name}.`);
   } catch (err) {
     if (err.code === status.NOT_FOUND) {
-      console.log(`Transfer run ${name} not found.`);
+      console.error(`Transfer run ${name} not found.`);
     } else {
       console.error('Error deleting transfer run:', err);
     }

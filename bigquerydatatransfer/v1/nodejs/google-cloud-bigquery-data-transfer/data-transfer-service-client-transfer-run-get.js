@@ -60,7 +60,7 @@ async function getTransferRun(
     console.log(`  State: ${run.state}`);
   } catch (err) {
     if (err.code === status.NOT_FOUND) {
-      console.log(`Transfer run ${name} not found.`);
+      console.error(`Transfer run ${name} not found.`);
     } else {
       console.error(`Error getting transfer run ${name}:`, err);
     }

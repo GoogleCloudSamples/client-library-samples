@@ -42,13 +42,15 @@ async function getTransferConfig(projectId, location, configId) {
 
   try {
     const [config] = await client.getTransferConfig(request);
+    console.log({config});
     console.log(`Got transfer config: ${config.name}`);
     console.log(`  Display Name: ${config.displayName}`);
     console.log(`  Data Source ID: ${config.dataSourceId}`);
     console.log(`  Destination Dataset ID: ${config.destinationDatasetId}`);
+    console.log(`  State: ${config.state}`);
   } catch (err) {
     if (err.code === status.NOT_FOUND) {
-      console.log(
+      console.error(
         `Transfer config ${configId} not found in project ${projectId} in location ${location}.`,
       );
     } else {

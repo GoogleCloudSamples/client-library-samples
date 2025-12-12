@@ -42,7 +42,7 @@ async function listMigrationSubtasks(projectId, location, workflowId) {
     const [subtasks] = await client.listMigrationSubtasks(request);
 
     if (subtasks.length === 0) {
-      console.log(`No migration subtasks found for workflow: ${workflowId}`);
+      console.error(`No migration subtasks found for workflow: ${workflowId}`);
       return;
     }
 
