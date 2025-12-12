@@ -1,0 +1,26 @@
+{
+	"id": "translate_v3_translationservice_models_list",
+	"title": "list models",
+	"description": "Cloud Translation sample showing how to list_models",
+	"collection": "translate_api_samples",
+	"products": [
+		"translate"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "translate.googleapis.com",
+		"method": "list_models"
+	},
+	"regionTags": [
+		{
+			"name": "translate_v3_translationservice_models_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
