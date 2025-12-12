@@ -68,7 +68,6 @@ async function createTransferConfig(
 
   try {
     const [config] = await client.createTransferConfig(request);
-    console.log({config});
     console.log(`Created transfer config: ${config.name}`);
     console.log(`  Display Name: ${config.displayName}`);
     console.log(`  Data Source ID: ${config.dataSourceId}`);
