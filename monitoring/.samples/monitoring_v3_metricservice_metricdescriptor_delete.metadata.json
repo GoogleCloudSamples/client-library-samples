@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_metricservice_metricdescriptor_delete",
+	"title": "delete metric_descriptor",
+	"description": "Cloud Monitoring sample showing how to delete_metric_descriptor",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "delete_metric_descriptor"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_metricservice_metricdescriptor_delete"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

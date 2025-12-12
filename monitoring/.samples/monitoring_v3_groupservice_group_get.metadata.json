@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_groupservice_group_get",
+	"title": "get group",
+	"description": "Cloud Monitoring sample showing how to get_group",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "get_group"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_groupservice_group_get"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
