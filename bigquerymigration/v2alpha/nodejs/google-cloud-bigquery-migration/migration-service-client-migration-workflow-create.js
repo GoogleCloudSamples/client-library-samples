@@ -59,6 +59,7 @@ async function createMigrationWorkflow(
 
   try {
     const [workflow] = await client.createMigrationWorkflow(request);
+    console.log(`  Migration Workflow Name: ${workflow.name}`);
     console.log(`  Display Name: ${workflow.displayName}`);
     console.log(`  State: ${workflow.state}`);
     console.log('  Tasks:');
