@@ -63,29 +63,6 @@ async function listMigrationWorkflows(projectId, location = 'us') {
 }
 // [END bigquerymigration_v2alpha_migrationservice_migrationworkflows_list]
 
-async function main(args) {
-  if (args.length !== 2) {
-    throw new Error(`2 arguments required but received ${args.length}.`);
-  }
-  await listMigrationWorkflows(args[0], args[1]);
-}
-
-if (require.main === module) {
-  process.on('uncaughtException', err => {
-    console.error(`Error running sample: ${err.message}`);
-    console.error(`To run this sample from the command-line, provide the following arguments:
- - Google Cloud Project ID (for example, 'example-project-id')
- - Google Cloud Location (for example, 'us')
-
-Usage:
-
- node migration-service-client-migration-workflows-list.js example-project-id us
-`);
-  });
-
-  main(process.argv.slice(2));
-}
-
 module.exports = {
   listMigrationWorkflows,
 };
