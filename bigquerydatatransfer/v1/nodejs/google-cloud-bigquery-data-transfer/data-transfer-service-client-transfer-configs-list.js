@@ -39,7 +39,7 @@ async function listTransferConfigs(projectId, location = 'us-central1') {
     const [configs] = await client.listTransferConfigs(request);
 
     if (configs.length === 0) {
-      console.log(
+      console.error(
         `No transfer configurations found in project '${projectId}' at location '${location}'.`,
       );
       return;
@@ -51,10 +51,11 @@ async function listTransferConfigs(projectId, location = 'us-central1') {
       console.log(`  Display Name: ${config.displayName}`);
       console.log(`  Data Source ID: ${config.dataSourceId}`);
       console.log(`  Destination Dataset ID: ${config.destinationDatasetId}`);
+      console.log(`  State: ${config.state}`);
     }
   } catch (err) {
     if (err.code === status.NOT_FOUND) {
-      console.log(
+      console.error(
         `Project '${projectId}' not found or BigQuery Data Transfer API is not enabled.`,
       );
     } else {

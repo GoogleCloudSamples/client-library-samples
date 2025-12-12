@@ -47,7 +47,7 @@ async function deleteTransferConfig(projectId, location, configId) {
     console.log(`Transfer config deleted '${configId}'`);
   } catch (err) {
     if (err.code === status.NOT_FOUND) {
-      console.log(`Transfer config '${configId}' not found.`);
+      console.error(`Transfer config '${configId}' not found.`);
     } else {
       console.error(`Error deleting transfer config '${configId}':`, err);
     }

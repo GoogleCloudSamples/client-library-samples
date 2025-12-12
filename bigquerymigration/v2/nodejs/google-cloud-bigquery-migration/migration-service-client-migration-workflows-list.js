@@ -38,7 +38,7 @@ async function listMigrationWorkflows(projectId, location = 'us') {
     const [workflows] = await client.listMigrationWorkflows(request);
 
     if (workflows.length === 0) {
-      console.log(
+      console.error(
         `No workflows found in project ${projectId} at location ${location}.`,
       );
       return;

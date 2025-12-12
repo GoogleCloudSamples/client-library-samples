@@ -50,7 +50,7 @@ async function listDataSources(projectId) {
     }
   } catch (err) {
     if (err.code === status.NOT_FOUND) {
-      console.log(`Project ${projectId} not found.`);
+      console.error(`Project ${projectId} not found.`);
     } else {
       console.error('An error occurred:', err);
     }

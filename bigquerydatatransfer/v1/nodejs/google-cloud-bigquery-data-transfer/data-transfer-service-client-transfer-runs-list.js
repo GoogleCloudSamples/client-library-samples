@@ -42,7 +42,9 @@ async function listTransferRuns(projectId, location, configId) {
   try {
     const [transferRuns] = await client.listTransferRuns(request);
     if (transferRuns.length === 0) {
-      console.log(`No data sources found in project ${projectId}.`);
+      console.error(
+        `No transfer runs found in project ${projectId} for ${location}.`,
+      );
       return;
     }
     console.log(`Transfer runs for config '${configId}':`);
@@ -58,7 +60,7 @@ async function listTransferRuns(projectId, location, configId) {
     }
   } catch (err) {
     if (err.code === status.NOT_FOUND) {
-      console.log(`Transfer config not found: ${parent}`);
+      console.error(`Transfer run not found: ${parent}`);
     } else {
       console.error('Error listing transfer runs:', err);
     }

@@ -73,10 +73,12 @@ async function createTransferConfig(
     console.log(`  Data Source ID: ${config.dataSourceId}`);
     console.log(`  Destination Dataset ID: ${config.destinationDatasetId}`);
   } catch (err) {
-    if (err.code === status.ALREADY_EXISTS) {
-      console.log(
-        `Transfer config  '${transferConfig.displayName}' (${transferConfig.name}) already exists in project '${projectId}'.`,
+    if (err.code === status.INVALID_ARGUMENT) {
+      console.error(
+        `Error: Invalid argument provided for creating Migration '${transferConfig.displayName}'. ` +
+          `Details: ${err.message}. Make sure request parameters are valid.`,
       );
+      console.error(err);
     } else {
       console.error('Error creating transfer config:', err);
     }

@@ -51,7 +51,7 @@ async function updateTransferConfig(projectId, location, configId) {
     console.log(`  Updated display name: ${response.displayName}`);
   } catch (err) {
     if (err.code === status.NOT_FOUND) {
-      console.log(`Transfer config not found: ${transferConfig.name}`);
+      console.error(`Transfer config not found: ${transferConfig.name}`);
     } else {
       console.error('An error occurred:', err);
     }

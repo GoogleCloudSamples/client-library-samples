@@ -16,9 +16,8 @@
 
 // [START bigquerydatatransfer_v1_datatransferservice_datasource_get]
 // [START bigquerydatatransfer_datatransferservice_datasource_get]
-const {
-  DataTransferServiceClient,
-} = require('@google-cloud/bigquery-data-transfer').v1;
+const {DataTransferServiceClient} =
+  require('@google-cloud/bigquery-data-transfer').v1;
 const {status} = require('@grpc/grpc-js');
 
 const client = new DataTransferServiceClient();
@@ -50,7 +49,7 @@ async function getDataSource(projectId, location, dataSourceId) {
     console.log(`  Data Source ID: ${dataSource.dataSourceId}`);
   } catch (err) {
     if (err.code === status.NOT_FOUND) {
-      console.log(
+      console.error(
         `Data source ${dataSourceId} not found in project ${projectId} in location ${location}.`,
       );
     } else {

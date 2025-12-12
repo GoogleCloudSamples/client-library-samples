@@ -46,12 +46,12 @@ async function listTransferLogs(projectId, location, transferConfigId, runId) {
   try {
     const [logs] = await client.listTransferLogs(request);
 
-    console.log(`Logs for run '${runId}':`);
     if (logs.length === 0) {
-      console.log('No logs found.');
+      console.error(`No transfer logs found for ${parent}.`);
       return;
     }
 
+    console.log(`Found ${logs.length} transfer log entries:`);
     for (const log of logs) {
       console.log(
         `  [${log.severity}] ${new Date(
@@ -61,7 +61,7 @@ async function listTransferLogs(projectId, location, transferConfigId, runId) {
     }
   } catch (err) {
     if (err.code === status.NOT_FOUND) {
-      console.log(`Transfer run not found: ${runId}`);
+      console.error(`Transfer run not found: ${runId}`);
     } else {
       console.error('Error listing transfer logs:', err);
     }
