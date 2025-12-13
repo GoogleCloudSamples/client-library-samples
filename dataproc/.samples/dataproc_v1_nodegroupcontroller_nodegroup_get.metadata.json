@@ -1,0 +1,26 @@
+{
+	"id": "dataproc_v1_nodegroupcontroller_nodegroup_get",
+	"title": "get node_group",
+	"description": "Dataproc sample showing how to get_node_group",
+	"collection": "dataproc_api_samples",
+	"products": [
+		"dataproc"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataproc.googleapis.com",
+		"method": "get_node_group"
+	},
+	"regionTags": [
+		{
+			"name": "dataproc_v1_nodegroupcontroller_nodegroup_get"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

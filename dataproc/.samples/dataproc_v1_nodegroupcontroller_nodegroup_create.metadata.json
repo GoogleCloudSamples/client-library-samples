@@ -1,0 +1,26 @@
+{
+	"id": "dataproc_v1_nodegroupcontroller_nodegroup_create",
+	"title": "create node_group",
+	"description": "Dataproc sample showing how to create_node_group",
+	"collection": "dataproc_api_samples",
+	"products": [
+		"dataproc"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataproc.googleapis.com",
+		"method": "create_node_group"
+	},
+	"regionTags": [
+		{
+			"name": "dataproc_v1_nodegroupcontroller_nodegroup_create"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
