@@ -1,0 +1,26 @@
+{
+	"id": "dataplex_v1_catalogservice_aspecttypes_list",
+	"title": "list aspect_types",
+	"description": "Dataplex sample showing how to list_aspect_types",
+	"collection": "dataplex_api_samples",
+	"products": [
+		"dataplex"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataplex.googleapis.com",
+		"method": "list_aspect_types"
+	},
+	"regionTags": [
+		{
+			"name": "dataplex_v1_catalogservice_aspecttypes_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
