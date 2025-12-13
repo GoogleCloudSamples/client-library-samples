@@ -1,0 +1,26 @@
+{
+	"id": "speech_v2_speech_customclasses_list",
+	"title": "list custom_classes",
+	"description": "Speech-to-Text sample showing how to list_custom_classes",
+	"collection": "speech_api_samples",
+	"products": [
+		"speech"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "speech.googleapis.com",
+		"method": "list_custom_classes"
+	},
+	"regionTags": [
+		{
+			"name": "speech_v2_speech_customclasses_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-12",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"id": "speech_v2_speech_recognizer_get",
+	"title": "get recognizer",
+	"description": "Speech-to-Text sample showing how to get_recognizer",
+	"collection": "speech_api_samples",
+	"products": [
+		"speech"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "speech.googleapis.com",
+		"method": "get_recognizer"
+	},
+	"regionTags": [
+		{
+			"name": "speech_v2_speech_recognizer_get"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-12",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
