@@ -27,7 +27,7 @@ def list_transfer_runs(project_id: str, transfer_config_id: str, location: str) 
 
     Args:
         project_id: The Google Cloud project ID.
-        transfer_config_id: The Data Transfer configuration ID.
+        transfer_config_id: The data transfer configuration ID.
         location: The geographic location of the transfer configuration (e.g., 'us-central1').
     """
 
