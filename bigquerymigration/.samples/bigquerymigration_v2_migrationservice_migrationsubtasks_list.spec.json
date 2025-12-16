@@ -21,6 +21,10 @@
       "name": "bigquerymigration_v2_migrationservice_migrationsubtasks_list",
       "title": "List all migration subtasks for a workflow",
       "description": "Lists all migration subtasks for a specified migration workflow. Use this to monitor the status of individual steps within a larger BigQuery migration."
+    },
+    {
+      "name": "bigquerymigration_migrationservice_migrationsubtasks_list",
+      "autoDocsPublish": true
     }
   ],
   "instances": [

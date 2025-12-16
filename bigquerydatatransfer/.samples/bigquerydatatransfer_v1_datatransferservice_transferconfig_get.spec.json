@@ -25,6 +25,9 @@
     {
       "name": "bigquerydatatransfer_get_config_info",
       "autoDocsPublish": true
+    },
+    {
+      "name": "bigquerydatatransfer_datatransferservice_transferconfig_get"
     }
   ],
   "instances": [

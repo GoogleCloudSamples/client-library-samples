@@ -21,6 +21,10 @@
       "name": "bigquerydatatransfer_v1_datatransferservice_datasource_get",
       "title": "Get a data source",
       "description": "Retrieves information for a specific data source, such as Google Ads or YouTube, supported by the BigQuery Data Transfer Service."
+    },
+    {
+      "name": "bigquerydatatransfer_datatransferservice_datasource_get",
+      "autoDocsPublish": true
     }
   ],
   "instances": [

@@ -21,6 +21,10 @@
       "name": "bigquerymigration_v2_migrationservice_migrationworkflow_create",
       "title": "Create a migration workflow",
       "description": "Creates a migration workflow in the BigQuery Migration API. A migration workflow contains a list of subtasks that are executed to migrate a data warehouse to BigQuery."
+    },
+    {
+      "name": "bigquerymigration_migrationservice_migrationworkflow_create",
+      "autoDocsPublish": true
     }
   ],
   "instances": [

@@ -25,6 +25,9 @@
     {
       "name": "bigquerydatatransfer_get_run_history",
       "autoDocsPublish": true
+    },
+    {
+      "name": "bigquerydatatransfer_datatransferservice_transferruns_list"
     }
   ],
   "instances": [

@@ -25,6 +25,9 @@
     {
       "name": "bigquerydatatransfer_quickstart",
       "autoDocsPublish": true
+    },
+    {
+      "name": "bigquerydatatransfer_datatransferservice_datasources_list"
     }
   ],
   "instances": [

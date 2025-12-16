@@ -25,6 +25,9 @@
     {
       "name": "bigquerydatatransfer_create_cloudstorage_transfer",
       "autoDocsPublish": true
+    },
+    {
+      "name": "bigquerydatatransfer_datatransferservice_transferconfig_create"
     }
   ],
   "instances": [

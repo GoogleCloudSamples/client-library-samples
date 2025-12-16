@@ -25,6 +25,9 @@
     {
       "name": "bigquerydatatransfer_delete_transfer",
       "autoDocsPublish": true
+    },
+    {
+      "name": "bigquerydatatransfer_datatransferservice_transferconfig_delete"
     }
   ],
   "instances": [

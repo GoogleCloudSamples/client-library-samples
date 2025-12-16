@@ -21,6 +21,10 @@
       "name": "bigquerydatatransfer_v1_datatransferservice_transferlogs_list",
       "title": "Get log messages for a transfer run",
       "description": "Retrieves all log messages produced during a specific BigQuery Data Transfer Service transfer run."
+    },
+    {
+      "name": "bigquerydatatransfer_datatransferservice_transferlogs_list",
+      "autoDocsPublish": true
     }
   ],
   "instances": [
