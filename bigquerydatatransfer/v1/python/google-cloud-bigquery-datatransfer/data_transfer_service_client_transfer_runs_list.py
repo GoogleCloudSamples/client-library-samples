@@ -14,6 +14,7 @@
 
 # [START bigquerydatatransfer_v1_datatransferservice_transferruns_list]
 # [START bigquerydatatransfer_datatransferservice_transferruns_list]
+# [START bigquerydatatransfer_get_run_history]
 import google.api_core.exceptions
 from google.cloud import bigquery_datatransfer_v1
 
@@ -50,5 +51,6 @@ def list_transfer_runs(project_id: str, transfer_config_id: str, location: str) 
         )
 
 
+# [END bigquerydatatransfer_get_run_history]
 # [END bigquerydatatransfer_datatransferservice_transferruns_list]
 # [END bigquerydatatransfer_v1_datatransferservice_transferruns_list]

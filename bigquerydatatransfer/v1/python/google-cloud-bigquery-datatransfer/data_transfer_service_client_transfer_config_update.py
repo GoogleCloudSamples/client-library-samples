@@ -15,6 +15,7 @@
 
 # [START bigquerydatatransfer_v1_datatransferservice_transferconfig_update]
 # [START bigquerydatatransfer_datatransferservice_transferconfig_update]
+# [START bigquerydatatransfer_update_config]
 import google.api_core.exceptions
 from google.cloud import bigquery_datatransfer_v1
 from google.protobuf import field_mask_pb2
@@ -61,5 +62,6 @@ def update_transfer_config(
         print(f"Error: Transfer config '{transfer_config_name}' not found.")
 
 
+# [END bigquerydatatransfer_update_config]
 # [END bigquerydatatransfer_datatransferservice_transferconfig_update]
 # [END bigquerydatatransfer_v1_datatransferservice_transferconfig_update]

@@ -16,6 +16,7 @@
 
 // [START bigquerydatatransfer_v1_datatransferservice_transferconfigs_list]
 // [START bigquerydatatransfer_datatransferservice_transferconfigs_list]
+// [START bigquerydatatransfer_list_configs]
 const {
   DataTransferServiceClient,
 } = require('@google-cloud/bigquery-data-transfer');
@@ -63,6 +64,7 @@ async function listTransferConfigs(projectId, location = 'us-central1') {
     }
   }
 }
+// [END bigquerydatatransfer_list_configs]
 // [END bigquerydatatransfer_datatransferservice_transferconfigs_list]
 // [END bigquerydatatransfer_v1_datatransferservice_transferconfigs_list]
 

@@ -16,6 +16,7 @@
 
 // [START bigquerydatatransfer_v1_datatransferservice_datasources_list]
 // [START bigquerydatatransfer_datatransferservice_datasources_list]
+// [START bigquerydatatransfer_quickstart]
 const {
   DataTransferServiceClient,
 } = require('@google-cloud/bigquery-data-transfer');
@@ -56,6 +57,7 @@ async function listDataSources(projectId) {
     }
   }
 }
+// [END bigquerydatatransfer_quickstart]
 // [END bigquerydatatransfer_datatransferservice_datasources_list]
 // [END bigquerydatatransfer_v1_datatransferservice_datasources_list]
 
