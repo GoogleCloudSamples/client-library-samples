@@ -14,6 +14,7 @@
 
 # [START bigquerydatatransfer_v1_datatransferservice_datasources_list]
 # [START bigquerydatatransfer_datatransferservice_datasources_list]
+# [START bigquerydatatransfer_quickstart]
 import google.api_core.exceptions
 from google.cloud import bigquery_datatransfer_v1
 
@@ -49,5 +50,6 @@ def list_data_sources(project_id: str) -> None:
         print(f"Error: An error occurred: {e}")
 
 
+# [END bigquerydatatransfer_quickstart]
 # [END bigquerydatatransfer_datatransferservice_datasources_list]
 # [END bigquerydatatransfer_v1_datatransferservice_datasources_list]

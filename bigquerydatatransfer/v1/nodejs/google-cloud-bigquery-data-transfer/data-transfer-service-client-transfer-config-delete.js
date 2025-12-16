@@ -16,6 +16,7 @@
 
 // [START bigquerydatatransfer_v1_datatransferservice_transferconfig_delete]
 // [START bigquerydatatransfer_datatransferservice_transferconfig_delete]
+// [START bigquerydatatransfer_delete_transfer]
 const {
   DataTransferServiceClient,
 } = require('@google-cloud/bigquery-data-transfer');
@@ -53,6 +54,8 @@ async function deleteTransferConfig(projectId, location, configId) {
     }
   }
 }
+
+// [END bigquerydatatransfer_delete_transfer]
 // [END bigquerydatatransfer_datatransferservice_transferconfig_delete]
 // [END bigquerydatatransfer_v1_datatransferservice_transferconfig_delete]
 

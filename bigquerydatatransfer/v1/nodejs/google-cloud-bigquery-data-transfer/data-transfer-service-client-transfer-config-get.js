@@ -16,6 +16,7 @@
 
 // [START bigquerydatatransfer_v1_datatransferservice_transferconfig_get]
 // [START bigquerydatatransfer_datatransferservice_transferconfig_get]
+// [START bigquerydatatransfer_get_config_info]
 const {DataTransferServiceClient} =
   require('@google-cloud/bigquery-data-transfer').v1;
 const {status} = require('@grpc/grpc-js');
@@ -57,6 +58,7 @@ async function getTransferConfig(projectId, location, configId) {
     }
   }
 }
+// [END bigquerydatatransfer_get_config_info]
 // [END bigquerydatatransfer_datatransferservice_transferconfig_get]
 // [END bigquerydatatransfer_v1_datatransferservice_transferconfig_get]
 

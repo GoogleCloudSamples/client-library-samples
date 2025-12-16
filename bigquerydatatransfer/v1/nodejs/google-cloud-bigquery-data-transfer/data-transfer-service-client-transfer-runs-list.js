@@ -16,6 +16,7 @@
 
 // [START bigquerydatatransfer_v1_datatransferservice_transferruns_list]
 // [START bigquerydatatransfer_datatransferservice_transferruns_list]
+// [START bigquerydatatransfer_get_run_history]
 const {
   DataTransferServiceClient,
 } = require('@google-cloud/bigquery-data-transfer');
@@ -66,6 +67,7 @@ async function listTransferRuns(projectId, location, configId) {
     }
   }
 }
+// [END bigquerydatatransfer_get_run_history]
 // [END bigquerydatatransfer_datatransferservice_transferruns_list]
 // [END bigquerydatatransfer_v1_datatransferservice_transferruns_list]
 

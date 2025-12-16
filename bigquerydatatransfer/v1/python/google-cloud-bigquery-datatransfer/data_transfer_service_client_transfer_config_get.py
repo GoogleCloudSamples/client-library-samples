@@ -14,6 +14,7 @@
 
 # [START bigquerydatatransfer_v1_datatransferservice_transferconfig_get]
 # [START bigquerydatatransfer_datatransferservice_transferconfig_get]
+# [START bigquerydatatransfer_get_config_info]
 import google.api_core.exceptions
 from google.cloud import bigquery_datatransfer_v1
 
@@ -57,6 +58,6 @@ def get_transfer_config(
     except google.api_core.exceptions.NotFound:
         print(f"Error: Transfer config '{transfer_config_name}' not found.")
 
-
+# [END bigquerydatatransfer_get_config_info]
 # [END bigquerydatatransfer_datatransferservice_transferconfig_get]
 # [END bigquerydatatransfer_v1_datatransferservice_transferconfig_get]
