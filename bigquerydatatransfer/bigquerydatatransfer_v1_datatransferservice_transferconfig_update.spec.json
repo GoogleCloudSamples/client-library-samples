@@ -1,0 +1,49 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigquerydatatransfer_v1_datatransferservice_transferconfig_update",
+  "title": "Update a transfer configuration",
+  "description": "Updates the display name of an existing transfer configuration in the BigQuery Data Transfer Service.",
+  "dateCreated": "2025-12-09T04:54:58.892Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample addresses the use case of programmatically modifying an existing data transfer configuration. Developers can use this method to change properties such as the display name (as shown), the transfer schedule, or notification settings. Updating the display name helps with organization and identification when managing numerous data transfers.",
+    "products": [
+      "bigquerydatatransfer"
+    ]
+  },
+  "extended": {
+    "api": "bigquerydatatransfer.googleapis.com",
+    "method": "UpdateTransferConfig",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigquerydatatransfer_v1_datatransferservice_transferconfig_update",
+      "title": "Update a transfer configuration",
+      "description": "Updates the display name of an existing transfer configuration in the BigQuery Data Transfer Service."
+    },
+    {
+      "name": "bigquerydatatransfer_update_config",
+      "autoDocsPublish": true
+    },
+    {
+      "name": "bigquerydatatransfer_datatransferservice_transferconfig_update"
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-data-transfer",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-datatransfer",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

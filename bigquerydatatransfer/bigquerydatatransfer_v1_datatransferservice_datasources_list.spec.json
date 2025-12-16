@@ -1,0 +1,49 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigquerydatatransfer_v1_datatransferservice_datasources_list",
+  "title": "List data sources",
+  "description": "Lists all supported data sources for the BigQuery Data Transfer Service.",
+  "dateCreated": "2025-12-09T04:57:27.084Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "A developer needs to programmatically discover what types of data transfers are supported by the BigQuery Data Transfer Service. This sample lists all available data sources, which is a necessary first step before creating a transfer configuration.",
+    "products": [
+      "bigquerydatatransfer"
+    ]
+  },
+  "extended": {
+    "api": "bigquerydatatransfer.googleapis.com",
+    "method": "ListDataSources",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigquerydatatransfer_v1_datatransferservice_datasources_list",
+      "title": "List data sources",
+      "description": "Lists all supported data sources for the BigQuery Data Transfer Service."
+    },
+    {
+      "name": "bigquerydatatransfer_quickstart",
+      "autoDocsPublish": true
+    },
+    {
+      "name": "bigquerydatatransfer_datatransferservice_datasources_list"
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-data-transfer",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-datatransfer",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

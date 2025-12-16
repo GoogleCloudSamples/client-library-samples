@@ -1,0 +1,49 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigquerydatatransfer_v1_datatransferservice_transferconfigs_list",
+  "title": "List data transfer configurations",
+  "description": "Lists all BigQuery Data Transfer Service transfer configurations for a given project.",
+  "dateCreated": "2025-12-09T04:57:53.956Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "A developer or administrator needs to get an overview of all the data transfer jobs configured for a project. This is useful for auditing existing data pipelines, programmatically managing configurations, or identifying which transfers are active.",
+    "products": [
+      "bigquerydatatransfer"
+    ]
+  },
+  "extended": {
+    "api": "bigquerydatatransfer.googleapis.com",
+    "method": "ListTransferConfigs",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigquerydatatransfer_v1_datatransferservice_transferconfigs_list",
+      "title": "List data transfer configurations",
+      "description": "Lists all BigQuery Data Transfer Service transfer configurations for a given project."
+    },
+    {
+      "name": "bigquerydatatransfer_list_configs",
+      "autoDocsPublish": true
+    },
+    {
+      "name": "bigquerydatatransfer_datatransferservice_transferconfigs_list"
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-data-transfer",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-datatransfer",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigquerymigration_v2_migrationservice_migrationsubtasks_list",
+  "title": "List all migration subtasks for a workflow",
+  "description": "Lists all migration subtasks for a specified migration workflow. Use this to monitor the status of individual steps within a larger BigQuery migration.",
+  "dateCreated": "2025-12-09T04:26:58.608Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "To effectively manage and debug a BigQuery migration, an administrator or developer needs visibility into the individual steps of the process. This sample provides the code to retrieve all subtasks associated with a migration workflow, enabling them to programmatically check the status of each step and automate monitoring or alerting.",
+    "products": [
+      "bigquerymigration"
+    ]
+  },
+  "extended": {
+    "api": "bigquerymigration.googleapis.com",
+    "method": "ListMigrationSubtasks",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigquerymigration_v2_migrationservice_migrationsubtasks_list",
+      "title": "List all migration subtasks for a workflow",
+      "description": "Lists all migration subtasks for a specified migration workflow. Use this to monitor the status of individual steps within a larger BigQuery migration."
+    },
+    {
+      "name": "bigquerymigration_migrationservice_migrationsubtasks_list",
+      "autoDocsPublish": true
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-bigquery-migration",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "NODEJS-@google-cloud/bigquery-migration",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

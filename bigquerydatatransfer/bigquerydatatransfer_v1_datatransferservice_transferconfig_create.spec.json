@@ -1,0 +1,49 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigquerydatatransfer_v1_datatransferservice_transferconfig_create",
+  "title": "Create a data transfer configuration",
+  "description": "Creates a transfer configuration in the BigQuery Data Transfer Service to schedule recurring data transfers from a supported data source into a BigQuery dataset.",
+  "dateCreated": "2025-12-09T04:54:25.005Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Automate data ingestion into BigQuery by creating a transfer configuration. This resource defines the data source, destination dataset, and schedule for a recurring data transfer job.",
+    "products": [
+      "bigquerydatatransfer"
+    ]
+  },
+  "extended": {
+    "api": "bigquerydatatransfer.googleapis.com",
+    "method": "CreateTransferConfig",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigquerydatatransfer_v1_datatransferservice_transferconfig_create",
+      "title": "Create a data transfer configuration",
+      "description": "Creates a transfer configuration in the BigQuery Data Transfer Service to schedule recurring data transfers from a supported data source into a BigQuery dataset."
+    },
+    {
+      "name": "bigquerydatatransfer_create_cloudstorage_transfer",
+      "autoDocsPublish": true
+    },
+    {
+      "name": "bigquerydatatransfer_datatransferservice_transferconfig_create"
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-data-transfer",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-datatransfer",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

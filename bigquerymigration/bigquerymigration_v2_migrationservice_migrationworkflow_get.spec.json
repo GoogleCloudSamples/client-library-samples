@@ -1,0 +1,46 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigquerymigration_v2_migrationservice_migrationworkflow_get",
+  "title": "Get a migration workflow",
+  "description": "Retrieves a specific migration workflow from the BigQuery Migration Service.",
+  "dateCreated": "2025-12-09T04:26:31.637Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample is for developers who need to programmatically inspect the state of an existing BigQuery migration workflow. For example, they might want to build a monitoring dashboard or a script that checks if a workflow has completed successfully before triggering a subsequent action.",
+    "products": [
+      "bigquerymigration"
+    ]
+  },
+  "extended": {
+    "api": "bigquerymigration.googleapis.com",
+    "method": "GetMigrationWorkflow",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigquerymigration_v2_migrationservice_migrationworkflow_get",
+      "title": "Get a migration workflow",
+      "description": "Retrieves a specific migration workflow from the BigQuery Migration Service."
+    },
+    {
+      "name": "bigquerymigration_migrationservice_migrationworkflow_get",
+      "autoDocsPublish": true
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-bigquery-migration",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "NODEJS-@google-cloud/bigquery-migration",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

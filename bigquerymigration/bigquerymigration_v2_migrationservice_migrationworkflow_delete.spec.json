@@ -1,0 +1,46 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigquerymigration_v2_migrationservice_migrationworkflow_delete",
+  "title": "Delete a BigQuery migration workflow",
+  "description": "Deletes a specified migration workflow from a BigQuery Migration Service project. The workflow must not be currently running.",
+  "dateCreated": "2025-12-09T04:25:29.608Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample addresses the operational need to remove migration workflows after a migration is complete or has been abandoned. Automating this cleanup prevents the accumulation of unused resources within a Google Cloud project.",
+    "products": [
+      "bigquerymigration"
+    ]
+  },
+  "extended": {
+    "api": "bigquerymigration.googleapis.com",
+    "method": "DeleteMigrationWorkflow",
+    "standard": true
+  },
+  "regionTags": [
+    {
+      "name": "bigquerymigration_v2_migrationservice_migrationworkflow_delete",
+      "title": "Delete a BigQuery migration workflow",
+      "description": "Deletes a specified migration workflow from a BigQuery Migration Service project. The workflow must not be currently running."
+    },
+    {
+      "name": "bigquerymigration_migrationservice_migrationworkflow_delete",
+      "autoDocsPublish": true
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-bigquery-migration",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "NODEJS-@google-cloud/bigquery-migration",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}
