@@ -1,0 +1,26 @@
+{
+	"id": "dlp_v2_dlpservice_deidentifytemplates_list_async",
+	"title": "list DeidentifyTemplates",
+	"description": "Sensitive Data Protection sample showing how to listDeidentifyTemplates",
+	"collection": "dlp_api_samples",
+	"products": [
+		"dlp"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dlp.googleapis.com",
+		"method": "listDeidentifyTemplates"
+	},
+	"regionTags": [
+		{
+			"name": "dlp_v2_dlpservice_deidentifytemplates_list_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
