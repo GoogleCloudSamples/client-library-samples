@@ -21,6 +21,10 @@
       "name": "bigquerydatatransfer_v1_datatransferservice_datasources_list",
       "title": "List data sources",
       "description": "Lists all supported data sources for the BigQuery Data Transfer Service."
+    },
+    {
+      "name": "bigquerydatatransfer_quickstart",
+      "autoDocsPublish": true
     }
   ],
   "instances": [

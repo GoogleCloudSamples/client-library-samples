@@ -21,6 +21,10 @@
       "name": "bigquerydatatransfer_v1_datatransferservice_transferrun_get",
       "title": "Get a transfer run",
       "description": "Retrieves information about a specific transfer run from the BigQuery Data Transfer Service."
+    },
+    {
+      "name": "bigquerydatatransfer_get_run_details",
+      "autoDocsPublish": true
     }
   ],
   "instances": [

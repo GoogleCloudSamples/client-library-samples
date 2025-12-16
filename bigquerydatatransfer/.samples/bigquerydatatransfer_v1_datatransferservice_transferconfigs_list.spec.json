@@ -21,6 +21,10 @@
       "name": "bigquerydatatransfer_v1_datatransferservice_transferconfigs_list",
       "title": "List data transfer configurations",
       "description": "Lists all BigQuery Data Transfer Service transfer configurations for a given project."
+    },
+    {
+      "name": "bigquerydatatransfer_list_configs",
+      "autoDocsPublish": true
     }
   ],
   "instances": [
