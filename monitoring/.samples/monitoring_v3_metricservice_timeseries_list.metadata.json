@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_metricservice_timeseries_list",
+	"title": "list time_series",
+	"description": "Cloud Monitoring sample showing how to list_time_series",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "list_time_series"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_metricservice_timeseries_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
