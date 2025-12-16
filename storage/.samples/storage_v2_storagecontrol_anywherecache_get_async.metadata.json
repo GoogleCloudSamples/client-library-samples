@@ -1,0 +1,26 @@
+{
+	"id": "storage_v2_storagecontrol_anywherecache_get_async",
+	"title": "get AnywhereCache",
+	"description": "Cloud Storage sample showing how to getAnywhereCache",
+	"collection": "storage_api_samples",
+	"products": [
+		"storage"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "storage.googleapis.com",
+		"method": "getAnywhereCache"
+	},
+	"regionTags": [
+		{
+			"name": "storage_v2_storagecontrol_anywherecache_get_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-03",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
