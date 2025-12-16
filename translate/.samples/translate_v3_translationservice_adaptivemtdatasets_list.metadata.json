@@ -1,0 +1,26 @@
+{
+	"id": "translate_v3_translationservice_adaptivemtdatasets_list",
+	"title": "list adaptive_mt_datasets",
+	"description": "Cloud Translation sample showing how to list_adaptive_mt_datasets",
+	"collection": "translate_api_samples",
+	"products": [
+		"translate"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "translate.googleapis.com",
+		"method": "list_adaptive_mt_datasets"
+	},
+	"regionTags": [
+		{
+			"name": "translate_v3_translationservice_adaptivemtdatasets_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
