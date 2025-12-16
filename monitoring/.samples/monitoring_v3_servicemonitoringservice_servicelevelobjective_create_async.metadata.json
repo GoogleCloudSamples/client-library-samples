@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_servicemonitoringservice_servicelevelobjective_create_async",
+	"title": "create ServiceLevelObjective",
+	"description": "Cloud Monitoring sample showing how to createServiceLevelObjective",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "createServiceLevelObjective"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_servicemonitoringservice_servicelevelobjective_create_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-25",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
