@@ -1,0 +1,26 @@
+{
+	"id": "dataproc_v1_batchcontroller_batch_delete",
+	"title": "delete batch",
+	"description": "Dataproc sample showing how to delete_batch",
+	"collection": "dataproc_api_samples",
+	"products": [
+		"dataproc"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataproc.googleapis.com",
+		"method": "delete_batch"
+	},
+	"regionTags": [
+		{
+			"name": "dataproc_v1_batchcontroller_batch_delete"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

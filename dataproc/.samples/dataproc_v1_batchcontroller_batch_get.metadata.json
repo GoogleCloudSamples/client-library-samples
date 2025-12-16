@@ -1,0 +1,26 @@
+{
+	"id": "dataproc_v1_batchcontroller_batch_get",
+	"title": "get batch",
+	"description": "Dataproc sample showing how to get_batch",
+	"collection": "dataproc_api_samples",
+	"products": [
+		"dataproc"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataproc.googleapis.com",
+		"method": "get_batch"
+	},
+	"regionTags": [
+		{
+			"name": "dataproc_v1_batchcontroller_batch_get"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

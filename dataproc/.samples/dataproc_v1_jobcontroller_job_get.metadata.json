@@ -1,0 +1,26 @@
+{
+	"id": "dataproc_v1_jobcontroller_job_get",
+	"title": "get job",
+	"description": "Dataproc sample showing how to get_job",
+	"collection": "dataproc_api_samples",
+	"products": [
+		"dataproc"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataproc.googleapis.com",
+		"method": "get_job"
+	},
+	"regionTags": [
+		{
+			"name": "dataproc_v1_jobcontroller_job_get"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
