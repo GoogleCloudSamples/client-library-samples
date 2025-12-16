@@ -21,6 +21,10 @@
       "name": "bigquerydatatransfer_v1_datatransferservice_transferconfig_delete",
       "title": "Delete a data transfer configuration",
       "description": "Deletes a data transfer configuration in the BigQuery Data Transfer Service. Deleting a configuration stops future transfer runs but does not remove data that has already been transferred to BigQuery."
+    },
+    {
+      "name": "bigquerydatatransfer_delete_transfer",
+      "autoDocsPublish": true
     }
   ],
   "instances": [

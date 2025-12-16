@@ -21,6 +21,10 @@
       "name": "bigquerydatatransfer_v1_datatransferservice_transferconfig_get",
       "title": "Get a transfer configuration",
       "description": "Retrieves the details for a transfer configuration from the BigQuery Data Transfer Service, such as its schedule and destination."
+    },
+    {
+      "name": "bigquerydatatransfer_get_config_info",
+      "autoDocsPublish": true
     }
   ],
   "instances": [

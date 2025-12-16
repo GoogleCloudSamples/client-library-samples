@@ -21,6 +21,10 @@
       "name": "bigquerydatatransfer_v1_datatransferservice_transferconfig_update",
       "title": "Update a transfer configuration",
       "description": "Updates the display name of an existing transfer configuration in the BigQuery Data Transfer Service."
+    },
+    {
+      "name": "bigquerydatatransfer_update_config",
+      "autoDocsPublish": true
     }
   ],
   "instances": [

@@ -21,6 +21,10 @@
       "name": "bigquerydatatransfer_v1_datatransferservice_transferruns_list",
       "title": "List transfer runs",
       "description": "Lists all runs for a BigQuery Data Transfer Service transfer configuration."
+    },
+    {
+      "name": "bigquerydatatransfer_get_run_history",
+      "autoDocsPublish": true
     }
   ],
   "instances": [
