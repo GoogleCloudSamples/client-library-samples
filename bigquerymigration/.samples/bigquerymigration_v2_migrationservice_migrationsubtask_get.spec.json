@@ -21,6 +21,10 @@
       "name": "bigquerymigration_v2_migrationservice_migrationsubtask_get",
       "title": "Get a migration subtask",
       "description": "Gets the details of a specific migration subtask from the BigQuery Migration Service. This is useful for checking the status or configuration of a component within a larger migration workflow."
+    },
+    {
+      "name": "bigquerymigration_migrationservice_migrationsubtask_get",
+      "autoDocsPublish": true
     }
   ],
   "instances": [

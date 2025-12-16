@@ -21,6 +21,10 @@
       "name": "bigquerymigration_v2_migrationservice_migrationworkflows_list",
       "title": "List migration workflows",
       "description": "Lists all migration workflows for the BigQuery Migration API in a specified project."
+    },
+    {
+      "name": "bigquerymigration_migrationservice_migrationworkflows_list",
+      "autoDocsPublish": true
     }
   ],
   "instances": [

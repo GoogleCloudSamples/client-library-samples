@@ -21,6 +21,10 @@
       "name": "bigquerydatatransfer_v1_datatransferservice_transferrun_delete",
       "title": "Delete a transfer run",
       "description": "Deletes a transfer run in the BigQuery Data Transfer Service."
+    },
+    {
+      "name": "bigquerydatatransfer_datatransferservice_transferrun_delete",
+      "autoDocsPublish": true
     }
   ],
   "instances": [
