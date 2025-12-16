@@ -1,0 +1,26 @@
+{
+	"id": "dlp_v2_dlpservice_dlpjob_create",
+	"title": "create dlp_job",
+	"description": "Sensitive Data Protection sample showing how to create_dlp_job",
+	"collection": "dlp_api_samples",
+	"products": [
+		"dlp"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dlp.googleapis.com",
+		"method": "create_dlp_job"
+	},
+	"regionTags": [
+		{
+			"name": "dlp_v2_dlpservice_dlpjob_create"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
