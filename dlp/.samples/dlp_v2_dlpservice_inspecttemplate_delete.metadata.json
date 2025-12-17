@@ -1,0 +1,26 @@
+{
+	"id": "dlp_v2_dlpservice_inspecttemplate_delete",
+	"title": "delete inspect_template",
+	"description": "Sensitive Data Protection sample showing how to delete_inspect_template",
+	"collection": "dlp_api_samples",
+	"products": [
+		"dlp"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dlp.googleapis.com",
+		"method": "delete_inspect_template"
+	},
+	"regionTags": [
+		{
+			"name": "dlp_v2_dlpservice_inspecttemplate_delete"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

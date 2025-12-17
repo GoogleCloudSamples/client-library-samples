@@ -1,0 +1,26 @@
+{
+	"id": "dlp_v2_dlpservice_discoveryconfig_update",
+	"title": "update discovery_config",
+	"description": "Sensitive Data Protection sample showing how to update_discovery_config",
+	"collection": "dlp_api_samples",
+	"products": [
+		"dlp"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dlp.googleapis.com",
+		"method": "update_discovery_config"
+	},
+	"regionTags": [
+		{
+			"name": "dlp_v2_dlpservice_discoveryconfig_update"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
