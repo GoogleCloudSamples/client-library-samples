@@ -1,0 +1,26 @@
+{
+	"id": "parametermanager_v1_parametermanager_parameter_update",
+	"title": "update parameter",
+	"description": "Parameter Manager sample showing how to update_parameter",
+	"collection": "parametermanager_api_samples",
+	"products": [
+		"null"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "null.googleapis.com",
+		"method": "update_parameter"
+	},
+	"regionTags": [
+		{
+			"name": "parametermanager_v1_parametermanager_parameter_update"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-12",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
