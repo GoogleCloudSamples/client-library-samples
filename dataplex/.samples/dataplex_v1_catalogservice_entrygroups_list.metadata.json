@@ -1,0 +1,26 @@
+{
+	"id": "dataplex_v1_catalogservice_entrygroups_list",
+	"title": "list entry_groups",
+	"description": "Dataplex sample showing how to list_entry_groups",
+	"collection": "dataplex_api_samples",
+	"products": [
+		"dataplex"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataplex.googleapis.com",
+		"method": "list_entry_groups"
+	},
+	"regionTags": [
+		{
+			"name": "dataplex_v1_catalogservice_entrygroups_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

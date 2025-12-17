@@ -1,0 +1,26 @@
+{
+	"id": "dataplex_v1_dataplexservice_zone_get",
+	"title": "get zone",
+	"description": "Dataplex sample showing how to get_zone",
+	"collection": "dataplex_api_samples",
+	"products": [
+		"dataplex"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataplex.googleapis.com",
+		"method": "get_zone"
+	},
+	"regionTags": [
+		{
+			"name": "dataplex_v1_dataplexservice_zone_get"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
