@@ -1,0 +1,26 @@
+{
+	"id": "securitycenter_v1beta_modelarmor_floorsetting_update",
+	"title": "update floor_setting",
+	"description": "Security Command Center sample showing how to update_floor_setting",
+	"collection": "securitycenter_api_samples",
+	"products": [
+		"securitycenter"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "securitycenter.googleapis.com",
+		"method": "update_floor_setting"
+	},
+	"regionTags": [
+		{
+			"name": "securitycenter_v1beta_modelarmor_floorsetting_update"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-10",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
