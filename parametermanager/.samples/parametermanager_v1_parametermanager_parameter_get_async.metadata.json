@@ -1,0 +1,26 @@
+{
+	"id": "parametermanager_v1_parametermanager_parameter_get_async",
+	"title": "get Parameter",
+	"description": "Parameter Manager sample showing how to getParameter",
+	"collection": "parametermanager_api_samples",
+	"products": [
+		"null"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "null.googleapis.com",
+		"method": "getParameter"
+	},
+	"regionTags": [
+		{
+			"name": "parametermanager_v1_parametermanager_parameter_get_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-19",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
