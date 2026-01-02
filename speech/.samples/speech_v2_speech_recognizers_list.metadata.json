@@ -1,0 +1,26 @@
+{
+	"id": "speech_v2_speech_recognizers_list",
+	"title": "list recognizers",
+	"description": "Speech-to-Text sample showing how to list_recognizers",
+	"collection": "speech_api_samples",
+	"products": [
+		"speech"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "speech.googleapis.com",
+		"method": "list_recognizers"
+	},
+	"regionTags": [
+		{
+			"name": "speech_v2_speech_recognizers_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-12",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
