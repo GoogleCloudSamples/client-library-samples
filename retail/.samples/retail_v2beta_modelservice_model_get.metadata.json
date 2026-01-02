@@ -1,0 +1,26 @@
+{
+	"id": "retail_v2beta_modelservice_model_get",
+	"title": "get model",
+	"description": "Retail API sample showing how to get_model",
+	"collection": "retail_api_samples",
+	"products": [
+		"retail"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "retail.googleapis.com",
+		"method": "get_model"
+	},
+	"regionTags": [
+		{
+			"name": "retail_v2beta_modelservice_model_get"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-10",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

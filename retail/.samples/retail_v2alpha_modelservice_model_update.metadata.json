@@ -1,0 +1,26 @@
+{
+	"id": "retail_v2alpha_modelservice_model_update",
+	"title": "update model",
+	"description": "Retail API sample showing how to update_model",
+	"collection": "retail_api_samples",
+	"products": [
+		"retail"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "retail.googleapis.com",
+		"method": "update_model"
+	},
+	"regionTags": [
+		{
+			"name": "retail_v2alpha_modelservice_model_update"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-10",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
