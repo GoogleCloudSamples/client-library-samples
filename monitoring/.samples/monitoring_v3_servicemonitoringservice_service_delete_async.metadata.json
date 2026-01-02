@@ -1,0 +1,26 @@
+{
+	"id": "monitoring_v3_servicemonitoringservice_service_delete_async",
+	"title": "delete Service",
+	"description": "Cloud Monitoring sample showing how to deleteService",
+	"collection": "monitoring_api_samples",
+	"products": [
+		"monitoring"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "monitoring.googleapis.com",
+		"method": "deleteService"
+	},
+	"regionTags": [
+		{
+			"name": "monitoring_v3_servicemonitoringservice_service_delete_async"
+		}
+	],
+	"variant": [
+		{
+			"name": "nodejs",
+			"created": "2025-09-25",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
