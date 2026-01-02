@@ -1,0 +1,26 @@
+{
+	"id": "eventarc_v1_eventarc_googleapisource_delete",
+	"title": "delete google_api_source",
+	"description": "Eventarc sample showing how to delete_google_api_source",
+	"collection": "eventarc_api_samples",
+	"products": [
+		"eventarc"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "eventarc.googleapis.com",
+		"method": "delete_google_api_source"
+	},
+	"regionTags": [
+		{
+			"name": "eventarc_v1_eventarc_googleapisource_delete"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-16",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
