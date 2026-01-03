@@ -1,0 +1,26 @@
+{
+	"id": "dataproc_v1_sessiontemplatecontroller_sessiontemplate_update",
+	"title": "update session_template",
+	"description": "Dataproc sample showing how to update_session_template",
+	"collection": "dataproc_api_samples",
+	"products": [
+		"dataproc"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataproc.googleapis.com",
+		"method": "update_session_template"
+	},
+	"regionTags": [
+		{
+			"name": "dataproc_v1_sessiontemplatecontroller_sessiontemplate_update"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

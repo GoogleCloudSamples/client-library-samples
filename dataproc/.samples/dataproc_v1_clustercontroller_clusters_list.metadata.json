@@ -1,0 +1,26 @@
+{
+	"id": "dataproc_v1_clustercontroller_clusters_list",
+	"title": "list clusters",
+	"description": "Dataproc sample showing how to list_clusters",
+	"collection": "dataproc_api_samples",
+	"products": [
+		"dataproc"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataproc.googleapis.com",
+		"method": "list_clusters"
+	},
+	"regionTags": [
+		{
+			"name": "dataproc_v1_clustercontroller_clusters_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-11",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
