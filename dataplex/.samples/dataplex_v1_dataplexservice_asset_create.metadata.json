@@ -1,0 +1,26 @@
+{
+	"id": "dataplex_v1_dataplexservice_asset_create",
+	"title": "create asset",
+	"description": "Dataplex sample showing how to create_asset",
+	"collection": "dataplex_api_samples",
+	"products": [
+		"dataplex"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataplex.googleapis.com",
+		"method": "create_asset"
+	},
+	"regionTags": [
+		{
+			"name": "dataplex_v1_dataplexservice_asset_create"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}

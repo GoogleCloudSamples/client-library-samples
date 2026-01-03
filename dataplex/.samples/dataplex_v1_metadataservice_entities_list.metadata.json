@@ -1,0 +1,26 @@
+{
+	"id": "dataplex_v1_metadataservice_entities_list",
+	"title": "list entities",
+	"description": "Dataplex sample showing how to list_entities",
+	"collection": "dataplex_api_samples",
+	"products": [
+		"dataplex"
+	],
+	"type": "rpc",
+	"rpcMetadata": {
+		"api": "dataplex.googleapis.com",
+		"method": "list_entities"
+	},
+	"regionTags": [
+		{
+			"name": "dataplex_v1_metadataservice_entities_list"
+		}
+	],
+	"variant": [
+		{
+			"name": "python",
+			"created": "2025-09-22",
+			"generatedBy": "sample-assistance v0.0.0"
+		}
+	]
+}
