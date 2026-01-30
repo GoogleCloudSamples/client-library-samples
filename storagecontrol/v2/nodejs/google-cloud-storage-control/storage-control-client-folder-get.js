@@ -20,7 +20,7 @@
 const {StorageControlClient} = require('@google-cloud/storage-control');
 const {status} = require('@grpc/grpc-js');
 
-const storageControlClient = new StorageControlClient();
+const client = new StorageControlClient();
 
 /**
  * Retrieves metadata for a specified folder within a hierarchical namespace enabled bucket.
@@ -30,14 +30,14 @@ const storageControlClient = new StorageControlClient();
  */
 async function getFolder(bucketName, folderName) {
   // Example: projects/_/buckets/${bucketName}/folders/${folderName};
-  const name = storageControlClient.folderPath('_', bucketName, folderName);
+  const name = client.folderPath('_', bucketName, folderName);
 
   const request = {
     name: name,
   };
 
   try {
-    const [folder] = await storageControlClient.getFolder(request);
+    const [folder] = await client.getFolder(request);
     console.log(`Successfully retrieved folder: ${folder.name}`);
     console.log(`\tMetageneration: ${folder.metageneration}`);
     if (folder.createTime) {
