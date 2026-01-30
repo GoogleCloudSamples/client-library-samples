@@ -29,7 +29,7 @@ def create_managed_folder(
 
     Args:
         bucket_name: The name of the bucket where the managed folder will be created.
-        managed_folder_id: The ID of the managed folder to create.
+        managed_folder_name: The ID of the managed folder to create.
     """
     client = storage_control_v2.StorageControlClient()
 
