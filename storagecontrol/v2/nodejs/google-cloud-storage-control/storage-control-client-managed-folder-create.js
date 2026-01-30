@@ -48,7 +48,7 @@ async function createManagedFolder(bucketName, managedFolderId) {
         `Managed folder ${managedFolderId} already exists in bucket ${bucketName}.`,
       );
     } else {
-      console.error(`Error creating managed folder: ${err.message}`);
+      console.error(`Error creating managed folder:`, err);
       console.error(
         'Please check your bucket name, and ensure you have the necessary permissions.',
       );

@@ -72,7 +72,7 @@ async function listAnywhereCaches(bucketName) {
         `Error: Permission denied. Ensure the service account has the necessary permissions (e.g., storage.anywhereCaches.list) for bucket '${bucketName}'.`,
       );
     } else {
-      console.error('Error listing Anywhere Caches:', err.message);
+      console.error('Error listing Anywhere Caches:', err);
     }
   }
 }

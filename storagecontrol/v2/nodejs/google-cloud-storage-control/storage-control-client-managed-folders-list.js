@@ -81,7 +81,7 @@ async function listManagedFolders(bucketName) {
           'permissions (e.g., "storage.managedFolders.list") for this bucket.',
       );
     } else {
-      console.error(`Error listing managed folders: ${err.message}`);
+      console.error(`Error listing managed folders:`, err);
     }
   }
 }

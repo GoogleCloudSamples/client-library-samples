@@ -55,8 +55,7 @@ async function getAnywhereCacheSample(
         'Please ensure the Anywhere Cache zone and bucket name are correct and the cache exists.',
       );
     } else {
-      console.error(`Error getting Anywhere Cache: ${err.message}`);
-      console.error(err);
+      console.error(`Error getting Anywhere Cache:`, err);
     }
   }
 }

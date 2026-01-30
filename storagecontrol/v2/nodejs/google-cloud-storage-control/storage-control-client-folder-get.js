@@ -63,7 +63,7 @@ async function getFolder(bucketName, folderName) {
         `Permission denied to get folder ${folderName}. Please check your IAM permissions.`,
       );
     } else {
-      console.error(`Error getting folder ${folderName}:`, err.message);
+      console.error(`Error getting folder ${folderName}:`, err);
     }
   }
 }

@@ -69,7 +69,7 @@ async function getStorageLayout(bucketName = 'my-bucket-name') {
         'Please ensure the bucket exists and you have the necessary permissions.',
       );
     } else {
-      console.error(`Error getting storage layout: ${err.message}`);
+      console.error(`Error getting storage layout:`, err);
     }
   }
 }
