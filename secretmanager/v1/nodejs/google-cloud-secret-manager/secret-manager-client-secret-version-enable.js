@@ -29,6 +29,7 @@
 'use strict';
 
 const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
+const {status} = require('@grpc/grpc-js');
 
 const client = new SecretManagerServiceClient();
 
@@ -42,8 +43,7 @@ async function enableSecretVersion(projectId, secretId, versionId) {
 
     console.log(`Enabled secret version: ${version.name}`);
   } catch (err) {
-    // FAILED_PRECONDITION is the error code for an already-enabled version.
-    if (err.code === 9) {
+    if (err.code === status.FAILED_PRECONDITION) {
       console.error(
         `Error: The secret version '${name}' is already enabled. No action is required.`,
       );

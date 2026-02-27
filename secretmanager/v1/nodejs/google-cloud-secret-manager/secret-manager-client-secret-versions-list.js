@@ -28,6 +28,7 @@
 'use strict';
 
 const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
+const {status} = require('@grpc/grpc-js');
 
 const client = new SecretManagerServiceClient();
 
@@ -44,7 +45,7 @@ async function listSecretVersions(projectId, secretId) {
       console.log(`  State: ${version.state}`);
     }
   } catch (err) {
-    if (err.code === 5) {
+    if (err.code === status.NOT_FOUND) {
       console.error(
         `Error: The secret '${secretId}' was not found in project '${projectId}'. Verify the secret and project exist.`,
       );
