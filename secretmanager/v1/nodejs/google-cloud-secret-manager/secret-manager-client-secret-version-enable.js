@@ -48,7 +48,7 @@ async function enableSecretVersion(projectId, secretId, versionId) {
         `Error: The secret version '${name}' is already enabled. No action is required.`,
       );
     } else {
-      console.error(`An unexpected error occurred: ${err.message}`);
+      console.error('An unexpected error occurred:', err);
     }
   }
 }

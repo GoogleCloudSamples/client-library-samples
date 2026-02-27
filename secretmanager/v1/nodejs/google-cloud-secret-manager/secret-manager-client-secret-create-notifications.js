@@ -62,7 +62,7 @@ async function createSecretWithNotifications(projectId, secretId, topicId) {
         `Error: The secret '${secretId}' already exists. Use a different secret ID.`,
       );
     } else {
-      console.error(`An unexpected error occurred: ${err.message}`);
+      console.error('An unexpected error occurred:', err);
     }
   }
 }

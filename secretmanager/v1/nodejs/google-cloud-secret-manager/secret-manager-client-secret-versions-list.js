@@ -49,7 +49,7 @@ async function listSecretVersions(projectId, secretId) {
         `Error: The secret '${secretId}' was not found in project '${projectId}'. Verify the secret and project exist.`,
       );
     } else {
-      console.error(`An unexpected error occurred: ${err.message}`);
+      console.error('An unexpected error occurred:', err);
     }
   }
 }

@@ -51,7 +51,7 @@ async function accessSecretVersion(projectId, secretId, versionId) {
         `Error: The secret version '${name}' was not found or you do not have permission to access it. Verify the secret version name and your permissions.`,
       );
     } else {
-      console.error(`An unexpected error occurred: ${err.message}`);
+      console.error('An unexpected error occurred:', err);
     }
   }
 }

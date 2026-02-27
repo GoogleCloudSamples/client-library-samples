@@ -48,7 +48,7 @@ async function addSecretVersion(projectId, secretId) {
         `Error: The secret '${secretId}' was not found. Verify the secret exists before adding a version.`,
       );
     } else {
-      console.error(`An unexpected error occurred: ${err.message}`);
+      console.error('An unexpected error occurred:', err);
     }
   }
 }

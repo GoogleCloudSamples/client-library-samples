@@ -62,7 +62,7 @@ async function getSecretMetadata(projectId, secretId) {
         `Error: The secret '${name}' was not found. Verify the secret exists and the name is correct.`,
       );
     } else {
-      console.error(`An unexpected error occurred: ${err.message}`);
+      console.error('An unexpected error occurred:', err);
     }
   }
 }

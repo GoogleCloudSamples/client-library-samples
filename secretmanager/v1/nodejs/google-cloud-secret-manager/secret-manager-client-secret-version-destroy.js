@@ -48,7 +48,7 @@ async function destroySecretVersion(projectId, secretId, versionId) {
         `Error: The secret version '${name}' does not exist or has already been destroyed. Check the secret name and version number.`,
       );
     } else {
-      console.error(`An unexpected error occurred: ${err.message}`);
+      console.error('An unexpected error occurred:', err);
     }
   }
 }

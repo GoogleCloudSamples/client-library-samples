@@ -46,7 +46,7 @@ async function deleteSecret(projectId, secretId) {
         `Error: The secret '${name}' was not found. Check that the secret exists.`,
       );
     } else {
-      console.error(`An unexpected error occurred: ${err.message}`);
+      console.error('An unexpected error occurred:', err);
     }
   }
 }

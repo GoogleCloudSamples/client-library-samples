@@ -62,7 +62,7 @@ async function updateSecretWithNotifications(projectId, secretId, topicId) {
         `Error: Secret '${name}' not found. Verify the secret exists before updating.`,
       );
     } else {
-      console.error(`An unexpected error occurred: ${err.message}`);
+      console.error('An unexpected error occurred:', err);
     }
   }
 }

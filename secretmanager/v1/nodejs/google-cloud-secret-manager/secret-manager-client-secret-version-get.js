@@ -49,7 +49,7 @@ async function getSecretVersionMetadata(projectId, secretId, versionId) {
         `Error: The secret version '${name}' was not found. Verify the secret name and version ID are correct.`,
       );
     } else {
-      console.error(`An unexpected error occurred: ${err.message}`);
+      console.error('An unexpected error occurred:', err);
     }
   }
 }

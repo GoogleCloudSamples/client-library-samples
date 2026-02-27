@@ -56,7 +56,7 @@ async function updateSecret(projectId, secretId) {
         `Error: The secret '${name}' was not found. Verify the secret exists before the update occurs.`,
       );
     } else {
-      console.error(`An unexpected error occurred: ${err.message}`);
+      console.error('An unexpected error occurred:', err);
     }
   }
 }

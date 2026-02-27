@@ -53,7 +53,7 @@ async function listSecrets(projectId) {
         `Error: Permission denied when listing secrets in project '${projectId}'.`,
       );
     } else {
-      console.error(`An unexpected error occurred: ${err.message}`);
+      console.error('An unexpected error occurred:', err);
     }
   }
 }
