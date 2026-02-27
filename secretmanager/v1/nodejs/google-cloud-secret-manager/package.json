@@ -1,0 +1,12 @@
+{
+  "name": "example",
+  "private": true,
+  "description": "Google Cloud Platform Code Samples 🎒",
+  "dependencies": {
+    "@google-cloud/secret-manager": "latest",
+    "@grpc/grpc-js": "latest"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}
