@@ -15,10 +15,7 @@
  */
 
 // [START secretmanager_v1_secretmanagerservice_secret_get]
-/**
- * @param projectId Google Cloud Project ID (such as 'example-project-id')
- * @param secretId ID of the secret to retrieve (such as 'my-secret-id')
- */
+
 'use strict';
 
 const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
@@ -26,6 +23,10 @@ const {status} = require('@grpc/grpc-js');
 
 const client = new SecretManagerServiceClient();
 
+/**
+ * @param projectId Google Cloud Project ID (such as 'example-project-id')
+ * @param secretId ID of the secret to retrieve (such as 'my-secret-id')
+ */
 async function getSecretMetadata(projectId, secretId) {
   const name = `projects/${projectId}/secrets/${secretId}`;
 

@@ -15,6 +15,14 @@
  */
 
 // [START secretmanager_v1_secretmanagerservice_secret_create]
+
+'use strict';
+
+const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
+const {status} = require('@grpc/grpc-js');
+
+const client = new SecretManagerServiceClient();
+
 /**
  * Create Secret with Global Replication.
  *
@@ -24,13 +32,6 @@
  * @param projectId Google Cloud Project ID (such as 'example-project-id')
  * @param secretId ID of the secret to create (such as 'my-secret-id')
  */
-'use strict';
-
-const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
-const {status} = require('@grpc/grpc-js');
-
-const client = new SecretManagerServiceClient();
-
 async function createSecret(projectId, secretId) {
   try {
     const parent = `projects/${projectId}`;

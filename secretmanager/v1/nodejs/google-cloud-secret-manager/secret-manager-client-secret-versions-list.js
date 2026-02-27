@@ -15,6 +15,14 @@
  */
 
 // [START secretmanager_v1_secretmanagerservice_secretversions_list]
+
+'use strict';
+
+const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
+const {status} = require('@grpc/grpc-js');
+
+const client = new SecretManagerServiceClient();
+
 /**
  * List Secret Versions.
  *
@@ -25,13 +33,6 @@
  * @param projectId Google Cloud Project ID (such as 'example-project-id')
  * @param secretId ID of the secret (such as 'my-secret-id')
  */
-'use strict';
-
-const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
-const {status} = require('@grpc/grpc-js');
-
-const client = new SecretManagerServiceClient();
-
 async function listSecretVersions(projectId, secretId) {
   const parent = `projects/${projectId}/secrets/${secretId}`;
 

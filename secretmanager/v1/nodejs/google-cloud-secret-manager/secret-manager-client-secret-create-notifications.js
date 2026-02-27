@@ -15,6 +15,14 @@
  */
 
 // [START secretmanager_v1_secretmanagerservice_secret_create_notifications_with_topics]
+
+'use strict';
+
+const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
+const {status} = require('@grpc/grpc-js');
+
+const client = new SecretManagerServiceClient();
+
 /**
  * Create Secret with Pub/Sub Notifications.
  *
@@ -26,13 +34,6 @@
  * @param secretId ID of the secret to create (such as 'my-secret-id')
  * @param topicId ID of the Pub/Sub topic (such as 'my-topic-id')
  */
-'use strict';
-
-const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
-const {status} = require('@grpc/grpc-js');
-
-const client = new SecretManagerServiceClient();
-
 async function createSecretWithNotifications(projectId, secretId, topicId) {
   const parent = `projects/${projectId}`;
 

@@ -15,6 +15,14 @@
  */
 
 // [START secretmanager_v1_secretmanagerservice_secret_update_notifications_with_topics]
+
+'use strict';
+
+const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
+const {status} = require('@grpc/grpc-js');
+
+const client = new SecretManagerServiceClient();
+
 /**
  * Update Secret with Pub/Sub Notifications.
  *
@@ -26,13 +34,6 @@
  * @param secretId ID of the secret to update (such as 'my-secret-id')
  * @param topicId ID of the Pub/Sub topic (such as 'my-topic-id')
  */
-'use strict';
-
-const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
-const {status} = require('@grpc/grpc-js');
-
-const client = new SecretManagerServiceClient();
-
 async function updateSecretWithNotifications(projectId, secretId, topicId) {
   const name = `projects/${projectId}/secrets/${secretId}`;
   const topicName = `projects/${projectId}/topics/${topicId}`;

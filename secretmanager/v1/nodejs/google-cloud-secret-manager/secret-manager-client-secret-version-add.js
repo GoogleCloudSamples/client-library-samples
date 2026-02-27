@@ -15,13 +15,7 @@
  */
 
 // [START secretmanager_v1_secretmanagerservice_secretversion_add]
-/**
- * Adds a new version to an existing secret.
- * This demonstrates how to rotate or update secret values, which is essential for reconfiguring service parameters and maintaining robust security.
- *
- * @param projectId Google Cloud Project ID (such as 'example-project-id')
- * @param secretId ID of the secret (such as 'my-secret-id')
- */
+
 'use strict';
 
 const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
@@ -29,6 +23,13 @@ const {status} = require('@grpc/grpc-js');
 
 const client = new SecretManagerServiceClient();
 
+/**
+ * Adds a new version to an existing secret.
+ * This demonstrates how to rotate or update secret values, which is essential for reconfiguring service parameters and maintaining robust security.
+ *
+ * @param projectId Google Cloud Project ID (such as 'example-project-id')
+ * @param secretId ID of the secret (such as 'my-secret-id')
+ */
 async function addSecretVersion(projectId, secretId) {
   const parent = `projects/${projectId}/secrets/${secretId}`;
   const payloadData = 'my super-secret data';

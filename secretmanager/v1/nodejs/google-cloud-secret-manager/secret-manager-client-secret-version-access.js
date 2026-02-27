@@ -15,6 +15,14 @@
  */
 
 // [START secretmanager_v1_secretmanagerservice_secretversion_access]
+
+'use strict';
+
+const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
+const {status} = require('@grpc/grpc-js');
+
+const client = new SecretManagerServiceClient();
+
 /**
  * Access Secret Version.
  *
@@ -26,13 +34,6 @@
  * @param secretId ID of the secret (such as 'my-secret-id')
  * @param versionId ID of the version (such as 'latest')
  */
-'use strict';
-
-const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
-const {status} = require('@grpc/grpc-js');
-
-const client = new SecretManagerServiceClient();
-
 async function accessSecretVersion(projectId, secretId, versionId) {
   const name = `projects/${projectId}/secrets/${secretId}/versions/${versionId}`;
 

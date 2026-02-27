@@ -15,6 +15,14 @@
  */
 
 // [START secretmanager_v1_secretmanagerservice_secret_delete]
+
+'use strict';
+
+const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
+const {status} = require('@grpc/grpc-js');
+
+const client = new SecretManagerServiceClient();
+
 /**
  * Delete Secret Resource.
  *
@@ -24,13 +32,6 @@
  * @param projectId Google Cloud Project ID (such as 'example-project-id')
  * @param secretId ID of the secret to delete (such as 'my-secret-id')
  */
-'use strict';
-
-const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
-const {status} = require('@grpc/grpc-js');
-
-const client = new SecretManagerServiceClient();
-
 async function deleteSecret(projectId, secretId) {
   const name = `projects/${projectId}/secrets/${secretId}`;
 
