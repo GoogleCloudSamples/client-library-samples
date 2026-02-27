@@ -42,6 +42,8 @@ async function accessSecretVersion(projectId, secretId, versionId) {
       name,
     });
 
+    // WARNING: Do not print the secret in a production environment - this
+    // is for demonstration purposes only.
     const payload = version.payload.data.toString('utf8');
 
     console.log(`Accessed secret version: ${version.name}`);
