@@ -27,7 +27,7 @@ const client = new SecretManagerServiceClient();
  * Create Secret with Pub/Sub Notifications.
  *
  * Creates a new secret resource configured with Pub/Sub notifications. This
- * sample demonstrates how to receive notifications when secret versions are
+ * sample demonstrates how to publish notifications when secret versions are
  * added or destroyed.
  *
  * @param projectId Google Cloud Project ID (such as 'example-project-id')
