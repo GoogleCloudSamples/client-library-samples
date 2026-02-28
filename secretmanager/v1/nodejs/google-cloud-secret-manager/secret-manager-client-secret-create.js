@@ -58,5 +58,7 @@ async function createSecret(projectId, secretId) {
   }
 }
 
-module.exports = {createSecret};
 // [END secretmanager_v1_secretmanagerservice_secret_create]
+
+module.exports = {createSecret};
+
