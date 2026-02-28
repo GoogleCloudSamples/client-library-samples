@@ -26,7 +26,7 @@ const client = new SecretManagerServiceClient();
 /**
  * Delete Secret Resource.
  *
- * Deletes a secret resource. This sample demonstrates how to remove a secret
+ * This sample demonstrates how to remove a secret
  * and all its associated versions from Secret Manager.
  *
  * @param projectId Google Cloud Project ID (such as 'example-project-id')
