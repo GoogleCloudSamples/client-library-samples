@@ -68,5 +68,6 @@ async function createSecretWithNotifications(projectId, secretId, topicId) {
   }
 }
 
-module.exports = {createSecretWithNotifications};
 // [END secretmanager_v1_secretmanagerservice_secret_create_notifications_with_topics]
+
+module.exports = {createSecretWithNotifications};
