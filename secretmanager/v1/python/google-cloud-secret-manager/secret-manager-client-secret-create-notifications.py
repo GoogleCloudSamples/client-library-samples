@@ -20,7 +20,7 @@ from google.cloud import secretmanager_v1
 def create_secret_with_notifications(
     project_id: str, secret_id: str, topic_id: str
 ) -> None:
-    """Creates a new secret resource configured with Pub/Sub notifications. This demonstrates how to receive notifications when secret versions are added or destroyed.
+    """Creates a new secret resource configured with Pub/Sub notifications. This demonstrates how to publish notifications when secret versions are added or destroyed.
 
     Args:
         project_id: Google Cloud Project ID (such as 'example-project-id')
