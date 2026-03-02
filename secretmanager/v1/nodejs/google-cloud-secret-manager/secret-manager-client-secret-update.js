@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-// [START secretmanager_v1_secretmanagerservice_secret_update]
-
 'use strict';
+
+// [START secretmanager_v1_secretmanagerservice_secret_update]
 
 const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
 const {status} = require('@grpc/grpc-js');
