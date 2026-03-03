@@ -40,7 +40,7 @@ def get_secret_metadata(project_id: str, secret_id: str) -> None:
         replication = "unknown"
         if "automatic" in secret.replication:
             replication = "automatic"
-        if "user_managed" in secret.replication:
+        elif "user_managed" in secret.replication:
             replication = "user-managed"
 
         print(f"Found secret: {secret.name}")
