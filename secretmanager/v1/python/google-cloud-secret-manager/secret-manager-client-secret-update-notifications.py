@@ -14,6 +14,7 @@
 
 # [START secretmanager_v1_secretmanagerservice_secret_update_notifications_with_topics]
 # [START secretmanager_secretmanagerservice_secret_update_notifications_with_topics]
+# [START secretmanager_update_secret_with_notifications]
 import google.api_core.exceptions
 from google.cloud import secretmanager_v1
 
@@ -59,5 +60,6 @@ def update_secret_with_notifications(
         print(f"An unexpected error occurred: {e}")
 
 
+# [END secretmanager_update_secret_with_notifications]
 # [END secretmanager_secretmanagerservice_secret_update_notifications_with_topics]
 # [END secretmanager_v1_secretmanagerservice_secret_update_notifications_with_topics]
