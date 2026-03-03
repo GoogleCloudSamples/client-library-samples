@@ -26,8 +26,6 @@ const {status} = require('@grpc/grpc-js');
 const client = new SecretManagerServiceClient();
 
 /**
- * List Secret Versions.
- *
  * Lists all secret versions for a given secret. This demonstrates how to view
  * all versions associated with a secret and verify their state within a global
  * environment.

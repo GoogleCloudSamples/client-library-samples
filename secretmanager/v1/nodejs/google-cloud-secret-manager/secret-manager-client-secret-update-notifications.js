@@ -26,8 +26,6 @@ const {status} = require('@grpc/grpc-js');
 const client = new SecretManagerServiceClient();
 
 /**
- * Update Secret with Pub/Sub Notifications.
- *
  * Updates an existing secret resource to include or modify Pub/Sub
  * notifications. This demonstrates how to configure event notifications for a
  * secret.

@@ -26,9 +26,7 @@ const {status} = require('@grpc/grpc-js');
 const client = new SecretManagerServiceClient();
 
 /**
- * Delete Secret Resource.
- *
- * This sample demonstrates how to remove a secret
+ * Deletes Secret Resource. This sample demonstrates how to remove a secret
  * and all its associated versions from Secret Manager.
  *
  * @param projectId Google Cloud Project ID (such as 'example-project-id')

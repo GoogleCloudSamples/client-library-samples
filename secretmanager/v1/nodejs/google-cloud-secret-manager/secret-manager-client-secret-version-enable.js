@@ -26,8 +26,6 @@ const {status} = require('@grpc/grpc-js');
 const client = new SecretManagerServiceClient();
 
 /**
- * Restore Access to a Secret Version.
- *
  * Enables a secret version, restoring access to a previously disabled version.
  * This demonstrates how to reactivate a secret version that was previously
  * disabled, making its payload accessible again.

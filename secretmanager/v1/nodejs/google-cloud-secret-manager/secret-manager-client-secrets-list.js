@@ -26,8 +26,6 @@ const {status} = require('@grpc/grpc-js');
 const client = new SecretManagerServiceClient();
 
 /**
- * List Secrets within a Project.
- *
  * Lists all secrets within a specified Google Cloud project. This sample
  * demonstrates how to discover available secret resources and retrieve their
  * metadata.

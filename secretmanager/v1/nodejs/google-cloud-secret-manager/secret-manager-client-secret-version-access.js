@@ -26,8 +26,6 @@ const {status} = require('@grpc/grpc-js');
 const client = new SecretManagerServiceClient();
 
 /**
- * Access Secret Version.
- *
  * Accesses a specific secret version. This sample demonstrates retrieving the
  * payload of a secret while enforcing cryptographic protection and access
  * control.

@@ -26,8 +26,6 @@ const {status} = require('@grpc/grpc-js');
 const client = new SecretManagerServiceClient();
 
 /**
- * Create Secret with Pub/Sub Notifications.
- *
  * Creates a new secret resource configured with Pub/Sub notifications. This
  * sample demonstrates how to publish notifications when secret versions are
  * added or destroyed.

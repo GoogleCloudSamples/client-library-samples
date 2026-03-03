@@ -26,8 +26,6 @@ const {status} = require('@grpc/grpc-js');
 const client = new SecretManagerServiceClient();
 
 /**
- * Destroy Secret Version.
- *
  * Destroys a specific secret version, demonstrating irreversible deletion of a
  * secret's payload. This operation enforces cryptographic protection and
  * access control for the secret.

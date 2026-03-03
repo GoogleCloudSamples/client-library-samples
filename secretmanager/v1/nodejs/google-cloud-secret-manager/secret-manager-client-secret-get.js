@@ -26,8 +26,6 @@ const {status} = require('@grpc/grpc-js');
 const client = new SecretManagerServiceClient();
 
 /**
- * Get Secret Metadata.
- * 
  * Retrieves the metadata for a specific secret. This sample demonstrates 
  * how to fetch information about a secret resource without accessing its payload.
  * 

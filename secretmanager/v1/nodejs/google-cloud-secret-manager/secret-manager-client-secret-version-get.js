@@ -26,8 +26,6 @@ const {status} = require('@grpc/grpc-js');
 const client = new SecretManagerServiceClient();
 
 /**
- * Get Secret Version Metadata.
- *
  * Retrieves the metadata for a specific secret version. This demonstrates how
  * to fetch information about a secret version and verify its state within a
  * global environment without accessing its payload.

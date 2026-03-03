@@ -26,8 +26,6 @@ const {status} = require('@grpc/grpc-js');
 const client = new SecretManagerServiceClient();
 
 /**
- * Create Secret with Global Replication.
- *
  * Creates a new secret resource configured for automatic global replication,
  * ensuring high availability across all regions.
  *

@@ -26,8 +26,6 @@ const {status} = require('@grpc/grpc-js');
 const client = new SecretManagerServiceClient();
 
 /**
- * Update Secret Metadata.
- *
  * Updates metadata for an existing secret, demonstrating how to modify
  * properties such as its labels.
  *
