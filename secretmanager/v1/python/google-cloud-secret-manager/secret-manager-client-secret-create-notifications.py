@@ -48,7 +48,7 @@ def create_secret_with_notifications(
         replication = "unknown"
         if "automatic" in response.replication:
             replication = "automatic"
-        if "user_managed" in response.replication:
+        elif "user_managed" in response.replication:
             replication = "user-managed"
 
         print(f"Created secret: {response.name}")
