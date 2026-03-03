@@ -61,7 +61,7 @@ async function destroySecretVersion(projectId, secretId, versionId) {
     console.log(`Destroyed secret version: ${version.name}`);
     console.log(`  Create Time: ${createTime}`);
     console.log(`  Destroy Time: ${destroyTime}`);
-    console.log(`  Replication: ${version.replicationStatus.replicationStatus}`);
+    console.log(`  State: ${version.state}`);
 
   } catch (err) {
     if (err.code === status.NOT_FOUND) {
