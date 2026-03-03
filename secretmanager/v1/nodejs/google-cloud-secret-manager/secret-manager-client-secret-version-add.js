@@ -18,6 +18,7 @@
 
 // [START secretmanager_v1_secretmanagerservice_secretversion_add]
 // [START secretmanager_secretmanagerservice_secretversion_add]
+// [START secretmanager_add_secret_version]
 
 const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
 const {status} = require('@grpc/grpc-js');
@@ -55,6 +56,7 @@ async function addSecretVersion(projectId, secretId) {
   }
 }
 
+// [END secretmanager_add_secret_version]
 // [END secretmanager_secretmanagerservice_secretversion_add]
 // [END secretmanager_v1_secretmanagerservice_secretversion_add]
 
