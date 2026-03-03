@@ -18,6 +18,7 @@
 
 // [START secretmanager_v1_secretmanagerservice_secret_create_notifications_with_topics]
 // [START secretmanager_secretmanagerservice_secret_create_notifications_with_topics]
+// [START secretmanager_create_secret_with_topics]
 
 const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
 const {status} = require('@grpc/grpc-js');
@@ -69,6 +70,7 @@ async function createSecretWithNotifications(projectId, secretId, topicId) {
   }
 }
 
+// [END secretmanager_create_secret_with_topics]
 // [END secretmanager_secretmanagerservice_secret_create_notifications_with_topics]
 // [END secretmanager_v1_secretmanagerservice_secret_create_notifications_with_topics]
 
