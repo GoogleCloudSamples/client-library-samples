@@ -37,7 +37,9 @@ def add_secret_version(project_id: str, secret_id: str) -> None:
         )
 
         print(f"Added secret version: {response.name}")
+        print(f"  Create Time: {response.create_time}")
         print(f"  State: {response.state.name}")
+        print(f"  Replication: {response.replication_status}")
 
     except google.api_core.exceptions.NotFound:
         print(

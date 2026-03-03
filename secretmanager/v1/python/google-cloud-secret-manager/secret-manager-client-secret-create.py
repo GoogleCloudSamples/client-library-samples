@@ -43,6 +43,9 @@ def create_secret(project_id: str, secret_id: str) -> None:
             }
         )
         print(f"Created secret: {response.name}")
+        print(f"  Create Time: {response.create_time}")
+        print(f"  Labels: {response.labels}")
+        print(f"  Replication: {response.replication}")
 
     except google.api_core.exceptions.AlreadyExists:
         print(
