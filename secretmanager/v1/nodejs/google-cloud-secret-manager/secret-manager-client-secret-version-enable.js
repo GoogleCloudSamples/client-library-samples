@@ -44,7 +44,19 @@ async function enableSecretVersion(projectId, secretId, versionId) {
       name,
     });
 
+    const dateObj = new Date(Number(version.createTime.seconds) * 1000);
+
+    const createTime = new Intl.DateTimeFormat('en-US', {
+      dateStyle: 'short',
+      timeStyle: 'long',
+      timeZone: 'GMT',
+    }).format(dateObj);
+
     console.log(`Enabled secret version: ${version.name}`);
+    console.log(`  Create Time: ${createTime}`);
+    console.log(`  State: ${version.state}`);
+    console.log(`  Replication: ${version.replicationStatus.replicationStatus}`);
+
   } catch (err) {
     if (err.code === status.FAILED_PRECONDITION) {
       console.error(

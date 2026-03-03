@@ -51,7 +51,17 @@ async function updateSecret(projectId, secretId) {
       },
     });
 
+    const dateObj = new Date(Number(updatedSecret.createTime.seconds) * 1000);
+
+    const createTime = new Intl.DateTimeFormat('en-US', {
+      dateStyle: 'short',
+      timeStyle: 'long',
+      timeZone: 'GMT',
+    }).format(dateObj);
+
     console.log(`Updated secret: ${updatedSecret.name}`);
+    console.log(`  Create Time: ${createTime}`);
+    console.log(`  Replication: ${updatedSecret.replication.replication}`);
     console.log(`  Labels: ${JSON.stringify(updatedSecret.labels)}`);
   } catch (err) {
     if (err.code === status.NOT_FOUND) {

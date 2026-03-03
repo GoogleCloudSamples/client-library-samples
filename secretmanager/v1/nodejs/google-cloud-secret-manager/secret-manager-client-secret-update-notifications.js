@@ -55,7 +55,20 @@ async function updateSecretWithNotifications(projectId, secretId, topicId) {
       },
     });
 
+
+    const dateObj = new Date(Number(updatedSecret.createTime.seconds) * 1000);
+
+    const createTime = new Intl.DateTimeFormat('en-US', {
+      dateStyle: 'short',
+      timeStyle: 'long',
+      timeZone: 'GMT',
+    }).format(dateObj);
+
     console.log(`Updated secret: ${updatedSecret.name}`);
+    console.log(`  Create Time: ${createTime}`);
+    console.log(`  Labels: ${JSON.stringify(updatedSecret.labels)}`);
+    console.log(`  Replication: ${updatedSecret.replication.replication}`);
+
     for (const topic of updatedSecret.topics) {
       console.log(`  Topic: ${topic.name}`);
     }

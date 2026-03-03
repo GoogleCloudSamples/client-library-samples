@@ -45,18 +45,32 @@ async function listSecretVersions(projectId, secretId) {
 
     for (const version of versions) {
 
-      const dateObj = new Date(Number(version.createTime.seconds) * 1000);
+      const createDateObj = new Date(Number(version.createTime.seconds) * 1000);
 
       const createTime = new Intl.DateTimeFormat('en-US', {
         dateStyle: 'short',
         timeStyle: 'long',
         timeZone: 'GMT',
-      }).format(dateObj);
+      }).format(createDateObj);
+
+      var destroyTime = null;
+
+      if (version.destroyTime !== null) {
+
+        const destroyDateObj = new Date(Number(version.destroyTime.seconds) * 1000);
+
+        destroyTime = new Intl.DateTimeFormat('en-US', {
+          dateStyle: 'short',
+          timeStyle: 'long',
+          timeZone: 'GMT',
+        }).format(destroyDateObj);
+
+      }
 
       console.log(`Found version: ${version.name}`);
       console.log(`  Create Time: ${createTime}`);
+      console.log(`  Destroy Time: ${destroyTime}`);
       console.log(`  State: ${version.state}`);
-      console.log(`  Replication: ${version.replicationStatus.replicationStatus}`);
     }
   } catch (err) {
     if (err.code === status.NOT_FOUND) {
