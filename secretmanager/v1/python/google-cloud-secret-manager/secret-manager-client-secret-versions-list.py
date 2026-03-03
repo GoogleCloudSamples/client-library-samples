@@ -35,6 +35,7 @@ def list_secret_versions(project_id: str, secret_id: str) -> None:
             print(f"Found version: {version.name}")
             print(f"  Create Time: {version.create_time}")
             print(f"  State: {version.state.name}")
+            print(f"  Replication: {version.replication_status}")
 
     except google.api_core.exceptions.NotFound:
         print(
