@@ -43,7 +43,7 @@ def get_secret_version_metadata(
         replication_status = "unknown"
         if "automatic" in version.replication_status:
             replication_status = "automatic"
-        if "user_managed" in version.replication_status:
+        elif "user_managed" in version.replication_status:
             replication_status = "user-managed"
 
         print(f"Found secret version: {version.name}")
