@@ -37,22 +37,22 @@ def update_secret(project_id: str, secret_id: str) -> None:
             labels={"purpose": "demo", "environment": "staging"},
         )
 
-        replication = "unknown"
-        if "automatic" in secret.replication:
-            replication = "automatic"
-        if "user_managed" in secret.replication:
-            replication = "user-managed"
-
         update_mask = field_mask_pb2.FieldMask(paths=["labels"])
 
-        secret = client.update_secret(
+        updated_secret = client.update_secret(
             request={"secret": secret, "update_mask": update_mask}
         )
 
-        print(f"Updated secret: {secret.name}")
-        print(f"  Create Time: {secret.create_time}")
+        replication = "unknown"
+        if "automatic" in updated_secret.replication:
+            replication = "automatic"
+        if "user_managed" in updated_secret.replication:
+            replication = "user-managed"
+
+        print(f"Updated secret: {updated_secret.name}")
+        print(f"  Create Time: {updated_secret.create_time}")
         print(f"  Replication: {replication}")
-        print(f"  Labels: {secret.labels}")
+        print(f"  Labels: {updated_secret.labels}")
 
     except google.api_core.exceptions.NotFound:
         print(
