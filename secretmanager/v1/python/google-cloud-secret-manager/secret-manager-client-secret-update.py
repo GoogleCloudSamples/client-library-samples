@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START secretmanager_v1_secretmanagerservice_secret_update]
+# [START secretmanager_secretmanagerservice_secret_update]
 import google.api_core.exceptions
 from google.cloud import secretmanager_v1
 from google.protobuf import field_mask_pb2
@@ -53,4 +54,5 @@ def update_secret(project_id: str, secret_id: str) -> None:
         print(f"An unexpected error occurred: {e}")
 
 
+# [END secretmanager_secretmanagerservice_secret_update]
 # [END secretmanager_v1_secretmanagerservice_secret_update]

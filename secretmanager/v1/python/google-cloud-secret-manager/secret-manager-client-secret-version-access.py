@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START secretmanager_v1_secretmanagerservice_secretversion_access]
+# [START secretmanager_secretmanagerservice_secretversion_access]
 import google.api_core.exceptions
 from google.cloud import secretmanager_v1
 
@@ -47,4 +48,5 @@ def access_secret_version(project_id: str, secret_id: str, version_id: str) -> N
         print(f"An unexpected error occurred: {e}")
 
 
+# [END secretmanager_secretmanagerservice_secretversion_access]
 # [END secretmanager_v1_secretmanagerservice_secretversion_access]
