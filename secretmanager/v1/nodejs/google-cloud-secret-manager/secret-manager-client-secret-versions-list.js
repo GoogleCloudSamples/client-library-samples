@@ -51,7 +51,7 @@ async function listSecretVersions(projectId, secretId) {
         timeZone: 'GMT',
       }).format(createDateObj);
 
-      var destroyTime = null;
+      let destroyTime = null;
 
       if (version.destroyTime !== null) {
 
