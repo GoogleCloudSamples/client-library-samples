@@ -25,6 +25,11 @@ const {status} = require('@grpc/grpc-js');
 const client = new SecretManagerServiceClient();
 
 /**
+ * Get Secret Metadata.
+ * 
+ * Retrieves the metadata for a specific secret. This sample demonstrates 
+ * how to fetch information about a secret resource without accessing its payload.
+ * 
  * @param projectId Google Cloud Project ID (such as 'example-project-id')
  * @param secretId ID of the secret to retrieve (such as 'my-secret-id')
  */
