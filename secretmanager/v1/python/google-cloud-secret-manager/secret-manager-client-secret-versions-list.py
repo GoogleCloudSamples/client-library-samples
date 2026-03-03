@@ -33,6 +33,7 @@ def list_secret_versions(project_id: str, secret_id: str) -> None:
     try:
         for version in client.list_secret_versions(request={"parent": parent}):
             print(f"Found version: {version.name}")
+            print(f"  Create Time: {version.create_time}")
             print(f"  State: {version.state.name}")
 
     except google.api_core.exceptions.NotFound:
