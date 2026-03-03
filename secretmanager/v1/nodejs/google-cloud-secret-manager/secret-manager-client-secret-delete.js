@@ -17,6 +17,7 @@
 'use strict';
 
 // [START secretmanager_v1_secretmanagerservice_secret_delete]
+// [START secretmanager_secretmanagerservice_secret_delete]
 
 const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
 const {status} = require('@grpc/grpc-js');
@@ -52,5 +53,8 @@ async function deleteSecret(projectId, secretId) {
   }
 }
 
-module.exports = {deleteSecret};
+// [END secretmanager_secretmanagerservice_secret_delete]
 // [END secretmanager_v1_secretmanagerservice_secret_delete]
+
+module.exports = {deleteSecret};
+

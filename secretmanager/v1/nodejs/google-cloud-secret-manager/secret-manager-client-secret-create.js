@@ -17,6 +17,7 @@
 'use strict';
 
 // [START secretmanager_v1_secretmanagerservice_secret_create]
+// [START secretmanager_secretmanagerservice_secret_create]
 
 const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
 const {status} = require('@grpc/grpc-js');
@@ -58,6 +59,7 @@ async function createSecret(projectId, secretId) {
   }
 }
 
+// [END secretmanager_secretmanagerservice_secret_create]
 // [END secretmanager_v1_secretmanagerservice_secret_create]
 
 module.exports = {createSecret};

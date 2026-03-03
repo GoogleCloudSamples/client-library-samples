@@ -17,6 +17,7 @@
 'use strict';
 
 // [START secretmanager_v1_secretmanagerservice_secretversion_get]
+// [START secretmanager_secretmanagerservice_secretversion_get]
 
 const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
 const {status} = require('@grpc/grpc-js');
@@ -55,5 +56,7 @@ async function getSecretVersionMetadata(projectId, secretId, versionId) {
   }
 }
 
-module.exports = {getSecretVersionMetadata};
+// [END secretmanager_secretmanagerservice_secretversion_get]
 // [END secretmanager_v1_secretmanagerservice_secretversion_get]
+
+module.exports = {getSecretVersionMetadata};

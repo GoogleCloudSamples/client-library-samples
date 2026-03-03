@@ -17,6 +17,7 @@
 'use strict';
 
 // [START secretmanager_v1_secretmanagerservice_secretversion_destroy]
+// [START secretmanager_secretmanagerservice_secretversion_destroy]
 
 const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
 const {status} = require('@grpc/grpc-js');
@@ -54,5 +55,7 @@ async function destroySecretVersion(projectId, secretId, versionId) {
   }
 }
 
-module.exports = {destroySecretVersion};
+// [END secretmanager_secretmanagerservice_secretversion_destroy]
 // [END secretmanager_v1_secretmanagerservice_secretversion_destroy]
+
+module.exports = {destroySecretVersion};
