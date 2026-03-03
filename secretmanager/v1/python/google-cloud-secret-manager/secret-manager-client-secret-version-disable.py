@@ -41,7 +41,7 @@ def disable_secret_version(project_id: str, secret_id: str, version_id: str) -> 
         replication_status = "unknown"
         if "automatic" in response.replication_status:
             replication_status = "automatic"
-        if "user_managed" in response.replication_status:
+        elif "user_managed" in response.replication_status:
             replication_status = "user-managed"
 
         print(f"Disabled secret version: {response.name}")
