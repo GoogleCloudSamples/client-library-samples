@@ -42,16 +42,6 @@ async function getSecretMetadata(projectId, secretId) {
       name,
     });
 
-    const replication = secret.replication;
-    let replicationInfo;
-    if (replication.automatic) {
-      replicationInfo = 'automatic';
-    } else if (replication.userManaged) {
-      replicationInfo = 'user-managed';
-    } else {
-      replicationInfo = 'unknown';
-    }
-
     const dateObj = new Date(Number(secret.createTime.seconds) * 1000);
 
     const createTime = new Intl.DateTimeFormat('en-US', {
@@ -63,7 +53,7 @@ async function getSecretMetadata(projectId, secretId) {
     console.log(`Found secret: ${secret.name}`);
     console.log(`  Create Time: ${createTime}`);
     console.log(`  Labels: ${JSON.stringify(secret.labels)}`);
-    console.log(`  Replication: ${replicationInfo}`);
+    console.log(`  Replication: ${secret.replication.replication}`);
   } catch (err) {
     if (err.code === status.NOT_FOUND) {
       console.error(
