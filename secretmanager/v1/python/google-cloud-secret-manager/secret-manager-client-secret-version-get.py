@@ -14,6 +14,7 @@
 
 # [START secretmanager_v1_secretmanagerservice_secretversion_get]
 # [START secretmanager_secretmanagerservice_secretversion_get]
+# [START secretmanager_get_secret_version]
 import google.api_core.exceptions
 from google.cloud import secretmanager_v1
 
@@ -52,5 +53,6 @@ def get_secret_version_metadata(
         print(f"An unexpected error occurred: {e}")
 
 
+# [END secretmanager_get_secret_version]
 # [END secretmanager_secretmanagerservice_secretversion_get]
 # [END secretmanager_v1_secretmanagerservice_secretversion_get]

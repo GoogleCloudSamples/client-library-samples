@@ -14,6 +14,7 @@
 
 # [START secretmanager_v1_secretmanagerservice_secretversion_destroy]
 # [START secretmanager_secretmanagerservice_secretversion_destroy]
+# [START secretmanager_destroy_secret_version]
 import google.api_core.exceptions
 from google.cloud import secretmanager_v1
 
@@ -49,5 +50,6 @@ def destroy_secret_version(project_id: str, secret_id: str, version_id: str) -> 
         print(f"An unexpected error occurred: {e}")
 
 
+# [END secretmanager_destroy_secret_version]
 # [END secretmanager_secretmanagerservice_secretversion_destroy]
 # [END secretmanager_v1_secretmanagerservice_secretversion_destroy]

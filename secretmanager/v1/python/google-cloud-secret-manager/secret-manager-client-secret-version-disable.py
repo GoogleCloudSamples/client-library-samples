@@ -14,6 +14,7 @@
 
 # [START secretmanager_v1_secretmanagerservice_secretversion_disable]
 # [START secretmanager_secretmanagerservice_secretversion_disable]
+# [START secretmanager_disable_secret_version]
 import google.api_core.exceptions
 from google.cloud import secretmanager_v1
 
@@ -46,5 +47,6 @@ def disable_secret_version(project_id: str, secret_id: str, version_id: str) -> 
         print(f"An unexpected error occurred: {e}")
 
 
+# [END secretmanager_disable_secret_version]
 # [END secretmanager_secretmanagerservice_secretversion_disable]
 # [END secretmanager_v1_secretmanagerservice_secretversion_disable]
