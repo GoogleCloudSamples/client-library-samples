@@ -44,8 +44,18 @@ async function getSecretVersionMetadata(projectId, secretId, versionId) {
       name,
     });
 
+    const dateObj = new Date(Number(version.createTime.seconds) * 1000);
+
+    const createTime = new Intl.DateTimeFormat('en-US', {
+      dateStyle: 'short',
+      timeStyle: 'long',
+      timeZone: 'GMT',
+    }).format(dateObj);
+
     console.log(`Found secret version: ${version.name}`);
+    console.log(`  Create Time: ${createTime}`);
     console.log(`  State: ${version.state}`);
+    console.log(`  Replication: ${version.replicationStatus.replicationStatus}`);
   } catch (err) {
     if (err.code === status.NOT_FOUND) {
       console.error(

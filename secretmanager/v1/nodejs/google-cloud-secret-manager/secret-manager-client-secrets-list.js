@@ -48,7 +48,19 @@ async function listSecrets(projectId) {
     }
 
     for (const secret of secrets) {
+
+      const dateObj = new Date(Number(secret.createTime.seconds) * 1000);
+
+      const createTime = new Intl.DateTimeFormat('en-US', {
+        dateStyle: 'short',
+        timeStyle: 'long',
+        timeZone: 'GMT',
+      }).format(dateObj);
+
       console.log(`Found secret: ${secret.name}`);
+      console.log(`  Create Time: ${createTime}`);
+      console.log(`  Labels: ${JSON.stringify(secret.labels)}`);
+      console.log(`  Replication: ${secret.replication.replication}`);
     }
   } catch (err) {
     if (err.code === status.PERMISSION_DENIED) {
