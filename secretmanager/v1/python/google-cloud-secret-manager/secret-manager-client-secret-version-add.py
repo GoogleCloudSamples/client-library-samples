@@ -36,10 +36,16 @@ def add_secret_version(project_id: str, secret_id: str) -> None:
             request={"parent": parent, "payload": payload}
         )
 
+        replication_status = "unknown"
+        if "automatic" in response.replication_status:
+            replication_status = "automatic"
+        if "user_managed" in response.replication_status:
+            replication_status = "user-managed"
+
         print(f"Added secret version: {response.name}")
         print(f"  Create Time: {response.create_time}")
         print(f"  State: {response.state.name}")
-        print(f"  Replication: {response.replication_status}")
+        print(f"  Replication: {replication_status}")
 
     except google.api_core.exceptions.NotFound:
         print(

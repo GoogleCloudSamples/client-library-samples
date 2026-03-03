@@ -40,10 +40,16 @@ def get_secret_version_metadata(
     try:
         version = client.get_secret_version(request=request)
 
+        replication_status = "unknown"
+        if "automatic" in version.replication_status:
+            replication_status = "automatic"
+        if "user_managed" in version.replication_status:
+            replication_status = "user-managed"
+
         print(f"Found secret version: {version.name}")
         print(f"  Create Time: {version.create_time}")
         print(f"  State: {version.state.name}")
-        print(f"  Replication: {version.replication_status}")
+        print(f"  Replication: {replication_status}")
 
     except google.api_core.exceptions.NotFound:
         print(

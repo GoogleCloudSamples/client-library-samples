@@ -47,7 +47,17 @@ def update_secret_with_notifications(
             }
         )
 
+        replication = "unknown"
+        if "automatic" in updated_secret.replication:
+            replication = "automatic"
+        if "user_managed" in updated_secret.replication:
+            replication = "user-managed"
+
         print(f"Updated secret: {updated_secret.name}")
+        print(f"  Create Time: {updated_secret.create_time}")
+        print(f"  Labels: {updated_secret.labels}")
+        print(f"  Replication: {replication}")
+
         for topic in updated_secret.topics:
             print(f"  Topic: {topic.name}")
 

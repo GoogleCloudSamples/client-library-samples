@@ -39,6 +39,9 @@ def destroy_secret_version(project_id: str, secret_id: str, version_id: str) -> 
         response = client.destroy_secret_version(request=request)
 
         print(f"Destroyed secret version: {response.name}")
+        print(f"  Create Time: {response.create_time}")
+        print(f"  Destroy Time: {response.destroy_time}")
+        print(f"  State: {response.state.name}")
 
     except google.api_core.exceptions.NotFound:
         print(

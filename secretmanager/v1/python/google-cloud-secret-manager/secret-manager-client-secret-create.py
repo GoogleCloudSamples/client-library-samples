@@ -42,10 +42,17 @@ def create_secret(project_id: str, secret_id: str) -> None:
                 },
             }
         )
+
+        replication = "unknown"
+        if "automatic" in response.replication:
+            replication = "automatic"
+        if "user_managed" in response.replication:
+            replication = "user-managed"
+
         print(f"Created secret: {response.name}")
         print(f"  Create Time: {response.create_time}")
         print(f"  Labels: {response.labels}")
-        print(f"  Replication: {response.replication}")
+        print(f"  Replication: {replication}")
 
     except google.api_core.exceptions.AlreadyExists:
         print(

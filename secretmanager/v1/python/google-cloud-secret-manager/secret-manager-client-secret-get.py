@@ -37,10 +37,16 @@ def get_secret_metadata(project_id: str, secret_id: str) -> None:
 
         secret = client.get_secret(request=request)
 
+        replication = "unknown"
+        if "automatic" in secret.replication:
+            replication = "automatic"
+        if "user_managed" in secret.replication:
+            replication = "user-managed"
+
         print(f"Found secret: {secret.name}")
         print(f"  Create Time: {secret.create_time}")
         print(f"  Labels: {secret.labels}")
-        print(f"  Replication: {secret.replication}")
+        print(f"  Replication: {replication}")
 
     except google.api_core.exceptions.NotFound:
         print(

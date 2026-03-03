@@ -37,7 +37,18 @@ def disable_secret_version(project_id: str, secret_id: str, version_id: str) -> 
 
     try:
         response = client.disable_secret_version(request=request)
+
+        replication_status = "unknown"
+        if "automatic" in response.replication_status:
+            replication_status = "automatic"
+        if "user_managed" in response.replication_status:
+            replication_status = "user-managed"
+
         print(f"Disabled secret version: {response.name}")
+        print(f"  Create Time: {response.create_time}")
+        print(f"  State: {response.state.name}")
+        print(f"  Replication: {replication_status}")
+
     except google.api_core.exceptions.NotFound:
         print(
             f"Error: The secret version '{name}' was not found. Verify "

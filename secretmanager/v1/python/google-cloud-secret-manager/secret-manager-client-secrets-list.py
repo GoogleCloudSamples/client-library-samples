@@ -31,10 +31,17 @@ def list_secrets(project_id: str) -> None:
 
     try:
         for secret in client.list_secrets(parent=parent):
+
+            replication = "unknown"
+            if "automatic" in secret.replication:
+                replication = "automatic"
+            if "user_managed" in secret.replication:
+                replication = "user-managed"
+
             print(f"Found secret: {secret.name}")
             print(f"  Create Time: {secret.create_time}")
             print(f"  Labels: {secret.labels}")
-            print(f"  Replication: {secret.replication}")
+            print(f"  Replication: {replication}")
 
     except google.api_core.exceptions.PermissionDenied:
         print(
