@@ -14,9 +14,11 @@
  * limitations under the License.
  */
 
-// [START secretmanager_v1_secretmanagerservice_secret_update_notifications_with_topics]
-
 'use strict';
+
+// [START secretmanager_v1_secretmanagerservice_secret_update_notifications_with_topics]
+// [START secretmanager_secretmanagerservice_secret_update_notifications_with_topics]
+// [START secretmanager_update_secret_with_notifications]
 
 const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
 const {status} = require('@grpc/grpc-js');
@@ -24,8 +26,6 @@ const {status} = require('@grpc/grpc-js');
 const client = new SecretManagerServiceClient();
 
 /**
- * Update Secret with Pub/Sub Notifications.
- *
  * Updates an existing secret resource to include or modify Pub/Sub
  * notifications. This demonstrates how to configure event notifications for a
  * secret.
@@ -53,7 +53,20 @@ async function updateSecretWithNotifications(projectId, secretId, topicId) {
       },
     });
 
+
+    const dateObj = new Date(Number(updatedSecret.createTime.seconds) * 1000);
+
+    const createTime = new Intl.DateTimeFormat('en-US', {
+      dateStyle: 'short',
+      timeStyle: 'long',
+      timeZone: 'GMT',
+    }).format(dateObj);
+
     console.log(`Updated secret: ${updatedSecret.name}`);
+    console.log(`  Create Time: ${createTime}`);
+    console.log(`  Labels: ${JSON.stringify(updatedSecret.labels)}`);
+    console.log(`  Replication: ${updatedSecret.replication.replication}`);
+
     for (const topic of updatedSecret.topics) {
       console.log(`  Topic: ${topic.name}`);
     }
@@ -68,5 +81,9 @@ async function updateSecretWithNotifications(projectId, secretId, topicId) {
   }
 }
 
-module.exports = {updateSecretWithNotifications};
+// [END secretmanager_update_secret_with_notifications]
+// [END secretmanager_secretmanagerservice_secret_update_notifications_with_topics]
 // [END secretmanager_v1_secretmanagerservice_secret_update_notifications_with_topics]
+
+module.exports = {updateSecretWithNotifications};
+

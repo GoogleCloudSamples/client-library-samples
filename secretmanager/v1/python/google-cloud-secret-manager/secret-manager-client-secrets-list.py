@@ -13,6 +13,8 @@
 # limitations under the License.
 
 # [START secretmanager_v1_secretmanagerservice_secrets_list]
+# [START secretmanager_secretmanagerservice_secrets_list]
+# [START secretmanager_list_secrets]
 import google.api_core.exceptions
 from google.cloud import secretmanager_v1
 
@@ -29,7 +31,17 @@ def list_secrets(project_id: str) -> None:
 
     try:
         for secret in client.list_secrets(parent=parent):
+
+            replication = "unknown"
+            if "automatic" in secret.replication:
+                replication = "automatic"
+            elif "user_managed" in secret.replication:
+                replication = "user-managed"
+
             print(f"Found secret: {secret.name}")
+            print(f"  Create Time: {secret.create_time}")
+            print(f"  Labels: {secret.labels}")
+            print(f"  Replication: {replication}")
 
     except google.api_core.exceptions.PermissionDenied:
         print(
@@ -39,4 +51,6 @@ def list_secrets(project_id: str) -> None:
         print(f"An unexpected error occurred: {e}")
 
 
+# [END secretmanager_list_secrets]
+# [END secretmanager_secretmanagerservice_secrets_list]
 # [END secretmanager_v1_secretmanagerservice_secrets_list]

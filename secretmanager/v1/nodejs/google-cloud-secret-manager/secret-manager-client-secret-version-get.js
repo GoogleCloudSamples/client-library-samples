@@ -14,9 +14,11 @@
  * limitations under the License.
  */
 
-// [START secretmanager_v1_secretmanagerservice_secretversion_get]
-
 'use strict';
+
+// [START secretmanager_v1_secretmanagerservice_secretversion_get]
+// [START secretmanager_secretmanagerservice_secretversion_get]
+// [START secretmanager_get_secret_version]
 
 const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
 const {status} = require('@grpc/grpc-js');
@@ -24,8 +26,6 @@ const {status} = require('@grpc/grpc-js');
 const client = new SecretManagerServiceClient();
 
 /**
- * Get Secret Version Metadata.
- *
  * Retrieves the metadata for a specific secret version. This demonstrates how
  * to fetch information about a secret version and verify its state within a
  * global environment without accessing its payload.
@@ -42,8 +42,18 @@ async function getSecretVersionMetadata(projectId, secretId, versionId) {
       name,
     });
 
+    const dateObj = new Date(Number(version.createTime.seconds) * 1000);
+
+    const createTime = new Intl.DateTimeFormat('en-US', {
+      dateStyle: 'short',
+      timeStyle: 'long',
+      timeZone: 'GMT',
+    }).format(dateObj);
+
     console.log(`Found secret version: ${version.name}`);
+    console.log(`  Create Time: ${createTime}`);
     console.log(`  State: ${version.state}`);
+    console.log(`  Replication: ${version.replicationStatus.replicationStatus}`);
   } catch (err) {
     if (err.code === status.NOT_FOUND) {
       console.error(
@@ -55,5 +65,8 @@ async function getSecretVersionMetadata(projectId, secretId, versionId) {
   }
 }
 
-module.exports = {getSecretVersionMetadata};
+// [END secretmanager_get_secret_version]
+// [END secretmanager_secretmanagerservice_secretversion_get]
 // [END secretmanager_v1_secretmanagerservice_secretversion_get]
+
+module.exports = {getSecretVersionMetadata};

@@ -17,6 +17,8 @@
 'use strict';
 
 // [START secretmanager_v1_secretmanagerservice_secret_create]
+// [START secretmanager_secretmanagerservice_secret_create]
+// [START secretmanager_create_secret]
 
 const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
 const {status} = require('@grpc/grpc-js');
@@ -24,8 +26,6 @@ const {status} = require('@grpc/grpc-js');
 const client = new SecretManagerServiceClient();
 
 /**
- * Create Secret with Global Replication.
- *
  * Creates a new secret resource configured for automatic global replication,
  * ensuring high availability across all regions.
  *
@@ -46,7 +46,18 @@ async function createSecret(projectId, secretId) {
       },
     });
 
+    const dateObj = new Date(Number(secret.createTime.seconds) * 1000);
+
+    const createTime = new Intl.DateTimeFormat('en-US', {
+      dateStyle: 'short',
+      timeStyle: 'long',
+      timeZone: 'GMT',
+    }).format(dateObj);
+
     console.log(`Created secret: ${secret.name}`);
+    console.log(`  Create Time: ${createTime}`);
+    console.log(`  Labels: ${JSON.stringify(secret.labels)}`);
+    console.log(`  Replication: ${secret.replication.replication}`);
   } catch (err) {
     if (err.code === status.ALREADY_EXISTS) {
       console.error(
@@ -58,6 +69,8 @@ async function createSecret(projectId, secretId) {
   }
 }
 
+// [END secretmanager_create_secret]
+// [END secretmanager_secretmanagerservice_secret_create]
 // [END secretmanager_v1_secretmanagerservice_secret_create]
 
 module.exports = {createSecret};

@@ -13,6 +13,8 @@
 # limitations under the License.
 
 # [START secretmanager_v1_secretmanagerservice_secretversion_get]
+# [START secretmanager_secretmanagerservice_secretversion_get]
+# [START secretmanager_get_secret_version]
 import google.api_core.exceptions
 from google.cloud import secretmanager_v1
 
@@ -38,9 +40,16 @@ def get_secret_version_metadata(
     try:
         version = client.get_secret_version(request=request)
 
+        replication_status = "unknown"
+        if "automatic" in version.replication_status:
+            replication_status = "automatic"
+        elif "user_managed" in version.replication_status:
+            replication_status = "user-managed"
+
         print(f"Found secret version: {version.name}")
         print(f"  Create Time: {version.create_time}")
         print(f"  State: {version.state.name}")
+        print(f"  Replication: {replication_status}")
 
     except google.api_core.exceptions.NotFound:
         print(
@@ -51,4 +60,6 @@ def get_secret_version_metadata(
         print(f"An unexpected error occurred: {e}")
 
 
+# [END secretmanager_get_secret_version]
+# [END secretmanager_secretmanagerservice_secretversion_get]
 # [END secretmanager_v1_secretmanagerservice_secretversion_get]

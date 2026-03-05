@@ -14,9 +14,11 @@
  * limitations under the License.
  */
 
-// [START secretmanager_v1_secretmanagerservice_secretversion_enable]
-
 'use strict';
+
+// [START secretmanager_v1_secretmanagerservice_secretversion_enable]
+// [START secretmanager_secretmanagerservice_secretversion_enable]
+// [START secretmanager_enable_secret_version]
 
 const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
 const {status} = require('@grpc/grpc-js');
@@ -24,8 +26,6 @@ const {status} = require('@grpc/grpc-js');
 const client = new SecretManagerServiceClient();
 
 /**
- * Restore Access to a Secret Version.
- *
  * Enables a secret version, restoring access to a previously disabled version.
  * This demonstrates how to reactivate a secret version that was previously
  * disabled, making its payload accessible again.
@@ -42,7 +42,19 @@ async function enableSecretVersion(projectId, secretId, versionId) {
       name,
     });
 
+    const dateObj = new Date(Number(version.createTime.seconds) * 1000);
+
+    const createTime = new Intl.DateTimeFormat('en-US', {
+      dateStyle: 'short',
+      timeStyle: 'long',
+      timeZone: 'GMT',
+    }).format(dateObj);
+
     console.log(`Enabled secret version: ${version.name}`);
+    console.log(`  Create Time: ${createTime}`);
+    console.log(`  State: ${version.state}`);
+    console.log(`  Replication: ${version.replicationStatus.replicationStatus}`);
+
   } catch (err) {
     if (err.code === status.FAILED_PRECONDITION) {
       console.error(
@@ -54,5 +66,8 @@ async function enableSecretVersion(projectId, secretId, versionId) {
   }
 }
 
-module.exports = {enableSecretVersion};
+// [END secretmanager_enable_secret_version]
+// [END secretmanager_secretmanagerservice_secretversion_enable]
 // [END secretmanager_v1_secretmanagerservice_secretversion_enable]
+
+module.exports = {enableSecretVersion};

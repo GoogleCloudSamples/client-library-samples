@@ -13,6 +13,8 @@
 # limitations under the License.
 
 # [START secretmanager_v1_secretmanagerservice_secretversion_add]
+# [START secretmanager_secretmanagerservice_secretversion_add]
+# [START secretmanager_add_secret_version]
 import google.api_core.exceptions
 from google.cloud import secretmanager_v1
 
@@ -34,8 +36,16 @@ def add_secret_version(project_id: str, secret_id: str) -> None:
             request={"parent": parent, "payload": payload}
         )
 
+        replication_status = "unknown"
+        if "automatic" in response.replication_status:
+            replication_status = "automatic"
+        elif "user_managed" in response.replication_status:
+            replication_status = "user-managed"
+
         print(f"Added secret version: {response.name}")
+        print(f"  Create Time: {response.create_time}")
         print(f"  State: {response.state.name}")
+        print(f"  Replication: {replication_status}")
 
     except google.api_core.exceptions.NotFound:
         print(
@@ -46,4 +56,6 @@ def add_secret_version(project_id: str, secret_id: str) -> None:
         print(f"An unexpected error occurred: {e}")
 
 
+# [END secretmanager_add_secret_version]
+# [END secretmanager_secretmanagerservice_secretversion_add]
 # [END secretmanager_v1_secretmanagerservice_secretversion_add]

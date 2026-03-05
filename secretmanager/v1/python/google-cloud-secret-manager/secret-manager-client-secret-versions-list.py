@@ -13,6 +13,8 @@
 # limitations under the License.
 
 # [START secretmanager_v1_secretmanagerservice_secretversions_list]
+# [START secretmanager_secretmanagerservice_secretversions_list]
+# [START secretmanager_list_secret_versions]
 import google.api_core.exceptions
 from google.cloud import secretmanager_v1
 
@@ -30,7 +32,10 @@ def list_secret_versions(project_id: str, secret_id: str) -> None:
 
     try:
         for version in client.list_secret_versions(request={"parent": parent}):
+
             print(f"Found version: {version.name}")
+            print(f"  Create Time: {version.create_time}")
+            print(f"  Destroy Time: {version.destroy_time}")
             print(f"  State: {version.state.name}")
 
     except google.api_core.exceptions.NotFound:
@@ -43,4 +48,6 @@ def list_secret_versions(project_id: str, secret_id: str) -> None:
         print(f"An unexpected error occurred: {e}")
 
 
+# [END secretmanager_list_secret_versions]
+# [END secretmanager_secretmanagerservice_secretversions_list]
 # [END secretmanager_v1_secretmanagerservice_secretversions_list]

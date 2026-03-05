@@ -13,6 +13,8 @@
 # limitations under the License.
 
 # [START secretmanager_v1_secretmanagerservice_secretversion_destroy]
+# [START secretmanager_secretmanagerservice_secretversion_destroy]
+# [START secretmanager_destroy_secret_version]
 import google.api_core.exceptions
 from google.cloud import secretmanager_v1
 
@@ -37,6 +39,9 @@ def destroy_secret_version(project_id: str, secret_id: str, version_id: str) -> 
         response = client.destroy_secret_version(request=request)
 
         print(f"Destroyed secret version: {response.name}")
+        print(f"  Create Time: {response.create_time}")
+        print(f"  Destroy Time: {response.destroy_time}")
+        print(f"  State: {response.state.name}")
 
     except google.api_core.exceptions.NotFound:
         print(
@@ -48,4 +53,6 @@ def destroy_secret_version(project_id: str, secret_id: str, version_id: str) -> 
         print(f"An unexpected error occurred: {e}")
 
 
+# [END secretmanager_destroy_secret_version]
+# [END secretmanager_secretmanagerservice_secretversion_destroy]
 # [END secretmanager_v1_secretmanagerservice_secretversion_destroy]

@@ -14,9 +14,11 @@
  * limitations under the License.
  */
 
-// [START secretmanager_v1_secretmanagerservice_secrets_list]
-
 'use strict';
+
+// [START secretmanager_v1_secretmanagerservice_secrets_list]
+// [START secretmanager_secretmanagerservice_secrets_list]
+// [START secretmanager_list_secrets]
 
 const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
 const {status} = require('@grpc/grpc-js');
@@ -24,8 +26,6 @@ const {status} = require('@grpc/grpc-js');
 const client = new SecretManagerServiceClient();
 
 /**
- * List Secrets within a Project.
- *
  * Lists all secrets within a specified Google Cloud project. This sample
  * demonstrates how to discover available secret resources and retrieve their
  * metadata.
@@ -46,7 +46,19 @@ async function listSecrets(projectId) {
     }
 
     for (const secret of secrets) {
+
+      const dateObj = new Date(Number(secret.createTime.seconds) * 1000);
+
+      const createTime = new Intl.DateTimeFormat('en-US', {
+        dateStyle: 'short',
+        timeStyle: 'long',
+        timeZone: 'GMT',
+      }).format(dateObj);
+
       console.log(`Found secret: ${secret.name}`);
+      console.log(`  Create Time: ${createTime}`);
+      console.log(`  Labels: ${JSON.stringify(secret.labels)}`);
+      console.log(`  Replication: ${secret.replication.replication}`);
     }
   } catch (err) {
     if (err.code === status.PERMISSION_DENIED) {
@@ -59,5 +71,8 @@ async function listSecrets(projectId) {
   }
 }
 
-module.exports = {listSecrets};
+// [END secretmanager_list_secrets]
+// [END secretmanager_secretmanagerservice_secrets_list]
 // [END secretmanager_v1_secretmanagerservice_secrets_list]
+
+module.exports = {listSecrets};

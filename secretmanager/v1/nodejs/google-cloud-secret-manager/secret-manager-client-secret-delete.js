@@ -14,9 +14,11 @@
  * limitations under the License.
  */
 
-// [START secretmanager_v1_secretmanagerservice_secret_delete]
-
 'use strict';
+
+// [START secretmanager_v1_secretmanagerservice_secret_delete]
+// [START secretmanager_secretmanagerservice_secret_delete]
+// [START secretmanager_delete_secret]
 
 const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
 const {status} = require('@grpc/grpc-js');
@@ -24,9 +26,7 @@ const {status} = require('@grpc/grpc-js');
 const client = new SecretManagerServiceClient();
 
 /**
- * Delete Secret Resource.
- *
- * This sample demonstrates how to remove a secret
+ * Deletes Secret Resource. This sample demonstrates how to remove a secret
  * and all its associated versions from Secret Manager.
  *
  * @param projectId Google Cloud Project ID (such as 'example-project-id')
@@ -52,5 +52,9 @@ async function deleteSecret(projectId, secretId) {
   }
 }
 
-module.exports = {deleteSecret};
+// [END secretmanager_delete_secret]
+// [END secretmanager_secretmanagerservice_secret_delete]
 // [END secretmanager_v1_secretmanagerservice_secret_delete]
+
+module.exports = {deleteSecret};
+

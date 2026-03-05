@@ -17,6 +17,8 @@
 'use strict';
 
 // [START secretmanager_v1_secretmanagerservice_secret_create_notifications_with_topics]
+// [START secretmanager_secretmanagerservice_secret_create_notifications_with_topics]
+// [START secretmanager_create_secret_with_notifications]
 
 const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
 const {status} = require('@grpc/grpc-js');
@@ -24,8 +26,6 @@ const {status} = require('@grpc/grpc-js');
 const client = new SecretManagerServiceClient();
 
 /**
- * Create Secret with Pub/Sub Notifications.
- *
  * Creates a new secret resource configured with Pub/Sub notifications. This
  * sample demonstrates how to publish notifications when secret versions are
  * added or destroyed.
@@ -53,7 +53,19 @@ async function createSecretWithNotifications(projectId, secretId, topicId) {
       },
     });
 
+    const dateObj = new Date(Number(secret.createTime.seconds) * 1000);
+
+    const createTime = new Intl.DateTimeFormat('en-US', {
+      dateStyle: 'short',
+      timeStyle: 'long',
+      timeZone: 'GMT',
+    }).format(dateObj);
+
     console.log(`Created secret: ${secret.name}`);
+    console.log(`  Create Time: ${createTime}`);
+    console.log(`  Labels: ${JSON.stringify(secret.labels)}`);
+    console.log(`  Replication: ${secret.replication.replication}`);
+
     for (const topic of secret.topics) {
       console.log(`  Topic: ${topic.name}`);
     }
@@ -68,6 +80,8 @@ async function createSecretWithNotifications(projectId, secretId, topicId) {
   }
 }
 
+// [END secretmanager_create_secret_with_notifications]
+// [END secretmanager_secretmanagerservice_secret_create_notifications_with_topics]
 // [END secretmanager_v1_secretmanagerservice_secret_create_notifications_with_topics]
 
 module.exports = {createSecretWithNotifications};

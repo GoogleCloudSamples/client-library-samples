@@ -14,9 +14,11 @@
  * limitations under the License.
  */
 
-// [START secretmanager_v1_secretmanagerservice_secretversion_access]
-
 'use strict';
+
+// [START secretmanager_v1_secretmanagerservice_secretversion_access]
+// [START secretmanager_secretmanagerservice_secretversion_access]
+// [START secretmanager_access_secret_version]
 
 const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
 const {status} = require('@grpc/grpc-js');
@@ -24,8 +26,6 @@ const {status} = require('@grpc/grpc-js');
 const client = new SecretManagerServiceClient();
 
 /**
- * Access Secret Version.
- *
  * Accesses a specific secret version. This sample demonstrates retrieving the
  * payload of a secret while enforcing cryptographic protection and access
  * control.
@@ -59,5 +59,8 @@ async function accessSecretVersion(projectId, secretId, versionId) {
   }
 }
 
-module.exports = {accessSecretVersion};
+// [END secretmanager_access_secret_version]
+// [END secretmanager_secretmanagerservice_secretversion_access]
 // [END secretmanager_v1_secretmanagerservice_secretversion_access]
+
+module.exports = {accessSecretVersion};

@@ -13,6 +13,8 @@
 # limitations under the License.
 
 # [START secretmanager_v1_secretmanagerservice_secret_create]
+# [START secretmanager_secretmanagerservice_secret_create]
+# [START secretmanager_create_secret]
 import google.api_core.exceptions
 from google.cloud import secretmanager_v1
 
@@ -40,7 +42,17 @@ def create_secret(project_id: str, secret_id: str) -> None:
                 },
             }
         )
+
+        replication = "unknown"
+        if "automatic" in response.replication:
+            replication = "automatic"
+        elif "user_managed" in response.replication:
+            replication = "user-managed"
+
         print(f"Created secret: {response.name}")
+        print(f"  Create Time: {response.create_time}")
+        print(f"  Labels: {response.labels}")
+        print(f"  Replication: {replication}")
 
     except google.api_core.exceptions.AlreadyExists:
         print(
@@ -51,4 +63,6 @@ def create_secret(project_id: str, secret_id: str) -> None:
         print(f"An unexpected error occurred: {e}")
 
 
+# [END secretmanager_create_secret]
+# [END secretmanager_secretmanagerservice_secret_create]
 # [END secretmanager_v1_secretmanagerservice_secret_create]

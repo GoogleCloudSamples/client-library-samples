@@ -14,9 +14,11 @@
  * limitations under the License.
  */
 
-// [START secretmanager_v1_secretmanagerservice_secretversions_list]
-
 'use strict';
+
+// [START secretmanager_v1_secretmanagerservice_secretversions_list]
+// [START secretmanager_secretmanagerservice_secretversions_list]
+// [START secretmanager_list_secret_versions]
 
 const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
 const {status} = require('@grpc/grpc-js');
@@ -24,8 +26,6 @@ const {status} = require('@grpc/grpc-js');
 const client = new SecretManagerServiceClient();
 
 /**
- * List Secret Versions.
- *
  * Lists all secret versions for a given secret. This demonstrates how to view
  * all versions associated with a secret and verify their state within a global
  * environment.
@@ -42,7 +42,32 @@ async function listSecretVersions(projectId, secretId) {
     });
 
     for (const version of versions) {
+
+      const createDateObj = new Date(Number(version.createTime.seconds) * 1000);
+
+      const createTime = new Intl.DateTimeFormat('en-US', {
+        dateStyle: 'short',
+        timeStyle: 'long',
+        timeZone: 'GMT',
+      }).format(createDateObj);
+
+      let destroyTime = null;
+
+      if (version.destroyTime !== null) {
+
+        const destroyDateObj = new Date(Number(version.destroyTime.seconds) * 1000);
+
+        destroyTime = new Intl.DateTimeFormat('en-US', {
+          dateStyle: 'short',
+          timeStyle: 'long',
+          timeZone: 'GMT',
+        }).format(destroyDateObj);
+
+      }
+
       console.log(`Found version: ${version.name}`);
+      console.log(`  Create Time: ${createTime}`);
+      console.log(`  Destroy Time: ${destroyTime}`);
       console.log(`  State: ${version.state}`);
     }
   } catch (err) {
@@ -56,5 +81,8 @@ async function listSecretVersions(projectId, secretId) {
   }
 }
 
-module.exports = {listSecretVersions};
+// [END secretmanager_list_secret_versions]
+// [END secretmanager_secretmanagerservice_secretversions_list]
 // [END secretmanager_v1_secretmanagerservice_secretversions_list]
+
+module.exports = {listSecretVersions};

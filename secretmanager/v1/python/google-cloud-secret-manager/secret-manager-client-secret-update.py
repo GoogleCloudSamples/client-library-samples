@@ -13,6 +13,8 @@
 # limitations under the License.
 
 # [START secretmanager_v1_secretmanagerservice_secret_update]
+# [START secretmanager_secretmanagerservice_secret_update]
+# [START secretmanager_update_secret]
 import google.api_core.exceptions
 from google.cloud import secretmanager_v1
 from google.protobuf import field_mask_pb2
@@ -41,7 +43,15 @@ def update_secret(project_id: str, secret_id: str) -> None:
             request={"secret": secret, "update_mask": update_mask}
         )
 
+        replication = "unknown"
+        if "automatic" in updated_secret.replication:
+            replication = "automatic"
+        if "user_managed" in updated_secret.replication:
+            replication = "user-managed"
+
         print(f"Updated secret: {updated_secret.name}")
+        print(f"  Create Time: {updated_secret.create_time}")
+        print(f"  Replication: {replication}")
         print(f"  Labels: {updated_secret.labels}")
 
     except google.api_core.exceptions.NotFound:
@@ -53,4 +63,6 @@ def update_secret(project_id: str, secret_id: str) -> None:
         print(f"An unexpected error occurred: {e}")
 
 
+# [END secretmanager_update_secret]
+# [END secretmanager_secretmanagerservice_secret_update]
 # [END secretmanager_v1_secretmanagerservice_secret_update]

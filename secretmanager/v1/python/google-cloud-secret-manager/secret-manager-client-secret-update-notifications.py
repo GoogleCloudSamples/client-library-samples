@@ -13,6 +13,8 @@
 # limitations under the License.
 
 # [START secretmanager_v1_secretmanagerservice_secret_update_notifications_with_topics]
+# [START secretmanager_secretmanagerservice_secret_update_notifications_with_topics]
+# [START secretmanager_update_secret_with_notifications]
 import google.api_core.exceptions
 from google.cloud import secretmanager_v1
 
@@ -45,7 +47,17 @@ def update_secret_with_notifications(
             }
         )
 
+        replication = "unknown"
+        if "automatic" in updated_secret.replication:
+            replication = "automatic"
+        if "user_managed" in updated_secret.replication:
+            replication = "user-managed"
+
         print(f"Updated secret: {updated_secret.name}")
+        print(f"  Create Time: {updated_secret.create_time}")
+        print(f"  Labels: {updated_secret.labels}")
+        print(f"  Replication: {replication}")
+
         for topic in updated_secret.topics:
             print(f"  Topic: {topic.name}")
 
@@ -58,4 +70,6 @@ def update_secret_with_notifications(
         print(f"An unexpected error occurred: {e}")
 
 
+# [END secretmanager_update_secret_with_notifications]
+# [END secretmanager_secretmanagerservice_secret_update_notifications_with_topics]
 # [END secretmanager_v1_secretmanagerservice_secret_update_notifications_with_topics]

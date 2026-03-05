@@ -14,9 +14,11 @@
  * limitations under the License.
  */
 
-// [START secretmanager_v1_secretmanagerservice_secretversion_add]
-
 'use strict';
+
+// [START secretmanager_v1_secretmanagerservice_secretversion_add]
+// [START secretmanager_secretmanagerservice_secretversion_add]
+// [START secretmanager_add_secret_version]
 
 const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
 const {status} = require('@grpc/grpc-js');
@@ -42,7 +44,19 @@ async function addSecretVersion(projectId, secretId) {
       },
     });
 
+    const dateObj = new Date(Number(version.createTime.seconds) * 1000);
+
+    const createTime = new Intl.DateTimeFormat('en-US', {
+      dateStyle: 'short',
+      timeStyle: 'long',
+      timeZone: 'GMT',
+    }).format(dateObj);
+
     console.log(`Added secret version: ${version.name}`);
+    console.log(`  Create Time: ${createTime}`);
+    console.log(`  State: ${version.state}`);
+    console.log(`  Replication: ${version.replicationStatus.replicationStatus}`);
+
   } catch (err) {
     if (err.code === status.NOT_FOUND) {
       console.error(
@@ -54,5 +68,8 @@ async function addSecretVersion(projectId, secretId) {
   }
 }
 
-module.exports = {addSecretVersion};
+// [END secretmanager_add_secret_version]
+// [END secretmanager_secretmanagerservice_secretversion_add]
 // [END secretmanager_v1_secretmanagerservice_secretversion_add]
+
+module.exports = {addSecretVersion};

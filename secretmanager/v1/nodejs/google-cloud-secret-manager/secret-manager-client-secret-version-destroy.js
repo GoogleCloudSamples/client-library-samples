@@ -14,9 +14,11 @@
  * limitations under the License.
  */
 
-// [START secretmanager_v1_secretmanagerservice_secretversion_destroy]
-
 'use strict';
+
+// [START secretmanager_v1_secretmanagerservice_secretversion_destroy]
+// [START secretmanager_secretmanagerservice_secretversion_destroy]
+// [START secretmanager_destroy_secret_version]
 
 const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
 const {status} = require('@grpc/grpc-js');
@@ -24,8 +26,6 @@ const {status} = require('@grpc/grpc-js');
 const client = new SecretManagerServiceClient();
 
 /**
- * Destroy Secret Version.
- *
  * Destroys a specific secret version, demonstrating irreversible deletion of a
  * secret's payload. This operation enforces cryptographic protection and
  * access control for the secret.
@@ -42,7 +42,27 @@ async function destroySecretVersion(projectId, secretId, versionId) {
       name,
     });
 
+    const createDateObj = new Date(Number(version.createTime.seconds) * 1000);
+
+    const createTime = new Intl.DateTimeFormat('en-US', {
+      dateStyle: 'short',
+      timeStyle: 'long',
+      timeZone: 'GMT',
+    }).format(createDateObj);
+
+    const destroyDateObj = new Date(Number(version.destroyTime.seconds) * 1000);
+
+    const destroyTime = new Intl.DateTimeFormat('en-US', {
+      dateStyle: 'short',
+      timeStyle: 'long',
+      timeZone: 'GMT',
+    }).format(destroyDateObj);
+
     console.log(`Destroyed secret version: ${version.name}`);
+    console.log(`  Create Time: ${createTime}`);
+    console.log(`  Destroy Time: ${destroyTime}`);
+    console.log(`  State: ${version.state}`);
+
   } catch (err) {
     if (err.code === status.NOT_FOUND) {
       console.error(
@@ -54,5 +74,8 @@ async function destroySecretVersion(projectId, secretId, versionId) {
   }
 }
 
-module.exports = {destroySecretVersion};
+// [END secretmanager_destroy_secret_version]
+// [END secretmanager_secretmanagerservice_secretversion_destroy]
 // [END secretmanager_v1_secretmanagerservice_secretversion_destroy]
+
+module.exports = {destroySecretVersion};

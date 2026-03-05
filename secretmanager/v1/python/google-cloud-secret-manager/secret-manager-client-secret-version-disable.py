@@ -13,6 +13,8 @@
 # limitations under the License.
 
 # [START secretmanager_v1_secretmanagerservice_secretversion_disable]
+# [START secretmanager_secretmanagerservice_secretversion_disable]
+# [START secretmanager_disable_secret_version]
 import google.api_core.exceptions
 from google.cloud import secretmanager_v1
 
@@ -35,7 +37,18 @@ def disable_secret_version(project_id: str, secret_id: str, version_id: str) -> 
 
     try:
         response = client.disable_secret_version(request=request)
+
+        replication_status = "unknown"
+        if "automatic" in response.replication_status:
+            replication_status = "automatic"
+        elif "user_managed" in response.replication_status:
+            replication_status = "user-managed"
+
         print(f"Disabled secret version: {response.name}")
+        print(f"  Create Time: {response.create_time}")
+        print(f"  State: {response.state.name}")
+        print(f"  Replication: {replication_status}")
+
     except google.api_core.exceptions.NotFound:
         print(
             f"Error: The secret version '{name}' was not found. Verify "
@@ -45,4 +58,6 @@ def disable_secret_version(project_id: str, secret_id: str, version_id: str) -> 
         print(f"An unexpected error occurred: {e}")
 
 
+# [END secretmanager_disable_secret_version]
+# [END secretmanager_secretmanagerservice_secretversion_disable]
 # [END secretmanager_v1_secretmanagerservice_secretversion_disable]

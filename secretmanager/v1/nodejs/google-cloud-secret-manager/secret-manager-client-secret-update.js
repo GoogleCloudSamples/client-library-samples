@@ -14,9 +14,11 @@
  * limitations under the License.
  */
 
-// [START secretmanager_v1_secretmanagerservice_secret_update]
-
 'use strict';
+
+// [START secretmanager_v1_secretmanagerservice_secret_update]
+// [START secretmanager_secretmanagerservice_secret_update]
+// [START secretmanager_update_secret]
 
 const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
 const {status} = require('@grpc/grpc-js');
@@ -24,8 +26,6 @@ const {status} = require('@grpc/grpc-js');
 const client = new SecretManagerServiceClient();
 
 /**
- * Update Secret Metadata.
- *
  * Updates metadata for an existing secret, demonstrating how to modify
  * properties such as its labels.
  *
@@ -49,7 +49,17 @@ async function updateSecret(projectId, secretId) {
       },
     });
 
+    const dateObj = new Date(Number(updatedSecret.createTime.seconds) * 1000);
+
+    const createTime = new Intl.DateTimeFormat('en-US', {
+      dateStyle: 'short',
+      timeStyle: 'long',
+      timeZone: 'GMT',
+    }).format(dateObj);
+
     console.log(`Updated secret: ${updatedSecret.name}`);
+    console.log(`  Create Time: ${createTime}`);
+    console.log(`  Replication: ${updatedSecret.replication.replication}`);
     console.log(`  Labels: ${JSON.stringify(updatedSecret.labels)}`);
   } catch (err) {
     if (err.code === status.NOT_FOUND) {
@@ -62,5 +72,8 @@ async function updateSecret(projectId, secretId) {
   }
 }
 
-module.exports = {updateSecret};
+// [END secretmanager_update_secret]
+// [END secretmanager_secretmanagerservice_secret_update]
 // [END secretmanager_v1_secretmanagerservice_secret_update]
+
+module.exports = {updateSecret};

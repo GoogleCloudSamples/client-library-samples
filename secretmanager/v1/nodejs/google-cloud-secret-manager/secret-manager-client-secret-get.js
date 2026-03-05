@@ -14,9 +14,11 @@
  * limitations under the License.
  */
 
-// [START secretmanager_v1_secretmanagerservice_secret_get]
-
 'use strict';
+
+// [START secretmanager_v1_secretmanagerservice_secret_get]
+// [START secretmanager_secretmanagerservice_secret_get]
+// [START secretmanager_get_secret]
 
 const {SecretManagerServiceClient} = require('@google-cloud/secret-manager');
 const {status} = require('@grpc/grpc-js');
@@ -24,6 +26,9 @@ const {status} = require('@grpc/grpc-js');
 const client = new SecretManagerServiceClient();
 
 /**
+ * Retrieves the metadata for a specific secret. This sample demonstrates 
+ * how to fetch information about a secret resource without accessing its payload.
+ * 
  * @param projectId Google Cloud Project ID (such as 'example-project-id')
  * @param secretId ID of the secret to retrieve (such as 'my-secret-id')
  */
@@ -34,16 +39,6 @@ async function getSecretMetadata(projectId, secretId) {
     const [secret] = await client.getSecret({
       name,
     });
-
-    const replication = secret.replication;
-    let replicationInfo;
-    if (replication.automatic) {
-      replicationInfo = 'automatic';
-    } else if (replication.userManaged) {
-      replicationInfo = 'user-managed';
-    } else {
-      replicationInfo = 'unknown';
-    }
 
     const dateObj = new Date(Number(secret.createTime.seconds) * 1000);
 
@@ -56,7 +51,7 @@ async function getSecretMetadata(projectId, secretId) {
     console.log(`Found secret: ${secret.name}`);
     console.log(`  Create Time: ${createTime}`);
     console.log(`  Labels: ${JSON.stringify(secret.labels)}`);
-    console.log(`  Replication: ${replicationInfo}`);
+    console.log(`  Replication: ${secret.replication.replication}`);
   } catch (err) {
     if (err.code === status.NOT_FOUND) {
       console.error(
@@ -68,5 +63,9 @@ async function getSecretMetadata(projectId, secretId) {
   }
 }
 
-module.exports = {getSecretMetadata};
+// [END secretmanager_get_secret]
+// [END secretmanager_secretmanagerservice_secret_get]
 // [END secretmanager_v1_secretmanagerservice_secret_get]
+
+module.exports = {getSecretMetadata};
+
