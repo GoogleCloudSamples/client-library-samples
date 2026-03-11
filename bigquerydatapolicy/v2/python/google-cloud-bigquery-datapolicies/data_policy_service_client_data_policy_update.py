@@ -21,11 +21,7 @@ from google.protobuf import field_mask_pb2
 client = bigquery_datapolicies_v2.DataPolicyServiceClient()
 
 
-def update_data_policy(
-    project_id: str,
-    location: str,
-    data_policy_id: str
-) -> None:
+def update_data_policy(project_id: str, location: str, data_policy_id: str) -> None:
     """Updates the data masking configuration of an existing data policy.
 
     This example demonstrates how to use a FieldMask to selectively update the
@@ -57,9 +53,7 @@ def update_data_policy(
     )
 
     # Use a field mask to selectively update only the data masking policy.
-    update_mask = field_mask_pb2.FieldMask(
-        paths=["data_masking_policy"]
-    )
+    update_mask = field_mask_pb2.FieldMask(paths=["data_masking_policy"])
     request = bigquery_datapolicies_v2.UpdateDataPolicyRequest(
         data_policy=updated_data_policy,
         update_mask=update_mask,

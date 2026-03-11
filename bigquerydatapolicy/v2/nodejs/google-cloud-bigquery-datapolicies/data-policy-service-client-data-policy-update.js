@@ -68,13 +68,13 @@ async function updateDataPolicy(projectId, location, dataPolicyId) {
     const [response] = await client.updateDataPolicy(request);
     console.log(`Successfully updated data policy: ${response.name}`);
     console.log(
-      `New masking expression: ${response.dataMaskingPolicy.predefinedExpression}`
+      `New masking expression: ${response.dataMaskingPolicy.predefinedExpression}`,
     );
   } catch (err) {
     if (err.code === status.NOT_FOUND) {
       console.error(
         `Error: Data policy '${resourceName}' not found. ` +
-          'Make sure the data policy exists and the project, location, and data policy ID are correct.'
+          'Make sure the data policy exists and the project, location, and data policy ID are correct.',
       );
     } else {
       console.error('Error updating data policy:', err.message, err);
