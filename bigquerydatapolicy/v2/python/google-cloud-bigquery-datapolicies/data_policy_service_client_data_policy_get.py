@@ -17,7 +17,6 @@
 from google.api_core import exceptions
 from google.cloud import bigquery_datapolicies_v2
 
-
 client = bigquery_datapolicies_v2.DataPolicyServiceClient()
 
 

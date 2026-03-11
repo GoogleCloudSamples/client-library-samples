@@ -26,7 +26,7 @@ def get_data_policy_iam_policy(
     location: str,
     data_policy_id: str,
 ) -> None:
-    """Get the IAM policy for a specified data policy resource from the BigQuery Data Policy API. 
+    """Get the IAM policy for a specified data policy resource from the BigQuery Data Policy API.
     This is useful for auditing which members have which roles on the policy.
 
     Args:

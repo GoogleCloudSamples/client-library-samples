@@ -23,7 +23,7 @@ def list_data_policies(
     project_id: str,
     location: str,
 ) -> None:
-    """Lists all data policies in a specified project and location. 
+    """Lists all data policies in a specified project and location.
     Use this to audit or manage existing data policies programmatically.
 
     Args:
