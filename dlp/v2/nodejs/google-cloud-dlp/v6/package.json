@@ -1,0 +1,12 @@
+{
+  "name": "example",
+  "private": true,
+  "description": "Google Cloud Platform Code Samples 🎒",
+  "dependencies": {
+    "@google-cloud/dlp": "^6.4.0",
+    "@grpc/grpc-js": "^1.13.4"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}
