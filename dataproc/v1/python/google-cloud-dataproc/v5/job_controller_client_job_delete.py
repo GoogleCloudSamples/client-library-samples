@@ -84,6 +84,6 @@ if __name__ == "__main__":
 
     delete_dataproc_job(
         project_id=args.project_id,
-        region=args.location,
+        location=args.location,
         job_id=args.job_id,
     )
