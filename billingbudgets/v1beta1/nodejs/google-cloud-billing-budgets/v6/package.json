@@ -4,7 +4,7 @@
   "description": "Google Cloud Platform Code Samples 🎒",
   "dependencies": {
     "@google-cloud/billing-budgets": "^6.1.0",
-    "@grpc/grpc-js": "^1.14.0"
+    "@grpc/grpc-js": "^1.14.4"
   },
   "scripts": {
     "test": "node --test"
