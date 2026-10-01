@@ -56,3 +56,4 @@ node_modules/
 **/test
 
 .genkit/
+package-lock.json
