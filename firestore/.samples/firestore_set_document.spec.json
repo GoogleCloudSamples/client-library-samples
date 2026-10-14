@@ -1,0 +1,61 @@
+{
+  "version": "1.0.0",
+  "sampleId": "firestore_set_document",
+  "title": "Write a Firestore document",
+  "description": "Writes a document with structured fields into a Firestore collection.",
+  "dateCreated": "2026-10-14T20:45:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Writes a document with structured fields into a Firestore collection.",
+    "products": [
+      "firestore"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "firestore.googleapis.com",
+    "method": "Commit",
+    "service_version": "v1",
+    "verb": "create",
+    "resource": "document",
+    "standard": true,
+    "fixtures": [
+      {
+        "ref": "firestore_document",
+        "output_mapping": {
+          "collection_id": "collectionId",
+          "document_id": "documentId"
+        }
+      }
+    ],
+    "parameters": [
+      {
+        "name": "collectionId",
+        "source": "firestore_document.collection_id"
+      },
+      {
+        "name": "documentId",
+        "source": "firestore_document.document_id"
+      }
+    ]
+  },
+  "regionTags": [
+    {
+      "name": "firestore_set_document",
+      "title": "Write a Firestore document",
+      "description": "Writes a document with structured fields into a Firestore collection."
+    },
+    {
+      "name": "firestore_quickstart"
+    }
+  ],
+  "instances": [
+    {
+      "name": "KOTLIN-google-cloud-firestore",
+      "categories": {
+        "language": "KOTLIN"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}
