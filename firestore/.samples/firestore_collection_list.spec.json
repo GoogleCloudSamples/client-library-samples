@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "sampleId": "firestore_get_collection_documents",
+  "sampleId": "firestore_collection_list",
   "title": "Get all documents in a Firestore collection",
   "description": "Retrieves all documents from a Firestore collection and prints their metadata and fields.",
   "dateCreated": "2026-10-14T20:45:00.000Z",
-  "sampleType": "rpc",
+  "sampleType": "domain",
   "objective": {
     "narrative": "Retrieves all documents from a Firestore collection and prints their metadata and fields.",
     "products": [
@@ -36,9 +36,12 @@
   },
   "regionTags": [
     {
-      "name": "firestore_get_collection_documents",
+      "name": "firestore_collection_list",
       "title": "Get all documents in a Firestore collection",
       "description": "Retrieves all documents from a Firestore collection and prints their metadata and fields."
+    },
+    {
+      "name": "firestore_quickstart"
     }
   ],
   "instances": [

@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
-  "sampleId": "storage_get_bucket_metadata",
-  "title": "Get Cloud Storage bucket metadata",
-  "description": "Retrieves metadata for an existing Google Cloud Storage bucket.",
+  "sampleId": "storage_bucket_create",
+  "title": "Create a Cloud Storage bucket",
+  "description": "Creates a Google Cloud Storage bucket configured with standard storage class.",
   "dateCreated": "2026-10-14T20:45:00.000Z",
-  "sampleType": "rpc",
+  "sampleType": "domain",
   "objective": {
-    "narrative": "Retrieves metadata for an existing Google Cloud Storage bucket.",
+    "narrative": "Creates a Google Cloud Storage bucket configured with standard storage class.",
     "products": [
       "storage"
     ],
@@ -14,9 +14,9 @@
   },
   "extended": {
     "api": "storage.googleapis.com",
-    "method": "buckets.get",
+    "method": "buckets.insert",
     "service_version": "v2",
-    "verb": "get",
+    "verb": "create",
     "resource": "bucket",
     "standard": true,
     "fixtures": [
@@ -36,9 +36,12 @@
   },
   "regionTags": [
     {
-      "name": "storage_get_bucket_metadata",
-      "title": "Get Cloud Storage bucket metadata",
-      "description": "Retrieves metadata for an existing Google Cloud Storage bucket."
+      "name": "storage_bucket_create",
+      "title": "Create a Cloud Storage bucket",
+      "description": "Creates a Google Cloud Storage bucket configured with standard storage class."
+    },
+    {
+      "name": "storage_quickstart"
     }
   ],
   "instances": [

@@ -1,4 +1,4 @@
-// [START pubsub_publish_message]
+// [START pubsub_message_publish]
 import com.google.api.gax.rpc.ApiException
 import com.google.api.gax.rpc.NotFoundException
 import com.google.cloud.pubsub.v1.Publisher
@@ -65,7 +65,7 @@ fun publishMessage(projectId: String, topicId: String) {
     }
   }
 }
-// [END pubsub_publish_message]
+// [END pubsub_message_publish]
 
 fun main(args: Array<String>) {
   val projectId =

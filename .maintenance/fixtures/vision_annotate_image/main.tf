@@ -34,10 +34,10 @@ resource "google_storage_bucket" "default" {
 }
 
 resource "google_storage_bucket_object" "default" {
-  name         = "example-image-${random_id.default.hex}.png"
+  name         = "example-image-${random_id.default.hex}.jpg"
   bucket       = google_storage_bucket.default.name
-  content_type = "image/png"
-  source       = "${path.module}/example-image.png"
+  content_type = "image/jpeg"
+  source       = "${path.module}/dog.jpg"
 }
 
 output "gcs_uri" {

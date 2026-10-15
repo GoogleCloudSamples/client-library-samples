@@ -1,4 +1,5 @@
-// [START storage_create_bucket]
+// [START storage_bucket_create]
+// [START storage_quickstart]
 import com.google.cloud.storage.BucketInfo
 import com.google.cloud.storage.StorageClass
 import com.google.cloud.storage.StorageException
@@ -48,7 +49,8 @@ fun createBucket(projectId: String, bucketName: String) {
     )
   }
 }
-// [END storage_create_bucket]
+// [END storage_quickstart]
+// [END storage_bucket_create]
 
 fun main(args: Array<String>) {
   val projectId =

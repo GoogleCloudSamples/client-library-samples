@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "sampleId": "pubsub_subscribe_async",
+  "sampleId": "pubsub_subscription_subscribe_async",
   "title": "Receive messages asynchronously from a Pub/Sub subscription",
   "description": "Receives and acknowledges messages asynchronously from a Pub/Sub pull subscription over a bounded listening window.",
   "dateCreated": "2026-10-14T20:45:00.000Z",
-  "sampleType": "rpc",
+  "sampleType": "domain",
   "objective": {
     "narrative": "Receives and acknowledges messages asynchronously from a Pub/Sub pull subscription over a bounded listening window.",
     "products": [
@@ -36,7 +36,7 @@
   },
   "regionTags": [
     {
-      "name": "pubsub_subscribe_async",
+      "name": "pubsub_subscription_subscribe_async",
       "title": "Receive messages asynchronously from a Pub/Sub subscription",
       "description": "Receives and acknowledges messages asynchronously from a Pub/Sub pull subscription over a bounded listening window."
     }

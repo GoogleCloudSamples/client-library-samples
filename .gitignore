@@ -57,3 +57,7 @@ node_modules/
 
 .genkit/
 package-lock.json
+
+# Gradle build and cache directories
+**/.gradle/
+**/build/

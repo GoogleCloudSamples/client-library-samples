@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "sampleId": "pubsub_delete_subscription",
+  "sampleId": "pubsub_v1_subscriber_subscription_delete",
   "title": "Delete a Pub/Sub subscription",
   "description": "Deletes an existing Google Cloud Pub/Sub subscription.",
   "dateCreated": "2026-10-14T20:45:00.000Z",
@@ -36,9 +36,12 @@
   },
   "regionTags": [
     {
-      "name": "pubsub_delete_subscription",
+      "name": "pubsub_v1_subscriber_subscription_delete",
       "title": "Delete a Pub/Sub subscription",
       "description": "Deletes an existing Google Cloud Pub/Sub subscription."
+    },
+    {
+      "name": "pubsub_subscriber_subscription_delete"
     }
   ],
   "instances": [

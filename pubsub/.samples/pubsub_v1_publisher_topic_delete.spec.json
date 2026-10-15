@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
-  "sampleId": "pubsub_publish_message",
-  "title": "Publish a message to a Pub/Sub topic",
-  "description": "Publishes a UTF-8 message payload with custom attributes to a Pub/Sub topic.",
+  "sampleId": "pubsub_v1_publisher_topic_delete",
+  "title": "Delete a Pub/Sub topic",
+  "description": "Deletes an existing Google Cloud Pub/Sub topic.",
   "dateCreated": "2026-10-14T20:45:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Publishes a UTF-8 message payload with custom attributes to a Pub/Sub topic.",
+    "narrative": "Deletes an existing Google Cloud Pub/Sub topic.",
     "products": [
       "pubsub"
     ],
@@ -14,10 +14,10 @@
   },
   "extended": {
     "api": "pubsub.googleapis.com",
-    "method": "Publish",
+    "method": "DeleteTopic",
     "service_version": "v1",
-    "verb": "create",
-    "resource": "message",
+    "verb": "delete",
+    "resource": "topic",
     "standard": true,
     "fixtures": [
       {
@@ -36,9 +36,12 @@
   },
   "regionTags": [
     {
-      "name": "pubsub_publish_message",
-      "title": "Publish a message to a Pub/Sub topic",
-      "description": "Publishes a UTF-8 message payload with custom attributes to a Pub/Sub topic."
+      "name": "pubsub_v1_publisher_topic_delete",
+      "title": "Delete a Pub/Sub topic",
+      "description": "Deletes an existing Google Cloud Pub/Sub topic."
+    },
+    {
+      "name": "pubsub_publisher_topic_delete"
     }
   ],
   "instances": [

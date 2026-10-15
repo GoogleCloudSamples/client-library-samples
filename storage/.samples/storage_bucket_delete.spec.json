@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "sampleId": "storage_delete_bucket",
+  "sampleId": "storage_bucket_delete",
   "title": "Delete a Cloud Storage bucket",
   "description": "Deletes an empty Google Cloud Storage bucket.",
   "dateCreated": "2026-10-14T20:45:00.000Z",
-  "sampleType": "rpc",
+  "sampleType": "domain",
   "objective": {
     "narrative": "Deletes an empty Google Cloud Storage bucket.",
     "products": [
@@ -36,7 +36,7 @@
   },
   "regionTags": [
     {
-      "name": "storage_delete_bucket",
+      "name": "storage_bucket_delete",
       "title": "Delete a Cloud Storage bucket",
       "description": "Deletes an empty Google Cloud Storage bucket."
     }

@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "sampleId": "storage_download_object",
+  "sampleId": "storage_file_download",
   "title": "Download an object from a Cloud Storage bucket",
   "description": "Downloads an object's bytes and metadata from a Google Cloud Storage bucket.",
   "dateCreated": "2026-10-14T20:45:00.000Z",
-  "sampleType": "rpc",
+  "sampleType": "domain",
   "objective": {
     "narrative": "Downloads an object's bytes and metadata from a Google Cloud Storage bucket.",
     "products": [
@@ -41,7 +41,7 @@
   },
   "regionTags": [
     {
-      "name": "storage_download_object",
+      "name": "storage_file_download",
       "title": "Download an object from a Cloud Storage bucket",
       "description": "Downloads an object's bytes and metadata from a Google Cloud Storage bucket."
     }

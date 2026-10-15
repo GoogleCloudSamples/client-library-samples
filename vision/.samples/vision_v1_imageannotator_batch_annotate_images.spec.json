@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "sampleId": "vision_annotate_image",
+  "sampleId": "vision_v1_imageannotator_batch_annotate_images",
   "title": "Annotate an image in Cloud Storage",
   "description": "Detects labels in an image stored in Google Cloud Storage using Cloud Vision.",
   "dateCreated": "2026-10-14T20:45:00.000Z",
@@ -36,9 +36,12 @@
   },
   "regionTags": [
     {
-      "name": "vision_annotate_image",
+      "name": "vision_v1_imageannotator_batch_annotate_images",
       "title": "Annotate an image in Cloud Storage",
       "description": "Detects labels in an image stored in Google Cloud Storage using Cloud Vision."
+    },
+    {
+      "name": "vision_imageannotator_batch_annotate_images"
     },
     {
       "name": "vision_quickstart"

@@ -1,4 +1,5 @@
-// [START pubsub_create_topic]
+// [START pubsub_v1_publisher_topic_create]
+// [START pubsub_publisher_topic_create]
 import com.google.api.gax.rpc.AlreadyExistsException
 import com.google.api.gax.rpc.ApiException
 import com.google.cloud.pubsub.v1.TopicAdminClient
@@ -36,7 +37,8 @@ fun createTopic(projectId: String, topicId: String) {
     )
   }
 }
-// [END pubsub_create_topic]
+// [END pubsub_publisher_topic_create]
+// [END pubsub_v1_publisher_topic_create]
 
 fun main(args: Array<String>) {
   val projectId =

@@ -1,4 +1,5 @@
-// [START pubsub_create_subscription]
+// [START pubsub_v1_subscriber_subscription_create]
+// [START pubsub_subscriber_subscription_create]
 import com.google.api.gax.rpc.AlreadyExistsException
 import com.google.api.gax.rpc.ApiException
 import com.google.cloud.pubsub.v1.SubscriptionAdminClient
@@ -54,7 +55,8 @@ fun createSubscription(
     )
   }
 }
-// [END pubsub_create_subscription]
+// [END pubsub_subscriber_subscription_create]
+// [END pubsub_v1_subscriber_subscription_create]
 
 fun main(args: Array<String>) {
   val projectId =

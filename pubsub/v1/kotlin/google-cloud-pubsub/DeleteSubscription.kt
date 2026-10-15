@@ -1,4 +1,5 @@
-// [START pubsub_delete_subscription]
+// [START pubsub_v1_subscriber_subscription_delete]
+// [START pubsub_subscriber_subscription_delete]
 import com.google.api.gax.rpc.ApiException
 import com.google.api.gax.rpc.NotFoundException
 import com.google.cloud.pubsub.v1.SubscriptionAdminClient
@@ -36,7 +37,8 @@ fun deleteSubscription(projectId: String, subscriptionId: String) {
     )
   }
 }
-// [END pubsub_delete_subscription]
+// [END pubsub_subscriber_subscription_delete]
+// [END pubsub_v1_subscriber_subscription_delete]
 
 fun main(args: Array<String>) {
   val projectId =

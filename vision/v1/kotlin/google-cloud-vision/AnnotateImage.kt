@@ -1,4 +1,6 @@
-// [START vision_annotate_image]
+// [START vision_v1_imageannotator_batch_annotate_images]
+// [START vision_imageannotator_batch_annotate_images]
+// [START vision_quickstart]
 import com.google.api.gax.rpc.ApiException
 import com.google.api.gax.rpc.NotFoundException
 import com.google.cloud.vision.v1.AnnotateImageRequest
@@ -65,7 +67,9 @@ fun annotateImage(projectId: String, gcsUri: String) {
     )
   }
 }
-// [END vision_annotate_image]
+// [END vision_quickstart]
+// [END vision_imageannotator_batch_annotate_images]
+// [END vision_v1_imageannotator_batch_annotate_images]
 
 fun main(args: Array<String>) {
   val projectId =

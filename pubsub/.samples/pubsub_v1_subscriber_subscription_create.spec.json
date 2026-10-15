@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "sampleId": "pubsub_create_subscription",
+  "sampleId": "pubsub_v1_subscriber_subscription_create",
   "title": "Create a Pub/Sub pull subscription",
   "description": "Creates a pull subscription attached to a Google Cloud Pub/Sub topic.",
   "dateCreated": "2026-10-14T20:45:00.000Z",
@@ -41,9 +41,12 @@
   },
   "regionTags": [
     {
-      "name": "pubsub_create_subscription",
+      "name": "pubsub_v1_subscriber_subscription_create",
       "title": "Create a Pub/Sub pull subscription",
       "description": "Creates a pull subscription attached to a Google Cloud Pub/Sub topic."
+    },
+    {
+      "name": "pubsub_subscriber_subscription_create"
     }
   ],
   "instances": [

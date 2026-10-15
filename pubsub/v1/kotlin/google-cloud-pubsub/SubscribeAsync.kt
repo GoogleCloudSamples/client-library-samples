@@ -1,4 +1,4 @@
-// [START pubsub_subscribe_async]
+// [START pubsub_subscription_subscribe_async]
 import com.google.api.gax.rpc.ApiException
 import com.google.api.gax.rpc.NotFoundException
 import com.google.cloud.pubsub.v1.AckReplyConsumer
@@ -49,10 +49,10 @@ fun subscribeAsync(projectId: String, subscriptionId: String) {
       "error: subscriber failed on subscription '$subscriptionId' in project '$projectId': ${err.message}"
     )
   } finally {
-    subscriber?.stopAsync()
+    subscriber?.stopAsync()?.awaitTerminated()
   }
 }
-// [END pubsub_subscribe_async]
+// [END pubsub_subscription_subscribe_async]
 
 fun main(args: Array<String>) {
   val projectId =

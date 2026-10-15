@@ -1,4 +1,4 @@
-// [START storage_upload_object]
+// [START storage_file_upload_from_memory]
 import com.google.cloud.storage.BlobId
 import com.google.cloud.storage.BlobInfo
 import com.google.cloud.storage.StorageException
@@ -58,7 +58,7 @@ fun uploadObject(projectId: String, bucketName: String, objectName: String) {
     )
   }
 }
-// [END storage_upload_object]
+// [END storage_file_upload_from_memory]
 
 fun main(args: Array<String>) {
   val projectId =

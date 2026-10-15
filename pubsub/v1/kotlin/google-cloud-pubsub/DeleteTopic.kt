@@ -1,4 +1,5 @@
-// [START pubsub_delete_topic]
+// [START pubsub_v1_publisher_topic_delete]
+// [START pubsub_publisher_topic_delete]
 import com.google.api.gax.rpc.ApiException
 import com.google.api.gax.rpc.NotFoundException
 import com.google.cloud.pubsub.v1.TopicAdminClient
@@ -36,7 +37,8 @@ fun deleteTopic(projectId: String, topicId: String) {
     )
   }
 }
-// [END pubsub_delete_topic]
+// [END pubsub_publisher_topic_delete]
+// [END pubsub_v1_publisher_topic_delete]
 
 fun main(args: Array<String>) {
   val projectId =

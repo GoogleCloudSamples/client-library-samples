@@ -1,4 +1,4 @@
-// [START firestore_set_document]
+// [START firestore_document_set]
 import com.google.api.gax.rpc.ApiException
 import com.google.api.gax.rpc.NotFoundException
 import com.google.cloud.firestore.FirestoreOptions
@@ -41,7 +41,7 @@ fun setDocument(projectId: String, collectionId: String, documentId: String) {
     }
   } catch (err: NotFoundException) {
     System.err.println(
-      "error: Firestore database or collection '$collectionId' not found for document '$documentId' in project '$projectId': ${err.message}"
+      "error: Firestore database not found in project '$projectId': ${err.message}"
     )
   } catch (err: ApiException) {
     System.err.println(
@@ -62,7 +62,7 @@ fun setDocument(projectId: String, collectionId: String, documentId: String) {
     )
   }
 }
-// [END firestore_set_document]
+// [END firestore_document_set]
 
 fun main(args: Array<String>) {
   val projectId =

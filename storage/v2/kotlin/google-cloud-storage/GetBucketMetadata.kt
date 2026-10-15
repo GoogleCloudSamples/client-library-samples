@@ -1,4 +1,4 @@
-// [START storage_get_bucket_metadata]
+// [START storage_bucket_get]
 import com.google.cloud.storage.StorageException
 import com.google.cloud.storage.StorageOptions
 
@@ -29,22 +29,16 @@ fun getBucketMetadata(projectId: String, bucketName: String) {
       }
     }
   } catch (err: StorageException) {
-    if (err.code == 404) {
-      System.err.println(
-        "error: bucket '$bucketName' not found in project '$projectId': ${err.message}"
-      )
-    } else {
-      System.err.println(
-        "error: failed to retrieve metadata for bucket '$bucketName' in project '$projectId': ${err.message}"
-      )
-    }
+    System.err.println(
+      "error: failed to retrieve metadata for bucket '$bucketName' in project '$projectId': ${err.message}"
+    )
   } catch (err: Exception) {
     System.err.println(
       "error: failed to close or initialize Storage client for bucket '$bucketName' in project '$projectId': ${err.message}"
     )
   }
 }
-// [END storage_get_bucket_metadata]
+// [END storage_bucket_get]
 
 fun main(args: Array<String>) {
   val projectId =

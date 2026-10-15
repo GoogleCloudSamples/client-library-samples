@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "sampleId": "firestore_set_document",
+  "sampleId": "firestore_document_set",
   "title": "Write a Firestore document",
   "description": "Writes a document with structured fields into a Firestore collection.",
   "dateCreated": "2026-10-14T20:45:00.000Z",
-  "sampleType": "rpc",
+  "sampleType": "domain",
   "objective": {
     "narrative": "Writes a document with structured fields into a Firestore collection.",
     "products": [
@@ -41,12 +41,9 @@
   },
   "regionTags": [
     {
-      "name": "firestore_set_document",
+      "name": "firestore_document_set",
       "title": "Write a Firestore document",
       "description": "Writes a document with structured fields into a Firestore collection."
-    },
-    {
-      "name": "firestore_quickstart"
     }
   ],
   "instances": [

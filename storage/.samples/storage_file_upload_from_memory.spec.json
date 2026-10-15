@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "sampleId": "storage_upload_object",
+  "sampleId": "storage_file_upload_from_memory",
   "title": "Upload an object to a Cloud Storage bucket",
   "description": "Uploads an object payload with custom metadata to a Google Cloud Storage bucket.",
   "dateCreated": "2026-10-14T20:45:00.000Z",
-  "sampleType": "rpc",
+  "sampleType": "domain",
   "objective": {
     "narrative": "Uploads an object payload with custom metadata to a Google Cloud Storage bucket.",
     "products": [
@@ -41,7 +41,7 @@
   },
   "regionTags": [
     {
-      "name": "storage_upload_object",
+      "name": "storage_file_upload_from_memory",
       "title": "Upload an object to a Cloud Storage bucket",
       "description": "Uploads an object payload with custom metadata to a Google Cloud Storage bucket."
     }

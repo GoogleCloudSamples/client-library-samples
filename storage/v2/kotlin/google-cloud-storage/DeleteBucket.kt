@@ -1,4 +1,4 @@
-// [START storage_delete_bucket]
+// [START storage_bucket_delete]
 import com.google.cloud.storage.StorageException
 import com.google.cloud.storage.StorageOptions
 
@@ -27,22 +27,16 @@ fun deleteBucket(projectId: String, bucketName: String) {
       }
     }
   } catch (err: StorageException) {
-    if (err.code == 404) {
-      System.err.println(
-        "error: bucket '$bucketName' not found in project '$projectId': ${err.message}"
-      )
-    } else {
-      System.err.println(
-        "error: failed to delete bucket '$bucketName' in project '$projectId': ${err.message}"
-      )
-    }
+    System.err.println(
+      "error: failed to delete bucket '$bucketName' in project '$projectId': ${err.message}"
+    )
   } catch (err: Exception) {
     System.err.println(
       "error: failed to close or initialize Storage client for bucket '$bucketName' in project '$projectId': ${err.message}"
     )
   }
 }
-// [END storage_delete_bucket]
+// [END storage_bucket_delete]
 
 fun main(args: Array<String>) {
   val projectId =

@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
-  "sampleId": "pubsub_create_topic",
-  "title": "Create a Pub/Sub topic",
-  "description": "Creates a Google Cloud Pub/Sub topic for publishing messages.",
+  "sampleId": "pubsub_message_publish",
+  "title": "Publish a message to a Pub/Sub topic",
+  "description": "Publishes a UTF-8 message payload with custom attributes to a Pub/Sub topic.",
   "dateCreated": "2026-10-14T20:45:00.000Z",
-  "sampleType": "rpc",
+  "sampleType": "domain",
   "objective": {
-    "narrative": "Creates a Google Cloud Pub/Sub topic for publishing messages.",
+    "narrative": "Publishes a UTF-8 message payload with custom attributes to a Pub/Sub topic.",
     "products": [
       "pubsub"
     ],
@@ -14,10 +14,10 @@
   },
   "extended": {
     "api": "pubsub.googleapis.com",
-    "method": "CreateTopic",
+    "method": "Publish",
     "service_version": "v1",
     "verb": "create",
-    "resource": "topic",
+    "resource": "message",
     "standard": true,
     "fixtures": [
       {
@@ -36,9 +36,9 @@
   },
   "regionTags": [
     {
-      "name": "pubsub_create_topic",
-      "title": "Create a Pub/Sub topic",
-      "description": "Creates a Google Cloud Pub/Sub topic for publishing messages."
+      "name": "pubsub_message_publish",
+      "title": "Publish a message to a Pub/Sub topic",
+      "description": "Publishes a UTF-8 message payload with custom attributes to a Pub/Sub topic."
     }
   ],
   "instances": [
