@@ -54,11 +54,15 @@ fun annotateImage(gcsUri: String) {
       val response = client.batchAnnotateImages(listOf(request))
       val imageResponse = response.responsesList.firstOrNull()
 
-      if (imageResponse != null && imageResponse.hasError()) {
+      if (imageResponse == null) {
+        System.err.println(
+          "error: no response received from Vision API for image '$gcsUri'"
+        )
+      } else if (imageResponse.hasError()) {
         System.err.println(
           "error: annotation failed for image '$gcsUri': ${imageResponse.error.message}"
         )
-      } else if (imageResponse != null) {
+      } else {
         println("Resource ID: $gcsUri")
         println("Annotation Count: ${imageResponse.labelAnnotationsCount}")
         for (annotation in imageResponse.labelAnnotationsList) {

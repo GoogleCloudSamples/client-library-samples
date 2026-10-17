@@ -30,9 +30,8 @@ import com.google.cloud.storage.StorageOptions
 fun createBucket(projectId: String, bucketName: String) {
   val options =
     StorageOptions.newBuilder().setProjectId(projectId).build()
-  val location = "US"
+  val location = "us-central1"
 
-  // Configure standard storage class in the multi-region US location.
   val bucketInfo =
     BucketInfo.newBuilder(bucketName)
       .setLocation(location)

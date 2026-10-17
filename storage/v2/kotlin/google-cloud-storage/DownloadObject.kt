@@ -39,6 +39,8 @@ fun downloadObject(projectId: String, bucketName: String, objectName: String) {
           "error: object '$objectName' not found in bucket '$bucketName' for project '$projectId'"
         )
       } else {
+        // getContent() buffers the entire object in memory; for large objects,
+        // stream with blob.downloadTo(Path) or blob.reader() instead.
         val bytes = blob.getContent()
         println("Resource ID: ${blob.blobId.toGsUtilUri()}")
         println("Display Name: ${blob.name}")

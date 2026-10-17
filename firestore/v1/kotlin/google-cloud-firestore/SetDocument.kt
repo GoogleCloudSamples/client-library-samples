@@ -35,7 +35,6 @@ fun setDocument(projectId: String, collectionId: String, documentId: String) {
       .setProjectId(projectId)
       .build()
 
-  // Populate representative document fields with example values.
   val documentData =
     mapOf(
       "category" to "example-category",
