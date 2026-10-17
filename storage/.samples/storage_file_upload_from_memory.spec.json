@@ -21,21 +21,16 @@
     "standard": true,
     "fixtures": [
       {
-        "ref": "storage_object",
+        "ref": "storage_bucket",
         "output_mapping": {
-          "bucket_name": "bucketName",
-          "object_name": "objectName"
+          "bucket_name": "bucketName"
         }
       }
     ],
     "parameters": [
       {
         "name": "bucketName",
-        "source": "storage_object.bucket_name"
-      },
-      {
-        "name": "objectName",
-        "source": "storage_object.object_name"
+        "source": "storage_bucket.bucket_name"
       }
     ]
   },

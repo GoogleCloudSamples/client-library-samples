@@ -43,10 +43,6 @@ fun createBucket(projectId: String, bucketName: String) {
         "error: failed to create bucket '$bucketName' in project '$projectId': ${err.message}"
       )
     }
-  } catch (err: Exception) {
-    System.err.println(
-      "error: failed to close or initialize Storage client for bucket '$bucketName' in project '$projectId': ${err.message}"
-    )
   }
 }
 // [END storage_quickstart]

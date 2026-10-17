@@ -52,10 +52,6 @@ fun uploadObject(projectId: String, bucketName: String, objectName: String) {
         "error: failed to upload object '$objectName' to bucket '$bucketName' in project '$projectId': ${err.message}"
       )
     }
-  } catch (err: Exception) {
-    System.err.println(
-      "error: failed to close or initialize Storage client for object '$objectName' in bucket '$bucketName' for project '$projectId': ${err.message}"
-    )
   }
 }
 // [END storage_file_upload_from_memory]

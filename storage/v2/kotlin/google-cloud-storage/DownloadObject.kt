@@ -2,7 +2,6 @@
 import com.google.cloud.storage.BlobId
 import com.google.cloud.storage.StorageException
 import com.google.cloud.storage.StorageOptions
-import java.nio.charset.StandardCharsets
 
 /**
  * Downloads an object's bytes and metadata from a Google Cloud Storage bucket.
@@ -24,11 +23,11 @@ fun downloadObject(projectId: String, bucketName: String, objectName: String) {
           "error: object '$objectName' not found in bucket '$bucketName' for project '$projectId'"
         )
       } else {
-        val content = String(blob.getContent(), StandardCharsets.UTF_8)
+        val bytes = blob.getContent()
         println("Resource ID: ${blob.blobId.toGsUtilUri()}")
         println("Display Name: ${blob.name}")
         println("Creation Date: ${blob.createTimeOffsetDateTime}")
-        println("Content Length: ${content.length}")
+        println("Content Length: ${bytes.size}")
         println("Content Type: ${blob.contentType}")
         println("Generation: ${blob.generation}")
       }
@@ -43,10 +42,6 @@ fun downloadObject(projectId: String, bucketName: String, objectName: String) {
         "error: failed to download object '$objectName' from bucket '$bucketName' in project '$projectId': ${err.message}"
       )
     }
-  } catch (err: Exception) {
-    System.err.println(
-      "error: failed to close or initialize Storage client for object '$objectName' in bucket '$bucketName' for project '$projectId': ${err.message}"
-    )
   }
 }
 // [END storage_file_download]

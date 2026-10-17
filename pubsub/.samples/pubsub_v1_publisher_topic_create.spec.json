@@ -19,20 +19,8 @@
     "verb": "create",
     "resource": "topic",
     "standard": true,
-    "fixtures": [
-      {
-        "ref": "pubsub_topic",
-        "output_mapping": {
-          "topic_id": "topicId"
-        }
-      }
-    ],
-    "parameters": [
-      {
-        "name": "topicId",
-        "source": "pubsub_topic.topic_id"
-      }
-    ]
+    "fixtures": [],
+    "parameters": []
   },
   "regionTags": [
     {

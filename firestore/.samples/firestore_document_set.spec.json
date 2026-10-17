@@ -21,21 +21,16 @@
     "standard": true,
     "fixtures": [
       {
-        "ref": "firestore_document",
+        "ref": "firestore_collection",
         "output_mapping": {
-          "collection_id": "collectionId",
-          "document_id": "documentId"
+          "collection_id": "collectionId"
         }
       }
     ],
     "parameters": [
       {
         "name": "collectionId",
-        "source": "firestore_document.collection_id"
-      },
-      {
-        "name": "documentId",
-        "source": "firestore_document.document_id"
+        "source": "firestore_collection.collection_id"
       }
     ]
   },

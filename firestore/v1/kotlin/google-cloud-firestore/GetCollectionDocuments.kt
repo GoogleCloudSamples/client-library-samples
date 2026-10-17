@@ -35,26 +35,21 @@ fun getCollectionDocuments(projectId: String, collectionId: String) {
         println("Update Time: ${document.updateTime}")
       }
     }
-  } catch (err: NotFoundException) {
-    System.err.println(
-      "error: Firestore database not found in project '$projectId': ${err.message}"
-    )
-  } catch (err: ApiException) {
-    System.err.println(
-      "error: failed to retrieve collection '$collectionId' in project '$projectId': ${err.message}"
-    )
   } catch (err: ExecutionException) {
-    System.err.println(
-      "error: execution failed while querying collection '$collectionId' in project '$projectId': ${err.message}"
-    )
+    val message =
+      when (val cause = err.cause) {
+        is NotFoundException ->
+          "error: Firestore database not found in project '$projectId': ${cause.message}"
+        is ApiException ->
+          "error: failed to retrieve collection '$collectionId' in project '$projectId': ${cause.message}"
+        else ->
+          "error: execution failed while querying collection '$collectionId' in project '$projectId': ${err.message}"
+      }
+    System.err.println(message)
   } catch (err: InterruptedException) {
     Thread.currentThread().interrupt()
     System.err.println(
       "error: interrupted while querying collection '$collectionId' in project '$projectId': ${err.message}"
-    )
-  } catch (err: Exception) {
-    System.err.println(
-      "error: failed to initialize or close Firestore client for collection '$collectionId' in project '$projectId': ${err.message}"
     )
   }
 }

@@ -19,20 +19,8 @@
     "verb": "create",
     "resource": "bucket",
     "standard": true,
-    "fixtures": [
-      {
-        "ref": "storage_bucket",
-        "output_mapping": {
-          "bucket_name": "bucketName"
-        }
-      }
-    ],
-    "parameters": [
-      {
-        "name": "bucketName",
-        "source": "storage_bucket.bucket_name"
-      }
-    ]
+    "fixtures": [],
+    "parameters": []
   },
   "regionTags": [
     {

@@ -18,18 +18,7 @@ resource "google_pubsub_topic" "default" {
   project = google_project_service.pubsub.project
 }
 
-resource "google_pubsub_subscription" "default" {
-  name    = "example-subscription-${random_id.default.hex}"
-  project = google_project_service.pubsub.project
-  topic   = google_pubsub_topic.default.id
-}
-
 output "topic_id" {
   description = "Pub/Sub topic identifier"
   value       = google_pubsub_topic.default.name
-}
-
-output "subscription_id" {
-  description = "Pub/Sub subscription identifier"
-  value       = google_pubsub_subscription.default.name
 }

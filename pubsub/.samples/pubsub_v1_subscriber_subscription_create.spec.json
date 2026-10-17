@@ -21,21 +21,16 @@
     "standard": true,
     "fixtures": [
       {
-        "ref": "pubsub_topic_subscription",
+        "ref": "pubsub_topic",
         "output_mapping": {
-          "topic_id": "topicId",
-          "subscription_id": "subscriptionId"
+          "topic_id": "topicId"
         }
       }
     ],
     "parameters": [
       {
         "name": "topicId",
-        "source": "pubsub_topic_subscription.topic_id"
-      },
-      {
-        "name": "subscriptionId",
-        "source": "pubsub_topic_subscription.subscription_id"
+        "source": "pubsub_topic.topic_id"
       }
     ]
   },

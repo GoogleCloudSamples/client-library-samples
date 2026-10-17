@@ -39,26 +39,21 @@ fun setDocument(projectId: String, collectionId: String, documentId: String) {
       println("Document ID: $documentId")
       println("Update Time: ${writeResult.updateTime}")
     }
-  } catch (err: NotFoundException) {
-    System.err.println(
-      "error: Firestore database not found in project '$projectId': ${err.message}"
-    )
-  } catch (err: ApiException) {
-    System.err.println(
-      "error: failed to write document '$documentId' in collection '$collectionId' for project '$projectId': ${err.message}"
-    )
   } catch (err: ExecutionException) {
-    System.err.println(
-      "error: execution failed while writing document '$documentId' in collection '$collectionId' for project '$projectId': ${err.message}"
-    )
+    val message =
+      when (val cause = err.cause) {
+        is NotFoundException ->
+          "error: Firestore database not found in project '$projectId': ${cause.message}"
+        is ApiException ->
+          "error: failed to write document '$documentId' in collection '$collectionId' for project '$projectId': ${cause.message}"
+        else ->
+          "error: execution failed while writing document '$documentId' in collection '$collectionId' for project '$projectId': ${err.message}"
+      }
+    System.err.println(message)
   } catch (err: InterruptedException) {
     Thread.currentThread().interrupt()
     System.err.println(
       "error: interrupted while writing document '$documentId' in collection '$collectionId' for project '$projectId': ${err.message}"
-    )
-  } catch (err: Exception) {
-    System.err.println(
-      "error: failed to close or initialize Firestore client for document '$documentId' in collection '$collectionId' for project '$projectId': ${err.message}"
     )
   }
 }

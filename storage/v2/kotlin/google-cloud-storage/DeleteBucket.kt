@@ -30,10 +30,6 @@ fun deleteBucket(projectId: String, bucketName: String) {
     System.err.println(
       "error: failed to delete bucket '$bucketName' in project '$projectId': ${err.message}"
     )
-  } catch (err: Exception) {
-    System.err.println(
-      "error: failed to close or initialize Storage client for bucket '$bucketName' in project '$projectId': ${err.message}"
-    )
   }
 }
 // [END storage_bucket_delete]

@@ -36,20 +36,21 @@ fun subscribeAsync(projectId: String, subscriptionId: String) {
     println("Resource ID: $subscriptionName")
     println("Status: COMPLETED_WINDOW")
     println("Subscription ID: $subscriptionId")
-  } catch (err: NotFoundException) {
-    System.err.println(
-      "error: subscription '$subscriptionId' not found in project '$projectId': ${err.message}"
-    )
-  } catch (err: ApiException) {
-    System.err.println(
-      "error: failed to receive messages from subscription '$subscriptionId' in project '$projectId': ${err.message}"
-    )
   } catch (err: IllegalStateException) {
-    System.err.println(
-      "error: subscriber failed on subscription '$subscriptionId' in project '$projectId': ${err.message}"
-    )
+    val message =
+      when (val cause = err.cause) {
+        is NotFoundException ->
+          "error: subscription '$subscriptionId' not found in project '$projectId': ${cause.message}"
+        is ApiException ->
+          "error: failed to receive messages from subscription '$subscriptionId' in project '$projectId': ${cause.message}"
+        else ->
+          "error: subscriber failed on subscription '$subscriptionId' in project '$projectId': ${err.message}"
+      }
+    System.err.println(message)
   } finally {
-    subscriber?.stopAsync()?.awaitTerminated()
+    if (subscriber?.isRunning == true) {
+      subscriber.stopAsync().awaitTerminated(10, TimeUnit.SECONDS)
+    }
   }
 }
 // [END pubsub_subscription_subscribe_async]

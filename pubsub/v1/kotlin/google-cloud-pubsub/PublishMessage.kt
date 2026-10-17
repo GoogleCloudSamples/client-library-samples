@@ -37,18 +37,17 @@ fun publishMessage(projectId: String, topicId: String) {
     println("Resource ID: $messageId")
     println("Attributes: $messageAttributes")
     println("Topic: $topicName")
-  } catch (err: NotFoundException) {
-    System.err.println(
-      "error: topic '$topicId' not found in project '$projectId': ${err.message}"
-    )
-  } catch (err: ApiException) {
-    System.err.println(
-      "error: failed to publish message to topic '$topicId' in project '$projectId': ${err.message}"
-    )
   } catch (err: ExecutionException) {
-    System.err.println(
-      "error: execution failed while publishing to topic '$topicId' in project '$projectId': ${err.message}"
-    )
+    val message =
+      when (val cause = err.cause) {
+        is NotFoundException ->
+          "error: topic '$topicId' not found in project '$projectId': ${cause.message}"
+        is ApiException ->
+          "error: failed to publish message to topic '$topicId' in project '$projectId': ${cause.message}"
+        else ->
+          "error: execution failed while publishing to topic '$topicId' in project '$projectId': ${err.message}"
+      }
+    System.err.println(message)
   } catch (err: InterruptedException) {
     Thread.currentThread().interrupt()
     System.err.println(
@@ -61,7 +60,11 @@ fun publishMessage(projectId: String, topicId: String) {
   } finally {
     if (publisher != null) {
       publisher.shutdown()
-      publisher.awaitTermination(1, TimeUnit.MINUTES)
+      try {
+        publisher.awaitTermination(1, TimeUnit.MINUTES)
+      } catch (err: InterruptedException) {
+        Thread.currentThread().interrupt()
+      }
     }
   }
 }
