@@ -1,0 +1,56 @@
+{
+  "version": "1.0.0",
+  "sampleId": "pubsub_v1_subscriber_subscription_delete",
+  "title": "Delete a Pub/Sub subscription",
+  "description": "Deletes an existing Google Cloud Pub/Sub subscription.",
+  "dateCreated": "2026-10-14T20:45:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Deletes an existing Google Cloud Pub/Sub subscription.",
+    "products": [
+      "pubsub"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "pubsub.googleapis.com",
+    "method": "DeleteSubscription",
+    "service_version": "v1",
+    "verb": "delete",
+    "resource": "subscription",
+    "standard": true,
+    "fixtures": [
+      {
+        "ref": "pubsub_subscription",
+        "output_mapping": {
+          "subscription_id": "subscriptionId"
+        }
+      }
+    ],
+    "parameters": [
+      {
+        "name": "subscriptionId",
+        "source": "pubsub_subscription.subscription_id"
+      }
+    ]
+  },
+  "regionTags": [
+    {
+      "name": "pubsub_v1_subscriber_subscription_delete",
+      "title": "Delete a Pub/Sub subscription",
+      "description": "Deletes an existing Google Cloud Pub/Sub subscription."
+    },
+    {
+      "name": "pubsub_subscriber_subscription_delete"
+    }
+  ],
+  "instances": [
+    {
+      "name": "KOTLIN-google-cloud-pubsub",
+      "categories": {
+        "language": "KOTLIN"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

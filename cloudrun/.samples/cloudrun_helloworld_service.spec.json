@@ -1,0 +1,43 @@
+{
+  "version": "1.0.0",
+  "sampleId": "cloudrun_helloworld_service",
+  "title": "Deploy a Kotlin Hello World service to Cloud Run",
+  "description": "Creates a minimal Spring Boot HTTP service in Kotlin that listens on the PORT environment variable and responds to GET requests on '/' for deployment to Google Cloud Run.",
+  "dateCreated": "2026-10-15T20:00:00Z",
+  "sampleType": "sampleapp",
+  "objective": {
+    "narrative": "Developers deploying Kotlin web services to Google Cloud Run need a minimal HTTP server entrypoint that binds to the PORT environment variable required by the Cloud Run container contract.",
+    "products": [
+      "cloudrun"
+    ]
+  },
+  "regionTags": [
+    {
+      "name": "cloudrun_helloworld_service",
+      "title": "Hello World service",
+      "description": "Minimal Spring Boot Kotlin HTTP service for Cloud Run.",
+      "autoDocsPublish": true
+    },
+    {
+      "name": "run_helloworld_service",
+      "title": "Hello World service (legacy alias)",
+      "description": "Legacy region tag alias for the Cloud Run Hello World service.",
+      "autoDocsPublish": true
+    },
+    {
+      "name": "cloudrun_helloworld_properties",
+      "title": "Hello World port configuration",
+      "description": "Configures the Spring Boot server port from the PORT environment variable.",
+      "autoDocsPublish": true
+    }
+  ],
+  "instances": [
+    {
+      "name": "cloudrun_helloworld_service",
+      "categories": {
+        "language": "KOTLIN"
+      },
+      "initialCommitAuthorType": "ai_assisted"
+    }
+  ]
+}

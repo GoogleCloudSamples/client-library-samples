@@ -1,0 +1,44 @@
+{
+  "version": "1.0.0",
+  "sampleId": "storage_bucket_create",
+  "title": "Create a Cloud Storage bucket",
+  "description": "Creates a Google Cloud Storage bucket configured with standard storage class.",
+  "dateCreated": "2026-10-14T20:45:00.000Z",
+  "sampleType": "domain",
+  "objective": {
+    "narrative": "Creates a Google Cloud Storage bucket configured with standard storage class.",
+    "products": [
+      "storage"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "storage.googleapis.com",
+    "method": "buckets.insert",
+    "service_version": "v2",
+    "verb": "create",
+    "resource": "bucket",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "storage_bucket_create",
+      "title": "Create a Cloud Storage bucket",
+      "description": "Creates a Google Cloud Storage bucket configured with standard storage class."
+    },
+    {
+      "name": "storage_quickstart"
+    }
+  ],
+  "instances": [
+    {
+      "name": "KOTLIN-google-cloud-storage",
+      "categories": {
+        "language": "KOTLIN"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}
