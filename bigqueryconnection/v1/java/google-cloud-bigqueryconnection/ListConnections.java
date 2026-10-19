@@ -56,12 +56,9 @@ public class ListConnections {
       projectId = "example-project-id";
     }
 
-    String location = System.getenv("GOOGLE_CLOUD_REGION");
+    String location = "us-central1";
     if (args.length > 1) {
       location = args[1];
-    }
-    if (location == null || location.isEmpty()) {
-      location = "us-central1";
     }
 
     listConnections(projectId, location);

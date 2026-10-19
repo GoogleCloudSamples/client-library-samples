@@ -9,7 +9,7 @@ import com.google.iam.v1.GetIamPolicyRequest;
 import com.google.iam.v1.Policy;
 import java.io.IOException;
 
-public class GetConnectionIamPolicy {
+public class GetIamPolicy {
 
   /**
    * Retrieves the IAM policy of a specified BigQuery connection.
@@ -18,7 +18,7 @@ public class GetConnectionIamPolicy {
    * @param location The geographic location of the connection (for example, "us-central1").
    * @param connectionId The ID of the connection (for example, "example-connection-id").
    */
-  public static void getConnectionIamPolicy(
+  public static void getIamPolicy(
       String projectId, String location, String connectionId) {
     ConnectionName resource = ConnectionName.of(projectId, location, connectionId);
 
@@ -63,12 +63,9 @@ public class GetConnectionIamPolicy {
       projectId = "example-project-id";
     }
 
-    String location = System.getenv("GOOGLE_CLOUD_REGION");
+    String location = "us-central1";
     if (args.length > 1) {
       location = args[1];
-    }
-    if (location == null || location.isEmpty()) {
-      location = "us-central1";
     }
 
     String connectionId = System.getenv("CONNECTION_ID");
@@ -79,6 +76,6 @@ public class GetConnectionIamPolicy {
       connectionId = "example-connection-id";
     }
 
-    getConnectionIamPolicy(projectId, location, connectionId);
+    getIamPolicy(projectId, location, connectionId);
   }
 }
