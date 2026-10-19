@@ -58,6 +58,13 @@ node_modules/
 .genkit/
 package-lock.json
 
-# Gradle build and cache directories
-**/.gradle/
-**/build/
+# Java / Maven / Gradle build artifacts
+target/
+*.class
+*.jar
+*.war
+*.ear
+dependency-reduced-pom.xml
+.gradle/
+build/
+
