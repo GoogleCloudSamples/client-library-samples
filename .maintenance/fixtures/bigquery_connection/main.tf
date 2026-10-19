@@ -31,7 +31,7 @@ resource "google_project_service" "bigqueryconnection" {
 
 resource "google_bigquery_connection" "default" {
   project       = var.project_id
-  connection_id = "my_connection_${random_id.default.hex}"
+  connection_id = "example_connection_${random_id.default.hex}"
   location      = "us-central1"
   friendly_name = "Example Connection"
   description   = "Cloud Resource connection fixture"
