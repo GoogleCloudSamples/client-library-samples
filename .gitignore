@@ -57,3 +57,14 @@ node_modules/
 
 .genkit/
 package-lock.json
+
+# Java / Maven / Gradle build artifacts
+target/
+*.class
+*.jar
+*.war
+*.ear
+dependency-reduced-pom.xml
+.gradle/
+build/
+
