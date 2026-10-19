@@ -16,6 +16,7 @@
 
 // [START vision_v1_imageannotator_batch_annotate_images]
 // [START vision_imageannotator_batch_annotate_images]
+// [START vision_label_detection_gcs]
 // [START vision_quickstart]
 import com.google.api.gax.rpc.ApiException
 import com.google.api.gax.rpc.NotFoundException
@@ -87,6 +88,7 @@ fun annotateImage(gcsUri: String) {
   }
 }
 // [END vision_quickstart]
+// [END vision_label_detection_gcs]
 // [END vision_imageannotator_batch_annotate_images]
 // [END vision_v1_imageannotator_batch_annotate_images]
 

@@ -15,6 +15,7 @@
  */
 
 // [START storage_bucket_delete]
+// [START storage_delete_bucket]
 import com.google.cloud.storage.StorageException
 import com.google.cloud.storage.StorageOptions
 
@@ -48,6 +49,7 @@ fun deleteBucket(projectId: String, bucketName: String) {
     )
   }
 }
+// [END storage_delete_bucket]
 // [END storage_bucket_delete]
 
 fun main(args: Array<String>) {

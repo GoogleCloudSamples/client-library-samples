@@ -39,6 +39,9 @@
       "name": "storage_bucket_get",
       "title": "Get Cloud Storage bucket metadata",
       "description": "Retrieves metadata for an existing Google Cloud Storage bucket."
+    },
+    {
+      "name": "storage_get_bucket_metadata"
     }
   ],
   "instances": [

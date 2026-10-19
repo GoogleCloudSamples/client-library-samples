@@ -15,6 +15,7 @@
  */
 
 // [START storage_bucket_get]
+// [START storage_get_bucket_metadata]
 import com.google.cloud.storage.StorageException
 import com.google.cloud.storage.StorageOptions
 
@@ -50,6 +51,7 @@ fun getBucketMetadata(projectId: String, bucketName: String) {
     )
   }
 }
+// [END storage_get_bucket_metadata]
 // [END storage_bucket_get]
 
 fun main(args: Array<String>) {

@@ -39,6 +39,12 @@
       "name": "pubsub_message_publish",
       "title": "Publish a message to a Pub/Sub topic",
       "description": "Publishes a UTF-8 message payload with custom attributes to a Pub/Sub topic."
+    },
+    {
+      "name": "pubsub_publish_custom_attributes"
+    },
+    {
+      "name": "pubsub_quickstart_publisher"
     }
   ],
   "instances": [

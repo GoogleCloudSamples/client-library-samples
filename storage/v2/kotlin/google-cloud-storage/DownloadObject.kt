@@ -15,6 +15,7 @@
  */
 
 // [START storage_file_download]
+// [START storage_file_download_into_memory]
 import com.google.cloud.storage.BlobId
 import com.google.cloud.storage.StorageException
 import com.google.cloud.storage.StorageOptions
@@ -62,6 +63,7 @@ fun downloadObject(projectId: String, bucketName: String, objectName: String) {
     }
   }
 }
+// [END storage_file_download_into_memory]
 // [END storage_file_download]
 
 fun main(args: Array<String>) {

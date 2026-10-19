@@ -30,6 +30,9 @@
     },
     {
       "name": "pubsub_publisher_topic_create"
+    },
+    {
+      "name": "pubsub_create_topic"
     }
   ],
   "instances": [

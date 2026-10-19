@@ -39,6 +39,9 @@
       "name": "pubsub_subscription_subscribe_async",
       "title": "Receive messages asynchronously from a Pub/Sub subscription",
       "description": "Receives and acknowledges messages asynchronously from a Pub/Sub pull subscription over a bounded listening window."
+    },
+    {
+      "name": "pubsub_subscriber_async_pull"
     }
   ],
   "instances": [

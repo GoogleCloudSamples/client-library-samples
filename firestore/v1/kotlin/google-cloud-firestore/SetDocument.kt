@@ -15,6 +15,7 @@
  */
 
 // [START firestore_document_set]
+// [START firestore_setup_dataset_pt1]
 import com.google.api.gax.rpc.ApiException
 import com.google.api.gax.rpc.NotFoundException
 import com.google.cloud.firestore.FirestoreOptions
@@ -72,6 +73,7 @@ fun setDocument(projectId: String, collectionId: String, documentId: String) {
     )
   }
 }
+// [END firestore_setup_dataset_pt1]
 // [END firestore_document_set]
 
 fun main(args: Array<String>) {

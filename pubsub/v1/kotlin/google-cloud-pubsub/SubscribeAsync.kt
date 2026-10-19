@@ -15,6 +15,7 @@
  */
 
 // [START pubsub_subscription_subscribe_async]
+// [START pubsub_subscriber_async_pull]
 import com.google.api.gax.rpc.ApiException
 import com.google.api.gax.rpc.NotFoundException
 import com.google.cloud.pubsub.v1.AckReplyConsumer
@@ -69,6 +70,7 @@ fun subscribeAsync(projectId: String, subscriptionId: String) {
     }
   }
 }
+// [END pubsub_subscriber_async_pull]
 // [END pubsub_subscription_subscribe_async]
 
 fun main(args: Array<String>) {

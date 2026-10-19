@@ -29,6 +29,9 @@
       "description": "Creates a Google Cloud Storage bucket configured with standard storage class."
     },
     {
+      "name": "storage_create_bucket"
+    },
+    {
       "name": "storage_quickstart"
     }
   ],

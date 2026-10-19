@@ -39,6 +39,9 @@
       "name": "storage_bucket_delete",
       "title": "Delete a Cloud Storage bucket",
       "description": "Deletes an empty Google Cloud Storage bucket."
+    },
+    {
+      "name": "storage_delete_bucket"
     }
   ],
   "instances": [

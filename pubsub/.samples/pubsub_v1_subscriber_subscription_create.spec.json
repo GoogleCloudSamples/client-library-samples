@@ -42,6 +42,9 @@
     },
     {
       "name": "pubsub_subscriber_subscription_create"
+    },
+    {
+      "name": "pubsub_create_pull_subscription"
     }
   ],
   "instances": [

@@ -44,6 +44,9 @@
       "name": "vision_imageannotator_batch_annotate_images"
     },
     {
+      "name": "vision_label_detection_gcs"
+    },
+    {
       "name": "vision_quickstart"
     }
   ],

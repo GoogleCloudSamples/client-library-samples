@@ -15,6 +15,8 @@
  */
 
 // [START pubsub_message_publish]
+// [START pubsub_publish_custom_attributes]
+// [START pubsub_quickstart_publisher]
 import com.google.api.gax.rpc.ApiException
 import com.google.api.gax.rpc.NotFoundException
 import com.google.cloud.pubsub.v1.Publisher
@@ -84,6 +86,8 @@ fun publishMessage(projectId: String, topicId: String) {
     }
   }
 }
+// [END pubsub_quickstart_publisher]
+// [END pubsub_publish_custom_attributes]
 // [END pubsub_message_publish]
 
 fun main(args: Array<String>) {

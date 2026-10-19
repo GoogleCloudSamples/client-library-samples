@@ -39,6 +39,9 @@
       "name": "firestore_document_set",
       "title": "Write a Firestore document",
       "description": "Writes a document with structured fields into a Firestore collection."
+    },
+    {
+      "name": "firestore_setup_dataset_pt1"
     }
   ],
   "instances": [

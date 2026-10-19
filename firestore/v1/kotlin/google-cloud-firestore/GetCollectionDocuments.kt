@@ -15,6 +15,7 @@
  */
 
 // [START firestore_collection_list]
+// [START firestore_setup_dataset_read]
 // [START firestore_quickstart]
 import com.google.api.gax.rpc.ApiException
 import com.google.api.gax.rpc.NotFoundException
@@ -70,6 +71,7 @@ fun getCollectionDocuments(projectId: String, collectionId: String) {
   }
 }
 // [END firestore_quickstart]
+// [END firestore_setup_dataset_read]
 // [END firestore_collection_list]
 
 fun main(args: Array<String>) {

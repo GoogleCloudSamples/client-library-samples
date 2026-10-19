@@ -15,6 +15,7 @@
  */
 
 // [START storage_bucket_create]
+// [START storage_create_bucket]
 // [START storage_quickstart]
 import com.google.cloud.storage.BucketInfo
 import com.google.cloud.storage.StorageClass
@@ -30,7 +31,8 @@ import com.google.cloud.storage.StorageOptions
 fun createBucket(projectId: String, bucketName: String) {
   val options =
     StorageOptions.newBuilder().setProjectId(projectId).build()
-  val location = "us-central1"
+  // The US multi-region and Standard storage class match the Cloud Storage Quickstart defaults.
+  val location = "US"
 
   val bucketInfo =
     BucketInfo.newBuilder(bucketName)
@@ -61,6 +63,7 @@ fun createBucket(projectId: String, bucketName: String) {
   }
 }
 // [END storage_quickstart]
+// [END storage_create_bucket]
 // [END storage_bucket_create]
 
 fun main(args: Array<String>) {

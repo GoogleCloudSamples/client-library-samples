@@ -44,6 +44,9 @@
       "name": "storage_file_download",
       "title": "Download an object from a Cloud Storage bucket",
       "description": "Downloads an object's bytes and metadata from a Google Cloud Storage bucket."
+    },
+    {
+      "name": "storage_file_download_into_memory"
     }
   ],
   "instances": [

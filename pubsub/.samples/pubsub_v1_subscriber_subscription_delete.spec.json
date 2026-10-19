@@ -42,6 +42,9 @@
     },
     {
       "name": "pubsub_subscriber_subscription_delete"
+    },
+    {
+      "name": "pubsub_delete_subscription"
     }
   ],
   "instances": [
