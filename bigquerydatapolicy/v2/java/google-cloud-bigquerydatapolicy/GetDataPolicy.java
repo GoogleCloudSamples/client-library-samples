@@ -32,7 +32,8 @@ public class GetDataPolicy {
    *
    * @param projectId The Google Cloud project ID (for example, "example-project-id").
    * @param location The geographic location of the data policy (for example, "us-central1").
-   * @param dataPolicyId The user-assigned ID of the data policy (for example, "my_data_policy").
+   * @param dataPolicyId The user-assigned ID of the data policy (for example,
+   *     "example_data_policy").
    */
   public static void getDataPolicy(String projectId, String location, String dataPolicyId) {
     DataPolicyName dataPolicyName = DataPolicyName.of(projectId, location, dataPolicyId);

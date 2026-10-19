@@ -34,7 +34,7 @@ public class UpdateDataPolicy {
    *
    * @param projectId The Google Cloud project ID (for example, "example-project-id").
    * @param location The geographic location of the data policy (for example, "us-central1").
-   * @param dataPolicyId The ID of the data policy to update (for example, "my_data_policy").
+   * @param dataPolicyId The ID of the data policy to update (for example, "example_data_policy").
    */
   public static void updateDataPolicy(String projectId, String location, String dataPolicyId) {
     DataPolicyName dataPolicyName = DataPolicyName.of(projectId, location, dataPolicyId);

@@ -31,7 +31,8 @@ public class RemoveGrantees {
    *
    * @param projectId The Google Cloud project ID (for example, "example-project-id").
    * @param location The geographic location of the data policy (for example, "us-central1").
-   * @param dataPolicyId The ID of the data policy from which grantees will be removed.
+   * @param dataPolicyId The ID of the data policy from which grantees will be removed (for
+   *     example, "example_data_policy").
    * @param grantees A list of IAM V2 principals to remove (for example,
    *     List.of("principal://goog/subject/jane@example.com")).
    */

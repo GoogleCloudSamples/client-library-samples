@@ -34,7 +34,8 @@ public class CreateRawDataAccessPolicy {
    *
    * @param projectId The Google Cloud project ID (for example, "example-project-id").
    * @param location The geographic location of the data policy (for example, "us-central1").
-   * @param dataPolicyId The user-assigned ID for the data policy (for example, "my_raw_policy").
+   * @param dataPolicyId The user-assigned ID for the data policy (for example,
+   *     "example_raw_data_policy").
    */
   public static void createRawDataAccessPolicy(
       String projectId, String location, String dataPolicyId) {

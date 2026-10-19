@@ -31,7 +31,8 @@ public class AddGrantees {
    *
    * @param projectId The Google Cloud project ID (for example, "example-project-id").
    * @param location The geographic location of the data policy (for example, "us-central1").
-   * @param dataPolicyId The ID of the data policy to which grantees will be added.
+   * @param dataPolicyId The ID of the data policy to which grantees will be added (for example,
+   *     "example_data_policy").
    * @param grantees A list of IAM V2 principals to add (for example,
    *     List.of("principal://goog/subject/jane@example.com")).
    */

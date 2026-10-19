@@ -33,7 +33,7 @@ public class SetIamPolicy {
    *
    * @param projectId The Google Cloud project ID (for example, "example-project-id").
    * @param location The geographic location of the data policy (for example, "us-central1").
-   * @param dataPolicyId The ID of the data policy (for example, "my_data_policy").
+   * @param dataPolicyId The ID of the data policy (for example, "example_data_policy").
    * @param member The IAM principal to be added (for example, "user:example@gmail.com").
    * @param role The IAM role to grant (for example, "roles/viewer").
    */

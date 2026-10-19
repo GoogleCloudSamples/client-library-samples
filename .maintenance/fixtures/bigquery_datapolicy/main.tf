@@ -32,7 +32,7 @@ resource "google_project_service" "bigquerydatapolicy" {
 resource "google_bigquery_datapolicyv2_data_policy" "default" {
   project          = var.project_id
   location         = "us-central1"
-  data_policy_id   = "my_data_policy_${random_id.default.hex}"
+  data_policy_id   = "example_data_policy_${random_id.default.hex}"
   data_policy_type = "DATA_MASKING_POLICY"
 
   data_masking_policy {

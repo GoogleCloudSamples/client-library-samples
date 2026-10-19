@@ -31,7 +31,8 @@ public class TestIamPermissions {
    *
    * @param projectId The Google Cloud project ID (for example, "example-project-id").
    * @param location The geographic location of the data policy (for example, "us-central1").
-   * @param dataPolicyId The ID of the data policy to test permissions for.
+   * @param dataPolicyId The ID of the data policy to test permissions for (for example,
+   *     "example_data_policy").
    * @param permissions A list of permissions to test (for example,
    *     List.of("bigquery.dataPolicies.get")).
    */
