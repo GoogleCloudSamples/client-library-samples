@@ -65,10 +65,11 @@ EOF
 # Source data
 
 resource "google_storage_bucket" "default" {
-  project       = var.project_id
-  name          = "example_bucket_${random_id.default.hex}_${var.project_id}"
-  location      = "us-central1"
-  force_destroy = true
+  project                     = var.project_id
+  name                        = "example_bucket_${random_id.default.hex}_${var.project_id}"
+  location                    = "us-central1"
+  force_destroy               = true
+  uniform_bucket_level_access = true
 
   public_access_prevention = "enforced"
 }
