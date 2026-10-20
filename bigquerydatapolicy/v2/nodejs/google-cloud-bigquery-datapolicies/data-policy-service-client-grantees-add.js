@@ -29,7 +29,7 @@ const client = new DataPolicyServiceClient();
  * @param {string} projectId The Google Cloud project ID (for example, 'example-project-id').
  * @param {string} location The geographic location of the data policy (for example, 'us').
  * @param {string} dataPolicyId The ID of the data policy to which grantees will be added.
- * @param {string[]} grantees A list of IAM principals to be added (for example, ['user:example@gmail.com']).
+ * @param {string[]} grantees A list of IAM principals to be added (for example, ['principal://goog/subject/alex@example.com']).
  */
 async function addGrantees(projectId, location, dataPolicyId, grantees) {
   const dataPolicyName = client.dataPolicyPath(

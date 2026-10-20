@@ -33,7 +33,7 @@ def remove_grantees(
         project_id: The Google Cloud project ID.
         location: The geographic location of the data policy (for example, 'us').
         data_policy_id: The ID of the data policy from which grantees will be removed.
-        grantees: A list of IAM principals to be removed (for example, ['user:example@gmail.com']).
+        grantees: A list of IAM principals to be removed (for example, ['principal://goog/subject/alex@example.com']).
     """
 
     data_policy_name = client.data_policy_path(

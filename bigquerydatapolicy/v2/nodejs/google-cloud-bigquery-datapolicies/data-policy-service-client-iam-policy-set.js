@@ -30,7 +30,7 @@ const client = new DataPolicyServiceClient();
  * @param {string} projectId The Google Cloud project ID (for example, 'example-project-id').
  * @param {string} location The geographic location of the data policy (for example, 'us').
  * @param {string} dataPolicyId The ID of the data policy.
- * @param {string} member The IAM principal to be added (for example, 'user:example@gmail.com').
+ * @param {string} member The IAM principal to be added (for example, 'user:alex@example.com').
  * @param {string} role The IAM role to grant (for example, 'roles/bigquery.dataPolicyUser').
  */
 async function setDataPolicyIamPolicy(
