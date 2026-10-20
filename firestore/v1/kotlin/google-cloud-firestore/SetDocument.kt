@@ -15,7 +15,7 @@
  */
 
 // [START firestore_document_set]
-// [START firestore_setup_dataset_pt1]
+// [START firestore_data_set_from_map]
 import com.google.api.gax.rpc.ApiException
 import com.google.api.gax.rpc.NotFoundException
 import com.google.cloud.firestore.FirestoreOptions
@@ -26,8 +26,8 @@ import java.util.concurrent.ExecutionException
  * a document creates the record if it does not exist or overwrites its fields.
  *
  * @param projectId Google Cloud project identifier (for example, "example-project-id").
- * @param collectionId Target Firestore collection identifier (for example, "example-collection").
- * @param documentId Target Firestore document identifier (for example, "example-document").
+ * @param collectionId Target Firestore collection identifier (for example, "cities").
+ * @param documentId Target Firestore document identifier (for example, "LA").
  */
 fun setDocument(projectId: String, collectionId: String, documentId: String) {
   val options =
@@ -38,9 +38,9 @@ fun setDocument(projectId: String, collectionId: String, documentId: String) {
 
   val documentData =
     mapOf(
-      "category" to "example-category",
-      "environment" to "production",
-      "version" to 1,
+      "name" to "Los Angeles",
+      "state" to "CA",
+      "country" to "USA",
     )
 
   try {
@@ -73,7 +73,7 @@ fun setDocument(projectId: String, collectionId: String, documentId: String) {
     )
   }
 }
-// [END firestore_setup_dataset_pt1]
+// [END firestore_data_set_from_map]
 // [END firestore_document_set]
 
 fun main(args: Array<String>) {
@@ -84,11 +84,11 @@ fun main(args: Array<String>) {
   val collectionId =
     args.getOrNull(1)
       ?: System.getenv("COLLECTION_ID")
-      ?: "example-collection"
+      ?: "cities"
   val documentId =
     args.getOrNull(2)
       ?: System.getenv("DOCUMENT_ID")
-      ?: "example-document"
+      ?: "LA"
 
   setDocument(projectId, collectionId, documentId)
 }

@@ -21,16 +21,21 @@
     "standard": true,
     "fixtures": [
       {
-        "ref": "firestore_collection",
+        "ref": "firestore_document",
         "output_mapping": {
-          "collection_id": "collectionId"
+          "collection_id": "collectionId",
+          "document_id": "documentId"
         }
       }
     ],
     "parameters": [
       {
         "name": "collectionId",
-        "source": "firestore_collection.collection_id"
+        "source": "firestore_document.collection_id"
+      },
+      {
+        "name": "documentId",
+        "source": "firestore_document.document_id"
       }
     ]
   },
@@ -41,7 +46,7 @@
       "description": "Writes a document with structured fields into a Firestore collection."
     },
     {
-      "name": "firestore_setup_dataset_pt1"
+      "name": "firestore_data_set_from_map"
     }
   ],
   "instances": [

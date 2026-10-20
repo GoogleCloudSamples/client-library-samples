@@ -19,7 +19,7 @@
 // [START vision_label_detection_gcs]
 // [START vision_quickstart]
 import com.google.api.gax.rpc.ApiException
-import com.google.api.gax.rpc.NotFoundException
+import com.google.api.gax.rpc.InvalidArgumentException
 import com.google.cloud.vision.v1.AnnotateImageRequest
 import com.google.cloud.vision.v1.Feature
 import com.google.cloud.vision.v1.Image
@@ -73,9 +73,9 @@ fun annotateImage(gcsUri: String) {
         }
       }
     }
-  } catch (err: NotFoundException) {
+  } catch (err: InvalidArgumentException) {
     System.err.println(
-      "error: image '$gcsUri' not found: ${err.message}"
+      "error: invalid annotation request for image '$gcsUri': ${err.message}"
     )
   } catch (err: ApiException) {
     System.err.println(

@@ -15,7 +15,7 @@
   "extended": {
     "api": "storage.googleapis.com",
     "method": "objects.insert",
-    "service_version": "v2",
+    "service_version": "v1",
     "verb": "create",
     "resource": "object",
     "standard": true,

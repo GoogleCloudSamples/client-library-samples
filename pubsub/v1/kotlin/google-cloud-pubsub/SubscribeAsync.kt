@@ -48,6 +48,8 @@ fun subscribeAsync(projectId: String, subscriptionId: String) {
     subscriber = Subscriber.newBuilder(subscriptionName, receiver).build()
     println("Listening for messages on '$subscriptionName'...")
     subscriber.startAsync().awaitRunning()
+    // Bound the listening window to 5 seconds; awaitTerminated throws
+    // TimeoutException once the window elapses while the subscriber is still running.
     subscriber.awaitTerminated(5, TimeUnit.SECONDS)
   } catch (err: TimeoutException) {
     println("Resource ID: $subscriptionName")
@@ -65,9 +67,7 @@ fun subscribeAsync(projectId: String, subscriptionId: String) {
       }
     System.err.println(message)
   } finally {
-    if (subscriber?.isRunning == true) {
-      subscriber.stopAsync().awaitTerminated(10, TimeUnit.SECONDS)
-    }
+    subscriber?.stopAsync()?.awaitTerminated()
   }
 }
 // [END pubsub_subscriber_async_pull]

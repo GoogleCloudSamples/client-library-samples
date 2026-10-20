@@ -41,6 +41,9 @@
       "description": "Retrieves all documents from a Firestore collection and prints their metadata and fields."
     },
     {
+      "name": "firestore_data_get_all_documents"
+    },
+    {
       "name": "firestore_setup_dataset_read"
     },
     {

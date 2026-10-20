@@ -52,15 +52,9 @@ fun downloadObject(projectId: String, bucketName: String, objectName: String) {
       }
     }
   } catch (err: StorageException) {
-    if (err.code == 404) {
-      System.err.println(
-        "error: object '$objectName' or bucket '$bucketName' not found in project '$projectId': ${err.message}"
-      )
-    } else {
-      System.err.println(
-        "error: failed to download object '$objectName' from bucket '$bucketName' in project '$projectId': ${err.message}"
-      )
-    }
+    System.err.println(
+      "error: failed to download object '$objectName' from bucket '$bucketName' in project '$projectId': ${err.message}"
+    )
   }
 }
 // [END storage_file_download_into_memory]
