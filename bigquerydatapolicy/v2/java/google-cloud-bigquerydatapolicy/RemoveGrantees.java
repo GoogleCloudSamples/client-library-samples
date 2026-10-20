@@ -34,7 +34,7 @@ public class RemoveGrantees {
    * @param dataPolicyId The ID of the data policy from which grantees will be removed (for
    *     example, "example_data_policy").
    * @param grantees A list of IAM V2 principals to remove (for example,
-   *     List.of("principal://goog/subject/jane@example.com")).
+   *     List.of("principal://goog/subject/alex@example.com")).
    */
   public static void removeGrantees(
       String projectId, String location, String dataPolicyId, List<String> grantees) {
@@ -85,10 +85,14 @@ public class RemoveGrantees {
       dataPolicyId = "example_data_policy_id";
     }
 
-    List<String> grantees = List.of("principal://goog/subject/sigje@google.com");
+    String grantee = System.getenv("GRANTEE");
     if (args.length > 3) {
-      grantees = List.of(args[3]);
+      grantee = args[3];
     }
+    if (grantee == null || grantee.isEmpty()) {
+      grantee = "principal://goog/subject/alex@example.com";
+    }
+    List<String> grantees = List.of(grantee);
 
     removeGrantees(projectId, location, dataPolicyId, grantees);
   }

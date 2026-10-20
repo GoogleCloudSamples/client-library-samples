@@ -34,7 +34,7 @@ public class SetIamPolicy {
    * @param projectId The Google Cloud project ID (for example, "example-project-id").
    * @param location The geographic location of the data policy (for example, "us-central1").
    * @param dataPolicyId The ID of the data policy (for example, "example_data_policy").
-   * @param member The IAM principal to be added (for example, "user:example@gmail.com").
+   * @param member The IAM principal to be added (for example, "user:alex@example.com").
    * @param role The IAM role to grant (for example, "roles/viewer").
    */
   public static void setIamPolicy(
@@ -97,9 +97,12 @@ public class SetIamPolicy {
       dataPolicyId = "example_data_policy_id";
     }
 
-    String member = "user:sigje@google.com";
+    String member = System.getenv("MEMBER");
     if (args.length > 3) {
       member = args[3];
+    }
+    if (member == null || member.isEmpty()) {
+      member = "user:alex@example.com";
     }
 
     String role = "roles/viewer";

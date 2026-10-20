@@ -36,7 +36,7 @@ def set_data_policy_iam_policy(
         project_id: The Google Cloud project ID.
         location: The geographic location of the data policy (for example, 'us').
         data_policy_id: The ID of the data policy.
-        member: The IAM principal to be added (for example, 'user:example@gmail.com').
+        member: The IAM principal to be added (for example, 'user:alex@example.com').
         role: The IAM role to grant (for example, 'roles/bigquery.dataPolicyUser').
     """
 

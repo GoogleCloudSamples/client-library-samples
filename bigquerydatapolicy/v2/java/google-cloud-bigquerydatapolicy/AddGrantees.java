@@ -34,7 +34,7 @@ public class AddGrantees {
    * @param dataPolicyId The ID of the data policy to which grantees will be added (for example,
    *     "example_data_policy").
    * @param grantees A list of IAM V2 principals to add (for example,
-   *     List.of("principal://goog/subject/jane@example.com")).
+   *     List.of("principal://goog/subject/alex@example.com")).
    */
   public static void addGrantees(
       String projectId, String location, String dataPolicyId, List<String> grantees) {
@@ -85,10 +85,14 @@ public class AddGrantees {
       dataPolicyId = "example_data_policy_id";
     }
 
-    List<String> grantees = List.of("principal://goog/subject/sigje@google.com");
+    String grantee = System.getenv("GRANTEE");
     if (args.length > 3) {
-      grantees = List.of(args[3]);
+      grantee = args[3];
     }
+    if (grantee == null || grantee.isEmpty()) {
+      grantee = "principal://goog/subject/alex@example.com";
+    }
+    List<String> grantees = List.of(grantee);
 
     addGrantees(projectId, location, dataPolicyId, grantees);
   }

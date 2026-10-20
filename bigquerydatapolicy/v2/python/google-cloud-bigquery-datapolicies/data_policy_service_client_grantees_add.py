@@ -33,7 +33,7 @@ def add_grantees(
         project_id: The Google Cloud project ID.
         location: The geographic location of the data policy (for example, 'us').
         data_policy_id: The ID of the data policy to which grantees will be added.
-        grantees: A list of IAM principals to be added (for example, ['user:example@gmail.com']).
+        grantees: A list of IAM principals to be added (for example, ['principal://goog/subject/alex@example.com']).
     """
 
     data_policy_name = client.data_policy_path(
