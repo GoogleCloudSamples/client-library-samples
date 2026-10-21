@@ -52,6 +52,8 @@ public class GetTransferConfig {
         System.out.printf(
             "Schedule: %s%n",
             transferConfig.getScheduleOptionsV2().getTimeBasedSchedule().getSchedule());
+      } else if (!transferConfig.getSchedule().isEmpty()) {
+        System.out.printf("Schedule: %s%n", transferConfig.getSchedule());
       } else {
         System.out.println("Schedule: None");
       }

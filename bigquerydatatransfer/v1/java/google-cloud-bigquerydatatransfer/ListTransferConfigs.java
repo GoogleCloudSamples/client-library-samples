@@ -46,6 +46,8 @@ public class ListTransferConfigs {
             && config.getScheduleOptionsV2().hasTimeBasedSchedule()) {
           System.out.printf(
               "Schedule: %s%n", config.getScheduleOptionsV2().getTimeBasedSchedule().getSchedule());
+        } else if (!config.getSchedule().isEmpty()) {
+          System.out.printf("Schedule: %s%n", config.getSchedule());
         } else {
           System.out.println("Schedule: None");
         }
