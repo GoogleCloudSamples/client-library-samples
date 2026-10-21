@@ -1,0 +1,56 @@
+{
+  "version": "1.0.0",
+  "sampleId": "pubsub_subscription_subscribe_async",
+  "title": "Receive messages asynchronously from a Pub/Sub subscription",
+  "description": "Receives and acknowledges messages asynchronously from a Pub/Sub pull subscription over a bounded listening window.",
+  "dateCreated": "2026-10-14T20:45:00.000Z",
+  "sampleType": "domain",
+  "objective": {
+    "narrative": "Receives and acknowledges messages asynchronously from a Pub/Sub pull subscription over a bounded listening window.",
+    "products": [
+      "pubsub"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "pubsub.googleapis.com",
+    "method": "StreamingPull",
+    "service_version": "v1",
+    "verb": "get",
+    "resource": "subscription",
+    "standard": true,
+    "fixtures": [
+      {
+        "ref": "pubsub_subscription",
+        "output_mapping": {
+          "subscription_id": "subscriptionId"
+        }
+      }
+    ],
+    "parameters": [
+      {
+        "name": "subscriptionId",
+        "source": "pubsub_subscription.subscription_id"
+      }
+    ]
+  },
+  "regionTags": [
+    {
+      "name": "pubsub_subscription_subscribe_async",
+      "title": "Receive messages asynchronously from a Pub/Sub subscription",
+      "description": "Receives and acknowledges messages asynchronously from a Pub/Sub pull subscription over a bounded listening window."
+    },
+    {
+      "name": "pubsub_subscriber_async_pull"
+    }
+  ],
+  "instances": [
+    {
+      "name": "KOTLIN-google-cloud-pubsub",
+      "categories": {
+        "language": "KOTLIN"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

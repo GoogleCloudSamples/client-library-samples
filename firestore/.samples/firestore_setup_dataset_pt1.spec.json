@@ -1,0 +1,58 @@
+{
+  "version": "1.0.0",
+  "sampleId": "firestore_setup_dataset_pt1",
+  "title": "Add data to Firestore (Quickstart)",
+  "description": "Adds a sample user document ('alovelace') to the 'users' Firestore collection for the Server Client Library Quickstart.",
+  "dateCreated": "2026-10-20T20:30:00.000Z",
+  "sampleType": "domain",
+  "objective": {
+    "narrative": "Adds a sample user document ('alovelace') to the 'users' Firestore collection for the Server Client Library Quickstart.",
+    "products": [
+      "firestore"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "firestore.googleapis.com",
+    "method": "Commit",
+    "service_version": "v1",
+    "verb": "create",
+    "resource": "document",
+    "standard": false,
+    "fixtures": [
+      {
+        "ref": "firestore_document",
+        "output_mapping": {
+          "collection_id": "collectionId",
+          "document_id": "documentId"
+        }
+      }
+    ],
+    "parameters": [
+      {
+        "name": "collectionId",
+        "source": "firestore_document.collection_id"
+      },
+      {
+        "name": "documentId",
+        "source": "firestore_document.document_id"
+      }
+    ]
+  },
+  "regionTags": [
+    {
+      "name": "firestore_setup_dataset_pt1",
+      "title": "Add data to Firestore (Quickstart)",
+      "description": "Adds a sample user document ('alovelace') to the 'users' Firestore collection for the Server Client Library Quickstart."
+    }
+  ],
+  "instances": [
+    {
+      "name": "KOTLIN-google-cloud-firestore",
+      "categories": {
+        "language": "KOTLIN"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

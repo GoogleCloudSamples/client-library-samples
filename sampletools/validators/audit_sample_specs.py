@@ -9,6 +9,7 @@ EXTENSION_MAP = {
     "NODEJS": ".js",
     "PYTHON": ".py",
     "JAVA": ".java",
+    "KOTLIN": ".kt",
     "GO": ".go",
     "CSHARP": ".cs",
     "PHP": ".php",

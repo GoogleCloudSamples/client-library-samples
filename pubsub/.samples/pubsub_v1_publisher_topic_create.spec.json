@@ -1,0 +1,47 @@
+{
+  "version": "1.0.0",
+  "sampleId": "pubsub_v1_publisher_topic_create",
+  "title": "Create a Pub/Sub topic",
+  "description": "Creates a Google Cloud Pub/Sub topic for publishing messages.",
+  "dateCreated": "2026-10-14T20:45:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Creates a Google Cloud Pub/Sub topic for publishing messages.",
+    "products": [
+      "pubsub"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "pubsub.googleapis.com",
+    "method": "CreateTopic",
+    "service_version": "v1",
+    "verb": "create",
+    "resource": "topic",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "pubsub_v1_publisher_topic_create",
+      "title": "Create a Pub/Sub topic",
+      "description": "Creates a Google Cloud Pub/Sub topic for publishing messages."
+    },
+    {
+      "name": "pubsub_publisher_topic_create"
+    },
+    {
+      "name": "pubsub_create_topic"
+    }
+  ],
+  "instances": [
+    {
+      "name": "KOTLIN-google-cloud-pubsub",
+      "categories": {
+        "language": "KOTLIN"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

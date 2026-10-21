@@ -1,0 +1,53 @@
+{
+  "version": "1.0.0",
+  "sampleId": "storage_file_upload_from_memory",
+  "title": "Upload an object to a Cloud Storage bucket",
+  "description": "Uploads an object payload with custom metadata to a Google Cloud Storage bucket.",
+  "dateCreated": "2026-10-14T20:45:00.000Z",
+  "sampleType": "domain",
+  "objective": {
+    "narrative": "Uploads an object payload with custom metadata to a Google Cloud Storage bucket.",
+    "products": [
+      "storage"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "storage.googleapis.com",
+    "method": "objects.insert",
+    "service_version": "v1",
+    "verb": "create",
+    "resource": "object",
+    "standard": true,
+    "fixtures": [
+      {
+        "ref": "storage_bucket",
+        "output_mapping": {
+          "bucket_name": "bucketName"
+        }
+      }
+    ],
+    "parameters": [
+      {
+        "name": "bucketName",
+        "source": "storage_bucket.bucket_name"
+      }
+    ]
+  },
+  "regionTags": [
+    {
+      "name": "storage_file_upload_from_memory",
+      "title": "Upload an object to a Cloud Storage bucket",
+      "description": "Uploads an object payload with custom metadata to a Google Cloud Storage bucket."
+    }
+  ],
+  "instances": [
+    {
+      "name": "KOTLIN-google-cloud-storage",
+      "categories": {
+        "language": "KOTLIN"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

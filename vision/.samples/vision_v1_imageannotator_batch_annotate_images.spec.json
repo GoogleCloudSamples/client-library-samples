@@ -1,0 +1,62 @@
+{
+  "version": "1.0.0",
+  "sampleId": "vision_v1_imageannotator_batch_annotate_images",
+  "title": "Annotate an image in Cloud Storage",
+  "description": "Detects labels in an image stored in Google Cloud Storage using Cloud Vision.",
+  "dateCreated": "2026-10-14T20:45:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Detects labels in an image stored in Google Cloud Storage using Cloud Vision.",
+    "products": [
+      "vision"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "vision.googleapis.com",
+    "method": "BatchAnnotateImages",
+    "service_version": "v1",
+    "verb": "get",
+    "resource": "image",
+    "standard": true,
+    "fixtures": [
+      {
+        "ref": "vision_annotate_image",
+        "output_mapping": {
+          "gcs_uri": "gcsUri"
+        }
+      }
+    ],
+    "parameters": [
+      {
+        "name": "gcsUri",
+        "source": "vision_annotate_image.gcs_uri"
+      }
+    ]
+  },
+  "regionTags": [
+    {
+      "name": "vision_v1_imageannotator_batch_annotate_images",
+      "title": "Annotate an image in Cloud Storage",
+      "description": "Detects labels in an image stored in Google Cloud Storage using Cloud Vision."
+    },
+    {
+      "name": "vision_imageannotator_batch_annotate_images"
+    },
+    {
+      "name": "vision_label_detection_gcs"
+    },
+    {
+      "name": "vision_quickstart"
+    }
+  ],
+  "instances": [
+    {
+      "name": "KOTLIN-google-cloud-vision",
+      "categories": {
+        "language": "KOTLIN"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}
