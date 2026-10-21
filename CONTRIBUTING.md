@@ -31,3 +31,12 @@ All submissions, including submissions by project members, require review. We
 use GitHub pull requests for this purpose. Consult
 [GitHub Help](https://help.github.com/articles/about-pull-requests/) for more
 information on using pull requests.
+
+### Sample Entrypoints & Fixture Contract (For Authors and Reviewers)
+
+Code samples in this repository follow a strict **1:1 Fixture-to-Entrypoint Contract**:
+
+- **Inside `[START ...]` / `[END ...]` region tags:** The sample function or method accepts explicit parameters (with example values in docstrings/Javadoc/KDoc) and performs the API call without reading environment variables.
+- **Outside `[START ...]` / `[END ...]` region tags:** The `main` CLI entrypoint reads positional arguments or `UPPER_SNAKE_CASE` environment variables (such as `GOOGLE_CLOUD_PROJECT`, `DATASET_ID`, or `COLLECTION_ID`) that are populated 1:1 from the Terraform `output` blocks in [`.maintenance/fixtures/`](.maintenance/fixtures/README.md) during automated validation.
+
+See [`.maintenance/fixtures/README.md`](.maintenance/fixtures/README.md) for the complete fixture-to-entrypoint specification.

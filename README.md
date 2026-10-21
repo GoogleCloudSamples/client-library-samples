@@ -36,6 +36,21 @@ Each language directory typically contains its own dependency files (e.g., `requ
 2.  Install dependencies: `npm install`
 
 
+**Java:**
+1.  Navigate to the sample directory.
+2.  Compile and run a sample class with Maven: `mvn compile exec:java -Dexec.mainClass=<ClassName>`
+
+
+**Kotlin:**
+1.  Navigate to the sample directory.
+2.  Compile and run a sample file with Gradle: `gradle run -PmainClass=<FileName>Kt`
+
+
+### Sample Entrypoints & Terraform Fixtures
+
+Each sample file places its runnable `main` entrypoint **below** the `// [END ...]` region tag so that CLI/environment plumbing is excluded from documentation snippets. When validating samples against live Google Cloud resources, prerequisite resources are provisioned via Terraform configurations in [`.maintenance/fixtures/`](.maintenance/fixtures/README.md), whose `snake_case` outputs map 1:1 to the `UPPER_SNAKE_CASE` environment variables read by the sample's `main` entrypoint. See [`.maintenance/fixtures/README.md`](.maintenance/fixtures/README.md) for details.
+
+
 ## Note
 
 ⚠️ **Important:** Please be mindful when running these examples.
