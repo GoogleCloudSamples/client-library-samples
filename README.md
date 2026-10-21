@@ -48,7 +48,7 @@ Each language directory typically contains its own dependency files (e.g., `requ
 
 ### Sample Entrypoints & Terraform Fixtures
 
-Each sample file places its runnable `main` entrypoint **below** the `// [END ...]` region tag so that CLI/environment plumbing is excluded from documentation snippets. When validating samples against live Google Cloud resources, prerequisite resources are provisioned via Terraform configurations in [`.maintenance/fixtures/`](.maintenance/fixtures/README.md), whose `snake_case` outputs map 1:1 to the `UPPER_SNAKE_CASE` environment variables read by the sample's `main` entrypoint. See [`.maintenance/fixtures/README.md`](.maintenance/fixtures/README.md) for details.
+Prerequisite resources for validating samples against live Google Cloud APIs are provisioned via Terraform configurations in [`.maintenance/fixtures/`](.maintenance/fixtures/README.md) and linked in `.samples/*.spec.json`. In **Java and Kotlin** samples, a runnable `main` entrypoint is included at the bottom of the file **below** the `// [END ...]` region tag (excluded from documentation snippets) and reads `UPPER_SNAKE_CASE` environment variables mapped 1:1 from the fixture's `snake_case` Terraform outputs. See [`.maintenance/fixtures/README.md`](.maintenance/fixtures/README.md) for details.
 
 
 ## Note
