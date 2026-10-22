@@ -1,0 +1,69 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigquerydatapolicy_v2_datapolicyservice_iampolicy_set",
+  "title": "Set Data Policy IAM Policy",
+  "description": "Set the IAM policy for a data policy. Sets the IAM policy for a specified data policy resource from the BigQuery Data Policy API. This is useful for granting specific roles to members on the policy.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Set the IAM policy for a data policy. Sets the IAM policy for a specified data policy resource from the BigQuery Data Policy API. This is useful for granting specific roles to members on the policy.",
+    "products": [
+      "bigquerydatapolicy"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "bigquerydatapolicy.googleapis.com",
+    "service_version": "v2",
+    "standard": true,
+    "fixtures": [
+      {
+        "ref": "bigquery_datapolicy_iam",
+        "output_mapping": {
+          "data_policy_id": "dataPolicyId",
+          "member": "member"
+        }
+      }
+    ],
+    "parameters": [
+      {
+        "name": "dataPolicyId",
+        "source": "bigquery_datapolicy_iam.data_policy_id"
+      },
+      {
+        "name": "member",
+        "source": "bigquery_datapolicy_iam.member"
+      }
+    ]
+  },
+  "regionTags": [
+    {
+      "name": "bigquerydatapolicy_v2_datapolicyservice_iampolicy_set",
+      "title": "Set Data Policy IAM Policy",
+      "description": "Set the IAM policy for a data policy. Sets the IAM policy for a specified data policy resource from the BigQuery Data Policy API. This is useful for granting specific roles to members on the policy."
+    }
+  ],
+  "instances": [
+    {
+      "name": "JAVA-google-cloud-bigquerydatapolicy",
+      "categories": {
+        "language": "JAVA"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "NODEJS-@google-cloud/bigquery-datapolicies",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-datapolicies",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

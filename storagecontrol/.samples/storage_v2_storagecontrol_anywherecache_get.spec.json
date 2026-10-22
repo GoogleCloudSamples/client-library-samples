@@ -1,0 +1,51 @@
+{
+  "version": "1.0.0",
+  "sampleId": "storage_v2_storagecontrol_anywherecache_get",
+  "title": "Get Anywhere Cache",
+  "description": "Retrieves the metadata for a specific Anywhere Cache instance.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Retrieves the metadata for a specific Anywhere Cache instance.",
+    "products": [
+      "storagecontrol"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "storage.googleapis.com",
+    "service_version": "v2",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "storage_v2_storagecontrol_anywherecache_get",
+      "title": "Get Anywhere Cache",
+      "description": "Retrieves the metadata for a specific Anywhere Cache instance."
+    },
+    {
+      "name": "storage_storagecontrol_anywherecache_get"
+    },
+    {
+      "name": "storage_control_get_anywhere_cache"
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/storage-control",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-storage-control",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

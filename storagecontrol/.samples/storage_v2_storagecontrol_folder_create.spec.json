@@ -1,0 +1,44 @@
+{
+  "version": "1.0.0",
+  "sampleId": "storage_v2_storagecontrol_folder_create",
+  "title": "Create Folder",
+  "description": "Creates a new folder within a hierarchical namespace (HNS) enabled bucket.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Creates a new folder within a hierarchical namespace (HNS) enabled bucket.",
+    "products": [
+      "storagecontrol"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "storage.googleapis.com",
+    "service_version": "v2",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "storage_v2_storagecontrol_folder_create",
+      "title": "Create Folder",
+      "description": "Creates a new folder within a hierarchical namespace (HNS) enabled bucket."
+    },
+    {
+      "name": "storage_storagecontrol_folder_create"
+    },
+    {
+      "name": "storage_control_create_folder"
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-storage-control",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

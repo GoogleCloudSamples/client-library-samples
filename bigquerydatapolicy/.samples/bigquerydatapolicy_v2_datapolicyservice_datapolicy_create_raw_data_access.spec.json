@@ -1,0 +1,52 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigquerydatapolicy_v2_datapolicyservice_datapolicy_create_raw_data_access",
+  "title": "Create Raw Data Access Policy",
+  "description": "Create a raw data access policy. Creates a data policy with type RAW_DATA_ACCESS_POLICY. This policy type is used to grant raw data access to specific principals for columns that are otherwise protected by security policies.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Create a raw data access policy. Creates a data policy with type RAW_DATA_ACCESS_POLICY. This policy type is used to grant raw data access to specific principals for columns that are otherwise protected by security policies.",
+    "products": [
+      "bigquerydatapolicy"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "bigquerydatapolicy.googleapis.com",
+    "service_version": "v2",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "bigquerydatapolicy_v2_datapolicyservice_datapolicy_create_raw_data_access",
+      "title": "Create Raw Data Access Policy",
+      "description": "Create a raw data access policy. Creates a data policy with type RAW_DATA_ACCESS_POLICY. This policy type is used to grant raw data access to specific principals for columns that are otherwise protected by security policies."
+    }
+  ],
+  "instances": [
+    {
+      "name": "JAVA-google-cloud-bigquerydatapolicy",
+      "categories": {
+        "language": "JAVA"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "NODEJS-@google-cloud/bigquery-datapolicies",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-datapolicies",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

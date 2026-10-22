@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "sampleId": "documentai_v1beta3_document_datasetschema_get_full",
+  "title": "Get Dataset Schema Full",
+  "description": "Get dataset schema (Full).",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Get dataset schema (Full).",
+    "products": [
+      "documentai"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "documentai.googleapis.com",
+    "service_version": "v1beta3",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "documentai_v1beta3_document_datasetschema_get_full",
+      "title": "Get Dataset Schema Full",
+      "description": "Get dataset schema (Full)."
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-documentai",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

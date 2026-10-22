@@ -1,0 +1,51 @@
+{
+  "version": "1.0.0",
+  "sampleId": "storage_v2_storagecontrol_projectintelligenceconfig_get",
+  "title": "Get Project Intelligence Config",
+  "description": "Retrieves the project-scoped singleton IntelligenceConfig resource.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Retrieves the project-scoped singleton IntelligenceConfig resource.",
+    "products": [
+      "storagecontrol"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "storage.googleapis.com",
+    "service_version": "v2",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "storage_v2_storagecontrol_projectintelligenceconfig_get",
+      "title": "Get Project Intelligence Config",
+      "description": "Retrieves the project-scoped singleton IntelligenceConfig resource."
+    },
+    {
+      "name": "storage_storagecontrol_projectintelligenceconfig_get"
+    },
+    {
+      "name": "storage_control_projectintelligenceconfig_get"
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/storage-control",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-storage-control",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

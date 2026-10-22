@@ -21,6 +21,9 @@
       "name": "bigquerymigration_v2alpha_migrationservice_migrationworkflow_delete",
       "title": "Delete a migration workflow",
       "description": "Deletes a specified migration workflow from a project using the BigQuery Migration Service."
+    },
+    {
+      "name": "bigquerymigration_migrationservice_migrationworkflow_delete"
     }
   ],
   "instances": [

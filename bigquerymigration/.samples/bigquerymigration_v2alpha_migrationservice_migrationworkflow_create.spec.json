@@ -14,13 +14,36 @@
   "extended": {
     "api": "bigquerymigration.googleapis.com",
     "method": "CreateMigrationWorkflow",
-    "standard": true
+    "standard": true,
+    "service_version": "v2alpha",
+    "fixtures": [
+      {
+        "ref": "bigquery_migration_translate",
+        "output_mapping": {
+          "gcs_source_path": "gcsSourcePath",
+          "gcs_target_path": "gcsTargetPath"
+        }
+      }
+    ],
+    "parameters": [
+      {
+        "name": "gcsSourcePath",
+        "source": "bigquery_migration_translate.gcs_source_path"
+      },
+      {
+        "name": "gcsTargetPath",
+        "source": "bigquery_migration_translate.gcs_target_path"
+      }
+    ]
   },
   "regionTags": [
     {
       "name": "bigquerymigration_v2alpha_migrationservice_migrationworkflow_create",
       "title": "Create a migration workflow",
       "description": "Creates a migration workflow in the BigQuery Migration Service. A migration workflow is the primary resource that orchestrates a migration from a source data warehouse to BigQuery by defining the tasks to be executed."
+    },
+    {
+      "name": "bigquerymigration_migrationservice_migrationworkflow_create"
     }
   ],
   "instances": [

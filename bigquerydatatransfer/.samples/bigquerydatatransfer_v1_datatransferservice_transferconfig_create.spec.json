@@ -14,7 +14,37 @@
   "extended": {
     "api": "bigquerydatatransfer.googleapis.com",
     "method": "CreateTransferConfig",
-    "standard": true
+    "standard": true,
+    "service_version": "v1",
+    "fixtures": [
+      {
+        "ref": "bigquery_datatransfer_storage",
+        "output_mapping": {
+          "dataset_id": "destinationDatasetId",
+          "table_id": "destinationTableName",
+          "datasource_uri": "sourceCloudStorageUri",
+          "service_account_email": "serviceAccount"
+        }
+      }
+    ],
+    "parameters": [
+      {
+        "name": "destinationDatasetId",
+        "source": "bigquery_datatransfer_storage.dataset_id"
+      },
+      {
+        "name": "destinationTableName",
+        "source": "bigquery_datatransfer_storage.table_id"
+      },
+      {
+        "name": "sourceCloudStorageUri",
+        "source": "bigquery_datatransfer_storage.datasource_uri"
+      },
+      {
+        "name": "serviceAccount",
+        "source": "bigquery_datatransfer_storage.service_account_email"
+      }
+    ]
   },
   "regionTags": [
     {

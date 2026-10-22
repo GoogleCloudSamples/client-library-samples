@@ -1,0 +1,41 @@
+{
+  "version": "1.0.0",
+  "sampleId": "cloudrun_v2_tasks_tasks_list",
+  "title": "List Tasks",
+  "description": "Lists Tasks from a specific Execution of a Cloud Run Job.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Lists Tasks from a specific Execution of a Cloud Run Job.",
+    "products": [
+      "cloudrun"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "run.googleapis.com",
+    "service_version": "v2",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "cloudrun_v2_tasks_tasks_list",
+      "title": "List Tasks",
+      "description": "Lists Tasks from a specific Execution of a Cloud Run Job."
+    },
+    {
+      "name": "cloudrun_v2_tasks_tasks_list_async"
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/run",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

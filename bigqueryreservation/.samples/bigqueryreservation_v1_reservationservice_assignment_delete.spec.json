@@ -1,0 +1,48 @@
+{
+  "version": "1.0.0",
+  "sampleId": "bigqueryreservation_v1_reservationservice_assignment_delete",
+  "title": "Delete Assignment",
+  "description": "Deletes a reservation assignment.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Deletes a reservation assignment.",
+    "products": [
+      "bigqueryreservation"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "bigqueryreservation.googleapis.com",
+    "service_version": "v1",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "bigqueryreservation_v1_reservationservice_assignment_delete",
+      "title": "Delete Assignment",
+      "description": "Deletes a reservation assignment."
+    },
+    {
+      "name": "bigqueryreservation_reservationservice_assignment_delete"
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-reservation",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-reservation",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

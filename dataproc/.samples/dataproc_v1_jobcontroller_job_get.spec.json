@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "sampleId": "dataproc_v1_jobcontroller_job_get",
+  "title": "Get Dataproc Job",
+  "description": "Retrieves the resource representation for a Dataproc job.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Retrieves the resource representation for a Dataproc job.",
+    "products": [
+      "dataproc"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "dataproc.googleapis.com",
+    "service_version": "v1",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "dataproc_v1_jobcontroller_job_get",
+      "title": "Get Dataproc Job",
+      "description": "Retrieves the resource representation for a Dataproc job."
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-dataproc",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

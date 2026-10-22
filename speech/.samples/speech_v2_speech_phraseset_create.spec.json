@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "sampleId": "speech_v2_speech_phraseset_create",
+  "title": "Create Phrase Set",
+  "description": "Creates a PhraseSet resource in Google Cloud Speech-to-Text V2.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Creates a PhraseSet resource in Google Cloud Speech-to-Text V2.",
+    "products": [
+      "speech"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "speech.googleapis.com",
+    "service_version": "v2",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "speech_v2_speech_phraseset_create",
+      "title": "Create Phrase Set",
+      "description": "Creates a PhraseSet resource in Google Cloud Speech-to-Text V2."
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-speech",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

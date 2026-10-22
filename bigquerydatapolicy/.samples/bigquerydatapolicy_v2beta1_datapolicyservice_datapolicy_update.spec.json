@@ -1,49 +1,67 @@
 {
-    "version": "1.0.0",
-    "sampleId": "bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_update",
-    "title": "Update a data policy",
-    "description": "Updates the data masking configuration of an existing data policy.",
-    "dateCreated": "2025-11-20T03:05:21.392Z",
-    "sampleType": "rpc",
-    "objective": {
-        "narrative": "This sample demonstrates how to adapt data governance controls as requirements evolve. A developer might need to update a data policy's masking function in BigQuery when a data classification changes or a new masking technique is required for compliance.",
-        "products": [
-            "bigquerydatapolicy"
-        ]
-    },
-    "extended": {
-        "api": "bigquerydatapolicy.googleapis.com",
-        "method": "UpdateDataPolicy",
-        "standard": true
-    },
-    "regionTags": [
-        {
-            "name": "bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_update",
-            "title": "Update a data policy",
-            "description": "Updates the data masking configuration of an existing data policy."
-        }
-    ],
-    "instances": [
-        {
-            "name": "PYTHON-google-cloud-bigquery-datapolicies",
-            "categories": {
-                "language": "PYTHON"
-            },
-            "initialCommitAuthorType": "ai_assisted_human_reviewed"
-        },
-        {
-            "name": "NODEJS-@google-cloud/bigquery-datapolicies",
-            "categories": {
-                "language": "NODEJS"
-            },
-            "initialCommitAuthorType": "ai_assisted_human_reviewed"
-        },
-        {
-            "name": "JAVA-google-cloud-bigquerydatapolicy",
-            "categories": {
-                "language": "JAVA"
-            },
-            "initialCommitAuthorType": "ai_assisted_human_reviewed"
-        }
+  "version": "1.0.0",
+  "sampleId": "bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_update",
+  "title": "Update a data policy",
+  "description": "Updates the data masking configuration of an existing data policy.",
+  "dateCreated": "2025-11-20T03:05:21.392Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample demonstrates how to adapt data governance controls as requirements evolve. A developer might need to update a data policy's masking function in BigQuery when a data classification changes or a new masking technique is required for compliance.",
+    "products": [
+      "bigquerydatapolicy"
     ]
+  },
+  "extended": {
+    "api": "bigquerydatapolicy.googleapis.com",
+    "method": "UpdateDataPolicy",
+    "standard": true,
+    "service_version": "v2beta1",
+    "fixtures": [
+      {
+        "ref": "bigquery_datapolicy",
+        "output_mapping": {
+          "data_policy_id": "dataPolicyId"
+        }
+      }
+    ],
+    "parameters": [
+      {
+        "name": "dataPolicyId",
+        "source": "bigquery_datapolicy.data_policy_id"
+      }
+    ]
+  },
+  "regionTags": [
+    {
+      "name": "bigquerydatapolicy_v2beta1_datapolicyservice_datapolicy_update",
+      "title": "Update a data policy",
+      "description": "Updates the data masking configuration of an existing data policy."
+    },
+    {
+      "name": "bigquerydatapolicy_datapolicyservice_datapolicy_update"
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-bigquery-datapolicies",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "NODEJS-@google-cloud/bigquery-datapolicies",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "JAVA-google-cloud-bigquerydatapolicy",
+      "categories": {
+        "language": "JAVA"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
 }

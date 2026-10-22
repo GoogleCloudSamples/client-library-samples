@@ -21,6 +21,9 @@
       "name": "bigquerymigration_v2alpha_migrationservice_migrationsubtasks_list",
       "title": "List migration subtasks",
       "description": "Lists all the subtasks for a given BigQuery migration workflow."
+    },
+    {
+      "name": "bigquerymigration_migrationservice_migrationsubtasks_list"
     }
   ],
   "instances": [

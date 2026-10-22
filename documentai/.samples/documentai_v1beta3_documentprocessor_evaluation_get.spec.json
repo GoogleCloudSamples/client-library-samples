@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "sampleId": "documentai_v1beta3_documentprocessor_evaluation_get",
+  "title": "Get Evaluation",
+  "description": "Get evaluation.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Get evaluation.",
+    "products": [
+      "documentai"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "documentai.googleapis.com",
+    "service_version": "v1beta3",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "documentai_v1beta3_documentprocessor_evaluation_get",
+      "title": "Get Evaluation",
+      "description": "Get evaluation."
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-documentai",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

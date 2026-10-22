@@ -1,0 +1,48 @@
+{
+  "version": "1.0.0",
+  "sampleId": "dlp_v2_dlpservice_jobtrigger_get",
+  "title": "Get DLP Job Trigger",
+  "description": "Gets a DLP job trigger.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Gets a DLP job trigger.",
+    "products": [
+      "dlp"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "dlp.googleapis.com",
+    "service_version": "v2",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "dlp_v2_dlpservice_jobtrigger_get",
+      "title": "Get DLP Job Trigger",
+      "description": "Gets a DLP job trigger."
+    },
+    {
+      "name": "dlp_v2_dlpservice_jobtrigger_get_async"
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/dlp",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-dlp",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

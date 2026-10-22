@@ -14,7 +14,27 @@
   "extended": {
     "api": "bigquerymigration.googleapis.com",
     "method": "CreateMigrationWorkflow",
-    "standard": true
+    "standard": true,
+    "service_version": "v2",
+    "fixtures": [
+      {
+        "ref": "bigquery_migration_translate",
+        "output_mapping": {
+          "gcs_source_path": "gcsSourcePath",
+          "gcs_target_path": "gcsTargetPath"
+        }
+      }
+    ],
+    "parameters": [
+      {
+        "name": "gcsSourcePath",
+        "source": "bigquery_migration_translate.gcs_source_path"
+      },
+      {
+        "name": "gcsTargetPath",
+        "source": "bigquery_migration_translate.gcs_target_path"
+      }
+    ]
   },
   "regionTags": [
     {
