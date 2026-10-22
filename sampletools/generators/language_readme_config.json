@@ -1,0 +1,102 @@
+{
+  "product_display_names": {
+    "bigqueryconnection": "BigQuery Connection",
+    "bigquerydatapolicy": "BigQuery Data Policy",
+    "bigquerydatatransfer": "BigQuery Data Transfer",
+    "bigquerymigration": "BigQuery Migration",
+    "bigqueryreservation": "BigQuery Reservation",
+    "bigquerystorage": "BigQuery Storage",
+    "billingbudgets": "Cloud Billing Budgets",
+    "cloudrun": "Cloud Run",
+    "dataproc": "Dataproc",
+    "dlp": "Sensitive Data Protection (DLP)",
+    "documentai": "Document AI",
+    "firestore": "Cloud Firestore",
+    "pubsub": "Cloud Pub/Sub",
+    "secretmanager": "Secret Manager",
+    "securitycenter": "Security Command Center (Model Armor)",
+    "speech": "Cloud Speech-to-Text",
+    "storage": "Cloud Storage",
+    "storagecontrol": "Cloud Storage Control",
+    "vision": "Cloud Vision"
+  },
+  "language_aliases": {
+    "JAVASCRIPT": "NODEJS",
+    "JS": "NODEJS",
+    "NODE": "NODEJS"
+  },
+  "languages": {
+    "KOTLIN": {
+      "display_name": "Kotlin",
+      "output_filename": "KOTLIN.md",
+      "dir_name": "kotlin",
+      "extension": ".kt",
+      "github_lang": "Kotlin",
+      "dependency_file": "build.gradle.kts",
+      "prerequisites": [
+        "**Java Development Kit (JDK) 21 or higher**: Verify with `java -version`.",
+        "**Gradle 8.x or higher**: Used to build and run the standalone Kotlin sample projects (`build.gradle.kts`)."
+      ],
+      "run_instructions": [
+        "Navigate to the target sample directory (for example, `cd vision/v1/kotlin/google-cloud-vision`).",
+        "Review the sample file and update any placeholder values (such as project IDs or Cloud Storage URIs) if needed.",
+        "Compile and run a sample using Gradle by passing the Kotlin main class name (the filename with `Kt` appended):"
+      ],
+      "run_code_block": "cd vision/v1/kotlin/google-cloud-vision\ngradle run -PmainClass=AnnotateImageKt"
+    },
+    "JAVA": {
+      "display_name": "Java",
+      "output_filename": "JAVA.md",
+      "dir_name": "java",
+      "extension": ".java",
+      "github_lang": "Java",
+      "dependency_file": "pom.xml",
+      "prerequisites": [
+        "**Java Development Kit (JDK) 21 or higher**: Verify with `java -version`.",
+        "**Apache Maven 3.9+**: Used to manage dependencies (`pom.xml`) and execute samples."
+      ],
+      "run_instructions": [
+        "Navigate to the target sample directory (for example, `cd bigqueryconnection/v1/java/google-cloud-bigqueryconnection`).",
+        "Review the sample `.java` file and update any placeholder parameters (such as `projectId` or `location`).",
+        "Compile and run the sample using Maven's `exec:java` goal:"
+      ],
+      "run_code_block": "cd bigqueryconnection/v1/java/google-cloud-bigqueryconnection\nmvn compile exec:java -Dexec.mainClass=CreateConnection"
+    },
+    "PYTHON": {
+      "display_name": "Python",
+      "output_filename": "PYTHON.md",
+      "dir_name": "python",
+      "extension": ".py",
+      "github_lang": "Python",
+      "dependency_file": "requirements.txt",
+      "prerequisites": [
+        "**Python 3.12 or higher**: Verify with `python3 --version`.",
+        "**pip & venv**: Recommended for creating an isolated virtual environment per sample directory."
+      ],
+      "run_instructions": [
+        "Navigate to the target sample directory (for example, `cd secretmanager/v1/python/google-cloud-secret-manager`).",
+        "Create and activate a virtual environment, then install dependencies from `requirements.txt`.",
+        "Run the standalone Python sample script:"
+      ],
+      "run_code_block": "cd secretmanager/v1/python/google-cloud-secret-manager\npython3 -m venv .venv\nsource .venv/bin/activate\npip install -r requirements.txt\npython3 secret-manager-client-secrets-list.py"
+    },
+    "NODEJS": {
+      "display_name": "JavaScript",
+      "output_filename": "JAVASCRIPT.md",
+      "dir_name": "nodejs",
+      "extension": ".js",
+      "github_lang": "JavaScript",
+      "dependency_file": "package.json",
+      "prerequisites": [
+        "**Node.js 18 or higher**: Verify with `node --version`.",
+        "**npm**: Included with Node.js for installing sample dependencies from `package.json`."
+      ],
+      "run_instructions": [
+        "Navigate to the target sample directory (for example, `cd secretmanager/v1/nodejs/google-cloud-secret-manager`).",
+        "Install the required client library dependencies using `npm install`.",
+        "Execute the sample script with `node`:"
+      ],
+      "run_code_block": "cd secretmanager/v1/nodejs/google-cloud-secret-manager\nnpm install\nnode secret-manager-client-secrets-list.js"
+    }
+  }
+}
