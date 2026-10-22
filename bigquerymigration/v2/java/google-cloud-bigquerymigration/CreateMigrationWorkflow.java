@@ -1,20 +1,21 @@
-// Copyright 2026 Google LLC
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
+/*
+ * Copyright 2026 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 // [START bigquerymigration_v2_migrationservice_migrationworkflow_create]
 // [START bigquerymigration_migrationservice_migrationworkflow_create]
-
 import com.google.api.gax.rpc.AlreadyExistsException;
 import com.google.api.gax.rpc.ApiException;
 import com.google.api.gax.rpc.InvalidArgumentException;
@@ -33,61 +34,57 @@ import java.util.Map;
 public class CreateMigrationWorkflow {
 
   /**
-   * Creates a Teradata SQL translation migration workflow.
+   * Creates a Teradata SQL translation migration workflow to batch translate Teradata SQL scripts
+   * and DDL into BigQuery-compatible SQL. The translation task reads input files from a Cloud
+   * Storage source path and writes the converted output to a Cloud Storage target path.
    *
-   * <p>Creates a migration workflow to batch translate Teradata SQL scripts and DDL into
-   * BigQuery-compatible SQL. The translation task reads input files from a Cloud Storage source
-   * path and writes the converted output to a Cloud Storage target path.
-   *
-   * @param projectId the Google Cloud project ID (for example, {@code "example-project-id"})
-   * @param location the geographic location of the migration workflow (for example, {@code "us"})
-   * @param gcsSourcePath the Cloud Storage path for a directory of files to translate in a batch
-   *     (for example, {@code "gs://example-bucket/example-input-folder/"})
-   * @param gcsTargetPath the Cloud Storage path to write back the translated output files to (for
-   *     example, {@code "gs://example-bucket/example-output-folder/"})
-   * @throws IOException if the client fails to initialize
+   * @param projectId The Google Cloud project ID (for example, "example-project-id").
+   * @param location The geographic location of the migration workflow (for example, "us").
+   * @param gcsSourcePath The Cloud Storage path for a directory of files to translate in a batch
+   *     (for example, "gs://example-bucket/example-input-folder/").
+   * @param gcsTargetPath The Cloud Storage path to write back the translated output files to (for
+   *     example, "gs://example-bucket/example-output-folder/").
    */
   public static void createMigrationWorkflow(
-      String projectId, String location, String gcsSourcePath, String gcsTargetPath)
-      throws IOException {
+      String projectId, String location, String gcsSourcePath, String gcsTargetPath) {
+    LocationName parent = LocationName.of(projectId, location);
+
+    Dialect sourceDialect =
+        Dialect.newBuilder()
+            .setTeradataDialect(
+                TeradataDialect.newBuilder().setMode(TeradataDialect.Mode.SQL).build())
+            .build();
+
+    Dialect targetDialect =
+        Dialect.newBuilder().setBigqueryDialect(BigQueryDialect.getDefaultInstance()).build();
+
+    TranslationConfigDetails translationConfigDetails =
+        TranslationConfigDetails.newBuilder()
+            .setGcsSourcePath(gcsSourcePath)
+            .setGcsTargetPath(gcsTargetPath)
+            .setSourceDialect(sourceDialect)
+            .setTargetDialect(targetDialect)
+            .build();
+
+    MigrationTask task =
+        MigrationTask.newBuilder()
+            .setType("Translation_Teradata2BQ")
+            .setTranslationConfigDetails(translationConfigDetails)
+            .build();
+
+    MigrationWorkflow migrationWorkflow =
+        MigrationWorkflow.newBuilder()
+            .setDisplayName("Example Teradata to BigQuery Migration Workflow")
+            .putTasks("translation-task", task)
+            .build();
+
+    CreateMigrationWorkflowRequest request =
+        CreateMigrationWorkflowRequest.newBuilder()
+            .setParent(parent.toString())
+            .setMigrationWorkflow(migrationWorkflow)
+            .build();
+
     try (MigrationServiceClient client = MigrationServiceClient.create()) {
-      LocationName parent = LocationName.of(projectId, location);
-
-      Dialect sourceDialect =
-          Dialect.newBuilder()
-              .setTeradataDialect(
-                  TeradataDialect.newBuilder().setMode(TeradataDialect.Mode.SQL).build())
-              .build();
-
-      Dialect targetDialect =
-          Dialect.newBuilder().setBigqueryDialect(BigQueryDialect.getDefaultInstance()).build();
-
-      TranslationConfigDetails translationConfigDetails =
-          TranslationConfigDetails.newBuilder()
-              .setGcsSourcePath(gcsSourcePath)
-              .setGcsTargetPath(gcsTargetPath)
-              .setSourceDialect(sourceDialect)
-              .setTargetDialect(targetDialect)
-              .build();
-
-      MigrationTask task =
-          MigrationTask.newBuilder()
-              .setType("Translation_Teradata2BQ")
-              .setTranslationConfigDetails(translationConfigDetails)
-              .build();
-
-      MigrationWorkflow migrationWorkflow =
-          MigrationWorkflow.newBuilder()
-              .setDisplayName("Example Teradata to BigQuery Migration Workflow")
-              .putTasks("translation-task", task)
-              .build();
-
-      CreateMigrationWorkflowRequest request =
-          CreateMigrationWorkflowRequest.newBuilder()
-              .setParent(parent.toString())
-              .setMigrationWorkflow(migrationWorkflow)
-              .build();
-
       MigrationWorkflow response = client.createMigrationWorkflow(request);
       System.out.printf("Created migration workflow: %s%n", response.getName());
       System.out.printf("  Display Name: %s%n", response.getDisplayName());
@@ -99,23 +96,25 @@ public class CreateMigrationWorkflow {
         System.out.printf("        Type: %s%n", createdTask.getType());
         System.out.printf("        State: %s%n", createdTask.getState());
       }
-    } catch (AlreadyExistsException e) {
-      System.out.printf("Migration workflow already exists: %s%n", e.getMessage());
-    } catch (InvalidArgumentException e) {
+    } catch (AlreadyExistsException err) {
       System.err.printf(
-          "error: invalid argument provided for creating migration workflow (status=%s): %s%n",
-          e.getStatusCode().getCode(), e.getMessage());
-    } catch (ApiException e) {
+          "error: migration workflow already exists in location '%s' for project '%s': %s%n",
+          location, projectId, err.getMessage());
+    } catch (InvalidArgumentException err) {
       System.err.printf(
-          "error: failed to create migration workflow (status=%s): %s%n",
-          e.getStatusCode().getCode(), e.getMessage());
+          "error: invalid argument creating migration workflow in location '%s' for project '%s': %s%n",
+          location, projectId, err.getMessage());
+    } catch (ApiException | IOException err) {
+      System.err.printf(
+          "error: failed to create migration workflow in location '%s' for project '%s': %s%n",
+          location, projectId, err.getMessage());
     }
   }
+
   // [END bigquerymigration_migrationservice_migrationworkflow_create]
   // [END bigquerymigration_v2_migrationservice_migrationworkflow_create]
 
-  // Entrypoint for command-line execution and automated validation using Terraform fixtures.
-  public static void main(String[] args) throws Exception {
+  public static void main(String[] args) {
     String projectId = System.getenv("GOOGLE_CLOUD_PROJECT");
     String location = "us";
     String gcsSourcePath = System.getenv("GCS_SOURCE_PATH");
