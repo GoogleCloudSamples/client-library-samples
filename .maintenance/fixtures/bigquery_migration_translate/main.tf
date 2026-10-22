@@ -12,16 +12,28 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# This fixture creates:
-# * A Cloud Storage bucket, containing a txt object, for input
-# * A Cloud Storage bucket for output.
+# This fixture enables the BigQuery Migration API and creates a Cloud Storage
+# bucket containing an input SQL file for batch translation workflows.
 
 variable "project_id" {
   description = "Google Cloud Project ID"
+  type        = string
 }
 
 resource "random_id" "default" {
   byte_length = 2
+}
+
+resource "google_project_service" "bigquerymigration" {
+  project            = var.project_id
+  service            = "bigquerymigration.googleapis.com"
+  disable_on_destroy = false
+}
+
+resource "google_project_service" "storage" {
+  project            = var.project_id
+  service            = "storage.googleapis.com"
+  disable_on_destroy = false
 }
 
 locals {
@@ -29,15 +41,19 @@ locals {
   output_path = "output/"
 }
 
-# Source data
-
 resource "google_storage_bucket" "default" {
-    project = var.project_id
-  name          = "fixture_translation_${random_id.default.hex}_${var.project_id}"
+  project       = var.project_id
+  name          = "example_translation_${random_id.default.hex}_${var.project_id}"
   location      = "us-central1"
   force_destroy = true
 
-  public_access_prevention = "enforced"
+  public_access_prevention    = "enforced"
+  uniform_bucket_level_access = true
+
+  depends_on = [
+    google_project_service.bigquerymigration,
+    google_project_service.storage,
+  ]
 }
 
 resource "google_storage_bucket_object" "default" {
@@ -45,8 +61,6 @@ resource "google_storage_bucket_object" "default" {
   name   = "input/input_sql.txt"
   source = "input_sql.txt"
 }
-
-# output parameters
 
 output "gcs_source_path" {
   value = "gs://${google_storage_bucket_object.default.bucket}/${local.input_path}"
