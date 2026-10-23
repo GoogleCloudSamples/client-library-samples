@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Deletes a custom class from a Google Cloud project.",
+    "narrative": "The `delete_custom_class` method removes a custom class resource. This operation is irreversible and the custom class cannot be recovered after deletion.",
     "products": [
       "speech"
     ],

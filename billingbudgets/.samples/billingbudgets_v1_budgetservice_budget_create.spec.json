@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Creates a new budget for a Google Cloud billing account.",
+    "narrative": "This sample demonstrates how to create a budget that tracks the total spend for the entire billing account, with a specified amount and alerts at 50% and 90% of the budget.",
     "products": [
       "billingbudgets"
     ],

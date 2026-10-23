@@ -2,11 +2,11 @@
   "version": "1.0.0",
   "sampleId": "documentai_v1beta3_document_datasetschema_get",
   "title": "Get Dataset Schema",
-  "description": "Get dataset schema.",
+  "description": "Retrieves the schema of a dataset.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Get dataset schema.",
+    "narrative": "Retrieves the schema of a dataset.",
     "products": [
       "documentai"
     ],
@@ -23,7 +23,7 @@
     {
       "name": "documentai_v1beta3_document_datasetschema_get",
       "title": "Get Dataset Schema",
-      "description": "Get dataset schema."
+      "description": "Retrieves the schema of a dataset."
     }
   ],
   "instances": [

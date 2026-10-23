@@ -2,11 +2,11 @@
   "version": "1.0.0",
   "sampleId": "dlp_v2_dlpservice_deidentifytemplate_delete",
   "title": "Delete Deidentify Template",
-  "description": "Deletes a de-identify template.",
+  "description": "Deletes a Sensitive Data Protection de-identify template. See https://cloud.google.com/sensitive-data-protection/docs/creating-templates-deid to learn more.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Deletes a de-identify template.",
+    "narrative": "Deletes a Sensitive Data Protection de-identify template. See https://cloud.google.com/sensitive-data-protection/docs/creating-templates-deid to learn more.",
     "products": [
       "dlp"
     ],
@@ -23,7 +23,7 @@
     {
       "name": "dlp_v2_dlpservice_deidentifytemplate_delete",
       "title": "Delete Deidentify Template",
-      "description": "Deletes a de-identify template."
+      "description": "Deletes a Sensitive Data Protection de-identify template. See https://cloud.google.com/sensitive-data-protection/docs/creating-templates-deid to learn more."
     },
     {
       "name": "dlp_v2_dlpservice_deidentifytemplate_delete_async"

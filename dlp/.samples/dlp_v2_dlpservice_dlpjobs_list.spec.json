@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Lists DLP jobs for a given project and location.",
+    "narrative": "The `list_dlp_jobs` method allows you to retrieve a list of previously created DLP inspection or risk analysis jobs.",
     "products": [
       "dlp"
     ],

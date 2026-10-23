@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Lists managed folders within a given bucket.",
+    "narrative": "Lists all managed folders within a specified bucket.",
     "products": [
       "storagecontrol"
     ],

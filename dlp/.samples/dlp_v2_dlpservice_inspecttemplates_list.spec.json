@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Lists DLP inspect templates for a given project and location.",
+    "narrative": "inspection templates are reusable configurations for inspecting content.",
     "products": [
       "dlp"
     ],

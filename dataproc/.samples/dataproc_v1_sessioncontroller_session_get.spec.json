@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Retrieves the details of a Dataproc session.",
+    "narrative": "Dataproc sessions provide an interactive environment for data processing workloads. Retrieving session details is crucial for monitoring, managing, and debugging these interactive environments.",
     "products": [
       "dataproc"
     ],

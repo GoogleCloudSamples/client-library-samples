@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "sampleId": "documentai_v1beta3_documents_list_full",
-  "title": "List Documents Full",
-  "description": "List documents with pagination.",
+  "title": "List Documents with Pagination",
+  "description": "Lists the documents in a dataset with pagination support.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "List documents with pagination.",
+    "narrative": "Lists the documents in a dataset with pagination support.",
     "products": [
       "documentai"
     ],
@@ -22,8 +22,8 @@
   "regionTags": [
     {
       "name": "documentai_v1beta3_documents_list_full",
-      "title": "List Documents Full",
-      "description": "List documents with pagination."
+      "title": "List Documents with Pagination",
+      "description": "Lists the documents in a dataset with pagination support."
     }
   ],
   "instances": [

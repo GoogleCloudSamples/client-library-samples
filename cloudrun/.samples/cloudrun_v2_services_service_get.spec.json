@@ -2,11 +2,11 @@
   "version": "1.0.0",
   "sampleId": "cloudrun_v2_services_service_get",
   "title": "Get Service",
-  "description": "Get a Cloud Run service by its name.",
+  "description": "This sample demonstrates how to retrieve details of a specific Cloud Run service using the `getService` method. It shows how to construct the service name and handle potential 'NOT_FOUND' errors.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Get a Cloud Run service by its name.",
+    "narrative": "This sample demonstrates how to retrieve details of a specific Cloud Run service using the `getService` method. It shows how to construct the service name and handle potential 'NOT_FOUND' errors.",
     "products": [
       "cloudrun"
     ],
@@ -23,7 +23,7 @@
     {
       "name": "cloudrun_v2_services_service_get",
       "title": "Get Service",
-      "description": "Get a Cloud Run service by its name."
+      "description": "This sample demonstrates how to retrieve details of a specific Cloud Run service using the `getService` method. It shows how to construct the service name and handle potential 'NOT_FOUND' errors."
     },
     {
       "name": "cloudrun_v2_services_service_get_async"

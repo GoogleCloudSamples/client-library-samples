@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Updates an existing PhraseSet with new phrases.",
+    "narrative": "This sample demonstrates how to update a PhraseSet, which can improve speech recognition accuracy for specific words and phrases.",
     "products": [
       "speech"
     ],

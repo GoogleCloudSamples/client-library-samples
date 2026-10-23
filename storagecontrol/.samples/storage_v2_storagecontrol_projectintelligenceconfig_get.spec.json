@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Retrieves the project-scoped singleton IntelligenceConfig resource.",
+    "narrative": "This resource provides configuration for Storage Intelligence features at the project level.",
     "products": [
       "storagecontrol"
     ],

@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Lists de-identify templates within a specified project and location.",
+    "narrative": "A de-identify template contains instructions on how to de-identify content.",
     "products": [
       "dlp"
     ],

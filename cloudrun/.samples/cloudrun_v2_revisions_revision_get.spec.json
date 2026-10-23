@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Gets information about a specific Cloud Run revision.",
+    "narrative": "This sample demonstrates how to retrieve details for a particular revision within a Cloud Run service. Revisions are immutable snapshots of your service's code and configuration, created automatically when a service is updated.",
     "products": [
       "cloudrun"
     ],

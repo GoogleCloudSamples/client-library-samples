@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Creates a pre-built stored infoType based on a regular expression.",
+    "narrative": "A stored info type is a reusable configuration that defines a custom sensitive information detector based on a regular expression, a dictionary, or a combination. This sample demonstrates creating one using a regular expression.",
     "products": [
       "dlp"
     ],

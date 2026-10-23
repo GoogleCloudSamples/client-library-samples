@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Creates an InspectTemplate for reusing frequently used configuration for inspecting content, images, and storage.",
+    "narrative": "An inspection template allows you to define a reusable configuration for scanning sensitive data, including which info types to look for and how to handle findings.",
     "products": [
       "dlp"
     ],

@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Retrieves the resource representation for a Dataproc cluster.",
+    "narrative": "This function demonstrates how to get details of an existing Dataproc cluster using the `get_cluster` method.",
     "products": [
       "dataproc"
     ],

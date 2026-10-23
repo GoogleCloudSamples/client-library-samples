@@ -2,11 +2,11 @@
   "version": "1.0.0",
   "sampleId": "cloudrun_v2_workerpools_iampolicy_get",
   "title": "Get Worker Pool IAM Policy",
-  "description": "Get the IAM policy for a Cloud Run WorkerPool.",
+  "description": "This sample demonstrates how to retrieve the Identity and Access Management (IAM) policy associated with a specific Cloud Run WorkerPool. The IAM policy defines who has what permissions for the WorkerPool resource.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Get the IAM policy for a Cloud Run WorkerPool.",
+    "narrative": "This sample demonstrates how to retrieve the Identity and Access Management (IAM) policy associated with a specific Cloud Run WorkerPool. The IAM policy defines who has what permissions for the WorkerPool resource.",
     "products": [
       "cloudrun"
     ],
@@ -23,7 +23,7 @@
     {
       "name": "cloudrun_v2_workerpools_iampolicy_get",
       "title": "Get Worker Pool IAM Policy",
-      "description": "Get the IAM policy for a Cloud Run WorkerPool."
+      "description": "This sample demonstrates how to retrieve the Identity and Access Management (IAM) policy associated with a specific Cloud Run WorkerPool. The IAM policy defines who has what permissions for the WorkerPool resource."
     },
     {
       "name": "cloudrun_v2_workerpools_iampolicy_get_async"

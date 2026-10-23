@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Creates a new Cloud Run job. A Cloud Run job executes a container image to completion.",
+    "narrative": "This sample demonstrates how to create a basic Cloud Run job with a specified container image. It configures the job to run a simple container from Google Container Registry.",
     "products": [
       "cloudrun"
     ],

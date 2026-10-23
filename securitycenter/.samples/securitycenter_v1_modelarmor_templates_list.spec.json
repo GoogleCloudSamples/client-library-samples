@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Lists ModelArmor templates in a given project and location.",
+    "narrative": "This function demonstrates how to retrieve a list of security templates configured within ModelArmor for a specific Google Cloud project and location. Templates define various security configurations and policies.",
     "products": [
       "securitycenter"
     ],

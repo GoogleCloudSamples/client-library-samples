@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Lists all Cloud Run services in a given project and location.",
+    "narrative": "This sample demonstrates how to list services using the `listServicesAsync` method, which returns an asynchronous iterable. This approach is efficient for handling large numbers of services as it processes them one by one, avoiding loading all results into memory at once.",
     "products": [
       "cloudrun"
     ],

@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Lists Tasks from a specific Execution of a Cloud Run Job.",
+    "narrative": "This sample demonstrates how to retrieve a list of tasks associated with a given job execution. It iterates through the tasks and prints their names and status.",
     "products": [
       "cloudrun"
     ],

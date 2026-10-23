@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Creates a new discovery configuration for data profiling.",
+    "narrative": "A discovery configuration defines how Cloud DLP scans and profiles data in your Google Cloud environment. This sample creates a configuration that profiles all BigQuery tables monthly. The discovery config's ID is dynamically generated on creation.",
     "products": [
       "dlp"
     ],

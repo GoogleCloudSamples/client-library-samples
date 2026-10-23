@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Retrieves metadata for a specified managed folder.",
+    "narrative": "A managed folder is a feature in Cloud Storage that allows you to manage access to a subset of objects within a bucket using IAM policies.",
     "products": [
       "storagecontrol"
     ],

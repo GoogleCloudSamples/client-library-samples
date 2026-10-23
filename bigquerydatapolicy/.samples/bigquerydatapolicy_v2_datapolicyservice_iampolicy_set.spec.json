@@ -2,11 +2,11 @@
   "version": "1.0.0",
   "sampleId": "bigquerydatapolicy_v2_datapolicyservice_iampolicy_set",
   "title": "Set Data Policy IAM Policy",
-  "description": "Set the IAM policy for a data policy. Sets the IAM policy for a specified data policy resource from the BigQuery Data Policy API. This is useful for granting specific roles to members on the policy.",
+  "description": "Sets the IAM policy for a specified data policy resource from the BigQuery Data Policy API. This is useful for granting specific roles to members on the policy.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Set the IAM policy for a data policy. Sets the IAM policy for a specified data policy resource from the BigQuery Data Policy API. This is useful for granting specific roles to members on the policy.",
+    "narrative": "Sets the IAM policy for a specified data policy resource from the BigQuery Data Policy API. This is useful for granting specific roles to members on the policy.",
     "products": [
       "bigquerydatapolicy"
     ],
@@ -40,7 +40,7 @@
     {
       "name": "bigquerydatapolicy_v2_datapolicyservice_iampolicy_set",
       "title": "Set Data Policy IAM Policy",
-      "description": "Set the IAM policy for a data policy. Sets the IAM policy for a specified data policy resource from the BigQuery Data Policy API. This is useful for granting specific roles to members on the policy."
+      "description": "Sets the IAM policy for a specified data policy resource from the BigQuery Data Policy API. This is useful for granting specific roles to members on the policy."
     }
   ],
   "instances": [

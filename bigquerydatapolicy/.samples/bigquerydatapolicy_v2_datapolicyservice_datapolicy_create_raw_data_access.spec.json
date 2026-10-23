@@ -2,11 +2,11 @@
   "version": "1.0.0",
   "sampleId": "bigquerydatapolicy_v2_datapolicyservice_datapolicy_create_raw_data_access",
   "title": "Create Raw Data Access Policy",
-  "description": "Create a raw data access policy. Creates a data policy with type RAW_DATA_ACCESS_POLICY. This policy type is used to grant raw data access to specific principals for columns that are otherwise protected by security policies.",
+  "description": "Creates a data policy with type RAW_DATA_ACCESS_POLICY. This policy type is used to grant raw data access to specific principals for columns that are otherwise protected by security policies.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Create a raw data access policy. Creates a data policy with type RAW_DATA_ACCESS_POLICY. This policy type is used to grant raw data access to specific principals for columns that are otherwise protected by security policies.",
+    "narrative": "Creates a data policy with type RAW_DATA_ACCESS_POLICY. This policy type is used to grant raw data access to specific principals for columns that are otherwise protected by security policies.",
     "products": [
       "bigquerydatapolicy"
     ],
@@ -23,7 +23,7 @@
     {
       "name": "bigquerydatapolicy_v2_datapolicyservice_datapolicy_create_raw_data_access",
       "title": "Create Raw Data Access Policy",
-      "description": "Create a raw data access policy. Creates a data policy with type RAW_DATA_ACCESS_POLICY. This policy type is used to grant raw data access to specific principals for columns that are otherwise protected by security policies."
+      "description": "Creates a data policy with type RAW_DATA_ACCESS_POLICY. This policy type is used to grant raw data access to specific principals for columns that are otherwise protected by security policies."
     }
   ],
   "instances": [

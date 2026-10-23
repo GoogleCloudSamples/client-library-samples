@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Retrieves metadata for a specified folder.",
+    "narrative": "Retrieves metadata for a specified folder within a hierarchical namespace enabled bucket.",
     "products": [
       "storagecontrol"
     ],

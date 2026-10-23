@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Retrieves details for a specific Cloud Run execution.",
+    "narrative": "This sample demonstrates how to get information about a particular execution within a given job. Executions represent a single run of a job.",
     "products": [
       "cloudrun"
     ],

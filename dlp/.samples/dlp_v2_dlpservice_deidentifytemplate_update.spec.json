@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Updates an existing de-identification template.",
+    "narrative": "The de-identification template allows you to save configurations for de-identifying sensitive data. This sample updates the display name and description of an existing template.",
     "products": [
       "dlp"
     ],

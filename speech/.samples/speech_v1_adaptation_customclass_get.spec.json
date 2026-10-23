@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Retrieves a specific custom class resource.",
+    "narrative": "The `get_custom_class` method allows you to fetch the details of a custom class that has been previously created. Custom classes are used to improve the accuracy of speech recognition for specific words or phrases by providing a list of items that are likely to appear in your audio.",
     "products": [
       "speech"
     ],

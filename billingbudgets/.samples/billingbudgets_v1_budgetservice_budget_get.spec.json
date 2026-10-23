@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Retrieves a specific budget for a billing account.",
+    "narrative": "This sample demonstrates how to fetch the details of an existing budget using its billing account ID and budget ID. It also shows proper error handling for cases where the budget might not be found.",
     "products": [
       "billingbudgets"
     ],

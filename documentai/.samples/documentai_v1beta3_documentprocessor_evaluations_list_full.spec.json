@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "sampleId": "documentai_v1beta3_documentprocessor_evaluations_list_full",
-  "title": "List Evaluations Full",
-  "description": "List evaluations with pagination.",
+  "title": "List Evaluations with Pagination",
+  "description": "Lists the evaluations for a specific processor version with pagination support.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "List evaluations with pagination.",
+    "narrative": "Lists the evaluations for a specific processor version with pagination support.",
     "products": [
       "documentai"
     ],
@@ -22,8 +22,8 @@
   "regionTags": [
     {
       "name": "documentai_v1beta3_documentprocessor_evaluations_list_full",
-      "title": "List Evaluations Full",
-      "description": "List evaluations with pagination."
+      "title": "List Evaluations with Pagination",
+      "description": "Lists the evaluations for a specific processor version with pagination support."
     }
   ],
   "instances": [

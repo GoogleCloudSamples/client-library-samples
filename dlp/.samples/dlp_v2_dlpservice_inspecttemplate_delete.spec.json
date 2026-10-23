@@ -2,11 +2,11 @@
   "version": "1.0.0",
   "sampleId": "dlp_v2_dlpservice_inspecttemplate_delete",
   "title": "Delete Inspect Template",
-  "description": "Deletes an InspectTemplate.",
+  "description": "Deletes an existing Sensitive Data Protection inspection template.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Deletes an InspectTemplate.",
+    "narrative": "Deletes an existing Sensitive Data Protection inspection template.",
     "products": [
       "dlp"
     ],
@@ -23,7 +23,7 @@
     {
       "name": "dlp_v2_dlpservice_inspecttemplate_delete",
       "title": "Delete Inspect Template",
-      "description": "Deletes an InspectTemplate."
+      "description": "Deletes an existing Sensitive Data Protection inspection template."
     },
     {
       "name": "dlp_v2_dlpservice_inspecttemplate_delete_async"

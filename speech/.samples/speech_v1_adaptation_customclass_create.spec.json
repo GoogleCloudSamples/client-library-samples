@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Creates a custom class for speech adaptation.",
+    "narrative": "A custom class represents a common concept likely to appear in audio, such as a list of specific colors, names, or items. These can be used within PhraseSets to improve recognition accuracy for specific terms.",
     "products": [
       "speech"
     ],

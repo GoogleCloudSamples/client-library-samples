@@ -2,11 +2,11 @@
   "version": "1.0.0",
   "sampleId": "dlp_v2_dlpservice_jobtrigger_get",
   "title": "Get DLP Job Trigger",
-  "description": "Gets a DLP job trigger.",
+  "description": "Gets a job trigger by its full resource name.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Gets a DLP job trigger.",
+    "narrative": "The `get_job_trigger` method retrieves the details of a specific job trigger identified by its ID. This is useful for checking the status, configuration, and history of a scheduled DLP scan.",
     "products": [
       "dlp"
     ],
@@ -23,7 +23,7 @@
     {
       "name": "dlp_v2_dlpservice_jobtrigger_get",
       "title": "Get DLP Job Trigger",
-      "description": "Gets a DLP job trigger."
+      "description": "Gets a job trigger by its full resource name."
     },
     {
       "name": "dlp_v2_dlpservice_jobtrigger_get_async"

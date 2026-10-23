@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "sampleId": "cloudrun_v2_services_service_create",
-  "title": "Demonstrates",
+  "title": "Create Service",
   "description": "Creates a new Cloud Run service.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Creates a new Cloud Run service.",
+    "narrative": "This function demonstrates how to create a new Cloud Run service with a specified container image. It handles cases where the service might already exist and provides clear output upon successful creation or error.",
     "products": [
       "cloudrun"
     ],
@@ -22,7 +22,7 @@
   "regionTags": [
     {
       "name": "cloudrun_v2_services_service_create",
-      "title": "Demonstrates",
+      "title": "Create Service",
       "description": "Creates a new Cloud Run service."
     },
     {

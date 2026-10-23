@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "sampleId": "documentai_v1_documentprocessor_processdocument_execute_full",
-  "title": "Process Document Full",
-  "description": "Process a document from Cloud Storage.",
+  "title": "Process a Document from Cloud Storage",
+  "description": "Processes a document stored in a Cloud Storage bucket.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Process a document from Cloud Storage.",
+    "narrative": "Processes a document stored in a Cloud Storage bucket.",
     "products": [
       "documentai"
     ],
@@ -22,8 +22,8 @@
   "regionTags": [
     {
       "name": "documentai_v1_documentprocessor_processdocument_execute_full",
-      "title": "Process Document Full",
-      "description": "Process a document from Cloud Storage."
+      "title": "Process a Document from Cloud Storage",
+      "description": "Processes a document stored in a Cloud Storage bucket."
     }
   ],
   "instances": [

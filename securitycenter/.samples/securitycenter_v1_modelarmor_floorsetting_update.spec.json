@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Updates a floor setting for a given project and location.",
+    "narrative": "A floor setting defines the baseline security posture for AI models within a project or organization, specifying default filtering rules and enforcement actions. This sample demonstrates how to update the enforcement status and AI Platform specific settings of an existing floor setting.",
     "products": [
       "securitycenter"
     ],

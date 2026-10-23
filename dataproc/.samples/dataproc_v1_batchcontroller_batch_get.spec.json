@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Retrieves a Dataproc batch workload by its ID.",
+    "narrative": "This method demonstrates how to fetch the details of an existing Dataproc batch workload. Batches are long-running, serverless jobs that execute Spark, PySpark, SparkR, or Spark SQL applications.",
     "products": [
       "dataproc"
     ],

@@ -2,11 +2,11 @@
   "version": "1.0.0",
   "sampleId": "dlp_v2_dlpservice_storedinfotype_delete",
   "title": "Delete Stored Info Type",
-  "description": "Deletes a stored infoType.",
+  "description": "Deletes a custom stored info type.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Deletes a stored infoType.",
+    "narrative": "Deletes a custom stored info type.",
     "products": [
       "dlp"
     ],
@@ -23,7 +23,7 @@
     {
       "name": "dlp_v2_dlpservice_storedinfotype_delete",
       "title": "Delete Stored Info Type",
-      "description": "Deletes a stored infoType."
+      "description": "Deletes a custom stored info type."
     },
     {
       "name": "dlp_v2_dlpservice_storedinfotype_delete_async"

@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Updates the labels of an existing Dataproc job.",
+    "narrative": "This function demonstrates how to update specific fields of a Dataproc job using a field mask. Only the fields specified in the field mask will be updated, allowing for partial updates without affecting other job properties.",
     "products": [
       "dataproc"
     ],

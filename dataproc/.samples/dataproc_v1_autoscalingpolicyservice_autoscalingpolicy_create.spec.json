@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Creates a new autoscaling policy for Dataproc.",
+    "narrative": "This sample demonstrates how to create a basic autoscaling policy that can be attached to a Dataproc cluster to automatically adjust the number of worker nodes based on YARN resource utilization.",
     "products": [
       "dataproc"
     ],

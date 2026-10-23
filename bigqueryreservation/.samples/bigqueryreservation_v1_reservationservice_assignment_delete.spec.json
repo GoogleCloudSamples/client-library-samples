@@ -2,11 +2,11 @@
   "version": "1.0.0",
   "sampleId": "bigqueryreservation_v1_reservationservice_assignment_delete",
   "title": "Delete Assignment",
-  "description": "Deletes a reservation assignment.",
+  "description": "Deletes a reservation assignment. This removes the association between a project, folder, or organization and a reservation. After deletion, jobs from the formerly assigned resource will no longer use the reservation's slots.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Deletes a reservation assignment.",
+    "narrative": "This shows how to delete a reservation assignment. No expansion will happen. For example, if the organization has a reservation assignment and a project under the organization has a reservation assignment, deleting the organization's assignment will not affect the project's assignment.",
     "products": [
       "bigqueryreservation"
     ],
@@ -23,7 +23,7 @@
     {
       "name": "bigqueryreservation_v1_reservationservice_assignment_delete",
       "title": "Delete Assignment",
-      "description": "Deletes a reservation assignment."
+      "description": "Deletes a reservation assignment. This removes the association between a project, folder, or organization and a reservation. After deletion, jobs from the formerly assigned resource will no longer use the reservation's slots."
     },
     {
       "name": "bigqueryreservation_reservationservice_assignment_delete"

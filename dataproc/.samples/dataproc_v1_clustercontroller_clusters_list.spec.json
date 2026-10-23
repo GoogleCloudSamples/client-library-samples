@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Lists all Dataproc clusters in a given project and region.",
+    "narrative": "This function demonstrates how to retrieve a list of Dataproc clusters within a specified Google Cloud project and region using the `list_clusters` method. It iterates through the paginated response and prints details for each cluster found.",
     "products": [
       "dataproc"
     ],

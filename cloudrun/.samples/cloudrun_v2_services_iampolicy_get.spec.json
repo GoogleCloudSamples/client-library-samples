@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Retrieves the IAM policy for a Cloud Run service.",
+    "narrative": "This sample demonstrates how to fetch the IAM policy associated with a specific Cloud Run service. The IAM policy defines who has what permissions on the service, controlling access to the service.",
     "products": [
       "cloudrun"
     ],

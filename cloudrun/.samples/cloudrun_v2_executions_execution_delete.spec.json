@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Deletes a Cloud Run execution.",
+    "narrative": "This sample demonstrates how to delete a specific execution of a Cloud Run job. Deleting an execution will stop any running tasks associated with it and remove the execution resource. This operation is asynchronous and returns a long-running operation (LRO) which must be awaited for completion.",
     "products": [
       "cloudrun"
     ],

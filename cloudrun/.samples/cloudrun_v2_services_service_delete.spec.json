@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Deletes a Cloud Run service.",
+    "narrative": "This sample demonstrates how to delete a Cloud Run service. The deletion is a long-running operation that can take some time to complete.",
     "products": [
       "cloudrun"
     ],

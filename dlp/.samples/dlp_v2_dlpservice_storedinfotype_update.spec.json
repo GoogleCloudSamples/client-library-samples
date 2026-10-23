@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Updates a stored info type by creating a new version.",
+    "narrative": "This sample demonstrates how to update the display name and description of an existing stored info type. The existing version will continue to be used until the new version is ready.",
     "products": [
       "dlp"
     ],

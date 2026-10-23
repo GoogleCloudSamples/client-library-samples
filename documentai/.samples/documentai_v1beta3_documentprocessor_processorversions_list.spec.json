@@ -2,11 +2,11 @@
   "version": "1.0.0",
   "sampleId": "documentai_v1beta3_documentprocessor_processorversions_list",
   "title": "List Processor Versions",
-  "description": "List processor versions.",
+  "description": "Lists the versions of a specific processor.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "List processor versions.",
+    "narrative": "Lists the versions of a specific processor.",
     "products": [
       "documentai"
     ],
@@ -23,7 +23,7 @@
     {
       "name": "documentai_v1beta3_documentprocessor_processorversions_list",
       "title": "List Processor Versions",
-      "description": "List processor versions."
+      "description": "Lists the versions of a specific processor."
     }
   ],
   "instances": [

@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Creates a new ModelArmor template in a given project and location.",
+    "narrative": "A ModelArmor template defines a set of content filters (e.g., Responsible AI, Sensitive Data Protection) that can be applied to user prompts or model responses. This sample demonstrates creating a template with basic Responsible AI filters.",
     "products": [
       "securitycenter"
     ],

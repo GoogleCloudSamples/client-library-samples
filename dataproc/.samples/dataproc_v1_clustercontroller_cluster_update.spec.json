@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Updates the number of worker instances in a Dataproc cluster.",
+    "narrative": "This sample demonstrates how to resize a Dataproc cluster by changing the number of worker nodes. The `update_cluster` method is used for this purpose, requiring a field mask to specify which part of the cluster configuration is being updated.",
     "products": [
       "dataproc"
     ],

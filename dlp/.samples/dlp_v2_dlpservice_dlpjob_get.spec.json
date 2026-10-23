@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Retrieves the latest state of a long-running DLP job.",
+    "narrative": "This method retrieves the current status and details of a specified DLP job. DLP jobs can be inspection jobs (scanning storage for sensitive data) or risk analysis jobs (calculating re-identification risk metrics).",
     "products": [
       "dlp"
     ],

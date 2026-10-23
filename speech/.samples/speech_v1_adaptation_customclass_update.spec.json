@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Updates a custom class with new items.",
+    "narrative": "This sample demonstrates how to update an existing custom class by changing its associated items. It assumes the custom class already exists.",
     "products": [
       "speech"
     ],

@@ -2,11 +2,11 @@
   "version": "1.0.0",
   "sampleId": "dlp_v2_dlpservice_inspecttemplate_get",
   "title": "Get Inspect Template",
-  "description": "Gets an existing InspectTemplate.",
+  "description": "Gets a Sensitive Data Protection inspection template.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Gets an existing InspectTemplate.",
+    "narrative": "Gets a Sensitive Data Protection inspection template.",
     "products": [
       "dlp"
     ],
@@ -23,7 +23,7 @@
     {
       "name": "dlp_v2_dlpservice_inspecttemplate_get",
       "title": "Get Inspect Template",
-      "description": "Gets an existing InspectTemplate."
+      "description": "Gets a Sensitive Data Protection inspection template."
     },
     {
       "name": "dlp_v2_dlpservice_inspecttemplate_get_async"

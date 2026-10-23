@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "sampleId": "documentai_v1beta3_document_datasetschema_get_full",
-  "title": "Get Dataset Schema Full",
-  "description": "Get dataset schema (Full).",
+  "title": "Get Dataset Schema (Full)",
+  "description": "Retrieves the full schema of a dataset with detailed configuration.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Get dataset schema (Full).",
+    "narrative": "Retrieves the full schema of a dataset with detailed configuration.",
     "products": [
       "documentai"
     ],
@@ -22,8 +22,8 @@
   "regionTags": [
     {
       "name": "documentai_v1beta3_document_datasetschema_get_full",
-      "title": "Get Dataset Schema Full",
-      "description": "Get dataset schema (Full)."
+      "title": "Get Dataset Schema (Full)",
+      "description": "Retrieves the full schema of a dataset with detailed configuration."
     }
   ],
   "instances": [

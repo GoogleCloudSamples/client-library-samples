@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Creates a new WorkerPool in a given project and location.",
+    "narrative": "A WorkerPool is a top-level container that manages a set of configurations and revision templates which implement a pull-based workload. It helps to encapsulate software lifecycle decisions such as rollout policy and team resource ownership for pull-based workloads.",
     "products": [
       "cloudrun"
     ],

@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Retrieves a specific CustomClass.",
+    "narrative": "This sample demonstrates how to retrieve details of an existing custom class using its ID.",
     "products": [
       "speech"
     ],

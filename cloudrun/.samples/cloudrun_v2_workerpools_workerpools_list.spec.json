@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Lists all WorkerPools in a given project and location.",
+    "narrative": "WorkerPools are top-level containers that manage configurations and revision templates for pull-based workloads. This sample demonstrates how to retrieve a list of them.",
     "products": [
       "cloudrun"
     ],

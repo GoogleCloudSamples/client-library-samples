@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Retrieves the resource representation for a Dataproc job.",
+    "narrative": "This function demonstrates how to fetch details of an existing Dataproc job using its project ID, region, and job ID. It's useful for monitoring job status, retrieving output URIs, or inspecting job configurations after submission.",
     "products": [
       "dataproc"
     ],

@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Deletes a Model Armor template.",
+    "narrative": "This function demonstrates how to delete a Model Armor template by its ID. It constructs the full resource name and handles cases where the template might not be found.",
     "products": [
       "securitycenter"
     ],

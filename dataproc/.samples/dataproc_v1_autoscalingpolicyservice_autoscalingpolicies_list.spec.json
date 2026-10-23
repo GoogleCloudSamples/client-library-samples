@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Lists autoscaling policies in a Google Cloud Dataproc project within a specified region.",
+    "narrative": "This sample demonstrates how to retrieve a paginated list of autoscaling policies configured for Dataproc clusters in a given project and region. Autoscaling policies define how Dataproc clusters automatically adjust their size based on workload.",
     "products": [
       "dataproc"
     ],

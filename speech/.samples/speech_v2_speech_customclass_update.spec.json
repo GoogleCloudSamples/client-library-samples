@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Updates a custom class.",
+    "narrative": "This sample demonstrates how to update an existing CustomClass resource by changing its display name and replacing its items.",
     "products": [
       "speech"
     ],

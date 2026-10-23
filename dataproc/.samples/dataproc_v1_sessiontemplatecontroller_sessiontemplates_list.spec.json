@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Lists Dataproc session templates within a specified project and location.",
+    "narrative": "Session templates are reusable configurations for creating interactive Dataproc sessions. This method retrieves a paginated list of these templates.",
     "products": [
       "dataproc"
     ],

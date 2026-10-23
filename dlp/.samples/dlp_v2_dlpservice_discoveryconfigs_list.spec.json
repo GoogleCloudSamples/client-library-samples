@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Lists discovery configurations for a given project and location.",
+    "narrative": "This sample demonstrates how to retrieve a list of data discovery configurations, which are used to scan and profile storage resources. Each configuration defines what data to scan and how often to update the data profiles.",
     "products": [
       "dlp"
     ],

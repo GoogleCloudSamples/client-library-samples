@@ -2,11 +2,11 @@
   "version": "1.0.0",
   "sampleId": "bigquerydatapolicy_v2_datapolicyservice_grantees_remove",
   "title": "Remove Grantees",
-  "description": "Remove grantees from a data policy. Removes IAM principals (grantees) from an existing data policy, revoking their fine-grained access to the governed data.",
+  "description": "Removes IAM principals (grantees) from an existing data policy, revoking their fine-grained access to the governed data.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Remove grantees from a data policy. Removes IAM principals (grantees) from an existing data policy, revoking their fine-grained access to the governed data.",
+    "narrative": "Removes IAM principals (grantees) from an existing data policy, revoking their fine-grained access to the governed data.",
     "products": [
       "bigquerydatapolicy"
     ],
@@ -40,7 +40,7 @@
     {
       "name": "bigquerydatapolicy_v2_datapolicyservice_grantees_remove",
       "title": "Remove Grantees",
-      "description": "Remove grantees from a data policy. Removes IAM principals (grantees) from an existing data policy, revoking their fine-grained access to the governed data."
+      "description": "Removes IAM principals (grantees) from an existing data policy, revoking their fine-grained access to the governed data."
     }
   ],
   "instances": [

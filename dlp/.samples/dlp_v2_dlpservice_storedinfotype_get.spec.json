@@ -2,11 +2,11 @@
   "version": "1.0.0",
   "sampleId": "dlp_v2_dlpservice_storedinfotype_get",
   "title": "Get Stored Info Type",
-  "description": "Gets a stored infoType.",
+  "description": "Gets a stored info type. A stored info type is a custom dictionary or regex that can be used for sensitive data inspection.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Gets a stored infoType.",
+    "narrative": "Gets a stored info type. A stored info type is a custom dictionary or regex that can be used for sensitive data inspection.",
     "products": [
       "dlp"
     ],
@@ -23,7 +23,7 @@
     {
       "name": "dlp_v2_dlpservice_storedinfotype_get",
       "title": "Get Stored Info Type",
-      "description": "Gets a stored infoType."
+      "description": "Gets a stored info type. A stored info type is a custom dictionary or regex that can be used for sensitive data inspection."
     },
     {
       "name": "dlp_v2_dlpservice_storedinfotype_get_async"

@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Create a custom class for speech adaptation.",
+    "narrative": "Custom classes allow you to define a list of words or phrases that represent a common concept. These can then be used in PhraseSets to improve speech recognition accuracy for specific terms, such as product names or proper nouns.",
     "products": [
       "speech"
     ],

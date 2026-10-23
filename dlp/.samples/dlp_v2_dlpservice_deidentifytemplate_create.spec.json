@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Creates a de-identification template.",
+    "narrative": "The de-identification template specifies how to transform sensitive data. This sample creates a template that replaces phone numbers with their info type.",
     "products": [
       "dlp"
     ],

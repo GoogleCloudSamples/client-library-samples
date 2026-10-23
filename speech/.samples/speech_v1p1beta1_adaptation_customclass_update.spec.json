@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Updates an existing custom class with new items.",
+    "narrative": "This function demonstrates how to update a specific custom class resource by providing its name and the fields to be updated using a field mask. It's important to specify which fields are being modified to avoid unintended changes to other fields.",
     "products": [
       "speech"
     ],

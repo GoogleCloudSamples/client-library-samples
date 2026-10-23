@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Updates an existing InspectTemplate.",
+    "narrative": "This sample demonstrates how to update an existing Sensitive Data Protection inspection template by changing its display name and description. The `updateMask` is crucial for specifying which fields are to be updated.",
     "products": [
       "dlp"
     ],

@@ -2,11 +2,11 @@
   "version": "1.0.0",
   "sampleId": "documentai_v1beta3_documentprocessor_processors_list",
   "title": "List Processors",
-  "description": "List processors.",
+  "description": "Lists the processors created in a project and location.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "List processors.",
+    "narrative": "Lists the processors created in a project and location.",
     "products": [
       "documentai"
     ],
@@ -23,7 +23,7 @@
     {
       "name": "documentai_v1beta3_documentprocessor_processors_list",
       "title": "List Processors",
-      "description": "List processors."
+      "description": "Lists the processors created in a project and location."
     }
   ],
   "instances": [

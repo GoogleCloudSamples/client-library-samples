@@ -2,11 +2,11 @@
   "version": "1.0.0",
   "sampleId": "dlp_v2_dlpservice_dlpjob_delete",
   "title": "Delete DLP Job",
-  "description": "Deletes a specified DLP job.",
+  "description": "Deletes a long-running DLP job. This method indicates that the client is no longer interested in the DlpJob result. The job will be canceled if possible.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Deletes a specified DLP job.",
+    "narrative": "Deletes a long-running DLP job. This method indicates that the client is no longer interested in the DlpJob result. The job will be canceled if possible.",
     "products": [
       "dlp"
     ],
@@ -23,7 +23,7 @@
     {
       "name": "dlp_v2_dlpservice_dlpjob_delete",
       "title": "Delete DLP Job",
-      "description": "Deletes a specified DLP job."
+      "description": "Deletes a long-running DLP job. This method indicates that the client is no longer interested in the DlpJob result. The job will be canceled if possible."
     },
     {
       "name": "dlp_v2_dlpservice_dlpjob_delete_async"

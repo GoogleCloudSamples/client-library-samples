@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Deletes an autoscaling policy in Google Cloud Dataproc.",
+    "narrative": "This sample demonstrates how to delete an existing autoscaling policy. It's important to note that an autoscaling policy currently in use by one or more clusters cannot be deleted. If the policy does not exist, a `NotFound` error will be handled.",
     "products": [
       "dataproc"
     ],

@@ -2,11 +2,11 @@
   "version": "1.0.0",
   "sampleId": "bigquerydatapolicy_v2_datapolicyservice_grantees_add",
   "title": "Add Grantees",
-  "description": "Add grantees to a data policy. Adds IAM principals (grantees) to an existing data policy. These principals are granted fine-grained access to the data governed by the policy.",
+  "description": "Adds IAM principals (grantees) to an existing data policy. These principals are granted fine-grained access to the data governed by the policy.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Add grantees to a data policy. Adds IAM principals (grantees) to an existing data policy. These principals are granted fine-grained access to the data governed by the policy.",
+    "narrative": "Adds IAM principals (grantees) to an existing data policy. These principals are granted fine-grained access to the data governed by the policy.",
     "products": [
       "bigquerydatapolicy"
     ],
@@ -40,7 +40,7 @@
     {
       "name": "bigquerydatapolicy_v2_datapolicyservice_grantees_add",
       "title": "Add Grantees",
-      "description": "Add grantees to a data policy. Adds IAM principals (grantees) to an existing data policy. These principals are granted fine-grained access to the data governed by the policy."
+      "description": "Adds IAM principals (grantees) to an existing data policy. These principals are granted fine-grained access to the data governed by the policy."
     }
   ],
   "instances": [

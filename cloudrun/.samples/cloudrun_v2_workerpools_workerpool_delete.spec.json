@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Deletes a Cloud Run WorkerPool.",
+    "narrative": "Deleting a WorkerPool is an asynchronous operation. The method returns a long-running operation that can be polled for completion. If the WorkerPool is not found, the operation will throw a NOT_FOUND error.",
     "products": [
       "cloudrun"
     ],

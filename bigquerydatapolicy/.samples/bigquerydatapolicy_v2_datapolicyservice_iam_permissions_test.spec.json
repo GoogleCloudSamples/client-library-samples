@@ -2,11 +2,11 @@
   "version": "1.0.0",
   "sampleId": "bigquerydatapolicy_v2_datapolicyservice_iam_permissions_test",
   "title": "Test Data Policy IAM Permissions",
-  "description": "Test IAM permissions for a data policy. Tests whether the caller has the specified IAM permissions for a data policy resource.",
+  "description": "Tests whether the caller has the specified IAM permissions for a data policy resource.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Test IAM permissions for a data policy. Tests whether the caller has the specified IAM permissions for a data policy resource.",
+    "narrative": "Tests whether the caller has the specified IAM permissions for a data policy resource.",
     "products": [
       "bigquerydatapolicy"
     ],
@@ -35,7 +35,7 @@
     {
       "name": "bigquerydatapolicy_v2_datapolicyservice_iam_permissions_test",
       "title": "Test Data Policy IAM Permissions",
-      "description": "Test IAM permissions for a data policy. Tests whether the caller has the specified IAM permissions for a data policy resource."
+      "description": "Tests whether the caller has the specified IAM permissions for a data policy resource."
     }
   ],
   "instances": [

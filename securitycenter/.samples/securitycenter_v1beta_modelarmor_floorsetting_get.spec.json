@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Retrieves the floor setting for a given project and location.",
+    "narrative": "The floor setting defines baseline security configurations that apply across the specified project or organization. This sample demonstrates how to fetch these settings.",
     "products": [
       "securitycenter"
     ],

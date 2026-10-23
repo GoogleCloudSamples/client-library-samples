@@ -2,11 +2,11 @@
   "version": "1.0.0",
   "sampleId": "dlp_v2_dlpservice_storedinfotypes_list",
   "title": "List Stored Info Types",
-  "description": "Lists stored infoTypes.",
+  "description": "Lists all stored info types in a given project and location.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Lists stored infoTypes.",
+    "narrative": "This sample demonstrates how to list all stored infoTypes for a given project and location. Stored infoTypes are custom detectors that can be reused across multiple DLP operations.",
     "products": [
       "dlp"
     ],
@@ -23,7 +23,7 @@
     {
       "name": "dlp_v2_dlpservice_storedinfotypes_list",
       "title": "List Stored Info Types",
-      "description": "Lists stored infoTypes."
+      "description": "Lists all stored info types in a given project and location."
     },
     {
       "name": "dlp_v2_dlpservice_storedinfotypes_list_async"

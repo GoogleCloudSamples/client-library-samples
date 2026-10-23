@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Updates an existing Cloud Run WorkerPool with a new description.",
+    "narrative": "This sample demonstrates how to update a specific field (description) of a WorkerPool using an update mask. The update mask ensures that only the specified fields are modified, leaving other configurations untouched.",
     "products": [
       "cloudrun"
     ],

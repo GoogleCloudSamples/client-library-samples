@@ -2,11 +2,11 @@
   "version": "1.0.0",
   "sampleId": "documentai_v1beta3_documentprocessor_evaluation_get",
   "title": "Get Evaluation",
-  "description": "Get evaluation.",
+  "description": "Gets details about a specific evaluation.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Get evaluation.",
+    "narrative": "Gets details about a specific evaluation.",
     "products": [
       "documentai"
     ],
@@ -23,7 +23,7 @@
     {
       "name": "documentai_v1beta3_documentprocessor_evaluation_get",
       "title": "Get Evaluation",
-      "description": "Get evaluation."
+      "description": "Gets details about a specific evaluation."
     }
   ],
   "instances": [

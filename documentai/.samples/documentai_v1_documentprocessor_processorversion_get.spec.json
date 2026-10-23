@@ -2,11 +2,11 @@
   "version": "1.0.0",
   "sampleId": "documentai_v1_documentprocessor_processorversion_get",
   "title": "Get Processor Version",
-  "description": "Get processor version.",
+  "description": "Gets details about a specific processor version.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Get processor version.",
+    "narrative": "Gets details about a specific processor version.",
     "products": [
       "documentai"
     ],
@@ -23,7 +23,7 @@
     {
       "name": "documentai_v1_documentprocessor_processorversion_get",
       "title": "Get Processor Version",
-      "description": "Get processor version."
+      "description": "Gets details about a specific processor version."
     }
   ],
   "instances": [

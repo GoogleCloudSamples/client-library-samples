@@ -2,11 +2,11 @@
   "version": "1.0.0",
   "sampleId": "documentai_v1_documentprocessor_processortypes_list",
   "title": "List Processor Types",
-  "description": "List processor types.",
+  "description": "Lists the processor types available for a given project and location.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "List processor types.",
+    "narrative": "Lists the processor types available for a given project and location.",
     "products": [
       "documentai"
     ],
@@ -23,7 +23,7 @@
     {
       "name": "documentai_v1_documentprocessor_processortypes_list",
       "title": "List Processor Types",
-      "description": "List processor types."
+      "description": "Lists the processor types available for a given project and location."
     }
   ],
   "instances": [

@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Creates a new DLP job to inspect storage and save findings to BigQuery.",
+    "narrative": "This sample demonstrates how to create an inspection job that scans a specified Cloud Storage bucket for sensitive data, such as credit card numbers and email addresses.",
     "products": [
       "dlp"
     ],

@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "sampleId": "cloudrun_v2_jobs_job_delete",
-  "title": "If",
+  "title": "Delete Job",
   "description": "Deletes a Cloud Run job.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Deletes a Cloud Run job.",
+    "narrative": "This function demonstrates how to delete a Cloud Run job using the `@google-cloud/run` client library. It handles potential `NOT_FOUND` errors gracefully.",
     "products": [
       "cloudrun"
     ],
@@ -22,7 +22,7 @@
   "regionTags": [
     {
       "name": "cloudrun_v2_jobs_job_delete",
-      "title": "If",
+      "title": "Delete Job",
       "description": "Deletes a Cloud Run job."
     },
     {

@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Deletes a Dataproc cluster.",
+    "narrative": "This method demonstrates how to delete an existing Dataproc cluster. Deleting a cluster stops all running jobs on that cluster and deallocates all associated resources, such as Compute Engine instances and persistent disks.",
     "products": [
       "dataproc"
     ],

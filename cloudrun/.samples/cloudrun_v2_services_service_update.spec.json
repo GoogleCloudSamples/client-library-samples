@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Updates an existing Cloud Run service with a new description and container image.",
+    "narrative": "This sample demonstrates updating specific fields of a Cloud Run service using an update mask to ensure only the desired fields are modified.",
     "products": [
       "cloudrun"
     ],

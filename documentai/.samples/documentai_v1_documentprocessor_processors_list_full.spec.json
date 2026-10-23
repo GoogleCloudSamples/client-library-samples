@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
   "sampleId": "documentai_v1_documentprocessor_processors_list_full",
-  "title": "List Processors Full",
-  "description": "List processors with pagination.",
+  "title": "List Processors with Pagination",
+  "description": "Lists the processors created in a project and location with pagination support.",
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "List processors with pagination.",
+    "narrative": "Lists the processors created in a project and location with pagination support.",
     "products": [
       "documentai"
     ],
@@ -22,8 +22,8 @@
   "regionTags": [
     {
       "name": "documentai_v1_documentprocessor_processors_list_full",
-      "title": "List Processors Full",
-      "description": "List processors with pagination."
+      "title": "List Processors with Pagination",
+      "description": "Lists the processors created in a project and location with pagination support."
     }
   ],
   "instances": [

@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Lists all supported InfoTypes in Google Cloud DLP.",
+    "narrative": "This function demonstrates how to retrieve a comprehensive list of sensitive information types (InfoTypes) that Google Cloud DLP can detect. InfoTypes are predefined categories of sensitive data, such as email addresses, credit card numbers, or social security numbers. Understanding available InfoTypes is crucial for configuring effective data inspection and de-identification policies.",
     "products": [
       "dlp"
     ],

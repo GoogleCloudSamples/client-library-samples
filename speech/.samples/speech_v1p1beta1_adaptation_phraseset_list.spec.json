@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Lists phrase sets in a given location.",
+    "narrative": "Phrase sets are custom lists of words or phrases that can be used to improve the accuracy of speech recognition for specific terminology.",
     "products": [
       "speech"
     ],

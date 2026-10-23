@@ -6,7 +6,7 @@
   "dateCreated": "2026-10-22T00:00:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "Updates a Cloud Run job's container image.",
+    "narrative": "This sample demonstrates how to update an existing Cloud Run job by changing the container image used by its first container. The `updateJob` method is a long-running operation, so the sample waits for the operation to complete before returning the updated job details.",
     "products": [
       "cloudrun"
     ],
