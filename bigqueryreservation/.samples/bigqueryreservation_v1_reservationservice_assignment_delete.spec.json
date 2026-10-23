@@ -1,35 +1,40 @@
 {
   "version": "1.0.0",
   "sampleId": "bigqueryreservation_v1_reservationservice_assignment_delete",
-  "title": "Delete Assignment",
-  "description": "Deletes a reservation assignment. This removes the association between a project, folder, or organization and a reservation. After deletion, jobs from the formerly assigned resource will no longer use the reservation's slots.",
-  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "title": "Delete a reservation assignment",
+  "description": "Deletes a reservation assignment that maps a project, folder, or organization to a BigQuery reservation.",
+  "dateCreated": "2026-10-22T02:44:00.000Z",
   "sampleType": "rpc",
   "objective": {
-    "narrative": "This shows how to delete a reservation assignment. No expansion will happen. For example, if the organization has a reservation assignment and a project under the organization has a reservation assignment, deleting the organization's assignment will not affect the project's assignment.",
+    "narrative": "When a project, folder, or organization no longer needs dedicated BigQuery slot capacity from a reservation, an administrator can delete the reservation assignment so subsequent jobs revert to on-demand pricing or inherit another assignment.",
     "products": [
       "bigqueryreservation"
-    ],
-    "authentication": "adc"
+    ]
   },
   "extended": {
     "api": "bigqueryreservation.googleapis.com",
-    "service_version": "v1",
-    "standard": true,
-    "fixtures": [],
-    "parameters": []
+    "method": "DeleteAssignment",
+    "standard": true
   },
   "regionTags": [
     {
       "name": "bigqueryreservation_v1_reservationservice_assignment_delete",
-      "title": "Delete Assignment",
-      "description": "Deletes a reservation assignment. This removes the association between a project, folder, or organization and a reservation. After deletion, jobs from the formerly assigned resource will no longer use the reservation's slots."
+      "title": "Delete a reservation assignment",
+      "description": "Deletes a reservation assignment that maps a project, folder, or organization to a BigQuery reservation."
     },
     {
-      "name": "bigqueryreservation_reservationservice_assignment_delete"
+      "name": "bigqueryreservation_reservationservice_assignment_delete",
+      "autoDocsPublish": true
     }
   ],
   "instances": [
+    {
+      "name": "JAVA-google-cloud-bigqueryreservation",
+      "categories": {
+        "language": "JAVA"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
     {
       "name": "NODEJS-@google-cloud/bigquery-reservation",
       "categories": {
