@@ -29,20 +29,15 @@ resource "google_project_service" "bigqueryreservation" {
   disable_on_destroy = false
 }
 
-resource "terraform_data" "cleanup_bi_reservation" {
-  input = {
-    project_id = var.project_id
-  }
-
-  provisioner "local-exec" {
-    when    = destroy
-    command = "curl -s -X PATCH -H \"Authorization: Bearer $GOOGLE_OAUTH_ACCESS_TOKEN\" -H \"x-goog-user-project: ${self.input.project_id}\" -H \"Content-Type: application/json\" \"https://bigqueryreservation.googleapis.com/v1/projects/${self.input.project_id}/locations/us-west1/biReservation?updateMask=size\" -d '{\"size\": 0}' >/dev/null 2>&1 || true"
-  }
+resource "google_bigquery_bi_reservation" "default" {
+  project  = var.project_id
+  location = "us-west1"
+  size     = 0
 
   depends_on = [google_project_service.bigqueryreservation]
 }
 
 output "location" {
   description = "The BigQuery Reservation location"
-  value       = "us-west1"
+  value       = google_bigquery_bi_reservation.default.location
 }

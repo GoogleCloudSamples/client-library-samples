@@ -31,43 +31,20 @@ resource "google_project_service" "bigqueryreservation" {
   disable_on_destroy = false
 }
 
-data "google_client_config" "default" {}
-
-data "http" "create_reservation_group" {
-  url    = "https://bigqueryreservation.googleapis.com/v1/projects/${var.project_id}/locations/us-west1/reservationGroups?reservationGroupId=example-group-${random_id.default.hex}"
-  method = "POST"
-
-  request_headers = {
-    Authorization       = "Bearer ${data.google_client_config.default.access_token}"
-    Content-Type        = "application/json"
-    x-goog-user-project = var.project_id
-  }
-
-  request_body = "{}"
+resource "google_bigquery_reservation_group" "default" {
+  project  = var.project_id
+  name     = "example-group-${random_id.default.hex}"
+  location = "us-west1"
 
   depends_on = [google_project_service.bigqueryreservation]
 }
 
-resource "terraform_data" "cleanup_group" {
-  input = {
-    project_id           = var.project_id
-    reservation_group_id = "example-group-${random_id.default.hex}"
-  }
-
-  provisioner "local-exec" {
-    when    = destroy
-    command = "curl -s -X DELETE -H \"Authorization: Bearer $GOOGLE_OAUTH_ACCESS_TOKEN\" -H \"x-goog-user-project: ${self.input.project_id}\" \"https://bigqueryreservation.googleapis.com/v1/projects/${self.input.project_id}/locations/us-west1/reservationGroups/${self.input.reservation_group_id}\" >/dev/null 2>&1 || true"
-  }
-
-  depends_on = [data.http.create_reservation_group]
-}
-
 output "location" {
   description = "The BigQuery Reservation Group location"
-  value       = "us-west1"
+  value       = google_bigquery_reservation_group.default.location
 }
 
 output "reservation_group_id" {
   description = "The ID of the provisioned BigQuery Reservation Group"
-  value       = terraform_data.cleanup_group.input.reservation_group_id
+  value       = google_bigquery_reservation_group.default.name
 }
