@@ -26,6 +26,9 @@
       "description": "Creates a new folder within a hierarchical namespace (HNS) enabled bucket."
     },
     {
+      "name": "storage_v2_storagecontrol_create_folder"
+    },
+    {
       "name": "storage_storagecontrol_folder_create"
     },
     {
@@ -33,6 +36,13 @@
     }
   ],
   "instances": [
+    {
+      "name": "NODEJS-@google-cloud/storage-control",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
     {
       "name": "PYTHON-google-cloud-storage-control",
       "categories": {
