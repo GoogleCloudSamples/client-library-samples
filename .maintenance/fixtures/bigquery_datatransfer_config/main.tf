@@ -45,8 +45,7 @@ resource "google_service_account" "default" {
 resource "google_project_iam_member" "bigquery_admin" {
   project    = var.project_id
   role       = "roles/bigquery.admin"
-  member     = "serviceAccount:bq-transferconfig-${random_id.default.hex}@${var.project_id}.iam.gserviceaccount.com"
-  depends_on = [google_service_account.default]
+  member     = google_service_account.default.member
 }
 
 resource "google_bigquery_data_transfer_config" "default" {
