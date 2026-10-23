@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "sampleId": "securitycenter_v1_modelarmor_templates_list",
+  "title": "List Templates",
+  "description": "Lists ModelArmor templates in a given project and location.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This function demonstrates how to retrieve a list of security templates configured within ModelArmor for a specific Google Cloud project and location. Templates define various security configurations and policies.",
+    "products": [
+      "securitycenter"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "modelarmor.googleapis.com",
+    "service_version": "v1",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "securitycenter_v1_modelarmor_templates_list",
+      "title": "List Templates",
+      "description": "Lists ModelArmor templates in a given project and location."
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-modelarmor",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

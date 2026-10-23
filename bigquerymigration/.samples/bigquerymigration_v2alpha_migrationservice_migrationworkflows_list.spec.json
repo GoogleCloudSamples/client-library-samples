@@ -21,6 +21,9 @@
       "name": "bigquerymigration_v2alpha_migrationservice_migrationworkflows_list",
       "title": "List all migration workflows",
       "description": "Retrieves a paginated list of all migration workflows created for the BigQuery Migration Service in a specified project and location."
+    },
+    {
+      "name": "bigquerymigration_migrationservice_migrationworkflows_list"
     }
   ],
   "instances": [

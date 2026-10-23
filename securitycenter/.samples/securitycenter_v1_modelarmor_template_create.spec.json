@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "sampleId": "securitycenter_v1_modelarmor_template_create",
+  "title": "Create Template",
+  "description": "Creates a new ModelArmor template in a given project and location.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "A ModelArmor template defines a set of content filters (e.g., Responsible AI, Sensitive Data Protection) that can be applied to user prompts or model responses. This sample demonstrates creating a template with basic Responsible AI filters.",
+    "products": [
+      "securitycenter"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "modelarmor.googleapis.com",
+    "service_version": "v1",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "securitycenter_v1_modelarmor_template_create",
+      "title": "Create Template",
+      "description": "Creates a new ModelArmor template in a given project and location."
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-modelarmor",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

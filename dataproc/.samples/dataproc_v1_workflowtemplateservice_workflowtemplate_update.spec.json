@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "sampleId": "dataproc_v1_workflowtemplateservice_workflowtemplate_update",
+  "title": "Update Workflow Template",
+  "description": "Updates an existing Dataproc workflow template.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "The update operation requires fetching the current version of the template, modifying it, and then sending the updated template back. This ensures optimistic locking, preventing concurrent updates from overwriting each other.",
+    "products": [
+      "dataproc"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "dataproc.googleapis.com",
+    "service_version": "v1",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "dataproc_v1_workflowtemplateservice_workflowtemplate_update",
+      "title": "Update Workflow Template",
+      "description": "Updates an existing Dataproc workflow template."
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-dataproc",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "sampleId": "speech_v1_adaptation_customclass_update",
+  "title": "Update Custom Class",
+  "description": "Updates a custom class with new items.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample demonstrates how to update an existing custom class by changing its associated items. It assumes the custom class already exists.",
+    "products": [
+      "speech"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "speech.googleapis.com",
+    "service_version": "v1",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "speech_v1_adaptation_customclass_update",
+      "title": "Update Custom Class",
+      "description": "Updates a custom class with new items."
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-speech",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

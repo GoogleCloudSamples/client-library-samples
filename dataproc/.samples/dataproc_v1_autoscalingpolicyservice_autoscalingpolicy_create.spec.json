@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "sampleId": "dataproc_v1_autoscalingpolicyservice_autoscalingpolicy_create",
+  "title": "Create Autoscaling Policy",
+  "description": "Creates a new autoscaling policy for Dataproc.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample demonstrates how to create a basic autoscaling policy that can be attached to a Dataproc cluster to automatically adjust the number of worker nodes based on YARN resource utilization.",
+    "products": [
+      "dataproc"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "dataproc.googleapis.com",
+    "service_version": "v1",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "dataproc_v1_autoscalingpolicyservice_autoscalingpolicy_create",
+      "title": "Create Autoscaling Policy",
+      "description": "Creates a new autoscaling policy for Dataproc."
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-dataproc",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

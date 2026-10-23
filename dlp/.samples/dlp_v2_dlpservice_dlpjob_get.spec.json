@@ -1,0 +1,48 @@
+{
+  "version": "1.0.0",
+  "sampleId": "dlp_v2_dlpservice_dlpjob_get",
+  "title": "Get DLP Job",
+  "description": "Retrieves the latest state of a long-running DLP job.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This method retrieves the current status and details of a specified DLP job. DLP jobs can be inspection jobs (scanning storage for sensitive data) or risk analysis jobs (calculating re-identification risk metrics).",
+    "products": [
+      "dlp"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "dlp.googleapis.com",
+    "service_version": "v2",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "dlp_v2_dlpservice_dlpjob_get",
+      "title": "Get DLP Job",
+      "description": "Retrieves the latest state of a long-running DLP job."
+    },
+    {
+      "name": "dlp_v2_dlpservice_dlpjob_get_async"
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/dlp",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-dlp",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

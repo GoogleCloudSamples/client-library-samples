@@ -1,0 +1,48 @@
+{
+  "version": "1.0.0",
+  "sampleId": "dlp_v2_dlpservice_deidentifytemplate_create",
+  "title": "Create Deidentify Template",
+  "description": "Creates a de-identification template.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "The de-identification template specifies how to transform sensitive data. This sample creates a template that replaces phone numbers with their info type.",
+    "products": [
+      "dlp"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "dlp.googleapis.com",
+    "service_version": "v2",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "dlp_v2_dlpservice_deidentifytemplate_create",
+      "title": "Create Deidentify Template",
+      "description": "Creates a de-identification template."
+    },
+    {
+      "name": "dlp_v2_dlpservice_deidentifytemplate_create_async"
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/dlp",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-dlp",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

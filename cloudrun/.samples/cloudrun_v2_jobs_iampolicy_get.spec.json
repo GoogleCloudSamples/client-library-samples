@@ -1,0 +1,41 @@
+{
+  "version": "1.0.0",
+  "sampleId": "cloudrun_v2_jobs_iampolicy_get",
+  "title": "Get Job IAM Policy",
+  "description": "Retrieves the IAM policy for a Cloud Run job.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample demonstrates how to get the IAM policy for a specific Cloud Run job. The IAM policy defines who has what permissions on the job.",
+    "products": [
+      "cloudrun"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "run.googleapis.com",
+    "service_version": "v2",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "cloudrun_v2_jobs_iampolicy_get",
+      "title": "Get Job IAM Policy",
+      "description": "Retrieves the IAM policy for a Cloud Run job."
+    },
+    {
+      "name": "cloudrun_v2_jobs_iampolicy_get_async"
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/run",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

@@ -1,53 +1,68 @@
 {
-    "version": "1.0.0",
-    "sampleId": "bigqueryconnection_v1_connectionservice_connection_get",
-    "title": "Get connection metadata",
-    "description": "Retrieves connection metadata about a specified BigQuery connection. Credential secrets are not returned.",
-    "dateCreated": "2025-11-21T23:41:12.928Z",
-    "sampleType": "rpc",
-    "objective": {
-        "narrative": "Developers often need to inspect the configuration of a connection before using it to query an external data source. This sample provides the code to fetch a connection's properties, which is useful for debugging or for programmatic verification of connection settings.",
-        "products": [
-            "bigqueryconnection"
-        ]
-    },
-    "extended": {
-        "api": "bigqueryconnection.googleapis.com",
-        "method": "GetConnection",
-        "standard": true
-    },
-    "regionTags": [
-        {
-            "name": "bigqueryconnection_v1_connectionservice_connection_get",
-            "title": "Get connection metadata",
-            "description": "Retrieves connection metadata about a specified BigQuery connection. Credential secrets are not returned."
-        },
-        {
-            "name": "bigqueryconnection_connectionservice_connection_get",
-            "autoDocsPublish": true
-        }
-    ],
-    "instances": [
-        {
-            "name": "NODEJS-@google-cloud/bigquery-connection",
-            "categories": {
-                "language": "NODEJS"
-            },
-            "initialCommitAuthorType": "ai_assisted_human_reviewed"
-        },
-        {
-            "name": "PYTHON-google-cloud-bigquery-connection",
-            "categories": {
-                "language": "PYTHON"
-            },
-            "initialCommitAuthorType": "ai_assisted_human_reviewed"
-        },
-        {
-            "name": "JAVA-google-cloud-bigqueryconnection",
-            "categories": {
-                "language": "JAVA"
-            },
-            "initialCommitAuthorType": "ai_assisted_human_reviewed"
-        }
+  "version": "1.0.0",
+  "sampleId": "bigqueryconnection_v1_connectionservice_connection_get",
+  "title": "Get connection metadata",
+  "description": "Retrieves connection metadata about a specified BigQuery connection. Credential secrets are not returned.",
+  "dateCreated": "2025-11-21T23:41:12.928Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Developers often need to inspect the configuration of a connection before using it to query an external data source. This sample provides the code to fetch a connection's properties, which is useful for debugging or for programmatic verification of connection settings.",
+    "products": [
+      "bigqueryconnection"
     ]
+  },
+  "extended": {
+    "api": "bigqueryconnection.googleapis.com",
+    "method": "GetConnection",
+    "standard": true,
+    "service_version": "v1",
+    "fixtures": [
+      {
+        "ref": "bigquery_connection",
+        "output_mapping": {
+          "connection_id": "connectionId"
+        }
+      }
+    ],
+    "parameters": [
+      {
+        "name": "connectionId",
+        "source": "bigquery_connection.connection_id"
+      }
+    ]
+  },
+  "regionTags": [
+    {
+      "name": "bigqueryconnection_v1_connectionservice_connection_get",
+      "title": "Get connection metadata",
+      "description": "Retrieves connection metadata about a specified BigQuery connection. Credential secrets are not returned."
+    },
+    {
+      "name": "bigqueryconnection_connectionservice_connection_get",
+      "autoDocsPublish": true
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/bigquery-connection",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-bigquery-connection",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "JAVA-google-cloud-bigqueryconnection",
+      "categories": {
+        "language": "JAVA"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
 }

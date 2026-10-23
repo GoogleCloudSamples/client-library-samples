@@ -1,0 +1,48 @@
+{
+  "version": "1.0.0",
+  "sampleId": "dlp_v2_dlpservice_jobtrigger_create",
+  "title": "Create DLP Job Trigger",
+  "description": "Creates a new job trigger to scan a Cloud Storage bucket for sensitive data.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample demonstrates how to create a scheduled job trigger that automatically inspects a specified Cloud Storage bucket for sensitive information (e.g., email addresses and phone numbers) on a daily basis.",
+    "products": [
+      "dlp"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "dlp.googleapis.com",
+    "service_version": "v2",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "dlp_v2_dlpservice_jobtrigger_create",
+      "title": "Create DLP Job Trigger",
+      "description": "Creates a new job trigger to scan a Cloud Storage bucket for sensitive data."
+    },
+    {
+      "name": "dlp_v2_dlpservice_jobtrigger_create_async"
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/dlp",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-dlp",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

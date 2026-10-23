@@ -1,0 +1,48 @@
+{
+  "version": "1.0.0",
+  "sampleId": "dlp_v2_dlpservice_deidentifytemplate_delete",
+  "title": "Delete Deidentify Template",
+  "description": "Deletes a Sensitive Data Protection de-identify template. See https://cloud.google.com/sensitive-data-protection/docs/creating-templates-deid to learn more.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Deletes a Sensitive Data Protection de-identify template. See https://cloud.google.com/sensitive-data-protection/docs/creating-templates-deid to learn more.",
+    "products": [
+      "dlp"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "dlp.googleapis.com",
+    "service_version": "v2",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "dlp_v2_dlpservice_deidentifytemplate_delete",
+      "title": "Delete Deidentify Template",
+      "description": "Deletes a Sensitive Data Protection de-identify template. See https://cloud.google.com/sensitive-data-protection/docs/creating-templates-deid to learn more."
+    },
+    {
+      "name": "dlp_v2_dlpservice_deidentifytemplate_delete_async"
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/dlp",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-dlp",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

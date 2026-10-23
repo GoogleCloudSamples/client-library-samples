@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "sampleId": "dataproc_v1_clustercontroller_cluster_update",
+  "title": "Update Dataproc Cluster",
+  "description": "Updates the number of worker instances in a Dataproc cluster.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample demonstrates how to resize a Dataproc cluster by changing the number of worker nodes. The `update_cluster` method is used for this purpose, requiring a field mask to specify which part of the cluster configuration is being updated.",
+    "products": [
+      "dataproc"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "dataproc.googleapis.com",
+    "service_version": "v1",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "dataproc_v1_clustercontroller_cluster_update",
+      "title": "Update Dataproc Cluster",
+      "description": "Updates the number of worker instances in a Dataproc cluster."
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-dataproc",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

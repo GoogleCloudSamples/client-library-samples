@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "sampleId": "dataproc_v1_sessioncontroller_session_get",
+  "title": "Get Dataproc Session",
+  "description": "Retrieves the details of a Dataproc session.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Dataproc sessions provide an interactive environment for data processing workloads. Retrieving session details is crucial for monitoring, managing, and debugging these interactive environments.",
+    "products": [
+      "dataproc"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "dataproc.googleapis.com",
+    "service_version": "v1",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "dataproc_v1_sessioncontroller_session_get",
+      "title": "Get Dataproc Session",
+      "description": "Retrieves the details of a Dataproc session."
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-dataproc",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

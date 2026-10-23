@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "sampleId": "speech_v1p1beta1_adaptation_phraseset_list",
+  "title": "List Phrase Sets",
+  "description": "Lists phrase sets in a given location.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Phrase sets are custom lists of words or phrases that can be used to improve the accuracy of speech recognition for specific terminology.",
+    "products": [
+      "speech"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "speech.googleapis.com",
+    "service_version": "v1p1beta1",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "speech_v1p1beta1_adaptation_phraseset_list",
+      "title": "List Phrase Sets",
+      "description": "Lists phrase sets in a given location."
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-speech",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

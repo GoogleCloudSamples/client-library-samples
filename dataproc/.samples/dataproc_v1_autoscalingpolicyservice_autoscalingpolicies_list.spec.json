@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "sampleId": "dataproc_v1_autoscalingpolicyservice_autoscalingpolicies_list",
+  "title": "List Autoscaling Policies",
+  "description": "Lists autoscaling policies in a Google Cloud Dataproc project within a specified region.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample demonstrates how to retrieve a paginated list of autoscaling policies configured for Dataproc clusters in a given project and region. Autoscaling policies define how Dataproc clusters automatically adjust their size based on workload.",
+    "products": [
+      "dataproc"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "dataproc.googleapis.com",
+    "service_version": "v1",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "dataproc_v1_autoscalingpolicyservice_autoscalingpolicies_list",
+      "title": "List Autoscaling Policies",
+      "description": "Lists autoscaling policies in a Google Cloud Dataproc project within a specified region."
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-dataproc",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

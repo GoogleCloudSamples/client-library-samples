@@ -1,0 +1,48 @@
+{
+  "version": "1.0.0",
+  "sampleId": "billingbudgets_v1beta1_budgetservice_budgets_list",
+  "title": "List Budgets",
+  "description": "Lists all budgets associated with a specified billing account.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This function demonstrates how to retrieve a paginated list of budgets for a given Google Cloud billing account. It iterates through all available pages to ensure all budgets are retrieved and printed.",
+    "products": [
+      "billingbudgets"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "billingbudgets.googleapis.com",
+    "service_version": "v1beta1",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "billingbudgets_v1beta1_budgetservice_budgets_list",
+      "title": "List Budgets",
+      "description": "Lists all budgets associated with a specified billing account."
+    },
+    {
+      "name": "billingbudgets_v1beta1_budgetservice_budgets_list_async"
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/billing-budgets",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-billing-budgets",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

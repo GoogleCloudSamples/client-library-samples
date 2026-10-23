@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "sampleId": "securitycenter_v1beta_modelarmor_template_create",
+  "title": "Create Template",
+  "description": "Creates a new Model Armor template in a given project and location.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample demonstrates how to create a basic template with a Responsible AI (RAI) filter for 'SEXUALLY_EXPLICIT' content.",
+    "products": [
+      "securitycenter"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "modelarmor.googleapis.com",
+    "service_version": "v1beta",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "securitycenter_v1beta_modelarmor_template_create",
+      "title": "Create Template",
+      "description": "Creates a new Model Armor template in a given project and location."
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-modelarmor",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

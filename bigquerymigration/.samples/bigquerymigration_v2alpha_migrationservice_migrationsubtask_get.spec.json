@@ -21,6 +21,9 @@
       "name": "bigquerymigration_v2alpha_migrationservice_migrationsubtask_get",
       "title": "Get a migration subtask",
       "description": "Get the details of a specific migration subtask from the BigQuery Migration API."
+    },
+    {
+      "name": "bigquerymigration_migrationservice_migrationsubtask_get"
     }
   ],
   "instances": [

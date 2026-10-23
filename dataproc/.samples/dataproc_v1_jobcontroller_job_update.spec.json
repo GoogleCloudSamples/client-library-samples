@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "sampleId": "dataproc_v1_jobcontroller_job_update",
+  "title": "Update Dataproc Job",
+  "description": "Updates the labels of an existing Dataproc job.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This function demonstrates how to update specific fields of a Dataproc job using a field mask. Only the fields specified in the field mask will be updated, allowing for partial updates without affecting other job properties.",
+    "products": [
+      "dataproc"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "dataproc.googleapis.com",
+    "service_version": "v1",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "dataproc_v1_jobcontroller_job_update",
+      "title": "Update Dataproc Job",
+      "description": "Updates the labels of an existing Dataproc job."
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-dataproc",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

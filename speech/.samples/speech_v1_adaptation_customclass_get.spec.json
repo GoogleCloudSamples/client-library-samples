@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "sampleId": "speech_v1_adaptation_customclass_get",
+  "title": "Get Custom Class",
+  "description": "Retrieves a specific custom class resource.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "The `get_custom_class` method allows you to fetch the details of a custom class that has been previously created. Custom classes are used to improve the accuracy of speech recognition for specific words or phrases by providing a list of items that are likely to appear in your audio.",
+    "products": [
+      "speech"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "speech.googleapis.com",
+    "service_version": "v1",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "speech_v1_adaptation_customclass_get",
+      "title": "Get Custom Class",
+      "description": "Retrieves a specific custom class resource."
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-speech",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "version": "1.0.0",
+  "sampleId": "cloudrun_v2_services_service_get",
+  "title": "Get Service",
+  "description": "This sample demonstrates how to retrieve details of a specific Cloud Run service using the `getService` method. It shows how to construct the service name and handle potential 'NOT_FOUND' errors.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample demonstrates how to retrieve details of a specific Cloud Run service using the `getService` method. It shows how to construct the service name and handle potential 'NOT_FOUND' errors.",
+    "products": [
+      "cloudrun"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "run.googleapis.com",
+    "service_version": "v2",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "cloudrun_v2_services_service_get",
+      "title": "Get Service",
+      "description": "This sample demonstrates how to retrieve details of a specific Cloud Run service using the `getService` method. It shows how to construct the service name and handle potential 'NOT_FOUND' errors."
+    },
+    {
+      "name": "cloudrun_v2_services_service_get_async"
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/run",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

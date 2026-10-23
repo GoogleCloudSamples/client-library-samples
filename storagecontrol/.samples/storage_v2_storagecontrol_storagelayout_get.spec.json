@@ -1,0 +1,51 @@
+{
+  "version": "1.0.0",
+  "sampleId": "storage_v2_storagecontrol_storagelayout_get",
+  "title": "Get Storage Layout",
+  "description": "Retrieves the storage layout configuration for a given bucket.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Retrieves the storage layout configuration for a given bucket.",
+    "products": [
+      "storagecontrol"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "storage.googleapis.com",
+    "service_version": "v2",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "storage_v2_storagecontrol_storagelayout_get",
+      "title": "Get Storage Layout",
+      "description": "Retrieves the storage layout configuration for a given bucket."
+    },
+    {
+      "name": "storage_storagecontrol_storagelayout_get"
+    },
+    {
+      "name": "storage_control_quickstart_sample"
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/storage-control",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-storage-control",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

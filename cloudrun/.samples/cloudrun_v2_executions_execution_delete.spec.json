@@ -1,0 +1,41 @@
+{
+  "version": "1.0.0",
+  "sampleId": "cloudrun_v2_executions_execution_delete",
+  "title": "Delete Execution",
+  "description": "Deletes a Cloud Run execution.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample demonstrates how to delete a specific execution of a Cloud Run job. Deleting an execution will stop any running tasks associated with it and remove the execution resource. This operation is asynchronous and returns a long-running operation (LRO) which must be awaited for completion.",
+    "products": [
+      "cloudrun"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "run.googleapis.com",
+    "service_version": "v2",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "cloudrun_v2_executions_execution_delete",
+      "title": "Delete Execution",
+      "description": "Deletes a Cloud Run execution."
+    },
+    {
+      "name": "cloudrun_v2_executions_execution_delete_async"
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/run",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

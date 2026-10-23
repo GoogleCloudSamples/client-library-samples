@@ -14,13 +14,36 @@
   "extended": {
     "api": "bigquerystorage.googleapis.com",
     "method": "CreateReadSession",
-    "standard": true
+    "standard": true,
+    "service_version": "v1beta2",
+    "fixtures": [
+      {
+        "ref": "bigquery_dataset_table",
+        "output_mapping": {
+          "dataset_id": "datasetId",
+          "table_id": "tableId"
+        }
+      }
+    ],
+    "parameters": [
+      {
+        "name": "datasetId",
+        "source": "bigquery_dataset_table.dataset_id"
+      },
+      {
+        "name": "tableId",
+        "source": "bigquery_dataset_table.table_id"
+      }
+    ]
   },
   "regionTags": [
     {
       "name": "bigquerystorage_v1beta2_bigqueryread_readsession_create",
       "title": "Create a BigQuery read session",
       "description": "Creates a read session for a BigQuery table. The session contains one or more streams that you can use to read data from the table in parallel."
+    },
+    {
+      "name": "bigquerystorage_bigqueryread_readsession_create"
     }
   ],
   "instances": [

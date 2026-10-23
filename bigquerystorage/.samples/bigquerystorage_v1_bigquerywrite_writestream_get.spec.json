@@ -14,7 +14,27 @@
   "extended": {
     "api": "bigquerystorage.googleapis.com",
     "method": "GetWriteStream",
-    "standard": true
+    "standard": true,
+    "service_version": "v1",
+    "fixtures": [
+      {
+        "ref": "bigquery_dataset_table",
+        "output_mapping": {
+          "dataset_id": "datasetId",
+          "table_id": "tableId"
+        }
+      }
+    ],
+    "parameters": [
+      {
+        "name": "datasetId",
+        "source": "bigquery_dataset_table.dataset_id"
+      },
+      {
+        "name": "tableId",
+        "source": "bigquery_dataset_table.table_id"
+      }
+    ]
   },
   "regionTags": [
     {

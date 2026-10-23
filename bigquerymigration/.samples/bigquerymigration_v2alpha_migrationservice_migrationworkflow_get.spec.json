@@ -21,6 +21,9 @@
       "name": "bigquerymigration_v2alpha_migrationservice_migrationworkflow_get",
       "title": "Get a migration workflow",
       "description": "Gets the details of a specific migration workflow from the BigQuery Migration API. This is useful for checking the status and configuration of the workflow."
+    },
+    {
+      "name": "bigquerymigration_migrationservice_migrationworkflow_get"
     }
   ],
   "instances": [

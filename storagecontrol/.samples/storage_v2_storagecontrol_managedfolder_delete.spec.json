@@ -1,0 +1,51 @@
+{
+  "version": "1.0.0",
+  "sampleId": "storage_v2_storagecontrol_managedfolder_delete",
+  "title": "Delete Managed Folder",
+  "description": "Deletes an empty managed folder in a Cloud Storage bucket.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Deletes an empty managed folder in a Cloud Storage bucket.",
+    "products": [
+      "storagecontrol"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "storage.googleapis.com",
+    "service_version": "v2",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "storage_v2_storagecontrol_managedfolder_delete",
+      "title": "Delete Managed Folder",
+      "description": "Deletes an empty managed folder in a Cloud Storage bucket."
+    },
+    {
+      "name": "storage_storagecontrol_managedfolder_delete"
+    },
+    {
+      "name": "storage_control_managed_folder_delete"
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/storage-control",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
+      "name": "PYTHON-google-cloud-storage-control",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

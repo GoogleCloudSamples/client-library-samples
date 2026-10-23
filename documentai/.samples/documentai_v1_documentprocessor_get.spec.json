@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "sampleId": "documentai_v1_documentprocessor_get",
+  "title": "Get Processor",
+  "description": "Gets details about a specific processor.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "Gets details about a specific processor.",
+    "products": [
+      "documentai"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "documentai.googleapis.com",
+    "service_version": "v1",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "documentai_v1_documentprocessor_get",
+      "title": "Get Processor",
+      "description": "Gets details about a specific processor."
+    }
+  ],
+  "instances": [
+    {
+      "name": "PYTHON-google-cloud-documentai",
+      "categories": {
+        "language": "PYTHON"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}

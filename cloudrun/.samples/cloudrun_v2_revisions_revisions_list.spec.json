@@ -1,0 +1,41 @@
+{
+  "version": "1.0.0",
+  "sampleId": "cloudrun_v2_revisions_revisions_list",
+  "title": "List Revisions",
+  "description": "Lists all revisions in a given Google Cloud project and location.",
+  "dateCreated": "2026-10-22T00:00:00.000Z",
+  "sampleType": "rpc",
+  "objective": {
+    "narrative": "This sample demonstrates how to list all revisions across all services in a specified location. It uses asynchronous iteration to handle pagination automatically.",
+    "products": [
+      "cloudrun"
+    ],
+    "authentication": "adc"
+  },
+  "extended": {
+    "api": "run.googleapis.com",
+    "service_version": "v2",
+    "standard": true,
+    "fixtures": [],
+    "parameters": []
+  },
+  "regionTags": [
+    {
+      "name": "cloudrun_v2_revisions_revisions_list",
+      "title": "List Revisions",
+      "description": "Lists all revisions in a given Google Cloud project and location."
+    },
+    {
+      "name": "cloudrun_v2_revisions_revisions_list_async"
+    }
+  ],
+  "instances": [
+    {
+      "name": "NODEJS-@google-cloud/run",
+      "categories": {
+        "language": "NODEJS"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    }
+  ]
+}
