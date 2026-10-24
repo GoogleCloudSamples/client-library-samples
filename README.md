@@ -14,6 +14,15 @@ For example:
 
 Each directory typically contains standalone scripts or snippets demonstrating specific API methods (e.g., creating a connection, listing policies).
 
+## Language Landing Pages
+
+Browse prerequisites, search shortcuts, and the curated list of samples for your language ecosystem:
+
+- [Java (`docs/JAVA.md`)](docs/JAVA.md)
+- [JavaScript (`docs/JAVASCRIPT.md`)](docs/JAVASCRIPT.md)
+- [Kotlin (`docs/KOTLIN.md`)](docs/KOTLIN.md)
+- [Python (`docs/PYTHON.md`)](docs/PYTHON.md)
+
 ## How to invoke this Code
 
 Each language directory typically contains its own dependency files (e.g., `requirements.txt` for Python, `package.json` for Node.js).
