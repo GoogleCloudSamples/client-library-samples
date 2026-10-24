@@ -16,24 +16,41 @@
 
 variable "project_id" {
   description = "Google Cloud Project ID"
+  type        = string
 }
 
 resource "random_id" "default" {
   byte_length = 2
 }
 
+resource "google_project_service" "bigquery" {
+  project            = var.project_id
+  service            = "bigquery.googleapis.com"
+  disable_on_destroy = false
+}
+
+resource "google_project_service" "bigquerystorage" {
+  project            = var.project_id
+  service            = "bigquerystorage.googleapis.com"
+  disable_on_destroy = false
+}
+
 resource "google_bigquery_dataset" "default" {
   project     = var.project_id
-  dataset_id  = "my_dataset_${random_id.default.hex}"
+  dataset_id  = "example_dataset_${random_id.default.hex}"
   description = "CI Dataset Fixture"
   location    = "us-central1"
 
+  depends_on = [
+    google_project_service.bigquery,
+    google_project_service.bigquerystorage,
+  ]
 }
 
 resource "google_bigquery_table" "default" {
   project             = var.project_id
   dataset_id          = google_bigquery_dataset.default.dataset_id
-  table_id            = "my_table_${random_id.default.hex}"
+  table_id            = "example_table_${random_id.default.hex}"
   deletion_protection = false
 
   schema = <<EOF
@@ -52,7 +69,6 @@ resource "google_bigquery_table" "default" {
   }
 ]
 EOF
-
 }
 
 output "dataset_id" {
@@ -61,5 +77,4 @@ output "dataset_id" {
 
 output "table_id" {
   value = google_bigquery_table.default.table_id
-
 }
