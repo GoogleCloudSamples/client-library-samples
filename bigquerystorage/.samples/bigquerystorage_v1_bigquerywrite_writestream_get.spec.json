@@ -49,6 +49,13 @@
   ],
   "instances": [
     {
+      "name": "JAVA-google-cloud-bigquerystorage",
+      "categories": {
+        "language": "JAVA"
+      },
+      "initialCommitAuthorType": "ai_assisted_human_reviewed"
+    },
+    {
       "name": "NODEJS-@google-cloud/bigquery-storage",
       "categories": {
         "language": "NODEJS"
