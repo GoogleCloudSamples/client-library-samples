@@ -1,0 +1,61 @@
+// Copyright 2026 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+// [START translate_v3_translationservice_detect_language]
+'use strict';
+
+const {TranslationServiceClient} = require('@google-cloud/translate');
+const {status} = require('@grpc/grpc-js');
+
+const client = new TranslationServiceClient();
+
+/**
+ * Use the detectLanguage method
+ *
+ * @param {string} projectId - The Google Cloud project ID.
+ * @param {string} locationId - The Google Cloud location ID (for example, 'global' or a supported region).
+ * @param {string} content - The text content to analyze for language detection.
+ */
+async function detectLanguage(projectId, locationId, content) {
+  try {
+    const parent = `projects/${projectId}/locations/${locationId}`;
+    const request = {
+      parent,
+      content,
+      mimeType: 'text/plain',
+    };
+
+    const [response] = await client.detectLanguage(request);
+
+    for (const language of response.languages) {
+      console.log(`Detected language code: ${language.languageCode}`);
+      console.log(`Confidence: ${language.confidence}`);
+    }
+  } catch (err) {
+    if (err.code === status.INVALID_ARGUMENT) {
+      console.error('Invalid argument:', err.message);
+    } else if (err.code === status.NOT_FOUND) {
+      console.error('Resource not found:', err.message);
+    } else if (err.code === status.PERMISSION_DENIED) {
+      console.error('Permission denied:', err.message);
+    } else if (err.code) {
+      console.error(`Google API error (${err.code}):`, err.message);
+    } else {
+      console.error('An unexpected error occurred:', err);
+    }
+  }
+}
+
+module.exports = { detectLanguage };
+// [END translate_v3_translationservice_detect_language]
