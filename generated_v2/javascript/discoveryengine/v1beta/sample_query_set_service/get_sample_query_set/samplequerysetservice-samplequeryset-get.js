@@ -1,0 +1,62 @@
+// Copyright 2026 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+// [START discoveryengine_v1beta_samplequerysetservice_samplequeryset_get]
+'use strict';
+
+const {SampleQuerySetServiceClient} =
+  require('@google-cloud/discoveryengine').v1beta;
+const {status} = require('@grpc/grpc-js');
+
+const client = new SampleQuerySetServiceClient();
+
+/**
+ * Retrieves a sample query set.
+ *
+ * @param {string} projectId - The Google Cloud project ID (for example, 'example-project-id')
+ * @param {string} locationId - The Google Cloud region where the service is located (for example, 'global')
+ * @param {string} sampleQuerySetId - ID of the SampleQuerySet (for example, 'example-samplequeryset-id')
+ */
+async function getSampleQuerySet(projectId, locationId, sampleQuerySetId) {
+  try {
+    const name = client.sampleQuerySetPath(
+      projectId,
+      locationId,
+      sampleQuerySetId
+    );
+
+    const request = {
+      name,
+    };
+
+    const [response] = await client.getSampleQuerySet(request);
+
+    console.log(`Sample query set name: ${response.name}`);
+    console.log(`Display name: ${response.displayName}`);
+    return response;
+  } catch (err) {
+    if (err.code === status.NOT_FOUND) {
+      console.error(`Sample query set not found: ${err.message}`);
+    } else if (err.code === status.PERMISSION_DENIED) {
+      console.error(`Permission denied: ${err.message}`);
+    } else if (err.code === status.INVALID_ARGUMENT) {
+      console.error(`Invalid argument: ${err.message}`);
+    } else {
+      console.error(`Service error: ${err.message}`);
+    }
+  }
+}
+
+module.exports = { getSampleQuerySet };
+// [END discoveryengine_v1beta_samplequerysetservice_samplequeryset_get]

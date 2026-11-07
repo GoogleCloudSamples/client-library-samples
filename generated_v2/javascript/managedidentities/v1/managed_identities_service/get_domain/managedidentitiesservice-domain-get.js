@@ -1,0 +1,53 @@
+// Copyright 2026 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+// [START managedidentities_v1_managedidentitiesservice_domain_get]
+'use strict';
+
+const {ManagedIdentitiesServiceClient} = require('@google-cloud/managed-identities');
+const {status} = require('@grpc/grpc-js');
+
+const client = new ManagedIdentitiesServiceClient();
+
+/**
+ * Gets domain details from Google Cloud Managed Identities.
+ *
+ * @param {string} projectId - The Google Cloud project ID (for example, 'example-project-id')
+ */
+async function getDomain(projectId) {
+  try {
+    const domainName = 'example.com';
+    const name = `projects/${projectId}/locations/global/domains/${domainName}`;
+
+    const request = {
+      name,
+    };
+
+    const [domain] = await client.getDomain(request);
+    console.log(`Domain name: ${domain.name}`);
+    console.log(`Domain state: ${domain.state}`);
+    console.log(`FQDN: ${domain.fqdn}`);
+  } catch (err) {
+    if (err.code === status.NOT_FOUND) {
+      console.error(`Domain not found: ${err.message}`);
+    } else if (err.code === status.PERMISSION_DENIED) {
+      console.error(`Permission denied: ${err.message}`);
+    } else {
+      console.error(`Failed to retrieve domain: ${err.message}`);
+    }
+  }
+}
+
+module.exports = { getDomain };
+// [END managedidentities_v1_managedidentitiesservice_domain_get]

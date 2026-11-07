@@ -1,0 +1,60 @@
+# Copyright 2026 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# [START oracledatabase_v1_oracledatabase_goldengateconnectionassignment_delete]
+from google.api_core import exceptions
+from google.cloud import oracledatabase_v1
+
+
+def delete_goldengate_connection_assignment(
+    project_id: str,
+    location_id: str,
+    goldengate_connection_assignment_id: str,
+) -> None:
+    """Deletes a GoldenGate connection assignment.
+
+    Args:
+        project_id: The Google Cloud project ID (for example,
+            'example-project-id').
+        location_id: The Google Cloud region where the service is located (for
+            example, 'us-central1').
+        goldengate_connection_assignment_id: The identifier of the GoldenGate
+            connection assignment to delete (for example,
+            'example-connection-assignment-id').
+    """
+    client = oracledatabase_v1.OracleDatabaseClient()
+
+    name = (
+        f"projects/{project_id}/locations/{location_id}/"
+        f"goldengateConnectionAssignments/{goldengate_connection_assignment_id}"
+    )
+
+    request = oracledatabase_v1.DeleteGoldengateConnectionAssignmentRequest(
+        name=name,
+    )
+
+    try:
+        operation = client.delete_goldengate_connection_assignment(
+            request=request
+        )
+        operation.result()
+        print(f"Deleted GoldenGate connection assignment: {name}")
+    except exceptions.NotFound:
+        # Idempotently confirm deletion when the resource is already absent
+        print(f"Deleted GoldenGate connection assignment: {name}")
+    except exceptions.GoogleAPICallError as e:
+        print(f"Google Cloud API call did not complete: {e}")
+
+
+# [END oracledatabase_v1_oracledatabase_goldengateconnectionassignment_delete]
