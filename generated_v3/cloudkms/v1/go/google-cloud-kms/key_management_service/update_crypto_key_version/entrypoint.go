@@ -1,0 +1,58 @@
+// Copyright 2026 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+package main
+
+import (
+	"context"
+	"log"
+	"os"
+	"strings"
+)
+
+func main() {
+	ctx := context.Background()
+	w := os.Stdout
+
+	// Support environment variables with optional CLI argument overrides
+	projectID := os.Getenv("PROJECT_ID")
+	if projectID == "" && len(os.Args) > 1 {
+		projectID = os.Args[1]
+	}
+	projectID = strings.Trim(projectID, "\"'")
+	locationID := os.Getenv("LOCATION_ID")
+	if locationID == "" && len(os.Args) > 2 {
+		locationID = os.Args[2]
+	}
+	locationID = strings.Trim(locationID, "\"'")
+	keyRingID := os.Getenv("KEY_RING_ID")
+	if keyRingID == "" && len(os.Args) > 3 {
+		keyRingID = os.Args[3]
+	}
+	keyRingID = strings.Trim(keyRingID, "\"'")
+	cryptoKeyID := os.Getenv("CRYPTO_KEY_ID")
+	if cryptoKeyID == "" && len(os.Args) > 4 {
+		cryptoKeyID = os.Args[4]
+	}
+	cryptoKeyID = strings.Trim(cryptoKeyID, "\"'")
+	cryptoKeyVersionID := os.Getenv("CRYPTO_KEY_VERSION_ID")
+	if cryptoKeyVersionID == "" && len(os.Args) > 5 {
+		cryptoKeyVersionID = os.Args[5]
+	}
+	cryptoKeyVersionID = strings.Trim(cryptoKeyVersionID, "\"'")
+
+	if err := updateCryptoKeyVersion(ctx, w, projectID, locationID, keyRingID, cryptoKeyID, cryptoKeyVersionID); err != nil {
+		log.Fatalf("updateCryptoKeyVersion failed: %v", err)
+	}
+}
