@@ -1,0 +1,63 @@
+// Copyright 2026 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+// [START networkservices_v1_networkservices_httproute_update]
+'use strict';
+
+const {NetworkServicesClient} = require('@google-cloud/networkservices');
+const {status} = require('@grpc/grpc-js');
+
+const client = new NetworkServicesClient();
+
+/**
+ * Updates an existing HTTP route.
+ *
+ * @param {string} projectId - The ID of the Google Cloud project.
+ * @param {string} locationId - The location of the HTTP route resource, such as 'global'.
+ * @param {string} httpRouteId - The identifier of the HTTP route resource to update.
+ */
+async function updateHttpRoute(projectId, locationId, httpRouteId) {
+  try {
+    const httpRoute = {
+      name: `projects/${projectId}/locations/${locationId}/httpRoutes/${httpRouteId}`,
+      description: 'Updated route description for traffic management',
+      hostnames: ['example.com'],
+    };
+    const updateMask = {
+      paths: ['description'],
+    };
+
+    const [operation] = await client.updateHttpRoute({
+      httpRoute,
+      updateMask,
+    });
+
+    const [response] = await operation.promise();
+    console.log(`Updated HTTP route: ${response.name}`);
+  } catch (err) {
+    if (err.code === status.NOT_FOUND) {
+      console.error(`HTTP route not found: ${err.message}`);
+    } else if (err.code === status.INVALID_ARGUMENT) {
+      console.error(`Invalid argument: ${err.message}`);
+    } else if (err.code === status.FAILED_PRECONDITION) {
+      console.error(`Precondition failed: ${err.message}`);
+    } else {
+      console.error(`API error updating HTTP route: ${err.message}`);
+    }
+    throw err;
+  }
+}
+
+module.exports = { updateHttpRoute };
+// [END networkservices_v1_networkservices_httproute_update]
