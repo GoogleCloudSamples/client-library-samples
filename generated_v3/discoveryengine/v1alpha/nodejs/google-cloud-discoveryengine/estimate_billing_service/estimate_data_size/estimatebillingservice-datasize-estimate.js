@@ -1,0 +1,66 @@
+// Copyright 2026 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+// [START discoveryengine_v1alpha_estimatebillingservice_estimate_data_size]
+'use strict';
+
+const {EstimateBillingServiceClient} = require('@google-cloud/discoveryengine').v1alpha;
+const {status} = require('@grpc/grpc-js');
+
+const client = new EstimateBillingServiceClient();
+
+/**
+ * Estimates the data size for Discovery Engine billing.
+ *
+ * @param {string} projectId - The Google Cloud project ID (for example, 'example-project-id')
+ * @param {string} locationId - The Google Cloud region where the service is located (for example, 'global')
+ */
+async function estimateDataSize(projectId, locationId) {
+  try {
+    const location = `projects/${projectId}/locations/${locationId}`;
+    const websiteDataSource = {
+      estimatorUriPatterns: [
+        {
+          providedUriPattern: 'https://example.com/*',
+          exactMatch: false,
+          exclusive: false,
+        },
+      ],
+    };
+
+    const request = {
+      location,
+      websiteDataSource,
+    };
+
+    const [operation] = await client.estimateDataSize(request);
+    const [response] = await operation.promise();
+
+    console.log(`Data size: ${response.dataSizeBytes} bytes`);
+    console.log(`Document count: ${response.documentCount}`);
+  } catch (err) {
+    if (err.code === status.INVALID_ARGUMENT) {
+      console.error(`Invalid argument provided: ${err.message}`);
+    } else if (err.code === status.NOT_FOUND) {
+      console.error(`Resource not found: ${err.message}`);
+    } else if (err.code) {
+      console.error(`API error (${err.code}): ${err.message}`);
+    } else {
+      console.error('Unexpected error:', err);
+    }
+  }
+}
+
+module.exports = { estimateDataSize };
+// [END discoveryengine_v1alpha_estimatebillingservice_estimate_data_size]
