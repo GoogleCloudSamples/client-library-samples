@@ -1,0 +1,82 @@
+// Copyright 2026 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+package main
+
+// [START documentai_v1beta3_documentservice_dataset_update]
+
+import (
+	"context"
+	"fmt"
+	"io"
+	"strings"
+
+	documentai "cloud.google.com/go/documentai/apiv1beta3"
+	"cloud.google.com/go/documentai/apiv1beta3/documentaipb"
+	"google.golang.org/api/option"
+	"google.golang.org/protobuf/types/known/fieldmaskpb"
+)
+
+// updateDataset updates configuration for an existing Document AI dataset.
+func updateDataset(ctx context.Context, w io.Writer, projectID string, locationID string, processorID string) error {
+	var opts []option.ClientOption
+	if locationID != "" && locationID != "global" {
+		opts = append(opts, option.WithEndpoint(fmt.Sprintf("%s-documentai.googleapis.com:443", locationID)))
+	}
+
+	client, err := documentai.NewDocumentClient(ctx, opts...)
+	if err != nil {
+		return fmt.Errorf("NewDocumentClient: %w", err)
+	}
+	defer client.Close()
+
+	dataset := &documentaipb.Dataset{
+		Name: fmt.Sprintf("projects/%s/locations/%s/processors/%s/dataset", projectID, locationID, processorID),
+		StorageSource: &documentaipb.Dataset_UnmanagedDatasetConfig_{
+			UnmanagedDatasetConfig: &documentaipb.Dataset_UnmanagedDatasetConfig{},
+		},
+	}
+	updateMask := &fieldmaskpb.FieldMask{
+		Paths: []string{"unmanaged_dataset_config"},
+	}
+
+	req := &documentaipb.UpdateDatasetRequest{
+		Dataset:    dataset,
+		UpdateMask: updateMask,
+	}
+
+	op, err := client.UpdateDataset(ctx, req)
+	if err != nil {
+		return fmt.Errorf("UpdateDataset: %w", err)
+	}
+
+	resp, err := op.Wait(ctx)
+	if err != nil {
+		// Document AI completes UpdateDataset operations without returning a response payload in the LRO,
+		// which causes the client library to report an unsupported result type upon completion.
+		if !strings.Contains(err.Error(), "unsupported result type") {
+			return fmt.Errorf("Wait: %w", err)
+		}
+	}
+
+	datasetName := dataset.GetName()
+	if resp != nil && resp.GetName() != "" {
+		datasetName = resp.GetName()
+	}
+
+	fmt.Fprintf(w, "Updated dataset: %s\n", datasetName)
+	return nil
+}
+
+// [END documentai_v1beta3_documentservice_dataset_update]
