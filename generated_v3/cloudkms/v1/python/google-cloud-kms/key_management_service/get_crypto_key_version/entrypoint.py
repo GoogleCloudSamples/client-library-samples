@@ -1,0 +1,54 @@
+# Copyright 2026 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+import os
+import sys
+
+from keymanagementservice_cryptokeyversion_get import get_crypto_key_version
+
+# Support environment variables with optional CLI argument overrides
+project_id = os.environ.get("PROJECT_ID") or (sys.argv[1] if len(sys.argv) > 1 else None)
+if project_id:
+    project_id = project_id.strip("'\"")
+if not project_id:
+    project_id = ""
+
+location_id = os.environ.get("LOCATION_ID") or (sys.argv[2] if len(sys.argv) > 2 else None)
+if location_id:
+    location_id = location_id.strip("'\"")
+if not location_id:
+    location_id = ""
+
+key_ring_id = os.environ.get("KEY_RING_ID") or (sys.argv[3] if len(sys.argv) > 3 else None)
+if key_ring_id:
+    key_ring_id = key_ring_id.strip("'\"")
+if not key_ring_id:
+    key_ring_id = ""
+
+crypto_key_id = os.environ.get("CRYPTO_KEY_ID") or (sys.argv[4] if len(sys.argv) > 4 else None)
+if crypto_key_id:
+    crypto_key_id = crypto_key_id.strip("'\"")
+if not crypto_key_id:
+    crypto_key_id = ""
+
+crypto_key_version_id = os.environ.get("CRYPTO_KEY_VERSION_ID") or (sys.argv[5] if len(sys.argv) > 5 else None)
+if crypto_key_version_id:
+    crypto_key_version_id = crypto_key_version_id.strip("'\"")
+if not crypto_key_version_id:
+    crypto_key_version_id = ""
+
+
+if __name__ == "__main__":
+    get_crypto_key_version(project_id, location_id, key_ring_id, crypto_key_id, crypto_key_version_id)
+
