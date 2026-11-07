@@ -1,0 +1,43 @@
+// Copyright 2026 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+package com.google.cloud.discoveryengine.v1alpha;
+
+// [START discoveryengine_v1alpha_projectservice_project_get]
+import com.google.cloud.discoveryengine.v1alpha.GetProjectRequest;
+import com.google.cloud.discoveryengine.v1alpha.Project;
+import com.google.cloud.discoveryengine.v1alpha.ProjectServiceClient;
+import java.io.IOException;
+
+public class GetProject {
+
+  public static void main(String[] args) throws Exception {
+    String projectId = "example-project-id";
+    getProject(projectId);
+  }
+
+  public static void getProject(String projectId) throws Exception {
+    // Initialize client to send requests across multiple calls
+    try (ProjectServiceClient client = ProjectServiceClient.create()) {
+      String name = String.format("projects/%s", projectId);
+      GetProjectRequest request = GetProjectRequest.newBuilder()
+          .setName(name)
+          .build();
+
+      Project response = client.getProject(request);
+      System.out.println("Project name: " + response.getName());
+    }
+  }
+}
+// [END discoveryengine_v1alpha_projectservice_project_get]
