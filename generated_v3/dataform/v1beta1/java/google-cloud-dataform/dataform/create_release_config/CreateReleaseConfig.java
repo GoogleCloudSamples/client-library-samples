@@ -1,0 +1,46 @@
+// Copyright 2026 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+package com.google.cloud.dataform.v1beta1;
+
+// [START dataform_v1beta1_dataform_releaseconfig_create]
+import com.google.cloud.dataform.v1beta1.DataformClient;
+import com.google.cloud.dataform.v1beta1.ReleaseConfig;
+
+public class CreateReleaseConfig {
+
+  public static void main(String[] args) throws Exception {
+    String projectId = "example-project-id";
+    String locationId = "example-location-id";
+    String repositoryId = "example-repository-id";
+    String releaseConfigId = "example-release-config-id";
+    createReleaseConfig(projectId, locationId, repositoryId, releaseConfigId);
+  }
+
+  public static void createReleaseConfig(
+      String projectId, String locationId, String repositoryId, String releaseConfigId)
+      throws Exception {
+    try (DataformClient client = DataformClient.create()) {
+      String parent =
+          String.format(
+              "projects/%s/locations/%s/repositories/%s", projectId, locationId, repositoryId);
+      ReleaseConfig releaseConfig =
+          ReleaseConfig.newBuilder().setGitCommitish("main").build();
+
+      ReleaseConfig response = client.createReleaseConfig(parent, releaseConfig, releaseConfigId);
+      System.out.println("Created release config: " + response.getName());
+    }
+  }
+}
+// [END dataform_v1beta1_dataform_releaseconfig_create]
