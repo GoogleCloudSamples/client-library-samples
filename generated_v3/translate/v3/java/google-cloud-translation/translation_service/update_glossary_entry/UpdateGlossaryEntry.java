@@ -1,0 +1,54 @@
+// Copyright 2026 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+package com.google.cloud.translate.v3;
+
+// [START translate_v3_translationservice_glossaryentry_update]
+import com.google.cloud.translate.v3.GlossaryEntry;
+import com.google.cloud.translate.v3.GlossaryEntryName;
+import com.google.cloud.translate.v3.TranslationServiceClient;
+import java.io.IOException;
+
+public class UpdateGlossaryEntry {
+
+  public static void main(String[] args) throws Exception {
+    String projectId = "example-project-id";
+    String locationId = "example-location-id";
+    String glossaryId = "example-glossary-id";
+    String glossaryEntryId = "example-glossary-entry-id";
+    updateGlossaryEntry(projectId, locationId, glossaryId, glossaryEntryId);
+  }
+
+  public static void updateGlossaryEntry(
+      String projectId, String locationId, String glossaryId, String glossaryEntryId)
+      throws Exception {
+    try (TranslationServiceClient client = TranslationServiceClient.create()) {
+      GlossaryEntryName entryName =
+          GlossaryEntryName.of(projectId, locationId, glossaryId, glossaryEntryId);
+
+      // Retrieve the existing glossary entry to retain existing terms during full-replacement update.
+      GlossaryEntry existingEntry = client.getGlossaryEntry(entryName);
+      GlossaryEntry glossaryEntry =
+          existingEntry.toBuilder()
+              .setDescription("Updated glossary entry description")
+              .build();
+
+      GlossaryEntry response = client.updateGlossaryEntry(glossaryEntry);
+
+      System.out.println("Updated glossary entry: " + response.getName());
+      System.out.println("Updated description: " + response.getDescription());
+    }
+  }
+}
+// [END translate_v3_translationservice_glossaryentry_update]
