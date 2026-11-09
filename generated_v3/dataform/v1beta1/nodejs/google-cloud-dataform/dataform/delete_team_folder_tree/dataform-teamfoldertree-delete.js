@@ -1,0 +1,59 @@
+// Copyright 2026 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+// [START dataform_v1beta1_dataform_teamfoldertree_delete]
+'use strict';
+
+const {DataformClient} = require('@google-cloud/dataform');
+const {status} = require('@grpc/grpc-js');
+
+const client = new DataformClient();
+
+/**
+ * Use the deleteTeamFolderTree method
+ *
+ * @param {string} projectId - The Google Cloud project ID (for example, 'example-project-id').
+ * @param {string} locationId - The Google Cloud region where the Dataform resources are located (for example, 'us-central1').
+ * @param {string} teamFolderId - The server-generated ID of the TeamFolder to delete (for example, 'example-teamfolder-id'). Read this value from an existing TeamFolder resource.
+ */
+async function deleteTeamFolderTree(projectId, locationId, teamFolderId) {
+  try {
+    const name = `projects/${projectId}/locations/${locationId}/teamFolders/${teamFolderId}`;
+    const force = true;
+
+    const request = {
+      name,
+      force,
+    };
+
+    // DeleteTeamFolderTree initiates a long-running operation.
+    const [operation] = await client.deleteTeamFolderTree(request);
+    await operation.promise();
+
+    console.log(`Deleted team folder tree: ${name}`);
+  } catch (err) {
+    if (err.code === status.NOT_FOUND) {
+      console.error(`Team folder not found: ${err.message}`);
+    } else if (err.code === status.PERMISSION_DENIED) {
+      console.error(`Permission denied: ${err.message}`);
+    } else if (err.code === status.FAILED_PRECONDITION) {
+      console.error(`Precondition failed: ${err.message}`);
+    } else {
+      console.error(`RPC failed with status ${err.code}: ${err.message}`);
+    }
+  }
+}
+
+module.exports = { deleteTeamFolderTree };
+// [END dataform_v1beta1_dataform_teamfoldertree_delete]
