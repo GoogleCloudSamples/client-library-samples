@@ -1,0 +1,71 @@
+// Copyright 2026 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+package main
+
+// [START dialogflow_v3beta1_agents_generativesettings_update]
+
+import (
+	"context"
+	"fmt"
+	"io"
+
+	dialogflow "cloud.google.com/go/dialogflow/cx/apiv3beta1"
+	"cloud.google.com/go/dialogflow/cx/apiv3beta1/cxpb"
+	"google.golang.org/api/option"
+	"google.golang.org/protobuf/types/known/fieldmaskpb"
+)
+
+// updateGenerativeSettings updates the generative settings for a Dialogflow CX agent.
+func updateGenerativeSettings(ctx context.Context, w io.Writer, projectID string, locationID string, agentID string) error {
+	var opts []option.ClientOption
+	if locationID != "global" {
+		opts = append(opts, option.WithEndpoint(fmt.Sprintf("%s-dialogflow.googleapis.com:443", locationID)))
+	}
+
+	client, err := dialogflow.NewAgentsClient(ctx, opts...)
+	if err != nil {
+		return fmt.Errorf("NewAgentsClient failed: %w", err)
+	}
+	defer client.Close()
+
+	name := fmt.Sprintf("projects/%s/locations/%s/agents/%s/generativeSettings", projectID, locationID, agentID)
+
+	generativeSettings := &cxpb.GenerativeSettings{
+		Name:         name,
+		LanguageCode: "en",
+		KnowledgeConnectorSettings: &cxpb.GenerativeSettings_KnowledgeConnectorSettings{
+			Business: "Example Business",
+		},
+	}
+
+	updateMask := &fieldmaskpb.FieldMask{
+		Paths: []string{"knowledge_connector_settings.business"},
+	}
+
+	req := &cxpb.UpdateGenerativeSettingsRequest{
+		GenerativeSettings: generativeSettings,
+		UpdateMask:         updateMask,
+	}
+
+	response, err := client.UpdateGenerativeSettings(ctx, req)
+	if err != nil {
+		return fmt.Errorf("UpdateGenerativeSettings failed: %w", err)
+	}
+
+	fmt.Fprintf(w, "Updated generative settings: %s\n", response.GetName())
+	return nil
+}
+
+// [END dialogflow_v3beta1_agents_generativesettings_update]
