@@ -31,5 +31,5 @@ def lookup_key(key_string: str) -> None:
         print(f"Key name: {response.name}")
         print(f"Parent: {response.parent}")
     except google.api_core.exceptions.GoogleAPICallError as error:
-        print(f"Failed to look up API key: {error.message}")
+        print(f"Failed to look up API key: {error}")
 # [END apikeys_v2_apikeys_lookup_key]
