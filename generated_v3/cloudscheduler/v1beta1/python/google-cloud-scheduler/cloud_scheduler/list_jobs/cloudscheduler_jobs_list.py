@@ -14,7 +14,7 @@
 
 # [START cloudscheduler_list_jobs]
 from google.api_core import exceptions
-from google.cloud import scheduler_v1
+from google.cloud import scheduler_v1beta1
 
 
 def list_jobs(project_id: str, location_id: str) -> None:
