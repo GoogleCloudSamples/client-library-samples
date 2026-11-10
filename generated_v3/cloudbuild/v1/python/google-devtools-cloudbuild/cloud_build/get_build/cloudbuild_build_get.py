@@ -17,19 +17,19 @@ from google.api_core import exceptions
 from google.cloud.devtools import cloudbuild_v1
 
 
-def get_build(project_id: str, id: str) -> None:
+def get_build(project_id: str, build_id: str) -> None:
     """Retrieves build details for the specified build identifier.
 
     Args:
         project_id: The Google Cloud project ID (for example, 'example-project-id').
-        id: The unique identifier of the build (for example, 'example-build-id').
+        build_id: The unique identifier of the build (for example, 'example-build-id').
     """
     client = cloudbuild_v1.CloudBuildClient()
 
     request = cloudbuild_v1.GetBuildRequest(
         project_id=project_id,
-        id=id,
-    )
+        id=build_id,
+)
 
     try:
         response = client.get_build(request=request)
