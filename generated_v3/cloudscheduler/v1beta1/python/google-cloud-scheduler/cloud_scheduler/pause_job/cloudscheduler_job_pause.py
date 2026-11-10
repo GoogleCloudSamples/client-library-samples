@@ -14,7 +14,7 @@
 
 # [START cloudscheduler_pause_job]
 from google.api_core import exceptions
-from google.cloud import scheduler_v1
+from google.cloud import scheduler_v1beta1
 
 
 def pause_job(project_id: str, location_id: str, job_id: str) -> None:
