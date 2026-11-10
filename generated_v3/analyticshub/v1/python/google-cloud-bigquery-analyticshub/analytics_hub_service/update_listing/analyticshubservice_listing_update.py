@@ -55,5 +55,5 @@ def update_listing(
         print(f"Updated listing: {response.name}")
         print(f"Description: {response.description}")
     except exceptions.GoogleAPICallError as error:
-        print(f"API call failed: {error.message}")
+        print(f"API call failed: {error}")
 # [END analyticshub_v1_analyticshubservice_listing_update]
