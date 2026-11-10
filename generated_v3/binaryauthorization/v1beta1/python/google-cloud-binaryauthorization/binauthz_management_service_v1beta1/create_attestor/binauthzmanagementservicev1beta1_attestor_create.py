@@ -19,12 +19,12 @@ from google.cloud import binaryauthorization_v1beta1
 client = binaryauthorization_v1beta1.BinauthzManagementServiceV1Beta1Client()
 
 
-def create_attestor(attestor_id: str, project_id: str) -> None:
+def create_attestor(project_id: str, attestor_id: str) -> None:
     """Create an attestor for Binary Authorization.
 
     Args:
-        attestor_id: ID of the Attestor (for example, 'example-attestor-id')
         project_id: The Google Cloud project ID (for example, 'example-project-id')
+        attestor_id: ID of the Attestor (for example, 'example-attestor-id')
     """
     parent = f"projects/{project_id}"
     attestor = binaryauthorization_v1beta1.Attestor(
