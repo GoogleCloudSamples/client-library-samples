@@ -38,7 +38,7 @@ def update_project_settings(project_id: str) -> None:
             update_mask=update_mask,
         )
         print(f"Updated project settings: {response.name}")
-        print(f"Legacy redirection state: {response.legacy_redirection_state}")
+        print(f"Legacy redirection state: {response.legacy_redirection_state.name}")
     except google.api_core.exceptions.GoogleAPICallError as error:
         print(f"Failed to update project settings: {error}")
 # [END artifactregistry_v1beta2_artifactregistry_projectsettings_update]
