@@ -29,7 +29,7 @@ def get_build(project_id: str, build_id: str) -> None:
     request = cloudbuild_v1.GetBuildRequest(
         project_id=project_id,
         id=build_id,
-)
+    )
 
     try:
         response = client.get_build(request=request)
