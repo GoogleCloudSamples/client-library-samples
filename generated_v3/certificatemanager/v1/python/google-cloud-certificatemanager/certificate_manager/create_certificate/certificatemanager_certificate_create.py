@@ -84,5 +84,5 @@ def create_certificate(
         response = operation.result()
         print(f"Certificate created: {response.name}")
     except google.api_core.exceptions.GoogleAPICallError as error:
-        print(f"Failed to create certificate: {error.message}")
+        print(f"Failed to create certificate: {error}")
 # [END certificatemanager_v1_certificatemanager_certificate_create]
