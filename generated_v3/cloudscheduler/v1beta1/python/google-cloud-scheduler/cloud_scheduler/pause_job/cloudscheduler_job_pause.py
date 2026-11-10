@@ -29,7 +29,7 @@ def pause_job(project_id: str, location_id: str, job_id: str) -> None:
 
     name = client.job_path(project_id, location_id, job_id)
 
-    request = scheduler_v1.PauseJobRequest(
+    request = scheduler_v1beta1.PauseJobRequest(
         name=name,
     )
 
