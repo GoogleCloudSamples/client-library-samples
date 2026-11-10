@@ -25,7 +25,7 @@ def pause_job(project_id: str, location_id: str, job_id: str) -> None:
         location_id: The Google Cloud location ID.
         job_id: The Cloud Scheduler job ID.
     """
-    client = scheduler_v1.CloudSchedulerClient()
+    client = scheduler_v1beta1.CloudSchedulerClient()
 
     name = client.job_path(project_id, location_id, job_id)
 
