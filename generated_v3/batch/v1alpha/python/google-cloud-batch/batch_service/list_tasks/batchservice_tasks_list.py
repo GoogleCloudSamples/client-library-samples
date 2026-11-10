@@ -38,5 +38,5 @@ def list_tasks(project_id: str, location_id: str, job_id: str, task_group_id: st
             print(f"Task: {task.name}")
             print(f"State: {task.status.state.name}")
     except google.api_core.exceptions.GoogleAPICallError as e:
-        print(f"Failed to list tasks: {e.message}")
+        print(f"Failed to list tasks: {e}")
 # [END batch_v1alpha_batchservice_tasks_list]
