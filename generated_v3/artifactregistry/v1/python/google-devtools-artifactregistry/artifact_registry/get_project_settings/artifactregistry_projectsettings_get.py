@@ -34,7 +34,7 @@ def get_project_settings(project_id: str) -> None:
     try:
         response = client.get_project_settings(request=request)
         print(f"Resource name: {response.name}")
-        print(f"Legacy redirection state: {response.legacy_redirection_state}")
+        print(f"Legacy redirection state: {response.legacy_redirection_state.name}")
     except google.api_core.exceptions.GoogleAPICallError as error:
         print(f"Failed to retrieve project settings: {error}")
 # [END artifactregistry_v1_artifactregistry_projectsettings_get]
