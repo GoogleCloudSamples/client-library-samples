@@ -24,7 +24,7 @@ def list_jobs(project_id: str, location_id: str) -> None:
         project_id: The Google Cloud project ID (for example, 'example-project-id').
         location_id: The Google Cloud region where the service is located (for example, 'us-central1').
     """
-    client = scheduler_v1.CloudSchedulerClient()
+    client = scheduler_v1beta1.CloudSchedulerClient()
     parent = client.common_location_path(project_id, location_id)
 
     try:
