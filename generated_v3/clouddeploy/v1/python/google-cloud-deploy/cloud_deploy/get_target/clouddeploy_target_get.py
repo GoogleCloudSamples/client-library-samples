@@ -37,5 +37,5 @@ def get_target(project_id: str, location_id: str, target_id: str) -> None:
         print(f"Target UID: {response.uid}")
         print(f"Target create time: {response.create_time}")
     except exceptions.GoogleAPICallError as e:
-        print(f"Failed to get target: {e.message}")
+        print(f"Failed to get target: {e}")
 # [END clouddeploy_v1_clouddeploy_target_get]
