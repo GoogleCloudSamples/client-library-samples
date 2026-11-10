@@ -16,15 +16,13 @@
 import google.api_core.exceptions
 from google.cloud import alloydb_v1alpha
 
-client = alloydb_v1alpha.AlloyDBAdminClient()
-
-
 def list_clusters(project_id: str) -> None:
     """Lists AlloyDB clusters in a specified Google Cloud project and location.
 
     Args:
         project_id: The Google Cloud project ID (for example, 'example-project-id')
     """
+    client = alloydb_v1alpha.AlloyDBAdminClient()
     location = "us-central1"
     parent = f"projects/{project_id}/locations/{location}"
 
