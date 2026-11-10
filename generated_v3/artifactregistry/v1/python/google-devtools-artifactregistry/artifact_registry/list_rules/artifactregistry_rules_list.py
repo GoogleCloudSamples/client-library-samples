@@ -39,7 +39,7 @@ def list_rules(project_id: str, location_id: str, repository_id: str) -> None:
         response = client.list_rules(request=request)
         for rule in response:
             print(f"Rule name: {rule.name}")
-            print(f"Rule action: {rule.action}")
+            print(f"Rule action: {rule.action.name}")
     except google.api_core.exceptions.GoogleAPICallError as error:
         print(f"API error occurred: {error}")
 # [END artifactregistry_v1_artifactregistry_rules_list]
