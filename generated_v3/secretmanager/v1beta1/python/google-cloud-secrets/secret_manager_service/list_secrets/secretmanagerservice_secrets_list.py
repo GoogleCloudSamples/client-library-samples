@@ -36,5 +36,5 @@ def list_secrets(project_id: str) -> None:
         for secret in pager:
             print(f"Found secret: {secret.name}")
     except google.api_core.exceptions.GoogleAPICallError as error:
-        print(f"Failed to list secrets: {error.message}")
+        print(f"Failed to list secrets: {error}")
 # [END secretmanager_v1beta1_secretmanagerservice_secrets_list]
