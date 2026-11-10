@@ -17,19 +17,19 @@ from google.api_core import exceptions
 from google.cloud.devtools import cloudbuild_v1
 
 
-def cancel_build(project_id: str, id: str) -> None:
+def cancel_build(project_id: str, build_id: str) -> None:
     """Cancels a build in progress.
 
     Args:
         project_id: The Google Cloud project ID (for example, 'example-project-id').
-        id: The ID of the build to cancel (for example, 'example-build-id').
+        build_id: The ID of the build to cancel (for example, 'example-build-id').
     """
     client = cloudbuild_v1.CloudBuildClient()
 
     request = cloudbuild_v1.CancelBuildRequest(
         project_id=project_id,
-        id=id,
-    )
+        id=build_id,
+)
 
     try:
         response = client.cancel_build(request=request)
