@@ -25,7 +25,7 @@ def run_job(project_id: str, location_id: str, job_id: str) -> None:
         location_id: The Google Cloud region where the service is located (for example, 'us-central1').
         job_id: The ID of the existing Cloud Scheduler job to run (for example, 'example-job').
     """
-    client = scheduler_v1.CloudSchedulerClient()
+    client = scheduler_v1beta1.CloudSchedulerClient()
 
     name = f"projects/{project_id}/locations/{location_id}/jobs/{job_id}"
 
