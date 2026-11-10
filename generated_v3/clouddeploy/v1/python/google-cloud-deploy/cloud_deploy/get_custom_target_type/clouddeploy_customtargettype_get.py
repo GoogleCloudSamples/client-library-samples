@@ -36,5 +36,5 @@ def get_custom_target_type(
         print(f"Custom target type retrieved: {response.name}")
         print(f"Custom target type UID: {response.uid}")
     except exceptions.GoogleAPICallError as error:
-        print(f"API call failed: {error.message}")
+        print(f"API call failed: {error}")
 # [END clouddeploy_v1_clouddeploy_customtargettype_get]
