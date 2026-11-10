@@ -29,7 +29,7 @@ def cancel_build(project_id: str, build_id: str) -> None:
     request = cloudbuild_v1.CancelBuildRequest(
         project_id=project_id,
         id=build_id,
-)
+    )
 
     try:
         response = client.cancel_build(request=request)
