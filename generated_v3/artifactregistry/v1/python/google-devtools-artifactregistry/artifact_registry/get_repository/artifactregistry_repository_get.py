@@ -36,7 +36,7 @@ def get_repository(project_id: str, location_id: str, repository_id: str) -> Non
     try:
         response = client.get_repository(request=request)
         print(f"Repository name: {response.name}")
-        print(f"Format: {response.format_}")
+        print(f"Format: {response.format_.name}")
         print(f"Description: {response.description}")
     except google.api_core.exceptions.GoogleAPICallError as error:
         print(f"Failed to get repository: {error.message}")
