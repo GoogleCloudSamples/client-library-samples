@@ -42,5 +42,5 @@ def create_task(project_id: str, location_id: str, queue_id: str) -> None:
         response = client.create_task(parent=parent, task=task)
         print(f"Created task: {response.name}")
     except google.api_core.exceptions.GoogleAPICallError as error:
-        print(f"Failed to create task: {error.message}")
+        print(f'Failed to create task: {error}')
 # [END cloudtasks_v2_cloudtasks_task_create]
