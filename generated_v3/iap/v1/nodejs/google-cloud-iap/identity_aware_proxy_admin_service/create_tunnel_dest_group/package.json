@@ -1,0 +1,10 @@
+{
+  "name": "example",
+  "private": true,
+  "description": "Google Cloud Platform Code Samples 🎒",
+  
+  "dependencies": {
+    
+    "@google-cloud/iap": "latest"
+  }
+}
