@@ -25,7 +25,7 @@ import (
 	parametermanagerpb "cloud.google.com/go/parametermanager/apiv1/parametermanagerpb"
 )
 
-// deleteParameter deletes an existing parameter and all associated parameter versions.
+// deleteParameter deletes an existing parameter if all associated parameter versions are already deleted.
 func deleteParameter(ctx context.Context, w io.Writer, projectID string, locationID string, parameterID string) error {
 	name := fmt.Sprintf("projects/%s/locations/%s/parameters/%s", projectID, locationID, parameterID)
 
