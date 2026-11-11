@@ -1,0 +1,47 @@
+// Copyright 2026 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+package com.google.cloud.serviceusage.v1beta1;
+
+// [START serviceusage_v1beta1_serviceusage_consumerquotametrics_list]
+import com.google.api.serviceusage.v1beta1.ConsumerQuotaMetric;
+import com.google.api.serviceusage.v1beta1.ListConsumerQuotaMetricsRequest;
+import com.google.api.serviceusage.v1beta1.ServiceUsageClient;
+import java.io.IOException;
+
+public class ListConsumerQuotaMetrics {
+
+  public static void main(String[] args) throws IOException {
+    String projectId = "example-project-id";
+    String serviceId = "compute.googleapis.com";
+    listConsumerQuotaMetrics(projectId, serviceId);
+  }
+
+  public static void listConsumerQuotaMetrics(String projectId, String serviceId)
+      throws IOException {
+    try (ServiceUsageClient client = ServiceUsageClient.create()) {
+      String parent = String.format("projects/%s/services/%s", projectId, serviceId);
+      ListConsumerQuotaMetricsRequest request =
+          ListConsumerQuotaMetricsRequest.newBuilder()
+              .setParent(parent)
+              .build();
+
+      for (ConsumerQuotaMetric metric : client.listConsumerQuotaMetrics(request).iterateAll()) {
+        System.out.printf("Metric name: %s%n", metric.getName());
+        System.out.printf("Metric display name: %s%n", metric.getDisplayName());
+      }
+    }
+  }
+}
+// [END serviceusage_v1beta1_serviceusage_consumerquotametrics_list]
