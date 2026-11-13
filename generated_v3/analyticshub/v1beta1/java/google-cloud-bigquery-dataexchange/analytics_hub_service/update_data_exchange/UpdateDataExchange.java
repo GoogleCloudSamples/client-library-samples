@@ -1,0 +1,51 @@
+// Copyright 2026 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+package com.google.cloud.analyticshub.v1beta1;
+
+// [START analyticshub_v1beta1_analyticshubservice_dataexchange_update]
+import com.google.cloud.bigquery.dataexchange.v1beta1.AnalyticsHubServiceClient;
+import com.google.cloud.bigquery.dataexchange.v1beta1.DataExchange;
+import com.google.protobuf.FieldMask;
+import java.io.IOException;
+
+public class UpdateDataExchange {
+
+  public static void main(String[] args) throws IOException {
+    String projectId = "example-project-id";
+    String locationId = "example-location-id";
+    String dataExchangeId = "example_data_exchange_id";
+    updateDataExchange(projectId, locationId, dataExchangeId);
+  }
+
+  public static void updateDataExchange(String projectId, String locationId, String dataExchangeId)
+      throws IOException {
+    // Initialize client that will be closed after use with try-with-resources.
+    try (AnalyticsHubServiceClient client = AnalyticsHubServiceClient.create()) {
+      FieldMask updateMask = FieldMask.newBuilder().addPaths("description").build();
+      DataExchange dataExchange =
+          DataExchange.newBuilder()
+              .setName(
+                  String.format(
+                      "projects/%s/locations/%s/dataExchanges/%s",
+                      projectId, locationId, dataExchangeId))
+              .setDescription("Updated description for the data exchange")
+              .build();
+
+      DataExchange response = client.updateDataExchange(dataExchange, updateMask);
+      System.out.println("Updated data exchange: " + response.getName());
+    }
+  }
+}
+// [END analyticshub_v1beta1_analyticshubservice_dataexchange_update]
