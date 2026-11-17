@@ -1,0 +1,40 @@
+// Copyright 2026 Google LLC
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+package com.google.cloud.dataform.v1beta1;
+
+// [START dataform_v1beta1_dataform_repositories_list]
+import com.google.cloud.dataform.v1beta1.DataformClient;
+import com.google.cloud.dataform.v1beta1.LocationName;
+import com.google.cloud.dataform.v1beta1.Repository;
+import java.io.IOException;
+
+public class ListRepositories {
+
+  public static void main(String[] args) throws Exception {
+    String projectId = "example-project-id";
+    String locationId = "example-location-id";
+    listRepositories(projectId, locationId);
+  }
+
+  public static void listRepositories(String projectId, String locationId) throws Exception {
+    try (DataformClient client = DataformClient.create()) {
+      String parent = LocationName.of(projectId, locationId).toString();
+      for (Repository repository : client.listRepositories(parent).iterateAll()) {
+        System.out.println("Repository: " + repository.getName());
+      }
+    }
+  }
+}
+// [END dataform_v1beta1_dataform_repositories_list]
