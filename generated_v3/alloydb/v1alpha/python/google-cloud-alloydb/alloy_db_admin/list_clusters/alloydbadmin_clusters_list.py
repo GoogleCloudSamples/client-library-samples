@@ -13,7 +13,6 @@
 # limitations under the License.
 
 # [START alloydb_v1alpha_alloydbadmin_clusters_list]
-# [START alloydb_v1_generated_AlloyDBAdmin_ListClusters_sync_flattened]
 import google.api_core.exceptions
 from google.cloud import alloydb_v1alpha
 
@@ -36,5 +35,4 @@ def list_clusters(project_id: str) -> None:
         print(f"API error occurred: {e}")
 
 
-# [END alloydb_v1_generated_AlloyDBAdmin_ListClusters_sync_flattened]
 # [END alloydb_v1alpha_alloydbadmin_clusters_list]
