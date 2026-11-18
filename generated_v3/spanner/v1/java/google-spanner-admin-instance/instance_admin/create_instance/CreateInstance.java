@@ -15,6 +15,7 @@
 package com.google.cloud.spanner.v1;
 
 // [START spanner_v1_instanceadmin_instance_create]
+// [START spanner_create_instance]
 import com.google.cloud.spanner.admin.instance.v1.InstanceAdminClient;
 import com.google.spanner.admin.instance.v1.Instance;
 import java.io.IOException;
@@ -49,4 +50,5 @@ public class CreateInstance {
     }
   }
 }
+// [END spanner_create_instance]
 // [END spanner_v1_instanceadmin_instance_create]

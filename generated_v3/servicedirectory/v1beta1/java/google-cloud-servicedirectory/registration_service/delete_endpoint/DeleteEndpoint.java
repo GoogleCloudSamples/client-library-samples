@@ -15,6 +15,7 @@
 package com.google.cloud.servicedirectory.v1beta1;
 
 // [START servicedirectory_v1beta1_registrationservice_endpoint_delete]
+// [START servicedirectory_delete_endpoint]
 import com.google.cloud.servicedirectory.v1beta1.EndpointName;
 import com.google.cloud.servicedirectory.v1beta1.RegistrationServiceClient;
 
@@ -42,4 +43,5 @@ public class DeleteEndpoint {
     }
   }
 }
+// [END servicedirectory_delete_endpoint]
 // [END servicedirectory_v1beta1_registrationservice_endpoint_delete]

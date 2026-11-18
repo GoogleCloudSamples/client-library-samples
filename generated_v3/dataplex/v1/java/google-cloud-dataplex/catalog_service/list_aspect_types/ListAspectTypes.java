@@ -15,6 +15,7 @@
 package com.google.cloud.dataplex.v1;
 
 // [START dataplex_v1_catalogservice_aspecttypes_list]
+// [START dataplex_list_aspect_types]
 import com.google.cloud.dataplex.v1.AspectType;
 import com.google.cloud.dataplex.v1.CatalogServiceClient;
 import java.io.IOException;
@@ -36,4 +37,5 @@ public class ListAspectTypes {
     }
   }
 }
+// [END dataplex_list_aspect_types]
 // [END dataplex_v1_catalogservice_aspecttypes_list]

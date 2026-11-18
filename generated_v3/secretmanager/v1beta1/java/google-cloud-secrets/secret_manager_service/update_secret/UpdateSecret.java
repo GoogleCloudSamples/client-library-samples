@@ -15,6 +15,7 @@
 package com.google.cloud.secretmanager.v1beta1;
 
 // [START secretmanager_v1beta1_secretmanagerservice_secret_update]
+// [START secretmanager_update_secret]
 import com.google.cloud.secretmanager.v1beta1.Secret;
 import com.google.cloud.secretmanager.v1beta1.SecretManagerServiceClient;
 import com.google.cloud.secretmanager.v1beta1.SecretName;
@@ -43,4 +44,5 @@ public class UpdateSecret {
     }
   }
 }
+// [END secretmanager_update_secret]
 // [END secretmanager_v1beta1_secretmanagerservice_secret_update]

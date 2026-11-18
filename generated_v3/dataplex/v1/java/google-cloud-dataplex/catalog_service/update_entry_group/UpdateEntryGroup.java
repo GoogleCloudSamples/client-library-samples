@@ -15,6 +15,7 @@
 package com.google.cloud.dataplex.v1;
 
 // [START dataplex_v1_catalogservice_entrygroup_update]
+// [START dataplex_update_entry_group]
 import com.google.cloud.dataplex.v1.CatalogServiceClient;
 import com.google.cloud.dataplex.v1.EntryGroup;
 import com.google.cloud.dataplex.v1.EntryGroupName;
@@ -50,4 +51,5 @@ public class UpdateEntryGroup {
     }
   }
 }
+// [END dataplex_update_entry_group]
 // [END dataplex_v1_catalogservice_entrygroup_update]

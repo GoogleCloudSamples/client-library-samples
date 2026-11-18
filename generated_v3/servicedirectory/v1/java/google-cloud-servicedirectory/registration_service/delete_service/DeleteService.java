@@ -15,6 +15,7 @@
 package com.google.cloud.servicedirectory.v1;
 
 // [START servicedirectory_v1_registrationservice_service_delete]
+// [START servicedirectory_delete_service]
 import com.google.cloud.servicedirectory.v1.RegistrationServiceClient;
 import com.google.cloud.servicedirectory.v1.ServiceName;
 
@@ -38,4 +39,5 @@ public class DeleteService {
     }
   }
 }
+// [END servicedirectory_delete_service]
 // [END servicedirectory_v1_registrationservice_service_delete]

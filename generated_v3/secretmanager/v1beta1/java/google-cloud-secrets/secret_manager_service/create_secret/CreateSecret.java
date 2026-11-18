@@ -15,6 +15,7 @@
 package com.google.cloud.secretmanager.v1beta1;
 
 // [START secretmanager_v1beta1_secretmanagerservice_secret_create]
+// [START secretmanager_create_secret]
 import com.google.cloud.secretmanager.v1beta1.ProjectName;
 import com.google.cloud.secretmanager.v1beta1.Replication;
 import com.google.cloud.secretmanager.v1beta1.Secret;
@@ -38,4 +39,5 @@ public class CreateSecret {
     }
   }
 }
+// [END secretmanager_create_secret]
 // [END secretmanager_v1beta1_secretmanagerservice_secret_create]

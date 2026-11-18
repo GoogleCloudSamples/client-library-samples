@@ -15,6 +15,7 @@
 package com.google.cloud.secretmanager.v1beta1;
 
 // [START secretmanager_v1beta1_secretmanagerservice_disable_secret_version]
+// [START secretmanager_disable_secret_version]
 import com.google.cloud.secretmanager.v1beta1.SecretManagerServiceClient;
 import com.google.cloud.secretmanager.v1beta1.SecretVersion;
 import com.google.cloud.secretmanager.v1beta1.SecretVersionName;
@@ -40,4 +41,5 @@ public class DisableSecretVersion {
     }
   }
 }
+// [END secretmanager_disable_secret_version]
 // [END secretmanager_v1beta1_secretmanagerservice_disable_secret_version]

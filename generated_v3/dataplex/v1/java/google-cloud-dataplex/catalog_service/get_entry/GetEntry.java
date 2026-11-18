@@ -15,6 +15,7 @@
 package com.google.cloud.dataplex.v1;
 
 // [START dataplex_v1_catalogservice_entry_get]
+// [START dataplex_get_entry]
 import com.google.cloud.dataplex.v1.CatalogServiceClient;
 import com.google.cloud.dataplex.v1.Entry;
 import com.google.cloud.dataplex.v1.GetEntryRequest;
@@ -47,4 +48,5 @@ public class GetEntry {
     }
   }
 }
+// [END dataplex_get_entry]
 // [END dataplex_v1_catalogservice_entry_get]

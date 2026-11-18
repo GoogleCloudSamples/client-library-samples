@@ -15,6 +15,7 @@
 package com.google.cloud.secretmanager.v1beta1;
 
 // [START secretmanager_v1beta1_secretmanagerservice_secretversion_destroy]
+// [START secretmanager_destroy_secret_version]
 import com.google.cloud.secretmanager.v1beta1.DestroySecretVersionRequest;
 import com.google.cloud.secretmanager.v1beta1.SecretManagerServiceClient;
 import com.google.cloud.secretmanager.v1beta1.SecretVersion;
@@ -36,4 +37,5 @@ public class DestroySecretVersion {
     }
   }
 }
+// [END secretmanager_destroy_secret_version]
 // [END secretmanager_v1beta1_secretmanagerservice_secretversion_destroy]

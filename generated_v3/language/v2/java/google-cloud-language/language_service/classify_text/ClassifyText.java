@@ -15,6 +15,7 @@
 package com.google.cloud.language.v2;
 
 // [START language_v2_languageservice_classify_text]
+// [START language_classify_text]
 import com.google.cloud.language.v2.ClassificationCategory;
 import com.google.cloud.language.v2.ClassifyTextRequest;
 import com.google.cloud.language.v2.ClassifyTextResponse;
@@ -49,4 +50,5 @@ public class ClassifyText {
     }
   }
 }
+// [END language_classify_text]
 // [END language_v2_languageservice_classify_text]

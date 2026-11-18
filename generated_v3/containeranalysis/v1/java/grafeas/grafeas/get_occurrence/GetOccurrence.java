@@ -15,6 +15,7 @@
 package com.google.cloud.containeranalysis.v1;
 
 // [START containeranalysis_v1_grafeas_occurrence_get]
+// [START containeranalysis_get_occurrence]
 import io.grafeas.v1.GrafeasClient;
 import io.grafeas.v1.Occurrence;
 import java.io.IOException;
@@ -35,4 +36,5 @@ public class GetOccurrence {
     }
   }
 }
+// [END containeranalysis_get_occurrence]
 // [END containeranalysis_v1_grafeas_occurrence_get]

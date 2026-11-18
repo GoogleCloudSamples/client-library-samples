@@ -15,6 +15,7 @@
 package com.google.cloud.batch.v1;
 
 // [START batch_v1_batchservice_tasks_list]
+// [START batch_list_tasks]
 import com.google.cloud.batch.v1.BatchServiceClient;
 import com.google.cloud.batch.v1.Task;
 import com.google.cloud.batch.v1.TaskGroupName;
@@ -36,4 +37,5 @@ public class ListTasks {
     }
   }
 }
+// [END batch_list_tasks]
 // [END batch_v1_batchservice_tasks_list]

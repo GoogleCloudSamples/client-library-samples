@@ -15,6 +15,7 @@
 package com.google.cloud.dataplex.v1;
 
 // [START dataplex_v1_catalogservice_entrytype_create]
+// [START dataplex_create_entry_type]
 import com.google.cloud.dataplex.v1.CatalogServiceClient;
 import com.google.cloud.dataplex.v1.EntryType;
 
@@ -44,4 +45,5 @@ public class CreateEntryType {
     }
   }
 }
+// [END dataplex_create_entry_type]
 // [END dataplex_v1_catalogservice_entrytype_create]

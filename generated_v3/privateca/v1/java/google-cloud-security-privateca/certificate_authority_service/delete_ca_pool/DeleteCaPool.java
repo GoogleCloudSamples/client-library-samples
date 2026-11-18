@@ -15,6 +15,7 @@
 package com.google.cloud.privateca.v1;
 
 // [START privateca_v1_certificateauthorityservice_capool_delete]
+// [START privateca_delete_ca_pool]
 import com.google.cloud.security.privateca.v1.CaPoolName;
 import com.google.cloud.security.privateca.v1.CertificateAuthorityServiceClient;
 import java.io.IOException;
@@ -40,4 +41,5 @@ public class DeleteCaPool {
     }
   }
 }
+// [END privateca_delete_ca_pool]
 // [END privateca_v1_certificateauthorityservice_capool_delete]

@@ -15,6 +15,7 @@
 package com.google.cloud.pubsub.v1;
 
 // [START pubsub_v1_schemaservice_schema_get]
+// [START pubsub_get_schema]
 import com.google.cloud.pubsub.v1.SchemaServiceClient;
 import com.google.pubsub.v1.Schema;
 import com.google.pubsub.v1.SchemaName;
@@ -33,4 +34,5 @@ public class GetSchema {
     }
   }
 }
+// [END pubsub_get_schema]
 // [END pubsub_v1_schemaservice_schema_get]

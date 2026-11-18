@@ -15,6 +15,7 @@
 package com.google.cloud.servicedirectory.v1;
 
 // [START servicedirectory_v1_registrationservice_service_create]
+// [START servicedirectory_create_service]
 import com.google.cloud.servicedirectory.v1.NamespaceName;
 import com.google.cloud.servicedirectory.v1.RegistrationServiceClient;
 import com.google.cloud.servicedirectory.v1.Service;
@@ -43,4 +44,5 @@ public class CreateService {
     }
   }
 }
+// [END servicedirectory_create_service]
 // [END servicedirectory_v1_registrationservice_service_create]

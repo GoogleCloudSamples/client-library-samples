@@ -15,6 +15,7 @@
 package com.google.cloud.securitycenter.v1;
 
 // [START securitycenter_v1_securitycenter_group_assets]
+// [START securitycenter_group_all_assets]
 import com.google.cloud.securitycenter.v1.GroupAssetsRequest;
 import com.google.cloud.securitycenter.v1.GroupResult;
 import com.google.cloud.securitycenter.v1.OrganizationName;
@@ -50,4 +51,5 @@ public class GroupAssets {
     }
   }
 }
+// [END securitycenter_group_all_assets]
 // [END securitycenter_v1_securitycenter_group_assets]

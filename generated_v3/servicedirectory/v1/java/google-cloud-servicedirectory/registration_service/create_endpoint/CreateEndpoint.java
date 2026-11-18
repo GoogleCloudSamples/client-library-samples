@@ -15,6 +15,7 @@
 package com.google.cloud.servicedirectory.v1;
 
 // [START servicedirectory_v1_registrationservice_endpoint_create]
+// [START servicedirectory_create_endpoint]
 import com.google.cloud.servicedirectory.v1.Endpoint;
 import com.google.cloud.servicedirectory.v1.RegistrationServiceClient;
 import com.google.cloud.servicedirectory.v1.ServiceName;
@@ -50,4 +51,5 @@ public class CreateEndpoint {
     }
   }
 }
+// [END servicedirectory_create_endpoint]
 // [END servicedirectory_v1_registrationservice_endpoint_create]
