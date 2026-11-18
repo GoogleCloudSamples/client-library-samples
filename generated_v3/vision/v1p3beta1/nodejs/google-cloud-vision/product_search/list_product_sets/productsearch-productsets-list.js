@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START vision_v1p3beta1_productsearch_productsets_list]
+// [START vision_product_search_list_product_sets]
 'use strict';
 
 const {ProductSearchClient} = require('@google-cloud/vision');
@@ -62,4 +63,5 @@ async function listProductSets(projectId, locationId) {
 }
 
 module.exports = { listProductSets };
+// [END vision_product_search_list_product_sets]
 // [END vision_v1p3beta1_productsearch_productsets_list]

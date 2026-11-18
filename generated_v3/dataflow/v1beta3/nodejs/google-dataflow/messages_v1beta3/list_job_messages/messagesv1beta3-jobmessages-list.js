@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START dataflow_v1beta3_messagesv1beta3_jobmessages_list]
+// [START dataflow_v1beta3_generated_MessagesV1Beta3_ListJobMessages_sync]
 'use strict';
 
 const {MessagesV1Beta3Client} = require('@google-cloud/dataflow');
@@ -55,4 +56,5 @@ async function listJobMessages(projectId, locationId, jobId) {
 }
 
 module.exports = { listJobMessages };
+// [END dataflow_v1beta3_generated_MessagesV1Beta3_ListJobMessages_sync]
 // [END dataflow_v1beta3_messagesv1beta3_jobmessages_list]

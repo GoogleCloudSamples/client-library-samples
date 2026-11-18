@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START dataplex_v1_catalogservice_entrygroup_get]
+// [START dataplex_get_entry_group]
 'use strict';
 
 const {CatalogServiceClient} = require('@google-cloud/dataplex');
@@ -54,4 +55,5 @@ async function getEntryGroup(locationId, entryGroupId, projectId) {
 }
 
 module.exports = { getEntryGroup };
+// [END dataplex_get_entry_group]
 // [END dataplex_v1_catalogservice_entrygroup_get]

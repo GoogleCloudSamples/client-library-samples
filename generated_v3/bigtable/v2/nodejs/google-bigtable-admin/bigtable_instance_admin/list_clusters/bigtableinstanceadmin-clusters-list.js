@@ -13,6 +13,8 @@
 // limitations under the License.
 
 // [START bigtable_v2_bigtableinstanceadmin_clusters_list]
+// [START bigtable_get_clusters]
+// [START bigtable_list_clusters]
 'use strict';
 
 const {BigtableInstanceAdminClient} = require('@google-cloud/bigtable').v2;
@@ -61,4 +63,6 @@ async function listClusters(projectId, instanceId) {
 }
 
 module.exports = { listClusters };
+// [END bigtable_list_clusters]
+// [END bigtable_get_clusters]
 // [END bigtable_v2_bigtableinstanceadmin_clusters_list]

@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START bigtable_v2_bigtabletableadmin_tables_list]
+// [START bigtable_list_tables]
 'use strict';
 
 const {BigtableTableAdminClient} = require('@google-cloud/bigtable').v2;
@@ -49,4 +50,5 @@ async function listTables(projectId, instanceId) {
 }
 
 module.exports = {listTables};
+// [END bigtable_list_tables]
 // [END bigtable_v2_bigtabletableadmin_tables_list]

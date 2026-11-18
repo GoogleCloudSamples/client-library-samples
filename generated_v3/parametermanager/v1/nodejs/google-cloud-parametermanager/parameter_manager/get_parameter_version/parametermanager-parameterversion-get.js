@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START parametermanager_v1_parametermanager_parameterversion_get]
+// [START parametermanager_get_param_version]
 'use strict';
 
 const {ParameterManagerClient} = require('@google-cloud/parametermanager');
@@ -54,4 +55,5 @@ async function getParameterVersion(projectId, locationId, parameterId, versionId
 }
 
 module.exports = { getParameterVersion };
+// [END parametermanager_get_param_version]
 // [END parametermanager_v1_parametermanager_parameterversion_get]

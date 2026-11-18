@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START dataflow_v1beta3_metricsv1beta3_jobexecutiondetails_get]
+// [START dataflow_v1beta3_generated_MetricsV1Beta3_GetJobExecutionDetails_sync]
 'use strict';
 
 const {MetricsV1Beta3Client} = require('@google-cloud/dataflow');
@@ -58,4 +59,5 @@ async function getJobExecutionDetails(projectId, locationId, jobId) {
 }
 
 module.exports = { getJobExecutionDetails };
+// [END dataflow_v1beta3_generated_MetricsV1Beta3_GetJobExecutionDetails_sync]
 // [END dataflow_v1beta3_metricsv1beta3_jobexecutiondetails_get]

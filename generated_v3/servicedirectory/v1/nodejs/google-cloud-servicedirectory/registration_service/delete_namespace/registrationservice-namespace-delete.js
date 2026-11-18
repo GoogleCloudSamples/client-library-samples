@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START servicedirectory_v1_registrationservice_namespace_delete]
+// [START servicedirectory_delete_namespace]
 'use strict';
 
 const {RegistrationServiceClient} = require('@google-cloud/service-directory');
@@ -46,4 +47,5 @@ async function deleteNamespace(projectId, locationId, namespaceId) {
 }
 
 module.exports = { deleteNamespace };
+// [END servicedirectory_delete_namespace]
 // [END servicedirectory_v1_registrationservice_namespace_delete]

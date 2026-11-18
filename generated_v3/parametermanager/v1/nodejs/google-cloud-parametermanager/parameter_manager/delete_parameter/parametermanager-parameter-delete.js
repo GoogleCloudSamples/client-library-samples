@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START parametermanager_v1_parametermanager_parameter_delete]
+// [START parametermanager_delete_param]
 'use strict';
 
 const {ParameterManagerClient} = require('@google-cloud/parametermanager');
@@ -42,4 +43,5 @@ async function deleteParameter(projectId, locationId, parameterId) {
 }
 
 module.exports = { deleteParameter };
+// [END parametermanager_delete_param]
 // [END parametermanager_v1_parametermanager_parameter_delete]

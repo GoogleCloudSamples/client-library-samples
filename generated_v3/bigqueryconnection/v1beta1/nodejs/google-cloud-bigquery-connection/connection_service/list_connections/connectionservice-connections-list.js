@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START bigqueryconnection_v1beta1_connectionservice_connections_list]
+// [START bigqueryconnection_connectionservice_connections_list]
 'use strict';
 
 const {ConnectionServiceClient} = require('@google-cloud/bigquery-connection');
@@ -57,4 +58,5 @@ async function listConnections(projectId, locationId) {
 }
 
 module.exports = { listConnections };
+// [END bigqueryconnection_connectionservice_connections_list]
 // [END bigqueryconnection_v1beta1_connectionservice_connections_list]

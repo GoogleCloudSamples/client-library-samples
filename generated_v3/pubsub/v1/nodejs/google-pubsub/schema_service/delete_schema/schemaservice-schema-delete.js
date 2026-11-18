@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START pubsub_v1_schemaservice_schema_delete]
+// [START pubsub_delete_schema]
 'use strict';
 
 const {SchemaServiceClient} = require('@google-cloud/pubsub-api');
@@ -49,4 +50,5 @@ async function deleteSchema(projectId, schemaId) {
 }
 
 module.exports = { deleteSchema };
+// [END pubsub_delete_schema]
 // [END pubsub_v1_schemaservice_schema_delete]

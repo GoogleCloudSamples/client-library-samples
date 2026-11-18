@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START language_v2_languageservice_classify_text]
+// [START language_classify_text]
 'use strict';
 
 const {LanguageServiceClient} = require('@google-cloud/language');
@@ -55,4 +56,5 @@ async function classifyText() {
 }
 
 module.exports = { classifyText };
+// [END language_classify_text]
 // [END language_v2_languageservice_classify_text]

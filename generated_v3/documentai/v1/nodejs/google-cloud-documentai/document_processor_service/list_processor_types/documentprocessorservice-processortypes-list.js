@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START documentai_v1_documentprocessorservice_processortypes_list]
+// [START documentai_fetch_processor_types]
 'use strict';
 
 const {DocumentProcessorServiceClient} = require('@google-cloud/documentai');
@@ -55,4 +56,5 @@ async function listProcessorTypes(projectId, locationId) {
 }
 
 module.exports = { listProcessorTypes };
+// [END documentai_fetch_processor_types]
 // [END documentai_v1_documentprocessorservice_processortypes_list]

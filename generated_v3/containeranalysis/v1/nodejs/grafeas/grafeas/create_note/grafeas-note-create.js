@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START containeranalysis_v1_grafeas_note_create]
+// [START containeranalysis_create_note]
 'use strict';
 
 const {GrafeasClient} = require('@google-cloud/grafeas');
@@ -59,4 +60,5 @@ async function createNote(projectId, noteId) {
 }
 
 module.exports = { createNote };
+// [END containeranalysis_create_note]
 // [END containeranalysis_v1_grafeas_note_create]

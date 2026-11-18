@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START dialogflow_v3beta1_sessionentitytypes_sessionentitytypes_list]
+// [START dialogflow_list_session_entity_types]
 'use strict';
 
 const {SessionEntityTypesClient} = require('@google-cloud/dialogflow-cx');
@@ -61,4 +62,5 @@ async function listSessionEntityTypes(projectId, locationId, agentId, sessionId)
 }
 
 module.exports = { listSessionEntityTypes };
+// [END dialogflow_list_session_entity_types]
 // [END dialogflow_v3beta1_sessionentitytypes_sessionentitytypes_list]

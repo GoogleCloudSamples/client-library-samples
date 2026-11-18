@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START monitoring_v3_uptimecheckservice_uptimecheckips_list]
+// [START monitoring_uptime_check_list_ips]
 'use strict';
 
 const {UptimeCheckServiceClient} = require('@google-cloud/monitoring');
@@ -43,4 +44,5 @@ async function listUptimeCheckIps() {
 }
 
 module.exports = { listUptimeCheckIps };
+// [END monitoring_uptime_check_list_ips]
 // [END monitoring_v3_uptimecheckservice_uptimecheckips_list]

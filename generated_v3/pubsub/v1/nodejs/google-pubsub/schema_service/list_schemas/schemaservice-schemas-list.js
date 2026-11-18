@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START pubsub_v1_schemaservice_schemas_list]
+// [START pubsub_list_schemas]
 'use strict';
 
 const {SchemaServiceClient} = require('@google-cloud/pubsub-api');
@@ -53,4 +54,5 @@ async function listSchemas(projectId) {
 }
 
 module.exports = { listSchemas };
+// [END pubsub_list_schemas]
 // [END pubsub_v1_schemaservice_schemas_list]
