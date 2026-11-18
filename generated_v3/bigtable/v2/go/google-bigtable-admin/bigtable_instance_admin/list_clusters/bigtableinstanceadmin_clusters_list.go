@@ -15,7 +15,6 @@
 package main
 
 // [START bigtableadmin_v2_bigtableinstanceadmin_clusters_list]
-// [START bigtable_get_clusters]
 // [START bigtable_list_clusters]
 
 import (
@@ -54,5 +53,4 @@ func listClusters(ctx context.Context, w io.Writer, projectID string, instanceID
 }
 
 // [END bigtable_list_clusters]
-// [END bigtable_get_clusters]
 // [END bigtableadmin_v2_bigtableinstanceadmin_clusters_list]
