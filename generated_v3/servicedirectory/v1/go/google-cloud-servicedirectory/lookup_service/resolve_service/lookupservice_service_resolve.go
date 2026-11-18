@@ -15,6 +15,7 @@
 package main
 
 // [START servicedirectory_v1_lookupservice_resolve_service]
+// [START servicedirectory_resolve_service]
 
 import (
 	"context"
@@ -52,4 +53,5 @@ func resolveService(ctx context.Context, w io.Writer, projectID string, location
 	return nil
 }
 
+// [END servicedirectory_resolve_service]
 // [END servicedirectory_v1_lookupservice_resolve_service]

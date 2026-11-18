@@ -15,6 +15,7 @@
 package main
 
 // [START bigtableadmin_v2_bigtableinstanceadmin_instances_list]
+// [START bigtable_list_instances]
 
 import (
 	"context"
@@ -51,4 +52,5 @@ func listInstances(ctx context.Context, w io.Writer, projectID string) error {
 	return nil
 }
 
+// [END bigtable_list_instances]
 // [END bigtableadmin_v2_bigtableinstanceadmin_instances_list]

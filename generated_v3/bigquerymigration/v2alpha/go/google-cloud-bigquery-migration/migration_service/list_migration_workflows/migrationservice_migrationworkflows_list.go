@@ -15,6 +15,7 @@
 package main
 
 // [START analyticshub_v2alpha_migrationservice_migrationworkflows_list]
+// [START bigquerymigration_migrationservice_migrationworkflows_list]
 
 import (
 	"context"
@@ -64,4 +65,5 @@ func listMigrationWorkflows(ctx context.Context, w io.Writer) error {
 	return nil
 }
 
+// [END bigquerymigration_migrationservice_migrationworkflows_list]
 // [END analyticshub_v2alpha_migrationservice_migrationworkflows_list]

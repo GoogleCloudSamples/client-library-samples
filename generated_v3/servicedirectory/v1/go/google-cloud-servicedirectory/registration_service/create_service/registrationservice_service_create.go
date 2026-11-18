@@ -15,6 +15,7 @@
 package main
 
 // [START servicedirectory_v1_registrationservice_service_create]
+// [START servicedirectory_create_service]
 
 import (
 	"context"
@@ -56,4 +57,5 @@ func createService(ctx context.Context, w io.Writer, serviceID string, projectID
 	return nil
 }
 
+// [END servicedirectory_create_service]
 // [END servicedirectory_v1_registrationservice_service_create]

@@ -15,6 +15,7 @@
 package main
 
 // [START servicedirectory_v1_registrationservice_namespace_create]
+// [START servicedirectory_create_namespace]
 
 import (
 	"context"
@@ -56,4 +57,5 @@ func createNamespace(ctx context.Context, w io.Writer, namespaceID string, proje
 	return nil
 }
 
+// [END servicedirectory_create_namespace]
 // [END servicedirectory_v1_registrationservice_namespace_create]

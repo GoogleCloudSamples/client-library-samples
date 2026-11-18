@@ -15,6 +15,7 @@
 package main
 
 // [START iam_v1_iam_serviceaccounts_list]
+// [START iam_list_service_accounts]
 
 import (
 	"context"
@@ -54,4 +55,5 @@ func listServiceAccounts(ctx context.Context, w io.Writer, projectID string) err
 	return nil
 }
 
+// [END iam_list_service_accounts]
 // [END iam_v1_iam_serviceaccounts_list]

@@ -15,6 +15,7 @@
 package main
 
 // [START servicedirectory_v1_registrationservice_namespace_delete]
+// [START servicedirectory_delete_namespace]
 
 import (
 	"context"
@@ -47,4 +48,5 @@ func deleteNamespace(ctx context.Context, w io.Writer, projectID string, locatio
 	return nil
 }
 
+// [END servicedirectory_delete_namespace]
 // [END servicedirectory_v1_registrationservice_namespace_delete]

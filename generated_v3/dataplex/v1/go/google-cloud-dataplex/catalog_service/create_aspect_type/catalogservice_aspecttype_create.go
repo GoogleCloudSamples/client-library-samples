@@ -15,6 +15,7 @@
 package main
 
 // [START dataplex_v1_catalogservice_aspecttype_create]
+// [START dataplex_create_aspect_type]
 
 import (
 	"context"
@@ -72,4 +73,5 @@ func createAspectType(ctx context.Context, w io.Writer, locationID string, aspec
 	return nil
 }
 
+// [END dataplex_create_aspect_type]
 // [END dataplex_v1_catalogservice_aspecttype_create]

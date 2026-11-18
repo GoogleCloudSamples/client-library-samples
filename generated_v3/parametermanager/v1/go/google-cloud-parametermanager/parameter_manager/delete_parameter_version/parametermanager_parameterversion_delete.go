@@ -15,6 +15,7 @@
 package main
 
 // [START parametermanager_v1_parametermanager_parameterversion_delete]
+// [START parametermanager_delete_param_version]
 
 import (
 	"context"
@@ -48,4 +49,5 @@ func deleteParameterVersion(ctx context.Context, w io.Writer, projectID string, 
 	return nil
 }
 
+// [END parametermanager_delete_param_version]
 // [END parametermanager_v1_parametermanager_parameterversion_delete]

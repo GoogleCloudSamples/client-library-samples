@@ -15,6 +15,7 @@
 package main
 
 // [START batch_v1_batchservice_tasks_list]
+// [START batch_list_tasks]
 
 import (
 	"context"
@@ -55,4 +56,5 @@ func listTasks(ctx context.Context, w io.Writer, projectID string, locationID st
 	return nil
 }
 
+// [END batch_list_tasks]
 // [END batch_v1_batchservice_tasks_list]

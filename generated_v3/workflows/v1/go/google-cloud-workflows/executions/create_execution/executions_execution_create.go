@@ -15,6 +15,7 @@
 package main
 
 // [START workflows_v1_executions_execution_create]
+// [START workflows_create_execution]
 
 import (
 	"context"
@@ -54,4 +55,5 @@ func createExecution(ctx context.Context, w io.Writer, projectID string, locatio
 	return nil
 }
 
+// [END workflows_create_execution]
 // [END workflows_v1_executions_execution_create]

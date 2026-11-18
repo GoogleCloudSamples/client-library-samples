@@ -15,6 +15,7 @@
 package main
 
 // [START dataplex_v1_catalogservice_entrygroup_create]
+// [START dataplex_create_entry_group]
 
 import (
 	"context"
@@ -59,4 +60,5 @@ func createEntryGroup(ctx context.Context, w io.Writer, locationID string, entry
 	return nil
 }
 
+// [END dataplex_create_entry_group]
 // [END dataplex_v1_catalogservice_entrygroup_create]

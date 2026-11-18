@@ -15,6 +15,7 @@
 package main
 
 // [START bigtableadmin_v2_bigtableinstanceadmin_appprofiles_list]
+// [START bigtable_list_app_profiles]
 
 import (
 	"context"
@@ -55,4 +56,5 @@ func listAppProfiles(ctx context.Context, w io.Writer, projectID string, instanc
 	return nil
 }
 
+// [END bigtable_list_app_profiles]
 // [END bigtableadmin_v2_bigtableinstanceadmin_appprofiles_list]

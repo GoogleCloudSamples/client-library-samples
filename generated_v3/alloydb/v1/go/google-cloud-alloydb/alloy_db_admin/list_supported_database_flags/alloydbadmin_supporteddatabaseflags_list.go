@@ -15,6 +15,7 @@
 package main
 
 // [START alloydb_v1_alloydbadmin_supporteddatabaseflags_list]
+// [START alloydb_quickstart]
 
 import (
 	"context"
@@ -55,4 +56,5 @@ func listSupportedDatabaseFlags(ctx context.Context, w io.Writer, projectID stri
 	return nil
 }
 
+// [END alloydb_quickstart]
 // [END alloydb_v1_alloydbadmin_supporteddatabaseflags_list]

@@ -15,6 +15,7 @@
 package main
 
 // [START monitoring_v2_notificationchannelservice_notificationchannels_list]
+// [START monitoring_alert_list_channels]
 
 import (
 	"context"
@@ -55,4 +56,5 @@ func listNotificationChannels(ctx context.Context, w io.Writer, projectID string
 	return nil
 }
 
+// [END monitoring_alert_list_channels]
 // [END monitoring_v2_notificationchannelservice_notificationchannels_list]

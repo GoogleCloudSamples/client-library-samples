@@ -15,6 +15,7 @@
 package main
 
 // [START dataplex_v1_catalogservice_entrygroup_get]
+// [START dataplex_get_entry_group]
 
 import (
 	"context"
@@ -49,4 +50,5 @@ func getEntryGroup(ctx context.Context, w io.Writer, locationID string, entryGro
 	return nil
 }
 
+// [END dataplex_get_entry_group]
 // [END dataplex_v1_catalogservice_entrygroup_get]

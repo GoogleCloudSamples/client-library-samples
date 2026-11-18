@@ -15,6 +15,7 @@
 package main
 
 // [START parametermanager_v1_parametermanager_parameterversion_get]
+// [START parametermanager_get_param_version]
 
 import (
 	"context"
@@ -55,4 +56,5 @@ func getParameterVersion(ctx context.Context, w io.Writer, projectID string, loc
 	return nil
 }
 
+// [END parametermanager_get_param_version]
 // [END parametermanager_v1_parametermanager_parameterversion_get]

@@ -15,6 +15,7 @@
 package main
 
 // [START dataflow_v1beta3_metricsv1beta3_jobmetrics_get]
+// [START dataflow_v1beta3_generated_MetricsV1Beta3_GetJobMetrics_sync]
 
 import (
 	"context"
@@ -52,4 +53,5 @@ func getJobMetrics(ctx context.Context, w io.Writer, projectID string, locationI
 	return nil
 }
 
+// [END dataflow_v1beta3_generated_MetricsV1Beta3_GetJobMetrics_sync]
 // [END dataflow_v1beta3_metricsv1beta3_jobmetrics_get]

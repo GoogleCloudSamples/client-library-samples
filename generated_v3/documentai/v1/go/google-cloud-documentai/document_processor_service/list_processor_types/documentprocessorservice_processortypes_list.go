@@ -15,6 +15,7 @@
 package main
 
 // [START documentai_v1_documentprocessorservice_processortypes_list]
+// [START documentai_fetch_processor_types]
 
 import (
 	"context"
@@ -59,4 +60,5 @@ func listProcessorTypes(ctx context.Context, w io.Writer, projectID string, loca
 	return nil
 }
 
+// [END documentai_fetch_processor_types]
 // [END documentai_v1_documentprocessorservice_processortypes_list]

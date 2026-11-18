@@ -15,6 +15,7 @@
 package main
 
 // [START dataplex_v1_catalogservice_entry_get]
+// [START dataplex_get_entry]
 
 import (
 	"context"
@@ -50,4 +51,5 @@ func getEntry(ctx context.Context, w io.Writer, projectID string, locationID str
 	return nil
 }
 
+// [END dataplex_get_entry]
 // [END dataplex_v1_catalogservice_entry_get]
