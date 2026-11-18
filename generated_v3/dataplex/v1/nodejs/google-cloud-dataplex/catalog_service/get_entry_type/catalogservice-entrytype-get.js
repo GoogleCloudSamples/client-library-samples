@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START dataplex_v1_catalogservice_entrytype_get]
+// [START dataplex_get_entry_type]
 'use strict';
 
 const {CatalogServiceClient} = require('@google-cloud/dataplex');
@@ -53,4 +54,5 @@ async function getEntryType(locationId, projectId, entryTypeId) {
 }
 
 module.exports = { getEntryType };
+// [END dataplex_get_entry_type]
 // [END dataplex_v1_catalogservice_entrytype_get]

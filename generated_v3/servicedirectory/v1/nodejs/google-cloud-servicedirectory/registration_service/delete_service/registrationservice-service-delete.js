@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START servicedirectory_v1_registrationservice_service_delete]
+// [START servicedirectory_delete_service]
 'use strict';
 
 const {RegistrationServiceClient} = require('@google-cloud/service-directory');
@@ -48,4 +49,5 @@ async function deleteService(projectId, locationId, namespaceId, serviceId) {
 }
 
 module.exports = { deleteService };
+// [END servicedirectory_delete_service]
 // [END servicedirectory_v1_registrationservice_service_delete]

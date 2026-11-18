@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START bigquerystorage_v2alpha_migrationservice_migrationworkflows_list]
+// [START bigquerymigration_migrationservice_migrationworkflows_list]
 'use strict';
 
 const {MigrationServiceClient} = require('@google-cloud/bigquery-migration');
@@ -56,4 +57,5 @@ async function listMigrationWorkflows() {
 }
 
 module.exports = { listMigrationWorkflows };
+// [END bigquerymigration_migrationservice_migrationworkflows_list]
 // [END bigquerystorage_v2alpha_migrationservice_migrationworkflows_list]

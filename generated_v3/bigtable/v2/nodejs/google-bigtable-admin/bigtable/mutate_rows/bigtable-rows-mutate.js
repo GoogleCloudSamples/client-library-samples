@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START bigtable_v2_bigtable_mutate_rows]
+// [START bigtable_mutate_rows]
 'use strict';
 
 const {v2} = require('@google-cloud/bigtable');
@@ -76,4 +77,5 @@ async function mutateRows(projectId, instanceId, tableId) {
 }
 
 module.exports = {mutateRows};
+// [END bigtable_mutate_rows]
 // [END bigtable_v2_bigtable_mutate_rows]

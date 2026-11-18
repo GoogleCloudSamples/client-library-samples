@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START monitoring_v3_notificationchannelservice_notificationchannels_list]
+// [START monitoring_alert_list_channels]
 'use strict';
 
 const {NotificationChannelServiceClient} = require('@google-cloud/monitoring');
@@ -54,4 +55,5 @@ async function listNotificationChannels(projectId) {
 }
 
 module.exports = { listNotificationChannels };
+// [END monitoring_alert_list_channels]
 // [END monitoring_v3_notificationchannelservice_notificationchannels_list]

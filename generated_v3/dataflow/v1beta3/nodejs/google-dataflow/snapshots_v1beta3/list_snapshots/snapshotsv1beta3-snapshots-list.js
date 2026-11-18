@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START dataflow_v1beta3_snapshotsv1beta3_snapshots_list]
+// [START dataflow_v1beta3_generated_SnapshotsV1Beta3_ListSnapshots_sync]
 'use strict';
 
 const {SnapshotsV1Beta3Client} = require('@google-cloud/dataflow');
@@ -60,4 +61,5 @@ async function listSnapshots(projectId, locationId, jobId) {
 }
 
 module.exports = { listSnapshots };
+// [END dataflow_v1beta3_generated_SnapshotsV1Beta3_ListSnapshots_sync]
 // [END dataflow_v1beta3_snapshotsv1beta3_snapshots_list]

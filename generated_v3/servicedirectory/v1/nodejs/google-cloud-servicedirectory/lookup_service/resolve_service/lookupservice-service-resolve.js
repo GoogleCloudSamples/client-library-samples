@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START servicedirectory_v1_lookupservice_resolve_service]
+// [START servicedirectory_resolve_service]
 'use strict';
 
 const {LookupServiceClient} = require('@google-cloud/service-directory');
@@ -63,4 +64,5 @@ async function resolveService(projectId, locationId, namespaceId, serviceId) {
 }
 
 module.exports = { resolveService };
+// [END servicedirectory_resolve_service]
 // [END servicedirectory_v1_lookupservice_resolve_service]

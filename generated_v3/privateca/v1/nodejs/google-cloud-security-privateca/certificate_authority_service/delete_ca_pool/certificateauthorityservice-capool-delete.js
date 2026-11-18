@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START privateca_v1_certificateauthorityservice_capool_delete]
+// [START privateca_delete_ca_pool]
 'use strict';
 
 const {CertificateAuthorityServiceClient} = require('@google-cloud/security-private-ca');
@@ -50,4 +51,5 @@ async function deleteCaPool(projectId, locationId, caPoolId) {
 }
 
 module.exports = { deleteCaPool };
+// [END privateca_delete_ca_pool]
 // [END privateca_v1_certificateauthorityservice_capool_delete]

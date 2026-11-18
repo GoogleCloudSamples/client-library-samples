@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START dataflow_v1beta3_jobsv1beta3_jobs_list]
+// [START dataflow_v1beta3_generated_JobsV1Beta3_ListJobs_sync]
 'use strict';
 
 const {JobsV1Beta3Client} = require('@google-cloud/dataflow');
@@ -53,4 +54,5 @@ async function listJobs() {
 }
 
 module.exports = { listJobs };
+// [END dataflow_v1beta3_generated_JobsV1Beta3_ListJobs_sync]
 // [END dataflow_v1beta3_jobsv1beta3_jobs_list]

@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START batch_v1_batchservice_tasks_list]
+// [START batch_list_tasks]
 'use strict';
 
 const {BatchServiceClient} = require('@google-cloud/batch');
@@ -61,4 +62,5 @@ async function listTasks(projectId, locationId, jobId, taskGroupId) {
 }
 
 module.exports = { listTasks };
+// [END batch_list_tasks]
 // [END batch_v1_batchservice_tasks_list]

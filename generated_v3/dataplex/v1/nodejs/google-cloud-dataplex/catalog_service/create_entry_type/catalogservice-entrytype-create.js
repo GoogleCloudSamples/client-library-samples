@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START dataplex_v1_catalogservice_entrytype_create]
+// [START dataplex_create_entry_type]
 'use strict';
 
 const {CatalogServiceClient} = require('@google-cloud/dataplex');
@@ -54,4 +55,5 @@ async function createEntryType(locationId, entryTypeId) {
 }
 
 module.exports = { createEntryType };
+// [END dataplex_create_entry_type]
 // [END dataplex_v1_catalogservice_entrytype_create]

@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START pubsub_v1_subscriber_subscription_update]
+// [START pubsub_update_push_configuration]
 'use strict';
 
 const {SubscriberClient} = require('@google-cloud/pubsub-api');
@@ -59,4 +60,5 @@ async function updateSubscription(projectId, subscriptionId) {
 }
 
 module.exports = { updateSubscription };
+// [END pubsub_update_push_configuration]
 // [END pubsub_v1_subscriber_subscription_update]

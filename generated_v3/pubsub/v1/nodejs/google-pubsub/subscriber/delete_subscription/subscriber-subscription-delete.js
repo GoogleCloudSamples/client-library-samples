@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START pubsub_v1_subscriber_subscription_delete]
+// [START pubsub_delete_subscription]
 'use strict';
 
 const {SubscriberClient} = require('@google-cloud/pubsub-api');
@@ -47,4 +48,5 @@ async function deleteSubscription(projectId, subId) {
 }
 
 module.exports = { deleteSubscription };
+// [END pubsub_delete_subscription]
 // [END pubsub_v1_subscriber_subscription_delete]

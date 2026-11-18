@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START dialogflow_v3_entitytypes_entitytypes_list]
+// [START dialogflow_list_entity_types]
 'use strict';
 
 const {EntityTypesClient} = require('@google-cloud/dialogflow-cx');
@@ -63,4 +64,5 @@ async function listEntityTypes(projectId, locationId, agentId) {
 }
 
 module.exports = {listEntityTypes};
+// [END dialogflow_list_entity_types]
 // [END dialogflow_v3_entitytypes_entitytypes_list]

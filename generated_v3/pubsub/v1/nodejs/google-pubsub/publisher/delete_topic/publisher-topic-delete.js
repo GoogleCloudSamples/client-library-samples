@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START pubsub_v1_publisher_topic_delete]
+// [START pubsub_delete_topic]
 'use strict';
 
 const {PublisherClient} = require('@google-cloud/pubsub-api');
@@ -47,4 +48,5 @@ async function deleteTopic(projectId, topicId) {
 }
 
 module.exports = { deleteTopic };
+// [END pubsub_delete_topic]
 // [END pubsub_v1_publisher_topic_delete]

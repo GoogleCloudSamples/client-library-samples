@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START containeranalysis_v1_grafeas_note_delete]
+// [START containeranalysis_delete_note]
 'use strict';
 
 const {GrafeasClient} = require('@google-cloud/grafeas');
@@ -45,4 +46,5 @@ async function deleteNote(projectId, noteId) {
 }
 
 module.exports = { deleteNote };
+// [END containeranalysis_delete_note]
 // [END containeranalysis_v1_grafeas_note_delete]

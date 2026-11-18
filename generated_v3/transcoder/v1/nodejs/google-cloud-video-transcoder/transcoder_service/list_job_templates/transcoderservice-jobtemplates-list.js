@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START transcoder_v1_transcoderservice_jobtemplates_list]
+// [START transcoder_list_job_templates]
 'use strict';
 
 const {TranscoderServiceClient} = require('@google-cloud/video-transcoder');
@@ -53,4 +54,5 @@ async function listJobTemplates(projectId, locationId) {
 }
 
 module.exports = { listJobTemplates };
+// [END transcoder_list_job_templates]
 // [END transcoder_v1_transcoderservice_jobtemplates_list]

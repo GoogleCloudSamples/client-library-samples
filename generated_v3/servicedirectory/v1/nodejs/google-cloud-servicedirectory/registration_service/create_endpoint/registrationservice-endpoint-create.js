@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START servicedirectory_v1_registrationservice_endpoint_create]
+// [START servicedirectory_create_endpoint]
 'use strict';
 
 const {RegistrationServiceClient} = require('@google-cloud/service-directory');
@@ -60,4 +61,5 @@ async function createEndpoint(endpointId, projectId, locationId, namespaceId, se
 }
 
 module.exports = { createEndpoint };
+// [END servicedirectory_create_endpoint]
 // [END servicedirectory_v1_registrationservice_endpoint_create]

@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START alloydb_v1_alloydbadmin_supporteddatabaseflags_list]
+// [START alloydb_quickstart]
 'use strict';
 
 const {AlloyDBAdminClient} = require('@google-cloud/alloydb');
@@ -51,4 +52,5 @@ async function listSupportedDatabaseFlags(projectId, locationId) {
 }
 
 module.exports = { listSupportedDatabaseFlags };
+// [END alloydb_quickstart]
 // [END alloydb_v1_alloydbadmin_supporteddatabaseflags_list]

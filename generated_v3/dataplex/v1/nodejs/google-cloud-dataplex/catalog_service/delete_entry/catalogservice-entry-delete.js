@@ -13,6 +13,7 @@
 // limitations under the License.
 
 // [START dataplex_v1_catalogservice_entry_delete]
+// [START dataplex_delete_entry]
 'use strict';
 
 const {CatalogServiceClient} = require('@google-cloud/dataplex');
@@ -76,4 +77,5 @@ async function deleteEntry(projectId, locationId, entryGroupId, entryId) {
 }
 
 module.exports = {deleteEntry};
+// [END dataplex_delete_entry]
 // [END dataplex_v1_catalogservice_entry_delete]

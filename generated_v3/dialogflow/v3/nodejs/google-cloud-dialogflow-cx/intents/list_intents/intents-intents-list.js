@@ -13,6 +13,8 @@
 // limitations under the License.
 
 // [START dialogflow_v3_intents_intents_list]
+// [START dialogflow_cx_list_intents]
+// [START dialogflow_list_intents]
 'use strict';
 
 const {IntentsClient} = require('@google-cloud/dialogflow-cx');
@@ -62,4 +64,6 @@ async function listIntents(projectId, locationId, agentId) {
 }
 
 module.exports = {listIntents};
+// [END dialogflow_list_intents]
+// [END dialogflow_cx_list_intents]
 // [END dialogflow_v3_intents_intents_list]
