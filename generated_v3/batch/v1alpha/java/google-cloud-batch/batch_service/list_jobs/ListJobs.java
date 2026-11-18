@@ -15,6 +15,7 @@
 package com.google.cloud.batch.v1alpha;
 
 // [START batch_v1alpha_batchservice_jobs_list]
+// [START batch_list_jobs]
 import com.google.cloud.batch.v1alpha.BatchServiceClient;
 import com.google.cloud.batch.v1alpha.Job;
 import java.io.IOException;
@@ -51,4 +52,5 @@ public class ListJobs {
     }
   }
 }
+// [END batch_list_jobs]
 // [END batch_v1alpha_batchservice_jobs_list]

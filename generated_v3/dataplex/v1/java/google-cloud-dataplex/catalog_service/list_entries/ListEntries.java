@@ -15,6 +15,7 @@
 package com.google.cloud.dataplex.v1;
 
 // [START dataplex_v1_catalogservice_entries_list]
+// [START dataplex_list_entries]
 import com.google.cloud.dataplex.v1.CatalogServiceClient;
 import com.google.cloud.dataplex.v1.Entry;
 import com.google.cloud.dataplex.v1.EntryGroupName;
@@ -43,4 +44,5 @@ public class ListEntries {
     }
   }
 }
+// [END dataplex_list_entries]
 // [END dataplex_v1_catalogservice_entries_list]

@@ -15,6 +15,7 @@
 package com.google.cloud.alloydb.v1;
 
 // [START alloydb_v1_alloydbadmin_supporteddatabaseflags_list]
+// [START alloydb_quickstart]
 import com.google.cloud.alloydb.v1.AlloyDBAdminClient;
 import com.google.cloud.alloydb.v1.LocationName;
 import com.google.cloud.alloydb.v1.SupportedDatabaseFlag;
@@ -34,4 +35,5 @@ public class ListSupportedDatabaseFlags {
     }
   }
 }
+// [END alloydb_quickstart]
 // [END alloydb_v1_alloydbadmin_supporteddatabaseflags_list]

@@ -15,6 +15,7 @@
 package com.google.cloud.pubsub.v1;
 
 // [START pubsub_v1_publisher_topic_delete]
+// [START pubsub_delete_topic]
 import com.google.cloud.pubsub.v1.TopicAdminClient;
 import com.google.pubsub.v1.TopicName;
 import java.io.IOException;
@@ -29,4 +30,5 @@ public class DeleteTopic {
     }
   }
 }
+// [END pubsub_delete_topic]
 // [END pubsub_v1_publisher_topic_delete]

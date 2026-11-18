@@ -15,6 +15,7 @@
 package com.google.cloud.bigqueryconnection.v1beta1;
 
 // [START bigqueryconnection_v1beta1_connectionservice_connections_list]
+// [START bigqueryconnection_connectionservice_connections_list]
 import com.google.cloud.bigquery.connection.v1beta1.ConnectionProto.Connection;
 import com.google.cloud.bigquery.connection.v1beta1.ConnectionProto.ListConnectionsResponse;
 import com.google.cloud.bigquery.connection.v1beta1.ConnectionServiceClient;
@@ -41,4 +42,5 @@ public class ListConnections {
     }
   }
 }
+// [END bigqueryconnection_connectionservice_connections_list]
 // [END bigqueryconnection_v1beta1_connectionservice_connections_list]

@@ -15,6 +15,7 @@
 package com.google.cloud.parametermanager.v1;
 
 // [START parametermanager_v1_parametermanager_parameters_list]
+// [START parametermanager_list_params]
 import com.google.cloud.parametermanager.v1.LocationName;
 import com.google.cloud.parametermanager.v1.Parameter;
 import com.google.cloud.parametermanager.v1.ParameterManagerClient;
@@ -36,4 +37,5 @@ public class ListParameters {
     }
   }
 }
+// [END parametermanager_list_params]
 // [END parametermanager_v1_parametermanager_parameters_list]

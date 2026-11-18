@@ -15,6 +15,7 @@
 package com.google.cloud.documentai.v1;
 
 // [START documentai_v1_documentprocessorservice_processortypes_list]
+// [START documentai_fetch_processor_types]
 import com.google.cloud.documentai.v1.DocumentProcessorServiceClient;
 import com.google.cloud.documentai.v1.DocumentProcessorServiceSettings;
 import com.google.cloud.documentai.v1.ListProcessorTypesRequest;
@@ -47,4 +48,5 @@ public class ListProcessorTypes {
     }
   }
 }
+// [END documentai_fetch_processor_types]
 // [END documentai_v1_documentprocessorservice_processortypes_list]

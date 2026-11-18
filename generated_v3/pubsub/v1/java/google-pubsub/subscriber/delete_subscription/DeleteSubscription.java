@@ -15,6 +15,7 @@
 package com.google.cloud.pubsub.v1;
 
 // [START pubsub_v1_subscriber_subscription_delete]
+// [START pubsub_delete_subscription]
 import com.google.cloud.pubsub.v1.SubscriptionAdminClient;
 import com.google.pubsub.v1.ProjectSubscriptionName;
 
@@ -28,4 +29,5 @@ public class DeleteSubscription {
     }
   }
 }
+// [END pubsub_delete_subscription]
 // [END pubsub_v1_subscriber_subscription_delete]

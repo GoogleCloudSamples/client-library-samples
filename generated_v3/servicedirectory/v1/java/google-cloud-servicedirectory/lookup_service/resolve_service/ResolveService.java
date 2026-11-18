@@ -15,6 +15,7 @@
 package com.google.cloud.servicedirectory.v1;
 
 // [START servicedirectory_v1_lookupservice_resolve_service]
+// [START servicedirectory_resolve_service]
 import com.google.cloud.servicedirectory.v1.Endpoint;
 import com.google.cloud.servicedirectory.v1.LookupServiceClient;
 import com.google.cloud.servicedirectory.v1.ResolveServiceRequest;
@@ -54,4 +55,5 @@ public class ResolveService {
     }
   }
 }
+// [END servicedirectory_resolve_service]
 // [END servicedirectory_v1_lookupservice_resolve_service]

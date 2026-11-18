@@ -15,6 +15,7 @@
 package com.google.cloud.pubsub.v1;
 
 // [START pubsub_v1_subscriber_subscription_update]
+// [START pubsub_update_push_configuration]
 import com.google.cloud.pubsub.v1.SubscriptionAdminClient;
 import com.google.protobuf.FieldMask;
 import com.google.pubsub.v1.Subscription;
@@ -50,4 +51,5 @@ public class UpdateSubscription {
     }
   }
 }
+// [END pubsub_update_push_configuration]
 // [END pubsub_v1_subscriber_subscription_update]

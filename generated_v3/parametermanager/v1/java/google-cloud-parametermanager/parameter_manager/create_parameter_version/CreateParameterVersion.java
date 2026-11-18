@@ -15,6 +15,7 @@
 package com.google.cloud.parametermanager.v1;
 
 // [START parametermanager_v1_parametermanager_parameterversion_create]
+// [START parametermanager_create_param_version]
 import com.google.cloud.parametermanager.v1.ParameterManagerClient;
 import com.google.cloud.parametermanager.v1.ParameterName;
 import com.google.cloud.parametermanager.v1.ParameterVersion;
@@ -53,4 +54,5 @@ public class CreateParameterVersion {
     }
   }
 }
+// [END parametermanager_create_param_version]
 // [END parametermanager_v1_parametermanager_parameterversion_create]

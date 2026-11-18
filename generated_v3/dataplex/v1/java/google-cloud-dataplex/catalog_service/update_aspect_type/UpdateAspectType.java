@@ -15,6 +15,7 @@
 package com.google.cloud.dataplex.v1;
 
 // [START dataplex_v1_catalogservice_aspecttype_update]
+// [START dataplex_update_aspect_type]
 import com.google.cloud.dataplex.v1.AspectType;
 import com.google.cloud.dataplex.v1.AspectTypeName;
 import com.google.cloud.dataplex.v1.CatalogServiceClient;
@@ -50,4 +51,5 @@ public class UpdateAspectType {
     }
   }
 }
+// [END dataplex_update_aspect_type]
 // [END dataplex_v1_catalogservice_aspecttype_update]

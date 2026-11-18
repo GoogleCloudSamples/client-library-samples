@@ -15,6 +15,7 @@
 package com.google.cloud.securitycenter.v1p1beta1;
 
 // [START securitycenter_v1p1beta1_securitycenter_group_findings]
+// [START securitycenter_group_all_findings]
 import com.google.cloud.securitycenter.v1p1beta1.GroupFindingsRequest;
 import com.google.cloud.securitycenter.v1p1beta1.GroupResult;
 import com.google.cloud.securitycenter.v1p1beta1.SecurityCenterClient;
@@ -123,4 +124,5 @@ public class GroupFindings {
     }
   }
 }
+// [END securitycenter_group_all_findings]
 // [END securitycenter_v1p1beta1_securitycenter_group_findings]

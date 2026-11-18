@@ -15,6 +15,7 @@
 package com.google.cloud.secretmanager.v1beta1;
 
 // [START secretmanager_v1beta1_secretmanagerservice_secrets_list]
+// [START secretmanager_list_secrets]
 import com.google.cloud.secretmanager.v1beta1.ProjectName;
 import com.google.cloud.secretmanager.v1beta1.Secret;
 import com.google.cloud.secretmanager.v1beta1.SecretManagerServiceClient;
@@ -31,4 +32,5 @@ public class ListSecrets {
     }
   }
 }
+// [END secretmanager_list_secrets]
 // [END secretmanager_v1beta1_secretmanagerservice_secrets_list]

@@ -15,6 +15,7 @@
 package com.google.cloud.dataflow.v1beta3;
 
 // [START dataflow_v1beta3_messagesv1beta3_jobmessages_list]
+// [START dataflow_v1beta3_generated_MessagesV1Beta3_ListJobMessages_sync]
 import com.google.dataflow.v1beta3.JobMessage;
 import com.google.dataflow.v1beta3.ListJobMessagesRequest;
 import com.google.dataflow.v1beta3.MessagesV1Beta3Client;
@@ -48,4 +49,5 @@ public class ListJobMessages {
     }
   }
 }
+// [END dataflow_v1beta3_generated_MessagesV1Beta3_ListJobMessages_sync]
 // [END dataflow_v1beta3_messagesv1beta3_jobmessages_list]

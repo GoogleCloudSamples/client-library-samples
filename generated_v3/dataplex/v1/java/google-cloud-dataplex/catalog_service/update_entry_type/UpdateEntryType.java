@@ -15,6 +15,7 @@
 package com.google.cloud.dataplex.v1;
 
 // [START dataplex_v1_catalogservice_entrytype_update]
+// [START dataplex_update_entry_type]
 import com.google.cloud.dataplex.v1.CatalogServiceClient;
 import com.google.cloud.dataplex.v1.EntryType;
 import com.google.cloud.dataplex.v1.EntryTypeName;
@@ -52,4 +53,5 @@ public class UpdateEntryType {
     }
   }
 }
+// [END dataplex_update_entry_type]
 // [END dataplex_v1_catalogservice_entrytype_update]

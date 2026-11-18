@@ -15,6 +15,7 @@
 package com.google.cloud.dataplex.v1;
 
 // [START dataplex_v1_catalogservice_entry_delete]
+// [START dataplex_delete_entry]
 import com.google.cloud.dataplex.v1.CatalogServiceClient;
 import com.google.cloud.dataplex.v1.Entry;
 import com.google.cloud.dataplex.v1.EntryName;
@@ -39,4 +40,5 @@ public class DeleteEntry {
     }
   }
 }
+// [END dataplex_delete_entry]
 // [END dataplex_v1_catalogservice_entry_delete]

@@ -15,6 +15,7 @@
 package com.google.cloud.parametermanager.v1;
 
 // [START parametermanager_v1_parametermanager_parameterversion_delete]
+// [START parametermanager_delete_param_version]
 import com.google.cloud.parametermanager.v1.ParameterManagerClient;
 import com.google.cloud.parametermanager.v1.ParameterVersionName;
 
@@ -43,4 +44,5 @@ public class DeleteParameterVersion {
     }
   }
 }
+// [END parametermanager_delete_param_version]
 // [END parametermanager_v1_parametermanager_parameterversion_delete]

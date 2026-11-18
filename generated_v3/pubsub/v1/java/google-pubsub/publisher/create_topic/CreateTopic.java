@@ -15,6 +15,7 @@
 package com.google.cloud.pubsub.v1;
 
 // [START pubsub_v1_publisher_topic_create]
+// [START pubsub_create_topic]
 import com.google.cloud.pubsub.v1.TopicAdminClient;
 import com.google.pubsub.v1.Topic;
 import com.google.pubsub.v1.TopicName;
@@ -35,4 +36,5 @@ public class CreateTopic {
     }
   }
 }
+// [END pubsub_create_topic]
 // [END pubsub_v1_publisher_topic_create]

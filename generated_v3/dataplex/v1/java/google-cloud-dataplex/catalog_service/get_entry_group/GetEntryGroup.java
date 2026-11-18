@@ -15,6 +15,7 @@
 package com.google.cloud.dataplex.v1;
 
 // [START dataplex_v1_catalogservice_entrygroup_get]
+// [START dataplex_get_entry_group]
 import com.google.cloud.dataplex.v1.CatalogServiceClient;
 import com.google.cloud.dataplex.v1.EntryGroup;
 import com.google.cloud.dataplex.v1.EntryGroupName;
@@ -39,4 +40,5 @@ public class GetEntryGroup {
     }
   }
 }
+// [END dataplex_get_entry_group]
 // [END dataplex_v1_catalogservice_entrygroup_get]

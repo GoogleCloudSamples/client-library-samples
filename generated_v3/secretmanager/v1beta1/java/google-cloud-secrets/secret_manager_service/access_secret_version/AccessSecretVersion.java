@@ -15,6 +15,7 @@
 package com.google.cloud.secretmanager.v1beta1;
 
 // [START secretmanager_v1beta1_secretmanagerservice_secretversion_access]
+// [START secretmanager_access_secret_version]
 import com.google.cloud.secretmanager.v1beta1.AccessSecretVersionResponse;
 import com.google.cloud.secretmanager.v1beta1.SecretManagerServiceClient;
 import com.google.cloud.secretmanager.v1beta1.SecretVersionName;
@@ -34,4 +35,5 @@ public class AccessSecretVersion {
     }
   }
 }
+// [END secretmanager_access_secret_version]
 // [END secretmanager_v1beta1_secretmanagerservice_secretversion_access]

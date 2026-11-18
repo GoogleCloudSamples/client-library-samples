@@ -15,6 +15,7 @@
 package com.google.cloud.monitoring.v3;
 
 // [START monitoring_v3_notificationchannelservice_notificationchannels_list]
+// [START monitoring_alert_list_channels]
 import com.google.cloud.monitoring.v3.NotificationChannelServiceClient;
 import com.google.monitoring.v3.NotificationChannel;
 import java.io.IOException;
@@ -37,4 +38,5 @@ public class ListNotificationChannels {
     }
   }
 }
+// [END monitoring_alert_list_channels]
 // [END monitoring_v3_notificationchannelservice_notificationchannels_list]

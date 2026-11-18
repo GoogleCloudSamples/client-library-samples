@@ -15,6 +15,7 @@
 package com.google.cloud.dataplex.v1;
 
 // [START dataplex_v1_catalogservice_entrygroup_create]
+// [START dataplex_create_entry_group]
 import com.google.cloud.dataplex.v1.CatalogServiceClient;
 import com.google.cloud.dataplex.v1.EntryGroup;
 import java.io.IOException;
@@ -49,4 +50,5 @@ public class CreateEntryGroup {
     }
   }
 }
+// [END dataplex_create_entry_group]
 // [END dataplex_v1_catalogservice_entrygroup_create]

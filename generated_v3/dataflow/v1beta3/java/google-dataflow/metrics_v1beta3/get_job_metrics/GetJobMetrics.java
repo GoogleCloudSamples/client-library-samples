@@ -15,6 +15,7 @@
 package com.google.cloud.dataflow.v1beta3;
 
 // [START dataflow_v1beta3_metricsv1beta3_jobmetrics_get]
+// [START dataflow_v1beta3_generated_MetricsV1Beta3_GetJobMetrics_sync]
 import com.google.dataflow.v1beta3.GetJobMetricsRequest;
 import com.google.dataflow.v1beta3.JobMetrics;
 import com.google.dataflow.v1beta3.MetricUpdate;
@@ -48,4 +49,5 @@ public class GetJobMetrics {
     }
   }
 }
+// [END dataflow_v1beta3_generated_MetricsV1Beta3_GetJobMetrics_sync]
 // [END dataflow_v1beta3_metricsv1beta3_jobmetrics_get]
