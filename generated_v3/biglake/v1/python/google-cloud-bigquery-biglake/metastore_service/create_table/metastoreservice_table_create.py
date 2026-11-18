@@ -57,5 +57,5 @@ def create_table(
         response = client.create_table(request=request)
         print(f"Created table: {response.name}")
     except google.api_core.exceptions.GoogleAPICallError as exc:
-        print(f"Failed to create table: {exc.message}")
+        print(f"Failed to create table: {exc}")
 # [END biglake_v1_metastoreservice_table_create]
