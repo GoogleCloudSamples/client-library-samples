@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START dataplex_v1_catalogservice_entry_create]
+# [START dataplex_create_entry]
 import google.api_core.exceptions
 from google.cloud import dataplex_v1
 
@@ -59,4 +60,5 @@ def create_entry(
         print(f"Successfully created entry: {response.name}")
     except google.api_core.exceptions.GoogleAPICallError as e:
         print(f"Failed to create entry: {e.message}")
+# [END dataplex_create_entry]
 # [END dataplex_v1_catalogservice_entry_create]

@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START pubsub_v1_subscriber_subscription_delete]
+# [START pubsub_delete_subscription]
 import google.api_core.exceptions
 from google.cloud import pubsub_v1
 
@@ -35,4 +36,5 @@ def delete_subscription(project_id: str, sub_id: str) -> None:
         print(f"Subscription {subscription} not found.")
     except google.api_core.exceptions.GoogleAPICallError as e:
         print(f"Failed to delete subscription {subscription}: {e}")
+# [END pubsub_delete_subscription]
 # [END pubsub_v1_subscriber_subscription_delete]

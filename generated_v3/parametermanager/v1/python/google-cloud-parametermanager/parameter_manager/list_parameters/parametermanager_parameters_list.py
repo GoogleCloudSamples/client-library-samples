@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START parametermanager_v1_parametermanager_parameters_list]
+# [START parametermanager_list_params]
 import google.api_core.exceptions
 from google.cloud import parametermanager_v1
 
@@ -46,4 +47,5 @@ def list_parameters(project_id: str, location_id: str) -> None:
             print(f"Format: {parameter.format_.name}")
     except google.api_core.exceptions.GoogleAPICallError as e:
         print(f"API call failed: {e}")
+# [END parametermanager_list_params]
 # [END parametermanager_v1_parametermanager_parameters_list]

@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START secretmanager_v1beta1_secretmanagerservice_secret_update]
+# [START secretmanager_update_secret]
 import google.api_core.exceptions
 from google.cloud import secretmanager_v1beta1
 from google.protobuf import field_mask_pb2
@@ -41,4 +42,5 @@ def update_secret(project_id: str, secret_id: str) -> None:
         print(f"Updated secret: {response.name}")
     except google.api_core.exceptions.GoogleAPICallError as error:
         print(f"Failed to update secret: {error}")
+# [END secretmanager_update_secret]
 # [END secretmanager_v1beta1_secretmanagerservice_secret_update]

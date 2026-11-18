@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START servicedirectory_v1_lookupservice_resolve_service]
+# [START servicedirectory_resolve_service]
 import google.api_core.exceptions
 from google.cloud import servicedirectory_v1
 
@@ -48,4 +49,5 @@ def resolve_service(
             )
     except google.api_core.exceptions.GoogleAPICallError as error:
         print(f"API call failed: {error.message}")
+# [END servicedirectory_resolve_service]
 # [END servicedirectory_v1_lookupservice_resolve_service]

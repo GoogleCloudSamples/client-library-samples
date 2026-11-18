@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START dataplex_v1_catalogservice_entrytype_create]
+# [START dataplex_create_entry_type]
 import os
 
 import google.api_core.exceptions
@@ -49,4 +50,5 @@ def create_entry_type(location_id: str, entry_type_id: str) -> None:
         print(f"Created entry type: {response.name}")
     except google.api_core.exceptions.GoogleAPICallError as e:
         print(f"API call failed: {e}")
+# [END dataplex_create_entry_type]
 # [END dataplex_v1_catalogservice_entrytype_create]

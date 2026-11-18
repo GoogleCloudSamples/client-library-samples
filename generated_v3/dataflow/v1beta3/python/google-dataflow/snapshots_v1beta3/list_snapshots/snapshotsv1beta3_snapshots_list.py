@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START dataflow_v1beta3_snapshotsv1beta3_snapshots_list]
+# [START dataflow_v1beta3_generated_SnapshotsV1Beta3_ListSnapshots_sync]
 import google.api_core.exceptions
 from google.cloud import dataflow_v1beta3
 
@@ -41,4 +42,5 @@ def list_snapshots(project_id: str, location_id: str, job_id: str) -> None:
             print(f"State: {snapshot.state}")
     except google.api_core.exceptions.GoogleAPICallError as error:
         print(f"API call failed: {error}")
+# [END dataflow_v1beta3_generated_SnapshotsV1Beta3_ListSnapshots_sync]
 # [END dataflow_v1beta3_snapshotsv1beta3_snapshots_list]

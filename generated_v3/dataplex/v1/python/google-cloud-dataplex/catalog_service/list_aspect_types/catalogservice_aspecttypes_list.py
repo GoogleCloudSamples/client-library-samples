@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START dataplex_v1_catalogservice_aspecttypes_list]
+# [START dataplex_list_aspect_types]
 import google.api_core.exceptions
 from google.cloud import dataplex_v1
 
@@ -35,4 +36,5 @@ def list_aspect_types(location_id: str, project_id: str) -> None:
             print(f"Aspect type name: {aspect_type.name}")
     except google.api_core.exceptions.GoogleAPICallError as e:
         print(f"API call failed: {e}")
+# [END dataplex_list_aspect_types]
 # [END dataplex_v1_catalogservice_aspecttypes_list]

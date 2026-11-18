@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START servicedirectory_v1_registrationservice_endpoint_delete]
+# [START servicedirectory_delete_endpoint]
 import google.api_core.exceptions
 from google.cloud import servicedirectory_v1
 
@@ -45,4 +46,5 @@ def delete_endpoint(
         print(f"Deleted endpoint: {name}")
     except google.api_core.exceptions.GoogleAPICallError as error:
         print(f"Failed to delete endpoint: {error}")
+# [END servicedirectory_delete_endpoint]
 # [END servicedirectory_v1_registrationservice_endpoint_delete]

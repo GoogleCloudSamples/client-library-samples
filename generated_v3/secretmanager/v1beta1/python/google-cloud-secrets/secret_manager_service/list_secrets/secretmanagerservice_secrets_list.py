@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START secretmanager_v1beta1_secretmanagerservice_secrets_list]
+# [START secretmanager_list_secrets]
 import google.api_core.exceptions
 from google.cloud import secretmanager_v1beta1
 
@@ -37,4 +38,5 @@ def list_secrets(project_id: str) -> None:
             print(f"Found secret: {secret.name}")
     except google.api_core.exceptions.GoogleAPICallError as error:
         print(f"Failed to list secrets: {error}")
+# [END secretmanager_list_secrets]
 # [END secretmanager_v1beta1_secretmanagerservice_secrets_list]

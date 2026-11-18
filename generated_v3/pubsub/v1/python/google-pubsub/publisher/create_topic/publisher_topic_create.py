@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START pubsub_v1_publisher_topic_create]
+# [START pubsub_create_topic]
 import google.api_core.exceptions
 from google.cloud import pubsub_v1
 
@@ -35,4 +36,5 @@ def create_topic(project_id: str, topic_id: str) -> None:
         print(f"Topic already exists: {name}")
     except google.api_core.exceptions.GoogleAPICallError as error:
         print(f"Failed to create topic due to an API error: {error}")
+# [END pubsub_create_topic]
 # [END pubsub_v1_publisher_topic_create]

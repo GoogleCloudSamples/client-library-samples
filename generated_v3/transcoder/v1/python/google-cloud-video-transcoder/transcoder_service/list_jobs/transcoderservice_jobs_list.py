@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START transcoder_v1_transcoderservice_jobs_list]
+# [START transcoder_list_jobs]
 from google.api_core import exceptions
 from google.cloud.video import transcoder_v1
 
@@ -34,4 +35,5 @@ def list_jobs(project_id: str, location_id: str) -> None:
             print(f"Job: {job.name}")
     except exceptions.GoogleAPICallError as error:
         print(f"Request failed: {error}")
+# [END transcoder_list_jobs]
 # [END transcoder_v1_transcoderservice_jobs_list]

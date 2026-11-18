@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START dataplex_v1_catalogservice_entrygroup_create]
+# [START dataplex_create_entry_group]
 import google.api_core.exceptions
 from google.cloud import dataplex_v1
 
@@ -43,4 +44,5 @@ def create_entry_group(location_id: str, entry_group_id: str, project_id: str) -
         print(f"Created entry group: {response.name}")
     except google.api_core.exceptions.GoogleAPICallError as error:
         print(f"Failed to create entry group: {error}")
+# [END dataplex_create_entry_group]
 # [END dataplex_v1_catalogservice_entrygroup_create]

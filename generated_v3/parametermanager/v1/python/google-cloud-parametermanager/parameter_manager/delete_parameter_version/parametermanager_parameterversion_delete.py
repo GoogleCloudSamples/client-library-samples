@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START parametermanager_v1_parametermanager_parameterversion_delete]
+# [START parametermanager_delete_param_version]
 import google.api_core.exceptions
 from google.cloud import parametermanager_v1
 
@@ -40,4 +41,5 @@ def delete_parameter_version(
         print(f"Deleted parameter version: {name}")
     except google.api_core.exceptions.GoogleAPICallError as error:
         print(f"Failed to delete parameter version: {error}")
+# [END parametermanager_delete_param_version]
 # [END parametermanager_v1_parametermanager_parameterversion_delete]

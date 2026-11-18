@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START dataflow_v1beta3_metricsv1beta3_jobexecutiondetails_get]
+# [START dataflow_v1beta3_generated_MetricsV1Beta3_GetJobExecutionDetails_sync]
 import google.api_core.exceptions
 from google.cloud import dataflow_v1beta3
 
@@ -48,4 +49,5 @@ def get_job_execution_details(
             print("No stages found for this job.")
     except google.api_core.exceptions.GoogleAPICallError as error:
         print(f"Failed to retrieve job execution details: {error}")
+# [END dataflow_v1beta3_generated_MetricsV1Beta3_GetJobExecutionDetails_sync]
 # [END dataflow_v1beta3_metricsv1beta3_jobexecutiondetails_get]

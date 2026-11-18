@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START batch_v1_batchservice_tasks_list]
+# [START batch_list_tasks]
 import google.api_core.exceptions
 from google.cloud import batch_v1
 
@@ -45,4 +46,5 @@ def list_tasks(
             print(f"Task name: {task.name}")
     except google.api_core.exceptions.GoogleAPICallError as error:
         print(f"Failed to list tasks: {error}")
+# [END batch_list_tasks]
 # [END batch_v1_batchservice_tasks_list]

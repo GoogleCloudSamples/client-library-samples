@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START dataflow_v1beta3_messagesv1beta3_jobmessages_list]
+# [START dataflow_v1beta3_generated_MessagesV1Beta3_ListJobMessages_sync]
 import google.api_core.exceptions
 from google.cloud import dataflow_v1beta3
 
@@ -42,4 +43,5 @@ def list_job_messages(project_id: str, location_id: str, job_id: str) -> None:
             print(f"Text: {message.message_text}")
     except google.api_core.exceptions.GoogleAPICallError as e:
         print(f"API call failed: {e}")
+# [END dataflow_v1beta3_generated_MessagesV1Beta3_ListJobMessages_sync]
 # [END dataflow_v1beta3_messagesv1beta3_jobmessages_list]

@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START documentai_v1beta3_documentprocessorservice_processortypes_list]
+# [START documentai_fetch_processor_types]
 import google.api_core.exceptions
 from google.cloud import documentai_v1beta3
 
@@ -43,4 +44,5 @@ def list_processor_types(project_id: str, location_id: str) -> None:
         print(f"Failed to list processor types: {error}")
 
 
+# [END documentai_fetch_processor_types]
 # [END documentai_v1beta3_documentprocessorservice_processortypes_list]

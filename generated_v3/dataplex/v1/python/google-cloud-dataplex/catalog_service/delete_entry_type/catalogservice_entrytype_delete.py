@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START dataplex_v1_catalogservice_entrytype_delete]
+# [START dataplex_delete_entry_type]
 import os
 
 import google.api_core.exceptions
@@ -53,4 +54,5 @@ def delete_entry_type(location_id: str, entry_type_id: str) -> None:
         print(f"Deleted entry type: {name}")
     except google.api_core.exceptions.GoogleAPICallError as error:
         print(f"Failed to delete entry type: {error.message}")
+# [END dataplex_delete_entry_type]
 # [END dataplex_v1_catalogservice_entrytype_delete]

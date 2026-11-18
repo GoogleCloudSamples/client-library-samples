@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START livestream_v1_livestreamservice_assets_list]
+# [START livestream_list_assets]
 import google.api_core.exceptions
 from google.cloud.video import live_stream_v1
 
@@ -33,4 +34,5 @@ def list_assets(project_id: str, location_id: str) -> None:
             print(f"Asset name: {asset.name}")
     except google.api_core.exceptions.GoogleAPICallError as e:
         print(f"API call failed: {e}")
+# [END livestream_list_assets]
 # [END livestream_v1_livestreamservice_assets_list]

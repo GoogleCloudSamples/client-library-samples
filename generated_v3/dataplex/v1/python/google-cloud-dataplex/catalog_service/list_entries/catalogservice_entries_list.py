@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START dataplex_v1_catalogservice_entries_list]
+# [START dataplex_list_entries]
 import google.api_core.exceptions
 from google.cloud import dataplex_v1
 
@@ -40,4 +41,5 @@ def list_entries(project_id: str, location_id: str, entry_group_id: str) -> None
             print(f"Entry type: {entry.entry_type}")
     except google.api_core.exceptions.GoogleAPICallError as error:
         print(f"Failed to list entries: {error}")
+# [END dataplex_list_entries]
 # [END dataplex_v1_catalogservice_entries_list]

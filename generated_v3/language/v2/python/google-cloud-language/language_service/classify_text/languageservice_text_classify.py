@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START language_v2_languageservice_classify_text]
+# [START language_classify_text]
 import google.api_core.exceptions
 from google.cloud import language_v2
 
@@ -43,4 +44,5 @@ def classify_text() -> None:
             print(f"Confidence: {category.confidence:.2f}")
     except google.api_core.exceptions.GoogleAPICallError as e:
         print(f"Failed to classify text: {e}")
+# [END language_classify_text]
 # [END language_v2_languageservice_classify_text]

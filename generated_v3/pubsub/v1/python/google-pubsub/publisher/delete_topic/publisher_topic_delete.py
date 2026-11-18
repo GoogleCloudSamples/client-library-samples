@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START pubsub_v1_publisher_topic_delete]
+# [START pubsub_delete_topic]
 import google.api_core.exceptions
 from google.cloud import pubsub_v1
 
@@ -35,4 +36,5 @@ def delete_topic(project_id: str, topic_id: str) -> None:
         print(f"Topic not found: {topic}")
     except google.api_core.exceptions.GoogleAPICallError as error:
         print(f"API call failed: {error}")
+# [END pubsub_delete_topic]
 # [END pubsub_v1_publisher_topic_delete]

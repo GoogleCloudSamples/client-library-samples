@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START dataplex_v1_catalogservice_entrytype_update]
+# [START dataplex_update_entry_type]
 import google.api_core.exceptions
 from google.cloud import dataplex_v1
 from google.protobuf import field_mask_pb2
@@ -46,4 +47,5 @@ def update_entry_type(project_id: str, location_id: str, entry_type_id: str) -> 
         print(f"Updated entry type: {response.name}")
     except google.api_core.exceptions.GoogleAPICallError as e:
         print(f"Operation failed: {e}")
+# [END dataplex_update_entry_type]
 # [END dataplex_v1_catalogservice_entrytype_update]

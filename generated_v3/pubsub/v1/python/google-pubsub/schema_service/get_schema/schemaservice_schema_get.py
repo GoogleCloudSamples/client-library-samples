@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START pubsub_v1_schemaservice_schema_get]
+# [START pubsub_get_schema]
 import google.api_core.exceptions
 from google.cloud import pubsub_v1
 
@@ -33,4 +34,5 @@ def get_schema(project_id: str, schema_id: str) -> None:
         print(f"Retrieved schema: {response.name}")
     except google.api_core.exceptions.GoogleAPICallError as error:
         print(f"Failed to retrieve schema: {error}")
+# [END pubsub_get_schema]
 # [END pubsub_v1_schemaservice_schema_get]

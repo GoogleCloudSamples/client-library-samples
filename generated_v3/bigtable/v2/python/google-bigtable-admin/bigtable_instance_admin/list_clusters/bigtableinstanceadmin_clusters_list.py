@@ -13,6 +13,8 @@
 # limitations under the License.
 
 # [START bigtable_v2_bigtableinstanceadmin_clusters_list]
+# [START bigtable_get_clusters]
+# [START bigtable_list_clusters]
 import google.api_core.exceptions
 from google.cloud import bigtable_admin_v2
 
@@ -34,4 +36,6 @@ def list_clusters(project_id: str, instance_id: str) -> None:
             print(f"Cluster: {cluster.name}")
     except google.api_core.exceptions.GoogleAPICallError as error:
         print(f"API call failed: {error}")
+# [END bigtable_list_clusters]
+# [END bigtable_get_clusters]
 # [END bigtable_v2_bigtableinstanceadmin_clusters_list]

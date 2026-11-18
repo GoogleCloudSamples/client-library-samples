@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START dataplex_v1_catalogservice_entrygroup_delete]
+# [START dataplex_delete_entry_group]
 import google.api_core.exceptions
 from google.cloud import dataplex_v1
 
@@ -35,4 +36,5 @@ def delete_entry_group(location_id: str, entry_group_id: str, project_id: str) -
         print(f"Successfully deleted entry group: {name}")
     except google.api_core.exceptions.GoogleAPICallError as e:
         print(f"Failed to delete entry group: {e}")
+# [END dataplex_delete_entry_group]
 # [END dataplex_v1_catalogservice_entrygroup_delete]
