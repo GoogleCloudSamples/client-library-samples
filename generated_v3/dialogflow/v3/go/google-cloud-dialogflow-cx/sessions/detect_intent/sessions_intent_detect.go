@@ -15,6 +15,7 @@
 package main
 
 // [START dialogflow_v3_sessions_detect_intent]
+// [START dialogflow_cx_detect_intent_text]
 
 import (
 	"context"
@@ -80,4 +81,5 @@ func detectIntent(ctx context.Context, w io.Writer, projectID string, locationID
 	return nil
 }
 
+// [END dialogflow_cx_detect_intent_text]
 // [END dialogflow_v3_sessions_detect_intent]

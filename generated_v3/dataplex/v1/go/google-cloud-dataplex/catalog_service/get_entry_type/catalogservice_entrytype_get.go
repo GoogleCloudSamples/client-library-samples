@@ -15,6 +15,7 @@
 package main
 
 // [START dataplex_v1_catalogservice_entrytype_get]
+// [START dataplex_get_entry_type]
 
 import (
 	"context"
@@ -48,4 +49,5 @@ func getEntryType(ctx context.Context, w io.Writer, locationID string, entryType
 	return nil
 }
 
+// [END dataplex_get_entry_type]
 // [END dataplex_v1_catalogservice_entrytype_get]

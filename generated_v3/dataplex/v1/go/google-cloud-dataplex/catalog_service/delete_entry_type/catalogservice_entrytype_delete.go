@@ -15,6 +15,7 @@
 package main
 
 // [START dataplex_v1_catalogservice_entrytype_delete]
+// [START dataplex_delete_entry_type]
 
 import (
 	"context"
@@ -52,4 +53,5 @@ func deleteEntryType(ctx context.Context, w io.Writer, locationID string, entryT
 	return nil
 }
 
+// [END dataplex_delete_entry_type]
 // [END dataplex_v1_catalogservice_entrytype_delete]

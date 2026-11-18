@@ -15,6 +15,7 @@
 package main
 
 // [START servicedirectory_v1beta1_registrationservice_service_delete]
+// [START servicedirectory_delete_service]
 
 import (
 	"context"
@@ -59,4 +60,5 @@ func deleteService(ctx context.Context, w io.Writer) error {
 	return nil
 }
 
+// [END servicedirectory_delete_service]
 // [END servicedirectory_v1beta1_registrationservice_service_delete]

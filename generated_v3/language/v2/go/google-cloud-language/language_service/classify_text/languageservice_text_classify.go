@@ -15,6 +15,7 @@
 package main
 
 // [START language_v2_languageservice_classify_text]
+// [START language_classify_text]
 
 import (
 	"context"
@@ -56,4 +57,5 @@ func classifyText(ctx context.Context, w io.Writer) error {
 	return nil
 }
 
+// [END language_classify_text]
 // [END language_v2_languageservice_classify_text]

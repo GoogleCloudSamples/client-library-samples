@@ -15,6 +15,7 @@
 package main
 
 // [START servicedirectory_v1beta1_registrationservice_endpoint_create]
+// [START servicedirectory_create_endpoint]
 
 import (
 	"context"
@@ -54,4 +55,5 @@ func createEndpoint(ctx context.Context, w io.Writer, endpointID string, project
 	return nil
 }
 
+// [END servicedirectory_create_endpoint]
 // [END servicedirectory_v1beta1_registrationservice_endpoint_create]

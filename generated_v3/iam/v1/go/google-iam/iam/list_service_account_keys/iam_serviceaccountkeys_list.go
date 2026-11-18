@@ -15,6 +15,7 @@
 package main
 
 // [START iam_v1_iam_serviceaccountkeys_list]
+// [START iam_list_keys]
 
 import (
 	"context"
@@ -59,4 +60,5 @@ func listServiceAccountKeys(ctx context.Context, w io.Writer, projectID, account
 	return nil
 }
 
+// [END iam_list_keys]
 // [END iam_v1_iam_serviceaccountkeys_list]

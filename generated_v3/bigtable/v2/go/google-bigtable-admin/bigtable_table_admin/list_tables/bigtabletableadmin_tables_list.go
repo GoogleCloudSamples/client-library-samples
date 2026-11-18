@@ -15,6 +15,7 @@
 package main
 
 // [START bigtableadmin_v2_bigtabletableadmin_tables_list]
+// [START bigtable_list_tables]
 
 import (
 	"context"
@@ -55,4 +56,5 @@ func listTables(ctx context.Context, w io.Writer, projectID string, instanceID s
 	return nil
 }
 
+// [END bigtable_list_tables]
 // [END bigtableadmin_v2_bigtabletableadmin_tables_list]

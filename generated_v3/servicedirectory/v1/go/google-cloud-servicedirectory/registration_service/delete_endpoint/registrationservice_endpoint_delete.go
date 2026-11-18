@@ -15,6 +15,7 @@
 package main
 
 // [START servicedirectory_v1_registrationservice_endpoint_delete]
+// [START servicedirectory_delete_endpoint]
 
 import (
 	"context"
@@ -48,4 +49,5 @@ func deleteEndpoint(ctx context.Context, w io.Writer, projectID string, location
 	return nil
 }
 
+// [END servicedirectory_delete_endpoint]
 // [END servicedirectory_v1_registrationservice_endpoint_delete]

@@ -15,6 +15,7 @@
 package main
 
 // [START dataflow_v1beta3_messagesv1beta3_jobmessages_list]
+// [START dataflow_v1beta3_generated_MessagesV1Beta3_ListJobMessages_sync]
 
 import (
 	"context"
@@ -55,4 +56,5 @@ func listJobMessages(ctx context.Context, w io.Writer, projectID string, locatio
 	return nil
 }
 
+// [END dataflow_v1beta3_generated_MessagesV1Beta3_ListJobMessages_sync]
 // [END dataflow_v1beta3_messagesv1beta3_jobmessages_list]

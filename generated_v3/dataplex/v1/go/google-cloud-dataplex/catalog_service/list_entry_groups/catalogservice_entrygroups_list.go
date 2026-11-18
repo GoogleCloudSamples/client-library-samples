@@ -15,6 +15,7 @@
 package main
 
 // [START dataplex_v1_catalogservice_entrygroups_list]
+// [START dataplex_list_entry_groups]
 
 import (
 	"context"
@@ -56,4 +57,5 @@ func listEntryGroups(ctx context.Context, w io.Writer, locationID string, projec
 	return nil
 }
 
+// [END dataplex_list_entry_groups]
 // [END dataplex_v1_catalogservice_entrygroups_list]

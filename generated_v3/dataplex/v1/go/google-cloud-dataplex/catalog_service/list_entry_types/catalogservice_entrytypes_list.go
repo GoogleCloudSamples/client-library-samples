@@ -15,6 +15,7 @@
 package main
 
 // [START dataplex_v1_catalogservice_entrytypes_list]
+// [START dataplex_list_entry_types]
 
 import (
 	"context"
@@ -55,4 +56,5 @@ func listEntryTypes(ctx context.Context, w io.Writer, locationID string, project
 	return nil
 }
 
+// [END dataplex_list_entry_types]
 // [END dataplex_v1_catalogservice_entrytypes_list]

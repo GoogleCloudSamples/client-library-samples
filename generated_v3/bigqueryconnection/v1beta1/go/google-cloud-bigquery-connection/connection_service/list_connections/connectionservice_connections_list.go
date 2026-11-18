@@ -15,6 +15,7 @@
 package main
 
 // [START analyticshub_v1beta1_connectionservice_connections_list]
+// [START bigqueryconnection_connectionservice_connections_list]
 
 import (
 	"context"
@@ -54,4 +55,5 @@ func listConnections(ctx context.Context, w io.Writer, projectID string, locatio
 	return nil
 }
 
+// [END bigqueryconnection_connectionservice_connections_list]
 // [END analyticshub_v1beta1_connectionservice_connections_list]

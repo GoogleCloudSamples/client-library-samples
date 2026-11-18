@@ -15,6 +15,7 @@
 package main
 
 // [START dataplex_v1_catalogservice_entry_create]
+// [START dataplex_create_entry]
 
 import (
 	"context"
@@ -57,4 +58,5 @@ func createEntry(ctx context.Context, w io.Writer, projectID string, locationID 
 	return nil
 }
 
+// [END dataplex_create_entry]
 // [END dataplex_v1_catalogservice_entry_create]

@@ -15,6 +15,7 @@
 package main
 
 // [START parametermanager_v1_parametermanager_parameter_create]
+// [START parametermanager_create_param]
 
 import (
 	"context"
@@ -56,4 +57,5 @@ func createParameter(ctx context.Context, w io.Writer, projectID string, locatio
 	return nil
 }
 
+// [END parametermanager_create_param]
 // [END parametermanager_v1_parametermanager_parameter_create]

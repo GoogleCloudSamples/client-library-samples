@@ -15,6 +15,7 @@
 package main
 
 // [START transcoder_v1_transcoderservice_jobtemplates_list]
+// [START transcoder_list_job_templates]
 
 import (
 	"context"
@@ -55,4 +56,5 @@ func listJobTemplates(ctx context.Context, w io.Writer, projectID string, locati
 	return nil
 }
 
+// [END transcoder_list_job_templates]
 // [END transcoder_v1_transcoderservice_jobtemplates_list]

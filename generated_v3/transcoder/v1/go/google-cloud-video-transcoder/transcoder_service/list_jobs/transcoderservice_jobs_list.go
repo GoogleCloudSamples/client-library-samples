@@ -15,6 +15,7 @@
 package main
 
 // [START transcoder_v1_transcoderservice_jobs_list]
+// [START transcoder_list_jobs]
 
 import (
 	"context"
@@ -56,4 +57,5 @@ func listJobs(ctx context.Context, w io.Writer, projectID string, locationID str
 	return nil
 }
 
+// [END transcoder_list_jobs]
 // [END transcoder_v1_transcoderservice_jobs_list]

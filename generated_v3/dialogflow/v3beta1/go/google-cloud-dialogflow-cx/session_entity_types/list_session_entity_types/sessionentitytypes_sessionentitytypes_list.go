@@ -15,6 +15,7 @@
 package main
 
 // [START dialogflow_v3beta1_sessionentitytypes_sessionentitytypes_list]
+// [START dialogflow_list_session_entity_types]
 
 import (
 	"context"
@@ -62,4 +63,5 @@ func listSessionEntityTypes(ctx context.Context, w io.Writer, projectID string, 
 	return nil
 }
 
+// [END dialogflow_list_session_entity_types]
 // [END dialogflow_v3beta1_sessionentitytypes_sessionentitytypes_list]

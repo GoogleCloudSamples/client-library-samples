@@ -15,6 +15,7 @@
 package main
 
 // [START livestream_v1_livestreamservice_assets_list]
+// [START livestream_list_assets]
 
 import (
 	"context"
@@ -56,4 +57,5 @@ func listAssets(ctx context.Context, w io.Writer, projectID string, locationID s
 	return nil
 }
 
+// [END livestream_list_assets]
 // [END livestream_v1_livestreamservice_assets_list]

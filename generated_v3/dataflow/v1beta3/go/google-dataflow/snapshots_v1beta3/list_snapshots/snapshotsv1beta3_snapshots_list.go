@@ -15,6 +15,7 @@
 package main
 
 // [START dataflow_v1beta3_snapshotsv1beta3_snapshots_list]
+// [START dataflow_v1beta3_generated_SnapshotsV1Beta3_ListSnapshots_sync]
 
 import (
 	"context"
@@ -64,4 +65,5 @@ func listSnapshots(ctx context.Context, w io.Writer) error {
 	return nil
 }
 
+// [END dataflow_v1beta3_generated_SnapshotsV1Beta3_ListSnapshots_sync]
 // [END dataflow_v1beta3_snapshotsv1beta3_snapshots_list]

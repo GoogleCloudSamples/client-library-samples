@@ -15,6 +15,7 @@
 package main
 
 // [START dialogflow_v3beta1_intents_intent_create]
+// [START dialogflow_cx_create_intent]
 
 import (
 	"context"
@@ -68,4 +69,5 @@ func createIntent(ctx context.Context, w io.Writer, projectID string, locationID
 	return nil
 }
 
+// [END dialogflow_cx_create_intent]
 // [END dialogflow_v3beta1_intents_intent_create]

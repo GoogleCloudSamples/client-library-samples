@@ -15,6 +15,7 @@
 package main
 
 // [START dataplex_v1_catalogservice_entrytype_create]
+// [START dataplex_create_entry_type]
 
 import (
 	"context"
@@ -59,4 +60,5 @@ func createEntryType(ctx context.Context, w io.Writer, locationID string, entryT
 	return nil
 }
 
+// [END dataplex_create_entry_type]
 // [END dataplex_v1_catalogservice_entrytype_create]
