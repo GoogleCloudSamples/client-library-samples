@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START parametermanager_v1_parametermanager_parameter_get]
+# [START parametermanager_get_param]
 from google.api_core import exceptions
 from google.api_core.client_options import ClientOptions
 from google.cloud import parametermanager_v1
@@ -42,4 +43,5 @@ def get_parameter(project_id: str, location_id: str, parameter_id: str) -> None:
         print(f"Parameter format: {response.format.name}")
     except exceptions.GoogleAPICallError as err:
         print(f"Failed to retrieve parameter: {err}")
+# [END parametermanager_get_param]
 # [END parametermanager_v1_parametermanager_parameter_get]

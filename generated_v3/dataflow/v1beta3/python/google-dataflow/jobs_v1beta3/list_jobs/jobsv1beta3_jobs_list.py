@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START dataflow_v1beta3_jobsv1beta3_jobs_list]
+# [START dataflow_v1beta3_generated_JobsV1Beta3_ListJobs_sync]
 import google.api_core.exceptions
 from google.cloud import dataflow_v1beta3
 
@@ -39,4 +40,5 @@ def list_jobs(project_id: str, location_id: str) -> None:
             print(f"Current State: {job.current_state.name}")
     except google.api_core.exceptions.GoogleAPICallError as error:
         print(f"API call failed: {error}")
+# [END dataflow_v1beta3_generated_JobsV1Beta3_ListJobs_sync]
 # [END dataflow_v1beta3_jobsv1beta3_jobs_list]

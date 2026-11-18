@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START pubsub_v1_schemaservice_schema_delete]
+# [START pubsub_delete_schema]
 import google.api_core.exceptions
 from google.cloud import pubsub_v1
 
@@ -37,4 +38,5 @@ def delete_schema(project_id: str, schema_id: str) -> None:
         print(f"Failed to delete schema due to an API error: {e}")
 
 
+# [END pubsub_delete_schema]
 # [END pubsub_v1_schemaservice_schema_delete]

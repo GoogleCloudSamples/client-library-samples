@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START dataflow_v1beta3_metricsv1beta3_jobmetrics_get]
+# [START dataflow_v1beta3_generated_MetricsV1Beta3_GetJobMetrics_sync]
 import google.api_core.exceptions
 from google.cloud import dataflow_v1beta3
 
@@ -42,4 +43,5 @@ def get_job_metrics(project_id: str, location_id: str, job_id: str) -> None:
             print(f" - Metric name: {metric_name}")
     except google.api_core.exceptions.GoogleAPICallError as e:
         print(f"Request failed: {e}")
+# [END dataflow_v1beta3_generated_MetricsV1Beta3_GetJobMetrics_sync]
 # [END dataflow_v1beta3_metricsv1beta3_jobmetrics_get]

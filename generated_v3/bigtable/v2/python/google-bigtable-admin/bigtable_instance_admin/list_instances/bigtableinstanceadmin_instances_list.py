@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START bigtable_v2_bigtableinstanceadmin_instances_list]
+# [START bigtable_list_instances]
 import google.api_core.exceptions
 from google.cloud import bigtable_admin_v2
 
@@ -34,4 +35,5 @@ def list_instances(project_id: str) -> None:
             print(f"State: {instance.state}")
     except google.api_core.exceptions.GoogleAPICallError as e:
         print(f"API call failed: {e}")
+# [END bigtable_list_instances]
 # [END bigtable_v2_bigtableinstanceadmin_instances_list]

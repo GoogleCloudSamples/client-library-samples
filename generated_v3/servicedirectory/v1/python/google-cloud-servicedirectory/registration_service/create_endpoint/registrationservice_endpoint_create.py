@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START servicedirectory_v1_registrationservice_endpoint_create]
+# [START servicedirectory_create_endpoint]
 import google.api_core.exceptions
 from google.cloud import servicedirectory_v1
 
@@ -44,4 +45,5 @@ def create_endpoint(endpoint_id: str, project_id: str, location_id: str, namespa
         print(f"Created endpoint: {response.name}")
     except google.api_core.exceptions.GoogleAPICallError as e:
         print(f"Failed to create endpoint: {e}")
+# [END servicedirectory_create_endpoint]
 # [END servicedirectory_v1_registrationservice_endpoint_create]

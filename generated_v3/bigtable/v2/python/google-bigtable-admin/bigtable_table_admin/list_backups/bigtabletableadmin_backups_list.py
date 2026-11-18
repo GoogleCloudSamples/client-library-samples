@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START bigtable_v2_bigtabletableadmin_backups_list]
+# [START bigtable_list_backups]
 import google.api_core.exceptions
 from google.cloud import bigtable_admin_v2
 
@@ -34,4 +35,5 @@ def list_backups(project_id: str, instance_id: str, cluster_id: str) -> None:
             print(f"Backup name: {backup.name}")
     except google.api_core.exceptions.GoogleAPICallError as error:
         print(f"API call failed: {error}")
+# [END bigtable_list_backups]
 # [END bigtable_v2_bigtabletableadmin_backups_list]

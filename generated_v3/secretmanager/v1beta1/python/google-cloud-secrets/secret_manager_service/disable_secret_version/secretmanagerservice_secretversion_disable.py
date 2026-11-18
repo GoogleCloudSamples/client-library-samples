@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START secretmanager_v1beta1_secretmanagerservice_disable_secret_version]
+# [START secretmanager_disable_secret_version]
 import google.api_core.exceptions
 from google.cloud import secretmanager_v1beta1
 
@@ -35,4 +36,5 @@ def disable_secret_version(project_id: str, secret_id: str, version_id: str) -> 
         print(f"State: {response.state.name}")
     except google.api_core.exceptions.GoogleAPICallError as error:
         print(f"API error occurred: {error}")
+# [END secretmanager_disable_secret_version]
 # [END secretmanager_v1beta1_secretmanagerservice_disable_secret_version]

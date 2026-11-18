@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START pubsub_v1_subscriber_subscription_update]
+# [START pubsub_update_push_configuration]
 import google.api_core.exceptions
 from google.cloud import pubsub_v1
 from google.protobuf import field_mask_pb2
@@ -46,4 +47,5 @@ def update_subscription(project_id: str, subscription_id: str) -> None:
         print(f"Labels: {response.labels}")
     except google.api_core.exceptions.GoogleAPICallError as exc:
         print(f"Failed to update subscription: {exc}")
+# [END pubsub_update_push_configuration]
 # [END pubsub_v1_subscriber_subscription_update]

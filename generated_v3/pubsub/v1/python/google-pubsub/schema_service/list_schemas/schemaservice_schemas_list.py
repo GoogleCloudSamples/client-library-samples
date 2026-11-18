@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START pubsub_v1_schemaservice_schemas_list]
+# [START pubsub_list_schemas]
 import google.api_core.exceptions
 from google.cloud import pubsub_v1
 
@@ -33,4 +34,5 @@ def list_schemas(project_id: str) -> None:
             print(f"Schema name: {schema.name}")
     except google.api_core.exceptions.GoogleAPICallError as error:
         print(f"API call failed: {error}")
+# [END pubsub_list_schemas]
 # [END pubsub_v1_schemaservice_schemas_list]

@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START dataplex_v1_catalogservice_entry_delete]
+# [START dataplex_delete_entry]
 import google.api_core.exceptions
 from google.cloud import dataplex_v1
 
@@ -44,4 +45,5 @@ def delete_entry(
         print(f"Failed to delete entry: {error}")
 
 
+# [END dataplex_delete_entry]
 # [END dataplex_v1_catalogservice_entry_delete]

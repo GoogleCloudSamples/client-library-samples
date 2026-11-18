@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START privateca_v1_certificateauthorityservice_capool_delete]
+# [START privateca_delete_ca_pool]
 import google.api_core.exceptions
 from google.cloud.security import privateca_v1
 
@@ -34,4 +35,5 @@ def delete_ca_pool(project_id: str, location_id: str, ca_pool_id: str) -> None:
         print(f"Deleted CA pool: {name}")
     except google.api_core.exceptions.GoogleAPICallError as e:
         print(f"Failed to delete CA pool: {e}")
+# [END privateca_delete_ca_pool]
 # [END privateca_v1_certificateauthorityservice_capool_delete]

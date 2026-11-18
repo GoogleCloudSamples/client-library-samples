@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START dataplex_v1_catalogservice_aspecttype_delete]
+# [START dataplex_delete_aspect_type]
 import google.api_core.exceptions
 from google.cloud import dataplex_v1
 
@@ -40,4 +41,5 @@ def delete_aspect_type(location_id: str, aspect_type_id: str, project_id: str) -
         print(f"Aspect type not found: {name}")
     except google.api_core.exceptions.GoogleAPICallError as e:
         print(f"Failed to delete aspect type: {e.message}")
+# [END dataplex_delete_aspect_type]
 # [END dataplex_v1_catalogservice_aspecttype_delete]

@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START secretmanager_v1beta1_secretmanagerservice_secretversion_destroy]
+# [START secretmanager_destroy_secret_version]
 import google.api_core.exceptions
 from google.cloud import secretmanager_v1beta1
 
@@ -41,4 +42,5 @@ def destroy_secret_version(
         print(f"API call failed: {e}")
 
 
+# [END secretmanager_destroy_secret_version]
 # [END secretmanager_v1beta1_secretmanagerservice_secretversion_destroy]

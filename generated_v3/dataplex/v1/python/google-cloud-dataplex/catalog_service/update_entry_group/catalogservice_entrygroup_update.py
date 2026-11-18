@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START dataplex_v1_catalogservice_entrygroup_update]
+# [START dataplex_update_entry_group]
 import google.api_core.exceptions
 from google.cloud import dataplex_v1
 from google.protobuf import field_mask_pb2
@@ -44,4 +45,5 @@ def update_entry_group(project_id: str, location_id: str, entry_group_id: str) -
         print(f"Description: {response.description}")
     except google.api_core.exceptions.GoogleAPICallError as e:
         print(f"Update failed: {e}")
+# [END dataplex_update_entry_group]
 # [END dataplex_v1_catalogservice_entrygroup_update]

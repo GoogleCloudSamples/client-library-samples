@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START secretmanager_v1beta1_secretmanagerservice_secret_get]
+# [START secretmanager_get_secret]
 import google.api_core.exceptions
 from google.cloud import secretmanager_v1beta1
 
@@ -38,4 +39,5 @@ def get_secret(project_id: str, secret_id: str) -> None:
         print(f"Replication policy: {response.replication}")
     except google.api_core.exceptions.GoogleAPICallError as e:
         print(f"Failed to retrieve secret: {e}")
+# [END secretmanager_get_secret]
 # [END secretmanager_v1beta1_secretmanagerservice_secret_get]

@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START parametermanager_v1_parametermanager_parameterversion_create]
+# [START parametermanager_create_param_version]
 import google.api_core.exceptions
 from google.cloud import parametermanager_v1
 
@@ -61,4 +62,5 @@ def create_parameter_version(
         print(f"Created parameter version: {response.name}")
     except google.api_core.exceptions.GoogleAPICallError as e:
         print(f"API call failed: {e.message}")
+# [END parametermanager_create_param_version]
 # [END parametermanager_v1_parametermanager_parameterversion_create]

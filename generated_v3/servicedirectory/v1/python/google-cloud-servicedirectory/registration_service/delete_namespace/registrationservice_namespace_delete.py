@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START servicedirectory_v1_registrationservice_namespace_delete]
+# [START servicedirectory_delete_namespace]
 import google.api_core.exceptions
 from google.cloud import servicedirectory_v1
 
@@ -34,4 +35,5 @@ def delete_namespace(project_id: str, location_id: str, namespace_id: str) -> No
         print(f"Deleted namespace: {name}")
     except google.api_core.exceptions.GoogleAPICallError as error:
         print(f"Failed to delete namespace: {error}")
+# [END servicedirectory_delete_namespace]
 # [END servicedirectory_v1_registrationservice_namespace_delete]

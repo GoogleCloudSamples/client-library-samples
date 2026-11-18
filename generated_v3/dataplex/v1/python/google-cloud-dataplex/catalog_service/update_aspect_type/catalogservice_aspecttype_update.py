@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START dataplex_v1_catalogservice_aspecttype_update]
+# [START dataplex_update_aspect_type]
 import google.api_core.exceptions
 from google.cloud import dataplex_v1
 from google.protobuf import field_mask_pb2
@@ -46,4 +47,5 @@ def update_aspect_type(project_id: str, location_id: str, aspect_type_id: str) -
         print(f"Updated aspect type: {response.name}")
     except google.api_core.exceptions.GoogleAPICallError as error:
         print(f"Failed to update aspect type: {error}")
+# [END dataplex_update_aspect_type]
 # [END dataplex_v1_catalogservice_aspecttype_update]

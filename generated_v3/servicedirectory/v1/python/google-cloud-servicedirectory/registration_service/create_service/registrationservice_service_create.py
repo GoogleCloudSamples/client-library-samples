@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START servicedirectory_v1_registrationservice_service_create]
+# [START servicedirectory_create_service]
 import google.api_core.exceptions
 from google.cloud import servicedirectory_v1
 
@@ -42,4 +43,5 @@ def create_service(service_id: str, project_id: str, location_id: str, namespace
         print(f"Created service: {response.name}")
     except google.api_core.exceptions.GoogleAPICallError as error:
         print(f"Error creating service: {error.message}")
+# [END servicedirectory_create_service]
 # [END servicedirectory_v1_registrationservice_service_create]

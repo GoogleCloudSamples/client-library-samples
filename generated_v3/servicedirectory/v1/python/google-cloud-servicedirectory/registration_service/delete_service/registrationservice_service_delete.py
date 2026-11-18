@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START servicedirectory_v1_registrationservice_service_delete]
+# [START servicedirectory_delete_service]
 import google.api_core.exceptions
 from google.cloud import servicedirectory_v1
 
@@ -35,4 +36,5 @@ def delete_service(project_id: str, location_id: str, namespace_id: str, service
         print(f"Deleted service: {name}")
     except google.api_core.exceptions.GoogleAPIError as exc:
         print(f"Failed to delete service: {exc}")
+# [END servicedirectory_delete_service]
 # [END servicedirectory_v1_registrationservice_service_delete]

@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START alloydb_v1_alloydbadmin_supporteddatabaseflags_list]
+# [START alloydb_quickstart]
 import google.api_core.exceptions
 from google.cloud import alloydb_v1
 
@@ -38,4 +39,5 @@ def list_supported_database_flags(project_id: str, location_id: str) -> None:
             print(f"Flag Name: {flag.name}")
     except google.api_core.exceptions.GoogleAPICallError as error:
         print(f"Failed to list supported database flags: {error}")
+# [END alloydb_quickstart]
 # [END alloydb_v1_alloydbadmin_supporteddatabaseflags_list]

@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # [START secretmanager_v1beta1_secretmanagerservice_secret_delete]
+# [START secretmanager_delete_secret]
 import google.api_core.exceptions
 from google.cloud import secretmanager_v1beta1
 
@@ -36,4 +37,5 @@ def delete_secret(project_id: str, secret_id: str) -> None:
         print(f"Secret not found: {name}")
     except google.api_core.exceptions.GoogleAPICallError as exc:
         print(f"Request failed: {exc}")
+# [END secretmanager_delete_secret]
 # [END secretmanager_v1beta1_secretmanagerservice_secret_delete]
