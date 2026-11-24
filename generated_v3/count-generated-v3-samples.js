@@ -1,0 +1,83 @@
+// Counts generated samples and prints a JSON summary (total, per-language, and service count).
+// Run from the repo root:
+//   node generated_v3/count-generated-v3-samples.js
+// Or pass a custom directory:
+//   node generated_v3/count-generated-v3-samples.js path/to/generated_v3
+
+'use strict';
+
+const fs = require('fs');
+const path = require('path');
+
+/**
+ * Lists all sample directory paths under `rootDir`.
+ *
+ * @param {string} rootDir Path to the generated_v3 directory.
+ * @return {Set<string>} Set of sample directory paths relative to rootDir's parent.
+ */
+function listSampleDirs(rootDir) {
+  const parentDir = path.dirname(rootDir);
+  const sampleDirs = new Set();
+
+  for (const file of fs.readdirSync(rootDir, {
+    recursive: true,
+    withFileTypes: true,
+  })) {
+    if (!file.isFile()) {
+      continue;
+    }
+
+    const folderPath = path.relative(parentDir, file.parentPath);
+    // Example path: generated_v3/secretmanager/v1beta1/python/google-cloud-secrets/secret_manager_service/create_secret
+    const numSlashes = folderPath.split(path.sep).length - 1;
+    if (numSlashes === 6) {
+      sampleDirs.add(folderPath);
+    }
+  }
+
+  return sampleDirs;
+}
+
+/**
+ * Counts samples under the given root directory, grouped by language and
+ * service.
+ *
+ * @param {string} rootDir Path to the generated_v3 directory.
+ * @return {{total: number, langToNumOfSamples: Object<string, number>, numOfServices: number}}
+ */
+function countSamples(rootDir) {
+  const sampleDirsSet = listSampleDirs(rootDir);
+  const langToNumOfSamples = {};
+  const servicesSet = new Set();
+
+  // Assume each sample directory contains exactly 1 sample.
+  for (const dirPath of sampleDirsSet) {
+    const parts = dirPath.split(path.sep);
+    const service = parts[1];
+    const language = parts[3];
+    servicesSet.add(service);
+    langToNumOfSamples[language] = (langToNumOfSamples[language] || 0) + 1;
+  }
+
+  return {
+    total: sampleDirsSet.size,
+    langToNumOfSamples,
+    numOfServices: servicesSet.size,
+  };
+}
+
+function main() {
+  const targetArg = process.argv[2];
+  const targetDir = targetArg ? path.resolve(targetArg) : __dirname;
+
+  if (!fs.existsSync(targetDir)) {
+    console.error(`Directory not found: ${targetDir}`);
+    process.exitCode = 1;
+    return;
+  }
+
+  const result = countSamples(targetDir);
+  console.log(JSON.stringify(result, null, 2));
+}
+
+main();
