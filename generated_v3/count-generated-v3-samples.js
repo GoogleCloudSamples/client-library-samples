@@ -15,8 +15,8 @@ const path = require('path');
  * @param {string} rootDir Path to the generated_v3 directory.
  * @return {Set<string>} Set of sample directory paths relative to rootDir.
  */
-function listSampleDirs(rootDir) {
-  const sampleDirs = new Set();
+function getSampleDirsSet(rootDir) {
+  const sampleDirsSet = new Set();
 
   for (const file of fs.readdirSync(rootDir, {
     recursive: true,
@@ -30,11 +30,15 @@ function listSampleDirs(rootDir) {
     // Example path: secretmanager/v1beta1/python/google-cloud-secrets/secret_manager_service/create_secret
     const numSlashes = folderPath.split(path.sep).length - 1;
     if (numSlashes === 5) {
-      sampleDirs.add(folderPath);
+      sampleDirsSet.add(folderPath);
+    } else {
+      console.warn(
+        `Ignoring path (with ${numSlashes} slashes): ${path.join(folderPath, file.name)}`
+      );
     }
   }
 
-  return sampleDirs;
+  return sampleDirsSet;
 }
 
 /**
@@ -45,7 +49,7 @@ function listSampleDirs(rootDir) {
  * @return {{total: number, languageToNumOfSamples: Object<string, number>, numOfServices: number}}
  */
 function countSamples(rootDir) {
-  const sampleDirsSet = listSampleDirs(rootDir);
+  const sampleDirsSet = getSampleDirsSet(rootDir);
   const languageToNumOfSamples = {};
   const servicesSet = new Set();
 
