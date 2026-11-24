@@ -13,10 +13,9 @@ const path = require('path');
  * Lists all sample directory paths under `rootDir`.
  *
  * @param {string} rootDir Path to the generated_v3 directory.
- * @return {Set<string>} Set of sample directory paths relative to rootDir's parent.
+ * @return {Set<string>} Set of sample directory paths relative to rootDir.
  */
 function listSampleDirs(rootDir) {
-  const parentDir = path.dirname(rootDir);
   const sampleDirs = new Set();
 
   for (const file of fs.readdirSync(rootDir, {
@@ -27,10 +26,10 @@ function listSampleDirs(rootDir) {
       continue;
     }
 
-    const folderPath = path.relative(parentDir, file.parentPath);
-    // Example path: generated_v3/secretmanager/v1beta1/python/google-cloud-secrets/secret_manager_service/create_secret
+    const folderPath = path.relative(rootDir, file.parentPath);
+    // Example path: secretmanager/v1beta1/python/google-cloud-secrets/secret_manager_service/create_secret
     const numSlashes = folderPath.split(path.sep).length - 1;
-    if (numSlashes === 6) {
+    if (numSlashes === 5) {
       sampleDirs.add(folderPath);
     }
   }
@@ -43,25 +42,25 @@ function listSampleDirs(rootDir) {
  * service.
  *
  * @param {string} rootDir Path to the generated_v3 directory.
- * @return {{total: number, langToNumOfSamples: Object<string, number>, numOfServices: number}}
+ * @return {{total: number, languageToNumOfSamples: Object<string, number>, numOfServices: number}}
  */
 function countSamples(rootDir) {
   const sampleDirsSet = listSampleDirs(rootDir);
-  const langToNumOfSamples = {};
+  const languageToNumOfSamples = {};
   const servicesSet = new Set();
 
   // Assume each sample directory contains exactly 1 sample.
   for (const dirPath of sampleDirsSet) {
     const parts = dirPath.split(path.sep);
-    const service = parts[1];
-    const language = parts[3];
+    const service = parts[0];
+    const language = parts[2];
     servicesSet.add(service);
-    langToNumOfSamples[language] = (langToNumOfSamples[language] || 0) + 1;
+    languageToNumOfSamples[language] = (languageToNumOfSamples[language] || 0) + 1;
   }
 
   return {
     total: sampleDirsSet.size,
-    langToNumOfSamples,
+    languageToNumOfSamples,
     numOfServices: servicesSet.size,
   };
 }
